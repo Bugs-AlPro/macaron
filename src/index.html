@@ -1,0 +1,494 @@
+{% set title = 'Macaron' %}
+{% extends "templates/default.html" %}
+
+{% set sliderOfferCover = [
+{img: "cover1", alt: "Тип пирожного"},
+{img: "cover2", alt: "Тип пирожного"},
+{img: "cover3", alt: "Тип пирожного"},
+{img: "cover4", alt: "Тип пирожного"},
+{img: "cover5", alt: "Тип пирожного"},
+{img: "cover6", alt: "Тип пирожного"},
+{img: "cover7", alt: "Тип пирожного"},
+{img: "cover8", alt: "Тип пирожного"},
+{img: "cover9", alt: "Тип пирожного"},
+{img: "cover10", alt: "Тип пирожного"},
+{img: "cover11", alt: "Тип пирожного"},
+{img: "cover12", alt: "Тип пирожного"},
+{img: "cover13", alt: "Тип пирожного"},
+{img: "cover14", alt: "Тип пирожного"}
+]%}
+{% set sliderOfferCream = [
+{img: "cream1", alt: "Тип пирожного"},
+{img: "cream2", alt: "Тип пирожного"},
+{img: "cream3", alt: "Тип пирожного"},
+{img: "cream4", alt: "Тип пирожного"},
+{img: "cream5", alt: "Тип пирожного"},
+{img: "cream6", alt: "Тип пирожного"},
+{img: "cream7", alt: "Тип пирожного"},
+{img: "cream8", alt: "Тип пирожного"},
+{img: "cream9", alt: "Тип пирожного"}
+]%}
+{% set sliderFeedback = [
+{img: "feedback1", alt: "Тип пирожного"},
+{img: "feedback2", alt: "Тип пирожного"},
+{img: "feedback3", alt: "Тип пирожного"},
+{img: "feedback4", alt: "Тип пирожного"},
+{img: "feedback5", alt: "Тип пирожного"},
+{img: "feedback6", alt: "Тип пирожного"},
+{img: "feedback7", alt: "Тип пирожного"},
+{img: "feedback8", alt: "Тип пирожного"},
+{img: "feedback9", alt: "Тип пирожного"},
+{img: "feedback10", alt: "Тип пирожного"},
+{img: "feedback11", alt: "Тип пирожного"}
+]%}
+
+{% macro imageSvg(name, class, width, height) %}
+<svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
+  <use xlink:href='img/svg/sprite-black.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}
+{% macro imageSvgColor(name, class, width, height, alt) %}
+<svg class="{{ class }}" width="{{ width }}" height="{{ height }}" aria-label="{{ alt }}">
+  <use xlink:href='img/svg/sprite-color.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}
+{% macro imageJpgRetina(classPicture, name, classImg, alt) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp 1x, img/{{ name }}@2x.webp 2x" type="image/webp">
+  <img src="img/{{ name }}.jpg" alt="{{ alt }}" class="{{ classImg }}">
+</picture>
+{% endmacro %}
+{% macro imageJpg(classPicture, name, classImg, alt, width, height) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp" type="image/webp">
+  <img src="img/{{ name }}.jpg" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}">
+</picture>
+{% endmacro %}
+{% macro imagePng(classPicture, name, classImg, alt) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp" type="image/webp">
+  <img src="img/{{ name }}.png" alt="{{ alt }}" class="{{ classImg }}">
+</picture>
+{% endmacro %}
+
+
+{% block content %}
+
+<header class="header-wrap">
+  <div class="container">
+    <div class="header">
+      <div class="header__logo logo">
+        {{ imageJpg('logo__picture', 'logo', 'logo__img', 'Логотип - макарон от Елены', '150px', '150px') }}
+        <div class="logo__text">macaron_by_elena</div>
+      </div>
+      <div class="header__title">
+        <h1 class="header__head">Пирожные Макарон</h1>
+        <p class="header__text">изысканный французский десерт - легко и просто</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+  <section class="question-wrap">
+    <div class="container">
+      <div class="question">
+        <div class="question__title title-section">
+          <h2 class="title-section__head title-section__head--blue">Проверь себя</h2>
+          <p class="title-section__text">Что ты знаешь о макарон?</p>
+        </div>
+        <ul class="question__list">
+          <li class="question__item question-item">
+            <input type="checkbox" id="question-item-cost" class="question-item__checkbox hidden-text">
+            <label for="question-item-cost" class="question-item__label"
+              aria-label="Показать или скрыть приставку - не"></label>
+            <span class="question-item__hidden-text">Не</span>
+            <div class="question-item__text">Очень дорогой десерт</div>
+          </li>
+          <li class="question__item question-item">
+            <input type="checkbox" id="question-item-hard" class="question-item__checkbox hidden-text">
+            <label for="question-item-hard" class="question-item__label"
+              aria-label="Показать или скрыть приставку - не"></label>
+            <span class="question-item__hidden-text">Не</span>
+            <div class="question-item__text">Сложно приготовить</div>
+          </li>
+          <li class="question__item question-item">
+            <input type="checkbox" id="question-item-taysty" class="question-item__checkbox hidden-text">
+            <label for="question-item-taysty" class="question-item__label"
+              aria-label="Показать или скрыть приставку - не"></label>
+            <span class="question-item__hidden-text">Да!</span>
+            <div class="question-item__text">Невероятно вкусный</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="want-wrap">
+    <div class="container">
+      <div class="want">
+        <div class="want__title title-section">
+          <h2 class="title-section__head title-section__head--red">Хочешь научиться их готовить?</h2>
+          <p class="title-section__text">для этого нужно - "всего ничего"</p>
+        </div>
+        <ul class="want__list">
+          <li class="want__item">
+            {{ imageSvgColor('electriс', 'svgcolor', '70px', '100px', 'Электрическая духовка.') }}
+            Эллектрическая духовка
+          </li>
+          <li class="want__item">
+            {{ imageSvgColor('mixer', 'svgcolor', '70px', '100px', 'Миксер.') }}
+            Миксер
+          </li>
+          <li class="want__item">
+            {{ imageSvgColor('thermometer', 'svgcolor', '70px', '100px', 'Термометр.') }}
+            Термометр
+          </li>
+          <li class="want__item">
+            {{ imageSvgColor('scales', 'svgcolor', '70px', '100px', 'Кухонные весы.') }}
+            Весы
+          </li>
+          <li class="want__item">
+            {{ imageSvgColor('teflon', 'svgcolor', '70px', '100px', 'Тефлоновый коврик.') }}
+            Тефлоновый коврик
+          </li>
+          <li class="want__item">
+            {{ imageSvgColor('saucepan', 'svgcolor', '70px', '100px', 'Сотейник.') }}
+            Сотейник
+          </li>
+          <li class="want__item">
+            {{ imageSvgColor('cream', 'svgcolor', '70px', '100px', 'Кондитерский мешок.') }}
+            Кондитерский мешок
+          </li>
+          <li class="want__item">
+            {{ imageSvgColor('ingredients', 'svgcolor', '70px', '100px', 'Ингридиенты.') }}
+            Немного ингридиентов
+          </li>
+        </ul>
+        <p class="want__text">и самое главное - тот кто подскажет как это всё использовать
+        </p>
+        {{ imageSvgColor('cook', 'svgcolor want__svg-end', '70px', '100px', 'Девушка повор.') }}
+      </div>
+    </div>
+  </section>
+
+  <section class="about-wrap">
+    <div class="container">
+      <div class="about">
+        <div class="about__title title-section">
+          <h2 class="title-section__head title-section__head--blue">Познакомимся?</h2>
+          <p class="title-section__text">Как я пришла к макарон!</p>
+        </div>
+        <div class="about__story">
+          {{ imageJpg('about__picture about__picture1', 'about1', 'about__img about__img1', 'На фото, Елена предлагает
+          рассказать о
+          себе', '300px', '300px') }}
+          <p class="about__text about__text1">
+            Побывав однажды на открытии французского магазина <span class="about__text--loccitane">L’occitane</span> ,
+            нас угощали пирожными Макарон. Никогда в
+            жизни я не пробовала такого вкуснейшего нежного десерта. После этого я начала искать и искать хотябы что-то
+            подобное. Но к сожалению ни в одном магазине такое не купишь. Только в хороших дорогих кофейнях можно найти
+            вкусные макарон, да и то, если они свежеприготовленны и правильно хранятся. Ведь их срок годности 3-4 дня.
+            Именно поэтому я решила сама научиться их готовить!
+          </p>
+          <p class="about__text about__text2">
+            Потратив на это год, поменяв духовку с газовой на электрическую, просмотрев кучу сайтов, переведя очень
+            много продуктов: я вывела стабильный рецепт приготовления.
+          </p>
+          <p class="about__text about__text3">
+            Со мной у вас обязательно получатся МАКАРОН, потому что я открою вам небольшой секрет в их приготовлении.
+            Благодаря ему - эти капризные десерты получатся у каждого. Не важно кондитер вы или только встаёте на
+            этот путь!
+          </p>
+          {{ imageJpg('about__picture about__picture2', 'about2', 'about__img about__img2', 'На фото, Елена c кофе и
+          вкуснейшим
+          макарон', '200px', '200px') }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer-wrap">
+    <div class="container">
+      <div class="offer">
+        <div class="offer__title title-section">
+          <h2 class="title-section__head title-section__head--blue">Моё предложение</h2>
+          <p class="title-section__text">точнее - их даже два</p>
+        </div>
+        <div class="offer__body">
+          <div class="offer__withme">
+            <div class="offer__topic">Первое предложение<br>с поддержкой в чате</div>
+            <ul class="offer__list">
+              <li class="offer__item offer-item">
+                <h3 class="offer-item__title  offer-item__title--1">Рецепт приготовления крышечек<br>
+                  (файл PDF)</h3>
+                <button type="button" class="offer-item__btn offer-item__btn--1"
+                  aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <ul class="offer-item__list offer-item__list--cover">
+                  <li class="offer-item__item">Подробное описание приготовления крышечек на итальянской меренге, с
+                    пониженным содержанием сахара
+                  </li>
+                  <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онланй магазины</li>
+                  <li class="offer-item__item">Руководство по росписи на макарон</li>
+                  <li class="offer-item__item">Инструкция по созданию трафаретов</li>
+                  <li class="offer-item__item">
+                    <ul class="slider-offer slider-offer-cover1">
+                      {% for item in sliderOfferCover %}
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img"
+                            height="200px">
+                        </picture>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="offer__item offer-item">
+                <h3 class="offer-item__title offer-item__title--2">Рецепт приготовления начинок разных вкусов<br>(файл
+                  PDF)
+                </h3>
+                <button type="button" class="offer-item__btn"
+                  aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <ul class="offer-item__list offer-item__list--cream">
+                  <li class="offer-item__item">Класический ванильный ганаш</li>
+                  <li class="offer-item__item">Шоколадный ганаш</li>
+                  <li class="offer-item__item">Фруктовый ягодный ганаш</li>
+                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде и варианты ароматизации фисташками,
+                    кокосом,
+                    мятой.</li>
+                  <li class="offer-item__item">Пряничное латте</li>
+                  <li class="offer-item__item">Вишня в шоколаде</li>
+                  <li class="offer-item__item">Карамельная начинка и Сникерс</li>
+                  <li class="offer-item__item">
+                    <ul class="slider-offer slider-offer-cream1">
+                      {% for item in sliderOfferCream %}
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img"
+                            height="200px">
+                        </picture>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="offer__item offer-item">
+                <h3 class="offer-item__title offer-item__title--3">Подробная видео инструкция по приготовлению</h3>
+                <button type="button" class="offer-item__btn"
+                  aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <ul class="offer-item__list offer-item__list--video">
+                  <li class="offer-item__item">Круглых макарон и фигурных макарон</li>
+                  <li class="offer-item__item">Роспись на макарон</li>
+                  <li class="offer-item__item">Видео приготовления начинок</li>
+                  <li class="offer-item__item offer-item__item--link">
+                    <a href="#" class="offer-item__link">
+                      <img src="img/video-cover.jpg" alt="" class="offer-item__img" height="200px">
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="offer__item offer-item">
+                <h3 class="offer-item__title offer-item__title--4">Поддержка в течении 2-х месяцев в личном телеграмм
+                  чате
+                </h3>
+                <button type="button" class="offer-item__btn"
+                  aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <div class="offer-item__list">
+                  <div class="offer-item__item">Консультация, ответы на
+                    вопросы, отправка домашнего задания и разбор ошибок, доведения макарон до уровня продаж.</div>
+                  <div class="offer-item__item offer-item__item--last-w">
+                    <img src="img/help.jpg" alt="" class="offer-item__img" height="200px">
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="offer__cost">4 000 ₽</div>
+          </div>
+          <div class="offer__withoutme">
+            <div class="offer__topic">Второе предложение<br>без поддержки в чате</div>
+            <ul class="offer__list">
+              <li class="offer__item offer-item">
+                <h3 class="offer-item__title offer-item__title--1">Рецепт приготовления крышечек<br>
+                  (файл PDF)</h3>
+                <button type="button" class="offer-item__btn offer-item__btn--1"
+                  aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <ul class="offer-item__list offer-item__list--cover">
+                  <li class="offer-item__item">Подробное описание приготовления крышечек на итальянской меренге, с
+                    пониженным содержанием сахара
+                  </li>
+                  <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онланй магазины</li>
+                  <li class="offer-item__item">Руководство по росписи на макарон</li>
+                  <li class="offer-item__item">Инструкция по созданию трафаретов</li>
+                  <li class="offer-item__item">
+                    <ul class="slider-offer slider-offer-cover2">
+                      {% for item in sliderOfferCover %}
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img"
+                            height="200px">
+                        </picture>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="offer__item offer-item">
+                <h3 class="offer-item__title offer-item__title--2">Рецепт приготовления начинок разных вкусов<br>(файл
+                  PDF)
+                </h3>
+                <button type="button" class="offer-item__btn"
+                  aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <ul class="offer-item__list offer-item__list--cream">
+                  <li class="offer-item__item">Класический ванильный ганаш</li>
+                  <li class="offer-item__item">Шоколадный ганаш</li>
+                  <li class="offer-item__item">Фруктовый ягодный ганаш</li>
+                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде и варианты ароматизации фисташками,
+                    кокосом,
+                    мятой.</li>
+                  <li class="offer-item__item">Пряничное латте</li>
+                  <li class="offer-item__item">Вишня в шоколаде</li>
+                  <li class="offer-item__item">Карамельная начинка и Сникерс</li>
+                  <li class="offer-item__item">
+                    <ul class="slider-offer slider-offer-cream2">
+                      {% for item in sliderOfferCream %}
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img"
+                            height="200px">
+                        </picture>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="offer__item offer-item">
+                <h3 class="offer-item__title offer-item__title--3">Подробная видео инструкция по приготовлению</h3>
+                <button type="button" class="offer-item__btn"
+                  aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <ul class="offer-item__list offer-item__list--video">
+                  <li class="offer-item__item">Круглых макарон и фигурных макарон</li>
+                  <li class="offer-item__item">Роспись на макарон</li>
+                  <li class="offer-item__item">Видео приготовления начинок</li>
+                  <li class="offer-item__item offer-item__item--link">
+                    <a href="#" class="offer-item__link">
+                      <img src="img/video-cover.jpg" alt="" class="offer-item__img" height="200px">
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="offer__item offer-item">
+                <h3 class="offer-item__title offer-item__title--4">Этот вариант без поддержки в чате
+                </h3>
+                <button type="button" class="offer-item__btn"
+                  aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <div class="offer-item__list">
+                  <div class="offer-item__item">Просто отправлю вам рецепты, инструкции и ссылки
+                    на видео
+                  </div>
+                  <div class="offer-item__item offer-item__item--last-wo">
+                    {{ imageSvg('mail', 'svg', '200px', '150px') }}
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+            <div class="offer__cost">2 000 ₽</div>
+          </div>
+          <div class="offer__contact">
+            <p class="offer__text">Связаться со мной можно любым удобным для вас способом.</p>
+            <ul class="offer__social social">
+              <li class="social__item">
+                <a href="https://t.me/aleksprowork" class="social__link" aria-label="Ссылка на telegram.">
+                  {{ imageSvg('telegram', 'svg', '55px', '55px') }}
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="whatsapp://send?phone=+79958850643" class="social__link" aria-label="Ссылка на whatsapp.">
+                  {{ imageSvg('whatsap', 'svg', '55px', '55px') }}
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.instagram.com/macaron_by_elena" class="social__link"
+                  aria-label="Ссылка на instagram.">
+                  {{ imageSvg('instagram', 'svg', '55px', '55px') }}
+                </a>
+              </li>
+            </ul>
+            <p class="offer__text"><a href="tel:+79958850643" class="offer__phone"
+                aria-label="Ссылка чтобы позвонить по телефонному номеру.">+7 995
+                885-0643</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback-wrap">
+    <div class="container">
+      <div class="feedback">
+        <div class="feedback__title title-section">
+          <h2 class="title-section__head title-section__head--reviews">Well of reviews</h2>
+        </div>
+        <ul class="feedback__slider feedback-slider">
+          {% for item in sliderFeedback %}
+          <li class="feedback-slider__item">
+            <picture class="feedback-slider__picture">
+              <source srcset="img/{{ item.img }}.webp" type="image/webp">
+              <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="feedback-slider__img">
+            </picture>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer-wrap">
+  <div class="container">
+    <div class="footer">
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a href="https://t.me/aleksprowork" class="social__link" aria-label="telegram">
+            {{ imageSvg('telegram', 'svg', '50px', '50px') }}
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="whatsapp://send?phone=+79958850643" class="social__link" aria-label="whatsapp">
+            {{ imageSvg('whatsap', 'svg', '50px', '50px') }}
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://www.instagram.com/macaron_by_elena" class="social__link" aria-label="instagram">
+            {{ imageSvg('instagram', 'svg', '50px', '50px') }}
+          </a>
+        </li>
+      </ul>
+      <div class="footer__logo">
+        <svg width="100%" height="100%" class="footer__svg">
+          <defs>
+            <pattern id="polka-dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+            </pattern>
+            <style></style>
+          </defs>
+          <text x="50%" y="60%" text-anchor="middle">
+            macaron_by_elena
+          </text>
+        </svg>
+      </div>
+      <p class="footer__text">2021</p>
+    </div>
+</footer>
+{% endblock %}
