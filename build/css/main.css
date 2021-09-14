@@ -467,7 +467,6 @@ ul, li, p {
     margin-top: 5px;
   }
   .offer-item__title--bold {
-    margin-right: 6px;
     color: var(--title-red);
     font-weight: 600;
   }
@@ -1012,7 +1011,7 @@ ul, li, p {
     align-items: center;
   }
   .offer-item__title--bold {
-    margin-right: 6px;
+    margin-right: 5px;
     color: var(--title-red);
     font-weight: 600;
   }
@@ -1161,7 +1160,7 @@ ul, li, p {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: "Glory", sans-serif;
     font-size: 30px;
     color: var(--text-darkgray);
