@@ -549,7 +549,7 @@ ul, li, p {
   .offer-item__link::before {
     position: absolute;
     content: "";
-    background-image: url(/../img/youtube.svg);
+    background-image: url(../img/youtube.svg);
     background-size: cover;
     width: 70px;
     height: 70px;
@@ -1081,7 +1081,7 @@ ul, li, p {
   .offer-item__link::before {
     position: absolute;
     content: "";
-    background-image: url(/../img/youtube.svg);
+    background-image: url(../img/youtube.svg);
     background-size: cover;
     width: 70px;
     height: 70px;
