@@ -78,7 +78,7 @@
   <div class="container">
     <div class="header">
       <div class="header__logo logo">
-        {{ imageJpg('logo__picture', 'logo', 'logo__img', 'Логотип - макарон от Елены', '150px', '150px') }}
+        {{ imageJpg('logo__picture', 'logo', 'logo__img', 'Логотип - макарон от Елены', '150', '150') }}
         <div class="logo__text">macaron_by_elena</div>
       </div>
       <div class="header__title">
@@ -134,41 +134,41 @@
         </div>
         <ul class="want__list">
           <li class="want__item">
-            {{ imageSvgColor('electriс', 'svgcolor', '70px', '100px', 'Электрическая духовка.') }}
+            {{ imageSvgColor('electriс', 'svgcolor', '70', '100', 'Электрическая духовка.') }}
             Эллектрическая духовка
           </li>
           <li class="want__item">
-            {{ imageSvgColor('mixer', 'svgcolor', '70px', '100px', 'Миксер.') }}
+            {{ imageSvgColor('mixer', 'svgcolor', '70', '100', 'Миксер.') }}
             Миксер
           </li>
           <li class="want__item">
-            {{ imageSvgColor('thermometer', 'svgcolor', '70px', '100px', 'Термометр.') }}
+            {{ imageSvgColor('thermometer', 'svgcolor', '70', '100', 'Термометр.') }}
             Термометр
           </li>
           <li class="want__item">
-            {{ imageSvgColor('scales', 'svgcolor', '70px', '100px', 'Кухонные весы.') }}
+            {{ imageSvgColor('scales', 'svgcolor', '70', '100', 'Кухонные весы.') }}
             Весы
           </li>
           <li class="want__item">
-            {{ imageSvgColor('teflon', 'svgcolor', '70px', '100px', 'Тефлоновый коврик.') }}
+            {{ imageSvgColor('teflon', 'svgcolor', '70', '100', 'Тефлоновый коврик.') }}
             Тефлоновый коврик
           </li>
           <li class="want__item">
-            {{ imageSvgColor('saucepan', 'svgcolor', '70px', '100px', 'Сотейник.') }}
+            {{ imageSvgColor('saucepan', 'svgcolor', '70', '100', 'Сотейник.') }}
             Сотейник
           </li>
           <li class="want__item">
-            {{ imageSvgColor('cream', 'svgcolor', '70px', '100px', 'Кондитерский мешок.') }}
+            {{ imageSvgColor('cream', 'svgcolor', '70', '100', 'Кондитерский мешок.') }}
             Кондитерский мешок
           </li>
           <li class="want__item">
-            {{ imageSvgColor('ingredients', 'svgcolor', '70px', '100px', 'Ингридиенты.') }}
+            {{ imageSvgColor('ingredients', 'svgcolor', '70', '100', 'Ингридиенты.') }}
             Немного ингридиентов
           </li>
         </ul>
         <p class="want__text">и самое главное - тот кто подскажет как это всё использовать
         </p>
-        {{ imageSvgColor('cook', 'svgcolor want__svg-end', '70px', '100px', 'Девушка повор.') }}
+        {{ imageSvgColor('cook', 'svgcolor want__svg-end', '70', '100', 'Девушка повор.') }}
       </div>
     </div>
   </section>
@@ -183,7 +183,7 @@
         <div class="about__story">
           {{ imageJpg('about__picture about__picture1', 'about1', 'about__img about__img1', 'На фото, Елена предлагает
           рассказать о
-          себе', '300px', '300px') }}
+          себе', '300', '300') }}
           <p class="about__text about__text1">
             Побывав однажды на открытии французского магазина <span class="about__text--loccitane">L’occitane</span> ,
             нас угощали пирожными Макарон. Никогда в
@@ -203,7 +203,7 @@
           </p>
           {{ imageJpg('about__picture about__picture2', 'about2', 'about__img about__img2', 'На фото, Елена c кофе и
           вкуснейшим
-          макарон', '200px', '200px') }}
+          макарон', '200', '200') }}
         </div>
       </div>
     </div>
@@ -238,8 +238,7 @@
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img"
-                            height="200px">
+                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       {% endfor %}
@@ -396,7 +395,7 @@
                     на видео
                   </div>
                   <div class="offer-item__item offer-item__item--last-wo">
-                    {{ imageSvg('mail', 'svg', '200px', '150px') }}
+                    {{ imageSvg('mail', 'svg', '200', '150') }}
                   </div>
                 </div>
 
@@ -409,18 +408,18 @@
             <ul class="offer__social social">
               <li class="social__item">
                 <a href="https://t.me/aleksprowork" class="social__link" aria-label="Ссылка на telegram.">
-                  {{ imageSvg('telegram', 'svg', '55px', '55px') }}
+                  {{ imageSvg('telegram', 'svg', '55', '55') }}
                 </a>
               </li>
               <li class="social__item">
                 <a href="whatsapp://send?phone=+79958850643" class="social__link" aria-label="Ссылка на whatsapp.">
-                  {{ imageSvg('whatsap', 'svg', '55px', '55px') }}
+                  {{ imageSvg('whatsap', 'svg', '55', '55') }}
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.instagram.com/macaron_by_elena" class="social__link"
                   aria-label="Ссылка на instagram.">
-                  {{ imageSvg('instagram', 'svg', '55px', '55px') }}
+                  {{ imageSvg('instagram', 'svg', '55', '55') }}
                 </a>
               </li>
             </ul>
@@ -461,17 +460,17 @@
       <ul class="footer__social social">
         <li class="social__item">
           <a href="https://t.me/aleksprowork" class="social__link" aria-label="telegram">
-            {{ imageSvg('telegram', 'svg', '50px', '50px') }}
+            {{ imageSvg('telegram', 'svg', '55', '55') }}
           </a>
         </li>
         <li class="social__item">
           <a href="whatsapp://send?phone=+79958850643" class="social__link" aria-label="whatsapp">
-            {{ imageSvg('whatsap', 'svg', '50px', '50px') }}
+            {{ imageSvg('whatsap', 'svg', '55', '55') }}
           </a>
         </li>
         <li class="social__item">
           <a href="https://www.instagram.com/macaron_by_elena" class="social__link" aria-label="instagram">
-            {{ imageSvg('instagram', 'svg', '50px', '50px') }}
+            {{ imageSvg('instagram', 'svg', '55', '55') }}
           </a>
         </li>
       </ul>
@@ -490,5 +489,6 @@
       </div>
       <p class="footer__text">2021</p>
     </div>
+  </div>
 </footer>
 {% endblock %}
