@@ -501,6 +501,11 @@ ul, li, p {
         margin-top: 5px;
       }
     }
+    &__title--bold {
+      margin-right: 6px;
+      color: var(--title-red);
+      font-weight: 600;
+    }
     &__btn {
       position: relative;
       background-color: inherit;
@@ -1033,6 +1038,11 @@ ul, li, p {
       position: relative;
       display: flex;
       align-items: center;
+    }
+    &__title--bold {
+      margin-right: 6px;
+      color: var(--title-red);
+      font-weight: 600;
     }
     &__btn {
       position: absolute;

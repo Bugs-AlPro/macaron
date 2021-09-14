@@ -466,6 +466,11 @@ ul, li, p {
   .offer-item__title--1 {
     margin-top: 5px;
   }
+  .offer-item__title--bold {
+    margin-right: 6px;
+    color: var(--title-red);
+    font-weight: 600;
+  }
   .offer-item__btn {
     position: relative;
     background-color: inherit;
@@ -1005,6 +1010,11 @@ ul, li, p {
     position: relative;
     display: flex;
     align-items: center;
+  }
+  .offer-item__title--bold {
+    margin-right: 6px;
+    color: var(--title-red);
+    font-weight: 600;
   }
   .offer-item__btn {
     position: absolute;
