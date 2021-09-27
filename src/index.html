@@ -2,50 +2,61 @@
 {% extends "templates/default.html" %}
 
 {% set sliderOfferCover = [
-{img: "cover1", alt: "Тип пирожного"},
-{img: "cover2", alt: "Тип пирожного"},
-{img: "cover3", alt: "Тип пирожного"},
-{img: "cover4", alt: "Тип пирожного"},
-{img: "cover5", alt: "Тип пирожного"},
-{img: "cover6", alt: "Тип пирожного"},
-{img: "cover7", alt: "Тип пирожного"},
-{img: "cover8", alt: "Тип пирожного"},
-{img: "cover9", alt: "Тип пирожного"},
-{img: "cover10", alt: "Тип пирожного"},
-{img: "cover11", alt: "Тип пирожного"},
-{img: "cover12", alt: "Тип пирожного"},
-{img: "cover13", alt: "Тип пирожного"},
-{img: "cover14", alt: "Тип пирожного"}
+{img: "cover1", alt: "Пирожные макарон: красного и белого цвета с рисуночками."},
+{img: "cover2", alt: "Пирожные макарон: сиреневого цвета со вкусом смородины, на фоне лаванды."},
+{img: "cover3", alt: "Пирожные макарон: белого и сереневого цвета, на фоне синих цветов."},
+{img: "cover4", alt: "Разноцветыне крышечки пирожных макарон."},
+{img: "cover5", alt: "Роспись на макарон. Надпись: самой, лучше, подруге."},
+{img: "cover6", alt: "Пирожные макарон: разной формы, весёлые, расскарашенные для детей."},
+{img: "cover7", alt: "Пирожные макарон в форме цветочка, ромашки."},
+{img: "cover8", alt: "Пирожные макарон: разрисованные и разной формы для зимней тематики,"},
+{img: "cover9", alt: "Пирожные макарон: для тетей, в форме уточки на палочке."},
+{img: "cover10", alt: "Пирожные макарон: белого и нежно-голубого цвета разукрашенного в тематику - Париж."},
+{img: "cover11", alt: "Торт из пирожн макарон."},
+{img: "cover12", alt: "Набор пирожн макарон: разной формы, разных цветов, разных начинок."},
+{img: "cover13", alt: "Набор пирожных макарон в постельных тонах."},
+{img: "cover14", alt: "Пирожные макарон в форме микимауса."}
 ]%}
 {% set sliderOfferCream = [
-{img: "cream1", alt: "Тип пирожного"},
-{img: "cream2", alt: "Тип пирожного"},
-{img: "cream3", alt: "Тип пирожного"},
-{img: "cream4", alt: "Тип пирожного"},
-{img: "cream5", alt: "Тип пирожного"},
-{img: "cream6", alt: "Тип пирожного"},
-{img: "cream7", alt: "Тип пирожного"},
-{img: "cream8", alt: "Тип пирожного"},
-{img: "cream9", alt: "Тип пирожного"}
+{img: "cream1", alt: "Начинка для макарон: классический ганаш с малиной, сникерс с орехом."},
+{img: "cream2", alt: "Начинка для макарон: классический ганаш с клубникой."},
+{img: "cream3", alt: "Начинка для макарон: вид в разрезе, ванильный ганаш с вишней."},
+{img: "cream4", alt: "Начинка для макарон: классический ганаш со вкусом манго и шоколадный."},
+{img: "cream5", alt: "Начинка для макарон: классический ганаш со смородиной, кокосом, манго."},
+{img: "cream6", alt: "Коробочка с готовыми макарон и чизкейками."},
+{img: "cream7", alt: "Готовые макарон, разных вкусов, на красивой многоярусной подставке."},
+{img: "cream8", alt: "Розовые макарон, на фоне лепестков роз. Вид в разрезе вкус манго и смородина."},
+{img: "cream9", alt: "Сиреневые макарон с мятной начинкой, на фоне синих цветов."}
 ]%}
 {% set sliderFeedback = [
-{img: "feedback1", alt: "Тип пирожного"},
-{img: "feedback2", alt: "Тип пирожного"},
-{img: "feedback3", alt: "Тип пирожного"},
-{img: "feedback4", alt: "Тип пирожного"},
-{img: "feedback5", alt: "Тип пирожного"},
-{img: "feedback6", alt: "Тип пирожного"},
-{img: "feedback7", alt: "Тип пирожного"},
-{img: "feedback8", alt: "Тип пирожного"},
-{img: "feedback9", alt: "Тип пирожного"},
-{img: "feedback10", alt: "Тип пирожного"},
-{img: "feedback11", alt: "Тип пирожного"}
+{img: "feedback1", alt: "Отзыв о пирожных: первый раз пробовала такую вкуснятину. Даже сфотографировать не успела, сразу
+все съели."},
+{img: "feedback2", alt: "Отзыв о пирожных: все остались просто в восторге, даже те кто сам их профессионально
+готовит."},
+{img: "feedback3", alt: "Отзыв о пирожных: спасибо большое за вкуснятику."},
+{img: "feedback4", alt: "Отзыв об успехах ученика, на фото хорошие макарон и подпись: спасибо, кажется уже лучше."},
+{img: "feedback5", alt: "Отзыв об успехах ученика, на фото хорошие макарон и подпись: спасибо Леночка за
+мастер-класс."},
+{img: "feedback6", alt: "Успех ученика: на фото хорошие крышечки макарон с начинкой."},
+{img: "feedback7", alt: "Успех ученика: на фото хорошие начинки, которые получились после обучения."},
+{img: "feedback8", alt: "Успех ученика: на фото хорошие крышечки макарон, после попыток подобрать хорошую температуру
+духовки."},
+{img: "feedback9", alt: "Отзыв об успехов ученика: первый раз готовила макарон на мастер-классе, и посмотрите какая
+красота сразу получилась."},
+{img: "feedback10", alt: "Отзыв об успехов ученика: спасибо тебе большое, твой мастер класс был замечательным, теперь и
+я влюблена в макарон."},
+{img: "feedback11", alt: "Фото Елены, зимой, с коробочкой макарон разных вкусов и цветов."}
 ]%}
 {% set sliderOfferEskimo = [
-{img: "eskimo1", alt: "Тип пирожного"},
-{img: "eskimo2", alt: "Тип пирожного"},
-{img: "eskimo3", alt: "Тип пирожного"},
-{img: "eskimo4", alt: "Тип пирожного"}
+{img: "eskimo1", alt: "Чизкейк-эскимо: в розовой глазури, украшен розами."},
+{img: "eskimo2", alt: "Чизкейк-эскимо: в чёрной глазури, украшен золотой крошлой и белым шоколадом."},
+{img: "eskimo4", alt: "Чизкейк-эскимо: в фисташковой глазури, украшен фисташками и клубникой."},
+{img: "eskimo5", alt: "Чизкейк-эскимо: в белом шоколаде, украшен золотой крошкой."},
+{img: "eskimo6", alt: "Чизкейк-эскимо в разрезе, с банановым вкусом."},
+{img: "eskimo7", alt: "Чизкейк-эскимо в разрезе, с малиновым вкусом."},
+{img: "eskimo8", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
+{img: "eskimo9", alt: "Понарамное фото чизкейк-эскимо в наборе."},
+{img: "eskimo10", alt: "Набор из 6 штук чизкейк-эскимо, шоколадные и смородиновые."}
 ]%}
 
 {% macro imageSvg(name, class, width, height) %}
@@ -84,14 +95,26 @@
   <div class="container">
     <div class="header">
       <div class="header__logo logo">
-        {{ imageJpg('logo__picture', 'logo', 'logo__img', 'Логотип. Пирожное макарон от Елены.', '150', '150') }}
-        <div class="logo__text">macaron_by_elena</div>
+        <a href="https://www.instagram.com/macaron_by_elena" class="logo__link" aria-label="instagram">
+          {{ imageJpg('logo__picture', 'logo', 'logo__img', 'Логотип. Пирожное макарон от Елены.', '150', '150') }}
+          <div class="logo__text">macaron_by_elena</div>
+        </a>
       </div>
       <div class="header__title">
         <h1 class="header__head">Пирожные Макарон</h1>
         <p class="header__text">изысканный французский десерт - легко и просто</p>
       </div>
     </div>
+    <nav class="hidden-text header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#question">Что многие думают - когда речь идёт о макарон</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="#want">Что нужно чтобы научиться их готовить</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about">Немного обо мне и о макарон</a></li>
+        <li class="nav__item"><a class="nav__link" href="#offer">Предлогаю купить мой рецепт приготовления</a></li>
+        <li class="nav__item"><a class="nav__link" href="#feedback">Отзывы из инстаграмм</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
@@ -99,7 +122,7 @@
 
   <section class="question-wrap">
     <div class="container">
-      <div class="question">
+      <div class="question" id="question">
         <div class="question__title title-section">
           <h2 class="title-section__head title-section__head--blue">Проверь себя</h2>
           <p class="title-section__text">Что ты знаешь о макарон?</p>
@@ -133,7 +156,7 @@
 
   <section class="want-wrap">
     <div class="container">
-      <div class="want">
+      <div class="want" id="want">
         <div class="want__title title-section">
           <h2 class="title-section__head title-section__head--red">Хочешь научиться их готовить?</h2>
           <p class="title-section__text">для этого нужно - "всего ничего"</p>
@@ -181,7 +204,7 @@
 
   <section class="about-wrap">
     <div class="container">
-      <div class="about">
+      <div class="about" id="about">
         <div class="about__title title-section">
           <h2 class="title-section__head title-section__head--blue">Познакомимся?</h2>
           <p class="title-section__text">Как я пришла к макарон!</p>
@@ -191,7 +214,7 @@
           рассказать о
           себе', '300', '300') }}
           <p class="about__text about__text1">
-            Однажды на открытии французского магазина <span class="about__text--loccitane">L’Occitane</span> ,
+            Однажды на открытии французского магазина <span class="about__text--loccitane">L’Occitane</span>,
             нас угощали пирожными Макарон. Никогда в
             жизни я не пробовала такого вкуснейшего нежного десерта. После этого я начала искать и искать хотябы что-то
             подобное. Но к сожалению ни в одном магазине такое не купишь. Только в хороших дорогих кофейнях можно найти
@@ -218,7 +241,7 @@
 
   <section class="offer-wrap">
     <div class="container">
-      <div class="offer">
+      <div class="offer" id="offer">
         <div class="offer__title title-section">
           <h2 class="title-section__head title-section__head--blue">Моё предложение</h2>
           <p class="title-section__text">точнее - их даже два</p>
@@ -234,11 +257,10 @@
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--cover">
                   <li class="offer-item__item">Подробное описание приготовления крышечек на итальянской меренге, с
-                    пониженным содержанием сахара
+                    пониженным содержанием сахара.
                   </li>
-                  <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины</li>
-                  <li class="offer-item__item">Руководство по росписи и рисункам на макарон</li>
-                  <li class="offer-item__item">Инструкция по созданию трафаретов</li>
+                  <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины.</li>
+                  <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
                   <li class="offer-item__item">
                     <ul class="slider-offer slider-offer-cover1">
                       {% for item in sliderOfferCover %}
@@ -260,15 +282,16 @@
                 <button type="button" class="offer-item__btn"
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--cream">
-                  <li class="offer-item__item">Классический ванильный ганаш</li>
-                  <li class="offer-item__item">Шоколадный ганаш</li>
-                  <li class="offer-item__item">Фруктовый ягодный ганаш</li>
-                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде и варианты ароматизации фисташками,
+                  <li class="offer-item__item">Классический ванильный ганаш.</li>
+                  <li class="offer-item__item">Шоколадный ганаш.</li>
+                  <li class="offer-item__item">Фруктовый ягодный ганаш.</li>
+                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде.</li>
+                  <li class="offer-item__item">"Пряничное латте".</li>
+                  <li class="offer-item__item">"Вишня в шоколаде".</li>
+                  <li class="offer-item__item">Ганаш "Сникерс с карамелью"</li>
+                  <li class="offer-item__item">Варианты ароматизации: фисташками,
                     кокосом,
                     мятой.</li>
-                  <li class="offer-item__item">Пряничное латте</li>
-                  <li class="offer-item__item">Вишня в шоколаде</li>
-                  <li class="offer-item__item">Начинка Сникерс и Карамельная</li>
                   <li class="offer-item__item">
                     <ul class="slider-offer slider-offer-cream1">
                       {% for item in sliderOfferCream %}
@@ -288,8 +311,8 @@
                 <button type="button" class="offer-item__btn"
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--video">
-                  <li class="offer-item__item">Круглых макарон и фигурных макарон</li>
-                  <li class="offer-item__item">Роспись на макарон</li>
+                  <li class="offer-item__item">Приготовление круглых макарон и фигурных макарон.</li>
+                  <li class="offer-item__item">Роспись на макарон.</li>
                   <li class="offer-item__item">Видео приготовления начинок</li>
                   <li class="offer-item__item offer-item__item--link">
                     <a href="#" class="offer-item__link">
@@ -308,8 +331,8 @@
                 <button type="button" class="offer-item__btn"
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--video">
-                  <li class="offer-item__item">Файл PDF с рецептом приготовления эскимо-чизкейк</li>
-                  <li class="offer-item__item">Видео процесса приготовления</li>
+                  <li class="offer-item__item">Файл PDF с рецептом приготовления эскимо-чизкейк.</li>
+                  <li class="offer-item__item">Видео процесса приготовления.</li>
                   <li class="offer-item__item">
                     <ul class="slider-offer slider-offer-eskimo">
                       {% for item in sliderOfferEskimo %}
@@ -352,11 +375,10 @@
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--cover">
                   <li class="offer-item__item">Подробное описание приготовления крышечек на итальянской меренге, с
-                    пониженным содержанием сахара
+                    пониженным содержанием сахара.
                   </li>
-                  <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины</li>
-                  <li class="offer-item__item">Руководство по росписи и рисункам на макарон</li>
-                  <li class="offer-item__item">Инструкция по созданию трафаретов</li>
+                  <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины.</li>
+                  <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
                   <li class="offer-item__item">
                     <ul class="slider-offer slider-offer-cover2">
                       {% for item in sliderOfferCover %}
@@ -378,15 +400,16 @@
                 <button type="button" class="offer-item__btn"
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--cream">
-                  <li class="offer-item__item">Классический ванильный ганаш</li>
-                  <li class="offer-item__item">Шоколадный ганаш</li>
-                  <li class="offer-item__item">Фруктовый ягодный ганаш</li>
-                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде и варианты ароматизации фисташками,
+                  <li class="offer-item__item">Классический ванильный ганаш.</li>
+                  <li class="offer-item__item">Шоколадный ганаш.</li>
+                  <li class="offer-item__item">Фруктовый ягодный ганаш.</li>
+                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде.</li>
+                  <li class="offer-item__item">"Пряничное латте".</li>
+                  <li class="offer-item__item">"Вишня в шоколаде".</li>
+                  <li class="offer-item__item">Ганаш "Сникерс с карамелью"</li>
+                  <li class="offer-item__item">Варианты ароматизации: фисташками,
                     кокосом,
                     мятой.</li>
-                  <li class="offer-item__item">Пряничное латте</li>
-                  <li class="offer-item__item">Вишня в шоколаде</li>
-                  <li class="offer-item__item">Начинка Сникерс и Карамельная</li>
                   <li class="offer-item__item">
                     <ul class="slider-offer slider-offer-cream2">
                       {% for item in sliderOfferCream %}
@@ -406,9 +429,9 @@
                 <button type="button" class="offer-item__btn"
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--video">
-                  <li class="offer-item__item">Круглых макарон и фигурных макарон</li>
-                  <li class="offer-item__item">Роспись на макарон</li>
-                  <li class="offer-item__item">Видео приготовления начинок</li>
+                  <li class="offer-item__item">Круглых макарон и фигурных макарон.</li>
+                  <li class="offer-item__item">Роспись на макарон.</li>
+                  <li class="offer-item__item">Видео приготовления начинок.</li>
                   <li class="offer-item__item offer-item__item--link">
                     <a href="#" class="offer-item__link">
                       <picture class="offer-item__picture">
@@ -427,7 +450,7 @@
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <div class="offer-item__list">
                   <div class="offer-item__item">Просто отправлю вам рецепты, инструкции и ссылки
-                    на видео
+                    на видео.
                   </div>
                   <div class="offer-item__item offer-item__item--last-wo">
                     {{ imageSvg('mail', 'svg', '200', '150') }}
@@ -442,7 +465,7 @@
             <p class="offer__text">Связаться со мной можно любым удобным для вас способом.</p>
             <ul class="offer__social social">
               <li class="social__item">
-                <a href="https://t.me/aleksprowork" class="social__link" aria-label="Ссылка на telegram.">
+                <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Ссылка на telegram.">
                   {{ imageSvg('telegram', 'svg', '55', '55') }}
                 </a>
               </li>
@@ -469,7 +492,7 @@
 
   <section class="feedback-wrap">
     <div class="container">
-      <div class="feedback">
+      <div class="feedback" id="feedback">
         <div class="feedback__title title-section">
           <h2 class="title-section__head title-section__head--reviews">Well of reviews</h2>
         </div>
@@ -494,7 +517,7 @@
     <div class="footer">
       <ul class="footer__social social">
         <li class="social__item">
-          <a href="https://t.me/aleksprowork" class="social__link" aria-label="telegram">
+          <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="telegram">
             {{ imageSvg('telegram', 'svg', '55', '55') }}
           </a>
         </li>

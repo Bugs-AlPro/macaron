@@ -7,8 +7,23 @@ $screen-lg: 992px;
 $screen-xl: 1200px;
 $screen-xxl: 1400px;
 
-// base color 
-$color:  #172931;
+:root {
+  --title-blue: hsl(203, 18%, 50%);
+  --title-red: hsl(355, 25%, 50%);
+  --title-gray: hsl(0, 0%, 40%);
+
+  --text-gray: hsl(0, 0%, 30%);
+  --text-darkgray: hsl(0, 0%, 30%);
+  --text-green: rgb(66, 136, 66);
+
+  --back-lightblue: rgba(163, 202, 224, 0.2);
+  --back-lightred: hsl(356, 50%, 88%);
+  --back-green: rgb(152, 204, 152);
+  
+  --hover-bluedark: hsl(203, 25%, 57%);
+  
+}
+
 
 
 

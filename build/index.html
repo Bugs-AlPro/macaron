@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords"
     content="пирожные, макаронс, обучение макаронс, macarons, как приготовить макаронс, макарунс, macaron_by_elena">
-  <meta name="description" content="Обучаю приготовлению вкуснейшего десерта - Макарон">
+  <meta name="description"
+    content="Обучаю приготовлению вкуснейшего десерта - Макарон. Даже если вы не кондитер - обязательно попробуйте себя в этой роли! Не пожалеете!">
   <title>Macaron</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -19,19 +20,31 @@
   <div class="container">
     <div class="header">
       <div class="header__logo logo">
-        
+        <a href="https://www.instagram.com/macaron_by_elena" class="logo__link" aria-label="instagram">
+          
 <picture class="logo__picture">
   <source srcset="img/logo.webp" type="image/webp">
   <img src="img/logo.jpg" alt="Логотип. Пирожное макарон от Елены." class="logo__img" width="150" height="150">
 </picture>
 
-        <div class="logo__text">macaron_by_elena</div>
+          <div class="logo__text">macaron_by_elena</div>
+        </a>
       </div>
       <div class="header__title">
         <h1 class="header__head">Пирожные Макарон</h1>
         <p class="header__text">изысканный французский десерт - легко и просто</p>
       </div>
     </div>
+    <nav class="hidden-text header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#question">Что многие думают - когда речь идёт о макарон</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="#want">Что нужно чтобы научиться их готовить</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about">Немного обо мне и о макарон</a></li>
+        <li class="nav__item"><a class="nav__link" href="#offer">Предлогаю купить мой рецепт приготовления</a></li>
+        <li class="nav__item"><a class="nav__link" href="#feedback">Отзывы из инстаграмм</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
@@ -39,7 +52,7 @@
 
   <section class="question-wrap">
     <div class="container">
-      <div class="question">
+      <div class="question" id="question">
         <div class="question__title title-section">
           <h2 class="title-section__head title-section__head--blue">Проверь себя</h2>
           <p class="title-section__text">Что ты знаешь о макарон?</p>
@@ -73,7 +86,7 @@
 
   <section class="want-wrap">
     <div class="container">
-      <div class="want">
+      <div class="want" id="want">
         <div class="want__title title-section">
           <h2 class="title-section__head title-section__head--red">Хочешь научиться их готовить?</h2>
           <p class="title-section__text">для этого нужно - "всего ничего"</p>
@@ -157,7 +170,7 @@
 
   <section class="about-wrap">
     <div class="container">
-      <div class="about">
+      <div class="about" id="about">
         <div class="about__title title-section">
           <h2 class="title-section__head title-section__head--blue">Познакомимся?</h2>
           <p class="title-section__text">Как я пришла к макарон!</p>
@@ -172,7 +185,7 @@
 </picture>
 
           <p class="about__text about__text1">
-            Однажды на открытии французского магазина <span class="about__text--loccitane">L’Occitane</span> ,
+            Однажды на открытии французского магазина <span class="about__text--loccitane">L’Occitane</span>,
             нас угощали пирожными Макарон. Никогда в
             жизни я не пробовала такого вкуснейшего нежного десерта. После этого я начала искать и искать хотябы что-то
             подобное. Но к сожалению ни в одном магазине такое не купишь. Только в хороших дорогих кофейнях можно найти
@@ -204,7 +217,7 @@
 
   <section class="offer-wrap">
     <div class="container">
-      <div class="offer">
+      <div class="offer" id="offer">
         <div class="offer__title title-section">
           <h2 class="title-section__head title-section__head--blue">Моё предложение</h2>
           <p class="title-section__text">точнее - их даже два</p>
@@ -220,109 +233,108 @@
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--cover">
                   <li class="offer-item__item">Подробное описание приготовления крышечек на итальянской меренге, с
-                    пониженным содержанием сахара
+                    пониженным содержанием сахара.
                   </li>
-                  <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины</li>
-                  <li class="offer-item__item">Руководство по росписи и рисункам на макарон</li>
-                  <li class="offer-item__item">Инструкция по созданию трафаретов</li>
+                  <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины.</li>
+                  <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
                   <li class="offer-item__item">
                     <ul class="slider-offer slider-offer-cover1">
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover1.webp" type="image/webp">
-                          <img src="img/cover1.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover1.jpg" alt="Пирожные макарон: красного и белого цвета с рисуночками." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover2.webp" type="image/webp">
-                          <img src="img/cover2.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover2.jpg" alt="Пирожные макарон: сиреневого цвета со вкусом смородины, на фоне лаванды." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover3.webp" type="image/webp">
-                          <img src="img/cover3.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover3.jpg" alt="Пирожные макарон: белого и сереневого цвета, на фоне синих цветов." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover4.webp" type="image/webp">
-                          <img src="img/cover4.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover4.jpg" alt="Разноцветыне крышечки пирожных макарон." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover5.webp" type="image/webp">
-                          <img src="img/cover5.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover5.jpg" alt="Роспись на макарон. Надпись: самой, лучше, подруге." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover6.webp" type="image/webp">
-                          <img src="img/cover6.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover6.jpg" alt="Пирожные макарон: разной формы, весёлые, расскарашенные для детей." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover7.webp" type="image/webp">
-                          <img src="img/cover7.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover7.jpg" alt="Пирожные макарон в форме цветочка, ромашки." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover8.webp" type="image/webp">
-                          <img src="img/cover8.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover8.jpg" alt="Пирожные макарон: разрисованные и разной формы для зимней тематики," class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover9.webp" type="image/webp">
-                          <img src="img/cover9.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover9.jpg" alt="Пирожные макарон: для тетей, в форме уточки на палочке." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover10.webp" type="image/webp">
-                          <img src="img/cover10.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover10.jpg" alt="Пирожные макарон: белого и нежно-голубого цвета разукрашенного в тематику - Париж." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover11.webp" type="image/webp">
-                          <img src="img/cover11.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover11.jpg" alt="Торт из пирожн макарон." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover12.webp" type="image/webp">
-                          <img src="img/cover12.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover12.jpg" alt="Набор пирожн макарон: разной формы, разных цветов, разных начинок." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover13.webp" type="image/webp">
-                          <img src="img/cover13.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover13.jpg" alt="Набор пирожных макарон в постельных тонах." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover14.webp" type="image/webp">
-                          <img src="img/cover14.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover14.jpg" alt="Пирожные макарон в форме микимауса." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
@@ -337,78 +349,79 @@
                 <button type="button" class="offer-item__btn"
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--cream">
-                  <li class="offer-item__item">Классический ванильный ганаш</li>
-                  <li class="offer-item__item">Шоколадный ганаш</li>
-                  <li class="offer-item__item">Фруктовый ягодный ганаш</li>
-                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде и варианты ароматизации фисташками,
+                  <li class="offer-item__item">Классический ванильный ганаш.</li>
+                  <li class="offer-item__item">Шоколадный ганаш.</li>
+                  <li class="offer-item__item">Фруктовый ягодный ганаш.</li>
+                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде.</li>
+                  <li class="offer-item__item">"Пряничное латте".</li>
+                  <li class="offer-item__item">"Вишня в шоколаде".</li>
+                  <li class="offer-item__item">Ганаш "Сникерс с карамелью"</li>
+                  <li class="offer-item__item">Варианты ароматизации: фисташками,
                     кокосом,
                     мятой.</li>
-                  <li class="offer-item__item">Пряничное латте</li>
-                  <li class="offer-item__item">Вишня в шоколаде</li>
-                  <li class="offer-item__item">Начинка Сникерс и Карамельная</li>
                   <li class="offer-item__item">
                     <ul class="slider-offer slider-offer-cream1">
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream1.webp" type="image/webp">
-                          <img src="img/cream1.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream1.jpg" alt="Начинка для макарон: классический ганаш с малиной, сникерс с орехом." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream2.webp" type="image/webp">
-                          <img src="img/cream2.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream2.jpg" alt="Начинка для макарон: классический ганаш с клубникой." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream3.webp" type="image/webp">
-                          <img src="img/cream3.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream3.jpg" alt="Начинка для макарон: вид в разрезе, ванильный ганаш с вишней." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream4.webp" type="image/webp">
-                          <img src="img/cream4.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream4.jpg" alt="Начинка для макарон: классический ганаш со вкусом манго и шоколадный." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream5.webp" type="image/webp">
-                          <img src="img/cream5.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream5.jpg" alt="Начинка для макарон: классический ганаш со смородиной, кокосом, манго." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream6.webp" type="image/webp">
-                          <img src="img/cream6.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream6.jpg" alt="Коробочка с готовыми макарон и чизкейками." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream7.webp" type="image/webp">
-                          <img src="img/cream7.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream7.jpg" alt="Готовые макарон, разных вкусов, на красивой многоярусной подставке." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream8.webp" type="image/webp">
-                          <img src="img/cream8.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream8.jpg" alt="Розовые макарон, на фоне лепестков роз. Вид в разрезе вкус манго и смородина." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream9.webp" type="image/webp">
-                          <img src="img/cream9.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream9.jpg" alt="Сиреневые макарон с мятной начинкой, на фоне синих цветов." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
@@ -421,8 +434,8 @@
                 <button type="button" class="offer-item__btn"
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--video">
-                  <li class="offer-item__item">Круглых макарон и фигурных макарон</li>
-                  <li class="offer-item__item">Роспись на макарон</li>
+                  <li class="offer-item__item">Приготовление круглых макарон и фигурных макарон.</li>
+                  <li class="offer-item__item">Роспись на макарон.</li>
                   <li class="offer-item__item">Видео приготовления начинок</li>
                   <li class="offer-item__item offer-item__item--link">
                     <a href="#" class="offer-item__link">
@@ -441,36 +454,71 @@
                 <button type="button" class="offer-item__btn"
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--video">
-                  <li class="offer-item__item">Файл PDF с рецептом приготовления эскимо-чизкейк</li>
-                  <li class="offer-item__item">Видео процесса приготовления</li>
+                  <li class="offer-item__item">Файл PDF с рецептом приготовления эскимо-чизкейк.</li>
+                  <li class="offer-item__item">Видео процесса приготовления.</li>
                   <li class="offer-item__item">
                     <ul class="slider-offer slider-offer-eskimo">
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/eskimo1.webp" type="image/webp">
-                          <img src="img/eskimo1.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/eskimo1.jpg" alt="Чизкейк-эскимо: в розовой глазури, украшен розами." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/eskimo2.webp" type="image/webp">
-                          <img src="img/eskimo2.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
-                        </picture>
-                      </li>
-                      
-                      <li class="slider-offer__item">
-                        <picture class="slider-offer__picture">
-                          <source srcset="img/eskimo3.webp" type="image/webp">
-                          <img src="img/eskimo3.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/eskimo2.jpg" alt="Чизкейк-эскимо: в чёрной глазури, украшен золотой крошлой и белым шоколадом." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/eskimo4.webp" type="image/webp">
-                          <img src="img/eskimo4.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/eskimo4.jpg" alt="Чизкейк-эскимо: в фисташковой глазури, украшен фисташками и клубникой." class="slider-offer__img" height="200">
+                        </picture>
+                      </li>
+                      
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/eskimo5.webp" type="image/webp">
+                          <img src="img/eskimo5.jpg" alt="Чизкейк-эскимо: в белом шоколаде, украшен золотой крошкой." class="slider-offer__img" height="200">
+                        </picture>
+                      </li>
+                      
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/eskimo6.webp" type="image/webp">
+                          <img src="img/eskimo6.jpg" alt="Чизкейк-эскимо в разрезе, с банановым вкусом." class="slider-offer__img" height="200">
+                        </picture>
+                      </li>
+                      
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/eskimo7.webp" type="image/webp">
+                          <img src="img/eskimo7.jpg" alt="Чизкейк-эскимо в разрезе, с малиновым вкусом." class="slider-offer__img" height="200">
+                        </picture>
+                      </li>
+                      
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/eskimo8.webp" type="image/webp">
+                          <img src="img/eskimo8.jpg" alt="Набор из 8 штук чизкейк-эскимо в коробке." class="slider-offer__img" height="200">
+                        </picture>
+                      </li>
+                      
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/eskimo9.webp" type="image/webp">
+                          <img src="img/eskimo9.jpg" alt="Понарамное фото чизкейк-эскимо в наборе." class="slider-offer__img" height="200">
+                        </picture>
+                      </li>
+                      
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/eskimo10.webp" type="image/webp">
+                          <img src="img/eskimo10.jpg" alt="Набор из 6 штук чизкейк-эскимо, шоколадные и смородиновые." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
@@ -511,109 +559,108 @@
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--cover">
                   <li class="offer-item__item">Подробное описание приготовления крышечек на итальянской меренге, с
-                    пониженным содержанием сахара
+                    пониженным содержанием сахара.
                   </li>
-                  <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины</li>
-                  <li class="offer-item__item">Руководство по росписи и рисункам на макарон</li>
-                  <li class="offer-item__item">Инструкция по созданию трафаретов</li>
+                  <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины.</li>
+                  <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
                   <li class="offer-item__item">
                     <ul class="slider-offer slider-offer-cover2">
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover1.webp" type="image/webp">
-                          <img src="img/cover1.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover1.jpg" alt="Пирожные макарон: красного и белого цвета с рисуночками." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover2.webp" type="image/webp">
-                          <img src="img/cover2.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover2.jpg" alt="Пирожные макарон: сиреневого цвета со вкусом смородины, на фоне лаванды." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover3.webp" type="image/webp">
-                          <img src="img/cover3.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover3.jpg" alt="Пирожные макарон: белого и сереневого цвета, на фоне синих цветов." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover4.webp" type="image/webp">
-                          <img src="img/cover4.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover4.jpg" alt="Разноцветыне крышечки пирожных макарон." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover5.webp" type="image/webp">
-                          <img src="img/cover5.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover5.jpg" alt="Роспись на макарон. Надпись: самой, лучше, подруге." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover6.webp" type="image/webp">
-                          <img src="img/cover6.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover6.jpg" alt="Пирожные макарон: разной формы, весёлые, расскарашенные для детей." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover7.webp" type="image/webp">
-                          <img src="img/cover7.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover7.jpg" alt="Пирожные макарон в форме цветочка, ромашки." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover8.webp" type="image/webp">
-                          <img src="img/cover8.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover8.jpg" alt="Пирожные макарон: разрисованные и разной формы для зимней тематики," class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover9.webp" type="image/webp">
-                          <img src="img/cover9.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover9.jpg" alt="Пирожные макарон: для тетей, в форме уточки на палочке." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover10.webp" type="image/webp">
-                          <img src="img/cover10.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover10.jpg" alt="Пирожные макарон: белого и нежно-голубого цвета разукрашенного в тематику - Париж." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover11.webp" type="image/webp">
-                          <img src="img/cover11.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover11.jpg" alt="Торт из пирожн макарон." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover12.webp" type="image/webp">
-                          <img src="img/cover12.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover12.jpg" alt="Набор пирожн макарон: разной формы, разных цветов, разных начинок." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover13.webp" type="image/webp">
-                          <img src="img/cover13.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover13.jpg" alt="Набор пирожных макарон в постельных тонах." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cover14.webp" type="image/webp">
-                          <img src="img/cover14.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cover14.jpg" alt="Пирожные макарон в форме микимауса." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
@@ -628,78 +675,79 @@
                 <button type="button" class="offer-item__btn"
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--cream">
-                  <li class="offer-item__item">Классический ванильный ганаш</li>
-                  <li class="offer-item__item">Шоколадный ганаш</li>
-                  <li class="offer-item__item">Фруктовый ягодный ганаш</li>
-                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде и варианты ароматизации фисташками,
+                  <li class="offer-item__item">Классический ванильный ганаш.</li>
+                  <li class="offer-item__item">Шоколадный ганаш.</li>
+                  <li class="offer-item__item">Фруктовый ягодный ганаш.</li>
+                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде.</li>
+                  <li class="offer-item__item">"Пряничное латте".</li>
+                  <li class="offer-item__item">"Вишня в шоколаде".</li>
+                  <li class="offer-item__item">Ганаш "Сникерс с карамелью"</li>
+                  <li class="offer-item__item">Варианты ароматизации: фисташками,
                     кокосом,
                     мятой.</li>
-                  <li class="offer-item__item">Пряничное латте</li>
-                  <li class="offer-item__item">Вишня в шоколаде</li>
-                  <li class="offer-item__item">Начинка Сникерс и Карамельная</li>
                   <li class="offer-item__item">
                     <ul class="slider-offer slider-offer-cream2">
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream1.webp" type="image/webp">
-                          <img src="img/cream1.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream1.jpg" alt="Начинка для макарон: классический ганаш с малиной, сникерс с орехом." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream2.webp" type="image/webp">
-                          <img src="img/cream2.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream2.jpg" alt="Начинка для макарон: классический ганаш с клубникой." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream3.webp" type="image/webp">
-                          <img src="img/cream3.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream3.jpg" alt="Начинка для макарон: вид в разрезе, ванильный ганаш с вишней." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream4.webp" type="image/webp">
-                          <img src="img/cream4.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream4.jpg" alt="Начинка для макарон: классический ганаш со вкусом манго и шоколадный." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream5.webp" type="image/webp">
-                          <img src="img/cream5.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream5.jpg" alt="Начинка для макарон: классический ганаш со смородиной, кокосом, манго." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream6.webp" type="image/webp">
-                          <img src="img/cream6.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream6.jpg" alt="Коробочка с готовыми макарон и чизкейками." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream7.webp" type="image/webp">
-                          <img src="img/cream7.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream7.jpg" alt="Готовые макарон, разных вкусов, на красивой многоярусной подставке." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream8.webp" type="image/webp">
-                          <img src="img/cream8.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream8.jpg" alt="Розовые макарон, на фоне лепестков роз. Вид в разрезе вкус манго и смородина." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
                       <li class="slider-offer__item">
                         <picture class="slider-offer__picture">
                           <source srcset="img/cream9.webp" type="image/webp">
-                          <img src="img/cream9.jpg" alt="Тип пирожного" class="slider-offer__img" height="200">
+                          <img src="img/cream9.jpg" alt="Сиреневые макарон с мятной начинкой, на фоне синих цветов." class="slider-offer__img" height="200">
                         </picture>
                       </li>
                       
@@ -712,9 +760,9 @@
                 <button type="button" class="offer-item__btn"
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <ul class="offer-item__list offer-item__list--video">
-                  <li class="offer-item__item">Круглых макарон и фигурных макарон</li>
-                  <li class="offer-item__item">Роспись на макарон</li>
-                  <li class="offer-item__item">Видео приготовления начинок</li>
+                  <li class="offer-item__item">Круглых макарон и фигурных макарон.</li>
+                  <li class="offer-item__item">Роспись на макарон.</li>
+                  <li class="offer-item__item">Видео приготовления начинок.</li>
                   <li class="offer-item__item offer-item__item--link">
                     <a href="#" class="offer-item__link">
                       <picture class="offer-item__picture">
@@ -733,7 +781,7 @@
                   aria-label="Показать (скрыть) список того, что в это входит"></button>
                 <div class="offer-item__list">
                   <div class="offer-item__item">Просто отправлю вам рецепты, инструкции и ссылки
-                    на видео
+                    на видео.
                   </div>
                   <div class="offer-item__item offer-item__item--last-wo">
                     
@@ -752,7 +800,7 @@
             <p class="offer__text">Связаться со мной можно любым удобным для вас способом.</p>
             <ul class="offer__social social">
               <li class="social__item">
-                <a href="https://t.me/aleksprowork" class="social__link" aria-label="Ссылка на telegram.">
+                <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Ссылка на telegram.">
                   
 <svg class="svg" width="55" height="55">
   <use xlink:href='img/svg/sprite-black.svg#telegram'></use>
@@ -791,7 +839,7 @@
 
   <section class="feedback-wrap">
     <div class="container">
-      <div class="feedback">
+      <div class="feedback" id="feedback">
         <div class="feedback__title title-section">
           <h2 class="title-section__head title-section__head--reviews">Well of reviews</h2>
         </div>
@@ -800,77 +848,83 @@
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback1.webp" type="image/webp">
-              <img src="img/feedback1.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback1.jpg" alt="Отзыв о пирожных: первый раз пробовала такую вкуснятину. Даже сфотографировать не успела, сразу
+все съели." class="feedback-slider__img">
             </picture>
           </li>
           
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback2.webp" type="image/webp">
-              <img src="img/feedback2.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback2.jpg" alt="Отзыв о пирожных: все остались просто в восторге, даже те кто сам их профессионально
+готовит." class="feedback-slider__img">
             </picture>
           </li>
           
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback3.webp" type="image/webp">
-              <img src="img/feedback3.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback3.jpg" alt="Отзыв о пирожных: спасибо большое за вкуснятику." class="feedback-slider__img">
             </picture>
           </li>
           
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback4.webp" type="image/webp">
-              <img src="img/feedback4.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback4.jpg" alt="Отзыв об успехах ученика, на фото хорошие макарон и подпись: спасибо, кажется уже лучше." class="feedback-slider__img">
             </picture>
           </li>
           
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback5.webp" type="image/webp">
-              <img src="img/feedback5.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback5.jpg" alt="Отзыв об успехах ученика, на фото хорошие макарон и подпись: спасибо Леночка за
+мастер-класс." class="feedback-slider__img">
             </picture>
           </li>
           
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback6.webp" type="image/webp">
-              <img src="img/feedback6.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback6.jpg" alt="Успех ученика: на фото хорошие крышечки макарон с начинкой." class="feedback-slider__img">
             </picture>
           </li>
           
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback7.webp" type="image/webp">
-              <img src="img/feedback7.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback7.jpg" alt="Успех ученика: на фото хорошие начинки, которые получились после обучения." class="feedback-slider__img">
             </picture>
           </li>
           
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback8.webp" type="image/webp">
-              <img src="img/feedback8.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback8.jpg" alt="Успех ученика: на фото хорошие крышечки макарон, после попыток подобрать хорошую температуру
+духовки." class="feedback-slider__img">
             </picture>
           </li>
           
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback9.webp" type="image/webp">
-              <img src="img/feedback9.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback9.jpg" alt="Отзыв об успехов ученика: первый раз готовила макарон на мастер-классе, и посмотрите какая
+красота сразу получилась." class="feedback-slider__img">
             </picture>
           </li>
           
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback10.webp" type="image/webp">
-              <img src="img/feedback10.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback10.jpg" alt="Отзыв об успехов ученика: спасибо тебе большое, твой мастер класс был замечательным, теперь и
+я влюблена в макарон." class="feedback-slider__img">
             </picture>
           </li>
           
           <li class="feedback-slider__item">
             <picture class="feedback-slider__picture">
               <source srcset="img/feedback11.webp" type="image/webp">
-              <img src="img/feedback11.jpg" alt="Тип пирожного" class="feedback-slider__img">
+              <img src="img/feedback11.jpg" alt="Фото Елены, зимой, с коробочкой макарон разных вкусов и цветов." class="feedback-slider__img">
             </picture>
           </li>
           
@@ -886,7 +940,7 @@
     <div class="footer">
       <ul class="footer__social social">
         <li class="social__item">
-          <a href="https://t.me/aleksprowork" class="social__link" aria-label="telegram">
+          <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="telegram">
             
 <svg class="svg" width="55" height="55">
   <use xlink:href='img/svg/sprite-black.svg#telegram'></use>
