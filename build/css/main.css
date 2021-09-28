@@ -332,28 +332,6 @@ ul, li, p {
     --social-link: hsl(0, 0%, 40%);
     --social-hover: hsl(203, 34%, 48%);
   }
-  .offer__body {
-    position: relative;
-  }
-  .offer__topic {
-    font-size: 1em;
-    padding: 10px;
-    font-weight: 600;
-    color: var(--text-gray);
-    box-shadow: 0 0 10px 1px var(--title-gray);
-    border: 2px solid white;
-    border-radius: 20px;
-    max-width: 190px;
-    position: relative;
-    top: 15px;
-    margin-left: 30px;
-    z-index: 2;
-    background-color: var(--back-lightred);
-  }
-  .offer__withme {
-    border-bottom: 2px dashed var(--title-red);
-    margin-bottom: 30px;
-  }
   .offer__list {
     border: 2px solid white;
     box-shadow: 0 0 10px 1px var(--title-gray);
@@ -363,39 +341,6 @@ ul, li, p {
     font-size: 1em;
     color: var(--text-gray);
     font-weight: 500;
-  }
-  .offer__cost {
-    font-size: 2em;
-    font-weight: 600;
-    padding-left: 40px;
-    margin: 20px 0 20px 40px;
-    position: relative;
-    color: var(--text-gray);
-    border-radius: 8px;
-    background-color: whitesmoke;
-    display: inline-block;
-    padding: 5px 10px 5px 50px;
-    border: 2px solid var(--title-blue);
-  }
-  .offer__cost::after, .offer__cost::before {
-    position: absolute;
-    content: "";
-    left: 10px;
-    height: 3px;
-    width: 20px;
-    background-color: currentColor;
-  }
-  .offer__cost::after {
-    top: 33%;
-  }
-  .offer__cost::before {
-    top: 58%;
-  }
-  .offer__contact {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: center;
-    margin-top: 20px;
   }
   .offer__text {
     margin: 20px;
@@ -440,6 +385,13 @@ ul, li, p {
     padding: 4px 5px;
     border-radius: 8px;
     border: 2px solid var(--title-blue);
+  }
+  .offer-item__title--cost {
+    color: var(--title-red);
+    background-color: whitesmoke;
+    border: 2px solid var(--title-red);
+    padding: 5px 10px;
+    border-radius: 8px;
   }
   .offer-item__btn {
     position: relative;
@@ -514,6 +466,17 @@ ul, li, p {
     width: max-content;
     position: relative;
   }
+  .offer-item__subtitle {
+    padding: 5px 10px 10px 20px;
+    margin: 0;
+    font-size: 1.3em;
+    color: var(--text-gray);
+    font-weight: 600;
+  }
+  .offer-item__withoutme {
+    padding-top: 20px;
+    border-top: 2px dashed var(--title-blue);
+  }
   .offer-item__link {
     margin: 0 auto;
     display: block;
@@ -544,6 +507,39 @@ ul, li, p {
   }
   .offer-item__link:hover .offer-item__img, .offer-item__link:focus .offer-item__img {
     box-shadow: 0 0 5px 2px var(--title-red);
+  }
+  .offer-item__cost {
+    font-size: 2em;
+    font-weight: 600;
+    padding-left: 40px;
+    margin: 20px 0 20px 40px;
+    position: relative;
+    color: var(--text-gray);
+    border-radius: 8px;
+    background-color: whitesmoke;
+    display: inline-block;
+    padding: 5px 10px 5px 50px;
+    border: 2px solid var(--title-blue);
+  }
+  .offer-item__cost::after, .offer-item__cost::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    height: 3px;
+    width: 20px;
+    background-color: currentColor;
+  }
+  .offer-item__cost::after {
+    top: 33%;
+  }
+  .offer-item__cost::before {
+    top: 58%;
+  }
+  .offer-item__contact {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .feedback-slider,
@@ -963,51 +959,10 @@ ul, li, p {
     --social-link: hsl(0, 0%, 40%);
     --social-hover: hsl(203, 34%, 48%);
   }
-  .offer__body {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    column-gap: 120px;
-    grid-template-rows: auto auto;
-    justify-content: space-around;
-  }
-  .offer__topic {
-    font-size: 1.5em;
-    padding: 20px;
-    font-weight: 600;
-    color: var(--text-gray);
-  }
   .offer__list {
     border: 2px solid white;
     border-radius: 30px;
     box-shadow: 0 0 10px 1px var(--title-gray);
-  }
-  .offer__cost {
-    font-size: 1.8em;
-    font-weight: 600;
-    padding-left: 40px;
-    margin-left: 40px;
-    margin-top: 20px;
-    position: relative;
-    color: var(--text-gray);
-    border-radius: 8px;
-    background-color: whitesmoke;
-    display: inline-block;
-    padding: 5px 10px 5px 50px;
-    border: 2px solid var(--title-blue);
-  }
-  .offer__cost::after, .offer__cost::before {
-    position: absolute;
-    content: "";
-    left: 10px;
-    height: 3px;
-    width: 20px;
-    background-color: currentColor;
-  }
-  .offer__cost::after {
-    top: 33%;
-  }
-  .offer__cost::before {
-    top: 58%;
   }
   .offer__contact {
     grid-column-start: 1;
@@ -1055,6 +1010,13 @@ ul, li, p {
     padding: 5px 10px;
     border-radius: 8px;
     border: 2px solid var(--title-blue);
+  }
+  .offer-item__title--cost {
+    color: var(--title-red);
+    background-color: whitesmoke;
+    border: 2px solid var(--title-red);
+    padding: 5px 10px;
+    border-radius: 8px;
   }
   .offer-item__btn {
     position: absolute;
@@ -1122,6 +1084,21 @@ ul, li, p {
     width: max-content;
     position: relative;
   }
+  .offer-item__offer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 20px;
+  }
+  .offer-item__withme {
+    border-right: 2px dashed var(--title-blue);
+  }
+  .offer-item__subtitle {
+    padding: 0px 20px 20px 20px;
+    margin: 0;
+    font-size: 1.3em;
+    color: var(--text-gray);
+    font-weight: 600;
+  }
   .offer-item__link {
     margin: 0 auto;
     display: block;
@@ -1152,6 +1129,34 @@ ul, li, p {
   }
   .offer-item__link:hover .offer-item__img, .offer-item__link:focus .offer-item__img {
     box-shadow: 0 0 5px 2px var(--title-red);
+  }
+  .offer-item__cost {
+    font-size: 1.8em;
+    font-weight: 600;
+    padding-left: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    position: relative;
+    color: var(--text-gray);
+    border-radius: 8px;
+    background-color: whitesmoke;
+    display: inline-block;
+    padding: 5px 10px 5px 50px;
+    border: 2px solid var(--title-blue);
+  }
+  .offer-item__cost::after, .offer-item__cost::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    height: 3px;
+    width: 20px;
+    background-color: currentColor;
+  }
+  .offer-item__cost::after {
+    top: 33%;
+  }
+  .offer-item__cost::before {
+    top: 58%;
   }
 
   .feedback-slider,

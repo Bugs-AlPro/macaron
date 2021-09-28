@@ -247,220 +247,138 @@
           <p class="title-section__text">точнее - их даже два</p>
         </div>
         <div class="offer__body">
-          <div class="offer__withme">
-            <div class="offer__topic">Первое предложение<br>с поддержкой в чате</div>
-            <ul class="offer__list">
-              <li class="offer__item offer-item">
-                <h3 class="offer-item__title  offer-item__title--1">Рецепт приготовления крышечек<br>
-                  (файл PDF)</h3>
-                <button type="button" class="offer-item__btn offer-item__btn--1"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <ul class="offer-item__list offer-item__list--cover">
-                  <li class="offer-item__item">Подробное описание приготовления крышечек на итальянской меренге, с
-                    пониженным содержанием сахара.
-                  </li>
-                  <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины.</li>
-                  <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
-                  <li class="offer-item__item">
-                    <ul class="slider-offer slider-offer-cover1">
-                      {% for item in sliderOfferCover %}
-                      <li class="slider-offer__item">
-                        <picture class="slider-offer__picture">
-                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                        </picture>
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="offer__item offer-item">
-                <h3 class="offer-item__title offer-item__title--2">Рецепт приготовления начинок разных вкусов<br>(файл
-                  PDF)
-                </h3>
-                <button type="button" class="offer-item__btn"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <ul class="offer-item__list offer-item__list--cream">
-                  <li class="offer-item__item">Классический ванильный ганаш.</li>
-                  <li class="offer-item__item">Шоколадный ганаш.</li>
-                  <li class="offer-item__item">Фруктовый ягодный ганаш.</li>
-                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде.</li>
-                  <li class="offer-item__item">"Пряничное латте".</li>
-                  <li class="offer-item__item">"Вишня в шоколаде".</li>
-                  <li class="offer-item__item">Ганаш "Сникерс с карамелью"</li>
-                  <li class="offer-item__item">Варианты ароматизации: фисташками,
-                    кокосом,
-                    мятой.</li>
-                  <li class="offer-item__item">
-                    <ul class="slider-offer slider-offer-cream1">
-                      {% for item in sliderOfferCream %}
-                      <li class="slider-offer__item">
-                        <picture class="slider-offer__picture">
-                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                        </picture>
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="offer__item offer-item">
-                <h3 class="offer-item__title offer-item__title--3">Подробная видео инструкция по приготовлению</h3>
-                <button type="button" class="offer-item__btn"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <ul class="offer-item__list offer-item__list--video">
-                  <li class="offer-item__item">Приготовление круглых макарон и фигурных макарон.</li>
-                  <li class="offer-item__item">Роспись на макарон.</li>
-                  <li class="offer-item__item">Видео приготовления начинок</li>
-                  <li class="offer-item__item offer-item__item--link">
-                    <a href="#" class="offer-item__link">
-                      <picture class="offer-item__picture">
-                        <source srcset="img/video-cover.webp" type="image/webp">
-                        <img src="img/video-cover.jpg" alt="Обложка для видео
-                        инструкции. Приглашение." class="offer-item__img">
+          <ul class="offer__list">
+            <li class="offer__item offer-item">
+              <h3 class="offer-item__title  offer-item__title--1">Рецепт приготовления крышечек<br>
+                (файл PDF)</h3>
+              <button type="button" class="offer-item__btn offer-item__btn--1"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <ul class="offer-item__list offer-item__list--cover">
+                <li class="offer-item__item">Подробное описание приготовления крышечек на итальянской меренге, с
+                  пониженным содержанием сахара.
+                </li>
+                <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины.</li>
+                <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
+                <li class="offer-item__item">
+                  <ul class="slider-offer slider-offer-cover1">
+                    {% for item in sliderOfferCover %}
+                    <li class="slider-offer__item">
+                      <picture class="slider-offer__picture">
+                        <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                        <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
                       </picture>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="offer__item offer-item">
-                <h3 class="offer-item__title offer-item__title--3"><span class="offer-item__title--bold">+ Бонус</span>
-                  эскимо-чизкейк</h3>
-                <button type="button" class="offer-item__btn"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <ul class="offer-item__list offer-item__list--video">
-                  <li class="offer-item__item">Файл PDF с рецептом приготовления эскимо-чизкейк.</li>
-                  <li class="offer-item__item">Видео процесса приготовления.</li>
-                  <li class="offer-item__item">
-                    <ul class="slider-offer slider-offer-eskimo">
-                      {% for item in sliderOfferEskimo %}
-                      <li class="slider-offer__item">
-                        <picture class="slider-offer__picture">
-                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                        </picture>
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="offer__item offer-item">
-                <h3 class="offer-item__title offer-item__title--4">Поддержка в течении 2х месяцев в личном телеграмм
-                  чате
-                </h3>
-                <button type="button" class="offer-item__btn"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <div class="offer-item__list">
-                  <div class="offer-item__item">Консультация, ответы на
-                    вопросы, разбор ошибок, помощь в доведении макарон до уровня продаж.</div>
-                  <div class="offer-item__item offer-item__item--last-w">
-                    {{ imageJpg('offer-item__picture', 'help', 'offer-item__img', 'Скриншот чата, где покупатель просит
-                    срочной помощи.', '250', '200') }}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="offer__item offer-item">
+              <h3 class="offer-item__title offer-item__title--2">Рецепт приготовления начинок разных вкусов<br>(файл
+                PDF)
+              </h3>
+              <button type="button" class="offer-item__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <ul class="offer-item__list offer-item__list--cream">
+                <li class="offer-item__item">Классический ванильный ганаш.</li>
+                <li class="offer-item__item">Шоколадный ганаш.</li>
+                <li class="offer-item__item">Фруктовый ягодный ганаш.</li>
+                <li class="offer-item__item">Взбитый ганаш на белом шоколаде.</li>
+                <li class="offer-item__item">"Пряничное латте".</li>
+                <li class="offer-item__item">"Вишня в шоколаде".</li>
+                <li class="offer-item__item">Ганаш "Сникерс с карамелью"</li>
+                <li class="offer-item__item">Варианты ароматизации: фисташками,
+                  кокосом,
+                  мятой.</li>
+                <li class="offer-item__item">
+                  <ul class="slider-offer slider-offer-cream1">
+                    {% for item in sliderOfferCream %}
+                    <li class="slider-offer__item">
+                      <picture class="slider-offer__picture">
+                        <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                        <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                      </picture>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="offer__item offer-item">
+              <h3 class="offer-item__title offer-item__title--3">Подробная видео инструкция по приготовлению</h3>
+              <button type="button" class="offer-item__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <ul class="offer-item__list offer-item__list--video">
+                <li class="offer-item__item">Приготовление круглых макарон и фигурных макарон.</li>
+                <li class="offer-item__item">Роспись на макарон.</li>
+                <li class="offer-item__item">Видео приготовления начинок</li>
+                <li class="offer-item__item offer-item__item--link">
+                  <a href="#" class="offer-item__link">
+                    <picture class="offer-item__picture">
+                      <source srcset="img/video-cover.webp" type="image/webp">
+                      <img src="img/video-cover.jpg" alt="Обложка для видео
+                      инструкции. Приглашение." class="offer-item__img">
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="offer__item offer-item">
+              <h3 class="offer-item__title offer-item__title--3"><span class="offer-item__title--bold">+ Бонус</span>
+                эскимо-чизкейк</h3>
+              <button type="button" class="offer-item__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <ul class="offer-item__list offer-item__list--video">
+                <li class="offer-item__item">Файл PDF с рецептом приготовления эскимо-чизкейк.</li>
+                <li class="offer-item__item">Видео процесса приготовления.</li>
+                <li class="offer-item__item">
+                  <ul class="slider-offer slider-offer-eskimo">
+                    {% for item in sliderOfferEskimo %}
+                    <li class="slider-offer__item">
+                      <picture class="slider-offer__picture">
+                        <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                        <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                      </picture>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="offer__item offer-item">
+              <h3 class="offer-item__title"><span class="offer-item__title--cost">Стоимость</span>
+              </h3>
+              <button type="button" class="offer-item__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <div class="offer-item__list">
+                <div class="offer-item__offer">
+                  <div class="offer-item__withme">
+                    <h4 class="offer-item__subtitle">Первое предложение<br>c поддержкой в чате</h4>
+                    <div class="offer-item__item">Консультация, ответы на
+                      вопросы, разбор ошибок, помощь в доведении макарон до уровня продаж.</div>
+                    <div class="offer-item__item offer-item__item--last-w">
+                      {{ imageJpg('offer-item__picture', 'help', 'offer-item__img', 'Скриншот чата, где покупатель
+                      просит
+                      срочной помощи.', '250', '200') }}
+                    </div>
+                    <div class="offer-item__cost">4 000 ₽</div>
+                  </div>
+                  <div class="offer-item__withoutme">
+                    <h4 class="offer-item__subtitle">Второе предложение<br> без поддержки в чате</h4>
+                    <div class="offer-item__item">Просто отправлю вам рецепты, инструкции и ссылки
+                      на видео.
+                    </div>
+                    <div class="offer-item__item">Если хотите купить рецепт какой-то отдельной начинки, пишите в личку.
+                    </div>
+                    <div class="offer-item__item offer-item__item--last-wo">
+                      {{ imageSvg('mail', 'svg', '200', '150') }}
+                    </div>
+                    <div class="offer-item__cost" aria-label="Стоимость этого предложения.">2 000 ₽</div>
                   </div>
                 </div>
-              </li>
-            </ul>
-            <div class="offer__cost" aria-label="Стоимость этого предложения.">4 000 ₽</div>
-          </div>
-          <div class="offer__withoutme">
-            <div class="offer__topic">Второе предложение<br>без поддержки в чате</div>
-            <ul class="offer__list">
-              <li class="offer__item offer-item">
-                <h3 class="offer-item__title offer-item__title--1">Рецепт приготовления крышечек<br>
-                  (файл PDF)</h3>
-                <button type="button" class="offer-item__btn offer-item__btn--1"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <ul class="offer-item__list offer-item__list--cover">
-                  <li class="offer-item__item">Подробное описание приготовления крышечек на итальянской меренге, с
-                    пониженным содержанием сахара.
-                  </li>
-                  <li class="offer-item__item">Руководство по покупке инвентаря, со ссылками на онлайн магазины.</li>
-                  <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
-                  <li class="offer-item__item">
-                    <ul class="slider-offer slider-offer-cover2">
-                      {% for item in sliderOfferCover %}
-                      <li class="slider-offer__item">
-                        <picture class="slider-offer__picture">
-                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                        </picture>
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="offer__item offer-item">
-                <h3 class="offer-item__title offer-item__title--2">Рецепт приготовления начинок разных вкусов<br>(файл
-                  PDF)
-                </h3>
-                <button type="button" class="offer-item__btn"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <ul class="offer-item__list offer-item__list--cream">
-                  <li class="offer-item__item">Классический ванильный ганаш.</li>
-                  <li class="offer-item__item">Шоколадный ганаш.</li>
-                  <li class="offer-item__item">Фруктовый ягодный ганаш.</li>
-                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде.</li>
-                  <li class="offer-item__item">"Пряничное латте".</li>
-                  <li class="offer-item__item">"Вишня в шоколаде".</li>
-                  <li class="offer-item__item">Ганаш "Сникерс с карамелью"</li>
-                  <li class="offer-item__item">Варианты ароматизации: фисташками,
-                    кокосом,
-                    мятой.</li>
-                  <li class="offer-item__item">
-                    <ul class="slider-offer slider-offer-cream2">
-                      {% for item in sliderOfferCream %}
-                      <li class="slider-offer__item">
-                        <picture class="slider-offer__picture">
-                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                        </picture>
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="offer__item offer-item">
-                <h3 class="offer-item__title offer-item__title--3">Подробная видео инструкция по приготовлению</h3>
-                <button type="button" class="offer-item__btn"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <ul class="offer-item__list offer-item__list--video">
-                  <li class="offer-item__item">Круглых макарон и фигурных макарон.</li>
-                  <li class="offer-item__item">Роспись на макарон.</li>
-                  <li class="offer-item__item">Видео приготовления начинок.</li>
-                  <li class="offer-item__item offer-item__item--link">
-                    <a href="#" class="offer-item__link">
-                      <picture class="offer-item__picture">
-                        <source srcset="img/video-cover.webp" type="image/webp">
-                        <img src="img/video-cover.jpg" alt="Обложка для видео
-                        инструкции. Приглашение." class="offer-item__img">
-                      </picture>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="offer__item offer-item">
-                <h3 class="offer-item__title offer-item__title--4">Этот вариант без поддержки в чате
-                </h3>
-                <button type="button" class="offer-item__btn"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <div class="offer-item__list">
-                  <div class="offer-item__item">Просто отправлю вам рецепты, инструкции и ссылки
-                    на видео.
-                  </div>
-                  <div class="offer-item__item offer-item__item--last-wo">
-                    {{ imageSvg('mail', 'svg', '200', '150') }}
-                  </div>
-                </div>
-
-              </li>
-            </ul>
-            <div class="offer__cost" aria-label="Стоимость этого предложения.">2 000 ₽</div>
-          </div>
+              </div>
+            </li>
+          </ul>
           <div class="offer__contact">
             <p class="offer__text">Связаться со мной можно любым удобным для вас способом.</p>
             <ul class="offer__social social">
