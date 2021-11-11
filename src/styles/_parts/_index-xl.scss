@@ -289,10 +289,8 @@
       box-shadow: 0 0 10px 1px var(--title-gray);
     }
     &__contact {
-      grid-column-start: 1;
-      grid-column-end: 3;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 40px;
     }
     &__text {
       margin: 20px;
@@ -312,119 +310,9 @@
       transition: 0.4s;
     }
   }
-  .offer-item {
-    position: relative;
-    &__title {
-      margin: 0;
-      padding: 10px 45px 10px 20px;
-      font-size: 1.35em;
-      color: var(--text-gray);
-      font-weight: 600;
-      border-top: 2px solid white;
-      height: 90px;
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
-    &__title--bold {
-      margin-right: 5px;
-      color: var(--title-blue);
-      font-weight: 600;
-      background-color: whitesmoke;
-      padding: 5px 10px;
-      border-radius: 8px;
-      border: 2px solid var(--title-blue);
-    }
-    &__title--cost {
-      color: var(--title-red);
-      background-color: whitesmoke;
-      border: 2px solid var(--title-red);
-      padding: 5px 10px;
-      border-radius: 8px;
-    }
-    &__btn {
-      position: absolute;
-      height: 110px;
-      width: 100%;
-      top: 0;
-      background-color: inherit;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-    }
-    &__btn::after {
-      display: block;
-      float: right;
-      content: "";
-      width: 15px;
-      height: 15px;
-      margin-right: 5px;
-      background-color: inherit;
-      border-bottom: 3px solid var(--text-gray);
-      border-right: 3px solid var(--text-gray);
-      transform: rotate(180deg);
-      border-top: 3px solid var(--text-gray);
-      border-left: 3px solid var(--text-gray);
-      transition: 0.5s;
-    }
-    &__btn--open::after {
-      height: 25px;
-      border-top: none;
-      border-left: none;
-      border-bottom: 3px solid var(--text-gray);
-      border-right: 3px solid var(--text-gray);
-      transform: rotate(45deg);
-    }
-
-    &__title--1 {
-      position: relative;
-      border-top: none;
-    }
-
-    &__list {
-      display: none;
-      padding-bottom: 10px;
-      position: relative;
-    }
-    &__list--open {
-      display: block;
-    }
-    &__item {
-      margin: 0px 20px 0px 20px;
-      padding: 10px 20px 10px 20px;
-      font-size: 1.3em;
-      line-height: 1.4em;
-      color: var(--text-gray);
-      font-weight: 500;
-      overflow: hidden;
-      position: relative;
-      &--last-w {
-        padding-bottom: 20px;
-        height: 200px;
-        width: max-content;
-      }
-      &--link {
-      padding: 0;
-      margin: 0px auto;
-      width: max-content;
-      position: relative;
-      }
-    }
-    &__offer {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      padding-bottom: 20px;
-    }
-    &__withme {
-      border-right: 2px dashed var(--title-blue);
-    }
-    &__subtitle {
-      padding: 0px 20px 20px 20px;
-      margin: 0;
-      font-size: 1.3em;
-      color: var(--text-gray);
-      font-weight: 600;
-    }
+  .offer-video {
+    margin: auto;
+    display: inline-block;
     &__link {
       margin: 0 auto;
       display: block;
@@ -458,12 +346,130 @@
     &__link:focus &__img {
       box-shadow: 0 0 5px 2px var(--title-red);
     }
+  }
+  .offer-item {
+    position: relative;
+    &__btn {
+      position: absolute;
+      height: 110px;
+      width: 100%;
+      top: 0;
+      background-color: inherit;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    &__btn::after {
+      display: block;
+      float: right;
+      content: "";
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      background-color: inherit;
+      border-bottom: 3px solid var(--text-gray);
+      border-right: 3px solid var(--text-gray);
+      transform: rotate(180deg);
+      border-top: 3px solid var(--text-gray);
+      border-left: 3px solid var(--text-gray);
+      transition: 0.5s;
+    }
+    &__btn--open::after {
+      height: 25px;
+      border-top: none;
+      border-left: none;
+      border-bottom: 3px solid var(--text-gray);
+      border-right: 3px solid var(--text-gray);
+      transform: translateX(-5px) rotate(45deg);
+    }
+    &__list {
+      display: none;
+      padding-bottom: 10px;
+      position: relative;
+    }
+    &__list--open {
+      display: block;
+    }
+    &__item {
+      margin: 0px 20px 0px 20px;
+      padding: 10px 20px 10px 20px;
+      font-size: 1.3em;
+      line-height: 1.4em;
+      color: var(--text-gray);
+      font-weight: 500;
+
+      position: relative;
+      list-style-type: disc;
+    }
+    &__item::marker {
+      color: rgb(104, 11, 11);
+    }
+    &__item--slider {
+      overflow: hidden;
+    }
+    &__img {
+      box-shadow: 0 0 7px 1px var(--text-gray);
+      height: 100%;
+      border-radius: 15px; 
+      margin-top: 15px;
+      display: block;
+    }
+  }
+  .offer-prev {
+    position: absolute;
+    top: 10px;
+    left: 550px;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    &__picture {
+      width: 50px;
+      height: 50px;
+      // padding: 2px;
+      overflow: hidden;
+    }
+    &__img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      // box-shadow: 0 0 1px 1px var(--text-gray);
+    }
+    &__img--none {
+      filter: grayscale(1);
+    }
+    &__svg {
+      fill: rgb(143, 53, 102);
+      width: 50px;
+      height: 50px;
+    }
+    &__svg--none {
+      fill: gray;
+    }
+  }
+  .offer-i-head {
+    &--top {
+      border-top: none;
+    }
+    margin: 0;
+    padding: 10px 45px 10px 20px;
+    font-size: 1.35em;
+    color: var(--text-gray);
+    font-weight: 600;
+    border-top: 2px solid white;
+    height: 90px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__text {
+      text-transform: uppercase;
+      min-width: 350px;
+    }
     &__cost {
-      font-size: 1.8em;
+      font-size: 1.35em;
       font-weight: 600;
       padding-left: 40px;
-      margin-left: 40px;
-      margin-top: 20px;
+      // margin-left: 40px;
       position: relative;
       color: var(--text-gray);
       border-radius: 8px;
