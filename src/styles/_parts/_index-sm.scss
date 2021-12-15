@@ -407,11 +407,14 @@
     &__list {
       padding-bottom: 10px;
       position: relative;
-      display: none;
+      
       grid-column-start: 1;
       grid-column-end: 3;
     }
-    &__list--open {
+    &__body {
+      display: none;
+    }
+    &__body--open {
       display: block;
     }
     &__item {
@@ -511,6 +514,24 @@
       fill: rgb(143, 53, 102);
       width: 25px;
       height: 25px;
+    }
+  }
+  .buy {
+    margin: 0 0 20px 40px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 30px;
+    &__link {
+      padding: 15px;
+      text-decoration: none;
+      --shadow-color: 359deg 22% 54%;
+      --shadow-elevation-medium:
+      0px 0.1px 0.2px hsl(var(--shadow-color) / 0),
+      0px 0.6px 0.9px hsl(var(--shadow-color) / 0.32),
+      0px 1.6px 2.4px hsl(var(--shadow-color) / 0.64);
+      box-shadow: var(--shadow-elevation-medium);
+      background-color: whitesmoke;
+      font-weight: bold;
     }
   }
   .feedback-slider,

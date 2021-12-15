@@ -242,10 +242,10 @@
             <li class="offer__item offer-item">
 
               <h3 class="offer-item__title offer-i-head offer-i-head--top">
-                <span class="offer-i-head__text">Пирожные макарон</span>
+                <span class="offer-i-head__text">Пирожные макарон и начинки</span>
                 <span class="offer-i-head__cost">2 000 ₽</span>
               </h3>
-              <div class="offer__prev offer-prev offer-prev">
+              <div class="offer-prev">
                 <picture class="offer-prev__picture">
                   <source srcset="img/show-mac.webp" type="image/webp">
                   <img src="img/show-mac.jpg" alt="Тэг: макарон." class="offer-prev__img">
@@ -254,44 +254,50 @@
                   <source srcset="img/show-cream.webp" type="image/webp">
                   <img src="img/show-cream.jpg" alt="Тэг: начинки." class="offer-prev__img">
                 </picture>
-
               </div>
               <button type="button" class="offer-item__btn offer-item__btn--1"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <div class="offer-item__body">
+                <ol class="offer-item__list">
+                  <li class="offer-item__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
+                    макарон, с
+                    рецептом крышечек на итальянской меренге с
+                    пониженным содержанием сахара. Файл PDF на 20 стр.
+                  </li>
+                  <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
+                  <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
+                  <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
+                    вкусов. Файл PDF
+                    на 20 стр.
+                  </li>
+                  <li class="offer-item__item">Видео всего процесса приготовления пирожных.</li>
+                  <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
+                  <li class="offer-item__item">Видео о том, как делать роспись и выпекать фигурные
+                    макарон.</li>
 
-              <ol class="offer-item__list">
-                <li class="offer-item__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
-                  макарон, с
-                  рецептом крышечек на итальянской меренге с
-                  пониженным содержанием сахара. Файл PDF на 20 стр.
-                </li>
-                <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
-                <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
-                <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
-                  вкусов. Файл PDF
-                  на 20 стр.
-                </li>
-                <li class="offer-item__item">Видео всего процесса приготовления пирожных.</li>
-                <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
-                <li class="offer-item__item">Видео о том, как делать роспись и выпекать фигурные
-                  макарон.</li>
+                  <li class="offer-item__item">Мой секретный ингредиент с которым у вас
+                    обязательно получится довести макарон до уровня
+                    продаж.</li>
+                  <li class="offer-item__item offer-item__item--slider">
+                    <ul class="slider-offer slider-offer-cover1">
+                      {% for item in sliderOfferCover %}
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                        </picture>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                </ol>
+                <div class="offer-item__buy buy">
+                  <a href="https://www.paypal.me/macaronbyelena" class="buy__link">Оплатить через PayPal</a>
+                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link">Оплатить переводом на
+                    карту</a>
+                </div>
+              </div>
 
-                <li class="offer-item__item">Мой секретный ингредиент с которым у вас
-                  обязательно получится довести макарон до уровня
-                  продаж.</li>
-                <li class="offer-item__item offer-item__item--slider">
-                  <ul class="slider-offer slider-offer-cover1">
-                    {% for item in sliderOfferCover %}
-                    <li class="slider-offer__item">
-                      <picture class="slider-offer__picture">
-                        <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                        <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                      </picture>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </li>
-              </ol>
             </li>
             <li class="offer__item offer-item">
               <h3 class="offer-item__title offer-i-head">
@@ -308,38 +314,46 @@
               </div>
               <button type="button" class="offer-item__btn"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
-              <ol class="offer-item__list">
-                <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
-                  вкусов. Файл PDF
-                  на 20 стр.
-                </li>
-                <li class="offer-item__item">Ванильный ганаш на белом шоколаде.</li>
-                <li class="offer-item__item">Классический ганаш на молочном шоколаде.</li>
-                <li class="offer-item__item">Классический ганаш на тёмном шоколаде.</li>
-                <li class="offer-item__item">Фруктовый ягодный ганаш.</li>
-                <li class="offer-item__item">Взбитый ганаш на белом шоколаде.</li>
-                <li class="offer-item__item">Взбитый ганаш "Пряничное латте".</li>
-                <li class="offer-item__item">Начинка "Вишня в шоколаде".</li>
-                <li class="offer-item__item">Начинка "Пряное яблоко".</li>
-                <li class="offer-item__item">Начинка "Сникерс с солёной карамелью"</li>
-                <li class="offer-item__item">Начинка "Бри-Груша"</li>
-                <li class="offer-item__item">Варианты ароматизации: фисташками,
-                  кокосом,
-                  мятой, лавандой, ванилью.</li>
-                <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
-                <li class="offer-item__item offer-item__item--slider">
-                  <ul class="slider-offer slider-offer-cream1">
-                    {% for item in sliderOfferCream %}
-                    <li class="slider-offer__item">
-                      <picture class="slider-offer__picture">
-                        <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                        <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                      </picture>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </li>
-              </ol>
+              <div class="offer-item__body">
+                <ol class="offer-item__list">
+                  <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
+                    вкусов. Файл PDF
+                    на 20 стр.
+                  </li>
+                  <li class="offer-item__item">Ванильный ганаш на белом шоколаде.</li>
+                  <li class="offer-item__item">Классический ганаш на молочном шоколаде.</li>
+                  <li class="offer-item__item">Классический ганаш на тёмном шоколаде.</li>
+                  <li class="offer-item__item">Фруктовый ягодный ганаш.</li>
+                  <li class="offer-item__item">Взбитый ганаш на белом шоколаде.</li>
+                  <li class="offer-item__item">Взбитый ганаш "Пряничное латте".</li>
+                  <li class="offer-item__item">Начинка "Вишня в шоколаде".</li>
+                  <li class="offer-item__item">Начинка "Пряное яблоко".</li>
+                  <li class="offer-item__item">Начинка "Сникерс с солёной карамелью"</li>
+                  <li class="offer-item__item">Начинка "Бри-Груша"</li>
+                  <li class="offer-item__item">Варианты ароматизации: фисташками,
+                    кокосом,
+                    мятой, лавандой, ванилью.</li>
+                  <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
+                  <li class="offer-item__item offer-item__item--slider">
+                    <ul class="slider-offer slider-offer-cream1">
+                      {% for item in sliderOfferCream %}
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                        </picture>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                </ol>
+                <div class="offer-item__buy buy">
+                  <a href="https://www.paypal.me/macaronbyelena" class="buy__link">Оплатить через PayPal</a>
+                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link">Оплатить переводом на
+                    карту</a>
+                </div>
+              </div>
+
             </li>
             <li class="offer__item offer-item">
               <h3 class="offer-item__title offer-i-head">
@@ -356,27 +370,37 @@
               </div>
               <button type="button" class="offer-item__btn"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
-              <ol class="offer-item__list">
-                <li class="offer-item__item">Подробное описание процесса приготовления Эскимо-Чизкейк. Файл PDF
-                  на 11 стр.
-                </li>
-                <li class="offer-item__item">Видео всего процесса приготовления.</li>
-                <li class="offer-item__item">Начинки: фруктово-ягодное конфи, пряное яблоко, солёная карамель, варианты
-                  ароматизации фисташковой пастой, кокосовой и другими.
-                </li>
-                <li class="offer-item__item offer-item__item--slider">
-                  <ul class="slider-offer slider-offer-eskimo">
-                    {% for item in sliderOfferEskimo %}
-                    <li class="slider-offer__item">
-                      <picture class="slider-offer__picture">
-                        <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                        <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                      </picture>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </li>
-              </ol>
+              <div class="offer-item__body">
+
+                <ol class="offer-item__list">
+                  <li class="offer-item__item">Подробное описание процесса приготовления Эскимо-Чизкейк. Файл PDF
+                    на 11 стр.
+                  </li>
+                  <li class="offer-item__item">Видео всего процесса приготовления.</li>
+                  <li class="offer-item__item">Начинки: фруктово-ягодное конфи, пряное яблоко, солёная карамель,
+                    варианты
+                    ароматизации фисташковой пастой, кокосовой и другими.
+                  </li>
+                  <li class="offer-item__item offer-item__item--slider">
+                    <ul class="slider-offer slider-offer-eskimo">
+                      {% for item in sliderOfferEskimo %}
+                      <li class="slider-offer__item">
+                        <picture class="slider-offer__picture">
+                          <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                          <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                        </picture>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                </ol>
+                <div class="offer-item__buy buy">
+                  <a href="https://www.paypal.me/macaronbyelena" class="buy__link">Оплатить через PayPal</a>
+                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link">Оплатить переводом на
+                    карту</a>
+                </div>
+              </div>
+
             </li>
             <li class="offer__item offer-item">
               <h3 class="offer-item__title offer-i-head">
@@ -400,16 +424,23 @@
               </div>
               <button type="button" class="offer-item__btn"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
-              <ol class="offer-item__list">
+              <div class="offer-item__body">
+                <ol class="offer-item__list">
 
-                <li class="offer-item__item">Все видео и PDF инструкции по приготовлению макарон и начинок.</li>
-                <li class="offer-item__item">Видео и PDF инструкции по приготовлению эскимо-чизкейков.</li>
-                <li class="offer-item__item">Консультация, ответы на
-                  вопросы, разбор ошибок, помощь в доведении до уровня продаж.
-                  {{ imageJpg('offer-item__picture', 'help', 'offer-item__img', 'Скриншот чата, где покупатель
-                  просит
-                  срочной помощи.', '250', '200') }}</li>
-              </ol>
+                  <li class="offer-item__item">Все видео и PDF инструкции по приготовлению макарон и начинок.</li>
+                  <li class="offer-item__item">Видео и PDF инструкции по приготовлению эскимо-чизкейков.</li>
+                  <li class="offer-item__item">Консультация, ответы на
+                    вопросы, разбор ошибок, помощь в доведении до уровня продаж.
+                    {{ imageJpg('offer-item__picture', 'help', 'offer-item__img', 'Скриншот чата, где покупатель
+                    просит
+                    срочной помощи.', '250', '200') }}</li>
+                </ol>
+                <div class="offer-item__buy buy">
+                  <a href="https://www.paypal.me/macaronbyelena" class="buy__link">Оплатить через PayPal</a>
+                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link">Оплатить переводом на
+                    карту</a>
+                </div>
+              </div>
 
             </li>
           </ul>

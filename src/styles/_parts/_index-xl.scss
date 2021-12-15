@@ -383,11 +383,13 @@
       transform: translateX(-5px) rotate(45deg);
     }
     &__list {
-      display: none;
       padding-bottom: 10px;
       position: relative;
     }
-    &__list--open {
+    &__body {
+      display: none;
+    }
+    &__body--open {
       display: block;
     }
     &__item {
@@ -397,7 +399,6 @@
       line-height: 1.4em;
       color: var(--text-gray);
       font-weight: 500;
-
       position: relative;
       list-style-type: disc;
     }
@@ -417,20 +418,20 @@
   }
   .offer-prev {
     position: absolute;
-    top: 10px;
-    left: 550px;
+    left: 630px;
+    top: 38px;
     display: flex;
     gap: 10px;
-    padding: 20px;
+    // padding: 10px 0px 10px 20px;
     &__picture {
-      width: 50px;
-      height: 50px;
+      width: 35px;
+      height: 35px;
       // padding: 2px;
       overflow: hidden;
     }
     &__img {
-      width: 50px;
-      height: 50px;
+      width: 35px;
+      height: 35px;
       border-radius: 50%;
       object-fit: cover;
       // box-shadow: 0 0 1px 1px var(--text-gray);
@@ -440,11 +441,28 @@
     }
     &__svg {
       fill: rgb(143, 53, 102);
-      width: 50px;
-      height: 50px;
+      width: 35px;
+      height: 35px;
     }
     &__svg--none {
       fill: gray;
+    }
+  }
+  .buy {
+    margin: 0 0 20px 60px;
+    display: flex;
+    gap: 30px;
+    &__link {
+      padding: 15px;
+      text-decoration: none;
+      --shadow-color: 359deg 22% 54%;
+      --shadow-elevation-medium:
+      0px 0.1px 0.2px hsl(var(--shadow-color) / 0),
+      0px 0.6px 0.9px hsl(var(--shadow-color) / 0.32),
+      0px 1.6px 2.4px hsl(var(--shadow-color) / 0.64);
+      box-shadow: var(--shadow-elevation-medium);
+      background-color: whitesmoke;
+      font-weight: bold;
     }
   }
   .offer-i-head {
@@ -463,19 +481,17 @@
     align-items: center;
     &__text {
       text-transform: uppercase;
-      min-width: 350px;
+      min-width: 430px;
     }
     &__cost {
       font-size: 1.35em;
       font-weight: 600;
-      padding-left: 40px;
-      // margin-left: 40px;
       position: relative;
       color: var(--text-gray);
       border-radius: 8px;
       background-color: whitesmoke;
       display: inline-block;
-      padding: 5px 10px 5px 50px;
+      padding: 5px 10px 5px 40px;
       border: 2px solid var(--title-blue);
     }
     &__cost::after,
@@ -484,7 +500,7 @@
       content: "";
       left: 10px;
       height: 3px;
-      width: 20px;
+      width: 16px;
       background-color: currentColor;
     }
     &__cost::after {
