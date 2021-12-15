@@ -451,17 +451,18 @@ ul, li, p {
   .offer-item__list {
     padding-bottom: 10px;
     position: relative;
-    grid-column-start: 1;
-    grid-column-end: 3;
   }
   .offer-item__body {
     display: none;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
   .offer-item__body--open {
     display: block;
   }
   .offer-item__item {
-    padding: 10px 20px 10px 20px;
+    padding: 10px 10px 10px 20px;
+    margin-right: 10px;
     line-height: 28px;
     font-size: 1.2em;
     color: var(--text-gray);
@@ -558,7 +559,7 @@ ul, li, p {
   }
 
   .buy {
-    margin: 0 0 20px 40px;
+    margin: 0 10px 20px 40px;
     display: inline-flex;
     flex-direction: column;
     gap: 30px;
