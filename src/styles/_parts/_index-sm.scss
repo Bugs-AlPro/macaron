@@ -532,6 +532,14 @@
       box-shadow: var(--shadow-elevation-medium);
       background-color: whitesmoke;
       font-weight: bold;
+      color: var(--text-gray);
+    }
+    &__link:hover,
+    &__link:focus {
+      color: black;
+    }
+    &__link:focus-visible {
+      border: 1px solid var(--title-blue);
     }
   }
   .feedback-slider,

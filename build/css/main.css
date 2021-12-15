@@ -574,6 +574,13 @@ ul, li, p {
     box-shadow: var(--shadow-elevation-medium);
     background-color: whitesmoke;
     font-weight: bold;
+    color: var(--text-gray);
+  }
+  .buy__link:hover, .buy__link:focus {
+    color: black;
+  }
+  .buy__link:focus-visible {
+    border: 1px solid var(--title-blue);
   }
 
   .feedback-slider,
@@ -1171,6 +1178,13 @@ ul, li, p {
     box-shadow: var(--shadow-elevation-medium);
     background-color: whitesmoke;
     font-weight: bold;
+    color: var(--text-gray);
+  }
+  .buy__link:hover, .buy__link:focus {
+    color: black;
+  }
+  .buy__link:focus-visible {
+    border: 1px solid var(--title-blue);
   }
 
   .offer-i-head {
