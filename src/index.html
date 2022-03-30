@@ -68,6 +68,12 @@
   <img src="img/{{ name }}.jpg" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}">
 </picture>
 {% endmacro %}
+{% macro imagePng(classPicture, name, classImg, alt, width, height) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp" type="image/webp">
+  <img src="img/{{ name }}.png" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}">
+</picture>
+{% endmacro %}
 
 {% block content %}
 
@@ -245,16 +251,6 @@
                 <span class="offer-i-head__text">Пирожные макарон и начинки</span>
                 <span class="offer-i-head__cost">2 000 ₽</span>
               </h3>
-              <div class="offer-prev">
-                <picture class="offer-prev__picture">
-                  <source srcset="img/show-mac.webp" type="image/webp">
-                  <img src="img/show-mac.jpg" alt="Тэг: макарон." class="offer-prev__img">
-                </picture>
-                <picture class="offer-prev__picture">
-                  <source srcset="img/show-cream.webp" type="image/webp">
-                  <img src="img/show-cream.jpg" alt="Тэг: начинки." class="offer-prev__img">
-                </picture>
-              </div>
               <button type="button" class="offer-item__btn offer-item__btn--1"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="offer-item__body">
@@ -292,9 +288,7 @@
                   </li>
                 </ol>
                 <div class="offer-item__buy buy">
-                  <a href="https://www.paypal.me/macaronbyelena" class="buy__link">Оплатить через PayPal</a>
-                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link">Оплатить переводом на
-                    карту</a>
+                  <a href="#payment-block" class="buy__link">Перейти к оплате</a>
                 </div>
               </div>
 
@@ -304,14 +298,6 @@
                 <span class="offer-i-head__text">Отдельно начинки</span>
                 <span class="offer-i-head__cost">1 000 ₽</span>
               </h3>
-              <div class="offer__prev offer-prev offer-prev">
-
-                <picture class="offer-prev__picture">
-                  <source srcset="img/show-cream.webp" type="image/webp">
-                  <img src="img/show-cream.jpg" alt="Тэг: начинки." class="offer-prev__img">
-                </picture>
-
-              </div>
               <button type="button" class="offer-item__btn"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="offer-item__body">
@@ -348,9 +334,7 @@
                   </li>
                 </ol>
                 <div class="offer-item__buy buy">
-                  <a href="https://www.paypal.me/macaronbyelena" class="buy__link">Оплатить через PayPal</a>
-                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link">Оплатить переводом на
-                    карту</a>
+                  <a href="#payment-block" class="buy__link">Перейти к оплате</a>
                 </div>
               </div>
 
@@ -360,14 +344,6 @@
                 <span class="offer-i-head__text">Эскимо - Чизкейк</span>
                 <span class="offer-i-head__cost">1 000 ₽</span>
               </h3>
-              <div class="offer__prev offer-prev offer-prev">
-
-                <picture class="offer-prev__picture">
-                  <source srcset="img/show-chees.webp" type="image/webp">
-                  <img src="img/show-chees.jpg" alt="Тэг: чизкейки." class="offer-prev__img offer-prev__img">
-                </picture>
-
-              </div>
               <button type="button" class="offer-item__btn"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="offer-item__body">
@@ -395,9 +371,7 @@
                   </li>
                 </ol>
                 <div class="offer-item__buy buy">
-                  <a href="https://www.paypal.me/macaronbyelena" class="buy__link">Оплатить через PayPal</a>
-                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link">Оплатить переводом на
-                    карту</a>
+                  <a href="#payment-block" class="buy__link">Перейти к оплате</a>
                 </div>
               </div>
 
@@ -407,21 +381,6 @@
                 <span class="offer-i-head__text">Всё с моей поддержикой</span>
                 <span class="offer-i-head__cost">4 000 ₽</span>
               </h3>
-              <div class="offer__prev offer-prev offer-prev">
-                <picture class="offer-prev__picture">
-                  <source srcset="img/show-mac.webp" type="image/webp">
-                  <img src="img/show-mac.jpg" alt="Тэг: макарон." class="offer-prev__img ">
-                </picture>
-                <picture class="offer-prev__picture">
-                  <source srcset="img/show-cream.webp" type="image/webp">
-                  <img src="img/show-cream.jpg" alt="Тэг: начинки." class="offer-prev__img ">
-                </picture>
-                <picture class="offer-prev__picture">
-                  <source srcset="img/show-chees.webp" type="image/webp">
-                  <img src="img/show-chees.jpg" alt="Тэг: чизкейки." class="offer-prev__img ">
-                </picture>
-                {{ imageSvg('telegram', 'offer-prev__svg', '50', '50') }}
-              </div>
               <button type="button" class="offer-item__btn"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="offer-item__body">
@@ -436,37 +395,92 @@
                     срочной помощи.', '250', '200') }}</li>
                 </ol>
                 <div class="offer-item__buy buy">
-                  <a href="https://www.paypal.me/macaronbyelena" class="buy__link">Оплатить через PayPal</a>
-                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link">Оплатить переводом на
-                    карту</a>
+                  <a href="#payment-block" class="buy__link">Перейти к оплате</a>
                 </div>
               </div>
 
             </li>
           </ul>
           <div class="offer__contact">
-            <p class="offer__text">Связаться со мной можно любым удобным для вас способом.</p>
+            <p id="payment-block" class="offer__text">Напишите мне если у вас есть какие-либо вопросы по курсу или если вы не уверены какой способ оплаты выбрать.</p>
             <ul class="offer__social social">
               <li class="social__item">
                 <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Ссылка на telegram.">
-                  {{ imageSvg('telegram', 'svg', '55', '55') }}
+              
+                  {{ imagePng('social__picture', 'telegramm', 'social__img', 'Ссылка на телеграм', '55', '55') }}
                 </a>
               </li>
               <li class="social__item">
                 <a href="whatsapp://send?phone=+79958850643" class="social__link" aria-label="Ссылка на whatsapp.">
-                  {{ imageSvg('whatsap', 'svg', '55', '55') }}
+                
+                  {{ imagePng('social__picture', 'whatsapp', 'social__img', 'Ссылка на вотсапп', '55', '55') }}
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.instagram.com/macaron_by_elena" class="social__link"
                   aria-label="Ссылка на instagram.">
-                  {{ imageSvg('instagram', 'svg', '55', '55') }}
+                  {{ imagePng('social__picture', 'instagram', 'social__img', 'Ссылка на инстаграмм', '55', '55') }}
                 </a>
               </li>
             </ul>
-            <p class="offer__text"><a href="tel:+79958850643" class="offer__phone"
-                aria-label="Ссылка чтобы позвонить по телефонному номеру.">+7 995
-                885-0643</a></p>
+            <p  class="offer__text offer__text--payment">Способы оплаты</p>
+            <ul class="offer__payment payment">
+
+              <li class="payment__item">
+                <div class="payment__title">
+
+                  <picture class="payment__logo">
+                    <source srcset="img/tin.webp" type="image/webp">
+                    <img src="img/tin.png" alt="tinkof" class="payment__img" height="95" width="300">
+                  </picture>
+
+                  <div class="payment__head">Перевод в Русский Тиньков банк с карты или через "Систему Быстрых Платежей"</div>
+
+                </div>
+                <button type="button" class="payment__btn" aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <div class="payment__description">
+                  
+                   {{ imagePng('payment__logo', 'qr-tinkof', 'payment__img', 'Логотип банка Зираат', '300', '300') }}
+                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="payment__link" aria-label="Ссылка на оплату через Тинькоф.">
+                    Перейти не страницу банка для перевода с карты.
+                    </a>
+                  <p>Для перевода через СБП: <span class="payment__copy">+7 (995) 885-06-43</span> Елена П.</p>
+                </div>
+              </li>
+
+              <li class="payment__item">
+                <div class="payment__title">
+
+                  <picture class="payment__logo">
+                    <source srcset="img/zir.webp" type="image/webp">
+                    <img src="img/zir.png" alt="ziraat" class="payment__img" height="64" width="300">
+                  </picture>
+
+                  <div class="payment__head">Перевод в Турецкий Ziraat Bank по номеру IBAN, или по номеру карты.</div>
+                </div>
+                <button type="button" class="payment__btn" aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <div class="payment__description">
+                  {{ imageJpg('payment__picture', 'qr-ziraat', 'payment__img', 'QR-код для сканирования', '300', '300') }}
+                  <p>Отсканируйте QR-код приложением банка или используйте эти реквизиты для перевода: <span class="payment__copy">TR53 0001 0090 1017 5005 9050 01</span> Elena Pronina.</p>
+                  
+                </div>
+              </li>
+              <li class="payment__item">
+                <div class="payment__title">
+                  {{ imagePng('payment__logo', 'change', 'payment__img', 'Логотип банка Зираат', '100', '100') }}
+
+                  <div class="payment__head">Перевод с помощью системы денежных переводов</div>
+                </div>
+                <button type="button" class="payment__btn" aria-label="Показать (скрыть) список того, что в это входит"></button>
+                <div class="payment__description">
+                  <p>Информация для денеженого перевод: <span class="payment__copy"> Турция, Анталия, Elena Pronina, +90 (551) 687-04-73</span>.</p>
+                  {{ imagePng('payment__logo', 'westernunion', 'payment__img', 'Логотип банка Зираат', '315', '100') }}
+                  {{ imagePng('payment__logo', 'monegr', 'payment__img', 'Логотип банка Зираат', '315', '100') }}
+                  {{ imageSvgColor('zolotayakorona', 'svgcolor payment__logo', '250', '100', '') }}
+                </div>
+              </li>
+
+            </ul>
           </div>
         </div>
       </div>
