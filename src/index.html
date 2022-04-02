@@ -438,13 +438,13 @@
 
                 </div>
                 <button type="button" class="payment__btn" aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <div class="payment__description">
+                <div class="payment__description p-description">
                   
-                   {{ imagePng('payment__logo', 'qr-tinkof', 'payment__img', 'Логотип банка Зираат', '300', '300') }}
-                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="payment__link" aria-label="Ссылка на оплату через Тинькоф.">
-                    Перейти не страницу банка для перевода с карты.
+
+                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="p-description__link" aria-label="Ссылка на оплату через Тинькоф.">
+                    {{ imagePng('p-description__picture', 'qr-tinkof', 'p-description__img', 'Логотип банка Зираат', '300', '300') }}                    
                     </a>
-                  <p>Для перевода через СБП: <span class="payment__copy">+7 (995) 885-06-43</span> Елена П.</p>
+                  <p class="p-description__text">Для перевода через СБП: <span class="p-description__copy">+7 (995) 885-06-43</span> Елена П.</p>
                 </div>
               </li>
 
@@ -456,27 +456,46 @@
                     <img src="img/zir.png" alt="ziraat" class="payment__img" height="64" width="300">
                   </picture>
 
-                  <div class="payment__head">Перевод в Турецкий Ziraat Bank по номеру IBAN, или по номеру карты.</div>
+                  <div class="payment__head">Перевод в Турецкий Ziraat Bank по номеру IBAN.</div>
                 </div>
                 <button type="button" class="payment__btn" aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <div class="payment__description">
-                  {{ imageJpg('payment__picture', 'qr-ziraat', 'payment__img', 'QR-код для сканирования', '300', '300') }}
-                  <p>Отсканируйте QR-код приложением банка или используйте эти реквизиты для перевода: <span class="payment__copy">TR53 0001 0090 1017 5005 9050 01</span> Elena Pronina.</p>
-                  
+                <div class="payment__description p-description">
+                  <a href="#" class="p-description__link" aria-label="Ссылка на оплату через Зират.">
+                    {{ imageJpg('p-description__picture', 'qr-ziraat', 'p-description__img', 'QR-код для сканирования', '300', '300') }}                
+                    </a>
+                  <p class="p-description__text">Номер IBAN: <span class="p-description__copy">TR53 0001 0090 1017 5005 9050 01</span> Elena Pronina.</p>
                 </div>
               </li>
               <li class="payment__item">
                 <div class="payment__title">
-                  {{ imagePng('payment__logo', 'change', 'payment__img', 'Логотип банка Зираат', '100', '100') }}
+                  {{ imagePng('payment__logo', 'change', 'payment__img', 'Логотип', '100', '100') }}
 
                   <div class="payment__head">Перевод с помощью системы денежных переводов</div>
                 </div>
                 <button type="button" class="payment__btn" aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <div class="payment__description">
-                  <p>Информация для денеженого перевод: <span class="payment__copy"> Турция, Анталия, Elena Pronina, +90 (551) 687-04-73</span>.</p>
-                  {{ imagePng('payment__logo', 'westernunion', 'payment__img', 'Логотип банка Зираат', '315', '100') }}
-                  {{ imagePng('payment__logo', 'monegr', 'payment__img', 'Логотип банка Зираат', '315', '100') }}
-                  {{ imageSvgColor('zolotayakorona', 'svgcolor payment__logo', '250', '100', '') }}
+                <div class="payment__description p-description">
+                  <a href="#" class="p-description__link">
+                    {{ imagePng('payment__logo', 'change', 'payment__img', 'Логотип', '300', '100') }}
+                  </a>
+                  <div class="p-description__block">
+                    <p class="p-description__text">Информация для денеженого перевода: <br> <span class="p-description__copy"> Турция, Анталия, Elena Pronina, +90 (551) 687-04-73</span></p>
+                    <div class="p-description__logo">
+                  <a href="#" class="p-description__logo-link">
+                    {{ imagePng('p-description__picture', 'westernunion', 'p-description__image', 'Логотип банка Зираат', '315', '100') }}
+                  </a>
+                  <a href="#" class="p-description__logo-link">
+                    {{ imagePng('p-description__picture', 'monegr', 'p-description__image', 'Логотип банка Зираат', '315', '100') }}
+                  </a>
+                  <a href="#" class="p-description__logo-link">
+                    {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'Золотая корона') }}
+                  </a>
+
+
+
+                    </div>
+                  </div>
+                  
+                  
                 </div>
               </li>
 
