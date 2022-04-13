@@ -1,3 +1,24 @@
+var sliderOfferBase = tns({
+  container: '.slider-offer-base',
+  mode: 'carousel',
+  swipeAngle: false,
+  loop: true,
+  gutter: 10,
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  fixedWidth: 270,
+  autoplay: true,
+  navAsThumbnails: true,
+  autoplayTimeout: 1500,
+  speed: 600,
+  autoplayButton: '#btn-offer-base',
+  autoplayText: [
+    "▶",
+    "❚❚"
+  ],
+});
+
 var sliderOfferCover1 = tns({
   container: '.slider-offer-cover1',
   mode: 'carousel',

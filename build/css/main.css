@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --title-blue: hsl(203, 18%, 50%);
   --title-red: hsl(355, 25%, 50%);
@@ -324,8 +325,9 @@ ul, li, p {
 
   .offer-wrap {
     background-color: var(--back-lightred);
-    border-top-left-radius: 50px;
+    border-top-left-radius: 100px;
     overflow: hidden;
+    position: relative;
   }
 
   .offer {
@@ -338,12 +340,16 @@ ul, li, p {
     box-shadow: 0 0 10px 1px var(--title-gray);
     border-radius: 30px;
   }
+  .offer__slider {
+    margin: 20px 0;
+  }
   .offer__contact {
     text-align: center;
     margin-top: 20px;
   }
   .offer__text {
     margin: 20px;
+    padding-top: 20px;
     font-size: 22px;
     color: var(--text-gray);
     font-weight: 500;
@@ -353,6 +359,9 @@ ul, li, p {
     font-weight: 600;
     transition: 0.4s;
     font-size: 1.2em;
+  }
+  .offer__text--payment {
+    text-transform: uppercase;
   }
   .offer__phone:hover, .offer__phone:focus {
     color: var(--social-hover);
@@ -555,7 +564,7 @@ ul, li, p {
   }
 
   .buy {
-    margin: 0 10px 20px 40px;
+    margin: 0 10px 20px 15px;
     display: inline-flex;
     flex-direction: column;
     gap: 30px;
@@ -578,6 +587,113 @@ ul, li, p {
   }
   .buy__link:focus-visible {
     border: 1px solid var(--title-blue);
+  }
+
+  .payment__item {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .payment__title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    height: 90px;
+  }
+  .payment__logo {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  .payment__img {
+    width: auto;
+    height: 50px;
+  }
+  .payment__head {
+    position: relative;
+    width: 100%;
+    height: 1.1em;
+    overflow: hidden;
+    color: transparent;
+  }
+  .payment__head--tinkof::before {
+    content: "Перевод по СБП";
+  }
+  .payment__head--ziraat::before {
+    content: "Перевод с помощью IBAN";
+  }
+  .payment__head--money::before {
+    content: "Денежные переводы";
+  }
+  .payment__head::before {
+    font-size: 1em;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    position: relative;
+    color: var(--text-gray);
+    text-transform: uppercase;
+  }
+  .payment__btn {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border: 2px solid var(--title-gray);
+  }
+  .payment__description {
+    display: none;
+  }
+  .payment__description--open {
+    display: flex;
+  }
+  .payment__link {
+    margin: 1rem;
+    display: block;
+  }
+
+  .p-description {
+    font-size: 1.3em;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid #6d6d6d;
+    border-top: 5px solid var(--title-red);
+    padding: 1rem 0 1rem 0;
+    position: relative;
+  }
+  .p-description__link {
+    margin-top: 10px;
+    display: none;
+  }
+  .p-description__text {
+    align-self: center;
+    line-height: 2em;
+  }
+  .p-description__copy {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+  }
+  .p-description__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .p-description__block {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+  .p-description__image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
   }
 
   .feedback-slider,
@@ -653,15 +769,20 @@ ul, li, p {
     margin: 0;
     padding: 0;
     transition: 0.4s;
-    width: 55px;
-    height: 55px;
   }
   .social__link svg {
     width: 100%;
     height: 100%;
   }
+  .social__img {
+    width: 15vw;
+    height: 15vw;
+    max-width: 65px;
+    max-height: 65px;
+  }
   .social__link:hover, .social__link:focus {
     color: var(--social-hover);
+    transform: scale(1.1) translateY(5px);
     transition: 0.4s;
   }
 
@@ -988,8 +1109,9 @@ ul, li, p {
 
   .offer-wrap {
     background-color: var(--back-lightred);
-    border-top-left-radius: 250px;
+    border-top-left-radius: 350px;
     overflow: hidden;
+    position: relative;
   }
 
   .offer {
@@ -1001,6 +1123,10 @@ ul, li, p {
     border: 2px solid white;
     border-radius: 30px;
     box-shadow: 0 0 10px 1px var(--title-gray);
+    padding: 5px;
+  }
+  .offer__slider {
+    margin: 20px 0;
   }
   .offer__contact {
     text-align: center;
@@ -1008,6 +1134,7 @@ ul, li, p {
   }
   .offer__text {
     margin: 20px;
+    padding-top: 30px;
     font-size: 1.5em;
     color: var(--text-gray);
     font-weight: 500;
@@ -1063,13 +1190,22 @@ ul, li, p {
   }
 
   .offer-item {
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  .offer-item__slider {
+    margin: 20px 0;
+  }
+  .offer-item__head {
     position: relative;
   }
   .offer-item__btn {
     position: absolute;
-    height: 110px;
-    width: 100%;
-    top: 0;
+    height: 86px;
+    width: 99%;
+    top: 12px;
+    left: 0.3%;
     background-color: inherit;
     border: none;
     border-radius: 30px;
@@ -1104,6 +1240,7 @@ ul, li, p {
   }
   .offer-item__body {
     display: none;
+    padding-top: 10px;
   }
   .offer-item__body--open {
     display: block;
@@ -1120,9 +1257,6 @@ ul, li, p {
   }
   .offer-item__item::marker {
     color: #680b0b;
-  }
-  .offer-item__item--slider {
-    overflow: hidden;
   }
   .offer-item__img {
     box-shadow: 0 0 7px 1px var(--text-gray);
@@ -1255,11 +1389,11 @@ ul, li, p {
   .p-description__img {
     width: 300px;
     height: auto;
-    background-color: #6d6d6d;
     border-radius: 15px;
   }
   .p-description__link {
     order: -1;
+    margin-top: 10px;
   }
   .p-description__text {
     align-self: center;
@@ -1293,7 +1427,6 @@ ul, li, p {
 
   .offer-i-head {
     margin: 0;
-    padding: 10px 45px 10px 20px;
     font-size: 1.35em;
     color: var(--text-gray);
     font-weight: 600;
@@ -1304,7 +1437,7 @@ ul, li, p {
     align-items: center;
   }
   .offer-i-head--top {
-    border-top: none;
+    border-top-color: var(--back-lightred);
   }
   .offer-i-head__text {
     text-transform: uppercase;
@@ -1355,11 +1488,26 @@ ul, li, p {
   }
 
   .slider-offer__item {
-    height: 150px;
+    height: auto;
   }
   .slider-offer__img {
     height: auto;
     border-radius: 10px;
+  }
+  .slider-offer__btn {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.4);
+    transition: 0.2s;
+  }
+  .slider-offer__btn:hover, .slider-offer__btn:focus {
+    transform: scale(1.1);
+    transition: 0.2s;
   }
 
   .feedback-slider__item {
@@ -1418,6 +1566,7 @@ ul, li, p {
   }
   .social__link:hover, .social__link:focus {
     color: var(--social-hover);
+    transform: scale(1.1) translateY(5px);
     transition: 0.4s;
   }
 
