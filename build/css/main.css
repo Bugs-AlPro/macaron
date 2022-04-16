@@ -672,7 +672,6 @@ ul, li, p {
   .p-description__copy {
     display: inline-block;
     padding: 5px 10px;
-    border-radius: 5px;
     background-color: whitesmoke;
   }
   .p-description__logo {
@@ -914,7 +913,6 @@ ul, li, p {
     font-size: 2em;
     margin-top: 10px;
     color: var(--title-gray);
-    font-family: "Pacifico", cursive;
   }
   .title-section__head--red {
     color: var(--title-red);
@@ -923,7 +921,6 @@ ul, li, p {
     color: var(--title-blue);
   }
   .title-section__head--reviews {
-    font-family: "Pacifico", cursive;
     color: var(--title-gray);
   }
 
@@ -1049,7 +1046,6 @@ ul, li, p {
   }
   .want__text {
     margin-top: 30px;
-    font-family: "Pacifico", cursive;
     font-size: 1.5em;
     color: var(--text-gray);
     display: inline-flex;

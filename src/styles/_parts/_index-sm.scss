@@ -765,12 +765,13 @@
     &__text {
       align-self: center;
       line-height: 2em;
+      // padding: 5px;
     }
 
     &__copy {
       display: inline-block;
       padding: 5px 10px;
-      border-radius: 5px;
+      // border-radius: 5px;
       background-color: whitesmoke;
     }
 
@@ -785,6 +786,7 @@
       flex-direction: column;
       gap: 1rem;
       justify-content: space-around;
+
     }
 
     &__image {
