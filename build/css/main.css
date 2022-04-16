@@ -712,6 +712,8 @@ ul, li, p {
 
   .slider-offer__item {
     height: 150px;
+  }
+  .slider-offer__item--top {
     margin-bottom: 50px;
   }
   .slider-offer__img {

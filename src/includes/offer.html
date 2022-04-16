@@ -7,7 +7,7 @@
         <p class="title-section__text">точнее - их даже несколько</p>
         <ul class="offer__slider slider-offer slider-offer-base">
           {% for item in sliderOfferBase %}
-          <li class="slider-offer__item">
+          <li class="slider-offer__item slider-offer__item--top">
             <picture class="slider-offer__picture">
               <source srcset="img/{{ item.img }}.webp" type="image/webp">
               <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="250">
