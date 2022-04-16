@@ -23,51 +23,51 @@
         <ul class="offer__list">
 
           <li class="offer-item">
-              <h3 class="offer-item__title offer-i-head offer-i-head--top">
-                <span class="offer-i-head__text">Пирожные макарон и начинки</span>
-                <span class="offer-i-head__cost">50 $</span>
-              </h3>
-              <button type="button" class="offer-item__btn offer-item__btn--1"
-                aria-label="Показать (скрыть) список того, что в это входит"></button>
-              <div class="offer-item__body">
-                <div class="offer-item__buy buy">
-                  <a href="#payment-block" class="buy__link">Оплатить курс</a>
-                </div>
-                <ol class="offer-item__list">
-                  <li class="offer-item__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
-                    макарон, с
-                    рецептом крышечек на итальянской меренге с
-                    пониженным содержанием сахара. Файл PDF на 20 стр.
-                  </li>
-                  <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
-                  <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
-                  <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
-                    вкусов. Файл PDF
-                    на 20 стр.
-                  </li>
-                  <li class="offer-item__item">Видео всего процесса приготовления пирожных.</li>
-                  <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
-                  <li class="offer-item__item">Видео о том, как делать роспись и выпекать фигурные
-                    макарон.</li>
-
-                  <li class="offer-item__item">Мой секретный ингредиент с которым у вас
-                    обязательно получится довести макарон до уровня
-                    продаж.</li>
-                    <li class="offer-item__item offer-item__item--slider">
-                      <ul class="slider-offer slider-offer-cover1">
-                        {% for item in sliderOfferCover %}
-                        <li class="slider-offer__item">
-                          <picture class="slider-offer__picture">
-                            <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                          </picture>
-                        </li>
-                        {% endfor %}
-                      </ul>
-                    </li>
-                </ol>
-
+            <h3 class="offer-item__title offer-i-head offer-i-head--top">
+              <span class="offer-i-head__text">Пирожные макарон и начинки</span>
+              <span class="offer-i-head__cost">50 $</span>
+            </h3>
+            <button type="button" class="offer-item__btn offer-item__btn--1"
+              aria-label="Показать (скрыть) список того, что в это входит"></button>
+            <div class="offer-item__body">
+              <div class="offer-item__buy buy">
+                <a href="#payment-block" class="buy__link">Оплатить курс</a>
               </div>
+              <ol class="offer-item__list">
+                <li class="offer-item__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
+                  макарон, с
+                  рецептом крышечек на итальянской меренге с
+                  пониженным содержанием сахара. Файл PDF на 20 стр.
+                </li>
+                <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
+                <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
+                <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
+                  вкусов. Файл PDF
+                  на 20 стр.
+                </li>
+                <li class="offer-item__item">Видео всего процесса приготовления пирожных.</li>
+                <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
+                <li class="offer-item__item">Видео о том, как делать роспись и выпекать фигурные
+                  макарон.</li>
+
+                <li class="offer-item__item">Мой секретный ингредиент с которым у вас
+                  обязательно получится довести макарон до уровня
+                  продаж.</li>
+                <li class="offer-item__item offer-item__item--slider">
+                  <ul class="slider-offer slider-offer-cover1">
+                    {% for item in sliderOfferCover %}
+                    <li class="slider-offer__item">
+                      <picture class="slider-offer__picture">
+                        <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                        <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                      </picture>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              </ol>
+
+            </div>
 
           </li>
           <li class="offer__item offer-item">
@@ -181,17 +181,18 @@
           </li>
         </ul>
         <div class="offer__contact">
-          <p id="payment-block" class="offer__text">Напишите мне если у вас есть какие-либо вопросы по курсу или если вы не уверены какой способ оплаты выбрать.</p>
+          <p id="payment-block" class="offer__text">Напишите мне если у вас есть какие-либо вопросы по курсу или если вы
+            не уверены какой способ оплаты выбрать.</p>
           <ul class="offer__social social">
             <li class="social__item">
               <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Ссылка на telegram.">
-            
+
                 {{ imagePng('social__picture', 'telegramm', 'social__img', 'Ссылка на телеграм', '65', '65') }}
               </a>
             </li>
             <li class="social__item">
               <a href="whatsapp://send?phone=+79958850643" class="social__link" aria-label="Ссылка на whatsapp.">
-              
+
                 {{ imagePng('social__picture', 'whatsapp', 'social__img', 'Ссылка на вотсапп', '65', '65') }}
               </a>
             </li>
@@ -202,7 +203,7 @@
               </a>
             </li>
           </ul>
-          <p  class="offer__text offer__text--payment">Способы оплаты</p>
+          <p class="offer__text offer__text--payment">Способы оплаты</p>
           <ul class="offer__payment payment">
 
             <li class="payment__item">
@@ -213,17 +214,29 @@
                   <img src="img/tin.png" alt="tinkof" class="payment__img" height="95" width="300">
                 </picture>
 
-                <div class="payment__head payment__head--tinkof">Перевод в Русский Тиньков банк с карты или через "Систему Быстрых Платежей"</div>
+                <div class="payment__head payment__head--tinkof">Перевод в Русский Тиньков банк с карты или через
+                  "Систему Быстрых Платежей"</div>
 
               </div>
-              <button type="button" class="payment__btn" aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <button type="button" class="payment__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="payment__description p-description">
-                
 
-                <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="p-description__link" aria-label="Ссылка на оплату через Тинькоф.">
-                  {{ imagePng('p-description__picture', 'qr-tinkof', 'p-description__img', 'Логотип банка Зираат', '300', '300') }}                    
-                  </a>
-                <p class="p-description__text">Для перевода через СБП: <span class="p-description__copy">+7 (995) 885-06-43</span> Елена П.</p>
+
+                <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="p-description__link"
+                  aria-label="Ссылка на оплату через Тинькоф.">
+                  {{ imagePng('p-description__picture', 'qr-tinkof', 'p-description__img', 'Логотип банка Зираат',
+                  '300', '300') }}
+                </a>
+                <div class="p-description__block">
+                  <p class="p-description__text">Для перевода через СБП<br> (Елена П):<br> <span
+                      class="p-description__copy">+7 (995)
+                      885-06-43</span></p>
+                  <p class="p-description__text">Для перевода с карты на карту (Mastercard):<br> <span
+                      class="p-description__copy">5536
+                      9140 4444 1479</span></p>
+
+                </div>
               </div>
             </li>
 
@@ -237,13 +250,28 @@
 
                 <div class="payment__head payment__head--ziraat">Перевод в Турецкий Ziraat Bank по номеру IBAN.</div>
               </div>
-              <button type="button" class="payment__btn" aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <button type="button" class="payment__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="payment__description p-description">
                 <div class="p-description__link">
-                  {{ imageJpg('p-description__picture', 'qr-ziraat', 'p-description__img', 'QR-код для сканирования', '300', '300') }}   
-                </div>             
-                  </ыclass=>
-                <p class="p-description__text">Номер IBAN: <span class="p-description__copy">TR53 0001 0090 1017 5005 9050 01</span> Elena Pronina.</p>
+                  {{ imageJpg('p-description__picture', 'qr-ziraat', 'p-description__img', 'QR-код для сканирования',
+                  '300', '300') }}
+                </div>
+                <div class="p-description__block">
+                  <p class="p-description__text">Номер IBAN для TL (Elena Pronina): <br> <span
+                      class="p-description__copy">TR53 0001
+                      0090
+                      1017 5005 9050 01</span></p>
+                  <p class="p-description__text">Номер IBAN для USD (Elena Pronina):<br> <span
+                      class="p-description__copy">TR26 0001
+                      0090
+                      1017 5005 9050 02</span></p>
+                  <p class="p-description__text">Номер IBAN для EUR (Elena Pronina): <br><span
+                      class="p-description__copy">TR96 0001
+                      0090
+                      1017 5005 9050 03</span></p>
+                </div>
+
               </div>
             </li>
             <li class="payment__item">
@@ -252,27 +280,33 @@
 
                 <div class="payment__head payment__head--money">Перевод с помощью системы денежных переводов</div>
               </div>
-              <button type="button" class="payment__btn" aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <button type="button" class="payment__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="payment__description p-description">
                 <div class="p-description__link">
                   {{ imagePng('p-descriptio__logo', 'change', 'payment__img', 'Логотип', '300', '100') }}
                 </div>
                 <div class="p-description__block">
-                  <p class="p-description__text">Информация для денеженого перевода: <br> <span class="p-description__copy"> Турция, Анталия, Elena Pronina, <br>  +90 (551) 687-04-73</span></p>
+                  <p class="p-description__text">Информация для денеженого перевода: <br>
+                    <span class="p-description__copy"> Турция, Анталия, Elena Pronina, <br>+90 (551) 687-04-73</span>
+                  </p>
                   <div class="p-description__logo">
-                <a href="https://www.westernunion.com" class="p-description__logo-link">
-                  {{ imagePng('p-description__picture', 'westernunion', 'p-description__image', 'Логотип банка Зираат', '315', '100') }}
-                </a>
-                <a href="https://www.moneygram.com/mgo/us/en/" class="p-description__logo-link">
-                  {{ imagePng('p-description__picture', 'monegr', 'p-description__image', 'Логотип банка Зираат', '315', '100') }}
-                </a>
-                <a href="https://koronapay.com/" class="p-description__logo-link">
-                  {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'Золотая корона') }}
-                </a>
+                    <a href="https://www.westernunion.com" class="p-description__logo-link">
+                      {{ imagePng('p-description__picture', 'westernunion', 'p-description__image', 'Логотип банка
+                      Зираат', '315', '100') }}
+                    </a>
+                    <a href="https://www.moneygram.com/mgo/us/en/" class="p-description__logo-link">
+                      {{ imagePng('p-description__picture', 'monegr', 'p-description__image', 'Логотип банка Зираат',
+                      '315', '100') }}
+                    </a>
+                    <a href="https://koronapay.com/" class="p-description__logo-link">
+                      {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'Золотая
+                      корона') }}
+                    </a>
                   </div>
                 </div>
-                
-                
+
+
               </div>
             </li>
 

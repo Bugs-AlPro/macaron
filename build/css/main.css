@@ -62,7 +62,6 @@ ul, li, p {
     color: var(--title-blue);
   }
   .header__text {
-    font-family: "Pacifico", cursive;
     font-weight: 400;
     font-size: 2em;
     color: var(--title-gray);
@@ -113,10 +112,10 @@ ul, li, p {
   }
   .title-section__text {
     font-size: 1.7em;
+    font-weight: 600;
     margin-top: 10px;
     padding-bottom: 5px;
     color: var(--title-gray);
-    font-family: "Pacifico", cursive;
   }
   .title-section__head--red {
     color: var(--title-red);
@@ -125,7 +124,6 @@ ul, li, p {
     color: var(--title-blue);
   }
   .title-section__head--reviews {
-    font-family: "Pacifico", cursive;
     color: var(--title-gray);
   }
 
@@ -245,7 +243,6 @@ ul, li, p {
   }
   .want__text {
     margin-top: 30px;
-    font-family: "Pacifico", cursive;
     font-size: 1.6em;
     color: var(--text-gray);
     display: inline-flex;
@@ -325,7 +322,6 @@ ul, li, p {
 
   .offer-wrap {
     background-color: var(--back-lightred);
-    border-top-left-radius: 100px;
     overflow: hidden;
     position: relative;
   }
@@ -574,9 +570,9 @@ ul, li, p {
     text-decoration: none;
     --shadow-color: 359deg 22% 54%;
     --shadow-elevation-medium:
-    0px 0.1px 0.2px hsl(var(--shadow-color) / 0),
-    0px 0.6px 0.9px hsl(var(--shadow-color) / 0.32),
-    0px 1.6px 2.4px hsl(var(--shadow-color) / 0.64);
+      0px 0.1px 0.2px hsl(var(--shadow-color) / 0),
+      0px 0.6px 0.9px hsl(var(--shadow-color) / 0.32),
+      0px 1.6px 2.4px hsl(var(--shadow-color) / 0.64);
     box-shadow: var(--shadow-elevation-medium);
     background-color: whitesmoke;
     font-weight: bold;
@@ -716,10 +712,27 @@ ul, li, p {
 
   .slider-offer__item {
     height: 150px;
+    margin-bottom: 50px;
   }
   .slider-offer__img {
     height: auto;
     border-radius: 10px;
+  }
+  .slider-offer__btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 70px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.4);
+    transition: 0.2s;
+    color: black;
+  }
+  .slider-offer__btn:hover, .slider-offer__btn:focus {
+    transform: scale(1.1);
+    transition: 0.2s;
   }
 
   .feedback-slider__item {
@@ -1276,9 +1289,9 @@ ul, li, p {
     text-decoration: none;
     --shadow-color: 359deg 22% 54%;
     --shadow-elevation-medium:
-    0px 0.1px 0.2px hsl(var(--shadow-color) / 0),
-    0px 0.6px 0.9px hsl(var(--shadow-color) / 0.32),
-    0px 1.6px 2.4px hsl(var(--shadow-color) / 0.64);
+      0px 0.1px 0.2px hsl(var(--shadow-color) / 0),
+      0px 0.6px 0.9px hsl(var(--shadow-color) / 0.32),
+      0px 1.6px 2.4px hsl(var(--shadow-color) / 0.64);
     box-shadow: var(--shadow-elevation-medium);
     background-color: whitesmoke;
     font-weight: bold;
@@ -1396,8 +1409,8 @@ ul, li, p {
     margin-top: 10px;
   }
   .p-description__text {
-    align-self: center;
     line-height: 2em;
+    text-align: start;
   }
   .p-description__copy {
     padding: 5px 10px;
@@ -1411,7 +1424,8 @@ ul, li, p {
   .p-description__block {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1rem;
   }
   .p-description__image {
     max-width: 300px;
