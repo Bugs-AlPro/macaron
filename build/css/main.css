@@ -62,6 +62,7 @@ ul, li, p {
     color: var(--title-blue);
   }
   .header__text {
+    font-family: "Kurale", serif;
     font-weight: 400;
     font-size: 2em;
     color: var(--title-gray);
@@ -673,6 +674,7 @@ ul, li, p {
     display: inline-block;
     padding: 5px 10px;
     background-color: whitesmoke;
+    font-size: 0.7em;
   }
   .p-description__logo {
     display: flex;
@@ -859,12 +861,12 @@ ul, li, p {
   .header__head {
     font-family: "Lobster", cursive;
     font-weight: 400;
-    font-size: 4.5em;
+    font-size: 4em;
     margin: 0 0 10px 0;
     color: var(--title-blue);
   }
   .header__text {
-    font-family: "Pacifico", cursive;
+    font-family: "Kurale", serif;
     font-weight: 400;
     font-size: 2.6em;
     color: var(--title-gray);
@@ -913,6 +915,7 @@ ul, li, p {
     font-size: 2em;
     margin-top: 10px;
     color: var(--title-gray);
+    font-family: "Kurale", serif;
   }
   .title-section__head--red {
     color: var(--title-red);

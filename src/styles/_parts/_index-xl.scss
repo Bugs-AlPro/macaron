@@ -14,13 +14,15 @@
     &__head {
       font-family: 'Lobster', cursive;
       font-weight: 400;
-      font-size: 4.5em;
+      font-size: 4em;
       margin: 0 0 10px 0;
       color: var(--title-blue);
     }
 
     &__text {
-      font-family: 'Pacifico', cursive;
+      // font-family: 'Pacifico', cursive;
+      font-family: 'Kurale', serif;
+      // font-family: 'Vollkorn SC', serif;
       font-weight: 400;
       font-size: 2.6em;
       color: var(--title-gray);
@@ -79,6 +81,7 @@
       margin-top: 10px;
       color: var(--title-gray);
       // font-family: 'Pacifico', cursive;
+      font-family: 'Kurale', serif;
     }
 
     &__head--red {
