@@ -5,17 +5,7 @@
       <div class="offer__title title-section">
         <h2 class="title-section__head title-section__head--blue">Моё предложение</h2>
         <p class="title-section__text">точнее - их даже несколько</p>
-        <ul class="offer__slider slider-offer slider-offer-base">
-          {% for item in sliderOfferBase %}
-          <li class="slider-offer__item slider-offer__item--top">
-            <picture class="slider-offer__picture">
-              <source srcset="img/{{ item.img }}.webp" type="image/webp">
-              <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="250">
-            </picture>
-          </li>
-          {% endfor %}
-        </ul>
-        <button id="btn-offer-base" class="slider-offer__btn"></button>
+
       </div>
 
       <div class="offer__body">
