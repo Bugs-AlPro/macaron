@@ -10,8 +10,8 @@ var sliderOfferBase = tns({
   fixedWidth: 270,
   autoplay: true,
   navAsThumbnails: true,
-  autoplayTimeout: 1500,
-  speed: 600,
+  autoplayTimeout: 5000,
+  speed: 3000,
   autoplayButton: '#btn-offer-base',
   autoplayText: [
     "▶",

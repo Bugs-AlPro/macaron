@@ -1,6 +1,17 @@
 <section class="question-wrap">
   <div class="container">
     <div class="question" id="question">
+      <ul class="question__slider slider-offer slider-offer-base">
+        {% for item in sliderOfferBase %}
+        <li class="slider-offer__item slider-offer__item--top">
+          <picture class="slider-offer__picture">
+            <source srcset="img/{{ item.img }}.webp" type="image/webp">
+            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="250">
+          </picture>
+        </li>
+        {% endfor %}
+      </ul>
+      <button id="btn-offer-base" class="slider-offer__btn"></button>
       <div class="question__title title-section">
         <h2 class="title-section__head title-section__head--blue">Проверь себя</h2>
         <p class="title-section__text">Что ты знаешь о макарон?</p>
@@ -28,17 +39,7 @@
           <div class="question-item__text">Невероятно вкусный</div>
         </li>
       </ul>
-      <ul class="question__slider slider-offer slider-offer-base">
-        {% for item in sliderOfferBase %}
-        <li class="slider-offer__item slider-offer__item--top">
-          <picture class="slider-offer__picture">
-            <source srcset="img/{{ item.img }}.webp" type="image/webp">
-            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="250">
-          </picture>
-        </li>
-        {% endfor %}
-      </ul>
-      <button id="btn-offer-base" class="slider-offer__btn"></button>
+
     </div>
   </div>
 </section>

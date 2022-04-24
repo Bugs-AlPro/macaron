@@ -130,6 +130,7 @@ ul, li, p {
 
   .question-wrap {
     position: relative;
+    overflow: hidden;
   }
 
   .question-wrap::before {
@@ -149,7 +150,7 @@ ul, li, p {
   .question {
     position: relative;
     z-index: 2;
-    padding: 70px 0;
+    padding: 16px 0;
   }
   .question__list {
     position: relative;
@@ -161,7 +162,7 @@ ul, li, p {
     font-weight: 600;
   }
   .question__slider {
-    margin: 0;
+    margin: 0 0 25px 0;
   }
 
   .question-item {
@@ -700,6 +701,7 @@ ul, li, p {
   }
 
   .currency {
+    box-shadow: 0 -4px 10px 0px var(--text-gray);
     position: relative;
     display: inline-flex;
     gap: 15px;
@@ -718,17 +720,17 @@ ul, li, p {
     padding: 5px 10px;
     margin: 0;
     background-color: inherit;
-    border-bottom: 2px solid whitesmoke;
     color: var(--text-gray);
-    transition: 0.1s;
+    transition: 0.2s;
   }
   .currency__btn:hover {
+    transform: scale(1.4);
     color: var(--text-darkgray);
-    transition: 0.1s;
+    transition: 0.2s;
     color: var(--title-red);
   }
   .currency__btn--current {
-    transform: scale(1.3);
+    transform: scale(1.4);
     color: var(--text-darkgray);
     transition: 0.2s;
     color: var(--title-red);
@@ -804,11 +806,12 @@ ul, li, p {
   }
   .slider-offer__btn {
     position: absolute;
-    bottom: 0;
+    top: 16px;
     left: 0;
-    height: 40px;
+    height: 70px;
     width: 70px;
     cursor: pointer;
+    border-radius: 50%;
     border: none;
     background-color: rgba(128, 128, 128, 0.4);
     transition: 0.2s;
@@ -1030,7 +1033,7 @@ ul, li, p {
   .question {
     position: relative;
     z-index: 2;
-    padding: 70px 0 0px 0;
+    padding: 16px 0 16px 0;
   }
   .question__list {
     margin: auto;
@@ -1045,7 +1048,7 @@ ul, li, p {
     font-weight: 600;
   }
   .question__slider {
-    margin: 20px 0 0 0;
+    margin: 0 0 30px 0;
   }
 
   .question-item {
@@ -1132,6 +1135,7 @@ ul, li, p {
   }
   .want__text {
     margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 1.5em;
     color: var(--text-gray);
     display: inline-flex;
@@ -1570,6 +1574,7 @@ ul, li, p {
   }
 
   .currency {
+    box-shadow: 0 -4px 10px 0px var(--text-gray);
     position: relative;
     display: inline-flex;
     gap: 15px;
@@ -1590,15 +1595,16 @@ ul, li, p {
     margin: 0;
     background-color: inherit;
     color: var(--text-gray);
-    transition: 0.1s;
+    transition: 0.2s;
   }
   .currency__btn:hover {
     color: var(--text-darkgray);
-    transition: 0.1s;
+    transition: 0.2s;
     color: var(--title-red);
+    transform: scale(1.4);
   }
   .currency__btn--current {
-    transform: scale(1.3);
+    transform: scale(1.4);
     transition: 0.2s;
     color: var(--title-red);
   }
@@ -1670,8 +1676,8 @@ ul, li, p {
   }
   .slider-offer__btn {
     position: absolute;
-    bottom: 230px;
-    right: 0px;
+    top: 230px;
+    left: 0px;
     height: 50px;
     width: 50px;
     border-radius: 50%;

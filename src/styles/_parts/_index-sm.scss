@@ -104,6 +104,7 @@
 
   .question-wrap {
     position: relative;
+    overflow: hidden;
   }
 
   .question-wrap::before {
@@ -124,7 +125,7 @@
   .question {
     position: relative;
     z-index: 2;
-    padding: 70px 0;
+    padding: 16px 0;
 
     &__list {
       position: relative;
@@ -139,7 +140,7 @@
 
     &__slider {
       // padding-top: 15px;
-      margin: 0;
+      margin: 0 0 25px 0;
     }
   }
 
@@ -809,6 +810,7 @@
   }
 
   .currency {
+    box-shadow: 0 -4px 10px 0px var(--text-gray);
     position: relative;
     display: inline-flex;
     gap: 15px;
@@ -831,24 +833,24 @@
       padding: 5px 10px;
       margin: 0;
       background-color: inherit;
-      border-bottom: 2px solid whitesmoke;
+      // border-bottom: 2px solid whitesmoke;
       color: var(--text-gray);
-      transition: 0.1s;
+      transition: 0.2s;
     }
 
     &__btn:hover {
       // border-bottom: 2px solid gray;
       // border-bottom: 2px solid gray;
-      // transform: scale(1.2);
+      transform: scale(1.4);
       color: var(--text-darkgray);
-      transition: 0.1s;
+      transition: 0.2s;
       color: var(--title-red);
     }
 
     &__btn--current {
       // border-bottom: 2px solid gray;
       // border-bottom: 2px solid gray;
-      transform: scale(1.3);
+      transform: scale(1.4);
       color: var(--text-darkgray);
       transition: 0.2s;
       color: var(--title-red);
@@ -949,12 +951,12 @@
 
     &__btn {
       position: absolute;
-      bottom: 0;
+      top: 16px;
       left: 0;
-      height: 40px;
+      height: 70px;
       width: 70px;
       cursor: pointer;
-      // border-radius: 50%;
+      border-radius: 50%;
       border: none;
       background-color: rgba(128, 128, 128, 0.4);
       transition: 0.2s;
