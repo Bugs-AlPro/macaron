@@ -14,3 +14,63 @@ for (let paymentItem of paymentItems) {
     paymentItem.nextElementSibling.classList.toggle('payment__description--open');
   })
 }
+
+const costsBtns = document.querySelectorAll('.currency__btn');
+const costsBtnUsd = document.querySelector('.currency__btn--usd');
+const costsBtnRub = document.querySelector('.currency__btn--rub');
+const costsBtnEur = document.querySelector('.currency__btn--eur');
+const costsBox = document.querySelector('.costs__box');
+const costsBoxes = document.querySelectorAll('.costs__box');
+
+costsBtnUsd.addEventListener('click', () => {
+  if (costsBtnUsd.classList.contains('currency__btn--current')) {
+    costsBtnUsd.classList.remove('currency__btn--current');
+  } else {
+    costsBtnUsd.classList.add('currency__btn--current');
+    costsBtnRub.classList.remove('currency__btn--current');
+    costsBtnEur.classList.remove('currency__btn--current');
+
+    for (let item of costsBoxes) {
+      item.classList.add('costs__box--left');
+      item.classList.remove('costs__box--center');
+      item.classList.remove('costs__box--right');
+    }
+
+
+  }
+}
+)
+costsBtnEur.addEventListener('click', () => {
+  if (costsBtnEur.classList.contains('currency__btn--current')) {
+    costsBtnEur.classList.remove('currency__btn--current');
+  } else {
+    costsBtnEur.classList.add('currency__btn--current');
+    costsBtnRub.classList.remove('currency__btn--current');
+    costsBtnUsd.classList.remove('currency__btn--current');
+
+    for (let item of costsBoxes) {
+      item.classList.add('costs__box--right');
+      item.classList.remove('costs__box--center');
+      item.classList.remove('costs__box--left');
+    }
+
+  }
+}
+)
+
+costsBtnRub.addEventListener('click', () => {
+  if (costsBtnRub.classList.contains('currency__btn--current')) {
+    costsBtnRub.classList.remove('currency__btn--current');
+  } else {
+    costsBtnRub.classList.add('currency__btn--current');
+    costsBtnUsd.classList.remove('currency__btn--current');
+    costsBtnEur.classList.remove('currency__btn--current');
+
+    for (let item of costsBoxes) {
+      item.classList.add('costs__box--center');
+      item.classList.remove('costs__box--left');
+      item.classList.remove('costs__box--right');
+    }
+  }
+}
+)
