@@ -1,18 +1,18 @@
-'use strict'
-
-var gulp = require('gulp');
-var nunjucks = require('gulp-nunjucks');
-var sass = require('gulp-sass')(require('sass'));
-var browsersync = require('browser-sync');
-var del = require('del');
-var reload = browsersync.reload;
-var clone = require('gulp-clone');
-var sink = clone.sink();
-var changed = require('gulp-changed');
-var webp = require('gulp-webp');
-var imagemin = require('gulp-imagemin');
-var svgSprite = require('gulp-svg-sprite');
-var cheerio = require('gulp-cheerio');
+import gulp from 'gulp';
+import nunjucks from 'gulp-nunjucks';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
+import browsersync from 'browser-sync';
+import del from 'del';
+const reload = browsersync.reload;
+import clone from 'gulp-clone';
+const sink = clone.sink();
+import changed from 'gulp-changed';
+import webp from 'gulp-webp';
+import imagemin from 'gulp-imagemin';
+import svgSprite from 'gulp-svg-sprite';
+import cheerio from 'gulp-cheerio';
 
 
 var path = {
@@ -48,7 +48,7 @@ var path = {
   base: './build'
 };
 
-function browserSync(done) {
+export const browserSync = (done) => {
   browsersync.init({
     server: {
       baseDir: path.base
@@ -58,11 +58,11 @@ function browserSync(done) {
   done();
 };
 
-function clean() {
+export const clean = () => {
   return del(path.base);
 };
 
-function html() {
+export const html = () => {
   return gulp
     .src(path.src.html)
     .pipe(nunjucks.compile())
@@ -70,7 +70,7 @@ function html() {
     .pipe(reload({ stream: true }));
 };
 
-function styles() {
+export const styles = () => {
   return gulp
     .src(path.src.styles)
     .pipe(sass().on('error', sass.logError))
@@ -78,28 +78,28 @@ function styles() {
     .pipe(reload({ stream: true }));
 };
 
-function js() {
+export const js = () => {
   return gulp
     .src(path.src.js)
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({ stream: true }));
 };
 
-function font() {
+export const font = () => {
   return gulp
     .src(path.src.font)
     .pipe(gulp.dest(path.build.font))
     .pipe(reload({ stream: true }));
 };
 
-function video() {
+export const video = () => {
   return gulp
     .src(path.src.video)
     .pipe(gulp.dest(path.build.video))
     .pipe(reload({ stream: true }));
 };
 
-function images() {
+export const images = () => {
   return gulp
     .src(path.src.images)
     .pipe(changed(path.build.images))
@@ -111,7 +111,7 @@ function images() {
     .pipe(reload({ stream: true }));
 };
 
-function svg() {
+export const svg = () => {
   return gulp
     .src(path.src.svg)
     .pipe(cheerio({
@@ -133,7 +133,7 @@ function svg() {
     .pipe(reload({ stream: true }));
 };
 
-function svgcolor() {
+export const svgcolor = () => {
   return gulp
     .src(path.src.svgcolor)
     .pipe(imagemin())
@@ -141,6 +141,7 @@ function svgcolor() {
       mode: {
         stack: {
           sprite: "../sprite-color.svg"
+          // example: true
         }
       }
     }))
@@ -148,7 +149,7 @@ function svgcolor() {
     .pipe(reload({ stream: true }));
 };
 
-function watchFiles() {
+export const watchFiles = () => {
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.styles], styles);
   gulp.watch([path.watch.images], images);
@@ -158,14 +159,5 @@ function watchFiles() {
   gulp.watch([path.watch.svg], svg)
 };
 
-gulp.task('html', html);
-gulp.task('styles', styles);
-gulp.task('img', images);
-gulp.task('svg', svg);
-gulp.task('svgcolor', svgcolor);
-gulp.task('js', js);
-gulp.task('font', font);
-gulp.task('video', video);
-
-gulp.task('build', gulp.series(clean, gulp.parallel(html, styles, images, js, font, video, svgcolor, svg)));
-gulp.task('watch', gulp.parallel(watchFiles, browserSync));
+export const build = gulp.series(clean, gulp.parallel(html, styles, images, js, font, video, svgcolor, svg));
+export const watch = gulp.parallel(watchFiles, browserSync);
