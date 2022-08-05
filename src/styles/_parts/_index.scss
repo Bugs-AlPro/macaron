@@ -1,16 +1,20 @@
 body {
   // font-family: 'Glory', sans-serif;
   // font-family: 'Lobster', cursive;
-    // font-family: 'Pacifico', cursive;
+  // font-family: 'Pacifico', cursive;
   font-family: 'Montserrat', sans-serif;
   min-width: 320px;
   margin: 0;
 }
-ul, li, p {
+
+ul,
+li,
+p {
   list-style: none;
   padding: 0;
   margin: 0;
-  }
+}
+
 .hidden-text {
   position: absolute;
   width: 1px;
@@ -24,7 +28,7 @@ ul, li, p {
   font-size: 1em;
   overflow: hidden;
 }
+
 .svg {
   fill: currentColor;
 }
-
