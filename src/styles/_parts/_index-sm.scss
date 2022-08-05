@@ -790,9 +790,10 @@
     }
 
     &__logo {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+      display: grid;
+      padding-left: 10px;
+      grid-template-columns: auto auto auto;
+      gap: 1rem;
     }
 
     &__block {
@@ -804,7 +805,7 @@
     }
 
     &__image {
-      max-width: 250px;
+      max-width: 220px;
       width: 100%;
       height: auto;
       // margin: 10px;
