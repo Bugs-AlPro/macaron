@@ -74,3 +74,10 @@ costsBtnRub.addEventListener('click', () => {
   }
 }
 )
+
+const costsBtnMenu = document.querySelector('.header-menu');
+const costsNav = document.querySelector('.nav');
+costsBtnMenu.addEventListener('click', () => {
+  costsBtnMenu.classList.toggle('header-menu--open');
+  costsBtnMenu.nextElementSibling.classList.toggle('nav--open');
+})

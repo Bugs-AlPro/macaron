@@ -1,6 +1,6 @@
-<section class="offer-wrap">
+<section class="offer-wrap" id="offer">
   <div class="container">
-    <div class="offer" id="offer">
+    <div class="offer">
 
       <div class="offer__title title-section">
         <h2 class="title-section__head title-section__head--blue">Моё предложение</h2>
@@ -27,9 +27,9 @@
                 <div class="costs__label">
                   <span class="costs__text">цена</span>
                   <div class="costs__box costs__box--center">
-                    <span class="costs__item">50 $</span>
+                    <span class="costs__item">65 $</span>
                     <span class="costs__item">4000 ₽</span>
-                    <span class="costs__item">50 €</span>
+                    <span class="costs__item">65 €</span>
                   </div>
                 </div>
               </div>
@@ -56,13 +56,64 @@
                 <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
                 <li class="offer-item__item">Видео о том, как делать роспись и выпекать фигурные
                   макарон.</li>
+                <li class="offer-item__item">Excel таблица подсчета себестоимости расходуемых продуктов.</li>
+                <li class="offer-item__item">Мой секретный ингредиент с которым у вас
+                  обязательно получится довести макарон до уровня
+                  продаж.</li>
+                <li class="offer-item__item offer-item__item--slider">
+                  <ul class="slider-offer slider-all-ru">
+                    {% for item in sliderAllRu %}
+                    <li class="slider-offer__item">
+                      <picture class="slider-offer__picture">
+                        <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                        <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                      </picture>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              </ol>
+
+            </div>
+
+          </li>
+          <li class="offer__item offer-item">
+            <div class="offer-item__title offer-i-head">
+              <h3 class="offer-i-head__text">Отдельно крышечки</h3>
+              <div class="offer-i-head__cost costs">
+                <div class="costs__label">
+                  <span class="costs__text">цена</span>
+                  <div class="costs__box costs__box--center">
+                    <span class="costs__item">40 $</span>
+                    <span class="costs__item">2500 ₽</span>
+                    <span class="costs__item">40 €</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="offer-item__btn"
+              aria-label="Показать (скрыть) список того, что в это входит"></button>
+            <div class="offer-item__body">
+              <div class="offer-item__buy buy">
+                <a href="#payment-block" class="buy__link">Оплатить курс</a>
+              </div>
+              <ol class="offer-item__list">
+                <li class="offer-item__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
+                  макарон, с
+                  рецептом крышечек на итальянской меренге с
+                  пониженным содержанием сахара. Файл PDF на 20 стр.
+                </li>
+                <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
+                <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
+                <li class="offer-item__item">Видео о том, как делать роспись и выпекать фигурные
+                  макарон.</li>
 
                 <li class="offer-item__item">Мой секретный ингредиент с которым у вас
                   обязательно получится довести макарон до уровня
                   продаж.</li>
                 <li class="offer-item__item offer-item__item--slider">
-                  <ul class="slider-offer slider-offer-cover1">
-                    {% for item in sliderOfferCover %}
+                  <ul class="slider-offer slider-shells-ru">
+                    {% for item in sliderOfferCream %}
                     <li class="slider-offer__item">
                       <picture class="slider-offer__picture">
                         <source srcset="img/{{ item.img }}.webp" type="image/webp">
@@ -117,7 +168,7 @@
                   мятой, лавандой, ванилью.</li>
                 <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
                 <li class="offer-item__item offer-item__item--slider">
-                  <ul class="slider-offer slider-offer-cream1">
+                  <ul class="slider-offer slider-cream-ru">
                     {% for item in sliderOfferCream %}
                     <li class="slider-offer__item">
                       <picture class="slider-offer__picture">
@@ -163,7 +214,7 @@
                   ароматизации фисташковой пастой, кокосовой и другими.
                 </li>
                 <li class="offer-item__item offer-item__item--slider">
-                  <ul class="slider-offer slider-offer-eskimo">
+                  <ul class="slider-offer slider-eskimo">
                     {% for item in sliderOfferEskimo %}
                     <li class="slider-offer__item">
                       <picture class="slider-offer__picture">
@@ -181,14 +232,14 @@
           </li>
           <li class="offer__item offer-item">
             <div class="offer-item__title offer-i-head">
-              <h3 class="offer-i-head__text">Всё с моей поддержикой</h3>
+              <h3 class="offer-i-head__text">Все уроки с моей поддержкой</h3>
               <div class="offer-i-head__cost costs">
                 <div class="costs__label">
                   <span class="costs__text">цена</span>
                   <div class="costs__box costs__box--center">
-                    <span class="costs__item">65 $</span>
+                    <span class="costs__item">80 $</span>
                     <span class="costs__item">5000 ₽</span>
-                    <span class="costs__item">65 €</span>
+                    <span class="costs__item">80 €</span>
                   </div>
                 </div>
 
@@ -215,9 +266,7 @@
 
           </li>
         </ul>
-        <div class="offer__contact">
-          <p id="payment-block" class="offer__text">Напишите мне если у вас есть какие-либо вопросы по курсу или если вы
-            не уверены какой способ оплаты выбрать.</p>
+        <div class="offer__contact" id="payment-block">
           <ul class="offer__social social">
             <li class="social__item">
               <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Ссылка на telegram.">
@@ -238,7 +287,10 @@
               </a>
             </li>
           </ul>
-          <p class="offer__text offer__text--payment">Способы оплаты</p>
+          <p class="offer__text">Напишите мне если у вас есть какие-либо вопросы по курсу или если вы
+            не уверены какой способ оплаты выбрать.</p>
+
+          <h3 class="offer__title-payment">Способы оплаты</h3>
           <ul class="offer__payment payment">
 
             <li class="payment__item">

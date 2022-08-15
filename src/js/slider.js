@@ -19,8 +19,19 @@ var sliderOfferBase = tns({
   ],
 });
 
-var sliderOfferCover1 = tns({
-  container: '.slider-offer-cover1',
+var sliderAllRu = tns({
+  container: '.slider-all-ru',
+  mode: 'carousel',
+  swipeAngle: false,
+  loop: true,
+  gutter: 10,
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  fixedWidth: 200,
+});
+var sliderShellsRu = tns({
+  container: '.slider-shells-ru',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -31,8 +42,9 @@ var sliderOfferCover1 = tns({
   fixedWidth: 200,
 });
 
-var sliderOfferCream1 = tns({
-  container: '.slider-offer-cream1',
+
+var sliderOfferCreamRu = tns({
+  container: '.slider-cream-ru',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -44,7 +56,7 @@ var sliderOfferCream1 = tns({
 });
 
 var sliderOfferEskimo = tns({
-  container: '.slider-offer-eskimo',
+  container: '.slider-eskimo',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -54,6 +66,7 @@ var sliderOfferEskimo = tns({
   nav: false,
   fixedWidth: 200,
 });
+
 var feedbackSlider = tns({
   container: '.feedback-slider',
   mode: 'carousel',

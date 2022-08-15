@@ -1,10 +1,10 @@
 {% set title = 'Macaron' %}
-{% set lang = 'ru' %}
+{% set lang = 'en' %}
 {% set keywords = 'пирожные, макаронс, обучение макаронс, macarons, как приготовить макаронс, макарунс,
 macaron_by_elena' %}
 {% set description = 'Обучаю приготовлению вкуснейшего десерта - Макарон. Даже если вы не кондитер - обязательно
 попробуйте себя в этой роли! Не пожалеете!' %}
-{% set js = 'js/slider.js' %}
+{% set js = 'js/slideren.js' %}
 {% extends "templates/default.html" %}
 
 {% set sliderOfferBase = [
@@ -42,7 +42,7 @@ macaron_by_elena' %}
 {img: "eskimo6", alt: "Чизкейк-эскимо: в чёрной глазури."},
 {img: "eskimo10", alt: "Набор чизкейк-эскимо в коробке."}
 ]%}
-{% set sliderAllRu = [
+{% set sliderAllEn = [
 {img: "cover1", alt: "Пирожные макарон: красного и белого цвета с рисуночками."},
 {img: "cover2", alt: "Пирожные макарон: сиреневого цвета со вкусом смородины, на фоне лаванды."},
 {img: "cover3", alt: "Пирожные макарон: белого и сереневого цвета, на фоне синих цветов."},
@@ -58,7 +58,6 @@ macaron_by_elena' %}
 {img: "cover13", alt: "Набор пирожных макарон в постельных тонах."},
 {img: "cover14", alt: "Пирожные макарон в форме микимауса."}
 ]%}
-
 {% set sliderOfferCream = [
 {img: "cream1", alt: "Начинка для макарон: классический ганаш с малиной, сникерс с орехом."},
 {img: "cream2", alt: "Начинка для макарон: классический ганаш с клубникой."},
@@ -96,20 +95,6 @@ macaron_by_elena' %}
 {img: "feedback13", alt: "Отзыв о успехах: спасибо большое, все кто пробовал тоже хвалили."},
 {img: "feedback14", alt: "Фото Елены, зимой, с коробочкой макарон разных вкусов и цветов."}
 ]%}
-{% set sliderOfferEskimo = [
-{img: "eskimo1", alt: "Чизкейк-эскимо: в розовой глазури, украшен розами."},
-{img: "eskimo2", alt: "Чизкейк-эскимо: в чёрной глазури, украшен золотой крошлой и белым шоколадом."},
-{img: "eskimo9", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
-{img: "eskimo3", alt: "Чизкейк-эскимо: в чёрной глазури, украшен золотой крошлой и белым шоколадом."},
-{img: "eskimo4", alt: "Чизкейк-эскимо: в фисташковой глазури, украшен фисташками и клубникой."},
-{img: "eskimo8", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
-{img: "eskimo5", alt: "Чизкейк-эскимо: в белом шоколаде, украшен золотой крошкой."},
-{img: "eskimo6", alt: "Чизкейк-эскимо: в белом шоколаде, украшен золотой крошкой."},
-{img: "eskimo7", alt: "Чизкейк-эскимо в разрезе, с малиновым вкусом."},
-
-
-{img: "eskimo10", alt: "Набор из 8 штук чизкейк-эскимо в коробке."}
-]%}
 
 {% macro imageSvg(name, class, width, height) %}
 <svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
@@ -136,14 +121,14 @@ macaron_by_elena' %}
 
 {% block content %}
 
-{% include "includes/header.html" %}
+{% include "includes/header-en.html" %}
 
 <main class="main">
 
   {% include "includes/question.html" %}
-  {% include "includes/want.html" %}
-  {% include "includes/offer.html" %}
-  {% include "includes/about.html" %}
+  {% include "includes/want-en.html" %}
+  {% include "includes/offer-en.html" %}
+  {% include "includes/about-en.html" %}
   {% include "includes/feedback.html" %}
 
 </main>
