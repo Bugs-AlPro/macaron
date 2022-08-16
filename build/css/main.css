@@ -71,6 +71,10 @@ p {
     font-size: 2em;
     color: var(--title-gray);
   }
+  .header__slider {
+    padding-top: 20px;
+    margin: 0 0 50px 0;
+  }
 
   .header-top {
     position: fixed;
@@ -204,15 +208,15 @@ p {
   }
 
   .header-menu--open::after {
-    right: 5%;
-    width: 81%;
+    right: 10%;
+    width: 80%;
     transition: 0.2s;
     transform: translateY(-12px) rotate(45deg);
   }
 
   .header-menu--open::before {
-    right: 5%;
-    width: 81%;
+    right: 10%;
+    width: 80%;
     transition: 0.2s;
     transform: translateY(8px) rotate(-45deg);
   }
@@ -876,7 +880,7 @@ p {
   }
   .slider-offer__btn {
     position: absolute;
-    top: 16px;
+    bottom: 20px;
     left: 0;
     height: 70px;
     width: 70px;
