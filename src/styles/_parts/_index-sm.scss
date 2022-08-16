@@ -4,6 +4,10 @@
     padding: 0 20px;
   }
 
+  .header-wrap {
+    overflow: hidden;
+  }
+
   .header {
     text-align: center;
     padding: 130px 0 20px 0;
@@ -906,6 +910,9 @@
     //   color: var(--text-gray);
     //   text-transform: uppercase;
     // }
+    &__logo {
+      color: var(--text-gray);
+    }
 
     &__btn {
       position: absolute;
