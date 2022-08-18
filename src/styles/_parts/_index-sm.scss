@@ -337,15 +337,15 @@
       0 3px 8px 5px rgba(60, 64, 67, .10);
     }
 
-    // &__btn::after {
-    //   position: absolute;
-    //   content: "";
-    //   width: 80%;
-    //   height: 4px;
-    //   background-color: #fff;
-    //   left: 5px;
-    //   bottom: 15px;
-    // }
+    &__btn::after {
+      position: absolute;
+      content: "";
+      width: 80%;
+      height: 4px;
+      background-color: #fff;
+      left: 5px;
+      bottom: 15px;
+    }
 
     &__file {
       border-radius: 15px;
