@@ -303,6 +303,77 @@ p {
     background-size: 50px 50px;
     padding: 50px 0 50px 0;
     overflow: hidden;
+    position: relative;
+  }
+
+  .video {
+    display: inline-block;
+    width: min-content;
+    position: absolute;
+    top: 30%;
+    right: -270px;
+    transition: 0.8s;
+    background-color: silver;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15), 0 3px 8px 5px rgba(60, 64, 67, 0.1);
+  }
+  .video__btn {
+    border: none;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: -47px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-right: 4px solid var(--back-lightred);
+    border-top: 4px solid silver;
+    border-left: 4px solid silver;
+    border-bottom: 4px solid silver;
+    text-transform: uppercase;
+    background-color: var(--title-gray);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15), 0 3px 8px 5px rgba(60, 64, 67, 0.1);
+  }
+  .video__btn--open {
+    border-color: white;
+  }
+  .video__file {
+    border-radius: 15px;
+    border: 4px solid var(--back-lightred);
+    height: 70vh;
+    max-height: 500px;
+  }
+
+  .video--open {
+    right: 10px;
+    transition: 0.8s;
+  }
+
+  .video::before,
+.video::after {
+    position: absolute;
+    content: "";
+    border-radius: 5px;
+    background-color: #d6d5d5;
+  }
+
+  .video::before {
+    height: 4px;
+    width: 30px;
+    top: 4px;
+    left: calc(50% - 15px);
+  }
+
+  .video:after {
+    width: 70px;
+    height: 6px;
+    bottom: 4px;
+    left: calc(50% - 35px);
+    border: 1px solid #eee;
   }
 
   .want {
@@ -1237,12 +1308,53 @@ p {
     background-color: white;
     background-image: linear-gradient(90deg, var(--back-lightblue) 50%, transparent 50%), linear-gradient(var(--back-lightblue) 50%, transparent 50%);
     background-size: 50px 50px;
+    position: relative;
+  }
+
+  .video {
+    display: inline-block;
+    width: min-content;
+    position: sticky;
+    top: 100px;
+    background-color: silver;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+  }
+  .video__file {
+    border-radius: 15px;
+    border: 4px solid var(--back-lightred);
+    height: 350px;
+  }
+
+  .video::before,
+.video::after {
+    position: absolute;
+    content: "";
+    border-radius: 5px;
+    background-color: #d6d5d5;
+  }
+
+  .video::before {
+    height: 4px;
+    width: 30px;
+    top: 4px;
+    left: calc(50% - 15px);
+  }
+
+  .video:after {
+    width: 70px;
+    height: 6px;
+    bottom: 4px;
+    left: calc(50% - 35px);
+    border: 1px solid #eee;
   }
 
   .want {
     padding: 70px 0 40px 0;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   .want__list {
     margin: 0 auto;

@@ -1,18 +1,29 @@
 <section class="want-wrap">
+
   <div class="container">
+
     <div class="want">
+
       <div class="want__title title-section">
         <h2 class="title-section__head title-section__head--red">Хочешь научиться их готовить?</h2>
         <p class="title-section__text">для этого нужно - "всего ничего"</p>
       </div>
+      <div class="want__video video">
+        <button type="button" class="video__btn">reels</button>
+        <video preload="auto" loop controls poster="img/cover.jpg" muted class="video__file">
+          <source src="video/video.mp4" type="video/mp4">
+          <source src="video/video.ogv" type="video/ogg">
+          <source src="video/video.webm" type="video/webm">
+        </video>
+      </div>
       <ul class="want__list">
-        <li class="want__item">
+        <li class="want__item want__item--span">
           {{ imageSvgColor('electriс', 'svgcolor', '70', '100', 'Электрическая духовка.') }}
           Эллектрическая духовка
         </li>
-        <li class="want__item">
-          {{ imageSvgColor('mixer', 'svgcolor', '70', '100', 'Миксер.') }}
-          Миксер
+        <li class="want__item want__item--span">
+          {{ imageSvgColor('teflon', 'svgcolor', '70', '100', 'Тефлоновый коврик.') }}
+          Тефлоновый коврик
         </li>
         <li class="want__item">
           {{ imageSvgColor('thermometer', 'svgcolor', '70', '100', 'Термометр.') }}
@@ -23,22 +34,23 @@
           Весы
         </li>
         <li class="want__item">
-          {{ imageSvgColor('teflon', 'svgcolor', '70', '100', 'Тефлоновый коврик.') }}
-          Тефлоновый коврик
+          {{ imageSvgColor('mixer', 'svgcolor', '70', '100', 'Миксер.') }}
+          Миксер
         </li>
         <li class="want__item">
           {{ imageSvgColor('saucepan', 'svgcolor', '70', '100', 'Сотейник.') }}
           Сотейник
         </li>
-        <li class="want__item">
+        <li class="want__item want__item--span">
           {{ imageSvgColor('cream', 'svgcolor', '70', '100', 'Кондитерский мешок.') }}
           Кондитерский мешок
         </li>
-        <li class="want__item">
+        <li class="want__item want__item--span">
           {{ imageSvgColor('ingredients', 'svgcolor', '70', '100', 'Ингридиенты.') }}
           Немного ингридиентов
         </li>
       </ul>
+
       <p class="want__text">и самое главное - тот кто подскажет как это всё использовать
       </p>
       <div class="want__video offer-video">
