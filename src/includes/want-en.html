@@ -5,14 +5,6 @@
         <h2 class="title-section__head title-section__head--red">Do you want to learn how to cook them?</h2>
         <p class="title-section__text">to get started, you will need</p>
       </div>
-      <div class="want__video video">
-        <button type="button" class="video__btn">reels</button>
-        <video preload="auto" loop controls poster="img/cover.jpg" muted class="video__file">
-          <source src="video/video.mp4" type="video/mp4">
-          <source src="video/video.ogv" type="video/ogg">
-          <source src="video/video.webm" type="video/webm">
-        </video>
-      </div>
       <ul class="want__list">
         <li class="want__item">
           {{ imageSvgColor('electriс', 'svgcolor', '70', '100', 'Electric oven.') }}
@@ -59,23 +51,53 @@
         </a>
       </div>
 
-      <!-- <div class="want__preview preview">
-        
+
+      <div class="want__preview preview">
+        <div class="preview__top">
+          {{ imageSvgColor('cook', 'svgcolor preview__img', '70', '100', 'Girl confectioner.') }}
           <h3 class="preview__title">
-            {{ imageSvgColor('cook', 'svgcolor preview__img', '70', '100', 'Девушка повор.') }}
-            <span class="preview__text">Короткий пример моего урока</span>
+            Check out what's in my course
           </h3>
-          <button type="button" class="preview__btn"
-            aria-label="Показать (скрыть) список того, что в это входит"></button>
-          <div class="preview__body preview-body">
-            <div class="preview-body__description">
-              <p class="preview-body__text">В урок входит, рецепт или тех. карта сподробным описанием и видео всего процесса приготовления.</p>
+
+        </div>
+        <div class="preview__body preview-body">
+
+          <div class="preview-body__item preview-body__item--pdf">
+            <p class="preview-body__text">You will receive a PDF file with a detailed description of the entire cooking
+              process, as in the example below.</p>
+            <picture class="preview-body__picture">
+              <source srcset="img/pdf-eng.webp" type="image/webp">
+              <img src="img/pdf-eng.png" alt="Screenshot of one page from PDF." class="preview-body__img" width="100"
+                height="100">
+            </picture>
+          </div>
+          <div class="preview-body__item video">
+            <button type="button" class="video__btn">reels</button>
+            <video preload="auto" loop controls poster="img/cover.jpg" muted class="video__file">
+              <source src="video/video.mp4" type="video/mp4">
+              <source src="video/video.ogv" type="video/ogg">
+              <source src="video/video.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="preview-body__item">
+            <p class="preview-body__text">You get access to my private YouTube channel, where I recorded the entire
+              cooking process. Below is an example of such a video.</p>
+            <div class="offer-video">
+              <a href="https://youtu.be/V5LbmZrx_8c" class="offer-video__link offer-video__link--preview">
+                <picture class="offer-video__picture">
+                  <source srcset="img/caramel.webp" type="image/webp">
+                  <img src="img/caramel.jpg" alt="Announcement. A detailed tutorial on how to make macaroons."
+                    class="offer-video__img">
+                </picture>
+              </a>
             </div>
-            <div class="preview-body__pdf"></div>
-            <div class="preview-body__video"></div>
+
           </div>
 
-      </div> -->
+        </div>
+
+      </div>
+
 
     </div>
   </div>
