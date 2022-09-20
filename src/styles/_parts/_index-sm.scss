@@ -290,6 +290,91 @@
     position: relative;
   }
 
+  .preview {
+    border: 1px solid var(--title-blue);
+    padding: 1.5em;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.61);
+    box-shadow: 0 0 7px 1px var(--text-gray);
+    margin-top: 50px;
+    // position: relative;
+    overflow: hidden;
+
+    &__img {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      width: 50px;
+      display: none;
+    }
+
+    &__title {
+      text-align: center;
+      // margin: 10px 0 20px 50px;
+      text-transform: uppercase;
+      color: var(--title-red);
+      font-size: 1.5em;
+    }
+  }
+
+  .preview-body {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    // grid-template-columns: 30% auto 30%;
+    // justify-content: center;
+    // position: relative;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      gap: 1em;
+      position: relative;
+    }
+
+    &__item--pdf {
+      order: -1;
+    }
+
+    // &__item::before {
+    //   content: "";
+    //   border-top: 2px solid #6d6d6d;
+    //   align-self: stretch;
+    // }
+
+    &__text {
+      font-size: 1.3em;
+      color: var(--text-gray);
+      // order: -1;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 3px 1px var(--text-gray);
+      // transition: 0.3s;
+    }
+
+    // &__img:hover,
+    // &__img:focus {
+    //   transition: 0.3s;
+    //   transform: scale(1.7) translateX(-40px) translateY(-10px);
+    // }
+
+  }
+
+  .preview-body::before {
+    content: "";
+    border-top: 2px solid #6d6d6d;
+    align-self: stretch;
+    // order: 2;
+  }
+
   .video {
     display: inline-block;
     // grid-column-start: 2;
@@ -298,7 +383,7 @@
     // grid-row-end: 4;
     width: min-content;
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: -270px;
     transition: 0.8s;
     background-color: silver;
@@ -497,6 +582,11 @@
       height: 180px;
       overflow: hidden;
       position: relative;
+    }
+
+    &__link--preview {
+      height: 160px;
+      padding: 10px;
     }
 
     &__link::before {
