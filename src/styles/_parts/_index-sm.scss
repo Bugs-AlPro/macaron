@@ -3,9 +3,35 @@
     padding: 120px 0 0px 0;
     overflow: hidden;
 
+    &--header {
+      padding: 0;
+    }
+
+    &--want {
+      background-color: white;
+      background-image:
+        linear-gradient(90deg, var(--back-lightblue) 50%, transparent 50%),
+        linear-gradient(var(--back-lightblue) 50%, transparent 50%);
+      background-size: 50px 50px;
+      padding: 50px 0 50px 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    &--offer {
+      background-color: var(--back-lightred);
+      position: relative;
+      padding-top: 0;
+    }
+
     &--feedback {
       background-color: var(--back-lightblue);
       background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%237d96a5' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    &--footer {
+      background-color: var(--title-red);
+      padding: 0;
     }
   }
 
@@ -14,50 +40,25 @@
     padding: 0 20px;
   }
 
-  .header-wrap {
-    overflow: hidden;
-  }
-
   .header {
     text-align: center;
     padding: 130px 0 20px 0;
     position: relative;
 
-    &__head {
-      font-family: 'Kurale', serif;
-      font-weight: 400;
-      font-size: 3.4em;
-      margin: 0;
-      color: var(--title-blue);
+    &__top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+      background-color: #eee;
+      display: flex;
+      gap: 0.5em;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 15px 15px 10px 15px;
     }
-
-    &__text {
-      font-family: 'Kurale', serif;
-      font-weight: 400;
-      font-size: 2em;
-      color: var(--title-gray);
-    }
-
-    &__slider {
-      padding-top: 20px;
-      margin: 0 0 50px 0;
-    }
-  }
-
-  .header-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    background-color: #eee;
-    // border: 1px solid red;
-    display: flex;
-    gap: 0.5em;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 15px 15px 10px 15px;
   }
 
   .logo {
@@ -77,11 +78,6 @@
       text-decoration: none;
     }
 
-    &__picture {
-      padding: 0;
-      margin: 0;
-    }
-
     &__img {
       width: 55px;
       height: 55px;
@@ -91,7 +87,6 @@
       padding: 0;
       margin: 0;
     }
-
 
     &__text {
       font-weight: 600;
@@ -116,20 +111,17 @@
       font-weight: 600;
       color: var(--title-blue);
       transition: 0.2s;
-      // transform: translateY(-1px);
     }
 
     &__link:hover,
     &__link:focus {
       transition: 0.2s;
       box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
-      // transform: translateY(-1px);
     }
 
     &__link--current {
       color: hsl(202, 34%, 68%);
       position: relative;
-      // transform: translateY(-1px);
       box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
     }
 
@@ -267,6 +259,14 @@
       font-weight: 600;
       font-size: 2em;
 
+      &--header {
+        font-family: 'Kurale', serif;
+        font-weight: 400;
+        font-size: 3.4em;
+        text-transform: capitalize;
+        color: var(--title-blue);
+      }
+
       &--about {
         font-size: 1.5em;
       }
@@ -278,6 +278,14 @@
       margin-top: 10px;
       padding-bottom: 5px;
       color: var(--title-gray);
+
+      &--header {
+        font-family: 'Kurale', serif;
+        font-weight: 400;
+        font-size: 2em;
+        margin-top: 0;
+        padding-bottom: 0;
+      }
     }
 
     &__head--red {
@@ -291,17 +299,6 @@
     &__head--reviews {
       color: var(--title-gray);
     }
-  }
-
-  .want-wrap {
-    background-color: white;
-    background-image:
-      linear-gradient(90deg, var(--back-lightblue) 50%, transparent 50%),
-      linear-gradient(var(--back-lightblue) 50%, transparent 50%);
-    background-size: 50px 50px;
-    padding: 50px 0 50px 0;
-    overflow: hidden;
-    position: relative;
   }
 
   .preview {
@@ -493,7 +490,6 @@
   }
 
   .want {
-
     display: flex;
     flex-direction: column;
 
@@ -529,12 +525,6 @@
     }
   }
 
-  .offer-wrap {
-    background-color: var(--back-lightred);
-    overflow: hidden;
-    position: relative;
-  }
-
   .offer {
     padding: 110px 0 20px 0;
 
@@ -556,6 +546,11 @@
       font-size: 22px;
       color: var(--text-gray);
       font-weight: 500;
+      text-align: center;
+
+      &--payment {
+        text-transform: uppercase;
+      }
     }
 
     &__phone {
@@ -579,13 +574,12 @@
       transition: 0.4s;
     }
 
-    &__currency {
-      position: relative;
-      z-index: 1;
+    &__social {
+      margin-top: 20px;
     }
   }
 
-  .offer-video {
+  .youtube {
     margin: auto;
     display: inline-block;
 
@@ -866,6 +860,7 @@
       font-size: 1.5em;
       line-height: 70px;
       font-weight: bold;
+      margin-left: 10px;
     }
 
     &__head {
@@ -1120,9 +1115,14 @@
 
   .feedback-slider,
   .slider-offer {
-    display: flex;
-    text-align: center;
-    position: relative;
+
+    &__list {
+      display: flex;
+
+      text-align: center;
+      position: relative;
+      padding: 0;
+    }
 
     &__item {
       width: 100%;
@@ -1138,13 +1138,8 @@
 
   .slider-offer {
     &__item {
-      height: 150px;
-
+      height: auto;
     }
-
-    // &__item--top {
-    //   margin-bottom: 40px;
-    // }
 
     &__img {
       height: auto;
@@ -1173,6 +1168,7 @@
   }
 
   .feedback-slider {
+
     &__item {
       height: 350px;
       padding-left: 10px;
@@ -1208,19 +1204,12 @@
     justify-content: center;
     gap: 50px;
 
-    &__item {
-      margin: 0;
-      padding: 0;
-    }
-
     &__link {
       color: var(--social-link);
       display: block;
       margin: 0;
       padding: 0;
       transition: 0.4s;
-      // width: 50px;
-      // height: 50px;
     }
 
     &__link svg {
@@ -1241,11 +1230,6 @@
       transform: scale(1.1) translateY(5px);
       transition: 0.4s;
     }
-  }
-
-  .footer-wrap {
-    background-color: var(--title-red);
-    overflow: hidden;
   }
 
   .footer {

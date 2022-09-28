@@ -16,7 +16,8 @@ p {
   margin: 0;
 }
 
-.hidden-text {
+.hidden-text,
+.tns-visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

@@ -1,7 +1,7 @@
-<header class="header-wrap">
+<header class="wrap wrap--header">
   <div class="container">
     <div class="header" id="home">
-      <div class="header-top">
+      <div class="header__top">
         <div class="logo">
           <a href="https://www.instagram.com/macaron_by_elena" class="logo__link" aria-label="instagram">
             {{ imageJpg('logo__picture', 'logo', 'logo__img', 'logo', '150', '150') }}
@@ -48,21 +48,23 @@
           </ul>
         </nav>
       </div>
-      <div class="header__title">
-        <h1 class="header__head">Macarons</h1>
-        <p class="header__text">gourmet french dessert - easy and simple</p>
+      <div class="header__title title-section title-section--header">
+        <h1 class="title-section__head title-section__head--header">Macarons</h1>
+        <p class="title-section__text title-section__text--header">gourmet french dessert - easy and simple</p>
       </div>
-      <ul class="header__slider slider-offer slider-offer-base">
-        {% for item in sliderOfferBase %}
-        <li class="slider-offer__item slider-offer__item--top">
-          <picture class="slider-offer__picture">
-            <source srcset="img/{{ item.img }}.webp" type="image/webp">
-            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="250">
-          </picture>
-        </li>
-        {% endfor %}
-      </ul>
-      <button id="btn-offer-base" class="slider-offer__btn"></button>
+      <div class="header__slider slider-offer">
+        <ul class="slider-offer__list sliderOfferBase">
+          {% for item in sliderOfferBase %}
+          <li class="slider-offer__item">
+            <picture class="slider-offer__picture">
+              <source srcset="img/{{ item.img }}.webp" type="image/webp">
+              <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="250">
+            </picture>
+          </li>
+          {% endfor %}
+        </ul>
+        <button id="btn-offer-base" class="slider-offer__btn"></button>
+      </div>
     </div>
   </div>
 </header>

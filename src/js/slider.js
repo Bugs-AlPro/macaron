@@ -1,5 +1,5 @@
 var sliderOfferBase = tns({
-  container: '.slider-offer-base',
+  container: '.sliderOfferBase',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -20,7 +20,7 @@ var sliderOfferBase = tns({
 });
 
 var sliderAllRu = tns({
-  container: '.slider-all-ru',
+  container: '.sliderAllRu',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -31,7 +31,7 @@ var sliderAllRu = tns({
   fixedWidth: 200,
 });
 var sliderShellsRu = tns({
-  container: '.slider-shells-ru',
+  container: '.sliderOfferShellsRu',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -44,7 +44,7 @@ var sliderShellsRu = tns({
 
 
 var sliderOfferCreamRu = tns({
-  container: '.slider-cream-ru',
+  container: '.sliderOfferCreamRu',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -56,7 +56,7 @@ var sliderOfferCreamRu = tns({
 });
 
 var sliderOfferEskimo = tns({
-  container: '.slider-eskimo',
+  container: '.sliderOfferEskimo',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -68,7 +68,7 @@ var sliderOfferEskimo = tns({
 });
 
 var feedbackSlider = tns({
-  container: '.feedback-slider',
+  container: '.sliderFeedback',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
