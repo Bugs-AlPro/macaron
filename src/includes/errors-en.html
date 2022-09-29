@@ -1,0 +1,49 @@
+<section class="wrap wrap--errors">
+
+  <div class="container">
+    <div class="errors">
+      <div class="errors__title title-section">
+        <h2 class="title-section__head title-section__head--reviews">Typical difficulties</h2>
+        <p class="title-section__text">that we solve on the course.</p>
+      </div>
+
+      <ul class="errors__list">
+        <li class="errors__item">Why are the shells inside empty?</li>
+        <li class="errors__item errors__item--red">Why are the shells uneven?</li>
+        <li class="errors__item errors__item--red">Why did the macarons get wet after the filling?</li>
+        <li class="errors__item ">Why do the shells 'explode'?</li>
+        <li class="errors__item errors__item--img errors__item--img-xl">
+          <ul class="errors-img-xl">
+            {% for item in errors %}
+            <li class="errors-img-xl__item">
+              <picture class="errors-img-xl__picture">
+                <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="errors-img-xl__img" height="250">
+              </picture>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="errors__item errors__item--img errors__item--img-sm">
+          <ul class="errors-img-sm errors-img-sm--en">
+            {% for item in errors %}
+            <li class="errors-img-sm__item">
+              <picture class="errors-img-sm__picture">
+                <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="errors-img-sm__img" height="250">
+              </picture>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="errors__item">Why don't skirts grow?</li>
+        <li class="errors__item errors__item--red">How to choose the right temperature for your oven?</li>
+        <li class="errors__item errors__item--red">Why is the meringue not going well?</li>
+        <li class="errors__item">Why do I need an electric oven?</li>
+
+      </ul>
+    </div>
+
+
+  </div>
+</section>

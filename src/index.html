@@ -104,6 +104,13 @@ macaron_by_elena' %}
 {img: "eskimo7", alt: "Чизкейк-эскимо в разрезе, с малиновым вкусом."},
 {img: "eskimo3", alt: "Чизкейк-эскимо: в чёрной глазури, украшен золотой крошлой и белым шоколадом."}
 ]%}
+{% set errors = [
+{img: "bad1", alt: "Чизкейк-эскимо: в розовой глазури, украшен розами."},
+{img: "bad2", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
+{img: "bad3", alt: "Чизкейк-эскимо: в чёрной глазури, украшен золотой крошлой и белым шоколадом."},
+{img: "bad4", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
+{img: "bad5", alt: "Чизкейк-эскимо: в фисташковой глазури, украшен фисташками и клубникой."}
+]%}
 
 {% macro imageSvg(name, class, width, height) %}
 <svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
@@ -135,9 +142,11 @@ macaron_by_elena' %}
 <main class="main">
 
   {% include "includes/want.html" %}
-  {% include "includes/offer.html" %}
-  {% include "includes/about.html" %}
+  {% include "includes/errors.html" %}
+  {% include "includes/skils.html" %}
   {% include "includes/feedback.html" %}
+  {% include "includes/about.html" %}
+  {% include "includes/offer.html" %}
 
 </main>
 

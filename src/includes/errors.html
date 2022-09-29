@@ -1,0 +1,49 @@
+<section class="wrap wrap--errors">
+
+  <div class="container">
+    <div class="errors">
+      <div class="errors__title title-section">
+        <h2 class="title-section__head title-section__head--reviews">Типичные трудности</h2>
+        <p class="title-section__text">которые мы решаем на курсе</p>
+      </div>
+
+      <ul class="errors__list">
+        <li class="errors__item">Почему макарон пустые внутри?</li>
+        <li class="errors__item errors__item--red">Почему крышечки не ровные?</li>
+        <li class="errors__item errors__item--red">Почему макарон после начинки отсырели?</li>
+        <li class="errors__item ">Почему крышечки взрываются?</li>
+        <li class="errors__item errors__item--img errors__item--img-xl">
+          <ul class="errors-img-xl">
+            {% for item in errors %}
+            <li class="errors-img-xl__item">
+              <picture class="errors-img-xl__picture">
+                <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="errors-img-xl__img" height="250">
+              </picture>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="errors__item errors__item--img errors__item--img-sm">
+          <ul class="errors-img-sm">
+            {% for item in errors %}
+            <li class="errors-img-sm__item">
+              <picture class="errors-img-sm__picture">
+                <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="errors-img-sm__img" height="250">
+              </picture>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="errors__item">Почему юбочки не растут?</li>
+        <li class="errors__item errors__item--red">Как выбрать правильную температуру для своей духовки?</li>
+        <li class="errors__item errors__item--red">Почему меренга не получается?</li>
+        <li class="errors__item">Почему нужна электрическая духовка?</li>
+
+      </ul>
+    </div>
+
+
+  </div>
+</section>

@@ -68,3 +68,15 @@ var feedbackSlider = tns({
   nav: false,
   fixedWidth: 200,
 });
+
+var errors = tns({
+  container: '.errors-img-sm--en',
+  mode: 'carousel',
+  swipeAngle: false,
+  loop: true,
+  gutter: 10,
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  fixedWidth: 200,
+});

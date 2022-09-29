@@ -72,27 +72,40 @@ yourself in this role! You will not regret!' %}
 ]%}
 
 {% set sliderFeedback = [
-{img: "feedback1", alt: "Feedback on cakes: The lessons are amazing, everything is told in detail, there is a lot of
+{img: "feedback-en1", alt: "Feedback on cakes: The lessons are amazing, everything is told in detail, there is a lot of
 information. Thanks a lot."},
-{img: "feedback2", alt: "Cake review: Thank you so much for the detailed tips."},
-{img: "feedback3", alt: "Feedback on cakes: do not waste time and money, buy a master class from Lena and you will be
+{img: "feedback-en2", alt: "Cake review: Thank you so much for the detailed tips."},
+{img: "feedback-en3", alt: "Feedback on cakes: do not waste time and money, buy a master class from Lena and you will be
 happy."},
-{img: "feedback4", alt: "Feedback on success: if you do everything according to your technology, then the first time."},
-{img: "feedback5", alt: "Feedback on the success of the student: I learned and now everything is stable. All are super
+{img: "feedback-en4", alt: "Feedback on success: if you do everything according to your technology, then the first
+time."},
+{img: "feedback-en5", alt: "Feedback on the success of the student: I learned and now everything is stable. All are
+super
 pretty."},
-{img: "feedback6", alt: "Feedback on the success of the student: I'm just delighted, not to mention my household. Thank
+{img: "feedback-en6", alt: "Feedback on the success of the student: I'm just delighted, not to mention my household.
+Thank
 you very much for your hard work."},
-{img: "feedback7", alt: "Feedback on success: It's a pleasure to work with you."},
-{img: "feedback8", alt: "Feedback on the successes: they are simply amazing."},
-{img: "feedback9", alt: "Feedback on the success of the student: thank you, you always answer my questions, it was very
+{img: "feedback-en7", alt: "Feedback on success: It's a pleasure to work with you."},
+{img: "feedback-en8", alt: "Feedback on the successes: they are simply amazing."},
+{img: "feedback-en9", alt: "Feedback on the success of the student: thank you, you always answer my questions, it was
+very
 easy to communicate with you."},
-{img: "feedback10", alt: "Course feedback: thanks to Elena for her amazing course."},
-{img: "feedback11", alt: "Feedback on the course: before that, I made it according to a recipe from the Internet and
+{img: "feedback-en10", alt: "Course feedback: thanks to Elena for her amazing course."},
+{img: "feedback-en11", alt: "Feedback on the course: before that, I made it according to a recipe from the Internet and
 always missed something. And then just a song, a fairy tale, and everything went very cool."},
-{img: "feedback12", alt: "Review of the course: the most detailed instruction on the preparation of the sensational
+{img: "feedback-en12", alt: "Review of the course: the most detailed instruction on the preparation of the sensational
 fashionable MACARONS dessert."},
-{img: "feedback13", alt: "Feedback on success: thank you very much, everyone who tried it was satisfied."},
+{img: "feedback-en13", alt: "Feedback on success: thank you very much, everyone who tried it was satisfied."},
+{img: "feedback-en14", alt: "Feedback on success: thank you very much, everyone who tried it was satisfied."},
 {img: "feedback14", alt: "Photo of Elena, in winter, with a box of cakes of different flavors and colors."}
+]%}
+
+{% set errors = [
+{img: "bad1", alt: "Чизкейк-эскимо: в розовой глазури, украшен розами."},
+{img: "bad2", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
+{img: "bad3", alt: "Чизкейк-эскимо: в чёрной глазури, украшен золотой крошлой и белым шоколадом."},
+{img: "bad4", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
+{img: "bad5", alt: "Чизкейк-эскимо: в фисташковой глазури, украшен фисташками и клубникой."}
 ]%}
 
 {% macro imageSvg(name, class, width, height) %}
@@ -125,9 +138,11 @@ fashionable MACARONS dessert."},
 <main class="main">
 
   {% include "includes/want-en.html" %}
-  {% include "includes/offer-en.html" %}
+  {% include "includes/errors-en.html" %}
+  {% include "includes/skils-en.html" %}
+  {% include "includes/feedback-en.html" %}
   {% include "includes/about-en.html" %}
-  {% include "includes/feedback.html" %}
+  {% include "includes/offer-en.html" %}
 
 </main>
 
