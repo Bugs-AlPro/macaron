@@ -559,11 +559,11 @@ p {
     display: none;
     position: absolute;
     top: 130%;
-    left: -25px;
+    right: -17px;
     background-color: #f1f9fd;
     box-shadow: 0 0 7px 4px var(--hover-bluedark);
     z-index: 2;
-    width: 115%;
+    width: 110%;
     max-width: 450px;
     padding: 10px;
     border-radius: 10px;
@@ -586,19 +586,20 @@ p {
   }
   .popup__btn {
     position: absolute;
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    height: 60%;
+    width: 110%;
+    bottom: -5%;
+    right: -5%;
+    height: 110%;
     border: none;
     background-color: transparent;
     z-index: 2;
+    box-shadow: 0 0 1px 1px #b49b9b;
   }
   .popup__btn::before {
     content: "";
     position: absolute;
-    bottom: 5px;
-    left: -20px;
+    bottom: calc(50% - 4px);
+    right: 40px;
     width: 8px;
     height: 8px;
     border-bottom: 4px solid var(--title-red);
@@ -617,7 +618,7 @@ p {
     box-shadow: 0 0 1px 1px var(--hover-bluedark);
     background-color: var(--back-green);
     border-radius: 50%;
-    bottom: 5px;
+    bottom: calc(50% - 5px);
     width: 10px;
     height: 10px;
     border: 2px solid var(--back-lightred);
