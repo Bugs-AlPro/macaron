@@ -1,165 +1,156 @@
-<section class="wrap wrap--payment">
+<section class="wrap wrap--payment" id="payment-block">
   <div class="container">
-    <div class="offer">
-
-      <div class="offer__title title-section">
-        <h2 class="title-section__head title-section__head--blue">Способы оплаты</h2>
-        <!-- <p class="title-section__text">точнее - их даже несколько</p> -->
+    <div class="payment">
+      <div class="payment__title title-section">
+        <h2 class="title-section__head title-section__head--blue">Оплатите курс</h2>
       </div>
+      <ul class="payment__list payment-list">
 
-      <ol class="payment-list">
-        <li class="payment-list__item">Выберете урок который вы хотите преобрести.</li>
-        <li class="payment-list__item">Найдите подходящий для вас спобос оплаты из перечисленных ниже.</li>
-        <li class="payment-list__item">Оплатите урок.</li>
-        <li class="payment-list__item payment-list__item--bold">Отправьте любым удобным способом скриншот об оплате,
-          название оплаченного курса,
-          ваш электронный адрес
-          используемый в YouTube.</li>
-        <li class="payment-list__item">В течении 24 часов вам будет предоставлен доступ к урокам.</li>
-      </ol>
+        <li class="payment-list__item">После того как вы решили какой курс купить, произведите оплату.</li>
 
-      <ul class="offer__social social" id="payment-block">
-        <li class="social__item">
-          <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Ссылка на telegram.">
-            {{ imagePng('social__picture', 'telegramm', 'social__img', 'Ссылка на телеграм', '65', '65') }}
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="whatsapp://send?phone=+37253907063" class="social__link" aria-label="Ссылка на whatsapp.">
-            {{ imagePng('social__picture', 'whatsapp', 'social__img', 'Ссылка на вотсапп', '65', '65') }}
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="https://www.instagram.com/macaron_by_elena" class="social__link" aria-label="Ссылка на instagram.">
-            {{ imagePng('social__picture', 'instagram', 'social__img', 'Ссылка на инстаграмм', '65', '65') }}
-          </a>
-        </li>
-      </ul>
-      <ul class="offer__payment payment">
-        <li class="payment__item">
-          <div class="payment__title">
-            <div class="payment__logo">Russia Federation</div>
-            <div class="payment__head payment__head--tinkof">Перевод в Тиньков банк с карты или через
-              "Систему Быстрых Платежей"</div>
-          </div>
-          <button type="button" class="payment__btn"
-            aria-label="Показать (скрыть) список того, что в это входит"></button>
-          <div class="payment__description p-description">
-            <p class="p-description__text">Выберите урок и переведите соответствующую сумму в рублях.</p>
-            <div class="buy">
-              <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link"
-                aria-label="Ссылка на оплату через Тинькоф.">Перейти на страницу оплаты
-
-              </a>
-            </div>
-            <!-- <div class="p-description__block">
-              <p class="p-description__text">Для перевода через СБП<br> (Елена П):<br> <span
-                  class="p-description__copy">+7 (995)
-                  885-06-43</span></p>
-              <p class="p-description__text">Для перевода с карты на карту (Mastercard):<br> <span
-                  class="p-description__copy">5536
-                  9140 4444 1479</span></p>
-            </div> -->
-          </div>
-        </li>
-        <li class="payment__item">
-          <div class="payment__title">
-            <div class="payment__logo">USA, Europe</div>
-            <div class="payment__head payment__head--ziraat">Банковский перевод по номеру IBAN.</div>
-          </div>
-          <button type="button" class="payment__btn"
-            aria-label="Показать (скрыть) список того, что в это входит"></button>
-          <div class="payment__description p-description">
-            <p class="p-description__text">Выберите урок и переведете соответствующую сумму любым из предложенных
-              вариатов.</p>
-            <div class="buy">
-              <a href="https://wise.com/pay#wHerDbDZboCcUVwJg2ucnsshrrU" class="buy__link"
-                aria-label="Ссылка на оплату через Тинькоф.">Перейти на страницу оплаты в USD
-              </a>
-            </div>
-            <div class="buy">
-              <a href="https://wise.com/pay#g4ROjloRbPQCNbzj3OCjGWXKTgk" class="buy__link"
-                aria-label="Ссылка на оплату через Тинькоф.">Перейти на страницу оплаты в EUR
-              </a>
-            </div>
-
-            <!-- <div class="p-description__link">
-              {{ imagePng('p-description__picture', 'wise', 'p-description__img', 'Wise logo',
-              '300', '146') }}
-            </div>
-            <div class="p-description__block">
-              <p class="p-description__text">Соединённые штаты Америки. Реквизиты для USD.<br>
-                <span class="p-description__copy">Имя владельца счета: ELENA PRONINA</span><br>
-                <span class="p-description__copy">Маршрутный номер: 084009519</span><br>
-                <span class="p-description__copy">Номер счета: 9600005561035231</span><br>
-                <span class="p-description__copy">Тип счета: Расчетный (checking)</span><br>
-                <span class="p-description__copy">Адрес Wise: 30W.26th Street, Sixth Floor. New York NY 10010.
-                  United
-                  States</span>
-              </p>
-              <p class="p-description__text">Европейские страны. Реквизиты для EUR. <br>
-                <span class="p-description__copy">Имя владельца счета: ELENA PRONINA</span><br>
-                <span class="p-description__copy">BIC код: TRWIBEB1XXX</span><br>
-                <span class="p-description__copy">IBAN: BE28 9673 3733 2620</span><br>
-                <span class="p-description__copy">Адрес Wise: Avenue Louise 54, Room S52. Brussels, 1050.
-                  Belgium</span>
-              </p>
-              <p class="p-description__text">Турция. Реквизиты для TL.<br>
-                <span class="p-description__copy">Имя владельца счета: ELENA PRONINA</span><br>
-                <span class="p-description__copy">IBAN: TR55 0010 3000 0000 0045 8214 58</span>
-              </p>
-            </div> -->
-          </div>
-        </li>
-        <li class="payment__item">
-          <div class="payment__title">
-            <div class="payment__logo">Money transfer</div>
-            <div class="payment__head payment__head--money">Перевод с помощью системы денежных переводов</div>
-          </div>
-          <button type="button" class="payment__btn"
-            aria-label="Показать (скрыть) список того, что в это входит"></button>
-          <div class="payment__description p-description">
-            <!-- <div class="p-description__link">
-              {{ imagePng('p-description__logo', 'change', 'p-description__img', 'Логотип денежных переводов',
-              '250',
-              '100') }}
-            </div> -->
-            <div class="p-description__block">
-              <p class="p-description__text">Информация для денеженого перевода: <br>
-                <span class="p-description__copy"> Turkey, Antalya, Elena Pronina</span>
-                <span class="p-description__copy">+90 (551) 841-32-23</span>
-                <span class="p-description__copy">amaillien@gmail.com</span>
-              </p>
-              <div class="p-description__logo">
-                <a href="https://www.westernunion.com" class="p-description__logo-link">
-                  {{ imagePng('p-description__picture', 'westernunion', 'p-description__image', 'WesternUnion logo',
-                  '315', '100') }}
-                </a>
-                <a href="https://www.moneygram.com/mgo/us/en/" class="p-description__logo-link">
-                  {{ imagePng('p-description__picture', 'monegr', 'p-description__image', 'MoneyGram logo',
-                  '315', '100') }}
-                </a>
-                <a href="https://koronapay.com/" class="p-description__logo-link">
-                  {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'KoronaPay
-                  logo') }}
-                </a>
-                <a class="p-description__logo-link" href="https://www.paypal.com/webapps/mpp/paypal-popup">
-                  <img src="img/PayPal.svg" alt="Paypal logo" class="p-description__image">
-                </a>
-                <a href="https://wise.com/" class="p-description__logo-link">
-                  {{ imagePng('p-description__picture', 'wise', 'p-description__image', 'Wise logo',
-                  '600', '146') }}
-                </a>
+        <li class="payment-list__item">
+          <button class="payment-list__btn">Показать доступные варианты</button>
+          <ul class="payment-list__payment payment-type">
+            <li class="payment-type__item">
+              <div class="payment-type__title">
+                <div class="payment-type__logo">Russia Federation</div>
+                <div class="payment-type__head payment-type__head--tinkof">Перевод в Тиньков банк с карты или через
+                  "Систему Быстрых Платежей"</div>
               </div>
-            </div>
-          </div>
+              <button type="button" class="payment-type__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <div class="payment-type__description">
+                <p class="payment-type__text">Выберите урок и переведите соответствующую сумму в рублях.</p>
+                <div class="buy">
+                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link"
+                    aria-label="Ссылка на оплату через Тинькоф.">Перейти на страницу оплаты
+
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="payment-type__item">
+              <div class="payment-type__title">
+                <div class="payment-type__logo">USA, Europe</div>
+                <div class="payment-type__head">Банковский перевод по номеру IBAN.</div>
+              </div>
+              <button type="button" class="payment-type__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <div class="payment-type__description">
+                <p class="payment-type__text">Выберите урок и переведете соответствующую сумму любым из предложенных
+                  вариатов.</p>
+                <div class="buy">
+                  <a href="https://wise.com/pay#wHerDbDZboCcUVwJg2ucnsshrrU" class="buy__link"
+                    aria-label="Ссылка на оплату через Тинькоф.">Перейти на страницу оплаты в USD
+                  </a>
+                </div>
+                <div class="buy">
+                  <a href="https://wise.com/pay#g4ROjloRbPQCNbzj3OCjGWXKTgk" class="buy__link"
+                    aria-label="Ссылка на оплату через Тинькоф.">Перейти на страницу оплаты в EUR
+                  </a>
+                </div>
+
+                <!-- <div class="p-description__link">
+                  {{ imagePng('p-description__picture', 'wise', 'p-description__img', 'Wise logo',
+                  '300', '146') }}
+                </div>
+                <div class="p-description__block">
+                  <p class="p-description__text">Соединённые штаты Америки. Реквизиты для USD.<br>
+                    <span class="p-description__copy">Имя владельца счета: ELENA PRONINA</span><br>
+                    <span class="p-description__copy">Маршрутный номер: 084009519</span><br>
+                    <span class="p-description__copy">Номер счета: 9600005561035231</span><br>
+                    <span class="p-description__copy">Тип счета: Расчетный (checking)</span><br>
+                    <span class="p-description__copy">Адрес Wise: 30W.26th Street, Sixth Floor. New York NY 10010.
+                      United
+                      States</span>
+                  </p>
+                  <p class="p-description__text">Европейские страны. Реквизиты для EUR. <br>
+                    <span class="p-description__copy">Имя владельца счета: ELENA PRONINA</span><br>
+                    <span class="p-description__copy">BIC код: TRWIBEB1XXX</span><br>
+                    <span class="p-description__copy">IBAN: BE28 9673 3733 2620</span><br>
+                    <span class="p-description__copy">Адрес Wise: Avenue Louise 54, Room S52. Brussels, 1050.
+                      Belgium</span>
+                  </p>
+                  <p class="p-description__text">Турция. Реквизиты для TL.<br>
+                    <span class="p-description__copy">Имя владельца счета: ELENA PRONINA</span><br>
+                    <span class="p-description__copy">IBAN: TR55 0010 3000 0000 0045 8214 58</span>
+                  </p>
+                </div> -->
+              </div>
+            </li>
+            <li class="payment-type__item">
+              <div class="payment-type__title">
+                <div class="payment-type__logo">Money transfer</div>
+                <div class="payment-type__head">Перевод с помощью системы денежных переводов</div>
+              </div>
+              <button type="button" class="payment-type__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <div class="payment-type__description p-description">
+                <!-- <div class="p-description__link">
+                  {{ imagePng('p-description__logo', 'change', 'p-description__img', 'Логотип денежных переводов',
+                  '250',
+                  '100') }}
+                </div> -->
+                <div class="p-description__block">
+                  <p class="p-description__text">Информация для денеженого перевода: <br>
+                    <span class="p-description__copy"> Turkey, Antalya, Elena Pronina</span>
+                    <span class="p-description__copy">+90 (551) 841-32-23</span>
+                    <span class="p-description__copy">amaillien@gmail.com</span>
+                  </p>
+                  <div class="p-description__logo">
+                    <a href="https://www.westernunion.com" class="p-description__logo-link">
+                      {{ imagePng('p-description__picture', 'westernunion', 'p-description__image', 'WesternUnion logo',
+                      '315', '100') }}
+                    </a>
+                    <a href="https://www.moneygram.com/mgo/us/en/" class="p-description__logo-link">
+                      {{ imagePng('p-description__picture', 'monegr', 'p-description__image', 'MoneyGram logo',
+                      '315', '100') }}
+                    </a>
+                    <a href="https://koronapay.com/" class="p-description__logo-link">
+                      {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'KoronaPay
+                      logo') }}
+                    </a>
+                    <a class="p-description__logo-link" href="https://www.paypal.com/webapps/mpp/paypal-popup">
+                      <img src="img/PayPal.svg" alt="Paypal logo" class="p-description__image">
+                    </a>
+                    <a href="https://wise.com/" class="p-description__logo-link">
+                      {{ imagePng('p-description__picture', 'wise', 'p-description__image', 'Wise logo',
+                      '600', '146') }}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </li>
+        <li class="payment-list__item">
+          <p>Отправьте мне: <br><b> - скриншот об оплате,</b><br>
+            <b>- название курса,</b><br>
+            <b>- ваш электронный адрес
+              используемый в YouTube.</b>
+          </p>
+          <ul class=" payment-list__social social">
+            <li class="social__item">
+              <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Ссылка на telegram.">
+                {{ imagePng('social__picture', 'telegramm', 'social__img', 'Ссылка на телеграм', '65', '65') }}
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="whatsapp://send?phone=+37253907063" class="social__link" aria-label="Ссылка на whatsapp.">
+                {{ imagePng('social__picture', 'whatsapp', 'social__img', 'Ссылка на вотсапп', '65', '65') }}
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.instagram.com/macaron_by_elena" class="social__link"
+                aria-label="Ссылка на instagram.">
+                {{ imagePng('social__picture', 'instagram', 'social__img', 'Ссылка на инстаграмм', '65', '65') }}
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="payment-list__item">В течении 24 часов вам будет предоставлен доступ к урокам.</li>
       </ul>
-
-      <div class="offer__contact">
-
-
-      </div>
     </div>
   </div>
 </section>

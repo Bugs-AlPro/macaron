@@ -20,10 +20,12 @@
 
     &--errors {
       background-color: hsla(355, 57%, 95%, 0.2);
+      padding-top: 70px;
     }
 
     &--skils {
       position: relative;
+      padding-top: 70px;
     }
 
     &--skils::before {
@@ -49,11 +51,13 @@
 
     &--payment {
       background-color: var(--back-lightred);
+      padding-top: 70px;
     }
 
     &--feedback {
       background-color: var(--back-lightblue);
       background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%237d96a5' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
     }
 
     &--footer {
@@ -284,22 +288,26 @@
       margin: 0;
       text-transform: uppercase;
       font-weight: 600;
-      font-size: 2em;
+      font-size: 1.8em;
 
       &--header {
         font-family: 'Kurale', serif;
         font-weight: 400;
-        font-size: 2.5em;
+        font-size: 2.4em;
         // text-transform: capitalize;
         color: var(--title-blue);
       }
 
       &--about {
-        font-size: 1.5em;
+        font-size: 1.4em;
       }
 
       &--errors {
-        font-size: 1.8em;
+        font-size: 1.4em;
+      }
+
+      &--skils {
+        font-size: 1.4em;
       }
     }
 
@@ -313,14 +321,15 @@
       &--header {
         font-family: 'Kurale', serif;
         font-weight: 400;
-        font-size: 2em;
+        font-size: 1.8em;
         margin-top: 0;
         padding-bottom: 0;
       }
 
       &--errors {
-        font-size: 1.4em;
+        font-size: 1.3em;
       }
+
     }
 
     &__head--red {
@@ -338,29 +347,29 @@
 
   .preview {
     border: 1px solid var(--title-blue);
-    padding: 1.5em;
+    padding: 15px;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     background-color: rgba(255, 255, 255, 0.61);
     box-shadow: 0 0 7px 1px var(--text-gray);
-    margin-top: 50px;
+    // margin-top: 50px;
     // position: relative;
     overflow: hidden;
 
-    &__img {
-      position: absolute;
-      top: 10px;
-      left: 15px;
-      width: 50px;
-      display: none;
-    }
+    // &__img {
+    //   position: absolute;
+    //   top: 10px;
+    //   left: 15px;
+    //   width: 50px;
+    //   display: none;
+    // }
 
     &__title {
       text-align: center;
       // margin: 10px 0 20px 50px;
       text-transform: uppercase;
       color: var(--title-red);
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
   }
 
@@ -404,6 +413,7 @@
       border-radius: 10px;
       box-shadow: 0 0 3px 1px var(--text-gray);
       // transition: 0.3s;
+      max-width: 500px;
     }
 
     // &__img:hover,
@@ -559,6 +569,10 @@
       align-self: center;
       text-align: center;
     }
+
+    &__preview {
+      margin-top: 50px;
+    }
   }
 
   .interesting {
@@ -629,7 +643,7 @@
     border-top: 2px solid var(--title-red);
     border-bottom: 2px solid var(--title-red);
     display: grid;
-    grid-template-columns: auto;
+    // grid-template-columns: auto;
     gap: 1em;
     // align-items: center;
 
@@ -689,7 +703,7 @@
     &__btn {
       position: absolute;
       width: 100%;
-      bottom: -5px;
+      bottom: 0;
       right: 0;
       height: 60%;
       border: none;
@@ -699,28 +713,37 @@
 
     &__btn::before {
       content: "";
-      font-size: 1.5em;
-      line-height: 1em;
       position: absolute;
-      border-radius: 50%;
-      bottom: calc(50% - 5px);
-      left: -25px;
-      width: 10px;
-      height: 10px;
-      border: 2px solid var(--back-lightred);
-      background-color: var(--title-red);
-      box-shadow: 0 0 1px 1px var(--title-red);
+      bottom: 5px;
+      left: -20px;
+      width: 8px;
+      height: 8px;
+      border-bottom: 4px solid var(--title-red);
+      border-right: 4px solid var(--title-red);
+      // background-color: var(--title-red);
+      // box-shadow: 0 0 0px 1px var(--title-red);
+      transform: rotate(45deg);
     }
 
-    // &__btn:hover::before {
-    //   box-shadow: 0 0 1px 1px var(--hover-bluedark);
-    //   background-color: var(--back-green);
-    //   // border-radius: 5px;
-    // }
+    &__btn:hover::before {
+      border-bottom: 4px solid var(--back-green);
+      border-right: 4px solid var(--back-green);
+    }
+
+    &__btn--open:hover::before {
+      border-bottom: 2px solid var(--back-lightred);
+      border-right: 2px solid var(--back-lightred);
+    }
 
     &__btn--open::before {
       box-shadow: 0 0 1px 1px var(--hover-bluedark);
       background-color: var(--back-green);
+      border-radius: 50%;
+      bottom: 5px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid var(--back-lightred);
+      // background-color: var(--title-red);
     }
 
     &__list--open {
@@ -898,11 +921,6 @@
       border-radius: 30px;
       position: relative;
       z-index: 2;
-    }
-
-    &__contact {
-      text-align: center;
-      padding-top: 30px;
     }
 
     &__text {
@@ -1231,10 +1249,53 @@
   }
 
   .payment {
+    padding: 0;
+  }
+
+  .payment-list {
+    margin-bottom: 50px;
+
+    &__item {
+      font-size: 1.1em;
+      color: var(--text-gray);
+      margin: 15px 0;
+      position: relative;
+
+      &--bold {
+        font-weight: 600;
+      }
+    }
+
+    &__payment {
+      display: none;
+    }
+
+    &__payment--open {
+      display: block;
+    }
+
+    &__btn {
+      font-size: 1.1em;
+      border: none;
+      padding: 7px;
+      margin-bottom: 10px;
+      background-color: gray;
+      color: #fff;
+    }
+
+    &__social {
+      margin: 20px 0;
+    }
+  }
+
+
+  .payment-type {
+
     &__item {
       position: relative;
       margin-bottom: 20px;
       box-shadow: 0 0 5px 0.5px var(--title-gray);
+      // display: flex;
     }
 
     &__title {
@@ -1247,7 +1308,7 @@
 
     &__logo {
       text-transform: uppercase;
-      font-size: 1.5em;
+      font-size: 1.2em;
       line-height: 70px;
       font-weight: bold;
       margin-left: 10px;
@@ -1280,7 +1341,7 @@
       display: none;
     }
 
-    &__description--open {
+    &__payment--open {
       display: flex;
     }
 
@@ -1289,22 +1350,27 @@
       display: block;
     }
 
-  }
+    &__description {
+      flex-direction: column;
+      gap: 0.5em;
+      padding-top: 0.5em;
+      position: relative;
+      margin: 0 8px;
+    }
 
-  .payment-list {
-    // list-style: circle;
-
-    &__item {
-      list-style: decimal;
+    &__text {
+      width: 100%;
+      // align-self: center;
+      line-height: 1.5em;
+      border-top: 2px solid var(--title-red);
+      display: block;
       font-size: 1.1em;
       color: var(--text-gray);
-      margin-top: 8px;
-
-      &--bold {
-        font-weight: 600;
-      }
+      padding-top: 10px;
     }
+
   }
+
 
   .p-description {
 

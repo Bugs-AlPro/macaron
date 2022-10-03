@@ -7,11 +7,11 @@ for (let offerItem of offerItems) {
     offerItem.nextElementSibling.classList.toggle('offer-item__body--open');
   })
 }
-const paymentItems = document.querySelectorAll('.payment__btn');
+const paymentItems = document.querySelectorAll('.payment-type__btn');
 for (let paymentItem of paymentItems) {
   paymentItem.addEventListener('click', () => {
-    paymentItem.classList.toggle('payment__btn--open');
-    paymentItem.nextElementSibling.classList.toggle('payment__description--open');
+    paymentItem.classList.toggle('payment-type__btn--open');
+    paymentItem.nextElementSibling.classList.toggle('payment-type__payment--open');
   })
 }
 
@@ -101,3 +101,9 @@ popupBtn.addEventListener('click', () => {
   popupBtn.classList.toggle('popup__btn--open');
   popupBtn.nextElementSibling.classList.toggle('popup__list--open');
 })
+const paymentBtn = document.querySelector('.payment-list__btn');
+paymentBtn.addEventListener('click', () => {
+  paymentBtn.classList.toggle('payment-list__btn--open');
+  paymentBtn.nextElementSibling.classList.toggle('payment-list__payment--open');
+})
+

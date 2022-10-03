@@ -66,9 +66,11 @@ p {
   }
   .wrap--errors {
     background-color: rgba(250, 235, 236, 0.2);
+    padding-top: 70px;
   }
   .wrap--skils {
     position: relative;
+    padding-top: 70px;
   }
   .wrap--skils::before {
     position: absolute;
@@ -90,6 +92,7 @@ p {
   }
   .wrap--payment {
     background-color: var(--back-lightred);
+    padding-top: 70px;
   }
   .wrap--feedback {
     background-color: var(--back-lightblue);
@@ -304,19 +307,22 @@ p {
     margin: 0;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .title-section__head--header {
     font-family: "Kurale", serif;
     font-weight: 400;
-    font-size: 2.5em;
+    font-size: 2.4em;
     color: var(--title-blue);
   }
   .title-section__head--about {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .title-section__head--errors {
-    font-size: 1.8em;
+    font-size: 1.4em;
+  }
+  .title-section__head--skils {
+    font-size: 1.4em;
   }
   .title-section__text {
     font-size: 1.7em;
@@ -328,12 +334,12 @@ p {
   .title-section__text--header {
     font-family: "Kurale", serif;
     font-weight: 400;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-top: 0;
     padding-bottom: 0;
   }
   .title-section__text--errors {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .title-section__head--red {
     color: var(--title-red);
@@ -347,26 +353,18 @@ p {
 
   .preview {
     border: 1px solid var(--title-blue);
-    padding: 1.5em;
+    padding: 15px;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     background-color: rgba(255, 255, 255, 0.61);
     box-shadow: 0 0 7px 1px var(--text-gray);
-    margin-top: 50px;
     overflow: hidden;
-  }
-  .preview__img {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    width: 50px;
-    display: none;
   }
   .preview__title {
     text-align: center;
     text-transform: uppercase;
     color: var(--title-red);
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .preview-body {
@@ -394,6 +392,7 @@ p {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 3px 1px var(--text-gray);
+    max-width: 500px;
   }
 
   .preview-body::before {
@@ -492,6 +491,9 @@ p {
     align-self: center;
     text-align: center;
   }
+  .want__preview {
+    margin-top: 50px;
+  }
 
   .interesting {
     display: grid;
@@ -537,7 +539,6 @@ p {
     border-top: 2px solid var(--title-red);
     border-bottom: 2px solid var(--title-red);
     display: grid;
-    grid-template-columns: auto;
     gap: 1em;
   }
   .summary__title {
@@ -586,7 +587,7 @@ p {
   .popup__btn {
     position: absolute;
     width: 100%;
-    bottom: -5px;
+    bottom: 0;
     right: 0;
     height: 60%;
     border: none;
@@ -595,21 +596,31 @@ p {
   }
   .popup__btn::before {
     content: "";
-    font-size: 1.5em;
-    line-height: 1em;
     position: absolute;
-    border-radius: 50%;
-    bottom: calc(50% - 5px);
-    left: -25px;
-    width: 10px;
-    height: 10px;
-    border: 2px solid var(--back-lightred);
-    background-color: var(--title-red);
-    box-shadow: 0 0 1px 1px var(--title-red);
+    bottom: 5px;
+    left: -20px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 4px solid var(--title-red);
+    border-right: 4px solid var(--title-red);
+    transform: rotate(45deg);
+  }
+  .popup__btn:hover::before {
+    border-bottom: 4px solid var(--back-green);
+    border-right: 4px solid var(--back-green);
+  }
+  .popup__btn--open:hover::before {
+    border-bottom: 2px solid var(--back-lightred);
+    border-right: 2px solid var(--back-lightred);
   }
   .popup__btn--open::before {
     box-shadow: 0 0 1px 1px var(--hover-bluedark);
     background-color: var(--back-green);
+    border-radius: 50%;
+    bottom: 5px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--back-lightred);
   }
   .popup__list--open {
     display: block;
@@ -685,10 +696,6 @@ p {
     border-radius: 30px;
     position: relative;
     z-index: 2;
-  }
-  .offer__contact {
-    text-align: center;
-    padding-top: 30px;
   }
   .offer__text {
     margin: 30px 20px 20px 20px;
@@ -962,36 +969,70 @@ p {
     border: 1px solid var(--title-blue);
   }
 
-  .payment__item {
+  .payment {
+    padding: 0;
+  }
+
+  .payment-list {
+    margin-bottom: 50px;
+  }
+  .payment-list__item {
+    font-size: 1.1em;
+    color: var(--text-gray);
+    margin: 15px 0;
+    position: relative;
+  }
+  .payment-list__item--bold {
+    font-weight: 600;
+  }
+  .payment-list__payment {
+    display: none;
+  }
+  .payment-list__payment--open {
+    display: block;
+  }
+  .payment-list__btn {
+    font-size: 1.1em;
+    border: none;
+    padding: 7px;
+    margin-bottom: 10px;
+    background-color: gray;
+    color: #fff;
+  }
+  .payment-list__social {
+    margin: 20px 0;
+  }
+
+  .payment-type__item {
     position: relative;
     margin-bottom: 20px;
     box-shadow: 0 0 5px 0.5px var(--title-gray);
   }
-  .payment__title {
+  .payment-type__title {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     position: relative;
     height: 70px;
   }
-  .payment__logo {
+  .payment-type__logo {
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 70px;
     font-weight: bold;
     margin-left: 10px;
   }
-  .payment__head {
+  .payment-type__head {
     position: relative;
     width: 100%;
     height: 1.1em;
     overflow: hidden;
     color: transparent;
   }
-  .payment__logo {
+  .payment-type__logo {
     color: var(--text-gray);
   }
-  .payment__btn {
+  .payment-type__btn {
     position: absolute;
     top: 0;
     left: 0;
@@ -1001,25 +1042,31 @@ p {
     background-color: transparent;
     border: none;
   }
-  .payment__description {
+  .payment-type__description {
     display: none;
   }
-  .payment__description--open {
+  .payment-type__payment--open {
     display: flex;
   }
-  .payment__link {
+  .payment-type__link {
     margin: 1rem;
     display: block;
   }
-
-  .payment-list__item {
-    list-style: decimal;
+  .payment-type__description {
+    flex-direction: column;
+    gap: 0.5em;
+    padding-top: 0.5em;
+    position: relative;
+    margin: 0 8px;
+  }
+  .payment-type__text {
+    width: 100%;
+    line-height: 1.5em;
+    border-top: 2px solid var(--title-red);
+    display: block;
     font-size: 1.1em;
     color: var(--text-gray);
-    margin-top: 8px;
-  }
-  .payment-list__item--bold {
-    font-weight: 600;
+    padding-top: 10px;
   }
 
   .p-description {
