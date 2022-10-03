@@ -973,11 +973,17 @@ p {
     padding: 0;
   }
 
+  .end-photo__img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
   .payment-list {
     margin-bottom: 50px;
   }
   .payment-list__item {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: var(--text-gray);
     margin: 15px 0;
     position: relative;

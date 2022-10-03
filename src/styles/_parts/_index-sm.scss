@@ -1250,13 +1250,24 @@
 
   .payment {
     padding: 0;
+
+
+  }
+
+  .end-photo {
+    &__img {
+      display: block;
+      height: auto;
+      // max-height: 300px;
+      width: 100%;
+    }
   }
 
   .payment-list {
     margin-bottom: 50px;
 
     &__item {
-      font-size: 1.1em;
+      font-size: 1.2em;
       color: var(--text-gray);
       margin: 15px 0;
       position: relative;
