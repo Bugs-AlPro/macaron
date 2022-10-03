@@ -15,6 +15,7 @@ for (let paymentItem of paymentItems) {
   })
 }
 
+
 const costsBtns = document.querySelectorAll('.currency__btn');
 const costsBtnUsd = document.querySelector('.currency__btn--usd');
 const costsBtnRub = document.querySelector('.currency__btn--rub');
@@ -93,4 +94,10 @@ const videoBox = document.querySelector('.video');
 videoBtn.addEventListener('click', () => {
   videoBox.classList.toggle('video--open');
   videoBtn.classList.toggle('video__btn--open');
+})
+
+const popupBtn = document.querySelector('.popup__btn');
+popupBtn.addEventListener('click', () => {
+  popupBtn.classList.toggle('popup__btn--open');
+  popupBtn.nextElementSibling.classList.toggle('popup__list--open');
 })
