@@ -989,7 +989,9 @@ p {
     position: relative;
   }
   .payment-list__item--bold {
-    font-weight: 600;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 10px;
   }
   .payment-list__payment {
     display: none;
@@ -1004,6 +1006,7 @@ p {
     margin-bottom: 10px;
     background-color: gray;
     color: #fff;
+    cursor: pointer;
   }
   .payment-list__social {
     margin: 20px 0;
