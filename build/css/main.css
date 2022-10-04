@@ -341,6 +341,10 @@ p {
   .title-section__text--errors {
     font-size: 1.3em;
   }
+  .title-section__text--want {
+    font-size: 1.2em;
+    margin-top: 30px;
+  }
   .title-section__head--red {
     color: var(--title-red);
   }
@@ -595,6 +599,9 @@ p {
     height: 110%;
     border: none;
     background-color: transparent;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, white 100%);
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
     z-index: 2;
     box-shadow: 0 0 1px 1px #b49b9b;
   }
@@ -992,7 +999,7 @@ p {
     position: relative;
   }
   .payment-list__item--bold {
-    border: 1px solid gray;
+    box-shadow: 0 0 1px 1px gray;
     padding: 5px;
     border-radius: 10px;
   }
@@ -1010,9 +1017,19 @@ p {
     background-color: gray;
     color: #fff;
     cursor: pointer;
+    --shadow-color: 359deg 22% 54%;
+    --shadow-elevation-medium:
+      0px 0.1px 0.2px hsl(var(--shadow-color) / 0),
+      0px 0.6px 0.9px hsl(var(--shadow-color) / 0.62),
+      0px 1.6px 2.4px hsl(var(--shadow-color) / 0.74);
+    box-shadow: var(--shadow-elevation-medium);
+    margin-bottom: 20px;
   }
   .payment-list__social {
-    margin: 20px 0;
+    margin: 15px 0;
+  }
+  .payment-list__text {
+    padding: 5px 0 0 15px;
   }
 
   .payment-type__item {
@@ -1106,6 +1123,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-bottom: 10px;
   }
   .p-description__text {
     width: 100%;
