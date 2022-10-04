@@ -573,6 +573,10 @@
     &__preview {
       margin-top: 50px;
     }
+
+    &__video {
+      margin: 0px auto 30px auto;
+    }
   }
 
   .interesting {
@@ -964,7 +968,6 @@
   }
 
   .youtube {
-    margin: auto;
     display: inline-block;
 
     &__link {

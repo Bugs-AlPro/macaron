@@ -494,6 +494,9 @@ p {
   .want__preview {
     margin-top: 50px;
   }
+  .want__video {
+    margin: 0px auto 30px auto;
+  }
 
   .interesting {
     display: grid;
@@ -730,7 +733,6 @@ p {
   }
 
   .youtube {
-    margin: auto;
     display: inline-block;
   }
   .youtube__link {
