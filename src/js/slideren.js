@@ -70,7 +70,7 @@ var feedbackSlider = tns({
 });
 
 var errors = tns({
-  container: '.errors-img-sm--en',
+  container: '.errors-img-en',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,

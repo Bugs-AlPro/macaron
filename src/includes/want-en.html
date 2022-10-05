@@ -1,10 +1,22 @@
 <section class="wrap wrap--want">
+
   <div class="container">
+
     <div class="want">
       <div class="want__title title-section">
         <h2 class="title-section__head title-section__head--red">Who is this course for?</h2>
-        <!-- <p class="title-section__text">to get started, you will need</p> -->
+        <p class="title-section__text title-section__text--want">Get details in 1 minute</p>
       </div>
+      <div class="want__video youtube">
+        <a href="https://youtu.be/PUcA9rNR3NA" class="youtube__link">
+          <picture class="youtube__picture">
+            <source srcset="img/video-cover.webp" type="image/webp">
+            <img src="img/video-cover.jpg" alt="Announcement. A detailed tutorial on how to make macaroons"
+              class="youtube__img">
+          </picture>
+        </a>
+      </div>
+
       <ul class="want__list interesting">
         <li class="interesting__item">
           <div class="interesting__count">1</div>
@@ -30,7 +42,7 @@
             </p>
           </div>
         </li>
-        <li class="interesting__item">
+        <!-- <li class="interesting__item">
           <div class="interesting__count">4</div>
           <div class="interesting__body">
             <h3 class="interesting__title">For those who want to learn a new profession</h3>
@@ -54,7 +66,7 @@
             <p class="interesting__description">For those who are not afraid to learn, try and <b>surprise</b>.
             </p>
           </div>
-        </li>
+        </li> -->
       </ul>
 
       <!-- <ul class="want__list">
@@ -110,32 +122,50 @@
           <h3 class="preview__title">
             Check out what's in my course
           </h3>
-          <ul class="preview__summary summary">
-
-            <li class="summary__item summary__item--img">
-              {{ imageSvgColor('cook', 'svgcolor summary__img', '70', '100', 'Girl confectioner.') }}
-            </li>
-            <li class="summary__item">
-              <div class="summary__title">Video lessons</div>
-              <div class="summary__description">12 videos</div>
-            </li>
-            <li class="summary__item">
-              <div class="summary__title">technical card</div>
-              <div class="summary__description">40 pages PDF file</div>
-            </li>
-            <li class="summary__item">
-              <div class="summary__title">Access</div>
-              <div class="summary__description">1 year</div>
-            </li>
-            <li class="summary__item">
-              <div class="summary__title">Support</div>
-              <div class="summary__description">Online Chat support</div>
-            </li>
-
-          </ul>
         </div>
-        <div class="preview__body preview-body">
+        <ul class="preview__summary summary">
 
+          <li class="summary__item summary__item--img">
+            {{ imageSvgColor('cook', 'svgcolor summary__img', '70', '100', 'Girl confectioner.') }}
+          </li>
+          <li class="summary__item">
+            <div class="summary__title">Video lessons</div>
+            <div class="summary__description">12 videos</div>
+          </li>
+          <li class="summary__item">
+            <div class="summary__title">Fillings</div>
+            <div class="popup">
+              <button type="button" class="popup__btn"></button>
+              <ul class="popup__list">
+                <li class="popup__item">Ganache on white chocolate.</li>
+                <li class="popup__item">Milk chocolate ganache.</li>
+                <li class="popup__item">Dark chocolate ganache.</li>
+                <li class="popup__item">Fruit and berry ganache: strawberries, blueberries, currants, mangoes, etc.</li>
+                <li class="popup__item">Whipped ganache Gingerbread Latte.</li>
+                <li class="popup__item">Filling "Cherry in chocolate".</li>
+                <li class="popup__item">Filling "Spicy apple".</li>
+                <li class="popup__item">Filling "Snickers with salted caramel".</li>
+                <li class="popup__item">Brie Pear Ganache.</li>
+                <li class="popup__item">Flavor options: pistachios, coconut, mint, lavender, vanilla.</li>
+              </ul>
+            </div>
+            <div class="summary__description">More 15 types</div>
+          </li>
+          <li class="summary__item">
+            <div class="summary__title">Technical card</div>
+            <div class="summary__description">40 pages PDF file</div>
+          </li>
+          <li class="summary__item">
+            <div class="summary__title">Access</div>
+            <div class="summary__description">1 year</div>
+          </li>
+          <li class="summary__item">
+            <div class="summary__title">Support</div>
+            <div class="summary__description">Online Chat support</div>
+          </li>
+
+        </ul>
+        <div class="preview__body preview-body">
           <div class="preview-body__item preview-body__item--pdf">
             <p class="preview-body__text">You will receive a PDF file with a detailed description of the entire cooking
               process.</p>
