@@ -83,12 +83,6 @@ costsBtnMenu.addEventListener('click', () => {
   costsBtnMenu.nextElementSibling.classList.toggle('nav--open');
 })
 
-const headerElement = document.querySelector('.header-top');
-window.addEventListener('scroll', (evt) => {
-  headerElement.classList.toggle('color', window.pageYOffset > 100);
-  headerElement.classList.toggle('color2', window.pageYOffset > 400);
-});
-
 const videoBtn = document.querySelector('.video__btn');
 const videoBox = document.querySelector('.video');
 videoBtn.addEventListener('click', () => {
@@ -101,6 +95,7 @@ popupBtn.addEventListener('click', () => {
   popupBtn.classList.toggle('popup__btn--open');
   popupBtn.nextElementSibling.classList.toggle('popup__list--open');
 })
+
 const paymentBtn = document.querySelector('.payment-list__btn');
 paymentBtn.addEventListener('click', () => {
   paymentBtn.classList.toggle('payment-list__btn--open');

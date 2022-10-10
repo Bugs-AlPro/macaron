@@ -69,6 +69,7 @@
   .container {
     margin: 0 auto;
     padding: 0 20px;
+
   }
 
   .header {
@@ -675,6 +676,7 @@
   }
 
   .popup {
+
     &__list {
       display: none;
       position: absolute;
@@ -682,13 +684,11 @@
       right: -17px;
       background-color: rgb(241, 249, 253);
       box-shadow: 0 0 7px 4px var(--hover-bluedark);
-      z-index: 2;
+      z-index: 1;
       width: 110%;
       max-width: 450px;
       padding: 10px;
       border-radius: 10px;
-      // transition: 2s;
-      // transform: translateX(-100%);
     }
 
     &__item {
@@ -730,33 +730,60 @@
       position: absolute;
       bottom: calc(50% - 4px);
       right: 40px;
-      width: 8px;
-      height: 8px;
-      border-bottom: 4px solid var(--title-red);
-      border-right: 4px solid var(--title-red);
+      width: 10px;
+      height: 10px;
+      background-color: var(--title-red);
+      // border-bottom: 4px solid var(--title-red);
+      // border-right: 4px solid var(--title-red);
+      // background-color: var(--title-red);
+      // box-shadow: 0 0 0px 1px var(--title-red);
+      // transform: rotate(45deg);
+    }
+
+    &__btn::after {
+      content: "";
+      position: absolute;
+      bottom: calc(50% - 4px);
+      right: 40px;
+      width: 10px;
+      height: 10px;
+      background-color: var(--title-red);
+      // border-bottom: 4px solid var(--title-red);
+      // border-right: 4px solid var(--title-red);
       // background-color: var(--title-red);
       // box-shadow: 0 0 0px 1px var(--title-red);
       transform: rotate(45deg);
     }
 
-    &__btn:hover::before {
-      border-bottom: 4px solid var(--back-green);
-      border-right: 4px solid var(--back-green);
-    }
+    // &__btn:hover::before {
+    //   border-bottom: 4px solid var(--back-green);
+    //   border-right: 4px solid var(--back-green);
+    // }
 
-    &__btn--open:hover::before {
-      border-bottom: 2px solid var(--back-lightred);
-      border-right: 2px solid var(--back-lightred);
-    }
+    // &__btn--open:hover::before {
+    //   border-bottom: 2px solid var(--back-lightred);
+    //   border-right: 2px solid var(--back-lightred);
+    // }
 
     &__btn--open::before {
-      box-shadow: 0 0 1px 1px var(--hover-bluedark);
-      background-color: var(--back-green);
-      border-radius: 50%;
-      bottom: calc(50% - 5px);
-      width: 10px;
-      height: 10px;
-      border: 2px solid var(--back-lightred);
+      // top: 4px;
+      bottom: calc(50% - 1px);
+      // left: 88px;
+      right: 37px;
+      width: 15px;
+      height: 3px;
+      // background-color: var(--title-red);
+      transform: rotate(-45deg);
+
+    }
+
+    &__btn--open::after {
+      // top: 4px;
+      bottom: calc(50% - 1px);
+      // left: 88px;
+      right: 37px;
+      width: 15px;
+      height: 3px;
       // background-color: var(--title-red);
     }
 

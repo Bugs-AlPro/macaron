@@ -569,7 +569,7 @@ p {
     right: -17px;
     background-color: #f1f9fd;
     box-shadow: 0 0 7px 4px var(--hover-bluedark);
-    z-index: 2;
+    z-index: 1;
     width: 110%;
     max-width: 450px;
     padding: 10px;
@@ -610,28 +610,32 @@ p {
     position: absolute;
     bottom: calc(50% - 4px);
     right: 40px;
-    width: 8px;
-    height: 8px;
-    border-bottom: 4px solid var(--title-red);
-    border-right: 4px solid var(--title-red);
-    transform: rotate(45deg);
-  }
-  .popup__btn:hover::before {
-    border-bottom: 4px solid var(--back-green);
-    border-right: 4px solid var(--back-green);
-  }
-  .popup__btn--open:hover::before {
-    border-bottom: 2px solid var(--back-lightred);
-    border-right: 2px solid var(--back-lightred);
-  }
-  .popup__btn--open::before {
-    box-shadow: 0 0 1px 1px var(--hover-bluedark);
-    background-color: var(--back-green);
-    border-radius: 50%;
-    bottom: calc(50% - 5px);
     width: 10px;
     height: 10px;
-    border: 2px solid var(--back-lightred);
+    background-color: var(--title-red);
+  }
+  .popup__btn::after {
+    content: "";
+    position: absolute;
+    bottom: calc(50% - 4px);
+    right: 40px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--title-red);
+    transform: rotate(45deg);
+  }
+  .popup__btn--open::before {
+    bottom: calc(50% - 1px);
+    right: 37px;
+    width: 15px;
+    height: 3px;
+    transform: rotate(-45deg);
+  }
+  .popup__btn--open::after {
+    bottom: calc(50% - 1px);
+    right: 37px;
+    width: 15px;
+    height: 3px;
   }
   .popup__list--open {
     display: block;
@@ -1758,28 +1762,32 @@ p {
     position: absolute;
     top: 0px;
     left: 90px;
-    width: 8px;
-    height: 8px;
-    border-bottom: 4px solid var(--title-red);
-    border-right: 4px solid var(--title-red);
-    transform: rotate(45deg);
-  }
-  .popup__btn:hover::before {
-    border-bottom: 4px solid var(--back-green);
-    border-right: 4px solid var(--back-green);
-  }
-  .popup__btn--open:hover::before {
-    border-bottom: 2px solid var(--back-lightred);
-    border-right: 2px solid var(--back-lightred);
-  }
-  .popup__btn--open::before {
-    box-shadow: 0 0 1px 1px var(--hover-bluedark);
-    background-color: var(--back-green);
-    border-radius: 50%;
-    bottom: calc(50% - 5px);
     width: 10px;
     height: 10px;
-    border: 2px solid var(--back-lightred);
+    transform: rotate(45deg);
+    background-color: var(--title-red);
+  }
+  .popup__btn::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--title-red);
+  }
+  .popup__btn--open::before {
+    top: 4px;
+    left: 88px;
+    width: 15px;
+    height: 3px;
+  }
+  .popup__btn--open::after {
+    top: -2px;
+    left: 94px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 3px;
   }
   .popup__list--open {
     display: block;

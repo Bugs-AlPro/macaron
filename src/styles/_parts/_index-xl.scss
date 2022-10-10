@@ -455,41 +455,55 @@
       z-index: 2;
       // box-shadow: 0 0 1px 1px rgb(180, 155, 155);
       // border-bottom: 1px solid gray;
+
     }
 
     &__btn::before {
+      // box-shadow: 0 0 1px 1px rgb(180, 155, 155);
       content: "";
       position: absolute;
       top: 0px;
       left: 90px;
-      width: 8px;
-      height: 8px;
-      border-bottom: 4px solid var(--title-red);
-      border-right: 4px solid var(--title-red);
-      // background-color: var(--title-red);
-      // box-shadow: 0 0 0px 1px var(--title-red);
-      transform: rotate(45deg);
-    }
-
-    &__btn:hover::before {
-      border-bottom: 4px solid var(--back-green);
-      border-right: 4px solid var(--back-green);
-    }
-
-    &__btn--open:hover::before {
-      border-bottom: 2px solid var(--back-lightred);
-      border-right: 2px solid var(--back-lightred);
-    }
-
-    &__btn--open::before {
-      box-shadow: 0 0 1px 1px var(--hover-bluedark);
-      background-color: var(--back-green);
-      border-radius: 50%;
-      bottom: calc(50% - 5px);
       width: 10px;
       height: 10px;
-      border: 2px solid var(--back-lightred);
-      // background-color: var(--title-red);
+      transform: rotate(45deg);
+      background-color: var(--title-red);
+      // background-image: linear-gradient(135deg, white 0px, white 10px, black 10px, black 12px, var(--title-red) 12px, var(--title-red) 18px);
+    }
+
+    &__btn::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 90px;
+      width: 10px;
+      height: 10px;
+      background-color: var(--title-red);
+    }
+
+    // &__btn:hover::before {
+    //   border-bottom: 4px solid var(--title-blue);
+    //   border-right: 4px solid var(--title-blue);
+    // }
+
+    // &__btn--open:hover::before {
+    //   border-bottom: 2px solid var(--back-lightred);
+    //   border-right: 2px solid var(--back-lightred);
+    // }
+
+    &__btn--open::before {
+      top: 4px;
+      left: 88px;
+      width: 15px;
+      height: 3px;
+    }
+
+    &__btn--open::after {
+      top: -2px;
+      left: 94px;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 3px;
     }
 
     &__list--open {
