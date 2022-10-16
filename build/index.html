@@ -16,7 +16,7 @@ macaron_by_elena">
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -24,6 +24,7 @@ macaron_by_elena">
       s.parentNode.insertBefore(t, s)
     }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('consent', 'revoke');
     fbq('init', '1138973390049442');
     fbq('track', 'PageView');
   </script>
@@ -1688,6 +1689,20 @@ macaron_by_elena">
   </div>
 </section>
 
+  <div class="consent">
+    <div class="consent__body">
+      <p class="consent__text">На этом сайте установлен <b>Пиксель Meta</b>, который помогает нам анализировать
+        статистические
+        данные о посещаемости нашего сайта. Полученные статистические данные не позволяют нам увидеть о вас никакой
+        личной
+        персональной информаци. В данный момент он отключен, но мы будем вам очень благодарны если вы дадите
+        нам разрешение его использовать.</p>
+      <button class="consent__btn consent__btn--yes">Да, я разрешаю.</button>
+      <button class="consent__btn consent__btn--no">Нет, не разрешаю.</button>
+
+    </div>
+  </div>
+
 </main>
 
 <footer class="wrap wrap--footer">
@@ -1755,6 +1770,7 @@ macaron_by_elena">
     })
 
   </script>
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

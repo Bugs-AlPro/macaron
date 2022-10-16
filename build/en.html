@@ -16,7 +16,7 @@ yourself in this role! You will not regret!">
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -24,6 +24,7 @@ yourself in this role! You will not regret!">
       s.parentNode.insertBefore(t, s)
     }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('consent', 'revoke');
     fbq('init', '1138973390049442');
     fbq('track', 'PageView');
   </script>
@@ -1338,7 +1339,17 @@ fashionable MACARONS dessert." class="feedback-slider__img">
 
   </div>
 </section>
+  <div class="consent">
+    <div class="consent__body">
+      <p class="consent__text">This site has a <b>Meta Pixel</b> installed to help us analyze statistics about our
+        site's
+        traffic. The resulting statistical data does not allow us to see any personally identifiable information about
+        you. It is disabled at the moment, but we will be very grateful if you give us permission to use it.</p>
+      <button class="consent__btn consent__btn--yes">Yes, I allow.</button>
+      <button class="consent__btn consent__btn--no">No, I don't allow it.</button>
 
+    </div>
+  </div>
 </main>
 
 <footer class="wrap wrap--footer">
@@ -1406,6 +1417,7 @@ fashionable MACARONS dessert." class="feedback-slider__img">
     })
 
   </script>
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

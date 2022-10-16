@@ -102,3 +102,14 @@ paymentBtn.addEventListener('click', () => {
   paymentBtn.nextElementSibling.classList.toggle('payment-list__payment--open');
 })
 
+const cookieBtnYes = document.querySelector('.consent__btn--yes');
+const cookieBtnNo = document.querySelector('.consent__btn--no');
+const cookieSection = document.querySelector('.consent');
+
+cookieBtnNo.addEventListener('click', () => {
+  cookieSection.classList.toggle('consent--close');
+})
+cookieBtnYes.addEventListener('click', () => {
+  cookieSection.classList.toggle('consent--close');
+  fbq('consent', 'grant');
+})
