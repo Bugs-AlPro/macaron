@@ -1125,6 +1125,7 @@
       cursor: pointer;
       background-color: transparent;
       border: none;
+
     }
 
     &__btn::after {
@@ -1615,7 +1616,7 @@
     }
 
     &__text {
-      font-size: 1.2em;
+      font-size: 1.1em;
       color: white;
       grid-column-start: 1;
       grid-column-end: 2;
@@ -1625,6 +1626,9 @@
 
     &__btn {
       padding: 8px;
+      min-height: 30px;
+      color: black;
+      font-size: 1.1em;
     }
   }
 }

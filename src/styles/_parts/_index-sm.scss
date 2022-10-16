@@ -1837,7 +1837,7 @@
       grid-template-columns: auto auto;
       grid-template-rows: auto auto;
       max-width: 1200px;
-      align-items: center;
+      // align-items: center;
     }
 
     &__text {
@@ -1851,6 +1851,21 @@
 
     &__btn {
       padding: 8px;
+      min-height: 30px;
+      color: black;
+      font-size: 1.1em;
+
+      &--yes {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        // background-color: rgb(21, 192, 58);
+      }
+
+      // &--no {
+      //   background-color: #eee;
+      // }
     }
   }
 }

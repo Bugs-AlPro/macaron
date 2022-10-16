@@ -1433,7 +1433,6 @@ p {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     max-width: 1200px;
-    align-items: center;
   }
   .consent__text {
     font-size: 1em;
@@ -1445,6 +1444,15 @@ p {
   }
   .consent__btn {
     padding: 8px;
+    min-height: 30px;
+    color: black;
+    font-size: 1.1em;
+  }
+  .consent__btn--yes {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 }
 @media (min-width: 992px) {
@@ -2720,7 +2728,7 @@ p {
     align-items: center;
   }
   .consent__text {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: white;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -2729,5 +2737,8 @@ p {
   }
   .consent__btn {
     padding: 8px;
+    min-height: 30px;
+    color: black;
+    font-size: 1.1em;
   }
 }
