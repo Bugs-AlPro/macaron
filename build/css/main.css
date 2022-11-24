@@ -592,6 +592,7 @@ p {
     top: calc(50% - 2.5px);
   }
   .popup__btn {
+    cursor: pointer;
     position: absolute;
     width: 110%;
     bottom: -5%;
@@ -623,6 +624,9 @@ p {
     height: 10px;
     background-color: var(--title-red);
     transform: rotate(45deg);
+  }
+  .popup__btn:hover::after, .popup__btn:hover::before {
+    background-color: var(--title-blue);
   }
   .popup__btn--open::before {
     bottom: calc(50% - 1px);
@@ -1802,6 +1806,7 @@ p {
     border: none;
     background-color: transparent;
     z-index: 2;
+    cursor: pointer;
   }
   .popup__btn::before {
     content: "";
@@ -1821,6 +1826,9 @@ p {
     width: 10px;
     height: 10px;
     background-color: var(--title-red);
+  }
+  .popup__btn:hover::after, .popup__btn:hover::before {
+    background-color: var(--title-blue);
   }
   .popup__btn--open::before {
     top: 4px;

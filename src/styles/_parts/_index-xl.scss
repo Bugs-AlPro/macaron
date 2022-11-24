@@ -455,6 +455,7 @@
       z-index: 2;
       // box-shadow: 0 0 1px 1px rgb(180, 155, 155);
       // border-bottom: 1px solid gray;
+      cursor: pointer;
 
     }
 
@@ -481,10 +482,10 @@
       background-color: var(--title-red);
     }
 
-    // &__btn:hover::before {
-    //   border-bottom: 4px solid var(--title-blue);
-    //   border-right: 4px solid var(--title-blue);
-    // }
+    &__btn:hover::after,
+    &__btn:hover::before {
+      background-color: var(--title-blue);
+    }
 
     // &__btn--open:hover::before {
     //   border-bottom: 2px solid var(--back-lightred);

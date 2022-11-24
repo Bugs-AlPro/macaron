@@ -710,6 +710,7 @@
     }
 
     &__btn {
+      cursor: pointer;
       position: absolute;
       width: 110%;
       bottom: -5%;
@@ -764,6 +765,10 @@
     //   border-bottom: 2px solid var(--back-lightred);
     //   border-right: 2px solid var(--back-lightred);
     // }
+    &__btn:hover::after,
+    &__btn:hover::before {
+      background-color: var(--title-blue);
+    }
 
     &__btn--open::before {
       // top: 4px;
