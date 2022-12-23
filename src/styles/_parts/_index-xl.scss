@@ -57,7 +57,7 @@
 
     &--offer {
       background-color: var(--back-lightred);
-      border-top-left-radius: 350px;
+      border-top-right-radius: 350px;
     }
 
     &--payment {
@@ -104,6 +104,10 @@
         font-weight: 400;
         font-size: 4em;
         color: var(--title-blue);
+      }
+
+      &--left {
+        text-align: left;
       }
     }
 
@@ -895,6 +899,38 @@
       color: var(--social-hover);
       transition: 0.4s;
     }
+
+    &__svg {
+      height: 60px;
+      // width: 430px;
+    }
+
+    &__svg text {
+      font-family: 'Glory', sans-serif;
+      letter-spacing: 8px;
+      stroke: rgb(214, 1, 186);
+      font-size: 36px;
+      line-height: 50px;
+      font-weight: 700;
+      stroke-width: 1px;
+      animation: textAnimated 5s infinite alternate;
+    }
+  }
+
+  @keyframes textAnimated {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset: 20%;
+      fill: rgba(116, 141, 255, 0.671);
+
+    }
+
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: white;
+
+    }
   }
 
   .offer-item {
@@ -998,11 +1034,11 @@
   .payment-list {
     margin-bottom: 50px;
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    align-items: center;
+    // display: grid; 
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: auto auto;
+    // gap: 20px;
+    // align-items: center;
 
     &__item {
       font-size: 1.2em;
@@ -1067,8 +1103,55 @@
       margin-bottom: 30px;
     }
 
+    &__btn:hover,
+    &__btn:focus {
+      background-color: rgb(95, 95, 95);
+    }
+
     &__text {
       font-size: 1.1em;
+    }
+  }
+
+  .recive {
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__text {
+      font-size: 1.1em;
+    }
+
+    &__item {
+      font-size: 1.2em;
+      color: var(--text-gray);
+      // margin: 15px 0;
+      position: relative;
+
+      &--bold {
+        // border: 1px solid gray;
+        // box-shadow: 0 0 1px 1px gray;
+        // padding: 5px;
+        // border-radius: 10px;
+        // flex-shrink: 1;
+        // display: grid;
+        // grid-template-columns: auto auto;
+        align-items: center;
+        gap: 20px;
+        // max-width: 590px;
+        // width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      &--end {
+        // flex-shrink: 1;
+        // max-width: 240px;
+        text-align: start;
+
+      }
     }
   }
 

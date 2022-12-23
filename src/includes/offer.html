@@ -2,8 +2,23 @@
   <div class="container">
     <div class="offer">
 
+      <div class="offer__logo">
+        <svg width="100%" height="100%" class="offer__svg">
+          <defs>
+            <pattern id="polka-dots" x="0" y="0" width="100" height="50" patternUnits="userSpaceOnUse">
+              <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+            </pattern>
+            <style></style>
+          </defs>
+          <text x="50%" y="60%" text-anchor="middle">
+            WINTER SALE -30%
+          </text>
+        </svg>
+      </div>
+
       <div class="offer__title title-section">
-        <h2 class="title-section__head title-section__head--blue">Выберите подходящий тариф</h2>
+        <h2 class="title-section__head title-section__head--blue title-section__head--left">1. Выберите подходящий курс
+        </h2>
         <!-- <p class="title-section__text">точнее - их даже несколько</p> -->
       </div>
 
@@ -25,9 +40,11 @@
               <div class="costs__label">
                 <span class="costs__text">цена</span>
                 <div class="costs__box costs__box--center">
-                  <span class="costs__item">59 $</span>
-                  <span class="costs__item">3900 ₽</span>
-                  <span class="costs__item">59 €</span>
+                  {% for item in priceSale30 %}
+                  <span class="costs__item">{{ item.macaronUsd }} $</span>
+                  <span class="costs__item">{{ item.macaronRub }} ₽</span>
+                  <span class="costs__item">{{ item.macaronEur }} €</span>
+                  {% endfor %}
                 </div>
               </div>
             </div>
@@ -78,9 +95,11 @@
                     <div class="costs__label">
                       <span class="costs__text">цена</span>
                       <div class="costs__box costs__box--center">
-                        <span class="costs__item">50 $</span>
-                        <span class="costs__item">3000 ₽</span>
-                        <span class="costs__item">50 €</span>
+                        {% for item in priceSale30 %}
+                        <span class="costs__item">{{ item.partUsd }} $</span>
+                        <span class="costs__item">{{ item.partRub }} ₽</span>
+                        <span class="costs__item">{{ item.partEur }} €</span>
+                        {% endfor %}
                       </div>
                     </div>
                   </div>
@@ -131,9 +150,11 @@
                     <div class="costs__label">
                       <span class="costs__text">цена</span>
                       <div class="costs__box costs__box--center">
-                        <span class="costs__item">50 $</span>
-                        <span class="costs__item">3000 ₽</span>
-                        <span class="costs__item">50 €</span>
+                        {% for item in priceSale30 %}
+                        <span class="costs__item">{{ item.partUsd }} $</span>
+                        <span class="costs__item">{{ item.partRub }} ₽</span>
+                        <span class="costs__item">{{ item.partEur }} €</span>
+                        {% endfor %}
                       </div>
                     </div>
                   </div>
@@ -194,9 +215,11 @@
               <div class="costs__label">
                 <span class="costs__text">цена</span>
                 <div class="costs__box costs__box--center">
-                  <span class="costs__item">99 $</span>
-                  <span class="costs__item">5900 ₽</span>
-                  <span class="costs__item">99 €</span>
+                  {% for item in priceSale30 %}
+                  <span class="costs__item">{{ item.helpUsd }} $</span>
+                  <span class="costs__item">{{ item.helpRub }} ₽</span>
+                  <span class="costs__item">{{ item.helpEur }} €</span>
+                  {% endfor %}
                 </div>
               </div>
             </div>
@@ -256,9 +279,11 @@
               <div class="costs__label">
                 <span class="costs__text">цена</span>
                 <div class="costs__box costs__box--center">
-                  <span class="costs__item">129 $</span>
-                  <span class="costs__item">7490 ₽</span>
-                  <span class="costs__item">129 €</span>
+                  {% for item in priceSale30 %}
+                  <span class="costs__item">{{ item.allUsd }} $</span>
+                  <span class="costs__item">{{ item.allRub }} ₽</span>
+                  <span class="costs__item">{{ item.allEur }} €</span>
+                  {% endfor %}
                 </div>
               </div>
 
@@ -286,9 +311,11 @@
                     <div class="costs__label">
                       <span class="costs__text">цена</span>
                       <div class="costs__box costs__box--center">
-                        <span class="costs__item">29 $</span>
-                        <span class="costs__item">1900 ₽</span>
-                        <span class="costs__item">29 €</span>
+                        {% for item in priceSale30 %}
+                        <span class="costs__item">{{ item.eskimoUsd }} $</span>
+                        <span class="costs__item">{{ item.eskimoRub }} ₽</span>
+                        <span class="costs__item">{{ item.eskimoEur }} €</span>
+                        {% endfor %}
                       </div>
                     </div>
                   </div>

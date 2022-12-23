@@ -111,6 +111,40 @@ macaron_by_elena' %}
 {img: "bad4", alt: "Пример плохих макарон. Не получившиеся пирожные."},
 {img: "bad5", alt: "Пример плохих макарон. Смещенный центр после выпекания."}
 ]%}
+{% set priceNormal = [
+{macaronUsd: "59",
+macaronEur: "59",
+macaronRub: "3900",
+partUsd: "50",
+partEur: "50",
+partRub: "3000",
+helpUsd: "99",
+helpEur: "99",
+helpRub: "5900",
+eskimoUsd: "29",
+eskimoEur: "29",
+eskimoRub: "1900",
+allUsd: "129",
+allEur: "129",
+allRub: "7490"}
+]%}
+{% set priceSale30 = [
+{macaronUsd: "41",
+macaronEur: "41",
+macaronRub: "2730",
+partUsd: "35",
+partEur: "35",
+partRub: "2100",
+helpUsd: "69",
+helpEur: "69",
+helpRub: "4130",
+eskimoUsd: "20",
+eskimoEur: "20",
+eskimoRub: "1330",
+allUsd: "90",
+allEur: "90",
+allRub: "5240"}
+]%}
 
 {% macro imageSvg(name, class, width, height) %}
 <svg class="{{ class }}" width="{{ width }}" height="{{ height }}">

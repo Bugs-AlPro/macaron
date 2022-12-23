@@ -1005,6 +1005,40 @@
     &__social {
       padding: 40px 0;
     }
+
+    &__svg {
+      height: 50px;
+      width: 100%;
+    }
+
+    &__svg text {
+      font-family: 'Glory', sans-serif;
+      letter-spacing: 5px;
+      stroke: rgb(214, 1, 186);
+      font-size: 30px;
+      line-height: 50px;
+      font-weight: 700;
+      stroke-width: 1px;
+      animation: textAnimated 5s infinite alternate;
+    }
+  }
+
+
+
+  @keyframes textAnimated {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset: 20%;
+      fill: rgba(116, 141, 255, 0.671);
+
+    }
+
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: white;
+
+    }
   }
 
   .youtube {
@@ -1350,6 +1384,11 @@
       margin-bottom: 20px;
     }
 
+    &__btn:hover,
+    &__btn:focus {
+      background-color: rgb(95, 95, 95);
+    }
+
     &__social {
       margin: 15px 0;
     }
@@ -1359,6 +1398,26 @@
     }
   }
 
+  .recive {
+    &__item {
+      font-size: 1.2em;
+      color: var(--text-gray);
+      margin: 15px 0;
+      position: relative;
+
+      &--bold {
+        // border: 1px solid gray;
+        box-shadow: 0 0 1px 1px gray;
+        padding: 5px;
+        border-radius: 10px;
+      }
+    }
+
+    &__text {
+      padding: 5px 0 0 15px;
+      // font-weight: bold;
+    }
+  }
 
   .payment-type {
 
