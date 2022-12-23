@@ -1006,40 +1006,67 @@
       padding: 40px 0;
     }
 
-    &__svg {
-      height: 50px;
-      width: 100%;
+    &__sale {
+      margin-bottom: 30px;
     }
 
-    &__svg text {
-      font-family: 'Glory', sans-serif;
-      letter-spacing: 5px;
-      stroke: rgb(214, 1, 186);
-      font-size: 30px;
-      line-height: 50px;
-      font-weight: 700;
-      stroke-width: 1px;
-      animation: textAnimated 5s infinite alternate;
+  }
+
+  .sale {
+    background-color: red;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+
+    &--top {
+      transform: translateY(110px);
+    }
+
+    &__cover {
+      position: absolute;
+      top: 10px;
+      left: -30%;
+      width: 2120px;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    &__text {
+      text-transform: uppercase;
+      font-size: 2em;
+      color: white;
+      font-weight: 600;
+      animation: textAnimates 5s infinite;
+      animation-timing-function: linear;
+
     }
   }
 
+  //   &__svg text {
+  //     font-family: 'Glory', sans-serif;
+  //     letter-spacing: 8px;
+  //     stroke: var(--text-darkgray);
+  //     font-size: 36px;
+  //     line-height: 50px;
+  //     font-weight: 700;
+  //     stroke-width: 1px;
+  //     animation: textAnimate 5s infinite alternate;
+  //   }
+  // }
 
-
-  @keyframes textAnimated {
+  @keyframes textAnimates {
     0% {
-      stroke-dasharray: 0 50%;
-      stroke-dashoffset: 20%;
-      fill: rgba(116, 141, 255, 0.671);
-
+      transform: translateX(-570px);
     }
 
     100% {
-      stroke-dasharray: 50% 0;
-      stroke-dashoffstet: -20%;
-      fill: white;
-
+      transform: translateX(150px);
     }
   }
+
+
 
   .youtube {
     display: inline-block;
