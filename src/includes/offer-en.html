@@ -2,7 +2,7 @@
   <div class="container">
     <div class="offer">
 
-      <div class="offer__sale sale">
+      <!-- <div class="offer__sale sale">
         <div class="sale__cover">
           <div class="sale__text">winter sale -40%</div>
           <div class="sale__text">winter sale -40%</div>
@@ -11,7 +11,7 @@
           <div class="sale__text">winter sale -40%</div>
           <div class="sale__text">winter sale -40%</div>
         </div>
-      </div>
+      </div> -->
       <div class="offer__title title-section">
         <h2 class="title-section__head title-section__head--blue title-section__head--left">1. Choose a appropriate
           course</h2>
@@ -35,7 +35,7 @@
               <div class="costs__label">
                 <span class="costs__text">price</span>
                 <div class="costs__box costs__box--left">
-                  {% for item in priceSale30 %}
+                  {% for item in priceNormal %}
                   <span class="costs__item">{{ item.helpUsd }} $</span>
                   <span class="costs__item">{{ item.helpRub }} ₽</span>
                   <span class="costs__item">{{ item.helpEur }} €</span>
@@ -88,7 +88,7 @@
               <div class="costs__label">
                 <span class="costs__text">price</span>
                 <div class="costs__box costs__box--left">
-                  {% for item in priceSale30 %}
+                  {% for item in priceNormal %}
                   <span class="costs__item">{{ item.partUsd }} $</span>
                   <span class="costs__item">{{ item.partRub }} ₽</span>
                   <span class="costs__item">{{ item.partEur }} €</span>
@@ -133,7 +133,7 @@
               <div class="costs__label">
                 <span class="costs__text">price</span>
                 <div class="costs__box costs__box--left">
-                  {% for item in priceSale30 %}
+                  {% for item in priceNormal %}
                   <span class="costs__item">{{ item.partUsd }} $</span>
                   <span class="costs__item">{{ item.partRub }} ₽</span>
                   <span class="costs__item">{{ item.partEur }} €</span>
