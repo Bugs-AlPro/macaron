@@ -1733,7 +1733,7 @@ p {
   }
 
   .want {
-    padding: 70px 0 40px 0;
+    padding: 70px 0 200px 0;
     display: flex;
     flex-direction: column;
     position: relative;

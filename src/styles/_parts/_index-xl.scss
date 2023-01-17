@@ -294,7 +294,7 @@
   }
 
   .want {
-    padding: 70px 0 40px 0;
+    padding: 70px 0 200px 0;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -958,17 +958,6 @@
     }
   }
 
-  //   &__svg text {
-  //     font-family: 'Glory', sans-serif;
-  //     letter-spacing: 8px;
-  //     stroke: var(--text-darkgray);
-  //     font-size: 36px;
-  //     line-height: 50px;
-  //     font-weight: 700;
-  //     stroke-width: 1px;
-  //     animation: textAnimate 5s infinite alternate;
-  //   }
-  // }
 
   @keyframes textAnimates {
     0% {
