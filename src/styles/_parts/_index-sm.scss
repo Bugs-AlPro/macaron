@@ -726,34 +726,41 @@
       box-shadow: 0 0 1px 1px rgb(180, 155, 155);
     }
 
+
+
+
+
+
     &__btn::before {
       content: "";
       position: absolute;
+
       bottom: calc(50% - 4px);
       right: 40px;
-      width: 10px;
-      height: 10px;
-      background-color: var(--title-red);
-      // border-bottom: 4px solid var(--title-red);
-      // border-right: 4px solid var(--title-red);
-      // background-color: var(--title-red);
-      // box-shadow: 0 0 0px 1px var(--title-red);
-      // transform: rotate(45deg);
+
+      width: 4px;
+      height: 14px;
+
+      background-color: darkgreen;
+      transition: 1s;
+
     }
 
     &__btn::after {
       content: "";
       position: absolute;
-      bottom: calc(50% - 4px);
-      right: 40px;
-      width: 10px;
-      height: 10px;
-      background-color: var(--title-red);
-      // border-bottom: 4px solid var(--title-red);
-      // border-right: 4px solid var(--title-red);
-      // background-color: var(--title-red);
-      // box-shadow: 0 0 0px 1px var(--title-red);
-      transform: rotate(45deg);
+
+      bottom: calc(50% - 3px);
+      right: 36px;
+
+      width: 8px;
+      height: 8px;
+
+      border-left: 4px solid darkgreen;
+      border-bottom: 4px solid darkgreen;
+      transform: rotate(-45deg);
+      transition: 1s;
+
     }
 
     // &__btn:hover::before {
@@ -765,31 +772,42 @@
     //   border-bottom: 2px solid var(--back-lightred);
     //   border-right: 2px solid var(--back-lightred);
     // }
-    &__btn:hover::after,
+
+
+
+    &__btn:hover::after {
+
+      border-left: 4px solid rgb(42, 136, 42);
+      border-bottom: 4px solid rgb(42, 136, 42);
+    }
+
     &__btn:hover::before {
-      background-color: var(--title-blue);
+
+      background-color: rgb(42, 136, 42);
+    }
+
+    &__btn--open:hover::before {
+      background-color: rgb(42, 136, 42);
+    }
+
+    &__btn--open:hover::after {
+      border-left: 4px solid rgb(42, 136, 42);
+      border-bottom: 4px solid rgb(42, 136, 42);
     }
 
     &__btn--open::before {
-      // top: 4px;
-      bottom: calc(50% - 1px);
-      // left: 88px;
-      right: 37px;
-      width: 15px;
-      height: 3px;
-      // background-color: var(--title-red);
-      transform: rotate(-45deg);
+      transform: rotate(180deg);
+      transition: 1s;
+      background-color: rgb(81, 219, 81);
 
     }
 
     &__btn--open::after {
-      // top: 4px;
-      bottom: calc(50% - 1px);
-      // left: 88px;
-      right: 37px;
-      width: 15px;
-      height: 3px;
-      // background-color: var(--title-red);
+
+      transform: rotate(135deg);
+      transition: 1s;
+      border-left: 4px solid rgb(81, 219, 81);
+      border-bottom: 4px solid rgb(81, 219, 81);
     }
 
     &__list--open {

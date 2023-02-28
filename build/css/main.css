@@ -611,35 +611,47 @@ p {
     position: absolute;
     bottom: calc(50% - 4px);
     right: 40px;
-    width: 10px;
-    height: 10px;
-    background-color: var(--title-red);
+    width: 4px;
+    height: 14px;
+    background-color: darkgreen;
+    transition: 1s;
   }
   .popup__btn::after {
     content: "";
     position: absolute;
-    bottom: calc(50% - 4px);
-    right: 40px;
-    width: 10px;
-    height: 10px;
-    background-color: var(--title-red);
-    transform: rotate(45deg);
+    bottom: calc(50% - 3px);
+    right: 36px;
+    width: 8px;
+    height: 8px;
+    border-left: 4px solid darkgreen;
+    border-bottom: 4px solid darkgreen;
+    transform: rotate(-45deg);
+    transition: 1s;
   }
-  .popup__btn:hover::after, .popup__btn:hover::before {
-    background-color: var(--title-blue);
+  .popup__btn:hover::after {
+    border-left: 4px solid #2a882a;
+    border-bottom: 4px solid #2a882a;
+  }
+  .popup__btn:hover::before {
+    background-color: #2a882a;
+  }
+  .popup__btn--open:hover::before {
+    background-color: #2a882a;
+  }
+  .popup__btn--open:hover::after {
+    border-left: 4px solid #2a882a;
+    border-bottom: 4px solid #2a882a;
   }
   .popup__btn--open::before {
-    bottom: calc(50% - 1px);
-    right: 37px;
-    width: 15px;
-    height: 3px;
-    transform: rotate(-45deg);
+    transform: rotate(180deg);
+    transition: 1s;
+    background-color: #51db51;
   }
   .popup__btn--open::after {
-    bottom: calc(50% - 1px);
-    right: 37px;
-    width: 15px;
-    height: 3px;
+    transform: rotate(135deg);
+    transition: 1s;
+    border-left: 4px solid #51db51;
+    border-bottom: 4px solid #51db51;
   }
   .popup__list--open {
     display: block;
@@ -1871,36 +1883,48 @@ p {
     content: "";
     position: absolute;
     top: 0px;
-    left: 90px;
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
-    background-color: var(--title-red);
+    left: 95px;
+    width: 4px;
+    height: 14px;
+    background-color: darkgreen;
+    transition: 1s;
   }
   .popup__btn::after {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 90px;
-    width: 10px;
-    height: 10px;
-    background-color: var(--title-red);
+    top: 1px;
+    left: 91px;
+    width: 8px;
+    height: 8px;
+    border-left: 4px solid darkgreen;
+    border-bottom: 4px solid darkgreen;
+    transform: rotate(-45deg);
+    transition: 1s;
   }
-  .popup__btn:hover::after, .popup__btn:hover::before {
-    background-color: var(--title-blue);
+  .popup__btn:hover::after {
+    border-left: 4px solid #2a882a;
+    border-bottom: 4px solid #2a882a;
+  }
+  .popup__btn:hover::before {
+    background-color: #2a882a;
+  }
+  .popup__btn--open:hover::before {
+    background-color: #2a882a;
+  }
+  .popup__btn--open:hover::after {
+    border-left: 4px solid #2a882a;
+    border-bottom: 4px solid #2a882a;
   }
   .popup__btn--open::before {
-    top: 4px;
-    left: 88px;
-    width: 15px;
-    height: 3px;
+    transform: rotate(180deg);
+    transition: 1s;
+    background-color: #51db51;
   }
   .popup__btn--open::after {
-    top: -2px;
-    left: 94px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 3px;
+    transform: rotate(135deg);
+    transition: 1s;
+    border-left: 4px solid #51db51;
+    border-bottom: 4px solid #51db51;
   }
   .popup__list--open {
     display: block;
