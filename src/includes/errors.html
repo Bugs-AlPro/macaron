@@ -3,13 +3,16 @@
   <div class="container">
     <div class="errors">
       <div class="errors__title title-section">
-        <h2 class="title-section__head title-section__head--errors title-section__head--reviews">Распространённые
-          трудности</h2>
-        <p class="title-section__text title-section__text--errors">которые мы решаем на курсе</p>
+        <h2 class="title-section__head title-section__head--errors title-section__head--reviews">{{
+          macrosText.errorsTitleRU
+          }}</h2>
+        <p class="title-section__text title-section__text--errors">{{
+          macrosText.errorsSubTitleRU
+          }}</p>
       </div>
 
       <ul class="errors-img-sm">
-        {% for item in errors %}
+        {% for item in macrosData.errors %}
         <li class="errors-img-sm__item">
           <picture class="errors-img-sm__picture">
             <source srcset="img/{{ item.img }}.webp" type="image/webp">
@@ -19,13 +22,15 @@
         {% endfor %}
       </ul>
       <ul class="errors__list">
-        <li class="errors__item">Почему макарон пустые внутри?</li>
-        <li class="errors__item">Почему крышечки не ровные?</li>
-        <li class="errors__item">Почему макарон после начинки отсырели?</li>
-        <li class="errors__item ">Почему крышечки взрываются?</li>
+
+        {% for item in macrosText.errorsTypes %}
+        <li class="errors__item">{{ item.text1 }}</li>
+        {% endfor %}
+
         <li class="errors__item--img errors__item--img-xl">
           <ul class="errors-img-xl">
-            {% for item in errors %}
+
+            {% for item in macrosData.errors %}
             <li class="errors-img-xl__item">
               <picture class="errors-img-xl__picture">
                 <source srcset="img/{{ item.img }}.webp" type="image/webp">
@@ -33,13 +38,9 @@
               </picture>
             </li>
             {% endfor %}
+
           </ul>
         </li>
-        <li class="errors__item">Почему юбочки не растут?</li>
-        <li class="errors__item">Как выбрать правильную температуру для своей духовки?</li>
-        <li class="errors__item">Почему меренга не получается?</li>
-        <li class="errors__item">Почему нужна электрическая духовка?</li>
-
       </ul>
     </div>
 

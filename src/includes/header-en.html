@@ -59,13 +59,17 @@
         </nav>
       </div>
       <div class="header__title title-section title-section--header">
-        <h1 class="title-section__head title-section__head--header">Online course on Macarons</h1>
-        <p class="title-section__text title-section__text--header">learn how to cook a delicious French dessert in 3
-          days</p>
+        <h1 class="title-section__head title-section__head--header">{{
+          macrosText.maitTitleEn
+          }}</h1>
+        <p class="title-section__text title-section__text--header">{{
+          macrosText.maitSubTitleEn
+          }}</p>
       </div>
       <div class="header__slider slider-offer">
         <ul class="slider-offer__list sliderOfferBase">
-          {% for item in sliderOfferBase %}
+
+          {% for item in macrosData.sliderOfferBaseEn %}
           <li class="slider-offer__item">
             <picture class="slider-offer__picture">
               <source srcset="img/{{ item.img }}.webp" type="image/webp">
@@ -73,6 +77,7 @@
             </picture>
           </li>
           {% endfor %}
+
         </ul>
         <button id="btn-offer-base" class="slider-offer__btn"></button>
       </div>

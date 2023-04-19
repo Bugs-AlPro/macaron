@@ -2,82 +2,53 @@
   <div class="container">
     <div class="payment">
       <div class="payment__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">2. Оплатите курс</h2>
+        <h2 class="title-section__head title-section__head--blue title-section__head--left">{{
+          macrosText.paymentTitleRu }}</h2>
       </div>
 
       <div class="payment__list payment-list">
         <div class="payment-list__item payment-list__item--btn">
-          <button class="payment-list__btn pixel-btn">Выберите удобный для вас способ оплаты</button>
+          <button class="payment-list__btn pixel-btn">{{
+            macrosText.paymentListTitleRu }}</button>
           <ul class="payment-list__payment payment-type">
 
             <li class="payment-type__item">
               <div class="payment-type__title">
-                <div class="payment-type__logo">USA, Europe</div>
-                <div class="payment-type__head">Банковский перевод по номеру IBAN.</div>
+                <div class="payment-type__logo">{{ macrosText.paymentLogoIban }}</div>
+                <div class="payment-type__head">{{ macrosText.paymentLabelIbanRu }}</div>
               </div>
               <button type="button" class="payment-type__btn"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="payment-type__description">
-                <p class="payment-type__text">Выберите урок и переведете соответствующую сумму любым из предложенных
-                  вариатов.</p>
+                <p class="payment-type__text">{{ macrosText.paymentDescripIbanRu }}</p>
+
                 <div class="buy">
-                  <a href="https://wise.com/pay#jBfJ2gpyqnBH0WWzpArQU3ycLms" class="buy__link"
-                    aria-label="Ссылка на оплату через WISE в USD.">Посмотреть реквизиты для оплаты в USD
+                  <a href="{{ macrosText.paymentLinkIbanUS }}" class="buy__link"
+                    aria-label="Ссылка на оплату через WISE в USD.">{{ macrosText.paymentBtnUSRu }}
                   </a>
                 </div>
                 <div class="buy">
-                  <a href="https://wise.com/pay#mGYYFVcqRCsZ3aHhkfMF_GIBOaQ" class="buy__link"
-                    aria-label="Ссылка на оплату через WISE в EUR.">Посмотреть реквизиты для оплаты в EUR
+                  <a href="{{ macrosText.paymentLinkIbanEUR }}" class="buy__link"
+                    aria-label="Ссылка на оплату через WISE в EUR.">{{ macrosText.paymentBtnEurRu }}
                   </a>
                 </div>
 
-                <!-- <div class="p-description__link">
-                  {{ imagePng('p-description__picture', 'wise', 'p-description__img', 'Wise logo',
-                  '300', '146') }}
-                </div>
-                <div class="p-description__block">
-                  <p class="p-description__text">Соединённые штаты Америки. Реквизиты для USD.<br>
-                    <span class="p-description__copy">Имя владельца счета: ELENA PRONINA</span><br>
-                    <span class="p-description__copy">Маршрутный номер: 084009519</span><br>
-                    <span class="p-description__copy">Номер счета: 9600005561035231</span><br>
-                    <span class="p-description__copy">Тип счета: Расчетный (checking)</span><br>
-                    <span class="p-description__copy">Адрес Wise: 30W.26th Street, Sixth Floor. New York NY 10010.
-                      United
-                      States</span>
-                  </p>
-                  <p class="p-description__text">Европейские страны. Реквизиты для EUR. <br>
-                    <span class="p-description__copy">Имя владельца счета: ELENA PRONINA</span><br>
-                    <span class="p-description__copy">BIC код: TRWIBEB1XXX</span><br>
-                    <span class="p-description__copy">IBAN: BE28 9673 3733 2620</span><br>
-                    <span class="p-description__copy">Адрес Wise: Avenue Louise 54, Room S52. Brussels, 1050.
-                      Belgium</span>
-                  </p>
-                  <p class="p-description__text">Турция. Реквизиты для TL.<br>
-                    <span class="p-description__copy">Имя владельца счета: ELENA PRONINA</span><br>
-                    <span class="p-description__copy">IBAN: TR55 0010 3000 0000 0045 8214 58</span>
-                  </p>
-                </div> -->
               </div>
             </li>
             <li class="payment-type__item">
               <div class="payment-type__title">
-                <div class="payment-type__logo">Money transfer</div>
-                <div class="payment-type__head">Перевод с помощью системы денежных переводов</div>
+                <div class="payment-type__logo">{{ macrosText.paymentLogoMoney }}</div>
+                <div class="payment-type__head">{{ macrosText.paymentLabelMoneyRu }}</div>
               </div>
               <button type="button" class="payment-type__btn"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="payment-type__description p-description">
-                <!-- <div class="p-description__link">
-                  {{ imagePng('p-description__logo', 'change', 'p-description__img', 'Логотип денежных переводов',
-                  '250',
-                  '100') }}
-                </div> -->
+
                 <div class="p-description__block">
                   <p class="p-description__text">Информация для денеженого перевода: Western Union, MoneyGram,
                     KoronaPay. <br>
                     <span class="p-description__copy"> Turkey, Antalya, Elena Pronina</span>
                     <span class="p-description__copy">+90 (551) 841-32-23</span>
-                    <!-- <span class="p-description__copy">amaillien@gmail.com</span> -->
                   </p>
                   <div class="p-description__logo">
                     <a href="https://www.westernunion.com" class="p-description__logo-link">
@@ -98,7 +69,7 @@
                     <span class="p-description__copy">5276 8201 7810 5505</span>
                   </p>
                   <div class="p-description__logo">
-                    <a href="https://wise.com/invite/u/elenap2073" class="p-description__logo-link">
+                    <a href="{{ macrosText.paymentLinkWise }}" class="p-description__logo-link">
                       {{ imagePng('p-description__picture', 'wise', 'p-description__image', 'Wise logo',
                       '600', '146') }}
                     </a>
@@ -121,14 +92,14 @@
             </li>
             <li class="payment-type__item">
               <div class="payment-type__title">
-                <div class="payment-type__logo">PayPal</div>
-                <div class="payment-type__head">Перевод с помощью PayPal</div>
+                <div class="payment-type__logo">{{ macrosText.paymentLogoPaypal }}</div>
+                <div class="payment-type__head">{{ macrosText.paymentLabelPaypalRu }}</div>
               </div>
               <button type="button" class="payment-type__btn"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="payment-type__description p-description">
-                <p class="p-description__text">Контакт для перевода через Paypal<br>
-                  <span class="p-description__copy">d.panchenko1974@gmail.com</span>
+                <p class="p-description__text">{{ macrosText.paymentDescripPaypalRu }}<br>
+                  <span class="p-description__copy">{{ macrosText.paymentLinkPaypal }}</span>
                 </p>
                 <div class="p-description__logo">
                   <a class="p-description__logo-link" href="https://www.paypal.com/webapps/mpp/paypal-popup">
@@ -136,129 +107,12 @@
                   </a>
                   </a>
                 </div>
-                <!-- <div class="buy">
-                  <a href="http://paypal.me/MacaronByElenaPro" class="buy__link"
-                    aria-label="Ссылка на оплату через PayPal.">Перейти на страницу оплаты
-                  </a>
-                </div> -->
-                <!-- <div id="smart-button-container">
-                  <div style="text-align: center;">
-                    <div style="margin-bottom: 1.25rem;">
-                      <p></p>
-                      <select id="item-options">
-                        <option value="Shells and Fillings (весь курс с поддержкой)" price="99">Shells and Fillings
-                          (весь курс с поддержкой) - 99 USD</option>
-                        <option value="Онлайн курс по макарон без поддержки" price="59">Онлайн курс по макарон без
-                          поддержки - 59 USD</option>
-                        <option value="Shells/Крышечки " price="50">Shells/Крышечки - 50 USD</option>
-                        <option value="Fillings/Начинки" price="50">Fillings/Начинки - 50 USD</option>
-                        <option value="Эскимо чизкейк" price="29">Эскимо чизкейк - 29 USD</option>
-                      </select>
-                      <select style="visibility: hidden" id="quantitySelect"></select>
-                    </div>
-                    <div id="paypal-button-container"></div>
-                  </div>
-                </div>
-                <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
-                  data-sdk-integration-source="button-factory"></script>
-                <script>
-                  function initPayPalButton() {
-                    var shipping = 0;
-                    var itemOptions = document.querySelector("#smart-button-container #item-options");
-                    var quantity = parseInt();
-                    var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
-                    if (!isNaN(quantity)) {
-                      quantitySelect.style.visibility = "visible";
-                    }
-                    var orderDescription = '';
-                    if (orderDescription === '') {
-                      orderDescription = 'Item';
-                    }
-                    paypal.Buttons({
-                      style: {
-                        shape: 'rect',
-                        color: 'white',
-                        layout: 'vertical',
-                        label: 'pay',
-
-                      },
-                      createOrder: function (data, actions) {
-                        var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
-                        var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
-                        var tax = (0 === 0 || false) ? 0 : (selectedItemPrice * (parseFloat(0) / 100));
-                        if (quantitySelect.options.length > 0) {
-                          quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
-                        } else {
-                          quantity = 1;
-                        }
-
-                        tax *= quantity;
-                        tax = Math.round(tax * 100) / 100;
-                        var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
-                        priceTotal = Math.round(priceTotal * 100) / 100;
-                        var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
-
-                        return actions.order.create({
-                          purchase_units: [{
-                            description: orderDescription,
-                            amount: {
-                              currency_code: 'USD',
-                              value: priceTotal,
-                              breakdown: {
-                                item_total: {
-                                  currency_code: 'USD',
-                                  value: itemTotalValue,
-                                },
-                                shipping: {
-                                  currency_code: 'USD',
-                                  value: shipping,
-                                },
-                                tax_total: {
-                                  currency_code: 'USD',
-                                  value: tax,
-                                }
-                              }
-                            },
-                            items: [{
-                              name: selectedItemDescription,
-                              unit_amount: {
-                                currency_code: 'USD',
-                                value: selectedItemPrice,
-                              },
-                              quantity: quantity
-                            }]
-                          }]
-                        });
-                      },
-                      onApprove: function (data, actions) {
-                        return actions.order.capture().then(function (orderData) {
-
-                          // Full available details
-                          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-                          // Show a success message within this page, e.g.
-                          const element = document.getElementById('paypal-button-container');
-                          element.innerHTML = '';
-                          element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-                          // Or go to another URL:  actions.redirect('thank_you.html');
-
-                        });
-                      },
-                      onError: function (err) {
-                        console.log(err);
-                      },
-                    }).render('#paypal-button-container');
-                  }
-                  initPayPalButton();
-                </script> -->
               </div>
             </li>
             <li class="payment-type__item">
               <div class="payment-type__title">
-                <div class="payment-type__logo">Russia Federation</div>
-                <div class="payment-type__head">Перевод в Тиньков банк с карты или через
-                  "Систему Быстрых Платежей"</div>
+                <div class="payment-type__logo">{{ macrosText.paymentLogoRf }}</div>
+                <div class="payment-type__head">{{ macrosText.paymentLabelRfRu }}</div>
               </div>
               <button type="button" class="payment-type__btn"
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
@@ -268,7 +122,7 @@
                   переводить через СБП, то без комиссии любому банку.
                 </p>
                 <div class="buy">
-                  <a href="https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" class="buy__link"
+                  <a href="{{ macrosText.paymentLinkRf }}" class="buy__link"
                     aria-label="Ссылка на оплату через Тинькоф.">Перейти на страницу оплаты
                   </a>
                 </div>
@@ -279,14 +133,16 @@
       </div>
 
       <div class="payment__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">3. Получите курс</h2>
+        <h2 class="title-section__head title-section__head--blue title-section__head--left">{{
+          macrosText.reciveTitleRu
+          }}</h2>
       </div>
+
       <ul class="recive">
         <li class="recive__item recive__item--bold">
-          <p class="recive__text">Отправьте мне: <br><b> - скриншот об оплате,</b><br>
-            <b>- название курса,</b><br>
-            <b>- ваш электронный адрес
-              для YouTube.</b>
+          <p class="recive__text">{{
+            macrosText.reciveTextRu | safe
+            }}
           </p>
 
         </li>
@@ -312,8 +168,9 @@
         </li>
 
         <li class="recive__item recive__item--end">
-          <p class="recive__text">В течении 24 часов вам будет предоставлен доступ к
-            урокам.
+          <p class="recive__text">{{
+            macrosText.reciveEndRu
+            }}
           </p>
         </li>
 
@@ -323,8 +180,6 @@
   </div>
   <div class="end-photo">
     {{ imageJpg('end-photo__picture', 'end', 'end-photo__img', 'На фото, Елена
-    предлагает
-    рассказать о
-    себе', '200', '150') }}
+    предлагает рассказать о себе', '200', '150') }}
   </div>
 </section>

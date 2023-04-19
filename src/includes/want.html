@@ -4,44 +4,36 @@
 
     <div class="want">
       <div class="want__title title-section">
-        <h2 class="title-section__head title-section__head--red">Для кого этот курс?</h2>
-        <p class="title-section__text title-section__text--want">Узнать подробнее о курсе за 1 минуту</p>
+        <h2 class="title-section__head title-section__head--red">{{
+          macrosText.wantTitleRu
+          }}</h2>
+        <p class="title-section__text title-section__text--want">{{
+          macrosText.wantSubTitleRu
+          }}</p>
       </div>
+
       <div class="want__video youtube">
-        <a href="https://youtu.be/PUcA9rNR3NA" class="youtube__link">
+        {% for item in macrosData.youtubePreview %}
+        <a href="{{ item.linkRu }}" class="youtube__link">
           <picture class="youtube__picture">
-            <source srcset="img/video-cover.webp" type="image/webp">
-            <img src="img/video-cover.jpg" alt="Анонс. Подробнейший урок по приготовлению пирожных макарон."
-              class="youtube__img">
+            <source srcset="img/{{ item.coverRu }}.webp" type="image/webp">
+            <img src="img/{{ item.coverRu }}.jpg" alt="{{ item.altRu }}" class="youtube__img">
           </picture>
         </a>
+        {% endfor %}
       </div>
 
       <ul class="want__list interesting">
+
+        {% for item in macrosText.wantList %}
         <li class="interesting__item">
-          <div class="interesting__count">1</div>
+          <div class="interesting__count">{{ item.count }}</div>
           <div class="interesting__body">
-            <h3 class="interesting__title">Для поклонников макарон</h3>
-            <p class="interesting__description">Для тех кто <b>любит</b> пирожные макарон и <b>хочет</b> научится их
-              готовить.</p>
+            <h3 class="interesting__title">{{ item.title1 }}</h3>
+            <p class="interesting__description">{{ item.description1 | safe }}</p>
           </div>
         </li>
-        <li class="interesting__item">
-          <div class="interesting__count">2</div>
-          <div class="interesting__body">
-            <h3 class="interesting__title">Для тех у кого они не получаются</h3>
-            <p class="interesting__description">Для тех кто уже пробовал готовить макарон, но <b>хороший результат</b>
-              получался нестабильно.</p>
-          </div>
-        </li>
-        <li class="interesting__item">
-          <div class="interesting__count">3</div>
-          <div class="interesting__body">
-            <h3 class="interesting__title">Для кондитеров</h3>
-            <p class="interesting__description">Для тех кто хочет освоить новую нишу и <b>раширить</b> свой ассоритмент.
-            </p>
-          </div>
-        </li>
+        {% endfor %}
 
       </ul>
 
@@ -49,59 +41,42 @@
         <div class="preview__top">
 
           <h3 class="preview__title">
-            Из чего состоит мой курс
+            {{ macrosText.wantPreviewRu }}
           </h3>
         </div>
         <ul class="preview__summary summary">
 
           <li class="summary__item summary__item--img">
             {{ imageSvgColor('cook', 'svgcolor summary__img', '70', '100', 'Девушка кондитер.') }}
+
           </li>
-          <li class="summary__item">
-            <div class="summary__title">Видео уроки</div>
-            <div class="summary__description">12 видео</div>
-          </li>
-          <li class="summary__item">
-            <div class="summary__title">Начинки</div>
+
+          <li class="summary__item summary__item--popup">
             <div class="popup">
               <button type="button" class="popup__btn"></button>
               <ul class="popup__list">
-                <li class="popup__item">Ванильный ганаш на белом шоколаде</li>
-                <li class="popup__item">Классический ганаш на молочном шоколаде</li>
-                <li class="popup__item">Классический ганаш на тёмном шоколаде</li>
-                <li class="popup__item">Фруктово ягодный ганаш: клубника, черника, смородина, манго и др.</li>
-                <li class="popup__item">Взбитый ганаш "Пряничное латте" или "Капучино"</li>
-                <li class="popup__item">Взбитый ганаш "Двойной кокос" или "Баунти"</li>
-                <li class="popup__item">Ганаш на молочном шоколаде "Oreo"</li>
-                <li class="popup__item">Аппельсиновый ганаш</li>
-                <li class="popup__item">Ганаш "Фисташка-малина" на белом шоколаде</li>
-                <li class="popup__item">Начинака "Вишня в шоколаде"</li>
-                <li class="popup__item">Начинка "Пряное яблоко"</li>
-                <li class="popup__item">Начинка "Сникерс с солёной карамелью"</li>
-                <li class="popup__item">Начинка "Бри-Груша"</li>
-                <li class="popup__item">Варианты ароматизации: мятой, лавандой, лимоном, ванилью.</li>
+
+                {% for item in macrosText.fillingsTypes %}
+                <li class="popup__item">{{ item.text1 }}</li>
+                {% endfor %}
+
               </ul>
             </div>
-            <div class="summary__description">Более 15 видов</div>
-          </li>
-          <li class="summary__item">
-            <div class="summary__title">Тех. карта</div>
-            <div class="summary__description">40 страниц в формате PDF</div>
-          </li>
-          <li class="summary__item">
-            <div class="summary__title">Доступ</div>
-            <div class="summary__description">1 год</div>
-          </li>
-          <li class="summary__item">
-            <div class="summary__title">Поддержка</div>
-            <div class="summary__description">Онлайн поддержка в чате</div>
+
           </li>
 
+          {% for item in macrosText.wantSummary %}
+          <li class="summary__item">
+            <div class="summary__title">{{ item.title1 }}</div>
+            <div class="summary__description">{{ item.description1 }}</div>
+          </li>
+          {% endfor %}
+
         </ul>
+
         <div class="preview__body preview-body">
           <div class="preview-body__item preview-body__item--pdf">
-            <p class="preview-body__text">Вы получаете PDF файл, где есть подробное описание всего процесса
-              приготовления.</p>
+            <p class="preview-body__text">{{ macrosText.wantPreviePart1Ru }}</p>
             <picture class="preview-body__picture">
               <source srcset="img/pdf.webp" type="image/webp">
               <img src="img/pdf.png" alt="Скриншот одной страницы документа PDF" class="preview-body__img" width="100"
@@ -117,8 +92,7 @@
             </video>
           </div>
           <div class="preview-body__item">
-            <p class="preview-body__text">Доступ на мой закрытый YouTube канал, где я записала весь процесс
-              приготовления.</p>
+            <p class="preview-body__text">{{ macrosText.wantPreviePart2Ru }}</p>
             <div class="youtube">
               <a href="https://youtu.be/vw4x4sR3228" class="youtube__link youtube__link--preview">
                 <picture class="youtube__picture">

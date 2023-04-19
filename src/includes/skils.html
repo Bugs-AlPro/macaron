@@ -4,18 +4,17 @@
 
     <div class="skils">
       <div class="skils__title title-section">
-        <h2 class="title-section__head title-section__head--skils title-section__head--reviews">После прохождения курса
-          вы научитесь</h2>
+        <h2 class="title-section__head title-section__head--skils title-section__head--reviews">{{
+          macrosText.skilsTitleRU
+          }}</h2>
       </div>
       <ul class="skils__list">
-        <li class="skils__item">Готовить макарон на итальянской меренге.</li>
-        <li class="skils__item">Сможете стабильно получать хороший результат.</li>
-        <li class="skils__item">Узнаете как готовить более 10 начинок разных вкусов.</li>
-        <li class="skils__item">Научитесь готовить взбитые начинки для макарон.</li>
-        <li class="skils__item">Научитесь делать пирожные разной формы.</li>
-        <li class="skils__item">Узнаете как делать рисунки на макарон.</li>
-        <li class="skils__item">Сможете смело принимать заказы и увеличивать количетсво продаж.</li>
+        {% for item in macrosText.skilsTypes %}
+        <li class="skils__item">{{ item.text1 }}</li>
+        {% endfor %}
       </ul>
     </div>
+
   </div>
+
 </section>

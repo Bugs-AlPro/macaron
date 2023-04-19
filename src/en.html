@@ -7,140 +7,8 @@ yourself in this role! You will not regret!' %}
 {% set js = 'js/slideren.js' %}
 
 {% extends "templates/default.html" %}
-
-{% set sliderOfferBase = [
-{img: "img1", alt: "Macarons: red and white with patterns."},
-{img: "img2", alt: "Macarons: lilac color with currant flavor, on a background of lavender."},
-{img: "img3", alt: "Macarons: white and lilac, against a background of blue flowers."},
-{img: "img4", alt: "Multicolored macarons lids."},
-{img: "img8", alt: "Macarons with drawings: different shapes for the winter theme."},
-{img: "img9", alt: "Burgundy macarons."},
-{img: "img10", alt: "Macarons: white and pale blue, decorated in the theme - Paris."},
-{img: "img12", alt: "A set of macarons: different shapes, different colors, different fillings."},
-{img: "img5", alt: "Painting on macarons. Caption: most, better, friend."},
-{img: "img16", alt: "Pink and blue macarons with filling."},
-{img: "img19", alt: "Different fillings for macarons: classic ganache with currants, coconut, mango."},
-{img: "img21", alt: "Macarons, different flavors, on a beautiful multi-tiered stand."},
-{img: "img22", alt: "Pink macarons, on a background of rose petals. Sectional view of the taste of mango and currant."},
-{img: "img11", alt: "Macarons and cheesecakes with decorations."},
-{img: "img23", alt: "White and lilac macarons."},
-{img: "img25", alt: "Shell with chocolate filling."},
-{img: "img27", alt: "Multi-colored cakes with different fillings."},
-{img: "img29", alt: "Broken shell in half."},
-{img: "img31", alt: "Shell with fruit filling."},
-{img: "img6", alt: "Multi-colored macarons with beautiful filling."},
-{img: "img7", alt: "Macarons in the shape of a flower, chamomile."}
-]%}
-
-{% set sliderAllEn = [
-{img: "img13", alt: "A set of colored macaroons in different flavors."},
-{img: "img31", alt: "Shell with fruit filling."},
-{img: "img1", alt: "Macarons: red and white with patterns."},
-{img: "img4", alt: "Multicolored macarons lids."},
-{img: "img18", alt: "Burgundy shells with fruit filling."},
-{img: "img14", alt: "Macarons in the shape of Mickey Mouse."},
-{img: "img15", alt: "Filling for macarons: classic raspberry ganache, walnut Snickers."},
-{img: "img23", alt: "White and lilac macarons."},
-{img: "img28", alt: "Shell with mint filling."},
-{img: "img20", alt: "Burgundy shells with fruit filling."}
-]%}
-
-{% set sliderOfferShells = [
-{img: "img1", alt: "Macarons: red and white with patterns."},
-{img: "img10", alt: "Macarons: white and pale blue, decorated in the theme - Paris."},
-{img: "img2", alt: "Macarons: lilac color with currant flavor, on a background of lavender."},
-{img: "img3", alt: "Macarons: white and lilac, against a background of blue flowers."},
-{img: "img4", alt: "Multicolored macarons lids."},
-{img: "img5", alt: "Painting on macarons. Caption: most, better, friend."},
-{img: "img6", alt: "Multi-colored macarons with beautiful filling."},
-{img: "img7", alt: "Macarons in the shape of a flower, chamomile."},
-{img: "img8", alt: "Macarons with drawings: different shapes for the winter theme."},
-{img: "img9", alt: "Burgundy macarons."}
-]%}
-
-{% set sliderOfferCreamEn = [
-{img: "img19", alt: "Different fillings for macarons: classic ganache with currants, coconut, mango."},
-{img: "img22", alt: "Pink macarons, on a background of rose petals. Sectional view of the taste of mango and currant."},
-{img: "img24", alt: "Shell with snickers filling."},
-{img: "img25", alt: "Shell with chocolate filling."},
-{img: "img26", alt: "Shell with vanilla filling."},
-{img: "img27", alt: "Multi-colored cakes with different fillings."},
-{img: "img28", alt: "Shell with mint filling."},
-{img: "img17", alt: "Filling for macarons: Sectional View, Vanilla Cherry Ganache."},
-{img: "img30", alt: "Shell with berry filling."},
-{img: "img31", alt: "Shell with fruit filling."}
-]%}
-
-{% set sliderFeedback = [
-{img: "feedback-en1", alt: "Feedback on cakes: The lessons are amazing, everything is told in detail, there is a lot of
-information. Thanks a lot."},
-{img: "feedback-en2", alt: "Cake review: Thank you so much for the detailed tips."},
-{img: "feedback-en3", alt: "Feedback on cakes: do not waste time and money, buy a master class from Lena and you will be
-happy."},
-{img: "feedback-en4", alt: "Feedback on success: if you do everything according to your technology, then the first
-time."},
-{img: "feedback-en5", alt: "Feedback on the success of the student: I learned and now everything is stable. All are
-super
-pretty."},
-{img: "feedback-en6", alt: "Feedback on the success of the student: I'm just delighted, not to mention my household.
-Thank
-you very much for your hard work."},
-{img: "feedback-en7", alt: "Feedback on success: It's a pleasure to work with you."},
-{img: "feedback-en8", alt: "Feedback on the successes: they are simply amazing."},
-{img: "feedback-en9", alt: "Feedback on the success of the student: thank you, you always answer my questions, it was
-very
-easy to communicate with you."},
-{img: "feedback-en10", alt: "Course feedback: thanks to Elena for her amazing course."},
-{img: "feedback-en11", alt: "Feedback on the course: before that, I made it according to a recipe from the Internet and
-always missed something. And then just a song, a fairy tale, and everything went very cool."},
-{img: "feedback-en12", alt: "Review of the course: the most detailed instruction on the preparation of the sensational
-fashionable MACARONS dessert."},
-{img: "feedback-en13", alt: "Feedback on success: thank you very much, everyone who tried it was satisfied."},
-{img: "feedback-en14", alt: "Feedback on success: thank you very much, everyone who tried it was satisfied."},
-{img: "feedback14", alt: "Photo of Elena, in winter, with a box of cakes of different flavors and colors."}
-]%}
-
-{% set errors = [
-{img: "bad1", alt: "An example of bad macaron. Not pretty shells."},
-{img: "bad2", alt: "An example of bad macaron. Empty inside."},
-{img: "bad3", alt: "An example of bad macaron. Burnt shels."},
-{img: "bad4", alt: "An example of bad macaron. Unfinished cakes."},
-{img: "bad5", alt: "An example of bad macaron. Displaced center after baking."}
-]%}
-{% set priceNormal = [
-{macaronUsd: "65",
-macaronEur: "61",
-macaronRub: "4500",
-partUsd: "55",
-partEur: "52",
-partRub: "3500",
-helpUsd: "99",
-helpEur: "93",
-helpRub: "6900",
-eskimoUsd: "29",
-eskimoEur: "27",
-eskimoRub: "2000",
-allUsd: "125",
-allEur: "118",
-allRub: "9000"}
-]%}
-{% set priceSale30 = [
-{macaronUsd: "41",
-macaronEur: "41",
-macaronRub: "2730",
-partUsd: "35",
-partEur: "35",
-partRub: "2100",
-helpUsd: "69",
-helpEur: "69",
-helpRub: "4130",
-eskimoUsd: "20",
-eskimoEur: "20",
-eskimoRub: "1330",
-allUsd: "90",
-allEur: "90",
-allRub: "5240"}
-]%}
+{% import "includes/macros-data.html" as macrosData %}
+{% import "includes/macros-text.html" as macrosText %}
 
 {% macro imageSvg(name, class, width, height) %}
 <svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
@@ -178,16 +46,8 @@ allRub: "5240"}
   {% include "includes/about-en.html" %}
   {% include "includes/offer-en.html" %}
   {% include "includes/payment-en.html" %}
-  <div class="consent">
-    <div class="consent__body">
-      <p class="consent__text">This site uses <b>cookies</b> to help analyze site statistics. You can give permission to
-        use
-        them.</p>
-      <button type="button" class="consent__btn consent__btn--yes">Yes, I allow.</button>
-      <button type="button" class="consent__btn consent__btn--no">No, I don't allow it.</button>
+  {% include "includes/consent-en.html" %}
 
-    </div>
-  </div>
 </main>
 
 {% include "includes/footer.html" %}

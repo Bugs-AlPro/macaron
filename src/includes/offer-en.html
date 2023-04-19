@@ -13,8 +13,9 @@
         </div>
       </div> -->
       <div class="offer__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">1. Choose a appropriate
-          course</h2>
+        <h2 class="title-section__head title-section__head--blue title-section__head--left">{{
+          macrosText.offerTitleEn
+          }}</h2>
         <!-- <p class="title-section__text">more precisely, there are several of them</p> -->
       </div>
 
@@ -35,7 +36,7 @@
               <div class="costs__label">
                 <span class="costs__text">price</span>
                 <div class="costs__box costs__box--left">
-                  {% for item in priceNormal %}
+                  {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.helpUsd }} $</span>
                   <span class="costs__item">{{ item.helpRub }} ₽</span>
                   <span class="costs__item">{{ item.helpEur }} €</span>
@@ -68,11 +69,11 @@
                 to the level of sales.</li>
               <li class="offer-item__item offer-item__item--slider lider-offer">
                 <ul class="slider-offer__list sliderAllEn">
-                  {% for item in sliderAllEn %}
+                  {% for item in macrosData.sliderAll %}
                   <li class="slider-offer__item">
                     <picture class="slider-offer__picture">
                       <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="slider-offer__img" height="200">
                     </picture>
                   </li>
                   {% endfor %}
@@ -88,7 +89,7 @@
               <div class="costs__label">
                 <span class="costs__text">price</span>
                 <div class="costs__box costs__box--left">
-                  {% for item in priceNormal %}
+                  {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.partUsd }} $</span>
                   <span class="costs__item">{{ item.partRub }} ₽</span>
                   <span class="costs__item">{{ item.partEur }} €</span>
@@ -113,11 +114,11 @@
                 to the level of sales.</li>
               <li class="offer-item__item offer-item__item--slider slider-offer">
                 <ul class="slider-offer__list sliderOfferShellsEn">
-                  {% for item in sliderOfferShells %}
+                  {% for item in macrosData.sliderOfferShells %}
                   <li class="slider-offer__item">
                     <picture class="slider-offer__picture">
                       <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="slider-offer__img" height="200">
                     </picture>
                   </li>
                   {% endfor %}
@@ -133,7 +134,7 @@
               <div class="costs__label">
                 <span class="costs__text">price</span>
                 <div class="costs__box costs__box--left">
-                  {% for item in priceNormal %}
+                  {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.partUsd }} $</span>
                   <span class="costs__item">{{ item.partRub }} ₽</span>
                   <span class="costs__item">{{ item.partEur }} €</span>
@@ -151,33 +152,24 @@
               <li class="offer-item__item">Technical card with a detailed description of the process of preparing
                 fillings of different flavors. PDF file on 20 pages.
               </li>
-              <li class="offer-item__item">Ganache on white chocolate.</li>
-              <li class="offer-item__item">Milk chocolate ganache.</li>
-              <li class="offer-item__item">Dark chocolate ganache.</li>
-              <li class="offer-item__item">Fruit and berry ganache: strawberries, blueberries, currants, mangoes, etc.
-              </li>
-              <li class="offer-item__item">Whipped ganache "Gingerbread Latte" or "Cappuccino".</li>
-              <li class="offer-item__item">Whipped ganache "Double coconut" or "Bounty"</li>
-              <li class="offer-item__item">Milk chocolate ganache "Oreo".</li>
-              <li class="offer-item__item">Ganache on orange chocolate.</li>
-              <li class="offer-item__item">"Pistachio-raspberry" on white chocolate</li>
-              <li class="offer-item__item">Filling "Cherry in chocolate".</li>
-              <li class="offer-item__item">Filling "Spicy apple".</li>
-              <li class="offer-item__item">Filling "Snickers with salted caramel".</li>
-              <li class="offer-item__item">Brie Pear Ganache.</li>
-              <li class="offer-item__item">Flavor options: mint, lavender, lemon, vanilla.</li>
+
+              {% for item in macrosText.fillingsTypes %}
+              <li class="offer-item__item">{{ item.text2 }}</li>
+              {% endfor %}
 
               <li class="offer-item__item">Video of the preparation of various basic fillings.</li>
               <li class="offer-item__item offer-item__item--slider slider-offer">
                 <ul class="slider-offer__list sliderOfferCreamEn">
-                  {% for item in sliderOfferCreamEn %}
+
+                  {% for item in macrosData.sliderOfferCream %}
                   <li class="slider-offer__item">
                     <picture class="slider-offer__picture">
                       <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="slider-offer__img" height="200">
                     </picture>
                   </li>
                   {% endfor %}
+
                 </ul>
               </li>
             </ol>

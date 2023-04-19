@@ -4,44 +4,35 @@
 
     <div class="want">
       <div class="want__title title-section">
-        <h2 class="title-section__head title-section__head--red">Who is this course for?</h2>
-        <p class="title-section__text title-section__text--want">Get details in 1 minute</p>
+        <h2 class="title-section__head title-section__head--red">{{
+          macrosText.wantTitleEn
+          }}</h2>
+        <p class="title-section__text title-section__text--want">{{
+          macrosText.wantSubTitleEn
+          }}</p>
       </div>
       <div class="want__video youtube">
-        <a href="https://youtu.be/PUcA9rNR3NA" class="youtube__link">
+        {% for item in macrosData.youtubePreview %}
+        <a href="{{ item.linkEn }}" class="youtube__link">
           <picture class="youtube__picture">
-            <source srcset="img/video-cover.webp" type="image/webp">
-            <img src="img/video-cover.jpg" alt="Announcement. A detailed tutorial on how to make macaroons"
-              class="youtube__img">
+            <source srcset="img/{{ item.coverEn }}.webp" type="image/webp">
+            <img src="img/{{ item.coverEn }}.jpg" alt="{{ item.altEn }}" class="youtube__img">
           </picture>
         </a>
+        {% endfor %}
       </div>
 
       <ul class="want__list interesting">
+
+        {% for item in macrosText.wantList %}
         <li class="interesting__item">
-          <div class="interesting__count">1</div>
+          <div class="interesting__count">{{ item.count }}</div>
           <div class="interesting__body">
-            <h3 class="interesting__title">For fans of macarons</h3>
-            <p class="interesting__description">For those who <b>love</b> macarons cakes and <b>want</b> to learn how to
-              cook them.</p>
+            <h3 class="interesting__title">{{ item.title2 }}</h3>
+            <p class="interesting__description">{{ item.description2 | safe }}</p>
           </div>
         </li>
-        <li class="interesting__item">
-          <div class="interesting__count">2</div>
-          <div class="interesting__body">
-            <h3 class="interesting__title">For those who can't cook them</h3>
-            <p class="interesting__description">For those who have already tried cooking macarons, but the <b>good
-                result</b> was unstable.</p>
-          </div>
-        </li>
-        <li class="interesting__item">
-          <div class="interesting__count">3</div>
-          <div class="interesting__body">
-            <h3 class="interesting__title">For confectioners</h3>
-            <p class="interesting__description">For those who want to explore a new area and <b>expand</b> their range.
-            </p>
-          </div>
-        </li>
+        {% endfor %}
 
       </ul>
 
@@ -49,7 +40,7 @@
         <div class="preview__top">
 
           <h3 class="preview__title">
-            Check out what's in my course
+            {{ macrosText.wantPreviewEn }}
           </h3>
         </div>
         <ul class="preview__summary summary">
@@ -57,51 +48,31 @@
           <li class="summary__item summary__item--img">
             {{ imageSvgColor('cook', 'svgcolor summary__img', '70', '100', 'Girl confectioner.') }}
           </li>
-          <li class="summary__item">
-            <div class="summary__title">Video lessons</div>
-            <div class="summary__description">12 videos</div>
-          </li>
-          <li class="summary__item">
-            <div class="summary__title">Fillings</div>
+          <li class="summary__item summary__item--popup">
             <div class="popup">
               <button type="button" class="popup__btn"></button>
               <ul class="popup__list">
-                <li class="popup__item">Ganache on white chocolate.</li>
-                <li class="popup__item">Milk chocolate ganache.</li>
-                <li class="popup__item">Dark chocolate ganache.</li>
-                <li class="popup__item">Fruit and berry ganache: strawberries, blueberries, currants, mangoes, etc.</li>
-                <li class="popup__item">Whipped ganache "Gingerbread Latte" or "Cappuccino".</li>
-                <li class="popup__item">Whipped ganache "Double coconut" or "Bounty"</li>
-                <li class="popup__item">Milk chocolate ganache "Oreo".</li>
-                <li class="popup__item">Ganache on orange chocolate.</li>
-                <li class="popup__item">"Pistachio-raspberry" on white chocolate</li>
-                <li class="popup__item">Filling "Cherry in chocolate".</li>
-                <li class="popup__item">Filling "Spicy apple".</li>
-                <li class="popup__item">Filling "Snickers with salted caramel".</li>
-                <li class="popup__item">Brie Pear Ganache.</li>
-                <li class="popup__item">Flavor options: mint, lavender, lemon, vanilla.</li>
+
+                {% for item in macrosText.fillingsTypes %}
+                <li class="popup__item">{{ item.text2 }}</li>
+                {% endfor %}
+
               </ul>
             </div>
-            <div class="summary__description">More 15 types</div>
+
           </li>
+          {% for item in macrosText.wantSummary %}
           <li class="summary__item">
-            <div class="summary__title">Technical card</div>
-            <div class="summary__description">40 pages PDF file</div>
+            <div class="summary__title">{{ item.title2 }}</div>
+            <div class="summary__description">{{ item.description2 }}</div>
           </li>
-          <li class="summary__item">
-            <div class="summary__title">Access</div>
-            <div class="summary__description">1 year</div>
-          </li>
-          <li class="summary__item">
-            <div class="summary__title">Support</div>
-            <div class="summary__description">Online Chat support</div>
-          </li>
+          {% endfor %}
 
         </ul>
+
         <div class="preview__body preview-body">
           <div class="preview-body__item preview-body__item--pdf">
-            <p class="preview-body__text">You will receive a PDF file with a detailed description of the entire cooking
-              process.</p>
+            <p class="preview-body__text">{{ macrosText.wantPreviePart1En }}</p>
             <picture class="preview-body__picture">
               <source srcset="img/pdf-eng.webp" type="image/webp">
               <img src="img/pdf-eng.png" alt="Screenshot of one page from PDF." class="preview-body__img" width="100"
@@ -117,8 +88,7 @@
             </video>
           </div>
           <div class="preview-body__item">
-            <p class="preview-body__text">You get access to my private YouTube channel, where I recorded the entire
-              cooking process. At the moment, my videos are voiced in Russian, but all videos have English subtitles.
+            <p class="preview-body__text">{{ macrosText.wantPreviePart2En }}
             </p>
             <div class="youtube">
               <a href="https://youtu.be/vw4x4sR3228" class="youtube__link youtube__link--preview">

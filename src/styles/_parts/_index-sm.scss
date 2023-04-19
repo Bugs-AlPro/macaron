@@ -665,7 +665,7 @@
       position: relative;
     }
 
-    &__item--img {
+    &__img {
       display: none;
     }
 
@@ -677,10 +677,11 @@
 
   .popup {
 
+
     &__list {
       display: none;
       position: absolute;
-      top: 130%;
+      top: 150px;
       right: -17px;
       background-color: rgb(241, 249, 253);
       box-shadow: 0 0 7px 4px var(--hover-bluedark);
@@ -712,10 +713,10 @@
     &__btn {
       cursor: pointer;
       position: absolute;
-      width: 110%;
-      bottom: -5%;
-      right: -5%;
-      height: 110%;
+      width: 100%;
+      top: 75px;
+      right: 10px;
+      height: 60px;
       border: none;
       background-color: transparent;
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, white 100%);

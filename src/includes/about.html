@@ -2,35 +2,22 @@
   <div class="container">
     <div class="about">
       <div class="about__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--about">Познакомимся?</h2>
-        <p class="title-section__text">Как я пришла к макарон!</p>
+        <h2 class="title-section__head title-section__head--blue title-section__head--about">{{ macrosText.aboutTitleRu
+          }}</h2>
+        <p class="title-section__text">{{ macrosText.aboutSubTitleRu }}</p>
       </div>
       <div class="about__body">
         {{ imageJpg('about__picture about__picture--top', 'logo4', 'about__img about__img--top', 'На фото, Елена
         предлагает
         рассказать о
         себе', '300', '300') }}
-        <p class="about__text about__text--1">
-          Однажды на открытии французского магазина <span class="about__text--loccitane">L’Occitane</span>,
-          нас угощали пирожными Макарон. Никогда в
-          жизни я не пробовала такого вкуснейшего, нежного десерта. После этого я начала искать хотябы что-то
-          подобное. Но к сожалению ни в одном магазине такое не купишь. Только в хороших дорогих кофейнях можно найти
-          вкусные макарон, да и то, если они свежеприготовленны и правильно хранятся. Ведь их срок годности 3-4 дня.
-          Именно поэтому я решила сама научиться их готовить!
+
+        {% for item in macrosText.aboutText %}
+        <p class="about__text about__text--{{ item.class }}">
+          {{ item.text1 | safe }}
         </p>
-        <p class="about__text about__text--2">
-          Потратив на это <b>год</b>, поменяв духовку с газовой на <b>электрическую</b>, просмотрев кучу сайтов,
-          переведя очень
-          много продуктов - я вывела стабильный рецепт приготовления.
-        </p>
-        <p class="about__text about__text--3">
-          Я уже помогла более <b>150</b> своим ученикам научиться
-          готовить пирожные макарон. Со мной у вас обязательно получатся пирожные макарон, потому что я открою вам
-          небольшой секрет их
-          приготовления.
-          Благодаря ему - эти капризные десерты получатся у каждого. Не важно кондитер вы или только встаёте на
-          этот путь - у нас всё получится!
-        </p>
+        {% endfor %}
+
         {{ imageJpg('about__picture about__picture--down', 'about1', 'about__img about__img--down', 'На фото, Елена c
         кофе и
         вкуснейшим
