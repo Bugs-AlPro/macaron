@@ -83,18 +83,18 @@ costsBtnMenu.addEventListener('click', () => {
   costsBtnMenu.nextElementSibling.classList.toggle('nav--open');
 })
 
-const videoBtn = document.querySelector('.video__btn');
-const videoBox = document.querySelector('.video');
-videoBtn.addEventListener('click', () => {
-  videoBox.classList.toggle('video--open');
-  videoBtn.classList.toggle('video__btn--open');
-})
+// const videoBtn = document.querySelector('.video__btn');
+// const videoBox = document.querySelector('.video');
+// videoBtn.addEventListener('click', () => {
+//   videoBox.classList.toggle('video--open');
+//   videoBtn.classList.toggle('video__btn--open');
+// })
 
-const popupBtn = document.querySelector('.popup__btn');
-popupBtn.addEventListener('click', () => {
-  popupBtn.classList.toggle('popup__btn--open');
-  popupBtn.nextElementSibling.classList.toggle('popup__list--open');
-})
+// const popupBtn = document.querySelector('.popup__btn');
+// popupBtn.addEventListener('click', () => {
+//   popupBtn.classList.toggle('popup__btn--open');
+//   popupBtn.nextElementSibling.classList.toggle('popup__list--open');
+// })
 
 const paymentBtn = document.querySelector('.payment-list__btn');
 paymentBtn.addEventListener('click', () => {

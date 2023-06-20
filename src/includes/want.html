@@ -51,7 +51,7 @@
 
           </li>
 
-          <li class="summary__item summary__item--popup">
+          <!-- <li class="summary__item summary__item--popup">
             <div class="popup">
               <button type="button" class="popup__btn"></button>
               <ul class="popup__list">
@@ -63,33 +63,28 @@
               </ul>
             </div>
 
-          </li>
+          </li> -->
 
           {% for item in macrosText.wantSummary %}
           <li class="summary__item">
+
             <div class="summary__title">{{ item.title1 }}</div>
             <div class="summary__description">{{ item.description1 }}</div>
+            <button type="button" class="summary__btn"></button>
+
           </li>
           {% endfor %}
 
         </ul>
 
         <div class="preview__body preview-body">
-          <div class="preview-body__item preview-body__item--pdf">
+          <div class="preview-body__item">
             <p class="preview-body__text">{{ macrosText.wantPreviePart1Ru }}</p>
             <picture class="preview-body__picture">
               <source srcset="img/pdf.webp" type="image/webp">
               <img src="img/pdf.png" alt="Скриншот одной страницы документа PDF" class="preview-body__img" width="100"
                 height="100">
             </picture>
-          </div>
-          <div class="preview-body__item video">
-            <button type="button" class="video__btn">reels</button>
-            <video preload="auto" loop controls poster="img/cover.jpg" muted class="video__file">
-              <source src="video/video.mp4" type="video/mp4">
-              <source src="video/video.ogv" type="video/ogg">
-              <source src="video/video.webm" type="video/webm">
-            </video>
           </div>
           <div class="preview-body__item">
             <p class="preview-body__text">{{ macrosText.wantPreviePart2Ru }}</p>

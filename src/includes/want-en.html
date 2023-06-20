@@ -48,7 +48,7 @@
           <li class="summary__item summary__item--img">
             {{ imageSvgColor('cook', 'svgcolor summary__img', '70', '100', 'Girl confectioner.') }}
           </li>
-          <li class="summary__item summary__item--popup">
+          <!-- <li class="summary__item summary__item--popup">
             <div class="popup">
               <button type="button" class="popup__btn"></button>
               <ul class="popup__list">
@@ -60,11 +60,13 @@
               </ul>
             </div>
 
-          </li>
+          </li> -->
           {% for item in macrosText.wantSummary %}
           <li class="summary__item">
             <div class="summary__title">{{ item.title2 }}</div>
             <div class="summary__description">{{ item.description2 }}</div>
+            <button type="button" class="summary__btn"></button>
+
           </li>
           {% endfor %}
 
@@ -79,17 +81,8 @@
                 height="100">
             </picture>
           </div>
-          <div class="preview-body__item video">
-            <button type="button" class="video__btn">reels</button>
-            <video preload="auto" loop controls poster="img/cover.jpg" muted class="video__file">
-              <source src="video/video.mp4" type="video/mp4">
-              <source src="video/video.ogv" type="video/ogg">
-              <source src="video/video.webm" type="video/webm">
-            </video>
-          </div>
           <div class="preview-body__item">
-            <p class="preview-body__text">{{ macrosText.wantPreviePart2En }}
-            </p>
+            <p class="preview-body__text">{{ macrosText.wantPreviePart2En }}</p>
             <div class="youtube">
               <a href="https://youtu.be/vw4x4sR3228" class="youtube__link youtube__link--preview">
                 <picture class="youtube__picture">

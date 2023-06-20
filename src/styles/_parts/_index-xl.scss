@@ -409,21 +409,49 @@
     position: relative;
     border-top: 2px solid var(--title-red);
     border-bottom: 2px solid var(--title-red);
+    // padding-top: 20px;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
     grid-template-rows: 1fr;
-    gap: 10px;
+    gap: 20px;
     justify-content: space-around;
-    align-items: center;
+    // align-items: center;
+    background-color: #ffffff;
 
     &__title {
       color: var(--text-gray);
     }
 
-    // &__item--popup {
-    //   grid-column-start: 4;
-    //   grid-column-end: 5;
-    // }
+    &__item {
+      position: relative;
+      padding-top: 30px;
+
+      &--img {
+        padding-top: 0;
+      }
+
+      // min-height: max-content;
+    }
+
+    &__btn {
+      position: absolute;
+      width: calc(100% + 16px);
+      height: calc(100% - 25px);
+      top: 15px;
+      left: -8px;
+      background-color: transparent;
+      border: none;
+      z-index: 2;
+      border-radius: 5px;
+      box-shadow: 0 1px 2px 0 rgba(49, 52, 54, 0.37);
+    }
+
+    &__btn:hover,
+    &__btn:focus {
+      transition: 0.2s;
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(40, 42, 44, 0.15);
+      transform: translateY(-1px);
+    }
 
     &__description {
       font-weight: 600;
@@ -626,10 +654,10 @@
   }
 
   .preview-body {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: 30% auto 30%;
-    // justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    gap: 2em;
+
 
     &__item {
       display: flex;
@@ -640,16 +668,9 @@
       position: relative;
     }
 
-    // &__item::before {
-    //   content: "";
-    //   border-top: 2px solid #6d6d6d;
-    //   align-self: stretch;
-    // }
-
     &__text {
       font-size: 1.3em;
       color: var(--text-gray);
-      // order: -1;
     }
 
     &__img {
@@ -658,6 +679,8 @@
       border-radius: 10px;
       box-shadow: 0 0 3px 1px var(--text-gray);
       transition: 0.3s;
+      position: relative;
+      z-index: 2;
     }
 
     &__img:hover,
@@ -1209,6 +1232,11 @@
   }
 
   .payment-type {
+    border: 2px solid white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 1px var(--title-gray);
+    padding: 15px;
+
     &__item {
       position: relative;
       margin-bottom: 20px;
@@ -1315,7 +1343,7 @@
       flex-direction: column;
       gap: 20px;
       padding-left: 425px;
-      border-bottom: 2px solid #6d6d6d;
+      // border-bottom: 2px solid #6d6d6d;
       padding-bottom: 20px;
     }
 
