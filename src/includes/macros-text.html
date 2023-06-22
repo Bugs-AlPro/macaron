@@ -30,18 +30,18 @@ description2: "For those who want to explore a new area and <b>expand</b> their 
 
 {% set wantSummaryTitle1Ru = 'Видео уроки' %}
 {% set wantSummaryTitle1En = 'Video lessons' %}
-{% set wantSummarySubTitle1Ru = '12 видео' %}
-{% set wantSummarySubTitle1En = '12 videos' %}
+{% set wantSummarySubTitle1Ru = 'Более 16 видео' %}
+{% set wantSummarySubTitle1En = 'More 16 videos' %}
 
 {% set wantSummaryTitle2Ru = 'Начинки' %}
 {% set wantSummaryTitle2En = 'Fillings' %}
-{% set wantSummarySubTitle2Ru = 'Более 15 видов' %}
-{% set wantSummarySubTitle2En = 'More 15 types' %}
+{% set wantSummarySubTitle2Ru = 'Более 30 видов' %}
+{% set wantSummarySubTitle2En = 'More 30 types' %}
 
 {% set wantSummaryTitle3Ru = 'Тех. карта' %}
 {% set wantSummaryTitle3En = 'Technical card' %}
-{% set wantSummarySubTitle3Ru = '40 страниц' %}
-{% set wantSummarySubTitle3En = '40 pages' %}
+{% set wantSummarySubTitle3Ru = '70 страниц' %}
+{% set wantSummarySubTitle3En = '70 pages' %}
 
 {% set wantSummaryTitle4Ru = 'Доступ' %}
 {% set wantSummaryTitle4En = 'Access' %}
@@ -54,9 +54,9 @@ description2: "For those who want to explore a new area and <b>expand</b> their 
 {% set wantSummarySubTitle5En = 'Online Chat' %}
 
 {% set courseInformation= [
-{text1: "<b>Крышечки</b> - в настоящий момент PDF документ о крышечках содерит в себе около 20 страниц текста.
+{text1: "<b>Крышечки</b> - в настоящий момент PDF документ о крышечках содерит в себе около 30 страниц текста.
 Там я подробно рассказываю технологию приготовления.",
-text2: "<b>Shells</b> - at the moment, a PDF document about shells contains about 20 pages of text.
+text2: "<b>Shells</b> - at the moment, a PDF document about shells contains about 30 pages of text.
 There I tell you in detail the cooking technology."},
 
 {text1: "<b>Начинки</b> - в настоящий момент PDF документ о начинках содержат около 40 страниц с рецептами для более 30
@@ -76,10 +76,25 @@ you want. But I also cannot
 guarantee that Internet services will work stably for many years.<br>
 Thats why I added information about access for 1 year.' %}
 
-{% set courseSupportRu = 'Такая <b>поддержка</b> в чате <b>не предоставляется</b> всем <b>автоматически</b>. Курс можно
+{% set courseSupportRu= [
+{text1: "Такая <b>поддержка</b> в чате <b>не предоставляется</b> всем <b>автоматически</b>. Курс можно
 купить с
-поддержкой или без неё.' %}
-{% set courseSupportEn = 'If you are buying a course in English, I try to answer your questions.' %}
+поддержкой или без неё."},
+
+{text1: "Чат лично со мной."},
+{text1: "Отправляете мне видео на проверку."},
+{text1: "Разбираем вместе ошибки."},
+{text1: "Отвечаю на
+ваши вопросы."},
+{text1: "Помогаю поднять качество до уровня продаж."}
+]%}
+
+{% set courseSupportRuu = 'Такая <b>поддержка</b> в чате <b>не предоставляется</b> всем <b>автоматически</b>. Курс можно
+купить с
+поддержкой или без неё.<br> Чат лично со мной.<br> Отправляете мне видео на проверку.<br> Разбираем вместе ошибки.<br>
+Отвечаю на
+ваши вопросы.<br> Помогаю поднять качество до уровня продаж.' %}
+{% set courseSupportEn = 'If you are buying an English course, I will personally answer your questions and advise.' %}
 
 {% set allVideosForCourse = [
 {text1: "Как приготовить марципан",
@@ -283,8 +298,8 @@ Payments System"' %}
 {% set fillingsTypes = [
 {text1: "Принципы приготовления ганаша.",
 text2: "The principle of proportions for ganache."},
-{text1: "Принципы приготовления конфи.",
-text2: "The principle of proportions for confit."},
+{text1: "Приготовление разных вкусов конфи.",
+text2: "Preparation of different flavors of confit."},
 {text1: "Ванильный ганаш на белом шоколаде.",
 text2: "Ganache on white chocolate."},
 {text1: "Классический ганаш на молочном шоколаде.",

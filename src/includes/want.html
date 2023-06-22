@@ -123,9 +123,15 @@
             <button type="button" class="summary__btn summary__btn--yellow summary__btn-5"></button>
             <ul class="popup popup--yellow">
 
+
+
+              {% for item in macrosText.courseSupportRu %}
               <li class="popup__item">
-                <p>{{ macrosText.courseSupportRu | safe }}</p>
+                <p>
+                  {{ item.text1 | safe }}
+                </p>
               </li>
+              {% endfor %}
 
             </ul>
           </li>
