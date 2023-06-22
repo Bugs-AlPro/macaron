@@ -113,3 +113,18 @@ cookieBtnYes.addEventListener('click', () => {
   cookieSection.classList.toggle('consent--close');
   fbq('consent', 'grant');
 })
+
+const summaryBtns = document.querySelectorAll('.summary__btn');
+
+for (let summaryBtn of summaryBtns) {
+  summaryBtn.addEventListener('click', () => {
+    for (let summaryBtn of summaryBtns) {
+      summaryBtn.classList.remove('summary__btn--open');
+      summaryBtn.nextElementSibling.classList.remove('popup--open');
+    }
+    summaryBtn.classList.toggle('summary__btn--open');
+    summaryBtn.nextElementSibling.classList.toggle('popup--open');
+  })
+
+}
+

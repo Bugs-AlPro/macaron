@@ -28,18 +28,85 @@ description2: "For those who want to explore a new area and <b>expand</b> their 
 {% set wantPreviewRu = 'Из чего состоит мой курс' %}
 {% set wantPreviewEn = 'Check out what`s in my course' %}
 
-{% set wantSummary = [
-{title1: "Видео уроки", title2: "Video lessons",
-description1: "12 видео", description2: "12 videos"},
-{title1: "Начинки", title2: "Fillings",
-description1: "Более 15 видов", description2: "More 15 types"},
-{title1: "Тех. карта", title2: "Technical card",
-description1: "40 страниц в формате PDF",
-description2: "40 pages PDF file"},
-{title1: "Доступ", title2: "Access",
-description1: "1 год", description2: "1 year"},
-{title1: "Поддержка", title2: "Support",
-description1: "Онлайн поддержка в чате", description2: "Online Chat support"}
+{% set wantSummaryTitle1Ru = 'Видео уроки' %}
+{% set wantSummaryTitle1En = 'Video lessons' %}
+{% set wantSummarySubTitle1Ru = '12 видео' %}
+{% set wantSummarySubTitle1En = '12 videos' %}
+
+{% set wantSummaryTitle2Ru = 'Начинки' %}
+{% set wantSummaryTitle2En = 'Fillings' %}
+{% set wantSummarySubTitle2Ru = 'Более 15 видов' %}
+{% set wantSummarySubTitle2En = 'More 15 types' %}
+
+{% set wantSummaryTitle3Ru = 'Тех. карта' %}
+{% set wantSummaryTitle3En = 'Technical card' %}
+{% set wantSummarySubTitle3Ru = '40 страниц' %}
+{% set wantSummarySubTitle3En = '40 pages' %}
+
+{% set wantSummaryTitle4Ru = 'Доступ' %}
+{% set wantSummaryTitle4En = 'Access' %}
+{% set wantSummarySubTitle4Ru = '1 год' %}
+{% set wantSummarySubTitle4En = '1 year' %}
+
+{% set wantSummaryTitle5Ru = 'Поддержка' %}
+{% set wantSummaryTitle5En = 'Support' %}
+{% set wantSummarySubTitle5Ru = 'Онлайн чат' %}
+{% set wantSummarySubTitle5En = 'Online Chat' %}
+
+{% set courseInformation= [
+{text1: "<b>Крышечки</b> - в настоящий момент PDF документ о крышечках содерит в себе около 20 страниц текста.
+Там я подробно рассказываю технологию приготовления.",
+text2: "Нужен перевод"},
+
+{text1: "<b>Начинки</b> - в настоящий момент содержат около 40 странц с рецептами для более 30 начинок.",
+text2: "нужен перевод"}
+]%}
+
+{% set courseAccessRu = 'Скажу честно, я <b>не планирую удалять</b> у вас доступ к файлам, через год. Пользуйтесь
+сколько
+хотите. Но также я не могу
+гарантировать, что интернет сервисы будут стабильно работать многие годы.<br>
+Поэтому я добавила информацию про доступ на 1 год.' %}
+{% set courseAccesstEn = 'Нужен перевод' %}
+
+{% set courseSupportRu = 'Такая <b>поддержка</b> в чате <b>не предоставляется</b> всем <b>автоматически</b>. Курс можно
+купить с
+поддержкой или без неё.' %}
+{% set courseSupporttEn = 'Нужен перевод' %}
+
+{% set allVideosForCourse = [
+{text1: "Как приготовить марципан",
+text2: "How to make marzipan"},
+{text1: "Иатльянсая меренга. Ручной миксер.", text2:
+"Italian mirengue. Hand mixer."},
+{text1: "Иатльянская меренга. Планетарный миксер.",
+text2: " Italian mirengue. Stand mixer."},
+{text1: "Как приготовить макронаж",
+text2: "How to cook macronage"},
+{text1: "Выпекание крышечек",
+text2: "Baking shalls"},
+{text1: "Сборка готовых пирожных",
+text2: "Assembling shells"},
+{text1: "Как отсаживать фигурные макарон",
+text2: "How to pipe curly shells"},
+{text1: "Пирожные макарон. Роспись и рисунки",
+text2: "Macarons cakes. Painting and drawings"},
+{text1: "Ошибки в приготовлении меренги",
+text2: "Mistakes of Italian meringue"},
+{text1: "Сухой белок",
+text2: "Egg white powder"},
+{text1: "Как приготовить ганаш на белом шоколаде",
+text2: "How to make ganache on white chocolate "},
+{text1: "Как приготовить ганаш на молочном шоколаде",
+text2: "How to make ganache on milk chocolate"},
+{text1: "Как приготовить Фруктово-Ягодный ганаш",
+text2: "How to make fruit and berry ganache"},
+{text1: "Как приготовить взбитый ганаш Пряничное-латте",
+text2: "How to make whipped ganache Gingerbread latte"},
+{text1: "Взбитый ганаш с ароматизацией",
+text2: "Flavored whipped ganache"},
+{text1: "Как приготовить фруктово-ягодное конфи",
+text2: "How to make fruit and berry confit"}
 ]%}
 
 {% set wantPreviePart1Ru = 'Вы получаете PDF файл, где есть подробное описание всего процесса приготовления.' %}
@@ -207,35 +274,72 @@ Payments System"' %}
 
 
 {% set fillingsTypes = [
+{text1: "Принципы приготовления ганаша.",
+text2: "The principle of proportions for ganache."},
+{text1: "Принципы приготовления конфи.",
+text2: "The principle of proportions for confit."},
 {text1: "Ванильный ганаш на белом шоколаде.",
 text2: "Ganache on white chocolate."},
 {text1: "Классический ганаш на молочном шоколаде.",
 text2: "Milk chocolate ganache."},
 {text1: "Классический ганаш на тёмном шоколаде.",
 text2: "Dark chocolate ganache."},
-{text1: "Фруктово ягодный ганаш: клубника, черника, смородина, манго и др.",
-text2: "Fruit and berry ganache: strawberries, blueberries, currants, mangoes, etc."},
-{text1: 'Взбитый ганаш "Пряничное латте" или "Капучино"',
-text2: 'Whipped ganache "Gingerbread Latte" or "Cappuccino".'},
 {text1: 'Ганаш на молочном шоколаде "Oreo"',
 text2: 'Milk chocolate ganache "Oreo".'},
-{text1: 'Взбитый ганаш "Двойной кокос" или "Баунти".',
-text2: 'Whipped ganache "Double coconut" or "Bounty".'},
 {text1: 'Аппельсиновый ганаш',
 text2: 'Ganache on orange chocolate.'},
-{text1: 'Ганаш "Фисташка-малина" на белом шоколаде.',
+{text1: '"Фисташка-малина" на белом шоколаде.',
 text2: '"Pistachio-raspberry" on white chocolate.'},
-{text1: 'Начинака "Вишня в шоколаде".',
-text2: 'Filling "Cherry in chocolate".'},
-{text1: 'Начинка "Пряное яблоко".',
-text2: 'Filling "Spicy apple".'},
+{text1: 'Фундук-амаретто.',
+text2: 'Hazelnut amaretto.'},
+{text1: 'Капучино-бейлиз.',
+text2: 'Cappuccino Baileys.'},
+{text1: 'Маковый чизкейк с лимоном.',
+text2: 'Poppy seed cheesecake with lemon.'},
+{text1: "Фруктово ягодный ганаш: клубника, черника, смородина, манго и др.",
+text2: "Fruit and berry ganache: strawberries, blueberries, currants, mangoes, etc."},
+{text1: "Тыквенное латте",
+text2: "Pumpkin latte"},
+{text1: "Взбитый сливочный ганаш",
+text2: "Whipped cream ganache"},
+{text1: "Взбитый молочный ганаш «Киндер»",
+text2: "Whipped milk ganache “Kinder”"},
+{text1: "Арахисово-молочный шоколад с баноффи.",
+text2: "Peanut milk chocolate with banoffee."},
+{text1: 'Взбитый ганаш "Пряничное латте" или "Капучино"',
+text2: 'Whipped ganache "Gingerbread Latte" or "Cappuccino".'},
+{text1: 'Карамельный ганаш',
+text2: 'Caramel ganache.'},
+{text1: 'Взбитый ганаш "Двойной кокос" или "Баунти".',
+text2: 'Whipped ganache "Double coconut" or "Bounty".'},
 {text1: 'Начинка "Сникерс c солёной карамелью".',
 text2: 'Filling "Snickers with salted caramel".'},
-{text1: 'Начинка "Бри-Груша".',
+{text1: 'Ганаш "Бри-Груша".',
 text2: 'Brie Pear Ganache.'},
 {text1: 'Варианты ароматизации: мятой, лавандой, лимоном, ванилью.',
 text2: 'Flavor options: mint, lavender, lemon, vanilla.'}
 ]%}
 
+{text1: 'Как приготовить цитрусовое конфи.',
+text2: 'How to make lemon confit.'},
+{text1: 'Как приготовить малиновое конфи.',
+text2: 'How to make raspberry confit.'},
+{text1: 'Как приготовить пряное-яблочное конфи.',
+text2: 'How to make Spicy Apple Confit.'},
+{text1: 'Как приготовить грушевое конфи.',
+text2: 'How to make pear confit.'},
+{text1: 'Как приготовить конфи «Пряная вишня».',
+text2: 'How to make Spicy Cherry Confit'},
+{text1: 'Как приготовить солёную-карамель.',
+text2: 'How to make salted caramel.'},
+{text1: 'Кокосовое конфи.',
+text2: 'How to make coconut confit.'},
+{text1: 'Как приготовить Банановое конфи.',
+text2: 'How to make Banana confit.'},
+
+{text1: 'Начинака "Вишня в шоколаде".',
+text2: 'Filling "Cherry in chocolate".'},
+{text1: 'Начинка "Пряное яблоко".',
+text2: 'Filling "Spicy apple".'},
 
 {% set years = "2021-2023" %}
