@@ -48,26 +48,19 @@
           <li class="summary__item summary__item--img">
             {{ imageSvgColor('cook', 'svgcolor summary__img', '70', '100', 'Girl confectioner.') }}
           </li>
-          <!-- <li class="summary__item summary__item--popup">
-            <div class="popup">
-              <button type="button" class="popup__btn"></button>
-              <ul class="popup__list">
-
-                {% for item in macrosText.fillingsTypes %}
-                <li class="popup__item">{{ item.text2 }}</li>
-                {% endfor %}
-
-              </ul>
-            </div>
-
-          </li> -->
-
 
           <li class="summary__item">
 
             <div class="summary__title">{{ macrosText.wantSummaryTitle1En }}</div>
             <div class="summary__description">{{ macrosText.wantSummarySubTitle1En }}</div>
-            <button type="button" class="summary__btn"></button>
+            <button type="button" class="summary__btn summary__btn--green summary__btn-1"></button>
+            <ul class="popup popup--green">
+
+              {% for item in macrosText.allVideosForCourse %}
+              <li class="popup__item">{{ item.text2 }}</li>
+              {% endfor %}
+
+            </ul>
 
           </li>
 
@@ -75,7 +68,14 @@
 
             <div class="summary__title">{{ macrosText.wantSummaryTitle2En }}</div>
             <div class="summary__description">{{ macrosText.wantSummarySubTitle2En }}</div>
-            <button type="button" class="summary__btn"></button>
+            <button type="button" class="summary__btn summary__btn--blue summary__btn--open summary__btn-2"></button>
+            <ul class="popup popup--blue popup--open">
+
+              {% for item in macrosText.fillingsTypes %}
+              <li class="popup__item">{{ item.text2 }}</li>
+              {% endfor %}
+
+            </ul>
 
           </li>
 
@@ -83,7 +83,19 @@
 
             <div class="summary__title">{{ macrosText.wantSummaryTitle3En }}</div>
             <div class="summary__description">{{ macrosText.wantSummarySubTitle3En }}</div>
-            <button type="button" class="summary__btn"></button>
+            <button type="button" class="summary__btn summary__btn--red summary__btn-3"></button>
+            <ul class="popup popup--red">
+
+
+              {% for item in macrosText.courseInformation %}
+              <li class="popup__item">
+                <p>
+                  {{ item.text2 | safe }}
+                </p>
+              </li>
+              {% endfor %}
+
+            </ul>
 
           </li>
 
@@ -91,16 +103,28 @@
 
             <div class="summary__title">{{ macrosText.wantSummaryTitle4En }}</div>
             <div class="summary__description">{{ macrosText.wantSummarySubTitle4En }}</div>
-            <button type="button" class="summary__btn"></button>
+            <button type="button" class="summary__btn summary__btn--purple summary__btn-4"></button>
+            <ul class="popup popup--purple">
 
+              <li class="popup__item">
+                <p>{{ macrosText.courseAccessEn | safe }}</p>
+              </li>
+
+            </ul>
           </li>
 
           <li class="summary__item">
 
             <div class="summary__title">{{ macrosText.wantSummaryTitle5En }}</div>
             <div class="summary__description">{{ macrosText.wantSummarySubTitle5En }}</div>
-            <button type="button" class="summary__btn"></button>
+            <button type="button" class="summary__btn summary__btn--yellow summary__btn-5"></button>
+            <ul class="popup popup--yellow">
 
+              <li class="popup__item">
+                <p>{{ macrosText.courseSupportEn | safe }}</p>
+              </li>
+
+            </ul>
           </li>
 
         </ul>
