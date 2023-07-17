@@ -4,12 +4,12 @@
 
     <div class="want">
       <div class="want__title title-section">
-        <h2 class="title-section__head title-section__head--red">{{
-          macrosText.wantTitleRu
-          }}</h2>
-        <p class="title-section__text title-section__text--want">{{
-          macrosText.wantSubTitleRu
-          }}</p>
+        <h2 class="title-section__head title-section__head--red">
+          {{ macrosText.wantTitleRu }}
+        </h2>
+        <p class="title-section__text title-section__text--want">
+          {{ macrosText.wantSubTitleRu }}
+        </p>
       </div>
 
       <div class="want__video youtube">
@@ -48,7 +48,6 @@
 
           <li class="summary__item summary__item--img">
             {{ imageSvgColor('cook', 'svgcolor summary__img', '70', '100', 'Девушка кондитер.') }}
-
           </li>
 
           <li class="summary__item">
@@ -57,7 +56,6 @@
             <div class="summary__description">{{ macrosText.wantSummarySubTitle1Ru }}</div>
             <button type="button" class="summary__btn summary__btn--green summary__btn-1"></button>
             <ul class="popup popup--green">
-
 
               {% for item in macrosText.allVideosForCourse %}
               <li class="popup__item">{{ item.text1 }}</li>
@@ -123,8 +121,6 @@
             <button type="button" class="summary__btn summary__btn--yellow summary__btn-5"></button>
             <ul class="popup popup--yellow">
 
-
-
               {% for item in macrosText.courseSupportRu %}
               <li class="popup__item">
                 <p>
@@ -140,7 +136,9 @@
 
         <div class="preview__body preview-body">
           <div class="preview-body__item">
-            <p class="preview-body__text">{{ macrosText.wantPreviePart1Ru }}</p>
+            <p class="preview-body__text">
+              {{ macrosText.wantPreviePart1Ru }}
+            </p>
             <picture class="preview-body__picture">
               <source srcset="img/pdf.webp" type="image/webp">
               <img src="img/pdf.png" alt="Скриншот одной страницы документа PDF" class="preview-body__img" width="100"
@@ -148,7 +146,9 @@
             </picture>
           </div>
           <div class="preview-body__item">
-            <p class="preview-body__text">{{ macrosText.wantPreviePart2Ru }}</p>
+            <p class="preview-body__text">
+              {{ macrosText.wantPreviePart2Ru }}
+            </p>
             <div class="youtube">
               <a href="https://youtu.be/vw4x4sR3228" class="youtube__link youtube__link--preview">
                 <picture class="youtube__picture">
@@ -157,8 +157,24 @@
                 </picture>
               </a>
             </div>
+
+          </div>
+          <div class="preview-body__item preview-body__item--link">
+            <p class="preview-body__text">В данный момент мой курс распололжен на закрытом канале Телеграмм. После
+              покупки, вы
+              становитесь участником этого канала. Я регулярно обновляю и улучшаю курс, в том числе добавляю новый вкусы
+              начинок.
+              В этом канале вам будут доступны все последующие обновления.</p>
+            <div class="payment-button">
+              <button type="button" class="payment-button__btn payment-button__btn1">
+                {{ macrosText.paymentBtnRu }}
+              </button>
+            </div>
+
+
           </div>
         </div>
+
       </div>
     </div>
   </div>

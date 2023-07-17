@@ -4,13 +4,14 @@
 
     <div class="want">
       <div class="want__title title-section">
-        <h2 class="title-section__head title-section__head--red">{{
-          macrosText.wantTitleEn
-          }}</h2>
-        <p class="title-section__text title-section__text--want">{{
-          macrosText.wantSubTitleEn
-          }}</p>
+        <h2 class="title-section__head title-section__head--red">
+          {{ macrosText.wantTitleEn }}
+        </h2>
+        <p class="title-section__text title-section__text--want">
+          {{ macrosText.wantSubTitleEn }}
+        </p>
       </div>
+
       <div class="want__video youtube">
         {% for item in macrosData.youtubePreview %}
         <a href="{{ item.linkEn }}" class="youtube__link">
@@ -131,7 +132,9 @@
 
         <div class="preview__body preview-body">
           <div class="preview-body__item preview-body__item--pdf">
-            <p class="preview-body__text">{{ macrosText.wantPreviePart1En }}</p>
+            <p class="preview-body__text">
+              {{ macrosText.wantPreviePart1En }}
+            </p>
             <picture class="preview-body__picture">
               <source srcset="img/pdf-eng.webp" type="image/webp">
               <img src="img/pdf-eng.png" alt="Screenshot of one page from PDF." class="preview-body__img" width="100"
@@ -139,7 +142,9 @@
             </picture>
           </div>
           <div class="preview-body__item">
-            <p class="preview-body__text">{{ macrosText.wantPreviePart2En }}</p>
+            <p class="preview-body__text">
+              {{ macrosText.wantPreviePart2En }}
+            </p>
             <div class="youtube">
               <a href="https://youtu.be/vw4x4sR3228" class="youtube__link youtube__link--preview">
                 <picture class="youtube__picture">
@@ -148,6 +153,19 @@
                 </picture>
               </a>
             </div>
+          </div>
+
+          <div class="preview-body__item preview-body__item--link">
+            <p class="preview-body__text">Now my course is located on my private Telegram channel. After the purchase,
+              you become a member of this channel. I regularly update and improve the course, including adding new
+              flavors of fillings. All subsequent updates will be available to you in this channel.</p>
+            <div class="payment-button">
+              <button type="button" class="payment-button__btn payment-button__btn1">
+                {{ macrosText.paymentBtnEn }}
+              </button>
+            </div>
+
+
           </div>
         </div>
       </div>

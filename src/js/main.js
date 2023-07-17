@@ -127,4 +127,3 @@ for (let summaryBtn of summaryBtns) {
   })
 
 }
-

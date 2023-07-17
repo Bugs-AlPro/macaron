@@ -94,7 +94,7 @@ Thats why I added information about access for 1 year.' %}
 поддержкой или без неё.<br> Чат лично со мной.<br> Отправляете мне видео на проверку.<br> Разбираем вместе ошибки.<br>
 Отвечаю на
 ваши вопросы.<br> Помогаю поднять качество до уровня продаж.' %}
-{% set courseSupportEn = 'If you are buying an English course, I will personally answer your questions and advise.' %}
+{% set courseSupportEn = 'If you are buying my English course, I will personally answer your questions and advise.' %}
 
 {% set allVideosForCourse = [
 {text1: "Как приготовить марципан",
@@ -131,12 +131,11 @@ text2: "Flavored whipped ganache"},
 text2: "How to make fruit and berry confit"}
 ]%}
 
-{% set wantPreviePart1Ru = 'Вы получаете PDF файл, где есть подробное описание всего процесса приготовления.' %}
+{% set wantPreviePart1Ru = 'Вы получаете PDF файл или тех карту с подробной инструкцией, где описан весь процесс
+приготовления.' %}
 {% set wantPreviePart1En = 'You will receive a PDF file with a detailed description of the entire cooking process.' %}
 
-{% set wantPreviePart2Ru = 'Доступ на мой закрытый YouTube канал, где я записала на видео весь
-процесс
-приготовления.' %}
+{% set wantPreviePart2Ru = 'Вы получаете видео всего процесса приготовления крышечек и основных вкусов начинок.' %}
 {% set wantPreviePart2En = 'You get access to my private YouTube channel, where I recorded the
 entire cooking process.
 At the moment, my videos are voiced in Russian, but all videos have English subtitles.' %}
@@ -233,16 +232,58 @@ just starting this way!"}
 {% set paymentTitleRu = "2. Оплатите курс" %}
 {% set paymentTitleEn = "2. Pay for the course" %}
 
-{% set paymentListTitleRu = "Выберите удобный для вас способ оплаты" %}
-{% set paymentListTitleEn = "Choose a convenient payment method" %}
+
+{% set paymentBtnRu = "Купить курс" %}
+{% set paymentBtnEn = "Buy" %}
+
+{% set paymentWindowTitleRu = "Оплата курсов происходит на сайте " %}
+{% set paymentWindowTitleEn = "Payment for the courses will be on the " %}
+
+{% set paymentWindowSubtitleRu = "Выберите курс" %}
+{% set paymentWindowSubtitleEn = "Choose a course" %}
+
+{% set paymentWindowBtnsRu = [
+{text1: "Макарон с поддержкой",
+class: "payment-window__btn1 payment-window__btn--active"},
+{text1: "Макарон без поддержки",
+class: "payment-window__btn2"},
+{text1: "Только крышечки",
+class: "payment-window__btn3"},
+{text1: "Только начинки",
+class: "payment-window__btn4"},
+{text1: "Макарон и чизкейк",
+class: "payment-window__btn5"},
+{text1: "Только чизкейки",
+class: "payment-window__btn6"}
+]%}
+{% set paymentWindowBtnsEn = [
+{text1: "Macarons course",
+class: "payment-window__btn1 payment-window__btn--long payment-window__btn--active"},
+{text1: "Only Shells",
+class: "payment-window__btn2"},
+{text1: "Only Fillings",
+class: "payment-window__btn3"}
+]%}
+
+{% set paymentWindowLinkRu = "Перейти на сайт" %}
+{% set paymentWindowLinkEn = "Go to the link" %}
+
+
+{% set paymentListTitleRu = "Другие способы оплаты" %}
+{% set paymentListTitleEn = "Other payment methods" %}
+
+
+{% set paymentTypeTitleRu = "После оплаты любым из этих способов вам нужно <b>прислать</b> мне
+скриншот об оплате, и я предоставлю вам доступ." %}
+{% set paymentTypeTitleEn = "After paying by any of these methods, you need <b>to send me</b> a screenshot of the
+payment, and I will grant you access." %}
 
 {% set paymentLogoIban = "USA, Europe" %}
 {% set paymentLogoMoney = "Money transfer" %}
 {% set paymentLogoPaypal = "PayPal" %}
 {% set paymentLogoRf = "Russia Federation" %}
 
-{% set paymentLabelIbanRu = "Банковский перевод по номеру IBAN." %}
-{% set paymentLabelIbanEn = "Bank transfer by IBAN number." %}
+
 {% set paymentLabelMoneyRu = "Перевод с помощью системы денежных переводов" %}
 {% set paymentLabelMoneyEn = "Transfer using a money transfer system" %}
 {% set paymentLabelPaypalRu = "Перевод с помощью PayPal" %}
@@ -252,46 +293,31 @@ just starting this way!"}
 {% set paymentLabelRfEn = 'Transfer to Tinkoff Bank from a card or via "Faster
 Payments System"' %}
 
-{% set paymentDescripIbanRu = "Выберите урок и переведете соответствующую сумму любым из предложенных
-вариатов. Если вы не знаете какой тип перевода выбрать, напишите мне и я вам
-подскажу." %}
-{% set paymentDescripIbanEn = "Select a lesson and transfer the relevant amount using any of the
-suggested options. If you do not know what type of translation to choose, write to me and I will tell you." %}
 
 {% set paymentDescripMoneyRu = "Перевод с помощью системы денежных переводов" %}
 {% set paymentDescripMoneyEn = "Transfer using a money transfer system" %}
 
-{% set paymentDescripPaypalRu = "Контакт для перевода через Paypal" %}
-{% set paymentDescripPaypalEn = "Information for money transfer: Paypal" %}
+{% set paymentDescripPaypalRu = "У меня есть возможность принимать оплату, через Paypal. Если вы не можете
+оплатить другим способом, напишите мне о своём желании и я сообщу вам подробности для перевода через
+Paypal." %}
+{% set paymentDescripPaypalEn = "I have the option to accept payment via Paypal. If you can't pay by another method,
+write to me about your desire and I will tell you the details for the transfer via Paypal." %}
 
 {% set paymentDescripRfRu = 'Перевод в Тиньков банк с карты или через
 "Систему БыстрDescripатежей"' %}
 {% set paymentDescripRfEn = 'Transfer to Tinkoff Bank from a card or via "Faster
 Payments System"' %}
 
-{% set paymentBtnUSRu = "Посмотреть реквизиты для оплаты в USD" %}
-{% set paymentBtnUSEn = "Go to the payment page in USD" %}
-{% set paymentBtnEurRu = "Посмотреть реквизиты для оплаты в EUR" %}
-{% set paymentBtnEurEn = "Go to the payment page in EUR" %}
-
-{% set paymentLinkIbanUS = "https://wise.com/pay/r/xxWkcufTR5SoUrhQKqD_d47GVV4" %}
-{% set paymentLinkIbanEUR = "https://wise.com/pay/r/wAbAD1A64RvWuOINf-sHMc8R670" %}
 {% set paymentLinkWise = "https://wise.com/invite/u/elenap2073" %}
 {% set paymentLinkPaypal = "d.panchenko1974@gmail.com" %}
 {% set paymentLinkRf = "https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" %}
 
 
-
 {% set reciveTitleRu = "3. Получите курс" %}
 {% set reciveTitleEn = "3. Recive the course" %}
 
-{% set reciveTextRu = "Отправьте мне: <br><b> - скриншот об оплате,</b><br>
-<b>- название курса,</b><br><b>- ваш электронный адрес для YouTube.</b>" %}
-{% set reciveTextEn = "Send me: <br><b> - a screenshot of the payment,</b><br>
-<b>- the name of the course,</b><br><b>- your email address for YouTube.</b>" %}
-
-{% set reciveEndRu = "В течении 24 часов вам будет предоставлен доступ к урокам." %}
-{% set reciveEndEn = "You will be given access to the lessons within 24 hours." %}
+{% set reciveEndRu = "Напишите мне если у вас остались вопросы." %}
+{% set reciveEndEn = "Write to me if you have any more questions." %}
 
 
 

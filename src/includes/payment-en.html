@@ -2,45 +2,91 @@
   <div class="container">
     <div class="payment">
       <div class="payment__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">{{
-          macrosText.paymentTitleEn
-          }}</h2>
-        <!-- <p class="title-section__text">more precisely, there are several of them</p> -->
+        <h2 class="title-section__head title-section__head--blue title-section__head--left">
+          {{ macrosText.paymentTitleEn }}
+        </h2>
       </div>
+
+      <div class="payment__button payment-button">
+        <button type="button" class="payment-button__btn payment-button__btn2 pixel-btn">
+          {{ macrosText.paymentBtnEn }}
+        </button>
+      </div>
+
+      <div class="payment__window">
+        <div class="payment-window-cover"></div>
+        <div class="payment-window">
+          <button type="button" class="payment-window__close"></button>
+          <p class="payment-window__title">
+            {{ macrosText.paymentWindowTitleEn }}
+            <a class="payment-window__title-link" href="https://app.lava.top/talent/macaron_by_elena/">Lava.top</a>
+          </p>
+
+          <div class="payment-window__web">
+            {{ imageJpg('payment-window__picture', 'logo5', 'payment-window__img',
+            'logo macaron_by_elena', '150', '150') }}
+
+            {{ imageSvgColor('transfer', 'payment-window__svg svgcolor', '150', '150', 'logo transfer') }}
+
+            {{ imagePng('payment-window__picture', 'lava', 'payment-window__img', 'logo Lava.top',
+            '150', '150') }}
+          </div>
+
+          <p class="payment-window__subtitle">
+            {{ macrosText.paymentWindowSubtitleEn }}
+          </p>
+
+          <div class="payment-window__types">
+
+            {% for item in macrosText.paymentWindowBtnsEn %}
+            <button type="button" class="payment-window__btn {{ item.class }}">
+              {{ item.text1 }}
+            </button>
+            {% endfor %}
+
+          </div>
+          <div class="payment-window__box">
+            <div class="payment-window__links payment-window__links-1">
+
+              <a href="#1" class="payment-window__link">
+                {{ macrosText.paymentWindowLinkEn }}
+              </a>
+              <a href="#2" class="payment-window__link">
+                {{ macrosText.paymentWindowLinkEn }}
+              </a>
+              <a href="#3" class="payment-window__link">
+                {{ macrosText.paymentWindowLinkEn }}
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <div class="payment__list payment-list">
 
         <div class="payment-list__item payment-list__item--btn">
-          <button class="payment-list__btn pixel-btn">{{
-            macrosText.paymentListTitleEn
-            }}</button>
-          <ul class="payment-list__payment payment-type">
 
+          <button class="payment-list__btn ">
+            {{ macrosText.paymentListTitleEn }}
+          </button>
+
+          <ul class="payment-list__payment payment-type">
             <li class="payment-type__item">
-              <div class="payment-type__title">
-                <div class="payment-type__logo">{{ macrosText.paymentLogoIban }}</div>
-                <div class="payment-type__head">{{ macrosText.paymentLabelIbanEn }}</div>
-              </div>
-              <button type="button" class="payment-type__btn"
-                aria-label="Show (hide) a list of what it includes"></button>
-              <div class="payment-type__description">
-                <p class="payment-type__text">{{ macrosText.paymentDescripIbanEn }}</p>
-                <div class="buy">
-                  <a href="{{ macrosText.paymentLinkIbanUS }}" class="buy__link"
-                    aria-label="Link to payment via WISE in USD.">{{ macrosText.paymentBtnUSEn }}
-                  </a>
-                </div>
-                <div class="buy">
-                  <a href="{{ macrosText.paymentLinkIbanEUR }}" class="buy__link"
-                    aria-label="Link to payment via WISE in EUR.">{{ macrosText.paymentBtnEurEn }}
-                  </a>
-                </div>
-              </div>
+              <p class="payment-type__text">
+                {{ macrosText.paymentTypeTitleEn | safe }}
+              </p>
             </li>
             <li class="payment-type__item">
               <div class="payment-type__title">
-                <div class="payment-type__logo">{{ macrosText.paymentLogoMoney }}</div>
-                <div class="payment-type__head">{{ macrosText.paymentLabelMoneyEn }}</div>
+                <div class="payment-type__logo">
+                  {{ macrosText.paymentLogoMoney }}
+                </div>
+                <div class="payment-type__head">
+                  {{ macrosText.paymentLabelMoneyEn }}
+                </div>
               </div>
               <button type="button" class="payment-type__btn"
                 aria-label="Show (hide) a list of what it includes"></button>
@@ -66,43 +112,31 @@
                       {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'KoronaPay
                       logo') }}
                     </a>
-                  </div>
-                  <p class="p-description__text">Information for money transfer: Wise, Paysend<br>
-                    <span class="p-description__copy">+90 (551) 841-32-23</span>
-                    <span class="p-description__copy">5276 8201 7810 5505</span>
-                  </p>
-                  <div class="p-description__logo">
                     <a href="{{ macrosText.paymentLinkWise }}" class="p-description__logo-link">
                       {{ imagePng('p-description__picture', 'wise', 'p-description__image', 'Wise logo',
                       '600', '146') }}
                     </a>
-                    <a href="https://paysend.com/" class="p-description__logo-link">
-                      {{ imagePng('p-description__picture', 'paysend', 'p-description__image', 'paysend logo',
-                      '600', '146') }}
-                    </a>
                   </div>
-                  <!-- <p class="p-description__text">Information for money transfer: Paypal<br>
-                    <span class="p-description__copy">d.panchenko1974@gmail.com</span>
-                  </p>
-                  <div class="p-description__logo">
-                    <a class="p-description__logo-link" href="https://www.paypal.com/webapps/mpp/paypal-popup">
-                      <img src="img/PayPal.svg" alt="Paypal logo" class="p-description__image">
-                    </a>
-                    </a>
-                  </div> -->
+
                 </div>
               </div>
             </li>
             <li class="payment-type__item">
               <div class="payment-type__title">
-                <div class="payment-type__logo">{{ macrosText.paymentLogoPaypal }}</div>
-                <div class="payment-type__head">{{ macrosText.paymentLabelPaypalEn }}</div>
+                <div class="payment-type__logo">
+                  {{ macrosText.paymentLogoPaypal }}
+                </div>
+                <div class="payment-type__head">
+                  {{ macrosText.paymentLabelPaypalEn }}
+                </div>
               </div>
               <button type="button" class="payment-type__btn"
                 aria-label="Show (hide) a list of what it includes"></button>
               <div class="payment-type__description p-description">
-                <p class="p-description__text">{{ macrosText.paymentDescripPaypalEn }}<br>
-                  <span class="p-description__copy">{{ macrosText.paymentLinkPaypal }}</span>
+                <p class="p-description__text">
+                  {{ macrosText.paymentDescripPaypalEn }}
+                  <br>
+                  <!-- <span class="p-description__copy">{{ macrosText.paymentLinkPaypal }}</span> -->
                 </p>
                 <div class="p-description__logo">
                   <a class="p-description__logo-link" href="https://www.paypal.com/webapps/mpp/paypal-popup">
@@ -114,8 +148,12 @@
             </li>
             <li class="payment-type__item">
               <div class="payment-type__title">
-                <div class="payment-type__logo">{{ macrosText.paymentLogoRf }}</div>
-                <div class="payment-type__head">{{ macrosText.paymentLabelRfEn }}</div>
+                <div class="payment-type__logo">
+                  {{ macrosText.paymentLogoRf }}
+                </div>
+                <div class="payment-type__head">
+                  {{ macrosText.paymentLabelRfEn }}
+                </div>
               </div>
               <button type="button" class="payment-type__btn"
                 aria-label="Show (hide) a list of what it includes"></button>
@@ -135,17 +173,52 @@
       </div>
 
       <div class="payment__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">{{
-          macrosText.reciveTitleEn
-          }}</h2>
+        <h2 class="title-section__head title-section__head--blue title-section__head--left">
+          {{ macrosText.reciveTitleEn }}
+        </h2>
       </div>
 
       <ul class="recive">
-        <li class="recive__item recive__item--bold">
-          <p class="recive__text">{{ macrosText.reciveTextEn | safe }}
-          </p>
+
+        <li class="recive__item recive__item--text">
+
+          <div class="recive-list">
+
+            <div class="recive-list__item">
+              {{ imagePng('recive-list__picture', 'lava', 'recive-list__img', 'logo Lava.top',
+              '65', '65') }}
+              <p class="recive-list__text"> On the website <b>Lava.top</b> - after payment, you will receive an
+                invitation link to private Telegram channel.</p>
+            </div>
+
+            <div class="recive-list__item">
+              {{ imageSvgColor('transfer', 'recive-list__svg svgcolor', '50', '50', 'logo transfer') }}
+            </div>
+
+            <div class="recive-list__item">
+              {{ imagePng('recive-list__picture', 'telegramm', 'recive-list__img', 'logo telegramm', '65', '65') }}
+              <p class="recive-list__text">I <b>approve</b> your access to the channel.</p>
+
+            </div>
+            <div class="recive-list__item">
+              {{ imageSvgColor('transfer', 'recive-list__svg svgcolor', '50', '50', 'logo transfer') }}
+            </div>
+            <div class="recive-list__item">
+              <img src="img/youtube.svg" alt="Logo youtube" class="recive-list__img">
+              <p class="recive-list__item"> If it is inconvenient for you to use the Telegram channel, I can grant you
+                access to my private YouTube channel.</p>
+            </div>
+
+          </div>
 
         </li>
+
+        <li class="recive__item recive__item--end">
+          <p class="recive__text">
+            {{ macrosText.reciveEndEn }}
+          </p>
+        </li>
+
         <li class="recive__item">
           <ul class="recive__social social">
             <li class="social__item">
@@ -166,10 +239,6 @@
           </ul>
         </li>
 
-        <li class="recive__item recive__item--end">
-          <p class="recive__text">{{ macrosText.reciveEndEn }}
-          </p>
-        </li>
       </ul>
 
     </div>

@@ -8,15 +8,6 @@ var sliderOfferBase = tns({
   controls: false,
   nav: false,
   fixedWidth: 270,
-  autoplay: true,
-  navAsThumbnails: true,
-  autoplayTimeout: 5000,
-  speed: 3000,
-  autoplayButton: '#btn-offer-base',
-  autoplayText: [
-    "▶",
-    "❚❚"
-  ],
 });
 
 var sliderAllRu = tns({
@@ -30,6 +21,7 @@ var sliderAllRu = tns({
   nav: false,
   fixedWidth: 200,
 });
+
 var sliderShellsRu = tns({
   container: '.sliderOfferShellsRu',
   mode: 'carousel',
