@@ -1606,8 +1606,8 @@
         0.2px 0.3px 0.4px hsl(var(--shadow-color) / 0.56),
         1px 2px 2.5px -1.2px hsl(var(--shadow-color) / 0.57),
         4px 7.6px 9.7px -2.4px hsl(var(--shadow-color) / 0.58);
-      border: 1px solid hsl(0, 56%, 64%);
-      background-color: hsl(0, 100%, 75%);
+      border: none;
+      background-color: hsl(355, 25%, 50%);
       color: #fff;
       border-radius: 10px;
       text-transform: uppercase;
@@ -1619,7 +1619,7 @@
     }
 
     &__btn:hover {
-      background-color: hsl(0, 100%, 75%);
+      background-color: hsl(355, 35%, 46%);
       --shadow-color: 332deg 57% 72%;
       box-shadow:
         0.2px 0.5px 0.6px hsl(var(--shadow-color) / 0.71),

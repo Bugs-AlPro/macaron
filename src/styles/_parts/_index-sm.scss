@@ -660,6 +660,7 @@
 
   .popup {
     display: none;
+
     position: absolute;
     // background-color: rgb(255, 255, 255);
     z-index: 1;
@@ -671,7 +672,7 @@
     z-index: 1;
     // justify-items: start;
     align-items: start;
-    justify-content: start;
+    // justify-content: start;
     align-content: start;
     overflow: scroll;
     border-top-left-radius: 10px;
@@ -689,14 +690,17 @@
     }
 
     &--blue {
+
       background-color: hsla(231, 58%, 50%, 0.2);
     }
 
     &--red {
+
       background-color: hsla(0, 54%, 50%, 0.2);
     }
 
     &--purple {
+
       background-color: hsla(283, 56%, 50%, 0.2);
     }
 
@@ -708,7 +712,6 @@
       font-size: 1em;
       margin-bottom: 5px;
       position: relative;
-
     }
 
     &__item::after {
@@ -1679,8 +1682,8 @@
         0.2px 0.3px 0.4px hsl(var(--shadow-color) / 0.56),
         1px 2px 2.5px -1.2px hsl(var(--shadow-color) / 0.57),
         4px 7.6px 9.7px -2.4px hsl(var(--shadow-color) / 0.58);
-      border: 1px solid hsl(0, 56%, 64%);
-      background-color: hsl(0, 100%, 75%);
+      border: none;
+      background-color: hsl(355, 25%, 50%);
       color: #fff;
       border-radius: 10px;
       text-transform: uppercase;
@@ -1692,7 +1695,7 @@
     }
 
     &__btn:hover {
-      background-color: hsl(0, 58%, 65%);
+      background-color: hsl(355, 35%, 46%);
       --shadow-color: 332deg 57% 72%;
       box-shadow:
         0.2px 0.5px 0.6px hsl(var(--shadow-color) / 0.71),
@@ -1719,7 +1722,6 @@
     // border-radius: 20px;
     // display: grid;
     transition: 2s;
-    padding-bottom: 20px;
     --shadow-color: 0deg 0% 41%;
     box-shadow: 0px 0.4px 0.4px hsl(var(--shadow-color) / 0.74),
       0.1px 2.4px 2.5px -1.5px hsl(var(--shadow-color) / 0.66),
@@ -1779,6 +1781,7 @@
     &__types {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 10px;
       // margin-bottom: 20px;
       // width: 100%;
@@ -1787,10 +1790,10 @@
 
     &__btn {
       font-size: 1em;
-
+      min-width: 202px;
       padding: 8px 10px;
       border: none;
-      border: 1px solid rgba(57, 55, 156, 0.37);
+      border: 1px solid rgb(133, 132, 192);
       border-radius: 5px;
       background-color: hsla(0, 61%, 90%, 0.644);
       cursor: pointer;
@@ -1805,7 +1808,7 @@
         1px 2px 2.5px -1.2px hsl(var(--shadow-color) / 0.57),
         4px 7.6px 9.7px -2.4px hsl(var(--shadow-color) / 0.58);
       border: 1px solid hsl(234deg 25% 52%);
-      background-color: hsl(256, 100%, 63%);
+      background-color: hsl(255, 32%, 52%);
       // position: absolute;
       overflow: hidden;
       border-radius: 10px;
@@ -1813,7 +1816,8 @@
       // left: calc(50% - 130px);
       width: 260px;
       height: 50px;
-      margin-top: 10px;
+      margin-top: 20px;
+      transition: 0.2s;
     }
 
     &__box:hover {
@@ -1826,7 +1830,7 @@
     }
 
     &__btn--active {
-
+      transform: scale(1.05);
       --shadow-color: 233deg 25% 51%;
       box-shadow:
         0.2px 0.3px 0.4px hsl(var(--shadow-color) / 0.74),
@@ -1834,6 +1838,7 @@
         3.9px 7.3px 8.7px -3px hsl(var(--shadow-color) / 0.57);
       border: 1px solid hsl(256, 100%, 63%);
       background-color: rgba(38, 35, 241, 0.185);
+      transition: 0.2s;
     }
 
     &__links {
@@ -1897,8 +1902,8 @@
       width: 40px;
       height: 40px;
       border-radius: 30%;
-      background-color: hsla(240, 16%, 46%, 0.308);
-      box-shadow: 0 0 1px 1px gray;
+      background-color: hsl(0, 0%, 94%);
+      box-shadow: 0 0 2px 1px gray;
       border: none;
       // transition: 2s;
       // transition-delay: 2s;
