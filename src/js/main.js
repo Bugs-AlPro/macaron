@@ -108,10 +108,12 @@ const cookieSection = document.querySelector('.consent');
 
 cookieBtnNo.addEventListener('click', () => {
   cookieSection.classList.toggle('consent--close');
+  window['ga-disable-G-GH6SCG1VL8'] = true;
 })
 cookieBtnYes.addEventListener('click', () => {
   cookieSection.classList.toggle('consent--close');
   fbq('consent', 'grant');
+
 })
 
 const summaryBtns = document.querySelectorAll('.summary__btn');

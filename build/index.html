@@ -13,11 +13,14 @@ macaron_by_elena">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6SCG1VL8"></script>
   <script>
+
+    window['ga-disable-G-GH6SCG1VL8'] = false;
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-GH6SCG1VL8');
+    gtag('set', 'allow_google_signals', false);
   </script>
   <!-- Meta Pixel Code -->
   <script>
@@ -1805,11 +1808,9 @@ macaron_by_elena">
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="payment-type__description p-description">
                 <p class="p-description__text">
-                  У меня есть возможность принимать оплату, через Paypal. Если вы не можете
-оплатить другим способом, напишите мне о своём желании и я сообщу вам подробности для перевода через
-Paypal.
+                  Для оплаты через Paypal используйте электронный адрес указаный ниже.
                   <br>
-                  <!-- <span class="p-description__copy">d.panchenko1974@gmail.com</span> -->
+                  <span class="p-description__copy">d.panchenko1974@gmail.com</span>
                 </p>
                 <div class="p-description__logo">
                   <a class="p-description__logo-link" href="https://www.paypal.com/webapps/mpp/paypal-popup">
@@ -1970,8 +1971,8 @@ Paypal.
         <p class="consent__text">На этом сайте используются файлы <b>cookie</b>, которые помогают анализировать
             статистические
             данные о сайте.</p>
-        <button type="button" class="consent__btn consent__btn--yes">Да, я разрешаю.</button>
-        <button type="button" class="consent__btn consent__btn--no">Не разрешаю.</button>
+        <button type="button" class="consent__btn consent__btn--yes">Принять</button>
+        <button type="button" class="consent__btn consent__btn--no">Отклонить</button>
 
     </div>
 </div>
@@ -2013,7 +2014,6 @@ Paypal.
     pixelBtn.addEventListener('click', () => {
       fbq('track', 'AddToWishlist');
     })
-
   </script>
 
 

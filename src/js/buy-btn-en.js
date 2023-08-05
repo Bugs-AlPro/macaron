@@ -111,3 +111,25 @@ buyOfferBtn3.addEventListener('click', () => {
     windowLink.classList.add('payment-window__links-3');
 }
 )
+
+const paymentWindowLinks = document.querySelectorAll('.payment-window__link');
+for (let paymentWindowLink of paymentWindowLinks) {
+    paymentWindowLink.addEventListener('click', () => {
+        gtag('event', 'lava-btn');
+    }
+    )
+}
+
+paymentWindowBtn1.addEventListener('click', () => {
+    gtag('event', 'buy-btn1');
+}
+)
+paymentWindowBtn2.addEventListener('click', () => {
+    gtag('event', 'buy-btn2');
+}
+)
+const anotherPayment = document.querySelector('.payment-list__btn');
+anotherPayment.addEventListener('click', () => {
+    gtag('event', 'another');
+}
+)
