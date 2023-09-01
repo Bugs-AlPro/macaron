@@ -952,24 +952,26 @@
     padding: 10px 0;
     position: relative;
     overflow: hidden;
-    height: 60px;
+    height: 100px;
 
     &__cover {
       position: absolute;
       top: 10px;
-      left: -30%;
-      width: 2120px;
+      left: -450%;
+      width: 6000px;
       display: flex;
+      // gap: 30px;
       justify-content: space-between;
 
     }
 
     &__text {
+      text-align: center;
       text-transform: uppercase;
       font-size: 2em;
       color: white;
       font-weight: 600;
-      animation: textAnimates 5s infinite;
+      animation: textAnimates 30s infinite;
       animation-timing-function: linear;
 
     }
@@ -978,11 +980,11 @@
 
   @keyframes textAnimates {
     0% {
-      transform: translateX(-590px);
+      transform: translateX(0%);
     }
 
     100% {
-      transform: translateX(310px);
+      transform: translateX(100%);
     }
   }
 

@@ -266,3 +266,4 @@ anotherPayment.addEventListener('click', () => {
     gtag('event', 'another');
 }
 )
+

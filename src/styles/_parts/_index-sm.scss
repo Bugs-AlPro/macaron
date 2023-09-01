@@ -961,19 +961,20 @@
     &__cover {
       position: absolute;
       top: 10px;
-      left: -30%;
-      width: 2120px;
+      left: -200%;
+      width: 3000px;
       display: flex;
       justify-content: space-between;
 
     }
 
     &__text {
+      text-align: center;
       text-transform: uppercase;
-      font-size: 2em;
+      font-size: 1em;
       color: white;
       font-weight: 600;
-      animation: textAnimates 5s infinite;
+      animation: textAnimates 30s infinite;
       animation-timing-function: linear;
 
     }
@@ -993,11 +994,11 @@
 
   @keyframes textAnimates {
     0% {
-      transform: translateX(-570px);
+      transform: translateX(0%);
     }
 
     100% {
-      transform: translateX(150px);
+      transform: translateX(100%);
     }
   }
 
