@@ -142,30 +142,6 @@
       align-items: flex-end;
       width: 100%;
     }
-
-    // &__sale {
-    //   position: relative;
-    // }
-
-    // &__sale::before {
-    //   position: absolute;
-    //   content: "";
-    //   width: 100px;
-    //   height: 100%;
-    //   background-image: linear-gradient(to left, red, white);
-    //   left: 0;
-    //   top: 0;
-    // }
-
-    // &__sale::after {
-    //   position: absolute;
-    //   content: "";
-    //   width: 100px;
-    //   height: 100%;
-    //   background-image: linear-gradient(to left, white, rgba(255, 0, 0, 0.034));
-    //   right: 0;
-    //   top: 0;
-    // }
   }
 
   .logo {
@@ -901,6 +877,9 @@
   }
 
   .offer {
+    &__title {
+      margin-top: 30px;
+    }
 
     &__list {
       border: 2px solid white;
@@ -941,41 +920,8 @@
       transition: 0.4s;
     }
 
-    &__sale {
-      margin-bottom: 30px;
-    }
-
   }
 
-  .sale {
-    background-color: red;
-    padding: 10px 0;
-    position: relative;
-    overflow: hidden;
-    height: 100px;
-
-    &__cover {
-      position: absolute;
-      top: 10px;
-      left: -450%;
-      width: 6000px;
-      display: flex;
-      // gap: 30px;
-      justify-content: space-between;
-
-    }
-
-    &__text {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 2em;
-      color: white;
-      font-weight: 600;
-      animation: textAnimates 30s infinite;
-      animation-timing-function: linear;
-
-    }
-  }
 
 
   @keyframes textAnimates {
@@ -2088,55 +2034,5 @@
     }
   }
 
-  .consent {
-    background-color: rgb(100, 100, 100);
-    position: fixed;
-    z-index: 310;
-    bottom: 0;
-    left: 0;
-    // right: calc(50% - 500px);
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
 
-    &--close {
-      transform: translateY(100%);
-      transition: 1.5s;
-    }
-
-    &__body {
-      margin: 0 auto;
-      display: flex;
-
-      column-gap: 25px;
-      // row-gap: 10px;
-      // grid-template-columns: auto auto;
-      // grid-template-rows: auto auto;
-      max-width: 1200px;
-      align-items: center;
-    }
-
-    &__text {
-      font-size: 1.1em;
-      color: white;
-      // grid-column-start: 1;
-      // grid-column-end: 2;
-      // grid-row-start: 1;
-      // grid-row-end: 3;
-    }
-
-    &__btn {
-      padding: 12px;
-      min-height: 30px;
-      border: none;
-      color: black;
-      font-size: 1.1em;
-      // border-radius: 5px;
-      background-color: #fff;
-    }
-
-    &__btn:hover {
-      background-color: rgb(255, 234, 234);
-    }
-  }
 }

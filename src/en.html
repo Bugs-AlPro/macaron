@@ -11,6 +11,7 @@ yourself in this role! You will not regret!' %}
 {% import "includes/macros-data.html" as macrosData %}
 {% import "includes/macros-text.html" as macrosText %}
 
+
 {% macro imageSvg(name, class, width, height) %}
 <svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
   <use xlink:href='img/svg/sprite-black.svg#{{ name }}'></use>
@@ -47,7 +48,8 @@ yourself in this role! You will not regret!' %}
   {% include "includes/about-en.html" %}
   {% include "includes/offer-en.html" %}
   {% include "includes/payment-en.html" %}
-  {% include "includes/consent-en.html" %}
+  <!-- Подключаем уведомление о файлах cookie -->
+  {% include "includes/cookie/consent-en.html" %}
 
 </main>
 

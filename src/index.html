@@ -12,6 +12,7 @@ macaron_by_elena' %}
 {% import "includes/macros-data.html" as macrosData %}
 {% import "includes/macros-text.html" as macrosText %}
 
+
 {% macro imageSvg(name, class, width, height) %}
 <svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
   <use xlink:href='img/svg/sprite-black.svg#{{ name }}'></use>
@@ -48,7 +49,9 @@ macaron_by_elena' %}
   {% include "includes/about.html" %}
   {% include "includes/offer.html" %}
   {% include "includes/payment.html" %}
-  {% include "includes/consent.html" %}
+
+  <!-- Подключаем уведомление о файлах cookie -->
+  {% include "includes/cookie/consent.html" %}
 
 </main>
 

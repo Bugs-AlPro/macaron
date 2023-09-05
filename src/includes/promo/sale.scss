@@ -1,0 +1,55 @@
+@include media-down(lg) {
+    .sale-wrap {
+        margin-top: 80px;
+    }
+}
+
+.sale {
+    background-color: red;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+
+    @include media-up(lg) {
+        height: 100px;
+    }
+
+    @include media-down(lg) {
+        height: 60px;
+        margin-top: 90px;
+    }
+
+    &__cover {
+        position: absolute;
+        top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        @include media-up(lg) {
+            left: -100%;
+            width: 6000px;
+        }
+
+        @include media-down(lg) {
+            left: -200%;
+            width: 3000px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+        animation: textAnimates 30s infinite;
+        animation-timing-function: linear;
+
+        @include media-up(lg) {
+            font-size: 2em;
+        }
+
+        @include media-down(lg) {
+            font-size: 1em;
+        }
+    }
+}
