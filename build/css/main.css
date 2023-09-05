@@ -3274,26 +3274,39 @@ p {
   }
 }
 
+.consent {
+  background-color: #646464;
+  position: fixed;
+  z-index: 310;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.consent--close {
+  transform: translateY(100%);
+  transition: 1.5s;
+}
+.consent__body {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.consent__btn {
+  padding: 12px;
+  border: none;
+  color: black;
+  font-size: 1.1em;
+  background-color: #fff;
+}
+.consent__btn:hover {
+  background-color: #ffeaea;
+}
+
 @media (min-width: 992px) {
-  .consent {
-    background-color: #646464;
-    position: fixed;
-    z-index: 310;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
-  }
-  .consent--close {
-    transform: translateY(100%);
-    transition: 1.5s;
-  }
   .consent__body {
-    margin: 0 auto;
     display: flex;
     column-gap: 25px;
-    max-width: 1200px;
     align-items: center;
   }
   .consent__text {
@@ -3301,39 +3314,15 @@ p {
     color: white;
   }
   .consent__btn {
-    padding: 12px;
     min-height: 30px;
-    border: none;
-    color: black;
-    font-size: 1.1em;
-    background-color: #fff;
-  }
-  .consent__btn:hover {
-    background-color: #ffeaea;
   }
 }
 @media (max-width: 991.98px) {
-  .consent {
-    background-color: #6e6e6e;
-    position: fixed;
-    z-index: 310;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
-  }
-  .consent--close {
-    transform: translateY(100%);
-    transition: 1.5s;
-  }
   .consent__body {
-    margin: 0 auto;
     display: grid;
     gap: 10px;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    max-width: 1200px;
   }
   .consent__text {
     font-size: 1em;
@@ -3343,20 +3332,10 @@ p {
     grid-row-start: 1;
     grid-row-end: 2;
   }
-  .consent__btn {
-    padding: 12px;
-    color: black;
-    border: none;
-    font-size: 1.1em;
-    background-color: #fff;
-  }
   .consent__btn--yes {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-  }
-  .consent__btn:hover {
-    background-color: #ffeaea;
   }
 }
