@@ -1,0 +1,48 @@
+{% set title = 'Cost price мacarons' %}
+{% set lang = 'en' %}
+{% set keywords = 'macaron_by_elena' %}
+{% set description = 'Calculating the cost of macarons ' %}
+
+{% extends "templates/default.html" %}
+
+{% import "includes/macros.html" as variable %}
+{% import "includes/macros-data.html" as macrosData %}
+{% import "includes/macros-text.html" as macrosText %}
+
+{% macro imageSvg(name, class, width, height) %}
+<svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
+    <use xlink:href='img/svg/sprite-black.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}
+{% macro imageSvgColor(name, class, width, height, alt) %}
+<svg class="{{ class }}" width="{{ width }}" height="{{ height }}" aria-label="{{ alt }}">
+    <use xlink:href='img/svg/sprite-color.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}
+{% macro imageJpg(classPicture, name, classImg, alt, width, height) %}
+<picture class="{{ classPicture }}">
+    <source srcset="img/{{ name }}.webp" type="image/webp">
+    <img src="img/{{ name }}.jpg" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}">
+</picture>
+{% endmacro %}
+{% macro imagePng(classPicture, name, classImg, alt, width, height) %}
+<picture class="{{ classPicture }}">
+    <source srcset="img/{{ name }}.webp" type="image/webp">
+    <img src="img/{{ name }}.png" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}">
+</picture>
+{% endmacro %}
+{% block content %}
+
+<header>
+    шапка сайта
+</header>
+<main class="main">
+    <div class="">
+        <h2>Основной блок с вводом данных</h2>
+    </div>
+
+</main>
+
+{% include "includes/footer.html" %}
+
+{% endblock %}
