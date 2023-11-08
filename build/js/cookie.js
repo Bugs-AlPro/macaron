@@ -1,8 +1,8 @@
 'use strict'
 
-const cookieBtnYes = document.querySelector('.consent__btn--yes');
-const cookieBtnNo = document.querySelector('.consent__btn--no');
-const cookieSection = document.querySelector('.consent');
+const cookieBtnYes = document.querySelector('.cookie__btn--yes');
+const cookieBtnNo = document.querySelector('.cookie__btn--no');
+const cookieSection = document.querySelector('.cookie');
 
 function disableAnalytics() {
     var script = document.createElement('script');
@@ -11,11 +11,11 @@ function disableAnalytics() {
 }
 
 cookieBtnNo.addEventListener('click', () => {
-    cookieSection.classList.toggle('consent--close');
+    cookieSection.classList.toggle('cookie--close');
     disableAnalytics();
 })
 cookieBtnYes.addEventListener('click', () => {
-    cookieSection.classList.toggle('consent--close');
+    cookieSection.classList.toggle('cookie--close');
     fbq('consent', 'grant');
 
 })

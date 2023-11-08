@@ -1,4 +1,4 @@
-.consent {
+.cookie {
     background-color: rgb(100, 100, 100);
     position: fixed;
     z-index: 310;
@@ -32,7 +32,7 @@
 }
 
 @include media-up(lg) {
-    .consent {
+    .cookie {
 
         &__body {
             display: flex;
@@ -52,7 +52,7 @@
 }
 
 @include media-down(lg) {
-    .consent {
+    .cookie {
 
         &__body {
             display: grid;

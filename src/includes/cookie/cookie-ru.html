@@ -1,15 +1,15 @@
 <!-- Подключаем файл с переводом текста -->
 {% import "includes/cookie/text-content-cookie.html" as cookieText %}
 
-<div class="consent">
-    <div class="consent__body">
-        <p class="consent__text">
+<div class="cookie">
+    <div class="cookie__body">
+        <p class="cookie__text">
             {{ cookieText.cookieTranslate.text.ru | safe }}
         </p>
-        <button type="button" class="consent__btn consent__btn--yes">
+        <button type="button" class="cookie__btn cookie__btn--yes">
             {{ cookieText.cookieTranslate.allow.ru }}
         </button>
-        <button type="button" class="consent__btn consent__btn--no">
+        <button type="button" class="cookie__btn cookie__btn--no">
             {{ cookieText.cookieTranslate.decline.ru }}
         </button>
 

@@ -4,7 +4,13 @@
 @import '_parts/index-sm';
 @import '_parts/index-xl';
 
+// Подключаем стили для header
+@import '_parts/_header/logo';
+@import '_parts/_header/language';
+@import '_parts/_header/nav';
+
 // Подключаем стили для распродаж
 @import '_parts/../../includes/promo/sale';
+
 // Подключаем стили для файлов cookie
-@import '_parts/../../includes/cookie/consent';
+@import '_parts/../../includes/cookie/cookie';
