@@ -87,20 +87,20 @@ windowBtn6.addEventListener('click', () => {
 const windowCover = document.querySelector('.payment-window-cover');
 const windowCloseBtn = document.querySelector('.payment-window__close');
 const paymentWindow = document.querySelector('.payment-window');
-const paymentWindowBtn1 = document.querySelector('.payment-button__btn1');
-const paymentWindowBtn2 = document.querySelector('.payment-button__btn2');
+// const paymentWindowBtn1 = document.querySelector('.payment-button__btn1');
+// const paymentWindowBtn2 = document.querySelector('.payment-button__btn2');
 
-paymentWindowBtn1.addEventListener('click', () => {
-    windowCover.classList.add('payment-window-cover--show');
-    paymentWindow.classList.add('payment-window--show');
-}
-)
-paymentWindowBtn2.addEventListener('click', () => {
-    windowCover.classList.add('payment-window-cover--show');
-    paymentWindow.classList.add('payment-window--show');
-    // windowCloseBtn.classList.add('payment__window--show');
-}
-)
+// paymentWindowBtn1.addEventListener('click', () => {
+//     windowCover.classList.add('payment-window-cover--show');
+//     paymentWindow.classList.add('payment-window--show');
+// }
+// )
+// paymentWindowBtn2.addEventListener('click', () => {
+//     windowCover.classList.add('payment-window-cover--show');
+//     paymentWindow.classList.add('payment-window--show');
+//     // windowCloseBtn.classList.add('payment__window--show');
+// }
+// )
 windowCover.addEventListener('click', () => {
     windowCover.classList.remove('payment-window-cover--show');
     paymentWindow.classList.remove('payment-window--show');
@@ -223,27 +223,27 @@ buyOfferBtn5.addEventListener('click', () => {
     windowLink.classList.add('payment-window__links-5');
 }
 )
-const buyOfferBtn6 = document.querySelector('.offer-i-head__btn6');
-buyOfferBtn6.addEventListener('click', () => {
-    windowCover.classList.add('payment-window-cover--show');
-    paymentWindow.classList.add('payment-window--show');
-    // windowCloseBtn.classList.add('payment__window--show');
+// const buyOfferBtn6 = document.querySelector('.offer-i-head__btn6');
+// buyOfferBtn6.addEventListener('click', () => {
+//     windowCover.classList.add('payment-window-cover--show');
+//     paymentWindow.classList.add('payment-window--show');
+//     // windowCloseBtn.classList.add('payment__window--show');
 
-    windowBtn1.classList.remove('payment-window__btn--active');
-    windowBtn5.classList.remove('payment-window__btn--active');
-    windowBtn2.classList.remove('payment-window__btn--active');
-    windowBtn3.classList.remove('payment-window__btn--active');
-    windowBtn4.classList.remove('payment-window__btn--active');
-    windowBtn6.classList.add('payment-window__btn--active');
+//     windowBtn1.classList.remove('payment-window__btn--active');
+//     windowBtn5.classList.remove('payment-window__btn--active');
+//     windowBtn2.classList.remove('payment-window__btn--active');
+//     windowBtn3.classList.remove('payment-window__btn--active');
+//     windowBtn4.classList.remove('payment-window__btn--active');
+//     windowBtn6.classList.add('payment-window__btn--active');
 
-    windowLink.classList.remove('payment-window__links-1');
-    windowLink.classList.remove('payment-window__links-5');
-    windowLink.classList.remove('payment-window__links-2');
-    windowLink.classList.remove('payment-window__links-4');
-    windowLink.classList.remove('payment-window__links-3');
-    windowLink.classList.add('payment-window__links-6');
-}
-)
+//     windowLink.classList.remove('payment-window__links-1');
+//     windowLink.classList.remove('payment-window__links-5');
+//     windowLink.classList.remove('payment-window__links-2');
+//     windowLink.classList.remove('payment-window__links-4');
+//     windowLink.classList.remove('payment-window__links-3');
+//     windowLink.classList.add('payment-window__links-6');
+// }
+// )
 
 const paymentWindowLinks = document.querySelectorAll('.payment-window__link');
 for (let paymentWindowLink of paymentWindowLinks) {
@@ -253,17 +253,17 @@ for (let paymentWindowLink of paymentWindowLinks) {
     )
 }
 
-paymentWindowBtn1.addEventListener('click', () => {
-    gtag('event', 'buy-btn1');
-}
-)
-paymentWindowBtn2.addEventListener('click', () => {
-    gtag('event', 'buy-btn2');
-}
-)
-const anotherPayment = document.querySelector('.payment-list__btn');
-anotherPayment.addEventListener('click', () => {
-    gtag('event', 'another');
-}
-)
+// paymentWindowBtn1.addEventListener('click', () => {
+//     gtag('event', 'buy-btn1');
+// }
+// )
+// paymentWindowBtn2.addEventListener('click', () => {
+//     gtag('event', 'buy-btn2');
+// }
+// )
+// const anotherPayment = document.querySelector('.payment-list__btn');
+// anotherPayment.addEventListener('click', () => {
+//     gtag('event', 'another');
+// }
+// )
 

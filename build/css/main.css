@@ -1057,6 +1057,10 @@ p {
     font-size: 1.5em;
     min-width: 260px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
   }
   .payment-button__btn:hover {
     background-color: #9e4c53;
@@ -1106,6 +1110,7 @@ p {
     height: 40px;
   }
   .payment-window__subtitle {
+    display: none;
     width: 80%;
     max-width: 400px;
     text-align: center;
@@ -1118,6 +1123,7 @@ p {
   }
   .payment-window__types {
     display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
@@ -1614,7 +1620,7 @@ p {
     left: -20px;
   }
   .want__video {
-    margin: 20px auto;
+    margin: 40px auto;
   }
 
   .interesting {
@@ -1844,7 +1850,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    gap: 2em;
     position: relative;
   }
   .preview-body__item:last-child {
@@ -2496,9 +2502,9 @@ p {
     font-size: 1em;
   }
   .offer-i-head__text--green {
-    border: 2px solid var(--back-green);
-    background-color: #6cc76c;
-    color: #fff;
+    border: 2px solid white;
+    background-color: var(--back-green);
+    color: white;
     padding: 5px;
     border-radius: 5px;
     line-height: 2em;
@@ -2601,6 +2607,10 @@ p {
     font-size: 1.5em;
     min-width: 300px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
   }
   .payment-button__btn:hover {
     background-color: #9e4c53;
@@ -2613,7 +2623,7 @@ p {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: calc(50% - 351px);
+    top: calc(50% - 200px);
     left: calc(50% - 300px);
     min-width: 600px;
     z-index: 4;
@@ -2648,6 +2658,7 @@ p {
     height: 80px;
   }
   .payment-window__subtitle {
+    display: none;
     text-align: center;
     padding: 20px 90px;
     margin-bottom: 20px;
@@ -2660,6 +2671,7 @@ p {
   }
   .payment-window__types {
     display: grid;
+    display: none;
     grid-template-columns: auto auto;
     gap: 1em;
     margin-bottom: 40px;

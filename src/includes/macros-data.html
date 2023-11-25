@@ -166,6 +166,55 @@ fashionable MACARONS dessert."},
 {img: "eskimo3", alt: "Чизкейк-эскимо: в чёрной глазури, украшен золотой крошлой и белым шоколадом."}
 ]%}
 
+{% set sliderOfferInstRu = [
+{img: "inst1", alt: "Обложка книги."},
+{img: "inst2", alt: "Обложка первого раздела - основы."},
+{img: "inst3", alt: "Оглавление первого раздела."},
+{img: "inst4", alt: "Обложка второго раздела - оформление."},
+{img: "inst5", alt: "Оглавление второго раздела."},
+{img: "inst6", alt: "Обложка третьего раздела - продажи."},
+{img: "inst7", alt: "Оглавление третьего раздела."},
+{img: "inst8", alt: "Обложка четвёртого раздела - реклама."},
+{img: "inst9", alt: "Оглавление четвёртого раздела."}
+]%}
+{% set sliderOfferInstEn = [
+{img: "inst1", alt: "Обложка книги."},
+{img: "inst2", alt: "Обложка первого раздела - основы."},
+{img: "inst3", alt: "Оглавление первого раздела."},
+{img: "inst4", alt: "Обложка второго раздела - оформление."},
+{img: "inst5", alt: "Оглавление второго раздела."},
+{img: "inst6", alt: "Обложка третьего раздела - продажи."},
+{img: "inst7", alt: "Оглавление третьего раздела."},
+{img: "inst8", alt: "Обложка четвёртого раздела - реклама."},
+{img: "inst9", alt: "Оглавление четвёртого раздела."}
+]%}
+
+{% set sliderOfferFullRu = [
+{img: "img1", alt: "Пирожные макарон: красного и белого цвета с рисуночками."},
+{img: "img2", alt: "Пирожные макарон: сиреневого цвета со вкусом смородины, на фоне лаванды."},
+{img: "inst1", alt: "Обложка книги."},
+{img: "eskimo10", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
+{img: "img25", alt: "Крышечка макарон с шоколадной начинкой.", alt2: "Shell with chocolate filling."},
+{img: "inst6", alt: "Обложка третьего раздела - продажи."},
+{img: "eskimo8", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
+{img: "img19", alt: "Разные начинки для макарон: классический ганаш со смородиной, кокосом, манго."},
+{img: "inst8", alt: "Обложка четвёртого раздела - реклама."},
+{img: "img31", alt: "Крышечка макарон с фруктовой начинкой.", alt2: "Shell with fruit filling."}
+]%}
+
+{% set sliderOfferFullEn = [
+{img: "img1", alt: "Пирожные макарон: красного и белого цвета с рисуночками."},
+{img: "img2", alt: "Пирожные макарон: сиреневого цвета со вкусом смородины, на фоне лаванды."},
+{img: "inst1", alt: "Обложка книги."},
+{img: "eskimo10", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
+{img: "img25", alt: "Крышечка макарон с шоколадной начинкой.", alt2: "Shell with chocolate filling."},
+{img: "inst6", alt: "Обложка третьего раздела - продажи."},
+{img: "eskimo8", alt: "Набор из 8 штук чизкейк-эскимо в коробке."},
+{img: "img19", alt: "Разные начинки для макарон: классический ганаш со смородиной, кокосом, манго."},
+{img: "inst8", alt: "Обложка четвёртого раздела - реклама."},
+{img: "img31", alt: "Крышечка макарон с фруктовой начинкой.", alt2: "Shell with fruit filling."}
+]%}
+
 {% set errors = [
 {img: "bad1", alt: "Пример плохих макарон. Не ровные крышечки макаронс.", alt2: "An example of bad macaron. Not pretty
 shells."},
@@ -177,22 +226,25 @@ cakes."},
 Displaced center after baking."}
 ]%}
 
-{% set priceNormalxxx = [
-{macaronUsd: "85",
-macaronEur: "77",
-macaronRub: "7500",
-partUsd: "60",
-partEur: "55",
-partRub: "5500",
-helpUsd: "115",
-helpEur: "105",
-helpRub: "10000",
-eskimoUsd: "29",
-eskimoEur: "27",
-eskimoRub: "2600",
-allUsd: "140",
-allEur: "127",
-allRub: "12000"}
+{% set priceNormalxx = [
+{macaronUsd: "90",
+macaronEur: "83",
+macaronRub: "8000",
+partUsd: "65",
+partEur: "60",
+partRub: "5800",
+helpUsd: "120",
+helpEur: "110",
+helpRub: "10700",
+eskimoUsd: "35",
+eskimoEur: "32",
+eskimoRub: "3200",
+instUsd: "50",
+instEur: "50",
+instRub: "5000",
+allUsd: "150",
+allEur: "138",
+allRub: "13400"}
 ]%}
 {% set priceNormal = [
 {macaronUsd: "65",
@@ -204,12 +256,15 @@ partRub: "4430",
 helpUsd: "90",
 helpEur: "85",
 helpRub: "8300",
+instUsd: "50",
+instEur: "50",
+instRub: "5000",
 eskimoUsd: "23",
 eskimoEur: "21",
 eskimoRub: "2120",
 allUsd: "110",
 allEur: "103",
-allRub: "10140"}
+allRub: "10110"}
 ]%}
 
 {% set youtubePreview = [

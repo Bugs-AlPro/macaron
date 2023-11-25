@@ -1467,6 +1467,10 @@
       font-size: 1.5em;
       min-width: 260px;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
     }
 
     &__btn:hover {
@@ -1537,6 +1541,7 @@
     }
 
     &__subtitle {
+      display: none;
       width: 80%;
       max-width: 400px;
       text-align: center;
@@ -1555,6 +1560,7 @@
 
     &__types {
       display: flex;
+      display: none;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;

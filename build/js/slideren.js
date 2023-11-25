@@ -45,6 +45,28 @@ var sliderOfferCreamEn = tns({
   nav: false,
   fixedWidth: 200,
 });
+var sliderOfferInstEn = tns({
+  container: '.sliderOfferInstEn',
+  mode: 'carousel',
+  swipeAngle: false,
+  loop: true,
+  gutter: 10,
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  fixedWidth: 200,
+});
+var sliderOfferFullEn = tns({
+  container: '.sliderOfferFullEn',
+  mode: 'carousel',
+  swipeAngle: false,
+  loop: true,
+  gutter: 10,
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  fixedWidth: 200,
+});
 
 
 var feedbackSlider = tns({

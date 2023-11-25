@@ -47,8 +47,20 @@ var sliderOfferCreamRu = tns({
   fixedWidth: 200,
 });
 
-var sliderOfferEskimo = tns({
-  container: '.sliderOfferEskimo',
+var sliderOfferInstRu = tns({
+  container: '.sliderOfferInstRu',
+  mode: 'carousel',
+  swipeAngle: false,
+  loop: true,
+  gutter: 10,
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  fixedWidth: 200,
+});
+
+var sliderOfferFullRu = tns({
+  container: '.sliderOfferFullRu',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,

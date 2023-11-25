@@ -25,178 +25,7 @@
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head offer-i-head--top">
-            <h3 class="offer-i-head__text">Макарон<br><span class="offer-i-head__text--gray">без обратной связи</span>
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">цена</span>
-                <div class="costs__box costs__box--center">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.macaronUsd }} $</span>
-                  <span class="costs__item">{{ item.macaronRub }} ₽</span>
-                  <span class="costs__item">{{ item.macaronEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
-            </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn1">Купить</button>
-          </div>
-          <button type="button" class="offer-item__btn offer-item__btn--1"
-            aria-label="Показать (скрыть) список того, что в это входит"></button>
-          <div class="offer-item__body">
-            <!-- <div class="offer-item__buy buy">
-              <a href="#payment-block" class="buy__link">Оплатить курс</a>
-            </div> -->
-            <ol class="offer-item__list">
-              <!-- <li class="offer-item__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
-                макарон, с
-                рецептом крышечек на итальянской меренге с
-                пониженным содержанием сахара. Файл PDF на 20 стр.
-              </li>
-              <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
-              <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
-              <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
-                вкусов. Файл PDF
-                на 20 стр.
-              </li>
-              <li class="offer-item__item">Видео всего процесса приготовления пирожных.</li>
-              <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
-              <li class="offer-item__item">Видео о том, как делать роспись и выпекать фигурные
-                макарон.</li>
-              <li class="offer-item__item">Excel таблица подсчета себестоимости расходуемых продуктов.</li>
-              <li class="offer-item__item">Мой секретный ингредиент с которым у вас
-                обязательно получится довести макарон до уровня
-                продаж.</li>
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderAllRu">
-                  {% for item in sliderAllRu %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-            </ol> -->
-              <li class="offer-item">
-                <div class="offer-item__title offer-i-head">
-                  <h3 class="offer-i-head__text">Отдельно крышечки</h3>
-                  <div class="offer-i-head__cost costs">
-                    <div class="costs__label">
-                      <span class="costs__text">цена</span>
-                      <div class="costs__box costs__box--center">
-                        {% for item in macrosData.priceNormal %}
-                        <span class="costs__item">{{ item.partUsd }} $</span>
-                        <span class="costs__item">{{ item.partRub }} ₽</span>
-                        <span class="costs__item">{{ item.partEur }} €</span>
-                        {% endfor %}
-                      </div>
-                    </div>
-                  </div>
-                  <button type="button" class="offer-i-head__btn offer-i-head__btn2">Купить</button>
-                </div>
-                <button type="button" class="offer-item__btn"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <div class="offer-item__body">
-                  <!-- <div class="offer-item__buy buy">
-                    <a href="#payment-block" class="buy__link">Оплатить курс</a>
-                  </div> -->
-                  <ol class="offer-item__list">
-                    <li class="offer-item__item offer-item__item--slider slider-offer">
-                      <ul class="slider-offer__list sliderOfferShellsRu">
-                        {% for item in macrosData.sliderOfferShells %}
-                        <li class="slider-offer__item">
-                          <picture class="slider-offer__picture">
-                            <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img"
-                              height="200">
-                          </picture>
-                        </li>
-                        {% endfor %}
-                      </ul>
-                    </li>
-                    <li class="offer-item__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
-                      макарон, с
-                      рецептом крышечек на итальянской меренге с
-                      пониженным содержанием сахара. Файл PDF на 30 стр.
-                    </li>
-                    <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
-                    <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
-                    <li class="offer-item__item">Видео о том, как делать рисунки и выпекать фигурные
-                      макарон.</li>
-
-                    <!-- <li class="offer-item__item">Мой секретный ингредиент с которым у вас
-                      обязательно получится довести макарон до уровня
-                      продаж.</li> -->
-
-                  </ol>
-
-                </div>
-
-              </li>
-              <li class="offer-item">
-                <div class="offer-item__title offer-i-head">
-                  <h3 class="offer-i-head__text">Отдельно начинки</h3>
-                  <div class="offer-i-head__cost costs">
-                    <div class="costs__label">
-                      <span class="costs__text">цена</span>
-                      <div class="costs__box costs__box--center">
-                        {% for item in macrosData.priceNormal %}
-                        <span class="costs__item">{{ item.partUsd }} $</span>
-                        <span class="costs__item">{{ item.partRub }} ₽</span>
-                        <span class="costs__item">{{ item.partEur }} €</span>
-                        {% endfor %}
-                      </div>
-                    </div>
-                  </div>
-                  <button type="button" class="offer-i-head__btn offer-i-head__btn3">Купить</button>
-                </div>
-                <button type="button" class="offer-item__btn"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <div class="offer-item__body">
-                  <!-- <div class="offer-item__buy buy">
-                    <a href="#payment-block" class="buy__link">Оплатить курс</a>
-                  </div> -->
-                  <ol class="offer-item__list">
-                    <li class="offer-item__item offer-item__item--slider slider-offer">
-                      <ul class="slider-offer__list sliderOfferCreamRu">
-                        {% for item in macrosData.sliderOfferCream %}
-                        <li class="slider-offer__item">
-                          <picture class="slider-offer__picture">
-                            <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img"
-                              height="200">
-                          </picture>
-                        </li>
-                        {% endfor %}
-                      </ul>
-                    </li>
-                    <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
-                      вкусов. Файл PDF
-                      на 40 стр.
-                    </li>
-
-                    {% for item in macrosText.fillingsTypes %}
-                    <li class="offer-item__item">{{ item.text1 }}</li>
-                    {% endfor %}
-
-                    <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
-
-                  </ol>
-
-                </div>
-
-              </li>
-
-          </div>
-
-        </li>
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">Макарон<br><span class="offer-i-head__text--green">c обратной связью</span>
-            </h3>
+            <h3 class="offer-i-head__text">Макарон. Крышечки и начинки</h3>
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
                 <span class="costs__text">цена</span>
@@ -208,20 +37,16 @@
                   {% endfor %}
                 </div>
               </div>
-
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn4">Купить</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn1">Купить</button>
           </div>
-          <button type="button" class="offer-item__btn"
+          <button type="button" class="offer-item__btn offer-item__btn--1"
             aria-label="Показать (скрыть) список того, что в это входит"></button>
           <div class="offer-item__body">
-            <!-- <div class="offer-item__buy buy">
-              <a href="#payment-block" class="buy__link">Оплатить курс</a>
-            </div> -->
             <ol class="offer-item__list">
               <li class="offer-item__item offer-item__item--slider slider-offer">
                 <ul class="slider-offer__list sliderAllRu">
-                  {% for item in macrosData.sliderAll%}
+                  {% for item in macrosData.sliderAll %}
                   <li class="slider-offer__item">
                     <picture class="slider-offer__picture">
                       <source srcset="img/{{ item.img }}.webp" type="image/webp">
@@ -246,23 +71,156 @@
               <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
               <li class="offer-item__item">Видео о том, как делать рисунки и выпекать фигурные
                 макарон.</li>
-              <!-- <li class="offer-item__item">Excel таблица подсчета себестоимости расходуемых продуктов.</li> -->
-              <!-- <li class="offer-item__item">Мой секретный ингредиент с которым у вас
-                обязательно получится довести макарон до уровня
-                продаж.</li> -->
               <li class="offer-item__item">Консультация, ответы на
                 вопросы, разбор ошибок, помощь в доведении до уровня продаж.</li>
-
             </ol>
-
           </div>
-
         </li>
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">Макарон и Эскимо-Чизкейк<br><span class="offer-i-head__text--green">c
-                обратной связью</span></h3>
+            <h3 class="offer-i-head__text">Крышечки</h3>
+            <div class="offer-i-head__cost costs">
+              <div class="costs__label">
+                <span class="costs__text">цена</span>
+                <div class="costs__box costs__box--center">
+                  {% for item in macrosData.priceNormal %}
+                  <span class="costs__item">{{ item.partUsd }} $</span>
+                  <span class="costs__item">{{ item.partRub }} ₽</span>
+                  <span class="costs__item">{{ item.partEur }} €</span>
+                  {% endfor %}
+                </div>
+              </div>
+
+            </div>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn2">Купить</button>
+          </div>
+          <button type="button" class="offer-item__btn"
+            aria-label="Показать (скрыть) список того, что в это входит"></button>
+          <div class="offer-item__body">
+            <ol class="offer-item__list">
+              <li class="offer-item__item offer-item__item--slider slider-offer">
+                <ul class="slider-offer__list sliderOfferShellsRu">
+                  {% for item in macrosData.sliderOfferShells %}
+                  <li class="slider-offer__item">
+                    <picture class="slider-offer__picture">
+                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                    </picture>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li class="offer-item__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
+                макарон, с
+                рецептом крышечек на итальянской меренге с
+                пониженным содержанием сахара. Файл PDF на 30 стр.
+              </li>
+              <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
+              <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
+              <li class="offer-item__item">Видео о том, как делать рисунки и выпекать фигурные
+                макарон.</li>
+
+            </ol>
+          </div>
+        </li>
+
+        <li class="offer-item">
+          <div class="offer-item__title offer-i-head">
+            <h3 class="offer-i-head__text">Начинки</h3>
+            <div class="offer-i-head__cost costs">
+              <div class="costs__label">
+                <span class="costs__text">цена</span>
+                <div class="costs__box costs__box--center">
+                  {% for item in macrosData.priceNormal %}
+                  <span class="costs__item">{{ item.partUsd }} $</span>
+                  <span class="costs__item">{{ item.partRub }} ₽</span>
+                  <span class="costs__item">{{ item.partEur }} €</span>
+                  {% endfor %}
+                </div>
+              </div>
+
+            </div>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn3">Купить</button>
+          </div>
+          <button type="button" class="offer-item__btn"
+            aria-label="Показать (скрыть) список того, что в это входит"></button>
+          <div class="offer-item__body">
+            <ol class="offer-item__list">
+              <li class="offer-item__item offer-item__item--slider slider-offer">
+                <ul class="slider-offer__list sliderOfferCreamRu">
+                  {% for item in macrosData.sliderOfferCream %}
+                  <li class="slider-offer__item">
+                    <picture class="slider-offer__picture">
+                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                    </picture>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
+                вкусов. Файл PDF
+                на 40 стр.
+              </li>
+
+              {% for item in macrosText.fillingsTypes %}
+              <li class="offer-item__item">{{ item.text1 }}</li>
+              {% endfor %}
+
+              <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
+
+            </ol>
+          </div>
+        </li>
+
+        <li class="offer-item">
+          <div class="offer-item__title offer-i-head">
+            <h3 class="offer-i-head__text">Курс по инстаграмм</h3>
+            <div class="offer-i-head__cost costs">
+              <div class="costs__label">
+                <span class="costs__text">цена</span>
+                <div class="costs__box costs__box--center">
+                  {% for item in macrosData.priceNormal %}
+                  <span class="costs__item">{{ item.instUsd }} $</span>
+                  <span class="costs__item">{{ item.instRub }} ₽</span>
+                  <span class="costs__item">{{ item.instEur }} €</span>
+                  {% endfor %}
+                </div>
+              </div>
+
+            </div>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn5">Купить</button>
+          </div>
+          <button type="button" class="offer-item__btn"
+            aria-label="Показать (скрыть) список того, что в это входит"></button>
+          <div class="offer-item__body">
+            <ol class="offer-item__list">
+              <li class="offer-item__item offer-item__item--slider slider-offer">
+                <ul class="slider-offer__list sliderOfferInstRu">
+                  {% for item in macrosData.sliderOfferInstRu %}
+                  <li class="slider-offer__item">
+                    <picture class="slider-offer__picture">
+                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                    </picture>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li class="offer-item__item">Книга или PDF файл с подробным описанием всех шагов для развития своего
+                аккаунта инстагрмм</li>
+              <li class="offer-item__item">В книге после каждого раздела вас ждёт домашнее задание, которое вы можете
+                отправить на проверку.</li>
+              <li class="offer-item__item">Доступ к 14 видео урокам, которые идут в дополнении к книге.</li>
+
+            </ol>
+          </div>
+        </li>
+
+        <li class="offer-item">
+          <div class="offer-item__title offer-i-head">
+            <h3 class="offer-i-head__text">Все курсы <span class="offer-i-head__text--green">+ бонус</span></h3>
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
                 <span class="costs__text">цена</span>
@@ -276,79 +234,33 @@
               </div>
 
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn5">Купить</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn4">Купить</button>
           </div>
           <button type="button" class="offer-item__btn"
             aria-label="Показать (скрыть) список того, что в это входит"></button>
           <div class="offer-item__body">
-            <!-- <div class="offer-item__buy buy">
-              <a href="#payment-block" class="buy__link">Оплатить курс</a>
-            </div> -->
             <ol class="offer-item__list">
-
-              <li class="offer-item__item">Все видео и PDF инструкции по приготовлению макарон и начинок.</li>
-              <li class="offer-item__item">Видео и PDF инструкции по приготовлению эскимо-чизкейков.</li>
-              <li class="offer-item__item">Консультация, ответы на
-                вопросы, разбор ошибок, помощь в доведении до уровня продаж.
-                {{ imageJpg('offer-item__picture', 'help', 'offer-item__img', 'Скриншот чата, где покупатель
-                просит
-                срочной помощи.', '250', '200') }}</li>
-              <li class="offer-item">
-                <div class="offer-item__title offer-i-head">
-                  <h3 class="offer-i-head__text">Отдельно Эскимо - Чизкейк</h3>
-                  <div class="offer-i-head__cost costs">
-                    <div class="costs__label">
-                      <span class="costs__text">цена</span>
-                      <div class="costs__box costs__box--center">
-                        {% for item in macrosData.priceNormal %}
-                        <span class="costs__item">{{ item.eskimoUsd }} $</span>
-                        <span class="costs__item">{{ item.eskimoRub }} ₽</span>
-                        <span class="costs__item">{{ item.eskimoEur }} €</span>
-                        {% endfor %}
-                      </div>
-                    </div>
-                  </div>
-                  <button type="button" class="offer-i-head__btn offer-i-head__btn6">Купить</button>
-                </div>
-                <button type="button" class="offer-item__btn"
-                  aria-label="Показать (скрыть) список того, что в это входит"></button>
-                <div class="offer-item__body">
-                  <!-- <div class="offer-item__buy buy">
-                      <a href="#payment-block" class="buy__link">Оплатить курс</a>
-                    </div> -->
-                  <ol class="offer-item__list">
-                    <li class="offer-item__item offer-item__item--slider slider-offer">
-                      <ul class="slider-offer__list sliderOfferEskimo">
-                        {% for item in macrosData.sliderOfferEskimo %}
-                        <li class="slider-offer__item">
-                          <picture class="slider-offer__picture">
-                            <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img"
-                              height="200">
-                          </picture>
-                        </li>
-                        {% endfor %}
-                      </ul>
-                    </li>
-                    <li class="offer-item__item">Подробное описание процесса приготовления Эскимо-Чизкейк. Файл PDF
-                      на 11 стр.
-                    </li>
-                    <li class="offer-item__item">Видео всего процесса приготовления.</li>
-                    <li class="offer-item__item">Начинки: фруктово-ягодное конфи, пряное яблоко, солёная карамель,
-                      варианты
-                      ароматизации фисташковой пастой, кокосовой и другими.
-                    </li>
-
-                  </ol>
-
-                </div>
-
+              <li class="offer-item__item offer-item__item--slider slider-offer">
+                <ul class="slider-offer__list sliderOfferFullRu">
+                  {% for item in macrosData.sliderOfferFullRu %}
+                  <li class="slider-offer__item">
+                    <picture class="slider-offer__picture">
+                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                    </picture>
+                  </li>
+                  {% endfor %}
+                </ul>
               </li>
-            </ol>
+              <li class="offer-item__item">Весь курс по приготовлению пирожных макарон: крышечки и начинки.</li>
+              <li class="offer-item__item">Весь курс "Продвижение инстаграм для кондитеров"</li>
+              <li class="offer-item__item">БОНУС. Курс приготовления Эскимо-чизкейк</li>
 
+            </ol>
           </div>
 
         </li>
+
       </ul>
     </div>
   </div>

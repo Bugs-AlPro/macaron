@@ -76,11 +76,11 @@ costsBtnRub.addEventListener('click', () => {
 }
 )
 
-const paymentBtn = document.querySelector('.payment-list__btn');
-paymentBtn.addEventListener('click', () => {
-  paymentBtn.classList.toggle('payment-list__btn--open');
-  paymentBtn.nextElementSibling.classList.toggle('payment-list__payment--open');
-})
+// const paymentBtn = document.querySelector('.payment-list__btn');
+// paymentBtn.addEventListener('click', () => {
+//   paymentBtn.classList.toggle('payment-list__btn--open');
+//   paymentBtn.nextElementSibling.classList.toggle('payment-list__payment--open');
+// })
 
 
 const summaryBtns = document.querySelectorAll('.summary__btn');

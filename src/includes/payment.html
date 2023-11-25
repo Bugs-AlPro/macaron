@@ -2,17 +2,13 @@
   <div class="container">
     <div class="payment">
 
-      <div class="payment__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">
-          {{ macrosText.paymentTitleRu }}
-        </h2>
-      </div>
 
+      <!-- 
       <div class="payment__button payment-button">
         <button type="button" class="payment-button__btn payment-button__btn2 pixel-btn">
           {{ macrosText.paymentBtnRu }}
         </button>
-      </div>
+      </div> -->
 
       <div class="payment__window">
         <div class="payment-window-cover"></div>
@@ -63,7 +59,8 @@
               <a href="https://app.lava.top/products/5904cbc0-d0a2-415f-a21c-40e5c5a7a075" class="payment-window__link">
                 {{ macrosText.paymentWindowLinkRu }}
               </a>
-              <a href="https://app.lava.top/products/e4f0ce36-39a6-430f-abaf-98e5b64a577c" class="payment-window__link">
+              <a href="https://app.lava.top/ru/products/89d2a547-1ba9-4670-ba8d-396fabbe34d6"
+                class="payment-window__link">
                 {{ macrosText.paymentWindowLinkRu }}
               </a>
               <a href="https://app.lava.top/products/bdc5912a-82b3-408d-b61e-bd0c049baa68" class="payment-window__link">
@@ -75,115 +72,7 @@
         </div>
       </div>
 
-      <div class="payment__list payment-list">
-        <div class="payment-list__item payment-list__item--btn">
 
-          <button class="payment-list__btn ">
-            {{ macrosText.paymentListTitleRu }}
-          </button>
-
-          <ul class="payment-list__payment payment-type">
-
-            <li class="payment-type__item">
-              <p class="payment-type__text">
-                {{ macrosText.paymentTypeTitleRu | safe }}
-              </p>
-            </li>
-            <li class="payment-type__item">
-
-              <div class="payment-type__title">
-                <div class="payment-type__logo">
-                  {{ macrosText.paymentLogoMoney }}
-                </div>
-                <div class="payment-type__head">
-                  {{ macrosText.paymentLabelMoneyRu }}
-                </div>
-              </div>
-
-              <button type="button" class="payment-type__btn"
-                aria-label="Показать (скрыть) список того, что в это входит"></button>
-              <div class="payment-type__description p-description">
-
-                <div class="p-description__block">
-                  <p class="p-description__text">Информация для денеженого перевода: Western Union, MoneyGram,
-                    KoronaPay. <br>
-                    <span class="p-description__copy"> Turkey, Antalya, Elena Pronina</span>
-                    <span class="p-description__copy">+90 (551) 841-32-23</span>
-                  </p>
-                  <div class="p-description__logo">
-                    <a href="https://www.westernunion.com" class="p-description__logo-link">
-                      {{ imagePng('p-description__picture', 'westernunion', 'p-description__image', 'WesternUnion logo',
-                      '315', '100') }}
-                    </a>
-                    <a href="https://www.moneygram.com/mgo/us/en/" class="p-description__logo-link">
-                      {{ imagePng('p-description__picture', 'monegr', 'p-description__image', 'MoneyGram logo',
-                      '315', '100') }}
-                    </a>
-                    <a href="https://koronapay.com/" class="p-description__logo-link">
-                      {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'KoronaPay
-                      logo') }}
-                    </a>
-                    <!-- <a href="{{ macrosText.paymentLinkWise }}" class="p-description__logo-link">
-                      {{ imagePng('p-description__picture', 'wise', 'p-description__image', 'Wise logo',
-                      '600', '146') }}
-                    </a> -->
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-            <li class="payment-type__item">
-              <div class="payment-type__title">
-                <div class="payment-type__logo">
-                  {{ macrosText.paymentLogoPaypal }}
-                </div>
-                <div class="payment-type__head">
-                  {{ macrosText.paymentLabelPaypalRu }}
-                </div>
-              </div>
-              <button type="button" class="payment-type__btn"
-                aria-label="Показать (скрыть) список того, что в это входит"></button>
-              <div class="payment-type__description p-description">
-                <p class="p-description__text">
-                  {{ macrosText.paymentDescripPaypalRu }}
-                  <br>
-                  <span class="p-description__copy">{{ macrosText.paymentLinkPaypal }}</span>
-                </p>
-                <div class="p-description__logo">
-                  <a class="p-description__logo-link" href="https://www.paypal.com/webapps/mpp/paypal-popup">
-                    <img src="img/PayPal.svg" alt="Paypal logo" class="p-description__image">
-                  </a>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="payment-type__item">
-              <div class="payment-type__title">
-                <div class="payment-type__logo">
-                  {{ macrosText.paymentLogoRf }}
-                </div>
-                <div class="payment-type__head">
-                  {{ macrosText.paymentLabelRfRu }}
-                </div>
-              </div>
-              <button type="button" class="payment-type__btn"
-                aria-label="Показать (скрыть) список того, что в это входит"></button>
-              <div class="payment-type__description">
-                <p class="payment-type__text">Выберите урок и переведите соответствующую сумму в рублях. Банк Тинькофф
-                  по номеру телефона <span class="p-description__copy">+79958850643</span> Елена П. Если
-                  переводить через СБП, то без комиссии любому банку.
-                </p>
-                <div class="buy">
-                  <a href="{{ macrosText.paymentLinkRf }}" class="buy__link"
-                    aria-label="Ссылка на оплату через Тинькоф.">Перейти на страницу оплаты
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
 
 
 
@@ -259,6 +148,117 @@
 
       </ul>
 
+      <div class="payment__title title-section">
+        <h2 class="title-section__head title-section__head--blue title-section__head--left">
+          {{ macrosText.paymentTitleRu }}
+        </h2>
+      </div>
+      <div class="payment__list payment-list">
+        <div class="payment-list__item payment-list__item--btn">
+
+          <!-- <button class="payment-list__btn ">
+            {{ macrosText.paymentListTitleRu }}
+          </button> -->
+
+          <ul class="payment-list__payment payment-type payment-list__payment--open">
+
+            <li class="payment-type__item">
+              <p class="payment-type__text">
+                {{ macrosText.paymentTypeTitleRu | safe }}
+              </p>
+            </li>
+            <li class="payment-type__item">
+
+              <div class="payment-type__title">
+                <div class="payment-type__logo">
+                  {{ macrosText.paymentLogoMoney }}
+                </div>
+                <div class="payment-type__head">
+                  {{ macrosText.paymentLabelMoneyRu }}
+                </div>
+              </div>
+
+              <button type="button" class="payment-type__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <div class="payment-type__description p-description">
+
+                <div class="p-description__block">
+                  <div class="p-description__logo">
+                    <a href="https://www.westernunion.com" class="p-description__logo-link">
+                      {{ imagePng('p-description__picture', 'westernunion', 'p-description__image', 'WesternUnion logo',
+                      '315', '100') }}
+                    </a>
+                    <a href="https://www.moneygram.com/mgo/us/en/" class="p-description__logo-link">
+                      {{ imagePng('p-description__picture', 'monegr', 'p-description__image', 'MoneyGram logo',
+                      '315', '100') }}
+                    </a>
+                    <a href="https://koronapay.com/" class="p-description__logo-link">
+                      {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'KoronaPay
+                      logo') }}
+                    </a>
+                  </div>
+                  <p class="p-description__text">Информация для денеженого перевода: Western Union, MoneyGram,
+                    KoronaPay. <br>
+                    <span class="p-description__copy"> Turkey, Antalya, Elena Pronina</span>
+                    <span class="p-description__copy">+90 (551) 841-32-23</span>
+                  </p>
+
+
+                </div>
+
+              </div>
+            </li>
+            <li class="payment-type__item">
+              <div class="payment-type__title">
+                <div class="payment-type__logo">
+                  {{ macrosText.paymentLogoPaypal }}
+                </div>
+                <div class="payment-type__head">
+                  {{ macrosText.paymentLabelPaypalRu }}
+                </div>
+              </div>
+              <button type="button" class="payment-type__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <div class="payment-type__description p-description">
+                <div class="p-description__logo">
+                  <a class="p-description__logo-link" href="https://www.paypal.com/webapps/mpp/paypal-popup">
+                    <img src="img/PayPal.svg" alt="Paypal logo" class="p-description__image">
+                  </a>
+                </div>
+                <p class="p-description__text">
+                  {{ macrosText.paymentDescripPaypalRu }}
+                  <br>
+                  <span class="p-description__copy">{{ macrosText.paymentLinkPaypal }}</span>
+                </p>
+
+              </div>
+            </li>
+            <li class="payment-type__item">
+              <div class="payment-type__title">
+                <div class="payment-type__logo">
+                  {{ macrosText.paymentLogoRf }}
+                </div>
+                <div class="payment-type__head">
+                  {{ macrosText.paymentLabelRfRu }}
+                </div>
+              </div>
+              <button type="button" class="payment-type__btn"
+                aria-label="Показать (скрыть) список того, что в это входит"></button>
+              <div class="payment-type__description">
+                <p class="payment-type__text">Выберите урок и переведите соответствующую сумму в рублях. Банк Тинькофф
+                  по номеру телефона <span class="p-description__copy">+79958850643</span> Елена П. Если
+                  переводить через СБП, то без комиссии любому банку.
+                </p>
+                <div class="buy">
+                  <a href="{{ macrosText.paymentLinkRf }}" class="buy__link"
+                    aria-label="Ссылка на оплату через Тинькоф.">Перейти на страницу оплаты
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
   <div class="end-photo">

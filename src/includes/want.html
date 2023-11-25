@@ -3,6 +3,7 @@
   <div class="container">
 
     <div class="want">
+
       <div class="want__title title-section">
         <h2 class="title-section__head title-section__head--red">
           {{ macrosText.wantTitleRu }}
@@ -121,13 +122,9 @@
             <button type="button" class="summary__btn summary__btn--yellow summary__btn-5"></button>
             <ul class="popup popup--yellow">
 
-              {% for item in macrosText.courseSupportRu %}
               <li class="popup__item">
-                <p>
-                  {{ item.text1 | safe }}
-                </p>
+                <p>{{ macrosText.courseSupportRu | safe }}</p>
               </li>
-              {% endfor %}
 
             </ul>
           </li>
@@ -137,7 +134,7 @@
         <div class="preview__body preview-body">
           <div class="preview-body__item">
             <p class="preview-body__text">
-              {{ macrosText.wantPreviePart1Ru }}
+              {{ macrosText.wantPreviePart1Ru | safe }}
             </p>
             <picture class="preview-body__picture">
               <source srcset="img/pdf.webp" type="image/webp">
@@ -147,7 +144,7 @@
           </div>
           <div class="preview-body__item">
             <p class="preview-body__text">
-              {{ macrosText.wantPreviePart2Ru }}
+              {{ macrosText.wantPreviePart2Ru | safe }}
             </p>
             <div class="youtube">
               <a href="https://youtu.be/OypiTBK4duY?si=hfKF51PmqQS3ugtC" class="youtube__link youtube__link--preview">
@@ -160,19 +157,20 @@
             </div>
 
           </div>
-          <div class="preview-body__item preview-body__item--link">
-            <p class="preview-body__text">В данный момент мой курс распололжен на закрытом канале Телеграмм. После
-              покупки, вы
-              становитесь участником этого канала. Я регулярно обновляю и улучшаю курс, в том числе добавляю новые вкусы
-              начинок.
-              В этом канале вам будут доступны все последующие обновления.<br>
-              Если у вас нет возможности использовать приложение Telegram. Я дам вам доступ на мой закрытый YouTube
-              канал, где вы сможете смотреть мои уроки.
+          <div class="preview-body__item">
+
+            <p class="preview-body__text">
+              <b>3. Этот курс расположен в закрытом телеграмм канале.</b> После покупки, я добавляю
+              вас в этот канал.
+              Я постоянно обновляют и улучшаю курс, в том числе добавляя новые видео. В телеграмм канале вам сразу
+              становятся доступны все обновления.<br>
+              <b>4. Для тех у кого нет Телеграмм.</b> Я предоставлю вам доступ
+              на мой закрытый ютуб канал, где будут доступны все видео.
             </p>
             <div class="payment-button">
-              <button type="button" class="payment-button__btn payment-button__btn1">
-                {{ macrosText.paymentBtnRu }}
-              </button>
+              <a class="payment-button__btn" href="#offer">
+                Перейти к ценам
+              </a>
             </div>
 
 
@@ -180,6 +178,7 @@
         </div>
 
       </div>
+
     </div>
   </div>
 </section>

@@ -133,7 +133,7 @@
         <div class="preview__body preview-body">
           <div class="preview-body__item preview-body__item--pdf">
             <p class="preview-body__text">
-              {{ macrosText.wantPreviePart1En }}
+              {{ macrosText.wantPreviePart1En | safe }}
             </p>
             <picture class="preview-body__picture">
               <source srcset="img/pdf-eng.webp" type="image/webp">
@@ -143,7 +143,7 @@
           </div>
           <div class="preview-body__item">
             <p class="preview-body__text">
-              {{ macrosText.wantPreviePart2En }}
+              {{ macrosText.wantPreviePart2En | safe }}
             </p>
             <div class="youtube">
               <a href="https://youtu.be/4F9FjBYJpyE?si=phBTmu_L48ejWby8" class="youtube__link youtube__link--preview">
@@ -156,17 +156,20 @@
           </div>
 
           <div class="preview-body__item preview-body__item--link">
-            <p class="preview-body__text">Now my course is located on my private Telegram channel. After the purchase,
-              you become a member of this channel. I regularly update and improve the course, including adding new
-              flavors of fillings. All subsequent updates will be available to you in this channel.<br>
-              If you can't use the Telegram app, I will give you access to my private YouTube channel where you can
-              watch my tutorials.</p>
+            <p class="preview-body__text">
+              <b>3. Course on Telegram.</b> The course is currently hosted on my private Telegram channel. Upon
+              purchase, you become a member of this channel. I consistently update and enhance the course, which
+              includes adding new flavors of fillings. All subsequent updates will be accessible through this
+              channel.<br>
+              <b>4. Alternative for non-Telegram users.</b> If you are unable to use the Telegram app, I'll provide
+              access
+              to my private YouTube channel, allowing you to watch the tutorials.
+            </p>
             <div class="payment-button">
-              <button type="button" class="payment-button__btn payment-button__btn1">
-                {{ macrosText.paymentBtnEn }}
-              </button>
+              <a class="payment-button__btn" href="#offer">
+                View prices
+              </a>
             </div>
-
 
           </div>
         </div>
