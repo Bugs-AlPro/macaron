@@ -55,6 +55,7 @@
     }
 
     &--feedback {
+      padding-bottom: 50px;
       background-color: var(--back-lightblue);
       background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%237d96a5' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
@@ -548,167 +549,6 @@
       margin-bottom: 1em;
 
     }
-  }
-
-  .errors {
-    padding-bottom: 50px;
-
-    &__list {
-      margin-top: 50px;
-      display: grid;
-      // justify-content: center;
-      gap: 10px;
-    }
-
-    &__item {
-      font-size: 1.1em;
-      color: var(--text-gray);
-      background-color: white;
-      position: relative;
-      z-index: 2;
-      padding: 8px;
-      justify-self: start;
-      border-left: 20px solid var(--back-lightred);
-
-      &--img-sm {
-        border-left: none;
-        // position: absolute;
-      }
-
-      // box-shadow: 0 0 5px 5px var(--back-lightblue);
-
-      // &--center {
-      //   justify-self: center;
-      // }
-
-      // &--right {
-      //   justify-self: end;
-      // }
-    }
-
-    // &__list {
-    //   display: grid;
-    //   grid-template-columns: auto;
-    //   row-gap: 2em;
-    //   column-gap: 1em;
-    // }
-
-    // &__item {
-    //   font-size: 1.8em;
-    //   text-align: center;
-    //   padding: 10px;
-    //   background-color: var(--hover-bluedark);
-    //   // display: inline-grid;
-    //   // margin: auto;
-    //   position: relative;
-    //   z-index: 2;
-    //   box-shadow: 0 0 4px 3px var(--text-gray);
-    //   color: white;
-
-    //   &--img {
-    //     background-color: #fff;
-    //     // grid-column-start: 2;
-    //     // grid-column-end: 3;
-    //     // grid-row-start: 1;
-    //     // grid-row-end: 9;
-    //     padding: 0;
-    //     box-shadow: none;
-    //     overflow: hidden;
-    //   }
-
-    &__item--img-xl {
-      display: none;
-    }
-
-    // &--red {
-    //   background-color: var(--title-red);
-    // }
-
-    // &--span {
-    //   grid-column: span 2;
-    //   background-color: var(--back-lightred);
-    //   box-shadow: 0 0 4px 2px var(--title-red);
-    //   color: var(--text-gray);
-    // }
-  }
-
-
-  .errors-img-sm {
-    display: flex;
-    // gap: 1em;
-    padding: 10px 0;
-
-    &__item {
-      height: auto;
-      width: 100%;
-    }
-
-    &__img {
-      box-shadow: 0 0 4px 1px var(--text-gray);
-      margin-right: 10px;
-      display: block;
-      // width: auto;
-      // padding: 5px;
-      // height: 100%;
-      // min-height: 200px;
-      height: auto;
-      width: 100%;
-      border-radius: 10px;
-    }
-
-  }
-
-  .skils {
-    padding-bottom: 50px;
-
-    &__list {
-      display: grid;
-      // justify-content: center;
-      gap: 10px;
-    }
-
-    &__item {
-      font-size: 1.1em;
-      color: var(--text-gray);
-      background-color: white;
-      position: relative;
-      z-index: 2;
-      padding: 8px;
-      justify-self: start;
-      border-left: 20px solid var(--back-green);
-      box-shadow: 0 0 5px 5px var(--back-lightblue);
-
-      // &--center {
-      //   justify-self: center;
-      // }
-
-      // &--right {
-      //   justify-self: end;
-      // }
-    }
-
-    // &__item::before {
-    //   position: absolute;
-    //   content: "";
-    //   width: 40px;
-    //   height: 80%;
-    //   // border-radius: 5px;
-    //   left: -45px;
-    //   top: 10%;
-    //   background-color: #fff;
-    // }
-
-    // &__item::after {
-    //   position: absolute;
-    //   content: "";
-    //   width: 20px;
-    //   height: 10px;
-    //   left: -35px;
-    //   top: 15px;
-    //   border-top: 4px solid var(--back-green);
-    //   border-right: 4px solid var(--back-green);
-    //   transform: rotate(-230deg);
-    // }
   }
 
   .offer {
@@ -1910,19 +1750,7 @@
     // }
   }
 
-  .feedback-slider {
 
-    &__item {
-      height: 350px;
-      padding-left: 10px;
-      padding-bottom: 10px;
-    }
-
-    &__img {
-      height: 100%;
-      border-radius: 10px;
-    }
-  }
 
   .tns-visually-hidden {
     position: absolute;
@@ -1937,10 +1765,6 @@
     font-size: 1em;
   }
 
-  .feedback {
-    overflow: hidden;
-    padding: 0 0 50px 0;
-  }
 
   .social {
     display: flex;

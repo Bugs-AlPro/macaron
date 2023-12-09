@@ -9,6 +9,15 @@
 @import '_parts/_header/language';
 @import '_parts/_header/nav';
 
+// Подключаем стили для skills
+@import '_parts/_skils/skils';
+
+// Подключаем стили для errors
+@import '_parts/_errors/errors';
+
+// Подключаем стили для отзывов
+@import '_parts/_feedback/feedback';
+
 // Подключаем стили для распродаж
 @import '_parts/_promo/sale';
 
