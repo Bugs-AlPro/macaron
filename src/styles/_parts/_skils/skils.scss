@@ -1,0 +1,51 @@
+.skils {
+    &__list {
+        display: grid;
+        gap: 8px;
+    }
+
+    &__item {
+        color: var(--text-gray);
+        background-color: white;
+        position: relative;
+        z-index: 2;
+        padding: 8px;
+        justify-self: start;
+        box-shadow: 0 0 5px 5px var(--back-lightblue);
+
+        @include media-up(lg) {
+            font-size: 1.4em;
+            border-left: 40px solid var(--back-green);
+        }
+
+        @include media-down(lg) {
+            font-size: 1.1em;
+            border-left: 20px solid var(--back-green);
+        }
+
+    }
+
+    @include media-up(lg) {
+        &__item::before {
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 80%;
+            left: -35px;
+            top: 10%;
+            background-color: #fff;
+        }
+
+        &__item::after {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 10px;
+            left: -32px;
+            top: 13px;
+            border-top: 4px solid var(--back-green);
+            border-right: 4px solid var(--back-green);
+            transform: rotate(-230deg);
+        }
+    }
+}

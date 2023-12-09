@@ -1,0 +1,179 @@
+<section class="wrap wrap--want">
+
+  <div class="container">
+
+    <div class="want">
+      <div class="want__title title-section">
+        <h2 class="title-section__head title-section__head--red">
+          {{ macrosText.wantTitleEn }}
+        </h2>
+        <p class="title-section__text title-section__text--want">
+          {{ macrosText.wantSubTitleEn }}
+        </p>
+      </div>
+
+      <div class="want__video youtube">
+        {% for item in macrosData.youtubePreview %}
+        <a href="{{ item.linkEn }}" class="youtube__link">
+          <picture class="youtube__picture">
+            <source srcset="img/{{ item.coverEn }}.webp" type="image/webp">
+            <img src="img/{{ item.coverEn }}.jpg" alt="{{ item.altEn }}" class="youtube__img">
+          </picture>
+        </a>
+        {% endfor %}
+      </div>
+
+      <ul class="want__list interesting">
+
+        {% for item in macrosText.wantList %}
+        <li class="interesting__item">
+          <div class="interesting__count">{{ item.count }}</div>
+          <div class="interesting__body">
+            <h3 class="interesting__title">{{ item.title2 }}</h3>
+            <p class="interesting__description">{{ item.description2 | safe }}</p>
+          </div>
+        </li>
+        {% endfor %}
+
+      </ul>
+
+      <div class="want__preview preview">
+        <div class="preview__top">
+
+          <h3 class="preview__title">
+            {{ macrosText.wantPreviewEn }}
+          </h3>
+        </div>
+        <ul class="preview__summary summary">
+
+          <li class="summary__item summary__item--img">
+            {{ imageSvgColor('cook', 'svgcolor summary__img', '70', '100', 'Girl confectioner.') }}
+          </li>
+
+          <li class="summary__item">
+
+            <div class="summary__title">{{ macrosText.wantSummaryTitle1En }}</div>
+            <div class="summary__description">{{ macrosText.wantSummarySubTitle1En }}</div>
+            <button type="button" class="summary__btn summary__btn--green summary__btn-1"></button>
+            <ul class="popup popup--green">
+
+              {% for item in macrosText.allVideosForCourse %}
+              <li class="popup__item">{{ item.text2 }}</li>
+              {% endfor %}
+
+            </ul>
+
+          </li>
+
+          <li class="summary__item">
+
+            <div class="summary__title">{{ macrosText.wantSummaryTitle2En }}</div>
+            <div class="summary__description">{{ macrosText.wantSummarySubTitle2En }}</div>
+            <button type="button" class="summary__btn summary__btn--blue summary__btn--open summary__btn-2"></button>
+            <ul class="popup popup--blue popup--open">
+
+              {% for item in macrosText.fillingsTypes %}
+              <li class="popup__item">{{ item.text2 }}</li>
+              {% endfor %}
+
+            </ul>
+
+          </li>
+
+          <li class="summary__item">
+
+            <div class="summary__title">{{ macrosText.wantSummaryTitle3En }}</div>
+            <div class="summary__description">{{ macrosText.wantSummarySubTitle3En }}</div>
+            <button type="button" class="summary__btn summary__btn--red summary__btn-3"></button>
+            <ul class="popup popup--red">
+
+
+              {% for item in macrosText.courseInformation %}
+              <li class="popup__item">
+                <p>
+                  {{ item.text2 | safe }}
+                </p>
+              </li>
+              {% endfor %}
+
+            </ul>
+
+          </li>
+
+          <li class="summary__item">
+
+            <div class="summary__title">{{ macrosText.wantSummaryTitle4En }}</div>
+            <div class="summary__description">{{ macrosText.wantSummarySubTitle4En }}</div>
+            <button type="button" class="summary__btn summary__btn--purple summary__btn-4"></button>
+            <ul class="popup popup--purple">
+
+              <li class="popup__item">
+                <p>{{ macrosText.courseAccessEn | safe }}</p>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="summary__item">
+
+            <div class="summary__title">{{ macrosText.wantSummaryTitle5En }}</div>
+            <div class="summary__description">{{ macrosText.wantSummarySubTitle5En }}</div>
+            <button type="button" class="summary__btn summary__btn--yellow summary__btn-5"></button>
+            <ul class="popup popup--yellow">
+
+              <li class="popup__item">
+                <p>{{ macrosText.courseSupportEn | safe }}</p>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+        <div class="preview__body preview-body">
+          <div class="preview-body__item preview-body__item--pdf">
+            <p class="preview-body__text">
+              {{ macrosText.wantPreviePart1En | safe }}
+            </p>
+            <picture class="preview-body__picture">
+              <source srcset="img/pdf-eng.webp" type="image/webp">
+              <img src="img/pdf-eng.png" alt="Screenshot of one page from PDF." class="preview-body__img" width="100"
+                height="100">
+            </picture>
+          </div>
+          <div class="preview-body__item">
+            <p class="preview-body__text">
+              {{ macrosText.wantPreviePart2En | safe }}
+            </p>
+            <div class="youtube">
+              <a href="https://youtu.be/4F9FjBYJpyE?si=phBTmu_L48ejWby8" class="youtube__link youtube__link--preview">
+                <picture class="youtube__picture">
+                  <source srcset="img/confi-en.webp" type="image/webp">
+                  <img src="img/confi-en.jpg" alt="How to make fruit and berry confit from mango." class="youtube__img">
+                </picture>
+              </a>
+            </div>
+          </div>
+
+          <div class="preview-body__item preview-body__item--link">
+            <p class="preview-body__text">
+              <b>3. Course on Telegram.</b> The course is currently hosted on my private Telegram channel. Upon
+              purchase, you become a member of this channel. I consistently update and enhance the course, which
+              includes adding new flavors of fillings. All subsequent updates will be accessible through this
+              channel.<br>
+              <b>4. Alternative for non-Telegram users.</b> If you are unable to use the Telegram app, I'll provide
+              access
+              to my private YouTube channel, allowing you to watch the tutorials.
+            </p>
+            <div class="payment-button">
+              <a class="payment-button__btn" href="#offer">
+                View prices
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

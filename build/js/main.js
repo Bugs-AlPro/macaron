@@ -7,13 +7,14 @@ for (let offerItem of offerItems) {
     offerItem.nextElementSibling.classList.toggle('offer-item__body--open');
   })
 }
-const paymentItems = document.querySelectorAll('.payment__btn');
+const paymentItems = document.querySelectorAll('.payment-type__btn');
 for (let paymentItem of paymentItems) {
   paymentItem.addEventListener('click', () => {
-    paymentItem.classList.toggle('payment__btn--open');
-    paymentItem.nextElementSibling.classList.toggle('payment__description--open');
+    paymentItem.classList.toggle('payment-type__btn--open');
+    paymentItem.nextElementSibling.classList.toggle('payment-type__payment--open');
   })
 }
+
 
 const costsBtns = document.querySelectorAll('.currency__btn');
 const costsBtnUsd = document.querySelector('.currency__btn--usd');
@@ -74,3 +75,24 @@ costsBtnRub.addEventListener('click', () => {
   }
 }
 )
+
+// const paymentBtn = document.querySelector('.payment-list__btn');
+// paymentBtn.addEventListener('click', () => {
+//   paymentBtn.classList.toggle('payment-list__btn--open');
+//   paymentBtn.nextElementSibling.classList.toggle('payment-list__payment--open');
+// })
+
+
+const summaryBtns = document.querySelectorAll('.summary__btn');
+
+for (let summaryBtn of summaryBtns) {
+  summaryBtn.addEventListener('click', () => {
+    for (let summaryBtn of summaryBtns) {
+      summaryBtn.classList.remove('summary__btn--open');
+      summaryBtn.nextElementSibling.classList.remove('popup--open');
+    }
+    summaryBtn.classList.toggle('summary__btn--open');
+    summaryBtn.nextElementSibling.classList.toggle('popup--open');
+  })
+
+}

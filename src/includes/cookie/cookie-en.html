@@ -1,0 +1,17 @@
+<!-- Подключаем файл с переводом текста -->
+{% import "includes/cookie/text-content-cookie.html" as cookieText %}
+
+<div class="cookie">
+    <div class="cookie__body">
+        <p class="cookie__text">
+            {{ cookieText.cookieTranslate.text.en | safe }}
+        </p>
+        <button type="button" class="cookie__btn cookie__btn--yes">
+            {{ cookieText.cookieTranslate.allow.en }}
+        </button>
+        <button type="button" class="cookie__btn cookie__btn--no">
+            {{ cookieText.cookieTranslate.decline.en }}
+        </button>
+
+    </div>
+</div>

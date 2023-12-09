@@ -1,15 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="{{ lang }}">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords"
-    content="пирожные, макаронс, обучение макаронс, macarons, как приготовить макаронс, макарунс, macaron_by_elena">
-  <meta name="description"
-    content="Обучаю приготовлению вкуснейшего десерта - Макарон. Даже если вы не кондитер - обязательно попробуйте себя в этой роли! Не пожалеете!">
+  <meta name="keywords" content="{{ keywords }}">
+  <meta name="description" content="{{ description }}">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="css/main.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6SCG1VL8"></script>
+  <script>
+
+    window['ga-disable-G-GH6SCG1VL8'] = false;
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GH6SCG1VL8');
+    gtag('set', 'allow_google_signals', false);
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('consent', 'revoke');
+    fbq('init', '1138973390049442');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1138973390049442&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 
 <body class="body">
@@ -18,14 +48,25 @@
   {% endblock %}
 
   <script src="js/main.js"></script>
+  <script src="js/cookie.js"></script>
+  <script src="js/nav-menu.js"></script>
+  <script src="{{ buyBtn }}"></script>
   <script src="js/tiny.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="{{ js }}"></script>
+
+  <!-- <script type="text/javascript">
+    const pixelBtn = document.querySelector('.pixel-btn');
+    pixelBtn.addEventListener('click', () => {
+      fbq('track', 'AddToWishlist');
+    })
+  </script> -->
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Glory:wght@400;500;600;700&family=Kurale&family=Lobster&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Glory:wght@400;500;700&family=Kurale&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
     rel="stylesheet">
-
 </body>
 
 </html>

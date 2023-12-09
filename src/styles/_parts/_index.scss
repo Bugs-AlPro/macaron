@@ -1,17 +1,23 @@
 body {
-  // font-family: 'Glory', sans-serif;
-  // font-family: 'Lobster', cursive;
-    // font-family: 'Pacifico', cursive;
   font-family: 'Montserrat', sans-serif;
   min-width: 320px;
   margin: 0;
 }
-ul, li, p {
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li,
+p {
   list-style: none;
   padding: 0;
   margin: 0;
-  }
-.hidden-text {
+}
+
+.hidden-text,
+.tns-visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -24,7 +30,7 @@ ul, li, p {
   font-size: 1em;
   overflow: hidden;
 }
+
 .svg {
   fill: currentColor;
 }
-

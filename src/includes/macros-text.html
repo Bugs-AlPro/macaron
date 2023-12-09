@@ -1,0 +1,384 @@
+{% set maitTitleRU = 'Онлайн курс "Макарон"' %}
+{% set maitTitleEn = 'Online course on Macarons' %}
+{% set maitSubTitleRU = 'научись готовить изысканный французский десерт за 3 дня' %}
+{% set maitSubTitleEn = 'learn how to make a delicious French dessert in 3 days' %}
+
+
+{% set wantTitleRu = 'Для кого этот курс?' %}
+{% set wantTitleEn = 'Who is this course for?' %}
+
+{% set wantSubTitleRu = 'Узнать подробнее о курсе за 1 минуту' %}
+{% set wantSubTitleEn = 'Get details in 1 minute' %}
+
+{% set wantList = [
+{count: "1", title1: "Для поклонников макарон", title2: "For macaron enthusiasts",
+description1: "Для тех кто <b>любит</b> пирожные макарон и <b>хочет</b> научится их готовить.",
+description2: "For those who <b>love</b> macarons and <b>want</b> to learn how to make them."},
+
+{count: "2", title1: "Для тех у кого они не получаются", title2: "For those facing macaron challenges",
+description1: "Для тех кто уже пробовал готовить макарон, но <b>хороший результат</b> получался нестабильно.",
+description2: "For individuals who have tried making macarons but have not consistently achieved <b>successful</b>
+results."},
+
+{count: "3", title1: "Для кондитеров", title2: "For pastry chefs looking to diversify",
+description1: "Для тех кто хочет освоить новую нишу и <b>раширить</b> свой ассоритмент.",
+description2: "For confectioners who wish to explore a new area and <b>expand</b> their skills."}
+]%}
+
+
+{% set wantPreviewRu = 'Из чего состоит мой курс' %}
+{% set wantPreviewEn = 'Check out what`s in my course' %}
+
+{% set wantSummaryTitle1Ru = 'Видео уроки' %}
+{% set wantSummaryTitle1En = 'Video lessons' %}
+{% set wantSummarySubTitle1Ru = 'Более 16 видео' %}
+{% set wantSummarySubTitle1En = 'More 16 videos' %}
+
+{% set wantSummaryTitle2Ru = 'Начинки' %}
+{% set wantSummaryTitle2En = 'Fillings' %}
+{% set wantSummarySubTitle2Ru = 'Более 30 видов' %}
+{% set wantSummarySubTitle2En = 'More 30 types' %}
+
+{% set wantSummaryTitle3Ru = 'Тех. карта' %}
+{% set wantSummaryTitle3En = 'Technical card' %}
+{% set wantSummarySubTitle3Ru = '70 страниц' %}
+{% set wantSummarySubTitle3En = '70 pages' %}
+
+{% set wantSummaryTitle4Ru = 'Доступ' %}
+{% set wantSummaryTitle4En = 'Access' %}
+{% set wantSummarySubTitle4Ru = 'Навсегда' %}
+{% set wantSummarySubTitle4En = 'Forever' %}
+
+{% set wantSummaryTitle5Ru = 'Поддержка' %}
+{% set wantSummaryTitle5En = 'Support' %}
+{% set wantSummarySubTitle5Ru = 'Онлайн чат' %}
+{% set wantSummarySubTitle5En = 'Online Chat' %}
+
+{% set courseInformation= [
+{text1: "<b>Крышечки</b> - в настоящий момент PDF документ о крышечках содерит в себе около 30 страниц текста.
+Там я подробно рассказываю технологию приготовления.<br>
+В курсе я предоставляю рецепт с <b>пониженным</b> содержанием сахара.",
+text2: "<b>Shells</b> - at the moment, a PDF document about shells contains about 30 pages of text.
+There I tell you in detail the cooking technology.<br>
+In the course, I provide a recipe with <b>reduced</b> sugar content."},
+
+{text1: "<b>Начинки</b> - в настоящий момент PDF документ о начинках содержат около 40 страниц с рецептами для более 30
+начинок.",
+text2: "<b>Fillings</b> - at the moment, the PDF document on fillings contains about 40 pages with recipes for more than
+30 fillings."}
+]%}
+
+{% set courseAccessRu = 'Скажу честно, я <b>не планирую удалять</b> у вас доступ к файлам, через год. Пользуйтесь
+сколько
+хотите. Но также я не могу
+гарантировать, что интернет сервисы будут стабильно работать многие годы.' %}
+{% set courseAccessEn = 'To be honest, I <b>do not plan to delete</b> you have access to files, in a year. Use
+it as much as
+you want. But I also cannot
+guarantee that Internet services will work stably for many years.' %}
+
+
+{% set courseSupportRu = 'Если вы купите курс, то я буду лично отвечать на ваши вопросы и подсказывать как решить
+какую-либо проблему в приготовлении пирожных макарон.' %}
+{% set courseSupportEn = 'If you are buying my course, I will personally answer your questions and advise.' %}
+
+{% set allVideosForCourse = [
+{text1: "Рецепт с уменьшеным содержанием сахара",
+text2: "Recipe with reduced sugar content"},
+{text1: "Иатльянсая меренга. Ручной миксер.", text2:
+"Italian mirengue. Hand mixer."},
+{text1: "Иатльянская меренга. Планетарный миксер.",
+text2: " Italian mirengue. Stand mixer."},
+{text1: "Как приготовить макронаж",
+text2: "How to cook macronage"},
+{text1: "Выпекание крышечек",
+text2: "Baking shalls"},
+{text1: "Сборка готовых пирожных",
+text2: "Assembling shells"},
+{text1: "Как отсаживать фигурные макарон",
+text2: "How to pipe curly shells"},
+{text1: "Пирожные макарон. Роспись и рисунки",
+text2: "Macarons cakes. Painting and drawings"},
+{text1: "Ошибки в приготовлении меренги",
+text2: "Mistakes of Italian meringue"},
+{text1: "Сухой белок",
+text2: "Egg white powder"},
+{text1: "Как приготовить ганаш на белом шоколаде",
+text2: "How to make ganache on white chocolate "},
+{text1: "Как приготовить ганаш на молочном шоколаде",
+text2: "How to make ganache on milk chocolate"},
+{text1: "Как приготовить Фруктово-Ягодный ганаш",
+text2: "How to make fruit and berry ganache"},
+{text1: "Как приготовить взбитый ганаш Пряничное-латте",
+text2: "How to make whipped ganache Gingerbread latte"},
+{text1: "Взбитый ганаш с ароматизацией",
+text2: "Flavored whipped ganache"},
+{text1: "Как приготовить фруктово-ягодное конфи",
+text2: "How to make fruit and berry confit"}
+]%}
+
+{% set wantPreviePart1Ru = '<b>1. Вы получите PDF файл.</b> Вы получаете файл с подробной инструкцией, где описан весь
+процесс
+приготовления.' %}
+{% set wantPreviePart1En = '<b>1. You will receive a PDF file.</b> Receive a PDF file detailing the entire cooking
+process.' %}
+
+{% set wantPreviePart2Ru = '<b>2. Вы получаете видео всего процесса приготовления.</b> Все видео озвучены на
+русском языке и имеют субтитры.' %}
+{% set wantPreviePart2En = '<b>2. You will receive a video of the entire cooking process.</b> Currently, the videos are
+in English, and they all include English
+subtitles.' %}
+
+
+{% set errorsTitleRU = 'Распространённые трудности' %}
+{% set errorsSubTitleRU = 'которые мы решаем на курсе' %}
+
+{% set errorsTypes = [
+{text1: "Почему макарон пустые внутри?",
+text2: "Why are the shells inside empty?"},
+{text1: "Почему крышечки не ровные?", text2:
+"Why are the shells uneven?"},
+{text1: "Почему макарон после начинки отсырели?",
+text2: "Why did the macarons get wet after filling?"},
+{text1: "Почему крышечки взрываются?",
+text2: "Why do the shells 'explode'?"},
+{text1: "Почему юбочки не растут?",
+text2: "Why don't feet grow?"},
+{text1: "Как выбрать правильную температуру для своей духовки?",
+text2: " How to choose the right temperature for your oven?"},
+{text1: "Почему меренга не получается?",
+text2: "Why is the meringue not going well?"},
+{text1: "Почему нужна электрическая духовка?",
+text2: "Why do I need an electric oven?"}
+]%}
+
+{% set errorsTitleEn = 'Typical difficulties' %}
+{% set errorsSubTitleEn = 'Addressed in the course' %}
+
+{% set skilsTitleRU = 'После прохождения курса вы научитесь' %}
+{% set skilsTitleEN = 'After completing the course, you will learn' %}
+
+{% set skilsTypes = [
+{text1: "Готовить макарон на итальянской меренге.",
+text2: "Make macarons using Italian meringue."},
+{text1: "Сможете стабильно получать хороший результат.",
+text2: "You will be able to consistently get a good result."},
+{text1: "Узнаете как готовить более 30 начинок разных вкусов.",
+text2: "Learn how to make fillings with different flavors."},
+{text1: "Научитесь готовить взбитые начинки для макарон.",
+text2: "Learn how to make whipped macaron fillings."},
+{text1: "Научитесь делать пирожные разной формы.",
+text2: "Create macarons in various shapes."},
+{text1: "Узнаете как делать рисунки на макарон.",
+text2: "Decorate macarons with drawings."},
+{text1: "Сможете смело принимать заказы и увеличивать количетсво продаж.",
+text2: "Confidently take orders and increase sales."}
+]%}
+
+{% set feedbackTitleRU = 'Отзывы моих учеников' %}
+{% set feedbackTitleEn = 'Well of reviews' %}
+
+{% set aboutTitleRu = 'Познакомимся?' %}
+{% set aboutTitleEn = 'About me' %}
+{% set aboutSubTitleRu = 'Как я пришла к макарон!' %}
+{% set aboutSubTitleEn = 'How I started cooking macarons?' %}
+
+{% set aboutText = [
+{class: "1",
+text1: "Однажды на открытии французского магазина <b>L’Occitane</b>, нас угощали пирожными Макарон. Никогда в
+жизни я не пробовала такого вкуснейшего, нежного десерта. После этого я начала искать хотябы что-то
+подобное. Но к сожалению ни в одном магазине такое не купишь. Только в хороших дорогих кофейнях можно найти
+вкусные макарон, да и то, если они свежеприготовленны и правильно хранятся. Ведь их срок годности 3-4 дня.
+Именно поэтому я решила сама научиться их готовить!",
+text2: "Once, at the opening of the French store <b>L’Occitane</b>, we were treated to macarons. Never before had I
+tasted such
+a deliciously delicate dessert. After that, I began searching for something similar, but unfortunately, it was
+challenging for me to find where one could buy such cakes. Delicious macarons can only be found in good, expensive
+coffee shops, and even then, only if they are fresh and properly stored, considering their shelf life is 3-4 days.
+That's why I decided to learn how to cook them myself!"},
+{class: "2",
+text1: "Потратив на это <b>год</b>, поменяв духовку с газовой на <b>электрическую</b>, просмотрев кучу сайтов,
+переведя очень много продуктов - я вывела стабильный рецепт приготовления.",
+text2: "After dedicating a <b>year</b> to it, transitioning from a gas to an <b>electric oven</b>, exploring many
+websites, and
+investing in a lot of ingredients, I found a stable recipe for cooking."},
+{class: "3",
+text1: "Я уже помогла более <b>500</b> своим ученикам научиться
+готовить пирожные макарон. Со мной у вас обязательно получатся пирожные макарон, потому что я открою вам
+небольшой секрет их
+приготовления.
+Благодаря ему - эти капризные десерты получатся у каждого. Не важно кондитер вы или только встаёте на
+этот путь - у нас всё получится!",
+text2: " I have already helped over <b>500</b> of my students learn how to cook macaron cakes. With me, you will
+undoubtedly
+succeed because I will share a little secret in their preparation. With such assistance, everyone can master these
+capricious desserts, regardless of whether you are a pastry chef or just starting this journey!"}
+]%}
+
+{% set offerTitleRU = "1. Выберите и оплатите курс" %}
+{% set offerTitleEn = "1. Choose and pay for the course" %}
+
+{% set paymentTitleRu = "3. Дополнительные способы оплаты" %}
+{% set paymentTitleEn = "3. Additional payment methods" %}
+
+
+{% set paymentBtnRu = "Купить курс" %}
+{% set paymentBtnEn = "Buy" %}
+
+{% set paymentWindowTitleRu = "Оплата курсов происходит на сайте " %}
+{% set paymentWindowTitleEn = "Payment for the courses will be on the " %}
+
+{% set paymentWindowSubtitleRu = "Выберите курс" %}
+{% set paymentWindowSubtitleEn = "Choose a course" %}
+
+{% set paymentWindowBtnsRu = [
+{text1: "Все курсы",
+class: "payment-window__btn1 payment-window__btn--active"},
+{text1: "Крышечки и начинки",
+class: "payment-window__btn2"},
+{text1: "Крышечки",
+class: "payment-window__btn3"},
+{text1: "Начинки",
+class: "payment-window__btn4"},
+{text1: "Инстаграм",
+class: "payment-window__btn5"},
+{text1: "Чизкейки",
+class: "payment-window__btn6"}
+]%}
+
+{% set paymentWindowBtnsEn = [
+{text1: "Macarons course",
+class: "payment-window__btn1 payment-window__btn--long payment-window__btn--active"},
+{text1: "Only Shells",
+class: "payment-window__btn2"},
+{text1: "Only Fillings",
+class: "payment-window__btn3"},
+{text1: "Instagram",
+class: "payment-window__btn4"},
+{text1: "All courses",
+class: "payment-window__btn5"}
+]%}
+
+{% set paymentWindowLinkRu = "Перейти на сайт" %}
+{% set paymentWindowLinkEn = "Go to the link" %}
+
+
+{% set paymentListTitleRu = "Другие способы оплаты" %}
+{% set paymentListTitleEn = "Other payment methods" %}
+
+
+{% set paymentTypeTitleRu = "После оплаты любым из этих способов вам нужно <b>прислать</b> мне
+скриншот об оплате, и я предоставлю вам доступ." %}
+{% set paymentTypeTitleEn = "After paying by any of these methods, you need <b>to send me</b> a screenshot of the
+payment, and I will grant you access." %}
+
+{% set paymentLogoIban = "USA, Europe" %}
+{% set paymentLogoMoney = "Money transfer" %}
+{% set paymentLogoPaypal = "PayPal" %}
+{% set paymentLogoRf = "Russia Federation" %}
+
+
+{% set paymentLabelMoneyRu = "Перевод с помощью системы денежных переводов" %}
+{% set paymentLabelMoneyEn = "Transfer using a money transfer system" %}
+{% set paymentLabelPaypalRu = "Перевод с помощью PayPal" %}
+{% set paymentLabelPaypalEn = "Transfer using a PayPal" %}
+{% set paymentLabelRfRu = 'Перевод в Тиньков банк с карты или через
+"Систему Быстрых Платежей"' %}
+{% set paymentLabelRfEn = 'Transfer to Tinkoff Bank from a card or via "Faster
+Payments System"' %}
+
+
+{% set paymentDescripMoneyRu = "Перевод с помощью системы денежных переводов" %}
+{% set paymentDescripMoneyEn = "Transfer using a money transfer system" %}
+
+{% set paymentDescripPaypalRu = "Для оплаты через Paypal используйте электронный адрес указаный ниже." %}
+{% set paymentDescripPaypalEn = "To pay via Paypal, use the email address listed below." %}
+
+{% set paymentDescripRfRu = 'Перевод в Тиньков банк с карты или через
+"Систему БыстрDescripатежей"' %}
+{% set paymentDescripRfEn = 'Transfer to Tinkoff Bank from a card or via "Faster
+Payments System"' %}
+
+{% set paymentLinkWise = "https://wise.com/invite/u/elenap2073" %}
+{% set paymentLinkPaypal = "d.panchenko1974@gmail.com" %}
+{% set paymentLinkRf = "https://www.tinkoff.ru/rm/pronina.elena14/YlldH91188" %}
+
+
+{% set reciveTitleRu = "2. Получите курс" %}
+{% set reciveTitleEn = "2. Recive the course" %}
+
+{% set reciveEndRu = "Напишите мне если у вас остались вопросы." %}
+{% set reciveEndEn = "Feel free to write to me if you have any further questions." %}
+
+
+
+{% set fillingsTypes = [
+{text1: "Принципы приготовления ганаша.",
+text2: "The principle of proportions for ganache."},
+{text1: "Приготовление разных вкусов конфи.",
+text2: "Preparation of different flavors of confit."},
+{text1: "Ванильный ганаш на белом шоколаде.",
+text2: "Ganache on white chocolate."},
+{text1: "Классический ганаш на молочном шоколаде.",
+text2: "Milk chocolate ganache."},
+{text1: "Классический ганаш на тёмном шоколаде.",
+text2: "Dark chocolate ganache."},
+{text1: 'Ганаш на молочном шоколаде "Oreo"',
+text2: 'Milk chocolate ganache "Oreo".'},
+{text1: 'Аппельсиновый ганаш',
+text2: 'Ganache on orange chocolate.'},
+{text1: '"Фисташка-малина" на белом шоколаде.',
+text2: '"Pistachio-raspberry" on white chocolate.'},
+{text1: 'Фундук-амаретто.',
+text2: 'Hazelnut amaretto.'},
+{text1: 'Капучино-бейлиз.',
+text2: 'Cappuccino Baileys.'},
+{text1: 'Маковый чизкейк с лимоном.',
+text2: 'Poppy seed cheesecake with lemon.'},
+{text1: "Фруктово ягодный ганаш: клубника, черника, смородина, манго и др.",
+text2: "Fruit and berry ganache: strawberries, blueberries, currants, mangoes, etc."},
+{text1: "Тыквенное латте",
+text2: "Pumpkin latte"},
+{text1: "Взбитый сливочный ганаш",
+text2: "Whipped cream ganache"},
+{text1: "Взбитый молочный ганаш «Киндер»",
+text2: "Whipped milk ganache “Kinder”"},
+{text1: "Арахисово-молочный шоколад с баноффи.",
+text2: "Peanut milk chocolate with banoffee."},
+{text1: 'Взбитый ганаш "Пряничное латте" или "Капучино"',
+text2: 'Whipped ganache "Gingerbread Latte" or "Cappuccino".'},
+{text1: 'Карамельный ганаш',
+text2: 'Caramel ganache.'},
+{text1: 'Взбитый ганаш "Двойной кокос" или "Баунти".',
+text2: 'Whipped ganache "Double coconut" or "Bounty".'},
+{text1: 'Начинка "Сникерс c солёной карамелью".',
+text2: 'Filling "Snickers with salted caramel".'},
+{text1: 'Ганаш "Бри-Груша".',
+text2: 'Brie Pear Ganache.'},
+{text1: 'Варианты ароматизации: мятой, лавандой, лимоном, ванилью.',
+text2: 'Flavor options: mint, lavender, lemon, vanilla.'}
+]%}
+
+{text1: 'Как приготовить цитрусовое конфи.',
+text2: 'How to make lemon confit.'},
+{text1: 'Как приготовить малиновое конфи.',
+text2: 'How to make raspberry confit.'},
+{text1: 'Как приготовить пряное-яблочное конфи.',
+text2: 'How to make Spicy Apple Confit.'},
+{text1: 'Как приготовить грушевое конфи.',
+text2: 'How to make pear confit.'},
+{text1: 'Как приготовить конфи «Пряная вишня».',
+text2: 'How to make Spicy Cherry Confit'},
+{text1: 'Как приготовить солёную-карамель.',
+text2: 'How to make salted caramel.'},
+{text1: 'Кокосовое конфи.',
+text2: 'How to make coconut confit.'},
+{text1: 'Как приготовить Банановое конфи.',
+text2: 'How to make Banana confit.'},
+
+{text1: 'Начинака "Вишня в шоколаде".',
+text2: 'Filling "Cherry in chocolate".'},
+{text1: 'Начинка "Пряное яблоко".',
+text2: 'Filling "Spicy apple".'},
+
+{% set years = "2021-2023" %}

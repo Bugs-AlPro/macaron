@@ -1,0 +1,55 @@
+<!-- Подключаем файл с переводом текста -->
+{% import "includes/errors/text-content-errors.html" as errortsText %}
+
+<section class="wrap wrap--errors">
+
+  <div class="container">
+    <div class="errors">
+      <div class="errors__title title-section">
+
+        <h2 class="title-section__head title-section__head--errors title-section__head--reviews">
+          {{ errortsText.errorsTitleTranslate.title.en }}
+        </h2>
+
+        <p class="title-section__text title-section__text--errors">
+          {{ errortsText.errorsTitleTranslate.subTitle.en }}
+        </p>
+
+      </div>
+
+      <ul class="errors-img-sm errors-img-en">
+        {% for item in macrosData.errors %}
+        <li class="errors-img-sm__item">
+          <picture class="errors-img-sm__picture">
+            <source srcset="img/{{ item.img }}.webp" type="image/webp">
+            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="errors-img-sm__img" height="250">
+          </picture>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="errors__list">
+
+        {% for item in errortsText.errorsTypes %}
+        <li class="errors__item">{{ item.en }}</li>
+        {% endfor %}
+
+        <li class="errors__item--img errors__item--img-xl">
+          <ul class="errors-img-xl">
+
+            {% for item in macrosData.errors %}
+            <li class="errors-img-xl__item">
+              <picture class="errors-img-xl__picture">
+                <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="errors-img-xl__img" height="250">
+              </picture>
+            </li>
+            {% endfor %}
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>

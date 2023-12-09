@@ -1,0 +1,58 @@
+{% set title = 'Macaron' %}
+{% set lang = 'en' %}
+{% set keywords = 'cake, macaron, macarons, macarons tutorial, how to cook macarons, macaroons,
+macaron_by_elena' %}
+{% set description = 'I teach to cook a delicious dessert - Macaron. Even if you are not a pastry chef, be sure to try
+yourself in this role! You will not regret!' %}
+{% set js = 'js/slideren.js' %}
+{% set buyBtn = 'js/buy-btn-en.js' %}
+
+{% extends "templates/default.html" %}
+{% import "includes/macros-data.html" as macrosData %}
+{% import "includes/macros-text.html" as macrosText %}
+
+
+{% macro imageSvg(name, class, width, height) %}
+<svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
+  <use xlink:href='img/svg/sprite-black.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}
+{% macro imageSvgColor(name, class, width, height, alt) %}
+<svg class="{{ class }}" width="{{ width }}" height="{{ height }}" aria-label="{{ alt }}">
+  <use xlink:href='img/svg/sprite-color.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}
+{% macro imageJpg(classPicture, name, classImg, alt, width, height) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp" type="image/webp">
+  <img src="img/{{ name }}.jpg" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}">
+</picture>
+{% endmacro %}
+{% macro imagePng(classPicture, name, classImg, alt, width, height) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp" type="image/webp">
+  <img src="img/{{ name }}.png" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}">
+</picture>
+{% endmacro %}
+
+{% block content %}
+
+{% include "includes/header/header-en.html" %}
+
+<main class="main">
+
+  {% include "includes/want-en.html" %}
+  {% include "includes/errors-en.html" %}
+  {% include "includes/skils-en.html" %}
+  {% include "includes/feedback-en.html" %}
+  {% include "includes/about-en.html" %}
+  {% include "includes/offer-en.html" %}
+  {% include "includes/payment-en.html" %}
+  <!-- Подключаем уведомление о файлах cookie -->
+  {% include "includes/cookie/cookie-en.html" %}
+
+</main>
+
+{% include "includes/footer.html" %}
+
+{% endblock %}

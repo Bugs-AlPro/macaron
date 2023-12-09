@@ -1,23 +1,7 @@
-<footer class="footer-wrap">
+<footer class="wrap wrap--footer">
   <div class="container">
     <div class="footer">
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="telegram">
-            {{ imageSvg('telegram', 'svg', '55', '55') }}
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="whatsapp://send?phone=+37253907063" class="social__link" aria-label="whatsapp">
-            {{ imageSvg('whatsap', 'svg', '55', '55') }}
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="https://www.instagram.com/macaron_by_elena" class="social__link" aria-label="instagram">
-            {{ imageSvg('instagram', 'svg', '55', '55') }}
-          </a>
-        </li>
-      </ul>
+
       <div class="footer__logo">
         <svg width="100%" height="100%" class="footer__svg">
           <defs>
@@ -31,7 +15,8 @@
           </text>
         </svg>
       </div>
-      <p class="footer__text">2022</p>
+
+      <p class="footer__text">{{ macrosText.years }}</p>
     </div>
   </div>
 </footer>

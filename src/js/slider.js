@@ -1,5 +1,5 @@
 var sliderOfferBase = tns({
-  container: '.slider-offer-base',
+  container: '.sliderOfferBase',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -8,19 +8,10 @@ var sliderOfferBase = tns({
   controls: false,
   nav: false,
   fixedWidth: 270,
-  autoplay: true,
-  navAsThumbnails: true,
-  autoplayTimeout: 5000,
-  speed: 3000,
-  autoplayButton: '#btn-offer-base',
-  autoplayText: [
-    "▶",
-    "❚❚"
-  ],
 });
 
-var sliderOfferCover1 = tns({
-  container: '.slider-offer-cover1',
+var sliderAllRu = tns({
+  container: '.sliderAllRu',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -31,8 +22,8 @@ var sliderOfferCover1 = tns({
   fixedWidth: 200,
 });
 
-var sliderOfferCream1 = tns({
-  container: '.slider-offer-cream1',
+var sliderShellsRu = tns({
+  container: '.sliderOfferShellsRu',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -43,8 +34,9 @@ var sliderOfferCream1 = tns({
   fixedWidth: 200,
 });
 
-var sliderOfferEskimo = tns({
-  container: '.slider-offer-eskimo',
+
+var sliderOfferCreamRu = tns({
+  container: '.sliderOfferCreamRu',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -54,8 +46,33 @@ var sliderOfferEskimo = tns({
   nav: false,
   fixedWidth: 200,
 });
+
+var sliderOfferInstRu = tns({
+  container: '.sliderOfferInstRu',
+  mode: 'carousel',
+  swipeAngle: false,
+  loop: true,
+  gutter: 10,
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  fixedWidth: 200,
+});
+
+var sliderOfferFullRu = tns({
+  container: '.sliderOfferFullRu',
+  mode: 'carousel',
+  swipeAngle: false,
+  loop: true,
+  gutter: 10,
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  fixedWidth: 200,
+});
+
 var feedbackSlider = tns({
-  container: '.feedback-slider',
+  container: '.sliderFeedback',
   mode: 'carousel',
   swipeAngle: false,
   loop: true,
@@ -65,3 +82,16 @@ var feedbackSlider = tns({
   nav: false,
   fixedWidth: 200,
 });
+
+var errors = tns({
+  container: '.errors-img-sm',
+  mode: 'carousel',
+  swipeAngle: false,
+  loop: true,
+  gutter: 10,
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  fixedWidth: 200,
+});
+

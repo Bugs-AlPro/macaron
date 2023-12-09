@@ -1,0 +1,30 @@
+<!-- Подключаем файл с переводом текста -->
+{% import "includes/feedback/text-content-feedback.html" as feedbackText %}
+
+<section class="wrap wrap--feedback" id="feedback">
+  <div class="container">
+    <div class="feedback">
+      <div class="feedback__title title-section">
+        <h2 class="title-section__head title-section__head--reviews">
+          {{ feedbackText.feedbackTitleTranslate.title.en }}
+        </h2>
+      </div>
+      <div class="feedback__slider feedback-slider">
+        <ul class="feedback-slider__list sliderFeedback">
+
+          {% for item in macrosData.sliderFeedbackEn %}
+
+          <li class="feedback-slider__item">
+            <picture class="feedback-slider__picture">
+              <source srcset="img/{{ item.img }}.webp" type="image/webp">
+              <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="feedback-slider__img">
+            </picture>
+          </li>
+          {% endfor %}
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</section>

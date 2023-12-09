@@ -1,0 +1,15 @@
+.feedback {
+    overflow: hidden;
+}
+
+.feedback-slider {
+    &__item {
+        height: 350px;
+        padding: 10px;
+    }
+
+    &__img {
+        height: 100%;
+        border-radius: 10px;
+    }
+}
