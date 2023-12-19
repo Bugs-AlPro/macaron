@@ -1,0 +1,60 @@
+<!-- Подключаем файл с переводом текста -->
+{% import "includes/lava/text-content-lava.html" as lavaText %}
+
+<div class="payment-window-cover"></div>
+
+<div class="payment-window">
+    <button type="button" class="payment-window__close"></button>
+    <p class="payment-window__title">
+        {{ lavaText.lavaTitleTranslate.title.en }}
+        <a class="payment-window__title-link" href="https://app.lava.top/macaron_by_elena">Lava.top</a>
+    </p>
+
+    <div class="payment-window__web">
+        {{ imageJpg('payment-window__picture', 'logo5', 'payment-window__img',
+        'logo macaron_by_elena', '150', '150') }}
+
+        {{ imageSvgColor('transfer', 'payment-window__svg svgcolor', '150', '150', 'logo transfer') }}
+
+        {{ imagePng('payment-window__picture', 'lava', 'payment-window__img', 'logo Lava.top',
+        '150', '150') }}
+    </div>
+
+    <!-- <p class="payment-window__subtitle">
+        {{ macrosText.paymentWindowSubtitleEn }}
+    </p> -->
+
+    <div class="payment-window__types">
+
+        {% for item in macrosText.paymentWindowBtnsEn %}
+        <button type="button" class="payment-window__btn {{ item.class }}">
+            {{ item.text1 }}
+        </button>
+        {% endfor %}
+
+    </div>
+
+    <div class="payment-window__box">
+        <div class="payment-window__links payment-window__links-1">
+
+            <a href="https://app.lava.top/products/d488dfe8-d414-401d-b370-159d0ceee8fe" class="payment-window__link">
+                {{ lavaText.lavaTitleTranslate.linkText.en }}
+            </a>
+            <a href="https://app.lava.top/products/4085c45b-ebdc-4d17-a30b-8b33c1877d58" class="payment-window__link">
+                {{ lavaText.lavaTitleTranslate.linkText.en }}
+            </a>
+            <a href="https://app.lava.top/products/a2306e25-4bbc-4d4b-a018-676287c5cd04" class="payment-window__link">
+                {{ lavaText.lavaTitleTranslate.linkText.en }}
+            </a>
+            <a href="https://app.lava.top/ru/products/a518abf3-e9f8-43d4-9f2b-51177e5b7ae7"
+                class="payment-window__link">
+                {{ lavaText.lavaTitleTranslate.linkText.en }}
+            </a>
+            <a href="https://app.lava.top/ru/products/ff90d34e-2a15-43e5-b1a5-2861f6e600fc"
+                class="payment-window__link">
+                {{ lavaText.lavaTitleTranslate.linkText.en }}
+            </a>
+
+        </div>
+    </div>
+</div>

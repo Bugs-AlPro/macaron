@@ -3,7 +3,7 @@
 {% set keywords = 'cake, macaron, macarons, macarons tutorial, how to cook macarons, macaroons,
 macaron_by_elena' %}
 {% set description = 'I teach to cook a delicious dessert - Macaron. Even if you are not a pastry chef, be sure to try
-yourself in this role! You will not regret!' %}
+yourself in this role!' %}
 {% set js = 'js/slideren.js' %}
 {% set buyBtn = 'js/buy-btn-en.js' %}
 
@@ -41,18 +41,20 @@ yourself in this role! You will not regret!' %}
 
 <main class="main">
 
-  {% include "includes/want-en.html" %}
-  {% include "includes/errors-en.html" %}
-  {% include "includes/skils-en.html" %}
-  {% include "includes/feedback-en.html" %}
-  {% include "includes/about-en.html" %}
-  {% include "includes/offer-en.html" %}
-  {% include "includes/payment-en.html" %}
-  <!-- Подключаем уведомление о файлах cookie -->
+  {% include "includes/want/want-en.html" %}
+  {% include "includes/errors/errors-en.html" %}
+  {% include "includes/skils/skils-en.html" %}
+  {% include "includes/feedback/feedback-en.html" %}
+  {% include "includes/about/about-en.html" %}
+  {% include "includes/offer/offer-en.html" %}
+  {% include "includes/payment/payment-en.html" %}
+
+  <!-- Подключаем независимые элементы -->
   {% include "includes/cookie/cookie-en.html" %}
+  {% include "includes/lava/lava-en.html" %}
 
 </main>
 
-{% include "includes/footer.html" %}
+{% include "includes/footer/footer.html" %}
 
 {% endblock %}

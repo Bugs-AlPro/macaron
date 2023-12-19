@@ -1048,18 +1048,6 @@ p {
     width: 40px;
     height: 40px;
   }
-  .payment-window__subtitle {
-    display: none;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
   .payment-window__types {
     display: flex;
     display: none;
@@ -2485,18 +2473,6 @@ p {
   .payment-window__svg {
     width: 80px;
     height: 80px;
-  }
-  .payment-window__subtitle {
-    display: none;
-    text-align: center;
-    padding: 20px 90px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0 -3px 2px 1px #bbbbbb;
   }
   .payment-window__types {
     display: grid;

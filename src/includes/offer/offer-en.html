@@ -1,0 +1,264 @@
+<section class="wrap wrap--offer" id="offer">
+  <div class="container">
+    <div class="offer">
+
+      <!-- Блок sale-wrap является распоркой для мобильных устройств -->
+      <div class="sale-wrap">
+        {% include "includes/promo/sale.html" %}
+      </div>
+
+      <div class="offer__title title-section">
+        <h2 class="title-section__head title-section__head--blue title-section__head--left">
+          {{ macrosText.offerTitleEn }}
+        </h2>
+      </div>
+
+      <div class="offer__currency">
+        <div class="currency">
+          <button type="button" class="currency__btn  currency__btn--current currency__btn--usd"> $</button>
+          <button type="button" class="currency__btn  currency__btn--rub"> ₽</button>
+          <button type="button" class="currency__btn  currency__btn--eur"> €</button>
+        </div>
+      </div>
+
+      <ul class="offer__list">
+
+        <li class="offer-item">
+          <div class="offer-item__title offer-i-head offer-i-head--top">
+            <h3 class="offer-i-head__text">Macarons. Shells and fillings</h3>
+            <div class="offer-i-head__cost costs">
+              <div class="costs__label">
+                <span class="costs__text">price</span>
+                <div class="costs__box costs__box--left">
+                  {% for item in macrosData.priceNormal %}
+                  <span class="costs__item">{{ item.helpUsd }} $</span>
+                  <span class="costs__item">{{ item.helpRub }} ₽</span>
+                  <span class="costs__item">{{ item.helpEur }} €</span>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn1">Buy</button>
+          </div>
+          <button type="button" class="offer-item__btn offer-item__btn--1"
+            aria-label="Show (hide) a list of what it includes"></button>
+          <div class="offer-item__body">
+            <ol class="offer-item__list">
+              <li class="offer-item__item offer-item__item--slider lider-offer">
+                <ul class="slider-offer__list sliderAllEn">
+                  {% for item in macrosData.sliderAll %}
+                  <li class="slider-offer__item">
+                    <picture class="slider-offer__picture">
+                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="slider-offer__img" height="200">
+                    </picture>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li class="offer-item__item">Technical card with a detailed description of the entire process of making
+                macarons. Italian meringue with reduced sugar content. PDF file on 30 pages.
+              </li>
+              <li class="offer-item__item">A guide to buying basic inventory and products on Amazon online store.</li>
+              <li class="offer-item__item">Templates for baking shells.</li>
+              <li class="offer-item__item">Technical card with a detailed description of the process of preparing
+                fillings of different flavors. PDF file on 40 pages.
+              </li>
+              <li class="offer-item__item">Video of the whole process of making macarons.</li>
+              <li class="offer-item__item">Video of the preparation of various basic fillings.</li>
+              <li class="offer-item__item">Video on how to make macarons painting and video how to make
+                curly macarons.</li>
+            </ol>
+          </div>
+        </li>
+
+        <li class="offer-item">
+          <div class="offer-item__title offer-i-head">
+            <h3 class="offer-i-head__text">Only Shells</h3>
+            <div class="offer-i-head__cost costs">
+              <div class="costs__label">
+                <span class="costs__text">price</span>
+                <div class="costs__box costs__box--left">
+                  {% for item in macrosData.priceNormal %}
+                  <span class="costs__item">{{ item.partUsd }} $</span>
+                  <span class="costs__item">{{ item.partRub }} ₽</span>
+                  <span class="costs__item">{{ item.partEur }} €</span>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn2">Buy</button>
+          </div>
+          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
+
+          <div class="offer-item__body">
+            <ol class="offer-item__list">
+              <li class="offer-item__item offer-item__item--slider slider-offer">
+                <ul class="slider-offer__list sliderOfferShellsEn">
+                  {% for item in macrosData.sliderOfferShells %}
+                  <li class="slider-offer__item">
+                    <picture class="slider-offer__picture">
+                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="slider-offer__img" height="200">
+                    </picture>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li class="offer-item__item">Technical card with a detailed description of the entire process of making
+                macarons. Italian meringue with reduced sugar content. PDF file on 30 pages.
+              </li>
+              <li class="offer-item__item">A guide to buying basic inventory and products on Amazon online store.</li>
+              <li class="offer-item__item">Templates for baking shells.</li>
+              <li class="offer-item__item">Video of the whole process of making shells.</li>
+            </ol>
+          </div>
+        </li>
+
+        <li class="offer-item">
+          <div class="offer-item__title offer-i-head">
+            <h3 class="offer-i-head__text">Only fillings</h3>
+            <div class="offer-i-head__cost costs">
+              <div class="costs__label">
+                <span class="costs__text">price</span>
+                <div class="costs__box costs__box--left">
+                  {% for item in macrosData.priceNormal %}
+                  <span class="costs__item">{{ item.partUsd }} $</span>
+                  <span class="costs__item">{{ item.partRub }} ₽</span>
+                  <span class="costs__item">{{ item.partEur }} €</span>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn3">Buy</button>
+          </div>
+          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
+          <div class="offer-item__body">
+
+            <ol class="offer-item__list">
+              <li class="offer-item__item offer-item__item--slider slider-offer">
+                <ul class="slider-offer__list sliderOfferCreamEn">
+
+                  {% for item in macrosData.sliderOfferCream %}
+                  <li class="slider-offer__item">
+                    <picture class="slider-offer__picture">
+                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="slider-offer__img" height="200">
+                    </picture>
+                  </li>
+                  {% endfor %}
+
+                </ul>
+              </li>
+              <li class="offer-item__item">Technical card with a detailed description of the process of preparing
+                fillings of different flavors. PDF file on 40 pages.
+              </li>
+
+              {% for item in macrosText.fillingsTypes %}
+              <li class="offer-item__item">{{ item.text2 }}</li>
+              {% endfor %}
+
+              <li class="offer-item__item">Video of the preparation of various basic fillings.</li>
+
+            </ol>
+          </div>
+        </li>
+
+
+
+
+
+        <li class="offer-item">
+          <div class="offer-item__title offer-i-head">
+            <h3 class="offer-i-head__text">Instagram promotion</h3>
+            <div class="offer-i-head__cost costs">
+              <div class="costs__label">
+                <span class="costs__text">price</span>
+                <div class="costs__box costs__box--center">
+                  {% for item in macrosData.priceNormal %}
+                  <span class="costs__item">{{ item.instUsd }} $</span>
+                  <span class="costs__item">{{ item.instRub }} ₽</span>
+                  <span class="costs__item">{{ item.instEur }} €</span>
+                  {% endfor %}
+                </div>
+              </div>
+
+            </div>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn4">Buy</button>
+          </div>
+          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
+          <div class="offer-item__body">
+            <ol class="offer-item__list">
+              <li class="offer-item__item offer-item__item--slider slider-offer">
+                <ul class="slider-offer__list sliderOfferInstEn">
+                  {% for item in macrosData.sliderOfferInstEn %}
+                  <li class="slider-offer__item">
+                    <picture class="slider-offer__picture">
+                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                    </picture>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li class="offer-item__item">A book or PDF file with a detailed description of all the steps for the
+                development of your Instagram account.</li>
+              <li class="offer-item__item">In the book, after each section, homework is waiting for you, which you can
+                send for verification.</li>
+              <li class="offer-item__item">Access to 14 video lessons that go in addition to the book.</li>
+
+            </ol>
+          </div>
+        </li>
+
+        <li class="offer-item">
+          <div class="offer-item__title offer-i-head">
+            <h3 class="offer-i-head__text">All courses</h3>
+            <div class="offer-i-head__cost costs">
+              <div class="costs__label">
+                <span class="costs__text">price</span>
+                <div class="costs__box costs__box--center">
+                  {% for item in macrosData.priceNormal %}
+                  <span class="costs__item">{{ item.allUsd }} $</span>
+                  <span class="costs__item">{{ item.allRub }} ₽</span>
+                  <span class="costs__item">{{ item.allEur }} €</span>
+                  {% endfor %}
+                </div>
+              </div>
+
+            </div>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn5">Buy</button>
+          </div>
+          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
+          <div class="offer-item__body">
+            <ol class="offer-item__list">
+              <li class="offer-item__item offer-item__item--slider slider-offer">
+                <ul class="slider-offer__list sliderOfferFullEn">
+                  {% for item in macrosData.sliderOfferFullEn %}
+                  <li class="slider-offer__item">
+                    <picture class="slider-offer__picture">
+                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
+                    </picture>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li class="offer-item__item">The whole course on cooking macarons "Shells and fillings".</li>
+              <li class="offer-item__item">The whole course "Instagram promotion for Bakers"</li>
+            </ol>
+          </div>
+
+        </li>
+
+
+
+
+
+
+
+      </ul>
+
+    </div>
+  </div>
+</section>

@@ -3,12 +3,11 @@
 {% set keywords = 'пирожные, макаронс, обучение макаронс, macarons, как приготовить макаронс, макарунс,
 macaron_by_elena' %}
 {% set description = 'Обучаю приготовлению вкуснейшего десерта - Макарон. Даже если вы не кондитер - обязательно
-попробуйте себя в этой роли! Не пожалеете!' %}
+попробуйте себя в этой роли!' %}
 {% set js = 'js/slider.js' %}
 {% set buyBtn = 'js/buy-btn-ru.js' %}
-{% extends "templates/default.html" %}
 
-{% import "includes/macros.html" as variable %}
+{% extends "templates/default.html" %}
 {% import "includes/macros-data.html" as macrosData %}
 {% import "includes/macros-text.html" as macrosText %}
 
@@ -42,19 +41,20 @@ macaron_by_elena' %}
 
 <main class="main">
 
-  {% include "includes/want.html" %}
-  {% include "includes/errors.html" %}
-  {% include "includes/skils.html" %}
-  {% include "includes/feedback.html" %}
-  {% include "includes/about.html" %}
-  {% include "includes/offer.html" %}
-  {% include "includes/payment.html" %}
+  {% include "includes/want/want-ru.html" %}
+  {% include "includes/errors/errors-ru.html" %}
+  {% include "includes/skils/skils-ru.html" %}
+  {% include "includes/feedback/feedback-ru.html" %}
+  {% include "includes/about/about-ru.html" %}
+  {% include "includes/offer/offer-ru.html" %}
+  {% include "includes/payment/payment-ru.html" %}
 
-  <!-- Подключаем уведомление о файлах cookie -->
+  <!-- Подключаем независимые элементы -->
   {% include "includes/cookie/cookie-ru.html" %}
+  {% include "includes/lava/lava-ru.html" %}
 
 </main>
 
-{% include "includes/footer.html" %}
+{% include "includes/footer/footer.html" %}
 
 {% endblock %}

@@ -1,0 +1,207 @@
+<!-- Подключаем файл с переводом текста -->
+{% import "includes/want/text-content-want.html" as wantText %}
+
+<section class="wrap wrap--want">
+
+  <div class="container">
+
+    <div class="want">
+      <div class="want__title title-section">
+        <h2 class="title-section__head title-section__head--red">
+          {{ wantText.wantTitleTranslate.title.en }}
+        </h2>
+        <p class="title-section__text title-section__text--want">
+          {{ wantText.wantTitleTranslate.subTitle.en }}
+        </p>
+      </div>
+
+      <div class="want__video youtube">
+
+        <a href="{{ wantText.youtubePrew.link.en }}" class="youtube__link">
+          <picture class="youtube__picture">
+            <source srcset="img/{{ wantText.youtubePrew.cover.en }}.webp" type="image/webp">
+            <img src="img/{{ wantText.youtubePrew.cover.en }}.jpg" alt="{{ wantText.youtubePrew.alt.en }}"
+              class="youtube__img">
+          </picture>
+        </a>
+
+      </div>
+
+      <ul class="want__list interesting">
+
+        {% for item in wantText.wantList %}
+        <li class="interesting__item">
+          <div class="interesting__count">{{ item.count }}</div>
+          <div class="interesting__body">
+            <h3 class="interesting__title">{{ item.titleEn }}</h3>
+            <p class="interesting__description">{{ item.descriptionEn | safe }}</p>
+          </div>
+        </li>
+        {% endfor %}
+
+      </ul>
+
+      <div class="want__preview preview">
+
+        <div class="preview__top">
+
+          <h3 class="preview__title">
+            {{ wantText.wantPreviewTranslate.title.en }}
+          </h3>
+
+        </div>
+
+        <ul class="preview__summary summary">
+
+          <li class="summary__item summary__item--img">
+            {{ imageSvgColor('cook', 'svgcolor summary__img', '70', '100', 'Girl confectioner.') }}
+          </li>
+
+          <li class="summary__item">
+
+            <div class="summary__title">
+              {{ wantText.wantSummaryTitleTranslate.title_1.en }}
+            </div>
+            <div class="summary__description">
+              {{ wantText.wantSummaryTitleTranslate.subTitle_1.en }}
+            </div>
+            <button type="button" class="summary__btn summary__btn--green summary__btn-1"></button>
+            <ul class="popup popup--green">
+
+              {% for item in wantText.allVideosForCourse %}
+              <li class="popup__item">{{ item.en }}</li>
+              {% endfor %}
+
+            </ul>
+
+          </li>
+
+          <li class="summary__item">
+
+            <div class="summary__title">
+              {{ wantText.wantSummaryTitleTranslate.title_2.en }}
+            </div>
+            <div class="summary__description">
+              {{ wantText.wantSummaryTitleTranslate.subTitle_2.en }}
+            </div>
+            <button type="button" class="summary__btn summary__btn--blue summary__btn--open summary__btn-2"></button>
+            <ul class="popup popup--blue popup--open">
+
+              {% for item in wantText.fillingsTypes %}
+              <li class="popup__item">{{ item.en }}</li>
+              {% endfor %}
+
+            </ul>
+
+          </li>
+
+          <li class="summary__item">
+
+            <div class="summary__title">
+              {{ wantText.wantSummaryTitleTranslate.title_3.en }}
+            </div>
+            <div class="summary__description">
+              {{ wantText.wantSummaryTitleTranslate.subTitle_3.en }}
+            </div>
+            <button type="button" class="summary__btn summary__btn--red summary__btn-3"></button>
+            <ul class="popup popup--red">
+
+
+              {% for item in wantText.courseInformation %}
+              <li class="popup__item">
+                <p>
+                  {{ item.en | safe }}
+                </p>
+              </li>
+              {% endfor %}
+
+            </ul>
+
+          </li>
+
+          <li class="summary__item">
+
+            <div class="summary__title">
+              {{ wantText.wantSummaryTitleTranslate.title_4.en }}
+            </div>
+            <div class="summary__description">
+              {{ wantText.wantSummaryTitleTranslate.subTitle_4.en }}
+            </div>
+            <button type="button" class="summary__btn summary__btn--purple summary__btn-4"></button>
+            <ul class="popup popup--purple">
+
+              <li class="popup__item">
+                <p>{{ wantText.courseAccessTranslate.title.en | safe }}</p>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="summary__item">
+
+            <div class="summary__title">
+              {{ wantText.wantSummaryTitleTranslate.title_5.en }}
+            </div>
+            <div class="summary__description">
+              {{ wantText.wantSummaryTitleTranslate.subTitle_5.en }}
+            </div>
+            <button type="button" class="summary__btn summary__btn--yellow summary__btn-5"></button>
+            <ul class="popup popup--yellow">
+
+              <li class="popup__item">
+                <p>{{ wantText.courseSupportTranslate.title.en | safe }}</p>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+        <div class="preview__body preview-body">
+          <div class="preview-body__item preview-body__item--pdf">
+            <p class="preview-body__text">
+              {{ wantText.wantPreviePartsTranslate.part_1.en | safe }}
+            </p>
+            <picture class="preview-body__picture">
+              <source srcset="img/pdf-eng.webp" type="image/webp">
+              <img src="img/pdf-eng.png" alt="Screenshot of one page from PDF." class="preview-body__img" width="100"
+                height="100">
+            </picture>
+          </div>
+
+          <div class="preview-body__item">
+
+            <p class="preview-body__text">
+              {{ wantText.wantPreviePartsTranslate.part_2.en | safe }}
+            </p>
+
+            <div class="youtube">
+              <a href="{{ wantText.youtubeConfi.link.en }}" class="youtube__link youtube__link--preview">
+                <picture class="youtube__picture">
+                  <source srcset="img/{{ wantText.youtubeConfi.cover.en }}.webp" type="image/webp">
+                  <img src="img/{{ wantText.youtubeConfi.cover.en }}.jpg" alt="{{ wantText.youtubeConfi.link.en }}"
+                    class="youtube__img">
+                </picture>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="preview-body__item preview-body__item--link">
+
+            <p class="preview-body__text">
+              {{ wantText.wantPreviePartsTranslate.part_3.en | safe }}
+            </p>
+
+            <div class="payment-button">
+              <a class="payment-button__btn" href="#offer">
+                {{ wantText.wantBtnTranslate.title.ru }}
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
