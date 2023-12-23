@@ -192,7 +192,10 @@ macaron_by_elena">
 
       </div>
 
-      <div class="title-section title-section--header">
+      <!-- Подключаем файл с переводом текста -->
+
+
+<div class="title-section title-section--header">
     <h1 class="title-section__head title-section__head--header">
         Онлайн курс &quot;Макарон&quot;
     </h1>
@@ -1140,7 +1143,7 @@ macaron_by_elena">
         <!-- Блок переключения валюты - для всех товаров в разделе offer -->
         <div class="currency">
           <button type="button" class="currency__btn  currency__btn--usd"> $</button>
-          <button type="button" class="currency__btn  currency__btn--current currency__btn--rub"> ₽</button>
+          <button type="button" class="currency__btn  currency__btn--rub currency__btn--current"> ₽</button>
           <button type="button" class="currency__btn  currency__btn--eur"> €</button>
         </div>
 
@@ -1162,9 +1165,9 @@ macaron_by_elena">
                 </span>
                 <div class="costs__box costs__box--center">
                   
-                  <span class="costs__item">90 $</span>
-                  <span class="costs__item">8300 ₽</span>
-                  <span class="costs__item">85 €</span>
+                  <span class="costs__item">120 $</span>
+                  <span class="costs__item">10700 ₽</span>
+                  <span class="costs__item">110 €</span>
                   
                 </div>
               </div>
@@ -1287,9 +1290,9 @@ macaron_by_elena">
                 </span>
                 <div class="costs__box costs__box--center">
                   
-                  <span class="costs__item">48 $</span>
-                  <span class="costs__item">4430 ₽</span>
-                  <span class="costs__item">45 €</span>
+                  <span class="costs__item">65 $</span>
+                  <span class="costs__item">5800 ₽</span>
+                  <span class="costs__item">60 €</span>
                   
                 </div>
               </div>
@@ -1404,9 +1407,9 @@ macaron_by_elena">
                 </span>
                 <div class="costs__box costs__box--center">
                   
-                  <span class="costs__item">48 $</span>
-                  <span class="costs__item">4430 ₽</span>
-                  <span class="costs__item">45 €</span>
+                  <span class="costs__item">65 $</span>
+                  <span class="costs__item">5800 ₽</span>
+                  <span class="costs__item">60 €</span>
                   
                 </div>
               </div>
@@ -1670,9 +1673,9 @@ macaron_by_elena">
                 </span>
                 <div class="costs__box costs__box--center">
                   
-                  <span class="costs__item">110 $</span>
-                  <span class="costs__item">10110 ₽</span>
-                  <span class="costs__item">103 €</span>
+                  <span class="costs__item">150 $</span>
+                  <span class="costs__item">13400 ₽</span>
+                  <span class="costs__item">138 €</span>
                   
                 </div>
               </div>
@@ -1780,16 +1783,6 @@ macaron_by_elena">
 <section class="wrap wrap--payment" id="payment-block">
   <div class="container">
     <div class="payment">
-
-
-      <!-- 
-      <div class="payment__button payment-button">
-        <button type="button" class="payment-button__btn payment-button__btn2 pixel-btn">
-          Купить курс
-        </button>
-      </div> -->
-
-
 
       <div class="payment__title title-section">
         <h2 class="title-section__head title-section__head--blue title-section__head--left">
@@ -2271,6 +2264,8 @@ macaron_by_elena">
   <script src="js/tiny.js"></script>
   <script src="js/slider.js"></script>
 
+
+  <!-- Ниже скрипт подключающий пиксель. Чтобы он работал нужно добавить класс pixel-btn к элементу на который будут нажимать. -->
   <!-- <script type="text/javascript">
     const pixelBtn = document.querySelector('.pixel-btn');
     pixelBtn.addEventListener('click', () => {
