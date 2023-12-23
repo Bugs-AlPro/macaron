@@ -1,0 +1,205 @@
+@include media-up(lg) {
+    .footer {
+        // height: 100px;
+        padding: 30px 0;
+        display: grid;
+        // grid-template-columns: auto auto;
+        // grid-template-rows: auto auto;
+        // justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        // font-weight: 600;
+        // font-size: 2.2em;
+        color: white;
+        --social-link: hsl(0, 20%, 30%);
+        --social-hover: hsl(0, 80%, 20%);
+
+        &__title {
+            font-weight: 600;
+            font-size: 1.5em;
+        }
+
+        &__logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 600;
+            font-size: 2em;
+        }
+
+        // &__text {
+        //     text-align: center;
+        //     font-weight: 600;
+        //     font-size: 0.9em;
+        // }
+
+        &__svg {
+            height: 45px;
+            width: 400px;
+        }
+
+        &__svg text {
+            // transform: translateX(-5px);
+            font-family: 'Glory', sans-serif;
+            letter-spacing: 8px;
+            stroke: white;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 700;
+            stroke-width: 1px;
+            animation: textAnimate 6s infinite alternate;
+        }
+    }
+
+    .footer-links {
+        display: grid;
+        gap: 1.1em;
+        --social-hover: hsl(0, 1%, 86%);
+
+        &__link {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        &__link:hover {
+            color: var(--social-hover);
+        }
+    }
+
+    .privacy {
+        &__title {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    @keyframes textAnimate {
+        0% {
+            stroke-dasharray: 0 50%;
+            // stroke-dashoffset: 20%;
+            fill: var(--title-red)
+        }
+
+        100% {
+            stroke-dasharray: 50% 0;
+            // stroke-dashoffstet: 10%;
+            fill: var(--title-red)
+        }
+    }
+
+    @keyframes textAnimates {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+}
+
+@include media-down(lg) {
+    .footer {
+        padding: 30px 0;
+        // text-align: center;
+        // font-weight: 600;
+        // font-family: 'Glory', sans-serif;
+        // font-size: 2.4em;
+        color: white;
+
+
+        &__title {
+            font-weight: 600;
+            font-size: 1.5em;
+        }
+
+        &__logo {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.7em;
+        }
+
+        &__svg {
+            height: 40px;
+            // width: 100%;
+        }
+
+        &__svg text {
+            transform: translateX(2.5px);
+            font-family: 'Glory', sans-serif;
+            letter-spacing: 5px;
+            stroke: white;
+            font-size: 30px;
+            line-height: 50px;
+            font-weight: 700;
+            stroke-width: 1px;
+            animation: textAnimate 4s infinite alternate;
+        }
+    }
+
+    .footer-links {
+        display: grid;
+        margin-top: 20px;
+        gap: 20px;
+
+        --social-hover: hsl(0, 1%, 86%);
+
+        &__link {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        &__link:hover {
+            color: var(--social-hover);
+        }
+    }
+
+    .privacy {
+        &__title {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    @keyframes textAnimates {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes textAnimate {
+        0% {
+            stroke-dasharray: 0 50%;
+            // stroke-dashoffset: 20%;
+            fill: var(--title-red)
+        }
+
+        100% {
+            stroke-dasharray: 50% 0;
+            // stroke-dashoffstet: -20%;
+            fill: var(--title-red)
+        }
+    }
+}

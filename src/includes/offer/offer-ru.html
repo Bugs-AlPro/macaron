@@ -1,3 +1,6 @@
+<!-- Подключаем файл с переводом текста -->
+{% import "includes/offer/text-content-offer.html" as offerText %}
+
 <section class="wrap wrap--offer" id="offer">
   <div class="container">
     <div class="offer">
@@ -9,26 +12,34 @@
 
       <div class="offer__title title-section">
         <h2 class="title-section__head title-section__head--blue title-section__head--left">
-          {{ macrosText.offerTitleRU }}
+          {{ offerText.offerTitleTranslate.title.ru }}
         </h2>
       </div>
 
       <div class="offer__currency">
+        <!-- Блок переключения валюты - для всех товаров в разделе offer -->
         <div class="currency">
           <button type="button" class="currency__btn  currency__btn--usd"> $</button>
           <button type="button" class="currency__btn  currency__btn--current currency__btn--rub"> ₽</button>
           <button type="button" class="currency__btn  currency__btn--eur"> €</button>
         </div>
+
       </div>
 
       <ul class="offer__list">
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head offer-i-head--top">
-            <h3 class="offer-i-head__text">Макарон. Крышечки и начинки</h3>
+
+            <h3 class="offer-i-head__text">
+              {{ offerText.offerTitleTranslate.generalCourse.ru }}
+            </h3>
+
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
-                <span class="costs__text">цена</span>
+                <span class="costs__text">
+                  {{ offerText.offerTitleTranslate.price.ru }}
+                </span>
                 <div class="costs__box costs__box--center">
                   {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.helpUsd }} $</span>
@@ -38,12 +49,16 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn1">Купить</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn1">
+              {{ offerText.offerTitleTranslate.buy.ru }}
+            </button>
           </div>
+
           <button type="button" class="offer-item__btn offer-item__btn--1"
             aria-label="Показать (скрыть) список того, что в это входит"></button>
           <div class="offer-item__body">
             <ol class="offer-item__list">
+
               <li class="offer-item__item offer-item__item--slider slider-offer">
                 <ul class="slider-offer__list sliderAllRu">
                   {% for item in macrosData.sliderAll %}
@@ -79,10 +94,14 @@
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">Крышечки</h3>
+            <h3 class="offer-i-head__text">
+              {{ offerText.offerTitleTranslate.shells.ru }}
+            </h3>
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
-                <span class="costs__text">цена</span>
+                <span class="costs__text">
+                  {{ offerText.offerTitleTranslate.price.ru }}
+                </span>
                 <div class="costs__box costs__box--center">
                   {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.partUsd }} $</span>
@@ -93,7 +112,9 @@
               </div>
 
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn2">Купить</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn2">
+              {{ offerText.offerTitleTranslate.buy.ru }}
+            </button>
           </div>
           <button type="button" class="offer-item__btn"
             aria-label="Показать (скрыть) список того, что в это входит"></button>
@@ -127,10 +148,14 @@
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">Начинки</h3>
+            <h3 class="offer-i-head__text">
+              {{ offerText.offerTitleTranslate.fillings.ru }}
+            </h3>
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
-                <span class="costs__text">цена</span>
+                <span class="costs__text">
+                  {{ offerText.offerTitleTranslate.price.ru }}
+                </span>
                 <div class="costs__box costs__box--center">
                   {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.partUsd }} $</span>
@@ -141,7 +166,9 @@
               </div>
 
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn3">Купить</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn3">
+              {{ offerText.offerTitleTranslate.buy.ru }}
+            </button>
           </div>
           <button type="button" class="offer-item__btn"
             aria-label="Показать (скрыть) список того, что в это входит"></button>
@@ -176,10 +203,14 @@
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">Курс по инстаграмм</h3>
+            <h3 class="offer-i-head__text">
+              {{ offerText.offerTitleTranslate.instagram.ru }}
+            </h3>
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
-                <span class="costs__text">цена</span>
+                <span class="costs__text">
+                  {{ offerText.offerTitleTranslate.price.ru }}
+                </span>
                 <div class="costs__box costs__box--center">
                   {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.instUsd }} $</span>
@@ -190,7 +221,9 @@
               </div>
 
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn5">Купить</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn5">
+              {{ offerText.offerTitleTranslate.buy.ru }}
+            </button>
           </div>
           <button type="button" class="offer-item__btn"
             aria-label="Показать (скрыть) список того, что в это входит"></button>
@@ -220,10 +253,14 @@
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">Все курсы <span class="offer-i-head__text--green">+ бонус</span></h3>
+            <h3 class="offer-i-head__text">
+              {{ offerText.offerTitleTranslate.all.ru | safe }}
+            </h3>
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
-                <span class="costs__text">цена</span>
+                <span class="costs__text">
+                  {{ offerText.offerTitleTranslate.price.ru }}
+                </span>
                 <div class="costs__box costs__box--center">
                   {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.allUsd }} $</span>
@@ -234,7 +271,9 @@
               </div>
 
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn4">Купить</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn4">
+              {{ offerText.offerTitleTranslate.buy.ru }}
+            </button>
           </div>
           <button type="button" class="offer-item__btn"
             aria-label="Показать (скрыть) список того, что в это входит"></button>

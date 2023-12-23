@@ -1,3 +1,6 @@
+<!-- Подключаем файл с переводом текста -->
+{% import "includes/offer/text-content-offer.html" as offerText %}
+
 <section class="wrap wrap--offer" id="offer">
   <div class="container">
     <div class="offer">
@@ -9,26 +12,34 @@
 
       <div class="offer__title title-section">
         <h2 class="title-section__head title-section__head--blue title-section__head--left">
-          {{ macrosText.offerTitleEn }}
+          {{ offerText.offerTitleTranslate.title.en }}
         </h2>
       </div>
 
       <div class="offer__currency">
+        <!-- Блок переключения валюты - для всех товаров в разделе offer -->
         <div class="currency">
           <button type="button" class="currency__btn  currency__btn--current currency__btn--usd"> $</button>
           <button type="button" class="currency__btn  currency__btn--rub"> ₽</button>
           <button type="button" class="currency__btn  currency__btn--eur"> €</button>
         </div>
+
       </div>
 
       <ul class="offer__list">
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head offer-i-head--top">
-            <h3 class="offer-i-head__text">Macarons. Shells and fillings</h3>
+
+            <h3 class="offer-i-head__text">
+              {{ offerText.offerTitleTranslate.generalCourse.en }}
+            </h3>
+
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
-                <span class="costs__text">price</span>
+                <span class="costs__text">
+                  {{ offerText.offerTitleTranslate.price.en }}
+                </span>
                 <div class="costs__box costs__box--left">
                   {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.helpUsd }} $</span>
@@ -38,8 +49,11 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn1">Buy</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn1">
+              {{ offerText.offerTitleTranslate.buy.en }}
+            </button>
           </div>
+
           <button type="button" class="offer-item__btn offer-item__btn--1"
             aria-label="Show (hide) a list of what it includes"></button>
           <div class="offer-item__body">
@@ -74,10 +88,14 @@
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">Only Shells</h3>
+            <h3 class="offer-i-head__text">
+              {{ offerText.offerTitleTranslate.shells.en }}
+            </h3>
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
-                <span class="costs__text">price</span>
+                <span class="costs__text">
+                  {{ offerText.offerTitleTranslate.price.en }}
+                </span>
                 <div class="costs__box costs__box--left">
                   {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.partUsd }} $</span>
@@ -87,7 +105,9 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn2">Buy</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn2">
+              {{ offerText.offerTitleTranslate.buy.en }}
+            </button>
           </div>
           <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
 
@@ -117,10 +137,14 @@
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">Only fillings</h3>
+            <h3 class="offer-i-head__text">
+              {{ offerText.offerTitleTranslate.fillings.en }}
+            </h3>
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
-                <span class="costs__text">price</span>
+                <span class="costs__text">
+                  {{ offerText.offerTitleTranslate.price.en }}
+                </span>
                 <div class="costs__box costs__box--left">
                   {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.partUsd }} $</span>
@@ -130,7 +154,9 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn3">Buy</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn3">
+              {{ offerText.offerTitleTranslate.buy.en }}
+            </button>
           </div>
           <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
           <div class="offer-item__body">
@@ -164,16 +190,16 @@
           </div>
         </li>
 
-
-
-
-
         <li class="offer-item">
           <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">Instagram promotion</h3>
+            <h3 class="offer-i-head__text">
+              {{ offerText.offerTitleTranslate.instagram.en }}
+            </h3>
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
-                <span class="costs__text">price</span>
+                <span class="costs__text">
+                  {{ offerText.offerTitleTranslate.price.en }}
+                </span>
                 <div class="costs__box costs__box--center">
                   {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.instUsd }} $</span>
@@ -184,7 +210,9 @@
               </div>
 
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn4">Buy</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn4">
+              {{ offerText.offerTitleTranslate.buy.en }}
+            </button>
           </div>
           <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
           <div class="offer-item__body">
@@ -213,10 +241,14 @@
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">All courses</h3>
+            <h3 class="offer-i-head__text">
+              {{ offerText.offerTitleTranslate.all.en }}
+            </h3>
             <div class="offer-i-head__cost costs">
               <div class="costs__label">
-                <span class="costs__text">price</span>
+                <span class="costs__text">
+                  {{ offerText.offerTitleTranslate.price.en }}
+                </span>
                 <div class="costs__box costs__box--center">
                   {% for item in macrosData.priceNormal %}
                   <span class="costs__item">{{ item.allUsd }} $</span>
@@ -227,7 +259,9 @@
               </div>
 
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn5">Buy</button>
+            <button type="button" class="offer-i-head__btn offer-i-head__btn5">
+              {{ offerText.offerTitleTranslate.buy.en }}
+            </button>
           </div>
           <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
           <div class="offer-item__body">

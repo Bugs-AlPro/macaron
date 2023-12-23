@@ -8,12 +8,24 @@
 @import '_parts/_header/logo';
 @import '_parts/_header/language';
 @import '_parts/_header/nav';
+@import '_parts/_header/header';
 
 // Подключаем стили для skills
 @import '_parts/_skils/skils';
 
 // Подключаем стили для errors
 @import '_parts/_errors/errors';
+
+// Подключаем стили для about
+@import '_parts/_about/about';
+
+// Подключаем стили для want
+@import '_parts/_want/want';
+// Подключаем стили для offer
+@import '_parts/_offer/offer';
+
+// Подключаем стили для payment
+@import '_parts/_payment/payment';
 
 // Подключаем стили для отзывов
 @import '_parts/_feedback/feedback';
@@ -23,3 +35,9 @@
 
 // Подключаем стили для файлов cookie
 @import '_parts/_cookie/cookie';
+
+// Подключаем стили для файлов lava
+@import '_parts/_lava/lava';
+
+// Подключаем стили для файлов footer
+@import '_parts/_footer/footer';

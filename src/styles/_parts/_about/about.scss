@@ -1,0 +1,128 @@
+@include media-up(lg) {
+    .about {
+        padding: 20px 20px;
+        border-radius: 20px;
+        border: 4px solid var(--back-lightblue);
+        box-shadow: 0 0 5px 1px var(--title-gray);
+        position: relative;
+
+        &__img {
+            border-radius: 50%;
+            border: 4px solid rgba(163, 202, 224, 0.6);
+
+            &--top {
+                height: 300px;
+                position: absolute;
+                top: 50px;
+                left: -130px;
+            }
+
+            &--down {
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                bottom: -30px;
+                right: -80px;
+            }
+        }
+
+        &__text {
+            font-size: 1.5em;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+            text-indent: 30px;
+            position: relative;
+            display: inline-block;
+
+            &--1::before {
+                content: "";
+                display: block;
+                float: left;
+                width: 180px;
+                height: 200px;
+                border-bottom-right-radius: 80%;
+            }
+
+            &--2 {
+                margin-right: 60px;
+            }
+
+            &--3 {
+                margin-right: 100px;
+            }
+
+            &--loccitane {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@include media-down(lg) {
+    .about {
+        padding: 20px 20px;
+        border-radius: 20px;
+        border: 4px solid var(--back-lightblue);
+        position: relative;
+        box-shadow: 0 0 3px 1px var(--title-gray);
+
+        &__body {
+            position: relative;
+            margin-top: 40px;
+        }
+
+        &__img {
+            border-radius: 50%;
+            border: 3px solid rgba(163, 202, 224, 0.8);
+
+            &--top {
+                position: absolute;
+                top: -40px;
+                left: -40px;
+                width: 100px;
+                height: 100px;
+            }
+
+            &--down {
+                position: relative;
+                height: 200px;
+                width: 200px;
+                bottom: 70px;
+                float: right;
+                display: block;
+            }
+        }
+
+        &__text {
+            font-size: 1.3em;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+            text-indent: 1em;
+            position: relative;
+            display: inline-block;
+            font-weight: 400;
+
+            &--1::before {
+                content: "";
+                display: block;
+                float: left;
+                width: 70px;
+                height: 65px;
+                border-bottom-right-radius: 80%;
+            }
+
+            &--3::after {
+                content: "";
+                display: block;
+                float: right;
+                position: relative;
+                width: 200px;
+                height: 55px;
+            }
+
+            &--loccitane {
+                font-weight: 600;
+            }
+        }
+    }
+}
