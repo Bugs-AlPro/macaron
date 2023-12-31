@@ -12,20 +12,6 @@
         <h2 class="title-section__head title-section__head--red">
           {{ wantText.wantTitleTranslate.title.ru }}
         </h2>
-        <p class="title-section__text title-section__text--want">
-          {{ wantText.wantTitleTranslate.subTitle.ru }}
-        </p>
-      </div>
-
-      <div class="want__video youtube">
-
-        <a href="{{ wantText.youtubePrew.link.ru }}" class="youtube__link">
-          <picture class="youtube__picture">
-            <source srcset="img/{{ wantText.youtubePrew.cover.ru }}.webp" type="image/webp">
-            <img src="img/{{ wantText.youtubePrew.cover.ru }}.jpg" alt="{{ wantText.youtubePrew.alt.ru }}"
-              class="youtube__img">
-          </picture>
-        </a>
 
       </div>
 
@@ -42,6 +28,26 @@
         {% endfor %}
 
       </ul>
+
+      <div class="want__title title-section">
+
+        <p class="title-section__head title-section__head--red">
+          {{ wantText.wantTitleTranslate.subTitle.ru }}
+        </p>
+
+      </div>
+
+      <div class="want__video youtube">
+
+        <a href="{{ wantText.youtubePrew.link.ru }}" class="youtube__link">
+          <picture class="youtube__picture">
+            <source srcset="img/{{ wantText.youtubePrew.cover.ru }}.webp" type="image/webp">
+            <img src="img/{{ wantText.youtubePrew.cover.ru }}.jpg" alt="{{ wantText.youtubePrew.alt.ru }}"
+              class="youtube__img">
+          </picture>
+        </a>
+
+      </div>
 
       <div class="want__preview preview">
 
