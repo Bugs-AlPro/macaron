@@ -26,6 +26,7 @@
     &--skils {
       position: relative;
       padding-top: 70px;
+      padding-bottom: 50px;
     }
 
     &--skils::before {
@@ -149,7 +150,7 @@
 
     &__list {
       display: flex;
-
+      z-index: 2;
       text-align: center;
       position: relative;
       padding: 0;
@@ -202,6 +203,8 @@
     display: flex;
     justify-content: center;
     gap: 50px;
+    z-index: 2;
+    position: relative;
 
     &__link {
       color: var(--social-link);

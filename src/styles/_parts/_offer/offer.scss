@@ -121,6 +121,16 @@
             font-weight: 500;
             position: relative;
             list-style-type: disc;
+
+            &--green {
+                border: 2px solid hsl(0, 0%, 100%);
+                background-color: var(--back-green);
+                color: #723a3a;
+                padding: 5px;
+                border-radius: 5px;
+                // margin-top: 10px;
+                line-height: 2em;
+            }
         }
 
         &__item::marker {
@@ -271,7 +281,7 @@
         border-top-right-radius: 8px;
         border: 2px solid var(--title-blue);
         border-bottom: none;
-        z-index: 1;
+        z-index: 2;
 
         &__btn {
             font-size: 1.35em;
@@ -316,24 +326,23 @@
 
         &__box {
             display: flex;
-            // width: 110px;
             color: var(--text-darkgray);
             position: absolute;
             top: 0px;
-            left: -220px;
+            left: -230px;
         }
 
         &__item {
-            width: 110px;
+            width: 115px;
         }
 
         &__box--left {
-            transform: translateX(220px);
+            transform: translateX(230px);
             transition: 0.5s;
         }
 
         &__box--center {
-            transform: translateX(110px);
+            transform: translateX(115px);
             transition: 0.5s;
         }
 
@@ -493,6 +502,17 @@
             font-weight: 500;
             list-style-type: disc;
             position: relative;
+
+            &--green {
+                border: 2px solid hsl(0, 0%, 100%);
+                background-color: var(--back-green);
+                color: #723a3a;
+                padding: 5px;
+                // border-radius: 5px;
+                // margin-top: 10px;
+                line-height: 1.2em;
+                display: inline-block;
+            }
         }
 
         // &__item:last-child {
@@ -687,6 +707,7 @@
         border-top-right-radius: 8px;
         border: 2px solid var(--title-blue);
         border-bottom: none;
+        z-index: 2;
 
         &__btn {
             font-size: 1.35em;

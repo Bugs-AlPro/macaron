@@ -189,6 +189,8 @@
         border-radius: 30px;
         box-shadow: 0 0 10px 1px var(--title-gray);
         padding: 15px;
+        z-index: 2;
+        position: relative;
 
         &__text {
             padding: 10px;
@@ -356,18 +358,6 @@
             display: block;
         }
     }
-
-    .end-photo {
-        display: none;
-        justify-content: flex-end;
-
-        &__img {
-            display: block;
-            height: 400px;
-            // max-height: 300px;
-            width: auto;
-        }
-    }
 }
 
 @include media-down(lg) {
@@ -406,16 +396,9 @@
         // }
     }
 
-    .end-photo {
-        &__img {
-            display: block;
-            height: auto;
-            // max-height: 300px;
-            width: 100%;
-        }
-    }
-
     .payment-list {
+        position: relative;
+        z-index: 2;
         display: inline-block;
         margin-bottom: 50px;
 

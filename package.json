@@ -24,6 +24,7 @@
     "gulp-nunjucks": "^5.1.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-webp": "^4.0.1",
+    "particles.js": "^2.0.0",
     "tiny-slider": "^2.9.3"
   }
 }

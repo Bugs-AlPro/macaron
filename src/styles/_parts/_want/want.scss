@@ -114,6 +114,7 @@
 
     .youtube {
         // width: 100%;
+        z-index: 2;
 
         &__link {
             margin: 0 auto;
@@ -393,6 +394,7 @@
 
     .payment-button {
         position: relative;
+        z-index: 2;
 
         &__btn {
             --shadow-color: 332deg 57% 72%;
@@ -538,6 +540,7 @@
 
     .youtube {
         display: inline-block;
+        z-index: 2;
 
         &__link {
             margin: 0 auto;
@@ -653,6 +656,8 @@
             box-shadow: 0 0 3px 1px var(--text-gray);
             // transition: 0.3s;
             max-width: 500px;
+            z-index: 2;
+            position: relative;
         }
 
         // &__img:hover,
@@ -859,6 +864,7 @@
     .payment-button {
         display: inline-block;
         position: relative;
+        z-index: 2;
 
         &__btn {
             --shadow-color: 332deg 57% 72%;

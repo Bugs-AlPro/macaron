@@ -1,5 +1,7 @@
 @include media-up(lg) {
     .errors {
+        position: relative;
+
         &__list {
             display: grid;
             gap: 8px;
@@ -11,7 +13,7 @@
             color: var(--text-gray);
             background-color: white;
             position: relative;
-            z-index: 2;
+            // z-index: 0;
             padding: 8px;
             justify-self: start;
             border-left: 40px solid var(--back-lightred);
@@ -53,6 +55,8 @@
     }
 
     .errors-img-xl {
+        position: relative;
+        z-index: 2;
         display: grid;
         gap: 1em;
 
@@ -72,6 +76,7 @@
 @include media-down(lg) {
     .errors {
         padding-bottom: 50px;
+        position: relative;
 
         &__list {
             margin-top: 50px;
@@ -84,7 +89,7 @@
             color: var(--text-gray);
             background-color: white;
             position: relative;
-            z-index: 2;
+            // z-index: 2;
             padding: 8px;
             justify-self: start;
             border-left: 20px solid var(--back-lightred);
@@ -102,6 +107,8 @@
     .errors-img-sm {
         display: flex;
         padding: 10px 0;
+        z-index: 2;
+        position: relative;
 
         &__item {
             height: auto;

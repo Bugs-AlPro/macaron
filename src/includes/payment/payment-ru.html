@@ -115,18 +115,15 @@
 
                 <div class="p-description__block">
                   <div class="p-description__logo">
-                    <a href="https://www.westernunion.com" class="p-description__logo-link">
-                      {{ imagePng('p-description__picture', 'westernunion', 'p-description__image', 'WesternUnion logo',
-                      '315', '100') }}
-                    </a>
-                    <a href="https://www.moneygram.com/mgo/us/en/" class="p-description__logo-link">
-                      {{ imagePng('p-description__picture', 'monegr', 'p-description__image', 'MoneyGram logo',
-                      '315', '100') }}
-                    </a>
-                    <a href="https://koronapay.com/" class="p-description__logo-link">
-                      {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'KoronaPay
-                      logo') }}
-                    </a>
+
+                    {{ imagePng('p-description__picture', 'westernunion', 'p-description__image', 'WesternUnion logo',
+                    '315', '100') }}
+
+                    {{ imagePng('p-description__picture', 'monegr', 'p-description__image', 'MoneyGram logo',
+                    '315', '100') }}
+
+                    {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'KoronaPay
+                    logo') }}
                   </div>
                   <p class="p-description__text">Информация для денеженого перевода: Western Union, MoneyGram,
                     KoronaPay. <br>
@@ -152,9 +149,9 @@
                 aria-label="Показать (скрыть) список того, что в это входит"></button>
               <div class="payment-type__description p-description">
                 <div class="p-description__logo">
-                  <a class="p-description__logo-link" href="https://www.paypal.com/webapps/mpp/paypal-popup">
-                    <img src="img/PayPal.svg" alt="Paypal logo" class="p-description__image">
-                  </a>
+
+                  <img src="img/PayPal.svg" alt="Paypal logo" class="p-description__image">
+
                 </div>
                 <p class="p-description__text">
                   {{ macrosText.paymentDescripPaypalRu }}
@@ -192,8 +189,5 @@
       </div>
     </div>
   </div>
-  <!-- <div class="end-photo">
-    {{ imageJpg('end-photo__picture', 'end', 'end-photo__img', 'На фото, Елена
-    предлагает рассказать о себе', '200', '150') }}
-  </div> -->
+
 </section>
