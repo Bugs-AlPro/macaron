@@ -24,4 +24,36 @@ $screen-xxl: 1400px;
 
   --box-shadow-google: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
 
+  --color-background: rgb(254, 251, 251);
+  --color-accent: hsl(279, 60%, 65%);
+  --color-muted: hsl(303, 27%, 31%);
+  --color-text: hsl(344, 14%, 15%);
+
+  --margin-title: 50px 0;
+
+  --gap-big: 100px;
+  --gap-midle: 50px;
+  --gap-smal: 20px;
+
+}
+
+:root {
+  --shadow-color: 0deg 0% 63%;
+  --shadow-elevation-low:
+    0px 0.2px 0.3px hsl(var(--shadow-color) / 0),
+    0px 0.4px 0.6px hsl(var(--shadow-color) / 0.23),
+    0px 0.7px 1px hsl(var(--shadow-color) / 0.46);
+  --shadow-elevation-medium:
+    0px 0.3px 0.5px hsl(var(--shadow-color) / 0),
+    0px 1.4px 2.1px hsl(var(--shadow-color) / 0.18),
+    -0.1px 2.8px 4.2px hsl(var(--shadow-color) / 0.36),
+    -0.1px 5.7px 8.6px hsl(var(--shadow-color) / 0.54);
+  --shadow-elevation-high:
+    0px 0.1px 0.2px hsl(var(--shadow-color) / 0),
+    0px 1px 1.5px hsl(var(--shadow-color) / 0.11),
+    0.1px 1.8px 2.7px hsl(var(--shadow-color) / 0.22),
+    0.1px 2.7px 4.1px hsl(var(--shadow-color) / 0.33),
+    0.2px 3.9px 5.9px hsl(var(--shadow-color) / 0.44),
+    0.2px 5.8px 8.7px hsl(var(--shadow-color) / 0.55),
+    0.4px 8.4px 12.6px hsl(var(--shadow-color) / 0.66);
 }

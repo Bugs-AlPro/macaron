@@ -4,12 +4,13 @@
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 1em;
+            gap: 20px;
             font-size: 1em;
             font-weight: 600;
             padding: 4px 8px;
             border-radius: 8px;
-            color: var(--title-blue);
+            color: var(--color-text);
+            // box-shadow: var(--shadow-elevation-low);
         }
 
         &__link:active,
@@ -29,14 +30,14 @@
             width: 54px;
             height: 54px;
             border-radius: 50%;
-            box-shadow: 0 0 10px 2px var(--title-blue);
+            // box-shadow: 0 0 10px 2px var(--title-blue);
         }
 
         &__text {
             font-weight: 600;
-            font-family: 'Dancing Script', cursive;
+            // font-family: 'Dancing Script', cursive;
             font-size: 1.4em;
-            color: var(--title-blue);
+            color: var(--color-text);
         }
     }
 }

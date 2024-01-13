@@ -11,6 +11,12 @@
 @import '_parts/_header/header';
 
 // Подключаем стили для skills
+@import '_parts/_interesting/interesting';
+
+// Подключаем стили для skills
+@import '_parts/_youtube/youtube';
+
+// Подключаем стили для skills
 @import '_parts/_skils/skils';
 
 // Подключаем стили для errors
@@ -26,6 +32,12 @@
 
 // Подключаем стили для payment
 @import '_parts/_payment/payment';
+
+// Подключаем стили для payment
+@import '_parts/_recive/recive';
+
+// Подключаем стили для payment
+@import '_parts/_recive/social';
 
 // Подключаем стили для отзывов
 @import '_parts/_feedback/feedback';

@@ -1,0 +1,33 @@
+<!-- Подключаем файл с переводом текста -->
+{% import "includes/youtube/text-content-youtube.html" as translate %}
+
+
+<section class="wrap wrap--youtube">
+
+    <div class="container">
+
+        <div class="block block--line">
+
+            <div class="block__title block__title--order-2 title">
+
+                <h2 class="title__text">
+                    {{ translate.youtubeTitle.title.ru }}
+                </h2>
+
+            </div>
+
+            <div class=" block__section youtube">
+
+                <a href="{{ translate.youtubePrew.link.ru }}" class="youtube__link">
+                    <picture class="youtube__picture">
+                        <source srcset="img/{{ translate.youtubePrew.cover.ru }}.webp" type="image/webp">
+                        <img src="img/{{ translate.youtubePrew.cover.ru }}.jpg" alt="{{ translate.youtubePrew.alt.ru }}"
+                            class="youtube__img">
+                    </picture>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,30 +1,53 @@
 <header class="wrap wrap--header" id="home">
 
-  <!-- Блок sale-wrap является распоркой для мобильных устройств -->
   <div class="sale-wrap">
 
     {% include "includes/promo/sale.html" %}
 
   </div>
 
+  <div class="header-fixed-wrap">
+    <div class="header-fixed">
+
+      {% include "includes/header/logo.html" %}
+
+      {% include "includes/header/language-ru.html" %}
+
+      <!-- {% include "includes/header/nav-ru.html" %} -->
+
+    </div>
+  </div>
 
   <div class="container">
 
-    <div class="header">
+    <div class="block block--hidden">
 
-      <div class="header-fixed">
+      {% import "includes/header/text-content-header.html" as headerText %}
 
-        {% include "includes/header/logo.html" %}
-
-        {% include "includes/header/language-ru.html" %}
-
-        {% include "includes/header/nav-ru.html" %}
-
+      <div class="block__title title">
+        <h1 class="title__header">
+          {{ headerText.heaederTitleTranslate.title.ru }}
+        </h1>
+        <p class="title__text">
+          {{ headerText.heaederTitleTranslate.subTitle.ru | safe}}
+        </p>
       </div>
 
-      {% include "includes/header/title-ru.html" %}
+      <div class="block__section">
+        <ul class="slider slider--header mainSlider">
 
-      {% include "includes/header/slider-header-ru.html" %}
+          {% for item in macrosData.sliderOfferBase %}
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/{{ item.img }}.webp" type="image/webp">
+              <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider__img" height="250">
+            </picture>
+          </li>
+          {% endfor %}
+
+        </ul>
+
+      </div>
 
     </div>
   </div>

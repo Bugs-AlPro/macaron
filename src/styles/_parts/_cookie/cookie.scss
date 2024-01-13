@@ -1,7 +1,8 @@
 .cookie {
-    background-color: rgb(100, 100, 100);
+    background-color: var(--color-muted);
+    box-shadow: var(--shadow-elevation-high);
     position: fixed;
-    z-index: 310;
+    z-index: 300;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -9,7 +10,7 @@
     margin: 0 auto;
 
     &--close {
-        transform: translateY(100%);
+        transform: translateY(110%);
         transition: 1.5s;
     }
 
@@ -21,13 +22,16 @@
     &__btn {
         padding: 12px;
         border: none;
-        color: black;
+        color: var(--color-background);
         font-size: 1.1em;
-        background-color: #fff;
+        background-color: var(--color-muted);
+        box-shadow: 0 0 1px 1px var(--color-background);
     }
 
     &__btn:hover {
-        background-color: rgb(255, 234, 234);
+        background-color: var(--color-background);
+        // box-shadow: var(--shadow-elevation-medium);
+        color: var(--color-text);
     }
 }
 

@@ -1,7 +1,7 @@
 @include media-up(lg) {
     .language {
         display: flex;
-        gap: 2em;
+        gap: 20px;
 
         &__link {
             text-decoration: none;
@@ -11,6 +11,7 @@
             font-weight: 600;
             border-radius: 8px;
             color: var(--title-blue);
+            color: var(--color-text);
         }
 
         &__link:hover,
@@ -18,13 +19,14 @@
             transition: 0.2s;
             box-shadow: var(--box-shadow-google);
             transform: translateY(-1px);
+
         }
 
         &__link--current {
-            color: hsl(202, 34%, 68%);
             position: relative;
             transform: translateY(-1px);
             box-shadow: var(--box-shadow-google);
+            color: var(--color-text);
         }
     }
 }

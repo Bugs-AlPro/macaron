@@ -4,17 +4,18 @@
 <section class="wrap wrap--errors">
 
   <div class="container">
-    <div class="errors">
-      <div class="errors__title title-section">
-        <h2 class="title-section__head title-section__head--errors title-section__head--reviews">
+
+    <div class="block">
+      <div class="block__title title">
+        <h2 class="title__text">
           {{ errortsText.errorsTitleTranslate.title.ru }}
         </h2>
-        <p class="title-section__text title-section__text--errors">
+        <p class="title__smal-text">
           {{ errortsText.errorsTitleTranslate.subTitle.ru }}
         </p>
       </div>
 
-      <ul class="errors-img-sm">
+      <ul class="block__section errors-img-sm">
         {% for item in macrosData.errors %}
         <li class="errors-img-sm__item">
           <picture class="errors-img-sm__picture">
@@ -25,7 +26,7 @@
         {% endfor %}
       </ul>
 
-      <ul class="errors__list">
+      <ul class="block__section errors">
 
         {% for item in errortsText.errorsTypes %}
         <li class="errors__item">{{ item.ru }}</li>

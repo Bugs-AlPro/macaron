@@ -3,190 +3,76 @@
 
 <section class="wrap wrap--payment" id="payment-block">
   <div class="container">
-    <div class="payment">
+    <div class="block">
 
-      <div class="payment__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">
-          {{ paymentText.reciveTitleTranslate.title.ru }}
+      <div class="block__title title">
+        <h2 class="title__text">
+          Ответы на частые вопросы
         </h2>
       </div>
 
-      <ul class="recive">
-        <li class="recive__item recive__item--text">
-
-          <div class="recive-list">
-
-            <div class="recive-list__item">
-              {{ imagePng('recive-list__picture', 'lava', 'recive-list__img', 'Логотип ЛаваТоп',
-              '65', '65') }}
-              <p class="recive-list__text">
-                {{ paymentText.reciveListTranslate.lava.ru | safe }}
-              </p>
-            </div>
-            <!-- 
-            <div class="recive-list__item">
-              {{ imageSvgColor('transfer', 'recive-list__svg svgcolor', '50', '50', 'logo') }}
-            </div> -->
-
-            <div class="recive-list__item">
-              {{ imagePng('recive-list__picture', 'telegramm', 'recive-list__img', 'Лого телеграм', '65', '65') }}
-              <p class="recive-list__text">
-                {{ paymentText.reciveListTranslate.telegram.ru | safe }}
-              </p>
-
-            </div>
-            <!-- <div class="recive-list__item">
-              {{ imageSvgColor('transfer', 'recive-list__svg svgcolor', '50', '50', 'logo') }}
-            </div> -->
-            <div class="recive-list__item">
-              <img src="img/youtube.svg" alt="Logo youtube" class="recive-list__img">
-              <p class="recive-list__item">
-                {{ paymentText.reciveListTranslate.youtube.ru | safe }}
-              </p>
-
-            </div>
-
-          </div>
-
+      <ul class="block__section questions">
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">На какой срок я получу доступ к курсу?</summary>
+            <div class="questions__answer">Скажу честно, я не планирую удалять у вас доступ к файлам, через год.
+              Пользуйтесь сколько хотите. Но также я не могу гарантировать, что интернет сервисы будут стабильно
+              работать многие годы.</div>
+          </details>
         </li>
-        <li class="recive__item recive__item--end">
-          <p class="recive__text">
-            {{ paymentText.reciveEndtextTranslate.title.ru }}
-          </p>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">Если у меня нет телеграм как полчить курс?</summary>
+            <div class="questions__answer">Для тех у кого нет телеграмм, я предоставлю доступ на мой закрытый ютуб
+              канал, где будут доступны все видео. После оплаты, сообщите о своём желании получить доступ на Ютуб.</div>
+          </details>
         </li>
-        <li class="recive__item recive__item--social">
-
-          <ul class="recive__social social">
-
-            <li class="social__item">
-              <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Ссылка на telegram.">
-                {{ imagePng('social__picture', 'telegramm', 'social__img', 'Ссылка на телеграм', '65', '65') }}
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://wa.me/message/ZVYTBBN3N7SNI1" class="social__link" aria-label="Ссылка на whatsapp.">
-                {{ imagePng('social__picture', 'whatsapp', 'social__img', 'Ссылка на вотсапп', '65', '65') }}
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.instagram.com/macaron_by_elena" class="social__link"
-                aria-label="Ссылка на instagram.">
-                {{ imagePng('social__picture', 'instagram', 'social__img', 'Ссылка на инстаграмм', '65', '65') }}
-              </a>
-            </li>
-          </ul>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">Сколько видео входят в курс "Только крышечки"?</summary>
+            <div class="questions__answer">На данный момент в этот курс входят 10 видео общей протяжённостью около 1 час
+              30 минут. Также к курсу прилагается
+              подробная тех. карта или PDF файл (30 стр.)</div>
+          </details>
         </li>
-
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">Сколько видео входят в курс "Только начинки"?</summary>
+            <div class="questions__answer">На данный момент в этот курс входят 12 видео общей протяжённостью около 1 час
+              30 минут. Также к курсу прилагается
+              подробная тех. карта или PDF файл с рецептами для более чем 30 разных вкусов начинок. (40 стр.)</div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">Могу ли я оплатить курс через PayPal?</summary>
+            <div class="questions__answer">Да, это можно сделать. Вам нужно перевести оплату за курс по адресу
+              d.panchenko1974@gmail.com. После оплаты пришлите мне информацию о вашей оплате, любым удобным способом и я
+              предоставлю вам доступ на курс.
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">Могу ли я использовать другой способ оплаты?</summary>
+            <div class="questions__answer">Да, вы можете перевести деньги любым удобным для вас способом: Western Union,
+              MoneyGram, KoronaPay и другие. Также вы можете сделать перевод по банковским реквизитам если вы находитесь
+              в Турции, Грузии или России. Что-бы узнать подробности таких переводов напишите мне вопрос в личные
+              сообщения.
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">Что делать если я при покупке неправильно вписал адрес электронной
+              почты?</summary>
+            <div class="questions__answer">Это не проблема. Свяжитесь со мной и пришлите подтверждение об оплате. Если
+              оплата прошла, то я предоставлю вам доступ к курсу.
+            </div>
+          </details>
+        </li>
       </ul>
 
-      <div class="payment__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">
-          {{ paymentText.reciveTitleTranslate.subTitle.ru }}
-        </h2>
-      </div>
-      <div class="payment__list payment-list">
-        <div class="payment-list__item payment-list__item--btn">
-
-          <!-- <button class="payment-list__btn ">
-            {{ macrosText.paymentListTitleRu }}
-          </button> -->
-
-          <ul class="payment-list__payment payment-type payment-list__payment--open">
-
-            <li class="payment-type__item">
-              <p class="payment-type__text">
-                {{ macrosText.paymentTypeTitleRu | safe }}
-              </p>
-            </li>
-            <li class="payment-type__item">
-
-              <div class="payment-type__title">
-                <div class="payment-type__logo">
-                  {{ macrosText.paymentLogoMoney }}
-                </div>
-                <div class="payment-type__head">
-                  {{ macrosText.paymentLabelMoneyRu }}
-                </div>
-              </div>
-
-              <button type="button" class="payment-type__btn"
-                aria-label="Показать (скрыть) список того, что в это входит"></button>
-              <div class="payment-type__description p-description">
-
-                <div class="p-description__block">
-                  <div class="p-description__logo">
-
-                    {{ imagePng('p-description__picture', 'westernunion', 'p-description__image', 'WesternUnion logo',
-                    '315', '100') }}
-
-                    {{ imagePng('p-description__picture', 'monegr', 'p-description__image', 'MoneyGram logo',
-                    '315', '100') }}
-
-                    {{ imageSvgColor('zolotayakorona', 'svgcolor p-description__image', '250', '100', 'KoronaPay
-                    logo') }}
-                  </div>
-                  <p class="p-description__text">Информация для денеженого перевода: Western Union, MoneyGram,
-                    KoronaPay. <br>
-                    <span class="p-description__copy"> Turkey, Antalya, Elena Pronina</span>
-                    <span class="p-description__copy">+90 (551) 841-32-23</span>
-                  </p>
-
-
-                </div>
-
-              </div>
-            </li>
-            <li class="payment-type__item">
-              <div class="payment-type__title">
-                <div class="payment-type__logo">
-                  {{ macrosText.paymentLogoPaypal }}
-                </div>
-                <div class="payment-type__head">
-                  {{ macrosText.paymentLabelPaypalRu }}
-                </div>
-              </div>
-              <button type="button" class="payment-type__btn"
-                aria-label="Показать (скрыть) список того, что в это входит"></button>
-              <div class="payment-type__description p-description">
-                <div class="p-description__logo">
-
-                  <img src="img/PayPal.svg" alt="Paypal logo" class="p-description__image">
-
-                </div>
-                <p class="p-description__text">
-                  {{ macrosText.paymentDescripPaypalRu }}
-                  <br>
-                  <span class="p-description__copy">{{ macrosText.paymentLinkPaypal }}</span>
-                </p>
-
-              </div>
-            </li>
-            <li class="payment-type__item">
-              <div class="payment-type__title">
-                <div class="payment-type__logo">
-                  {{ macrosText.paymentLogoRf }}
-                </div>
-                <div class="payment-type__head">
-                  {{ macrosText.paymentLabelRfRu }}
-                </div>
-              </div>
-              <button type="button" class="payment-type__btn"
-                aria-label="Показать (скрыть) список того, что в это входит"></button>
-              <div class="payment-type__description">
-                <p class="payment-type__text">Выберите урок и переведите соответствующую сумму в рублях. Банк Тинькофф
-                  по номеру телефона <span class="p-description__copy">+79958850643</span> Елена П. Если
-                  переводить через СБП, то без комиссии любому банку.
-                </p>
-                <div class="buy">
-                  <a href="{{ macrosText.paymentLinkRf }}" class="buy__link"
-                    aria-label="Ссылка на оплату через Тинькоф.">Перейти на страницу оплаты
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 

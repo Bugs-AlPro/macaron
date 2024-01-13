@@ -1,0 +1,41 @@
+<!-- Подключаем файл с переводом текста -->
+{% import "includes/want/text-content-course.html" as translate %}
+
+
+<section class="wrap wrap--course">
+
+  <div class="container">
+
+    <div class="block block--line">
+
+      <div class="block__title title">
+
+        <h2 class="title__text">
+          {{ translate.courseTitle.title.ru }}
+        </h2>
+
+      </div>
+
+      <ul class="block__section course">
+
+        {% for item in translate.courseBody %}
+
+        <li class="course__item">
+          <div class="course__title">
+            {{ item.titleRu }}
+          </div>
+          <div class="course__description">
+            {{ item.descriptionRu }}
+          </div>
+          <a href="{{ item.link }}" class="course__link link-to">
+            {{ item.linkTextRu }}
+          </a>
+        </li>
+
+        {% endfor %}
+
+      </ul>
+
+    </div>
+  </div>
+</section>

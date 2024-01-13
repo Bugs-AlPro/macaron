@@ -3,30 +3,30 @@
 
 <section class="wrap wrap--offer" id="offer">
   <div class="container">
-    <div class="offer">
+    <div class="block">
 
       <!-- Блок sale-wrap является распоркой для мобильных устройств -->
       <div class="sale-wrap">
         {% include "includes/promo/sale.html" %}
       </div>
 
-      <div class="offer__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">
+      <div class="block__title title">
+        <h2 class="title__text">
           {{ offerText.offerTitleTranslate.title.ru }}
         </h2>
       </div>
 
-      <div class="offer__currency">
-        <!-- Блок переключения валюты - для всех товаров в разделе offer -->
-        <div class="currency">
+      <!-- <div class="offer__currency"> -->
+      <!-- Блок переключения валюты - для всех товаров в разделе offer -->
+      <!-- <div class="currency">
           <button type="button" class="currency__btn  currency__btn--usd"> $</button>
           <button type="button" class="currency__btn  currency__btn--rub currency__btn--current"> ₽</button>
           <button type="button" class="currency__btn  currency__btn--eur"> €</button>
-        </div>
+        </div> -->
 
-      </div>
+      <!-- </div> -->
 
-      <ul class="offer__list">
+      <!-- <ul class="offer__list">
 
         <li class="offer-item">
           <div class="offer-item__title offer-i-head offer-i-head--top">
@@ -302,7 +302,228 @@
 
         </li>
 
+      </ul> -->
+
+      <ul class="block__section part">
+        <li class="part__item">
+
+          <img src="img/img23.jpg" alt="" class="part__img">
+
+          <div class="part__costs costs">
+            <div class="costs__title">
+              {{ offerText.offerTitleTranslate.generalCourse.ru }}
+            </div>
+            <div class="costs__text">
+              Цена
+            </div>
+            <div class="costs__label">
+
+              <div class="costs__box costs__box--center">
+                {% for item in macrosData.priceNormal %}
+                <span class="costs__item">{{ item.allUsd }} $</span>
+                <span class="costs__item">{{ item.allRub }} ₽</span>
+                <span class="costs__item">{{ item.allEur }} €</span>
+                {% endfor %}
+              </div>
+            </div>
+            <button type="button" class="costs__btn">
+              купить
+            </button>
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">Показать что входит в курс</summary>
+            <ul class="details__list">
+              <li class="details__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
+                макарон, с
+                рецептом крышечек на итальянской меренге с
+                пониженным содержанием сахара. Файл PDF на 30 стр.
+              </li>
+              <li class="details__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
+              <li class="details__item">Трафареты для выпекания крышечек.</li>
+              <li class="details__item">Тех. карта с подробным описанием процесса приготовления начинок разных
+                вкусов. Файл PDF
+                на 40 стр.
+              </li>
+              <li class="details__item">Видео всего процесса приготовления крышечек.</li>
+              <li class="details__item">Видео приготовления различных базовых начинок.</li>
+              <li class="details__item">Видео о том, как делать рисунки и выпекать фигурные
+                макарон.</li>
+              <li class="details__item">Консультация, ответы на
+                вопросы, разбор ошибок, помощь в доведении до уровня продаж.</li>
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+          <img src="img/img29.jpg" alt="" class="part__img part__img--invert">
+
+          <div class="part__costs costs">
+            <div class="costs__title">
+              {{ offerText.offerTitleTranslate.shells.ru }}
+            </div>
+            <div class="costs__text">
+              Цена
+            </div>
+            <div class="costs__label">
+
+              <div class="costs__box costs__box--center">
+                {% for item in macrosData.priceNormal %}
+                <span class="costs__item">{{ item.allUsd }} $</span>
+                <span class="costs__item">{{ item.allRub }} ₽</span>
+                <span class="costs__item">{{ item.allEur }} €</span>
+                {% endfor %}
+              </div>
+            </div>
+            <button type="button" class="costs__btn">
+              купить
+            </button>
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">Показать что входит в курс</summary>
+            <ul class="details__list">
+              <li class="details__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
+                макарон, с
+                рецептом крышечек на итальянской меренге с
+                пониженным содержанием сахара. Файл PDF на 30 стр.
+              </li>
+              <li class="details__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
+              <li class="details__item">Трафареты для выпекания крышечек.</li>
+              <li class="details__item">Видео о том, как делать рисунки и выпекать фигурные
+                макарон.</li>
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+
+          <img src="img/img25.jpg" alt="" class="part__img">
+
+          <div class="part__costs costs">
+            <div class="costs__title">
+              {{ offerText.offerTitleTranslate.fillings.ru }}
+            </div>
+            <div class="costs__text">
+              Цена
+            </div>
+            <div class="costs__label">
+
+              <div class="costs__box costs__box--center">
+                {% for item in macrosData.priceNormal %}
+                <span class="costs__item">{{ item.allUsd }} $</span>
+                <span class="costs__item">{{ item.allRub }} ₽</span>
+                <span class="costs__item">{{ item.allEur }} €</span>
+                {% endfor %}
+              </div>
+            </div>
+            <button type="button" class="costs__btn">
+              купить
+            </button>
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">Показать что входит в курс</summary>
+            <ul class="details__list">
+              <li class="details__item">Тех. карта с подробным описанием процесса приготовления начинок разных
+                вкусов. Файл PDF
+                на 40 стр.
+              </li>
+
+              {% for item in macrosText.fillingsTypes %}
+              <li class="details__item">{{ item.text1 }}</li>
+              {% endfor %}
+
+              <li class="details__item">Видео приготовления различных базовых начинок.</li>
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+
+          <img src="img/inst1.jpg" alt="" class="part__img part__img--invert">
+
+          <div class="part__costs costs">
+            <div class="costs__title">
+              {{ offerText.offerTitleTranslate.instagram.ru }}
+            </div>
+            <div class="costs__text">
+              Цена
+            </div>
+            <div class="costs__label">
+
+              <div class="costs__box costs__box--center">
+                {% for item in macrosData.priceNormal %}
+                <span class="costs__item">{{ item.allUsd }} $</span>
+                <span class="costs__item">{{ item.allRub }} ₽</span>
+                <span class="costs__item">{{ item.allEur }} €</span>
+                {% endfor %}
+              </div>
+            </div>
+            <button type="button" class="costs__btn">
+              купить
+            </button>
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">Показать что входит в курс</summary>
+            <ul class="details__list">
+              <li class="details__item">Книга или PDF файл с подробным описанием всех шагов для развития своего
+                аккаунта инстагрмм</li>
+              <li class="details__item">В книге после каждого раздела вас ждёт домашнее задание, которое вы можете
+                отправить на проверку.</li>
+              <li class="details__item">Доступ к 14 видео урокам, которые идут в дополнении к книге.</li>
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+
+          <img src="img/img21.jpg" alt="" class="part__img">
+
+          <div class="part__costs costs">
+            <div class="costs__title">
+              {{ offerText.offerTitleTranslate.all.ru | safe }}
+            </div>
+            <div class="costs__text">
+              Цена
+            </div>
+            <div class="costs__label">
+              <div class="costs__box costs__box--center">
+                {% for item in macrosData.priceNormal %}
+                <span class="costs__item">{{ item.allUsd }} $</span>
+                <span class="costs__item">{{ item.allRub }} ₽</span>
+                <span class="costs__item">{{ item.allEur }} €</span>
+                {% endfor %}
+              </div>
+            </div>
+            <button type="button" class="costs__btn">
+              купить
+            </button>
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">Показать что входит в курс</summary>
+            <ul class="details__list">
+              <li class="details__item">Весь курс по приготовлению пирожных макарон: крышечки и начинки.</li>
+              <li class="details__item">Весь курс "Продвижение инстаграм для кондитеров"</li>
+              <li class="details__item">
+                <span class="details__item--bold">БОНУС.</span> Курс приготовления Эскимо-чизкейк
+              </li>
+            </ul>
+          </details>
+
+        </li>
       </ul>
+
     </div>
   </div>
 </section>
