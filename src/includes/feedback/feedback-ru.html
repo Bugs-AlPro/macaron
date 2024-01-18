@@ -1,5 +1,5 @@
 <!-- Подключаем файл с переводом текста -->
-{% import "includes/feedback/text-content-feedback.html" as feedbackText %}
+{% import "includes/feedback/text-content-feedback.html" as translate %}
 
 <section class="wrap wrap--feedback" id="feedback">
   <div class="container">
@@ -8,66 +8,41 @@
       <div class="block__title title">
         <h2 class="title__text">
 
-          {{ feedbackText.feedbackTitleTranslate.title.ru }}
+          {{ translate.feedbackTitle.title.ru }}
 
         </h2>
       </div>
 
       <div class="block__section">
-        <!-- <ul class="feedback-slider__list sliderFeedback">
 
-          {% for item in macrosData.sliderFeedbackRu %}
-
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/{{ item.img }}.webp" type="image/webp">
-              <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="feedback-slider__img">
-            </picture>
-          </li>
-          {% endfor %}
-        </ul> -->
         <ul class="slider slider--feedback feedbackSlider">
+
+          {% for item in translate.feedbacks %}
+
           <li class="slider__item feedback">
-            <div class="feedback__title">Турция</div>
-            <div class="feedback__top">
-              <img class="feedback__img" src="img/logo4.jpg" alt="" width="70px" height="70px">
-              <div class="feedback__name">macaron_by_elena</div>
+            <div class="feedback__title">
+              {{ item.titleRu }}
             </div>
-            <div class="feedback__description">Спасибо большое! Я просто в шоке. Всё получилось с первого
-              раза. Вы мне
-              очень помогли. Наконец-то могу начинать продавать.</div>
-            <a href="#" class="feedback__link link-to">Посетить страницу </a>
-          </li>
-          <li class="slider__item feedback">
-            <div class="feedback__title">Турция</div>
             <div class="feedback__top">
-              <img class="feedback__img" src="img/logo4.jpg" alt="" width="70px" height="70px">
-              <div class="feedback__name">macaron_by_elena</div>
+              <picture class="feedback__picture">
+                <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                <img class="feedback__img" src="img/{{ item.img }}.jpg" alt="Фото профиля {{ item.name }}" width="70px"
+                  height="70px">
+              </picture>
+              <div class="feedback__name">
+                {{ item.name }}
+              </div>
             </div>
-            <div class="feedback__description">Спасибо большое! Я просто в шоке. Всё получилось с первого раза. Вы мне
-              очень помогли. Наконец-то могу начинать продавать.</div>
-            <a href="#" class="feedback__link link-to">Посетить страницу </a>
-          </li>
-          <li class="slider__item feedback">
-            <div class="feedback__title">Турция</div>
-            <div class="feedback__top">
-              <img class="feedback__img" src="img/logo4.jpg" alt="" width="70px" height="70px">
-              <div class="feedback__name">macaron_by_elena</div>
+            <div class="feedback__description">
+              {{ item.descriptionRu }}
             </div>
-            <div class="feedback__description">Спасибо большое! Я просто в шоке. Всё получилось с первого раза. Вы мне
-              очень помогли. Наконец-то могу начинать продавать.</div>
-            <a href="#" class="feedback__link link-to">Посетить страницу </a>
+            <a href="{{ item.link }}" class="feedback__link link-to">
+              {{ item.linkTextRu }}
+            </a>
           </li>
-          <li class="slider__item feedback">
-            <div class="feedback__title">Турция</div>
-            <div class="feedback__top">
-              <img class="feedback__img" src="img/logo4.jpg" alt="" width="70px" height="70px">
-              <div class="feedback__name">macaron_by_elena</div>
-            </div>
-            <div class="feedback__description">Спасибо большое! Я просто в шоке. Всё получилось с первого раза. Вы мне
-              очень помогли. Наконец-то могу начинать продавать.</div>
-            <a href="#" class="feedback__link link-to">Посетить страницу </a>
-          </li>
+
+          {% endfor %}
+
         </ul>
 
       </div>

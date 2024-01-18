@@ -1,12 +1,11 @@
-<!-- Подключаем файл с переводом текста -->
-{% import "includes/lava/text-content-lava.html" as lavaText %}
+{% import "includes/lava/text-content-lava.html" as translate %}
 
 <div class="payment-window-cover"></div>
 
 <div class="payment-window">
     <button type="button" class="payment-window__close"></button>
     <p class="payment-window__title">
-        {{ lavaText.lavaTitleTranslate.title.ru }}
+        {{ translate.lavaTitle.title.ru }}
         <a class="payment-window__title-link" href="https://app.lava.top/macaron_by_elena">Lava.top</a>
     </p>
 
@@ -20,43 +19,26 @@
         '150', '150') }}
     </div>
 
-    <!-- <p class="payment-window__subtitle">
-        {{ macrosText.paymentWindowSubtitleRu }}
-    </p> -->
+    <!-- <div class="payment-window__types">
 
-    <div class="payment-window__types">
-
-        {% for item in macrosText.paymentWindowBtnsRu %}
+        {% for item in translate.lavaButtons %}
         <button type="button" class="payment-window__btn {{ item.class }}">
-            {{ item.text1 }}
+            {{ item.textRu }}
         </button>
         {% endfor %}
 
-    </div>
+    </div> -->
 
     <div class="payment-window__box">
         <div class="payment-window__links payment-window__links-1">
 
-            <a href="https://app.lava.top/ru/products/e4f0ce36-39a6-430f-abaf-98e5b64a577c"
-                class="payment-window__link">
-                {{ lavaText.lavaTitleTranslate.linkText.ru }}
+            {% for item in translate.lavaButtons %}
+
+            <a href="{{ item.linkRu }}" class="payment-window__link">
+                {{ translate.lavaTitle.linkText.ru }}
             </a>
-            <a href="https://app.lava.top/products/721f3351-a6e5-44fd-979c-788200e62bee" class="payment-window__link">
-                {{ lavaText.lavaTitleTranslate.linkText.ru }}
-            </a>
-            <a href="https://app.lava.top/products/a70dff9b-d34b-45cb-b41f-0cc72b49ae8b" class="payment-window__link">
-                {{ lavaText.lavaTitleTranslate.linkText.ru }}
-            </a>
-            <a href="https://app.lava.top/products/5904cbc0-d0a2-415f-a21c-40e5c5a7a075" class="payment-window__link">
-                {{ lavaText.lavaTitleTranslate.linkText.ru }}
-            </a>
-            <a href="https://app.lava.top/ru/products/89d2a547-1ba9-4670-ba8d-396fabbe34d6"
-                class="payment-window__link">
-                {{ lavaText.lavaTitleTranslate.linkText.ru }}
-            </a>
-            <a href="https://app.lava.top/products/bdc5912a-82b3-408d-b61e-bd0c049baa68" class="payment-window__link">
-                {{ lavaText.lavaTitleTranslate.linkText.ru }}
-            </a>
+
+            {% endfor %}
 
         </div>
     </div>

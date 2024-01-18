@@ -26,7 +26,7 @@ $screen-xxl: 1400px;
 
   --color-background: rgb(254, 251, 251);
   --color-accent: hsl(279, 60%, 65%);
-  --color-muted: hsl(303, 27%, 31%);
+  --color-muted: rgb(100, 58, 98);
   --color-text: hsl(344, 14%, 15%);
 
   --margin-title: 50px 0;
@@ -56,4 +56,25 @@ $screen-xxl: 1400px;
     0.2px 3.9px 5.9px hsl(var(--shadow-color) / 0.44),
     0.2px 5.8px 8.7px hsl(var(--shadow-color) / 0.55),
     0.4px 8.4px 12.6px hsl(var(--shadow-color) / 0.66);
+}
+
+:root {
+  --shadow-color-muted: 303deg 35% 16%;
+  --shadow-elevation-low-muted:
+    0px 0.5px 0.6px hsl(var(--shadow-color-muted) / 0.34),
+    0px 0.8px 0.9px -1.2px hsl(var(--shadow-color-muted) / 0.34),
+    0.1px 1.8px 2px -2.5px hsl(var(--shadow-color-muted) / 0.34);
+  --shadow-elevation-medium-muted:
+    0px 0.5px 0.6px hsl(var(--shadow-color-muted) / 0.36),
+    0.1px 1.5px 1.7px -0.8px hsl(var(--shadow-color-muted) / 0.36),
+    0.2px 3.8px 4.3px -1.7px hsl(var(--shadow-color-muted) / 0.36),
+    0.4px 9.2px 10.4px -2.5px hsl(var(--shadow-color-muted) / 0.36);
+  --shadow-elevation-high-muted:
+    0px 0.5px 0.6px hsl(var(--shadow-color-muted) / 0.38),
+    0.1px 3px 3.4px -0.4px hsl(var(--shadow-color-muted) / 0.38),
+    0.3px 5.9px 6.6px -0.8px hsl(var(--shadow-color-muted) / 0.38),
+    0.4px 10.4px 11.7px -1.2px hsl(var(--shadow-color-muted) / 0.38),
+    0.8px 17.7px 19.9px -1.7px hsl(var(--shadow-color-muted) / 0.38),
+    1.3px 29px 32.7px -2.1px hsl(var(--shadow-color-muted) / 0.38),
+    2px 45.8px 51.6px -2.5px hsl(var(--shadow-color-muted) / 0.38);
 }

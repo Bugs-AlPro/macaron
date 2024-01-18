@@ -3,11 +3,9 @@
     .course {
         // overflow: hidden;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr auto;
         gap: var(--gap-midle);
         color: var(--color-text);
-        // border: 1px solid red;
-        // width: 400px;
 
         &__item {
             width: 300px;
@@ -19,7 +17,7 @@
             // border: 1px solid gray;
             border-radius: 20px;
             background-color: var(--color-background);
-            box-shadow: var(--shadow-elevation-high);
+            box-shadow: var(--shadow-elevation-medium-muted);
         }
 
         &__title {
@@ -31,25 +29,6 @@
             font-size: 1.3em;
         }
 
-        // &__link {
-        //     background-color: var(--color-muted);
-        //     color: var(--color-background);
-        //     border: 2px solid var(--color-muted);
-        //     padding: 10px;
-        //     border-radius: 10px;
-        //     text-align: center;
-        //     text-decoration: none;
-        //     font-size: 1.2em
-        // }
-
-        // &__link:focus,
-        // &__link:hover {
-        //     background-color: var(--color-background);
-        //     color: var(--color-text);
-        //     border: 2px solid var(--color-muted);
-        //     box-shadow: var(--shadow-elevation-medium);
-        //     // font-weight: 600;
-        // }
     }
 
     .link-to {

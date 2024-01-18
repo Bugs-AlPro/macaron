@@ -42,11 +42,12 @@
 
     &__img {
         border-radius: 50%;
-        border: 1px solid var(--color-accent);
+        border: 2px solid var(--color-accent);
     }
 
     &__description {
         font-size: 1.3em;
+        text-indent: var(--gap-smal);
     }
 
     // &__link {

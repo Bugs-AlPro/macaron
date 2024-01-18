@@ -1,7 +1,9 @@
 @include media-up(lg) {
 
   .wrap {
-    // padding-bottom: var(--gap-midle);
+    &--course {
+      background-color: var(--color-muted);
+    }
 
     &--footer {
       background-color: var(--color-background);
@@ -57,6 +59,10 @@
       margin: 0;
       font-weight: 600;
       font-size: 2.8em;
+
+      &--contrast {
+        color: var(--color-background);
+      }
     }
 
     &__smal-text {

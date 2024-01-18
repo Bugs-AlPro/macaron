@@ -1,334 +1,48 @@
-<!-- Подключаем файл с переводом текста -->
-{% import "includes/offer/text-content-offer.html" as offerText %}
+{% import "includes/offer/text-content-offer.html" as transtale %}
+{% import "includes/offer/price-content.html" as price %}
 
 <section class="wrap wrap--offer" id="offer">
   <div class="container">
     <div class="block">
 
-      <!-- Блок sale-wrap является распоркой для мобильных устройств -->
       <div class="sale-wrap">
         {% include "includes/promo/sale.html" %}
       </div>
 
       <div class="block__title title">
         <h2 class="title__text">
-          {{ offerText.offerTitleTranslate.title.ru }}
+          {{ transtale.offerTitles.title.ru }}
         </h2>
       </div>
 
-      <!-- <div class="offer__currency"> -->
-      <!-- Блок переключения валюты - для всех товаров в разделе offer -->
-      <!-- <div class="currency">
-          <button type="button" class="currency__btn  currency__btn--usd"> $</button>
-          <button type="button" class="currency__btn  currency__btn--rub currency__btn--current"> ₽</button>
-          <button type="button" class="currency__btn  currency__btn--eur"> €</button>
-        </div> -->
-
-      <!-- </div> -->
-
-      <!-- <ul class="offer__list">
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head offer-i-head--top">
-
-            <h3 class="offer-i-head__text">
-              {{ offerText.offerTitleTranslate.generalCourse.ru }}
-            </h3>
-
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  {{ offerText.offerTitleTranslate.price.ru }}
-                </span>
-                <div class="costs__box costs__box--center">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.helpUsd }} $</span>
-                  <span class="costs__item">{{ item.helpRub }} ₽</span>
-                  <span class="costs__item">{{ item.helpEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
-            </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn1">
-              {{ offerText.offerTitleTranslate.buy.ru }}
-            </button>
-          </div>
-
-          <button type="button" class="offer-item__btn offer-item__btn--1"
-            aria-label="Показать (скрыть) список того, что в это входит"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderAllRu">
-                  {% for item in macrosData.sliderAll %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              <li class="offer-item__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
-                макарон, с
-                рецептом крышечек на итальянской меренге с
-                пониженным содержанием сахара. Файл PDF на 30 стр.
-              </li>
-              <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
-              <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
-              <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
-                вкусов. Файл PDF
-                на 40 стр.
-              </li>
-              <li class="offer-item__item">Видео всего процесса приготовления крышечек.</li>
-              <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
-              <li class="offer-item__item">Видео о том, как делать рисунки и выпекать фигурные
-                макарон.</li>
-              <li class="offer-item__item">Консультация, ответы на
-                вопросы, разбор ошибок, помощь в доведении до уровня продаж.</li>
-            </ol>
-          </div>
-        </li>
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
-              {{ offerText.offerTitleTranslate.shells.ru }}
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  {{ offerText.offerTitleTranslate.price.ru }}
-                </span>
-                <div class="costs__box costs__box--center">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.partUsd }} $</span>
-                  <span class="costs__item">{{ item.partRub }} ₽</span>
-                  <span class="costs__item">{{ item.partEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
-
-            </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn2">
-              {{ offerText.offerTitleTranslate.buy.ru }}
-            </button>
-          </div>
-          <button type="button" class="offer-item__btn"
-            aria-label="Показать (скрыть) список того, что в это входит"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferShellsRu">
-                  {% for item in macrosData.sliderOfferShells %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              <li class="offer-item__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
-                макарон, с
-                рецептом крышечек на итальянской меренге с
-                пониженным содержанием сахара. Файл PDF на 30 стр.
-              </li>
-              <li class="offer-item__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
-              <li class="offer-item__item">Трафареты для выпекания крышечек.</li>
-              <li class="offer-item__item">Видео о том, как делать рисунки и выпекать фигурные
-                макарон.</li>
-
-            </ol>
-          </div>
-        </li>
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
-              {{ offerText.offerTitleTranslate.fillings.ru }}
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  {{ offerText.offerTitleTranslate.price.ru }}
-                </span>
-                <div class="costs__box costs__box--center">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.partUsd }} $</span>
-                  <span class="costs__item">{{ item.partRub }} ₽</span>
-                  <span class="costs__item">{{ item.partEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
-
-            </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn3">
-              {{ offerText.offerTitleTranslate.buy.ru }}
-            </button>
-          </div>
-          <button type="button" class="offer-item__btn"
-            aria-label="Показать (скрыть) список того, что в это входит"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferCreamRu">
-                  {% for item in macrosData.sliderOfferCream %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              <li class="offer-item__item">Тех. карта с подробным описанием процесса приготовления начинок разных
-                вкусов. Файл PDF
-                на 40 стр.
-              </li>
-
-              {% for item in macrosText.fillingsTypes %}
-              <li class="offer-item__item">{{ item.text1 }}</li>
-              {% endfor %}
-
-              <li class="offer-item__item">Видео приготовления различных базовых начинок.</li>
-
-            </ol>
-          </div>
-        </li>
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
-              {{ offerText.offerTitleTranslate.instagram.ru }}
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  {{ offerText.offerTitleTranslate.price.ru }}
-                </span>
-                <div class="costs__box costs__box--center">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.instUsd }} $</span>
-                  <span class="costs__item">{{ item.instRub }} ₽</span>
-                  <span class="costs__item">{{ item.instEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
-
-            </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn5">
-              {{ offerText.offerTitleTranslate.buy.ru }}
-            </button>
-          </div>
-          <button type="button" class="offer-item__btn"
-            aria-label="Показать (скрыть) список того, что в это входит"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferInstRu">
-                  {% for item in macrosData.sliderOfferInstRu %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              <li class="offer-item__item">Книга или PDF файл с подробным описанием всех шагов для развития своего
-                аккаунта инстагрмм</li>
-              <li class="offer-item__item">В книге после каждого раздела вас ждёт домашнее задание, которое вы можете
-                отправить на проверку.</li>
-              <li class="offer-item__item">Доступ к 14 видео урокам, которые идут в дополнении к книге.</li>
-
-            </ol>
-          </div>
-        </li>
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
-              {{ offerText.offerTitleTranslate.all.ru | safe }}
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  {{ offerText.offerTitleTranslate.price.ru }}
-                </span>
-                <div class="costs__box costs__box--center">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.allUsd }} $</span>
-                  <span class="costs__item">{{ item.allRub }} ₽</span>
-                  <span class="costs__item">{{ item.allEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
-
-            </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn4">
-              {{ offerText.offerTitleTranslate.buy.ru }}
-            </button>
-          </div>
-          <button type="button" class="offer-item__btn"
-            aria-label="Показать (скрыть) список того, что в это входит"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferFullRu">
-                  {% for item in macrosData.sliderOfferFullRu %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              <li class="offer-item__item">Весь курс по приготовлению пирожных макарон: крышечки и начинки.</li>
-              <li class="offer-item__item">Весь курс "Продвижение инстаграм для кондитеров"</li>
-              <li class="offer-item__item">
-                <span class="offer-item__item--green">БОНУС.</span> Курс приготовления Эскимо-чизкейк
-              </li>
-
-            </ol>
-          </div>
-
-        </li>
-
-      </ul> -->
-
       <ul class="block__section part">
+
         <li class="part__item">
 
-          <img src="img/img23.jpg" alt="" class="part__img">
+          <picture class="part__picture">
+            <source srcset="img/ {{ transtale.photo.generalCourse.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.generalCourse.img }}.jpg" alt="{{ transtale.photo.generalCourse.altRu }}"
+              class="part__img">
+          </picture>
 
           <div class="part__costs costs">
-            <div class="costs__title">
-              {{ offerText.offerTitleTranslate.generalCourse.ru }}
-            </div>
-            <div class="costs__text">
-              Цена
-            </div>
-            <div class="costs__label">
 
-              <div class="costs__box costs__box--center">
-                {% for item in macrosData.priceNormal %}
-                <span class="costs__item">{{ item.allUsd }} $</span>
-                <span class="costs__item">{{ item.allRub }} ₽</span>
-                <span class="costs__item">{{ item.allEur }} €</span>
-                {% endfor %}
-              </div>
+            <div class="costs__title">
+              {{ transtale.offerTitles.generalCourse.ru }}
             </div>
-            <button type="button" class="costs__btn">
-              купить
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.ru }}
+            </div>
+
+            <div class="costs__price">
+              $ {{ price.basePrice.all.usd }}
+            </div>
+
+            <button type="button" class="costs__btn generalCourseBtn">
+              {{ transtale.offerTitles.buy.ru }}
             </button>
+
           </div>
 
           <details class="part__details details">
@@ -358,28 +72,30 @@
 
         <li class="part__item">
 
-          <img src="img/img29.jpg" alt="" class="part__img part__img--invert">
+          <picture class="part__picture">
+            <source srcset="img/ {{ transtale.photo.shells.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.shells.img }}.jpg" alt="{{ transtale.photo.shells.altRu }}"
+              class="part__img">
+          </picture>
 
           <div class="part__costs costs">
-            <div class="costs__title">
-              {{ offerText.offerTitleTranslate.shells.ru }}
-            </div>
-            <div class="costs__text">
-              Цена
-            </div>
-            <div class="costs__label">
 
-              <div class="costs__box costs__box--center">
-                {% for item in macrosData.priceNormal %}
-                <span class="costs__item">{{ item.allUsd }} $</span>
-                <span class="costs__item">{{ item.allRub }} ₽</span>
-                <span class="costs__item">{{ item.allEur }} €</span>
-                {% endfor %}
-              </div>
+            <div class="costs__title">
+              {{ transtale.offerTitles.shells.ru }}
             </div>
-            <button type="button" class="costs__btn">
-              купить
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.ru }}
+            </div>
+
+            <div class="costs__price">
+              $ {{ price.basePrice.part.usd }}
+            </div>
+
+            <button type="button" class="costs__btn shellsBtn">
+              {{ transtale.offerTitles.buy.ru }}
             </button>
+
           </div>
 
           <details class="part__details details">
@@ -401,29 +117,30 @@
 
         <li class="part__item">
 
-
-          <img src="img/img25.jpg" alt="" class="part__img">
+          <picture class="part__picture">
+            <source srcset="img/ {{ transtale.photo.fillings.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.fillings.img }}.jpg" alt="{{ transtale.photo.fillings.altRu }}"
+              class="part__img">
+          </picture>
 
           <div class="part__costs costs">
-            <div class="costs__title">
-              {{ offerText.offerTitleTranslate.fillings.ru }}
-            </div>
-            <div class="costs__text">
-              Цена
-            </div>
-            <div class="costs__label">
 
-              <div class="costs__box costs__box--center">
-                {% for item in macrosData.priceNormal %}
-                <span class="costs__item">{{ item.allUsd }} $</span>
-                <span class="costs__item">{{ item.allRub }} ₽</span>
-                <span class="costs__item">{{ item.allEur }} €</span>
-                {% endfor %}
-              </div>
+            <div class="costs__title">
+              {{ transtale.offerTitles.fillings.ru }}
             </div>
-            <button type="button" class="costs__btn">
-              купить
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.ru }}
+            </div>
+
+            <div class="costs__price">
+              $ {{ price.basePrice.part.usd }}
+            </div>
+
+            <button type="button" class="costs__btn fillingsBtn">
+              {{ transtale.offerTitles.buy.ru }}
             </button>
+
           </div>
 
           <details class="part__details details">
@@ -446,29 +163,31 @@
 
         <li class="part__item">
 
-
-          <img src="img/inst1.jpg" alt="" class="part__img part__img--invert">
+          <picture class="part__picture">
+            <source srcset="img/ {{ transtale.photo.instagram.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.instagram.img }}.jpg" alt="{{ transtale.photo.instagram.altRu }}"
+              class="part__img">
+          </picture>
 
           <div class="part__costs costs">
-            <div class="costs__title">
-              {{ offerText.offerTitleTranslate.instagram.ru }}
-            </div>
-            <div class="costs__text">
-              Цена
-            </div>
-            <div class="costs__label">
 
-              <div class="costs__box costs__box--center">
-                {% for item in macrosData.priceNormal %}
-                <span class="costs__item">{{ item.allUsd }} $</span>
-                <span class="costs__item">{{ item.allRub }} ₽</span>
-                <span class="costs__item">{{ item.allEur }} €</span>
-                {% endfor %}
-              </div>
+            <div class="costs__title">
+              {{ transtale.offerTitles.instagram.ru }}
             </div>
-            <button type="button" class="costs__btn">
-              купить
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.ru }}
+            </div>
+
+            <div class="costs__price">
+              $ {{ price.basePrice.inst.usd }}
+            </div>
+
+
+            <button type="button" class="costs__btn instagramBtn">
+              {{ transtale.offerTitles.buy.ru }}
             </button>
+
           </div>
 
           <details class="part__details details">
@@ -486,28 +205,30 @@
 
         <li class="part__item">
 
-
-          <img src="img/img21.jpg" alt="" class="part__img">
+          <picture class="part__picture">
+            <source srcset="img/ {{ transtale.photo.all.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.all.img }}.jpg" alt="{{ transtale.photo.all.altRu }}" class="part__img">
+          </picture>
 
           <div class="part__costs costs">
+
             <div class="costs__title">
-              {{ offerText.offerTitleTranslate.all.ru | safe }}
+              {{ transtale.offerTitles.all.ru | safe }}
             </div>
+
             <div class="costs__text">
-              Цена
+              {{ transtale.offerTitles.price.ru }}
             </div>
-            <div class="costs__label">
-              <div class="costs__box costs__box--center">
-                {% for item in macrosData.priceNormal %}
-                <span class="costs__item">{{ item.allUsd }} $</span>
-                <span class="costs__item">{{ item.allRub }} ₽</span>
-                <span class="costs__item">{{ item.allEur }} €</span>
-                {% endfor %}
-              </div>
+
+            <div class="costs__price">
+              $ {{ price.basePrice.eskimo.usd }}
             </div>
-            <button type="button" class="costs__btn">
-              купить
+
+
+            <button type="button" class="costs__btn allBtn">
+              {{ transtale.offerTitles.buy.ru }}
             </button>
+
           </div>
 
           <details class="part__details details">
