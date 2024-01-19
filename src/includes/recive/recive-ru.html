@@ -37,8 +37,10 @@
 
         </div>
 
-        <div class="recive-list__item">
-          {{ imagePng('recive-list__picture', 'telegramm', 'recive-list__img', 'Лого телеграм', '65', '65') }}
+        <div class="recive-list__item recive-list__item--svg">
+          <div class="recive-list__image">
+            {{ imageSvgColor('cook', 'recive-list__picture svgcolor', '65', '65', 'Девушка кондитер') }}
+          </div>
           <p class="recive-list__text">
             {{ translate.reciveList.base.ru }}
           </p>

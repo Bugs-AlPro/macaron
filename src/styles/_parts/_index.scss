@@ -39,6 +39,10 @@ p {
   fill: currentColor;
 }
 
+.main {
+  position: relative;
+}
+
 #particles-js {
   position: fixed;
   z-index: 1;

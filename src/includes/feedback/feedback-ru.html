@@ -1,4 +1,3 @@
-<!-- Подключаем файл с переводом текста -->
 {% import "includes/feedback/text-content-feedback.html" as translate %}
 
 <section class="wrap wrap--feedback" id="feedback">
@@ -6,7 +5,7 @@
 
     <div class="block block--hidden">
       <div class="block__title title">
-        <h2 class="title__text">
+        <h2 class="title__text title__text--contrast">
 
           {{ translate.feedbackTitle.title.ru }}
 
@@ -14,6 +13,12 @@
       </div>
 
       <div class="block__section">
+
+        <div class="slider-navigation">
+          <button type="button" class="slider-navigation__btn slider-navigation__btn--left">Назад</button>
+          <button type="button" class="slider-navigation__btn slider-navigation__btn--right">Вперёд</button>
+        </div>
+
 
         <ul class="slider slider--feedback feedbackSlider">
 

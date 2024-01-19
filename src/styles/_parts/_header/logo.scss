@@ -10,7 +10,6 @@
             padding: 4px 8px;
             border-radius: 8px;
             color: var(--color-text);
-            // box-shadow: var(--shadow-elevation-low);
         }
 
         &__link:active,
@@ -53,14 +52,14 @@
         &__link,
         &__link:hover {
             text-decoration: none;
-
+            color: var(--color-text);
         }
 
         &__img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            box-shadow: 0 0 6px 2px var(--title-blue);
+            box-shadow: var(--box-shadow-google);
             border: 1px solid var(--title-blue);
             padding: 0;
             margin: 0;
@@ -68,9 +67,8 @@
 
         &__text {
             font-weight: 600;
-            font-family: 'Dancing Script', cursive;
-            font-size: 14px;
-            color: var(--title-blue);
+            font-size: 1.1em;
+            color: var(--color-text);
         }
     }
 }

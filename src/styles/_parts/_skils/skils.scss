@@ -2,23 +2,25 @@
     display: grid;
     gap: var(--gap-smal);
 
+
     &__item {
         color: var(--color-text);
-        // background-color: var(--color-background);
         position: relative;
         z-index: 1;
-        padding: 8px;
+        padding: 7px;
         justify-self: start;
-        // box-shadow: 0 0 5px 5px var(--back-lightblue);
+
 
         @include media-up(lg) {
             font-size: 1.4em;
             border-left: 40px solid var(--color-accent);
+            padding-left: 15px;
+            text-indent: 15px;
         }
 
         @include media-down(lg) {
-            font-size: 1.1em;
-            border-left: 20px solid var(--back-green);
+            font-size: 1.2em;
+            border-left: 15px solid var(--color-accent);
         }
 
     }

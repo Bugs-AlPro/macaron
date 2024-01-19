@@ -1,15 +1,4 @@
 @include media-up(lg) {
-    // .header {
-    //     position: relative;
-    //     text-align: center;
-    //     overflow: hidden;
-    //     // margin-top: var(--gap-big);
-
-    //     // display: flex;
-    //     // &__title {
-    //     //     margin-bottom: var(--gap-big);
-    //     // }
-    // }
 
     .header-fixed {
         padding: 12px 20px;
@@ -39,37 +28,28 @@
     .header-fixed-wrap {
         background-color: var(--color-background);
         box-shadow: var(--shadow-elevation-low);
-        // text-align: center;
-        // box-shadow: 0 0 5px 2px var(--color-text);
-
     }
 }
 
 @include media-down(lg) {
     .header {
-        text-align: center;
-        padding: 0px 0 20px 0;
         position: relative;
-
     }
 
     .header-fixed {
-        position: fixed;
-        top: -2px;
-        left: 0;
         z-index: 3;
         width: 100%;
-        background-color: #eee;
+        background-color: var(--color-background);
         display: flex;
-        gap: 0.5em;
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
-        padding: 10px 15px 10px 15px;
+        padding: var(--gap-smal);
 
         &__logo {
             flex-grow: 1;
             text-align: start;
         }
     }
+
 }

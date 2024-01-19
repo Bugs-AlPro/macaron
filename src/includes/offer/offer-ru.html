@@ -46,25 +46,17 @@
           </div>
 
           <details class="part__details details">
-            <summary class="details__question">Показать что входит в курс</summary>
+            <summary class="details__question">
+              {{ transtale.details.title.ru }}
+            </summary>
             <ul class="details__list">
-              <li class="details__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
-                макарон, с
-                рецептом крышечек на итальянской меренге с
-                пониженным содержанием сахара. Файл PDF на 30 стр.
-              </li>
-              <li class="details__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
-              <li class="details__item">Трафареты для выпекания крышечек.</li>
-              <li class="details__item">Тех. карта с подробным описанием процесса приготовления начинок разных
-                вкусов. Файл PDF
-                на 40 стр.
-              </li>
-              <li class="details__item">Видео всего процесса приготовления крышечек.</li>
-              <li class="details__item">Видео приготовления различных базовых начинок.</li>
-              <li class="details__item">Видео о том, как делать рисунки и выпекать фигурные
-                макарон.</li>
-              <li class="details__item">Консультация, ответы на
-                вопросы, разбор ошибок, помощь в доведении до уровня продаж.</li>
+
+              {% for item in transtale.detailsGeneralCourse %}
+
+              <li class="details__item">{{ item.ru }}</li>
+
+              {% endfor %}
+
             </ul>
           </details>
 
@@ -99,17 +91,17 @@
           </div>
 
           <details class="part__details details">
-            <summary class="details__question">Показать что входит в курс</summary>
+            <summary class="details__question">
+              {{ transtale.details.title.ru }}
+            </summary>
             <ul class="details__list">
-              <li class="details__item">Тех. карта с подробным описанием всего процесса приготовления пирожных
-                макарон, с
-                рецептом крышечек на итальянской меренге с
-                пониженным содержанием сахара. Файл PDF на 30 стр.
-              </li>
-              <li class="details__item">Руководство по покупке инвентаря со ссылками на онлайн магазины.</li>
-              <li class="details__item">Трафареты для выпекания крышечек.</li>
-              <li class="details__item">Видео о том, как делать рисунки и выпекать фигурные
-                макарон.</li>
+
+              {% for item in transtale.detailsShells %}
+
+              <li class="details__item">{{ item.ru }}</li>
+
+              {% endfor %}
+
             </ul>
           </details>
 
@@ -144,18 +136,23 @@
           </div>
 
           <details class="part__details details">
-            <summary class="details__question">Показать что входит в курс</summary>
+            <summary class="details__question">
+              {{ transtale.details.title.ru }}
+            </summary>
             <ul class="details__list">
-              <li class="details__item">Тех. карта с подробным описанием процесса приготовления начинок разных
-                вкусов. Файл PDF
-                на 40 стр.
-              </li>
 
-              {% for item in macrosText.fillingsTypes %}
-              <li class="details__item">{{ item.text1 }}</li>
+              {% for item in transtale.detailsFillings %}
+
+              <li class="details__item">{{ item.ru }}</li>
+
               {% endfor %}
 
-              <li class="details__item">Видео приготовления различных базовых начинок.</li>
+              {% for item in transtale.fillingsTypes %}
+
+              <li class="details__item">{{ item.ru }}</li>
+
+              {% endfor %}
+
             </ul>
           </details>
 
@@ -191,13 +188,17 @@
           </div>
 
           <details class="part__details details">
-            <summary class="details__question">Показать что входит в курс</summary>
+            <summary class="details__question">
+              {{ transtale.details.title.ru }}
+            </summary>
             <ul class="details__list">
-              <li class="details__item">Книга или PDF файл с подробным описанием всех шагов для развития своего
-                аккаунта инстагрмм</li>
-              <li class="details__item">В книге после каждого раздела вас ждёт домашнее задание, которое вы можете
-                отправить на проверку.</li>
-              <li class="details__item">Доступ к 14 видео урокам, которые идут в дополнении к книге.</li>
+
+              {% for item in transtale.detailsInst %}
+
+              <li class="details__item">{{ item.ru }}</li>
+
+              {% endfor %}
+
             </ul>
           </details>
 
@@ -232,13 +233,17 @@
           </div>
 
           <details class="part__details details">
-            <summary class="details__question">Показать что входит в курс</summary>
+            <summary class="details__question">
+              {{ transtale.details.title.ru }}
+            </summary>
             <ul class="details__list">
-              <li class="details__item">Весь курс по приготовлению пирожных макарон: крышечки и начинки.</li>
-              <li class="details__item">Весь курс "Продвижение инстаграм для кондитеров"</li>
-              <li class="details__item">
-                <span class="details__item--bold">БОНУС.</span> Курс приготовления Эскимо-чизкейк
-              </li>
+
+              {% for item in transtale.detailsAll %}
+
+              <li class="details__item">{{ item.ru | safe }}</li>
+
+              {% endfor %}
+
             </ul>
           </details>
 

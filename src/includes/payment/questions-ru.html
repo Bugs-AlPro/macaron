@@ -1,0 +1,89 @@
+{% import "includes/payment/text-content-questions.html" as translate %}
+
+<section class="wrap wrap--payment" id="payment-block">
+  <div class="container">
+    <div class="block">
+
+      <div class="block__title title">
+        <h2 class="title__text">
+          {{ translate.questionsTitle.title.ru }}
+        </h2>
+      </div>
+
+      <ul class="block__section questions">
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              {{ translate.questionsList.time.question.ru }}
+            </summary>
+            <div class="questions__answer">
+              {{ translate.questionsList.time.answer.ru | safe }}
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              {{ translate.questionsList.telegram.question.ru }}
+            </summary>
+            <div class="questions__answer">
+              {{ translate.questionsList.telegram.answer.ru | safe }}
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              {{ translate.questionsList.shells.question.ru }}
+            </summary>
+            <div class="questions__answer">
+              {{ translate.questionsList.shells.answer.ru | safe }}
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              {{ translate.questionsList.fillings.question.ru }}
+            </summary>
+            <div class="questions__answer">
+              {{ translate.questionsList.fillings.answer.ru | safe }}
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              {{ translate.questionsList.paypal.question.ru }}
+            </summary>
+            <div class="questions__answer">
+              {{ translate.questionsList.paypal.answer.ru | safe }}
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              {{ translate.questionsList.payment.question.ru }}
+            </summary>
+            <div class="questions__answer">
+              {{ translate.questionsList.payment.answer.ru | safe }}
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              {{ translate.questionsList.emeil.question.ru }}
+            </summary>
+            <div class="questions__answer">
+              {{ translate.questionsList.emeil.answer.ru | safe }}
+            </div>
+          </details>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</section>

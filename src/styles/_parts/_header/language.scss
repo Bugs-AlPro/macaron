@@ -1,7 +1,7 @@
 @include media-up(lg) {
     .language {
         display: flex;
-        gap: 20px;
+        gap: var(--gap-smal);
 
         &__link {
             text-decoration: none;
@@ -10,7 +10,6 @@
             font-size: 1.2em;
             font-weight: 600;
             border-radius: 8px;
-            color: var(--title-blue);
             color: var(--color-text);
         }
 
@@ -19,7 +18,6 @@
             transition: 0.2s;
             box-shadow: var(--box-shadow-google);
             transform: translateY(-1px);
-
         }
 
         &__link--current {
@@ -28,13 +26,19 @@
             box-shadow: var(--box-shadow-google);
             color: var(--color-text);
         }
+
+        &__link--inactiv:hover {
+            transition: none;
+            box-shadow: none;
+            transform: none;
+        }
     }
 }
 
 @include media-down(lg) {
     .language {
         display: flex;
-        padding: 2px 0;
+        gap: var(--gap-smal);
 
         &__link {
             padding: 5px 8px;
@@ -43,7 +47,7 @@
             border-radius: 4px;
             text-decoration: none;
             font-weight: 600;
-            color: var(--title-blue);
+            color: var(--color-text);
             transition: 0.2s;
         }
 
@@ -54,7 +58,7 @@
         }
 
         &__link--current {
-            color: hsl(202, 34%, 68%);
+            color: var(--color-text);
             position: relative;
             box-shadow: var(--box-shadow-google);
         }

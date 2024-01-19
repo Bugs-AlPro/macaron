@@ -11,11 +11,11 @@ function disableAnalytics() {
 }
 
 cookieBtnNo.addEventListener('click', () => {
-    cookieSection.classList.toggle('cookie--close');
+    // cookieSection.classList.toggle('cookie--close');
     disableAnalytics();
 })
 cookieBtnYes.addEventListener('click', () => {
-    cookieSection.classList.toggle('cookie--close');
+    // cookieSection.classList.toggle('cookie--close');
     fbq('consent', 'grant');
 
 })

@@ -1,7 +1,161 @@
 @include media-up(lg) {
 
+  :root {
+    --margin-title: 50px 0;
+
+    --gap-big: 100px;
+    --gap-midle: 50px;
+    --gap-smal: 20px;
+
+    --border-radius-standart: 20px;
+    --border-radius-smal: 10px;
+
+  }
+
   .wrap {
+    position: relative;
+
+    &--header::after {
+      top: 0;
+      left: 3vw;
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      content: '';
+      border-left: 4px solid var(--color-accent);
+      border-bottom: 4px solid var(--color-accent);
+      border-bottom-left-radius: var(--gap-big);
+    }
+
+    &--interesting::after {
+      top: 0;
+      right: 3vw;
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      content: '';
+      border-right: 4px solid var(--color-accent);
+      border-top: 4px solid var(--color-accent);
+      border-top-right-radius: var(--gap-big);
+    }
+
+    &--youtube::after {
+      top: 0;
+      right: 3vw;
+      height: 100%;
+      width: 4px;
+      border-right: 4px solid var(--color-accent);
+      position: absolute;
+      content: '';
+    }
+
+    &--course::after {
+      top: 0;
+      right: 3vw;
+      height: 100%;
+      width: 4px;
+      border-right: 4px solid var(--color-accent);
+      position: absolute;
+      content: '';
+    }
+
+    &--errors::after {
+      top: 0;
+      right: 3vw;
+      height: 100%;
+      width: 50%;
+      border-right: 4px solid var(--color-accent);
+      border-bottom: 4px solid var(--color-accent);
+      border-bottom-right-radius: var(--gap-big);
+      position: absolute;
+      content: '';
+    }
+
+    &--skils::after {
+      top: 0;
+      left: 3vw;
+      height: 100%;
+      width: 50%;
+      border-left: 4px solid var(--color-accent);
+      border-top: 4px solid var(--color-accent);
+      border-top-left-radius: var(--gap-big);
+      position: absolute;
+      content: '';
+    }
+
+    &--feedback::after {
+      top: 0;
+      left: 3vw;
+      height: 100%;
+      width: 4px;
+      border-left: 4px solid var(--color-accent);
+      position: absolute;
+      content: '';
+    }
+
+    &--about::after {
+      top: 0;
+      left: 3vw;
+      height: 100%;
+      width: 50%;
+      border-left: 4px solid var(--color-accent);
+      border-bottom: 4px solid var(--color-accent);
+      border-bottom-left-radius: var(--gap-big);
+      position: absolute;
+      content: '';
+    }
+
+    &--offer::after {
+      top: 0;
+      right: 3vw;
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      content: '';
+      border-right: 4px solid var(--color-accent);
+      border-top: 4px solid var(--color-accent);
+      border-top-right-radius: var(--gap-big);
+    }
+
+    &--recive::after {
+      top: 0;
+      right: 3vw;
+      height: 100%;
+      width: 50%;
+      border-right: 4px solid var(--color-accent);
+      border-bottom: 4px solid var(--color-accent);
+      border-bottom-right-radius: var(--gap-big);
+      position: absolute;
+      content: '';
+    }
+
+    &--payment::after {
+      top: 0;
+      left: 3vw;
+      height: 100%;
+      width: 50%;
+      border-left: 4px solid var(--color-accent);
+      border-top: 4px solid var(--color-accent);
+      border-top-left-radius: var(--gap-big);
+      position: absolute;
+      content: '';
+    }
+
+    &--footer::after {
+      top: 0;
+      left: 3vw;
+      height: 100%;
+      width: 4px;
+      border-left: 4px solid var(--color-accent);
+      position: absolute;
+      content: '';
+    }
+
     &--course {
+      background-color: var(--color-muted);
+    }
+
+    &--feedback {
       background-color: var(--color-muted);
     }
 
@@ -20,18 +174,17 @@
 
   .block {
     position: relative;
-    padding: var(--gap-midle) 0;
+    z-index: 2;
+    padding: var(--gap-big) 0;
 
     &--hidden {
       overflow: hidden;
-
     }
 
     &--line {
       display: flex;
       align-items: center;
       gap: var(--gap-midle);
-      // overflow: hidden;
     }
 
     &__title {
@@ -57,6 +210,7 @@
 
     &__text {
       margin: 0;
+
       font-weight: 600;
       font-size: 2.8em;
 
@@ -66,6 +220,7 @@
     }
 
     &__smal-text {
+      margin-top: var(--gap-midle);
       font-size: 1.7em;
       font-weight: 600;
     }
@@ -77,21 +232,12 @@
     display: flex;
     position: relative;
 
-    // overflow: hidden;
-    // &--header {
-    //   gap: var(--gap-smal);
-    // }
-
     &--feedback {
       gap: var(--gap-midle);
     }
 
     &__item {
-      // height: auto;
-      // width: 100%;
       margin-left: 15px;
-      // display: flex;
-      // gap: 20px;
     }
 
     &__img {
@@ -104,17 +250,25 @@
     }
   }
 
-  .courseSlider {
-    border: 1px solid red;
-    // width: 400px;
+  .link-to {
+    background-color: var(--color-muted);
+    color: var(--color-background);
+    border: 2px solid var(--color-muted);
+    padding: 10px;
+    border-radius: var(--border-radius-smal);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.2s;
+
+    &:focus,
+    &:hover {
+      background-color: var(--color-background);
+      color: var(--color-text);
+      border: 2px solid var(--color-muted);
+      box-shadow: var(--shadow-elevation-medium);
+      transition: 0.2s;
+    }
   }
-
-  // .slideGo {
-  //   transform: translateY(100%);
-  // }
-
-  // .slideOut {
-  //   transform: scale(0);
-  // }
 
 }

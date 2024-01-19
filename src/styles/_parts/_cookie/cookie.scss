@@ -1,6 +1,6 @@
 .cookie {
     background-color: var(--color-muted);
-    box-shadow: var(--shadow-elevation-high);
+    // box-shadow: var(--shadow-elevation-high);
     position: fixed;
     z-index: 300;
     bottom: 0;
@@ -9,10 +9,10 @@
     padding: 20px;
     margin: 0 auto;
 
-    &--close {
-        transform: translateY(110%);
-        transition: 1.5s;
-    }
+    // &--close {
+    //     transform: translateY(110%);
+    //     transition: 1.5s;
+    // }
 
     &__body {
         margin: 0 auto;

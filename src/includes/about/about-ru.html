@@ -6,13 +6,15 @@
 
       <div class="block__title title">
         <h2 class="title__text">
-          {{ translate.aboutTitle.title.ru }}
+          {{ translate.aboutTitle.title.ru | safe }}
         </h2>
-        <p class="title__smal-text">
-          {{ translate.aboutTitle.subTitle.ru }}
-        </p>
       </div>
 
+      <ul class="block__section list-about">
+        <li class="list-about__item">{{ translate.aboutTitle.subTitle1.ru | safe }}</li>
+        <li class="list-about__item">{{ translate.aboutTitle.subTitle2.ru | safe }}</li>
+        <li class="list-about__item">{{ translate.aboutTitle.subTitle3.ru | safe }}</li>
+      </ul>
       <div class="block__section about">
 
 

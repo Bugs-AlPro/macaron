@@ -46,12 +46,6 @@ all: {
 ru: 'Все курсы <span class="costs__title--bold">+ бонус</span>',
 en: 'All courses',
 sp: 'type'
-},
-
-smal: {
-ru: 'На сайте также доступна оплата в RUB и EUR.',
-en: 'All courses',
-sp: 'type'
 }
 
 }
@@ -92,3 +86,159 @@ altSp: 'type'
 
 }
 %}
+
+{% set details = {
+
+title: {
+ru: 'Показать что входит в курс',
+en: 'Instagram promotion',
+sp: 'type'
+}
+
+}
+%}
+
+
+{% set detailsGeneralCourse = [
+
+{ru: "Тех. карта с подробным описанием всего процесса приготовления пирожных
+макарон, с рецептом крышечек на итальянской меренге с
+пониженным содержанием сахара. Файл PDF на 30 стр.",
+en: "Make macarons using Italian meringue."},
+
+{ru: "Руководство по покупке инвентаря со ссылками на онлайн магазины.",
+en: "You will be able to consistently get a good result."},
+
+{ru: "Трафареты для выпекания крышечек.",
+en: "Learn how to make fillings with different flavors."},
+
+{ru: "Тех. карта с подробным описанием процесса приготовления начинок разных
+вкусов. Файл PDF на 40 стр.",
+en: "Learn how to make whipped macaron fillings."},
+
+{ru: "Видео всего процесса приготовления крышечек.",
+en: "Create macarons in various shapes."},
+
+{ru: "Видео приготовления различных базовых начинок.",
+en: "Decorate macarons with drawings."},
+
+{ru: "Видео о том, как делать рисунки и выпекать фигурные
+макарон.",
+en: "Decorate macarons with drawings."},
+
+{ru: "Консультация, ответы на
+вопросы, разбор ошибок, помощь в доведении до уровня продаж.",
+en: "Confidently take orders and increase sales."}
+
+]%}
+
+{% set detailsShells = [
+
+{ru: "Тех. карта с подробным описанием всего процесса приготовления пирожных
+макарон, с рецептом крышечек на итальянской меренге с
+пониженным содержанием сахара. Файл PDF на 30 стр.",
+en: "Make macarons using Italian meringue."},
+
+{ru: "Руководство по покупке инвентаря со ссылками на онлайн магазины.",
+en: "You will be able to consistently get a good result."},
+
+{ru: "Видео всего процесса приготовления крышечек.",
+en: "Create macarons in various shapes."},
+
+{ru: "Трафареты для выпекания крышечек.",
+en: "Learn how to make fillings with different flavors."},
+
+{ru: "Видео о том, как делать рисунки и выпекать фигурные
+крышечки.",
+en: "Decorate macarons with drawings."}
+
+]%}
+
+
+
+{% set detailsFillings = [
+
+{ru: "Тех. карта с подробным описанием процесса приготовления начинок разных
+вкусов. Файл PDF на 40 стр.",
+en: "Learn how to make whipped macaron fillings."},
+
+{ru: "Видео приготовления различных базовых начинок.",
+en: "Decorate macarons with drawings."}
+
+]%}
+
+
+{% set fillingsTypes = [
+{ru: "Принципы приготовления ганаша.",
+en: "The principle of proportions for ganache."},
+{ru: "Приготовление разных вкусов конфи.",
+en: "Preparation of different flavors of confit."},
+{ru: "Ванильный ганаш на белом шоколаде.",
+en: "Ganache on white chocolate."},
+{ru: "Классический ганаш на молочном шоколаде.",
+en: "Milk chocolate ganache."},
+{ru: "Классический ганаш на тёмном шоколаде.",
+en: "Dark chocolate ganache."},
+{ru: 'Ганаш на молочном шоколаде "Oreo".',
+en: 'Milk chocolate ganache "Oreo".'},
+{ru: 'Аппельсиновый ганаш.',
+en: 'Ganache on orange chocolate.'},
+{ru: '"Фисташка-малина" на белом шоколаде.',
+en: '"Pistachio-raspberry" on white chocolate.'},
+{ru: 'Фундук-амаретто.',
+en: 'Hazelnut amaretto.'},
+{ru: 'Капучино-бейлиз.',
+en: 'Cappuccino Baileys.'},
+{ru: 'Маковый чизкейк с лимоном.',
+en: 'Poppy seed cheesecake with lemon.'},
+{ru: "Фруктово ягодный ганаш: клубника, черника, смородина, манго и др.",
+en: "Fruit and berry ganache: strawberries, blueberries, currants, mangoes, etc."},
+{ru: "Тыквенное латте.",
+en: "Pumpkin latte"},
+{ru: "Взбитый сливочный ганаш.",
+en: "Whipped cream ganache"},
+{ru: "Взбитый молочный ганаш «Киндер».",
+en: "Whipped milk ganache “Kinder”"},
+{ru: "Арахисово-молочный шоколад с баноффи.",
+en: "Peanut milk chocolate with banoffee."},
+{ru: 'Взбитый ганаш "Пряничное латте" или "Капучино".',
+en: 'Whipped ganache "Gingerbread Latte" or "Cappuccino".'},
+{ru: 'Карамельный ганаш.',
+en: 'Caramel ganache.'},
+{ru: 'Взбитый ганаш "Двойной кокос" или "Баунти".',
+en: 'Whipped ganache "Double coconut" or "Bounty".'},
+{ru: 'Начинка "Сникерс c солёной карамелью".',
+en: 'Filling "Snickers with salted caramel".'},
+{ru: 'Ганаш "Бри-Груша".',
+en: 'Brie Pear Ganache.'},
+{ru: 'Варианты ароматизации: мятой, лавандой, лимоном, ванилью.',
+en: 'Flavor options: mint, lavender, lemon, vanilla.'}
+]%}
+
+{% set detailsInst = [
+
+{ru: "Книга или PDF файл с подробным описанием всех шагов для развития своего
+аккаунта инстагрмм.",
+en: "Learn how to make whipped macaron fillings."},
+
+{ru: 'В книге после каждого раздела вас ждёт домашнее задание, которое вы можете
+отправить на проверку.',
+en: "Decorate macarons with drawings."},
+
+{ru: 'Доступ к 14 видео урокам, которые идут в дополнении к книге.',
+en: "Decorate macarons with drawings."}
+
+]%}
+
+{% set detailsAll = [
+
+{ru: "Весь курс по приготовлению пирожных макарон: крышечки и начинки.",
+en: "Learn how to make whipped macaron fillings."},
+
+{ru: 'Весь курс "Продвижение инстаграм для кондитеров".',
+en: "Decorate macarons with drawings."},
+
+{ru: '<span class="details__item--bold">БОНУС.</span> Курс приготовления Эскимо-чизкейк.',
+en: "Decorate macarons with drawings."}
+
+]%}

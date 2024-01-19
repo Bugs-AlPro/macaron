@@ -7,21 +7,9 @@ $screen-lg: 992px;
 $screen-xl: 1200px;
 $screen-xxl: 1400px;
 
+
+
 :root {
-  --title-blue: hsl(203, 18%, 50%);
-  --title-red: hsl(355, 25%, 50%);
-  --title-gray: hsl(0, 0%, 40%);
-
-  --text-gray: hsl(0, 0%, 30%);
-  --text-darkgray: hsl(0, 0%, 30%);
-  --text-green: rgb(66, 136, 66);
-
-  --back-lightblue: rgba(163, 202, 224, 0.2);
-  --back-lightred: hsl(356, 50%, 88%);
-  --back-green: rgb(152, 204, 152);
-
-  --hover-bluedark: hsl(203, 25%, 57%);
-
   --box-shadow-google: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
 
   --color-background: rgb(254, 251, 251);
@@ -29,15 +17,6 @@ $screen-xxl: 1400px;
   --color-muted: rgb(100, 58, 98);
   --color-text: hsl(344, 14%, 15%);
 
-  --margin-title: 50px 0;
-
-  --gap-big: 100px;
-  --gap-midle: 50px;
-  --gap-smal: 20px;
-
-}
-
-:root {
   --shadow-color: 0deg 0% 63%;
   --shadow-elevation-low:
     0px 0.2px 0.3px hsl(var(--shadow-color) / 0),
@@ -56,9 +35,7 @@ $screen-xxl: 1400px;
     0.2px 3.9px 5.9px hsl(var(--shadow-color) / 0.44),
     0.2px 5.8px 8.7px hsl(var(--shadow-color) / 0.55),
     0.4px 8.4px 12.6px hsl(var(--shadow-color) / 0.66);
-}
 
-:root {
   --shadow-color-muted: 303deg 35% 16%;
   --shadow-elevation-low-muted:
     0px 0.5px 0.6px hsl(var(--shadow-color-muted) / 0.34),

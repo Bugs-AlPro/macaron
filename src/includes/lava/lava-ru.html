@@ -19,27 +19,16 @@
         '150', '150') }}
     </div>
 
-    <!-- <div class="payment-window__types">
+    <div class="payment-window__links">
 
         {% for item in translate.lavaButtons %}
-        <button type="button" class="payment-window__btn {{ item.class }}">
-            {{ item.textRu }}
-        </button>
+
+        <a href="{{ item.linkRu }}" class="payment-window__link {{ item.class }}">
+            {{ translate.lavaTitle.linkText.ru }}
+        </a>
+
         {% endfor %}
 
-    </div> -->
-
-    <div class="payment-window__box">
-        <div class="payment-window__links payment-window__links-1">
-
-            {% for item in translate.lavaButtons %}
-
-            <a href="{{ item.linkRu }}" class="payment-window__link">
-                {{ translate.lavaTitle.linkText.ru }}
-            </a>
-
-            {% endfor %}
-
-        </div>
     </div>
+
 </div>
