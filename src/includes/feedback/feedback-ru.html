@@ -24,26 +24,28 @@
 
           {% for item in translate.feedbacks %}
 
-          <li class="slider__item feedback">
-            <div class="feedback__title">
-              {{ item.titleRu }}
-            </div>
-            <div class="feedback__top">
-              <picture class="feedback__picture">
-                <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                <img class="feedback__img" src="img/{{ item.img }}.jpg" alt="Фото профиля {{ item.name }}" width="70px"
-                  height="70px">
-              </picture>
-              <div class="feedback__name">
-                {{ item.name }}
+          <li class="slider__item">
+            <div class="feedback">
+              <div class="feedback__title">
+                {{ item.titleRu }}
               </div>
+              <div class="feedback__top">
+                <picture class="feedback__picture">
+                  <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                  <img class="feedback__img" src="img/{{ item.img }}.jpg" alt="Фото профиля {{ item.name }}"
+                    width="70px" height="70px">
+                </picture>
+                <div class="feedback__name">
+                  {{ item.name }}
+                </div>
+              </div>
+              <div class="feedback__description">
+                {{ item.descriptionRu }}
+              </div>
+              <a href="{{ item.link }}" class="feedback__link link-to">
+                {{ item.linkTextRu }}
+              </a>
             </div>
-            <div class="feedback__description">
-              {{ item.descriptionRu }}
-            </div>
-            <a href="{{ item.link }}" class="feedback__link link-to">
-              {{ item.linkTextRu }}
-            </a>
           </li>
 
           {% endfor %}

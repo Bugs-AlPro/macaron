@@ -98,7 +98,7 @@
 
   .container {
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 var(--gap-smal);
 
   }
 
@@ -152,12 +152,19 @@
     display: flex;
     position: relative;
 
-    &--feedback {
-      gap: var(--gap-midle);
-    }
+    // &--feedback {
+    //   gap: var(--gap-midle);
+    // }
 
     &__item {
-      margin-left: 15px;
+      // margin-left: 5px;
+      display: flex;
+      justify-content: center;
+      // align-self: center;
+      // align-items: center;
+      // max-width: 400px;
+      // margin: 0 auto;
+
     }
 
     &__img {

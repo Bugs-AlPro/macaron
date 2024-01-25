@@ -360,18 +360,19 @@
     .questions {
         display: flex;
         flex-direction: column;
-        gap: var(--gap-smal);
+        gap: var(--gap-midle);
 
         &__item {
             // padding: 10px;
             background-color: var(--color-background);
             box-shadow: var(--shadow-elevation-medium);
             border-radius: var(--border-radius-standart);
+            overflow: hidden;
         }
 
         &__question {
             padding: 20px;
-            font-size: 1.4em;
+            font-size: 1.3em;
             cursor: pointer;
             font-weight: 600;
         }

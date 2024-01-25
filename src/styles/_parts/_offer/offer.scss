@@ -127,10 +127,10 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: var(--gap-midle);
+        gap: var(--gap-big);
 
         &__item {
-            margin-bottom: var(--gap-big);
+            // margin-bottom: var(--gap-big);
 
             display: flex;
             flex-direction: column;
@@ -162,33 +162,33 @@
 
         &__title {
             text-transform: uppercase;
-            font-size: 1.8em;
+            font-size: 1.6em;
             font-weight: 600;
             color: var(--color-text);
 
-            &--bold {
-                border: 2px solid var(--color-accent);
-                padding: 5px;
-                border-radius: var(--border-radius-smal);
-            }
+            // &--bold {
+            //     border: 2px solid var(--color-accent);
+            //     padding: 5px;
+            //     border-radius: var(--border-radius-smal);
+            // }
         }
 
         &__text {
-            font-size: 1.6em;
+            font-size: 1.4em;
         }
 
         &__price {
             display: flex;
             justify-content: space-between;
-            border-top: 4px solid var(--color-text);
+            border-top: 2px solid var(--color-text);
             padding: 10px 0 0 0;
             position: relative;
-            font-size: 2em;
+            font-size: 1.8em;
         }
 
         &__btn {
             box-shadow: var(--shadow-elevation-medium);
-            font-size: 1.6em;
+            font-size: 1.4em;
             background-color: var(--color-muted);
             color: var(--color-background);
             padding: 10px 0;
@@ -209,7 +209,7 @@
     .details {
 
         &__question {
-            font-size: 1.6em;
+            font-size: 1.4em;
             cursor: pointer;
             padding: var(--gap-smal);
         }
@@ -229,15 +229,14 @@
 
         &__item {
             font-size: 1.4em;
-            padding: var(--gap-smal) 0;
-            margin-left: 50px;
+            margin: 15px 10px 15px 40px;
             list-style-type: disc;
 
-            &--bold {
-                border: 2px solid var(--color-accent);
-                padding: 5px 10px;
-                border-radius: 10px;
-            }
+            // &--bold {
+            //     border: 2px solid var(--color-accent);
+            //     padding: 5px 10px;
+            //     border-radius: 10px;
+            // }
         }
 
         &__item::marker {

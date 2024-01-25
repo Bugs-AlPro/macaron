@@ -23,6 +23,10 @@ var path = {
     js: 'src/js/*.js',
     font: 'src/fonts/*.{woff,woff2,ttf}',
     video: 'src/video/*.{mp4,ogv,webm}',
+    files: 'src/files/*.pdf',
+    iconPng: 'src/*.png',
+    icon: 'src/*.ico',
+    manifest: 'src/*.webmanifest',
     svgcolor: 'src/img/svgcolor/*.svg',
     svg: 'src/img/svg/*.svg'
   },
@@ -33,6 +37,10 @@ var path = {
     js: 'build/js/',
     font: 'build/fonts/',
     video: 'build/video/',
+    iconPng: 'build/',
+    icon: 'build/',
+    manifest: 'build/',
+    files: 'build/files/',
     svgcolor: 'build/img/svgcolor/',
     svg: 'build/img/svg'
   },
@@ -41,6 +49,7 @@ var path = {
     styles: 'src/styles/**/*.scss',
     js: 'src/js/*.js',
     video: 'src/video/*.{mp4,ogv,webm}',
+    files: 'src/files/*.pdf',
     images: 'src/img/**/*.{jpg,jpeg,png,webp,svg}',
     svgcolor: 'src/img/svgcolor/*.svg',
     svg: 'src/img/svg/*.svg'
@@ -99,6 +108,29 @@ export const video = () => {
     .pipe(reload({ stream: true }));
 };
 
+export const files = () => {
+  return gulp
+    .src(path.src.files)
+    .pipe(gulp.dest(path.build.files))
+    .pipe(reload({ stream: true }));
+};
+
+export const iconPng = () => {
+  return gulp
+    .src(path.src.iconPng)
+    .pipe(gulp.dest(path.build.iconPng))
+};
+export const icon = () => {
+  return gulp
+    .src(path.src.icon)
+    .pipe(gulp.dest(path.build.icon))
+};
+export const manifest = () => {
+  return gulp
+    .src(path.src.manifest)
+    .pipe(gulp.dest(path.build.manifest))
+};
+
 export const images = () => {
   return gulp
     .src(path.src.images)
@@ -155,9 +187,10 @@ export const watchFiles = () => {
   gulp.watch([path.watch.images], images);
   gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.video], video);
+  gulp.watch([path.watch.files], files);
   gulp.watch([path.watch.svgcolor], svgcolor);
   gulp.watch([path.watch.svg], svg)
 };
 
-export const build = gulp.series(clean, gulp.parallel(html, styles, images, js, font, video, svgcolor, svg));
+export const build = gulp.series(clean, gulp.parallel(html, styles, images, js, font, video, files, iconPng, icon, manifest, svgcolor, svg));
 export const watch = gulp.parallel(watchFiles, browserSync);

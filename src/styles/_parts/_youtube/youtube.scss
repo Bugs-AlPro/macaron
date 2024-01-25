@@ -40,8 +40,10 @@
         display: flex;
         justify-content: center;
 
+
         &__link {
             position: relative;
+            max-width: 400px;
         }
 
         &__link::before {

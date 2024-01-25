@@ -123,12 +123,13 @@
 
         &__img {
             border-radius: 50%;
-            border: 3px solid rgba(163, 202, 224, 0.8);
+            border: 2px solid var(--color-background);
+            box-shadow: var(--shadow-elevation-medium);
 
             &--top {
                 position: absolute;
-                top: -20px;
-                left: -20px;
+                top: -30px;
+                left: -15px;
                 width: 120px;
                 height: 120px;
             }
@@ -156,7 +157,7 @@
                 content: "";
                 display: block;
                 float: left;
-                width: 70px;
+                width: 80px;
                 height: 65px;
                 border-bottom-right-radius: 80%;
             }
