@@ -37,7 +37,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: var(--gap-midle);
+        gap: var(--gap-large);
         color: var(--color-text);
 
         &__item {
@@ -46,7 +46,7 @@
             flex-direction: column;
             justify-content: center;
             gap: var(--gap-smal);
-            padding: var(--gap-smal);
+            padding: var(--gap-midle) var(--gap-smal);
             border-radius: var(--border-radius-standart);
             background-color: var(--color-background);
             box-shadow: var(--shadow-elevation-medium-muted);

@@ -6,12 +6,14 @@
         gap: var(--gap-smal);
         margin-bottom: var(--gap-midle);
 
+
         &__item {
             text-align: end;
             color: var(--color-text);
             font-size: 1.5em;
             padding-right: var(--gap-big);
             position: relative;
+            max-width: 600px;
         }
 
         &__item::after {
@@ -84,6 +86,7 @@
         align-items: end;
         gap: var(--gap-smal);
         margin-bottom: var(--gap-midle);
+
 
         &__item {
             text-align: end;

@@ -4,6 +4,7 @@
     --margin-title: 50px 0;
 
     --gap-big: 80px;
+    --gap-large: 50px;
     --gap-midle: 30px;
     --gap-smal: 15px;
 
@@ -98,18 +99,21 @@
 
   .container {
     margin: 0 auto;
-    padding: 0 var(--gap-smal);
+    padding: 0 30px;
 
   }
 
   .block {
     position: relative;
     z-index: 2;
-    padding: var(--gap-midle) 0;
+    padding: var(--gap-large) 0;
 
     &--hidden {
       overflow: hidden;
     }
+
+
+
 
     &__title {
       margin-bottom: var(--gap-midle);

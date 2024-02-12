@@ -34,6 +34,7 @@ generalCourseBtn.addEventListener('click', () => {
     }
 
     linkGeneral.classList.add('payment-window__flex');
+    gtag('event', 'courseBtn');
 }
 )
 
@@ -47,6 +48,7 @@ shellsBtn.addEventListener('click', () => {
     }
 
     linkShells.classList.add('payment-window__flex');
+    gtag('event', 'shellsBtn');
 }
 )
 const fillingsBtn = document.querySelector('.fillingsBtn');
@@ -59,6 +61,7 @@ fillingsBtn.addEventListener('click', () => {
     }
 
     linkFillings.classList.add('payment-window__flex');
+    gtag('event', 'fillingsBtn');
 }
 )
 const instagramBtn = document.querySelector('.instagramBtn');
@@ -71,6 +74,7 @@ instagramBtn.addEventListener('click', () => {
     }
 
     linkInstagram.classList.add('payment-window__flex');
+    gtag('event', 'instBtn');
 }
 )
 const allBtn = document.querySelector('.allBtn');
@@ -83,29 +87,13 @@ allBtn.addEventListener('click', () => {
     }
 
     linkAll.classList.add('payment-window__flex');
+    gtag('event', 'allBtn');
 }
 )
 
-
-// const paymentWindowLinks = document.querySelectorAll('.payment-window__link');
-// for (let paymentWindowLink of paymentWindowLinks) {
-//     paymentWindowLink.addEventListener('click', () => {
-//         gtag('event', 'lava-btn');
-//     }
-//     )
-// }
-
-// paymentWindowBtn1.addEventListener('click', () => {
-//     gtag('event', 'buy-btn1');
-// }
-// )
-// paymentWindowBtn2.addEventListener('click', () => {
-//     gtag('event', 'buy-btn2');
-// }
-// )
-// const anotherPayment = document.querySelector('.payment-list__btn');
-// anotherPayment.addEventListener('click', () => {
-//     gtag('event', 'another');
-// }
-// )
-
+for (let item of windowLinks) {
+    item.addEventListener('click', () => {
+        gtag('event', 'lava-btn');
+    }
+    )
+}

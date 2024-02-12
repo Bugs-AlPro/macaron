@@ -55,7 +55,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: var(--gap-midle);
+        gap: var(--gap-large);
 
         &__item {
             display: flex;
@@ -81,8 +81,8 @@
             font-weight: 600;
             background-color: var(--color-muted);
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
+            width: 45px;
+            height: 45px;
             text-align: center;
             color: var(--color-background);
             margin-top: var(--gap-smal);

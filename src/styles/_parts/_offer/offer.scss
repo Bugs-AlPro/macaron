@@ -82,6 +82,7 @@
     }
 
     .details {
+        padding-bottom: var(--gap-smal);
 
         &__question {
             font-size: 2em;
@@ -207,6 +208,7 @@
     }
 
     .details {
+        padding-bottom: var(--gap-smal);
 
         &__question {
             font-size: 1.4em;
@@ -220,6 +222,7 @@
 
         &__question::marker {
             color: var(--color-muted);
+            // display: none;
         }
 
         &__list {
