@@ -64,6 +64,7 @@ export const browserSync = (done) => {
     },
     port: 3000
   });
+
   done();
 };
 
