@@ -37,6 +37,7 @@
         align-items: center;
         box-sizing: border-box;
         padding: var(--gap-smal);
+        box-shadow: var(--shadow-elevation-low);
 
         &__logo {
             flex-grow: 1;
