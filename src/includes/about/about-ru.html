@@ -17,9 +17,11 @@
       </ul>
       <div class="block__section about">
 
-
-        {{ imageJpg('about__picture about__picture--top', 'logo4', 'about__img about__img--top', 'На фото, Елена
-        рассказывает о себе', '300', '300') }}
+        <picture class="about__picture about__picture--top">
+          <source srcset="img/{{ data.pictures.about1.href }}.webp" type="image/webp">
+          <img src="img/{{ data.pictures.about1.href }}.jpg" alt="{{ data.pictures.about1.ru }}"
+            class="about__img about__img--top" width="300" height="300">
+        </picture>
 
         {% for item in translate.aboutText %}
         <p class="about__text about__text--{{ item.class }}">
@@ -27,8 +29,13 @@
         </p>
         {% endfor %}
 
-        {{ imageJpg('about__picture about__picture--down', 'about1', 'about__img about__img--down', 'На фото, Елена c
-        кофе и c пирожным макарон', '200', '200') }}
+        {{ data.pictures.about1.href }}
+
+        <picture class="about__picture about__picture--down">
+          <source srcset="img/{{ data.pictures.about2.href }}.webp" type="image/webp">
+          <img src="img/{{ data.pictures.about2.href }}.jpg" alt="{{ data.pictures.about2.ru }}"
+            class="about__img about__img--down" width="200" height="200">
+        </picture>
 
       </div>
 

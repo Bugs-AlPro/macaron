@@ -18,7 +18,7 @@ var feedbackSlider = tns({
   gutter: 5,
   arrowKeys: true,
   startIndex: 0,
-  mouseDrag: true,
+  mouseDrag: false,
   controls: true,
   nav: false,
   // fixedWidth: 300,

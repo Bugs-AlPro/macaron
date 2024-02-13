@@ -15,8 +15,12 @@
       <div class="block__section">
 
         <div class="slider-navigation">
-          <button type="button" class="slider-navigation__btn slider-navigation__btn--left">Back</button>
-          <button type="button" class="slider-navigation__btn slider-navigation__btn--right">Next</button>
+          <button type="button" class="slider-navigation__btn slider-navigation__btn--left">
+            {{ translate.feedbackTitle.backBtn.en }}
+          </button>
+          <button type="button" class="slider-navigation__btn slider-navigation__btn--right">
+            {{ translate.feedbackTitle.nextBtn.en }}
+          </button>
         </div>
 
 
@@ -43,7 +47,7 @@
                 {{ item.descriptionEn }}
               </div>
               <a href="{{ item.link }}" class="feedback__link link-to">
-                {{ item.linkTextEn }}
+                {{ translate.feedbackTitle.link.en }}
               </a>
             </div>
           </li>

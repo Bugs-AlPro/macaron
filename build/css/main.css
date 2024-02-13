@@ -1505,7 +1505,7 @@ p {
     padding: 10px 20px;
     transition: 0.4s;
     border-radius: 20px;
-    box-shadow: var(--shadow-elevation-low);
+    box-shadow: var(--shadow-elevation-medium);
   }
   .social__link svg {
     width: 100%;

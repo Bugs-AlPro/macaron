@@ -15,8 +15,12 @@
       <div class="block__section">
 
         <div class="slider-navigation">
-          <button type="button" class="slider-navigation__btn slider-navigation__btn--left">Назад</button>
-          <button type="button" class="slider-navigation__btn slider-navigation__btn--right">Вперёд</button>
+          <button type="button" class="slider-navigation__btn slider-navigation__btn--left">
+            {{ translate.feedbackTitle.backBtn.ru }}
+          </button>
+          <button type="button" class="slider-navigation__btn slider-navigation__btn--right">
+            {{ translate.feedbackTitle.nextBtn.ru }}
+          </button>
         </div>
 
 
@@ -43,7 +47,7 @@
                 {{ item.descriptionRu }}
               </div>
               <a href="{{ item.link }}" class="feedback__link link-to">
-                {{ item.linkTextRu }}
+                {{ translate.feedbackTitle.link.ru }}
               </a>
             </div>
           </li>
