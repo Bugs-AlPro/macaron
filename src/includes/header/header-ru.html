@@ -13,8 +13,6 @@
 
       {% include "includes/header/language-ru.html" %}
 
-      <!-- {% include "includes/header/nav-ru.html" %} -->
-
     </div>
   </div>
 
@@ -22,21 +20,21 @@
 
     <div class="block block--hidden">
 
-      {% import "includes/header/text-content-header.html" as headerText %}
+      {% import "includes/header/text-content-header.html" as translate %}
 
       <div class="block__title title">
         <h1 class="title__header">
-          {{ headerText.heaederTitleTranslate.title.ru }}
+          {{ translate.heaederTitleTranslate.title.ru }}
         </h1>
         <p class="title__text">
-          {{ headerText.heaederTitleTranslate.subTitle.ru | safe}}
+          {{ translate.heaederTitleTranslate.subTitle.ru | safe}}
         </p>
       </div>
 
       <div class="block__section">
         <ul class="slider slider--header mainSlider">
 
-          {% for item in macrosData.sliderOfferBase %}
+          {% for item in translate.sliderOfferBaseRu %}
           <li class="slider__item">
             <picture class="slider__picture">
               <source srcset="img/{{ item.img }}.webp" type="image/webp">

@@ -1,7 +1,7 @@
 :root {
   --box-shadow-google: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
   --color-background: rgb(254, 251, 251);
-  --color-accent: hsl(279, 60%, 65%);
+  --color-accent: hsl(279, 32%, 52%);
   --color-muted: rgb(100, 58, 98);
   --color-text: hsl(344, 14%, 15%);
   --shadow-color: 0deg 0% 63%;
@@ -138,7 +138,7 @@ p {
     color: var(--color-text);
   }
   .title__header {
-    font-size: 3em;
+    font-size: 2.7em;
     text-transform: uppercase;
     font-weight: 400;
     margin: 0;
@@ -166,8 +166,10 @@ p {
   .slider__item {
     display: flex;
     justify-content: center;
+    padding-left: 10px;
   }
   .slider__img {
+    display: block;
     height: auto;
     border-radius: 10px;
     width: 100%;
@@ -332,8 +334,10 @@ p {
   .slider__item {
     display: flex;
     justify-content: center;
+    padding-left: 10px;
   }
   .slider__img {
+    display: block;
     height: auto;
     border-radius: 10px;
     width: 100%;
@@ -472,144 +476,6 @@ p {
     color: var(--color-text);
     position: relative;
     box-shadow: var(--box-shadow-google);
-  }
-}
-@media (min-width: 992px) {
-  .nav-menu {
-    display: none;
-  }
-
-  .nav__list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  .nav__link {
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 4px 8px;
-    border-radius: 8px;
-    color: var(--title-blue);
-  }
-  .nav__link:hover, .nav__link:focus {
-    transition: 0.2s;
-    box-shadow: var(--box-shadow-google);
-    transform: translateY(-1px);
-  }
-  .nav__link svg {
-    stroke-width: 1px;
-    stroke: #3d708f;
-  }
-  .nav__text {
-    color: currentColor;
-    line-height: 1em;
-  }
-}
-@media (max-width: 991.98px) {
-  .nav-menu {
-    align-self: flex-end;
-    position: relative;
-    cursor: pointer;
-    border: none;
-    padding: 5px 5px 0 0;
-    background-color: transparent;
-    height: 55px;
-    position: relative;
-    z-index: 3;
-    transition: 0.2s;
-    box-sizing: border-box;
-    border-radius: 5px;
-    display: flex;
-  }
-  .nav-menu__text {
-    position: relative;
-    font-weight: 600;
-    font-size: 1.1em;
-    color: #eee;
-    margin-top: auto;
-  }
-
-  .nav-menu::before,
-.nav-menu::after {
-    position: absolute;
-    content: "";
-    width: 28px;
-    height: 4px;
-    background-color: var(--title-blue);
-    right: 10px;
-  }
-
-  .nav-menu::before {
-    bottom: 30px;
-    transition: 0.2s;
-  }
-
-  .nav-menu::after {
-    bottom: 15px;
-    transition: 0.2s;
-  }
-
-  .nav-menu--open .nav-menu__text {
-    color: #3d708f;
-    transition: 0.2s;
-  }
-
-  .nav-menu--open::after {
-    transition: 0.2s;
-    transform: translateY(-15px) rotate(45deg);
-  }
-
-  .nav-menu--open::before {
-    transition: 0.2s;
-    transform: translateY(0px) rotate(-45deg);
-  }
-
-  .nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #eee;
-    width: 100%;
-    height: 100%;
-    transform: translateY(-100%);
-    transition: 0.2s;
-  }
-  .nav__list {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 75px 10px 15px;
-  }
-  .nav__link {
-    display: block;
-    text-align: center;
-    padding: 4px;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #3d708f;
-    transition: 0.2s;
-  }
-  .nav__link:hover, .nav__link:focus {
-    color: var(--title-blue);
-    box-shadow: var(--box-shadow-google);
-    transform: translateY(-1px);
-    transition: 0.2s;
-  }
-  .nav__link svg {
-    stroke-width: 2px;
-    stroke: #3d708f;
-  }
-  .nav__text {
-    font-weight: 600;
-    font-size: 0.8em;
-    line-height: 10px;
-    color: currentColor;
-  }
-
-  .nav--open {
-    transform: translateY(0);
-    transition: 0.2s;
   }
 }
 @media (min-width: 992px) {
@@ -1191,7 +1057,7 @@ p {
   .about__text--1 {
     margin-left: 180px;
   }
-  .about__text--3 {
+  .about__text--6 {
     margin-right: 100px;
   }
 }
@@ -1270,7 +1136,7 @@ p {
     height: 65px;
     border-bottom-right-radius: 80%;
   }
-  .about__text--3::after {
+  .about__text--6::after {
     content: "";
     display: block;
     float: right;

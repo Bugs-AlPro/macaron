@@ -1,296 +1,253 @@
-<!-- Подключаем файл с переводом текста -->
-{% import "includes/offer/text-content-offer.html" as offerText %}
+{% import "includes/offer/text-content-offer.html" as transtale %}
+{% import "includes/offer/price-content.html" as price %}
 
 <section class="wrap wrap--offer" id="offer">
   <div class="container">
-    <div class="offer">
+    <div class="block">
 
-      <!-- Блок sale-wrap является распоркой для мобильных устройств -->
       <div class="sale-wrap">
         {% include "includes/promo/sale.html" %}
       </div>
 
-      <div class="offer__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">
-          {{ offerText.offerTitleTranslate.title.en }}
+      <div class="block__title title">
+        <h2 class="title__text">
+          {{ transtale.offerTitles.title.en }}
         </h2>
       </div>
 
-      <div class="offer__currency">
-        <!-- Блок переключения валюты - для всех товаров в разделе offer -->
-        <div class="currency">
-          <button type="button" class="currency__btn  currency__btn--current currency__btn--usd"> $</button>
-          <button type="button" class="currency__btn  currency__btn--rub"> ₽</button>
-          <button type="button" class="currency__btn  currency__btn--eur"> €</button>
-        </div>
+      <ul class="block__section part">
 
-      </div>
+        <li class="part__item">
 
-      <ul class="offer__list">
+          <picture class="part__picture">
+            <source srcset="img/{{ transtale.photo.generalCourse.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.generalCourse.img }}.jpg" alt="{{ transtale.photo.generalCourse.altEn }}"
+              class="part__img">
+          </picture>
 
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head offer-i-head--top">
+          <div class="part__costs costs">
 
-            <h3 class="offer-i-head__text">
-              {{ offerText.offerTitleTranslate.generalCourse.en }}
-            </h3>
-
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  {{ offerText.offerTitleTranslate.price.en }}
-                </span>
-                <div class="costs__box costs__box--left">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.helpUsd }} $</span>
-                  <span class="costs__item">{{ item.helpRub }} ₽</span>
-                  <span class="costs__item">{{ item.helpEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
+            <div class="costs__title">
+              {{ transtale.offerTitles.generalCourse.en }}
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn1">
-              {{ offerText.offerTitleTranslate.buy.en }}
-            </button>
-          </div>
 
-          <button type="button" class="offer-item__btn offer-item__btn--1"
-            aria-label="Show (hide) a list of what it includes"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider lider-offer">
-                <ul class="slider-offer__list sliderAllEn">
-                  {% for item in macrosData.sliderAll %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              <li class="offer-item__item">Technical card with a detailed description of the entire process of making
-                macarons. Italian meringue with reduced sugar content. PDF file on 30 pages.
-              </li>
-              <li class="offer-item__item">A guide to buying basic inventory and products on Amazon online store.</li>
-              <li class="offer-item__item">Templates for baking shells.</li>
-              <li class="offer-item__item">Technical card with a detailed description of the process of preparing
-                fillings of different flavors. PDF file on 40 pages.
-              </li>
-              <li class="offer-item__item">Video of the whole process of making macarons.</li>
-              <li class="offer-item__item">Video of the preparation of various basic fillings.</li>
-              <li class="offer-item__item">Video on how to make macarons painting and video how to make
-                curly macarons.</li>
-            </ol>
-          </div>
-        </li>
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
-              {{ offerText.offerTitleTranslate.shells.en }}
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  {{ offerText.offerTitleTranslate.price.en }}
-                </span>
-                <div class="costs__box costs__box--left">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.partUsd }} $</span>
-                  <span class="costs__item">{{ item.partRub }} ₽</span>
-                  <span class="costs__item">{{ item.partEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.en }}
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn2">
-              {{ offerText.offerTitleTranslate.buy.en }}
-            </button>
-          </div>
-          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
 
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferShellsEn">
-                  {% for item in macrosData.sliderOfferShells %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              <li class="offer-item__item">Technical card with a detailed description of the entire process of making
-                macarons. Italian meringue with reduced sugar content. PDF file on 30 pages.
-              </li>
-              <li class="offer-item__item">A guide to buying basic inventory and products on Amazon online store.</li>
-              <li class="offer-item__item">Templates for baking shells.</li>
-              <li class="offer-item__item">Video of the whole process of making shells.</li>
-            </ol>
-          </div>
-        </li>
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
-              {{ offerText.offerTitleTranslate.fillings.en }}
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  {{ offerText.offerTitleTranslate.price.en }}
-                </span>
-                <div class="costs__box costs__box--left">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.partUsd }} $</span>
-                  <span class="costs__item">{{ item.partRub }} ₽</span>
-                  <span class="costs__item">{{ item.partEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
+            <div class="costs__price">
+              $ {{ price.basePrice.all.usd }}
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn3">
-              {{ offerText.offerTitleTranslate.buy.en }}
+
+            <button type="button" class="costs__btn generalCourseBtn pixel-btn">
+              {{ transtale.offerTitles.buy.en }}
             </button>
+
           </div>
-          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
-          <div class="offer-item__body">
 
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferCreamEn">
+          <details class="part__details details">
+            <summary class="details__question">
+              {{ transtale.details.title.en }}
+            </summary>
+            <ul class="details__list">
 
-                  {% for item in macrosData.sliderOfferCream %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
+              {% for item in transtale.detailsGeneralCourse %}
 
-                </ul>
-              </li>
-              <li class="offer-item__item">Technical card with a detailed description of the process of preparing
-                fillings of different flavors. PDF file on 40 pages.
-              </li>
+              <li class="details__item">{{ item.en }}</li>
 
-              {% for item in macrosText.fillingsTypes %}
-              <li class="offer-item__item">{{ item.text2 }}</li>
               {% endfor %}
 
-              <li class="offer-item__item">Video of the preparation of various basic fillings.</li>
+            </ul>
+          </details>
 
-            </ol>
-          </div>
         </li>
 
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
-              {{ offerText.offerTitleTranslate.instagram.en }}
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  {{ offerText.offerTitleTranslate.price.en }}
-                </span>
-                <div class="costs__box costs__box--left">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.instUsd }} $</span>
-                  <span class="costs__item">{{ item.instRub }} ₽</span>
-                  <span class="costs__item">{{ item.instEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
+        <li class="part__item">
 
+          <picture class="part__picture">
+            <source srcset="img/{{ transtale.photo.shells.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.shells.img }}.jpg" alt="{{ transtale.photo.shells.altEn }}"
+              class="part__img">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              {{ transtale.offerTitles.shells.en }}
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn4">
-              {{ offerText.offerTitleTranslate.buy.en }}
-            </button>
-          </div>
-          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferInstEn">
-                  {% for item in macrosData.sliderOfferInstEn %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              <li class="offer-item__item">A book or PDF file with a detailed description of all the steps for the
-                development of your Instagram account.</li>
-              <li class="offer-item__item">In the book, after each section, homework is waiting for you, which you can
-                send for verification.</li>
-              <li class="offer-item__item">Access to 14 video lessons that go in addition to the book.</li>
 
-            </ol>
-          </div>
-        </li>
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
-              {{ offerText.offerTitleTranslate.all.en }}
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  {{ offerText.offerTitleTranslate.price.en }}
-                </span>
-                <div class="costs__box costs__box--left">
-                  {% for item in macrosData.priceNormal %}
-                  <span class="costs__item">{{ item.allUsd }} $</span>
-                  <span class="costs__item">{{ item.allRub }} ₽</span>
-                  <span class="costs__item">{{ item.allEur }} €</span>
-                  {% endfor %}
-                </div>
-              </div>
-
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.en }}
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn5">
-              {{ offerText.offerTitleTranslate.buy.en }}
+
+            <div class="costs__price">
+              $ {{ price.basePrice.part.usd }}
+            </div>
+
+            <button type="button" class="costs__btn shellsBtn pixel-btn">
+              {{ transtale.offerTitles.buy.en }}
             </button>
+
           </div>
-          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferFullEn">
-                  {% for item in macrosData.sliderOfferFullEn %}
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                      <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  {% endfor %}
-                </ul>
-              </li>
-              <li class="offer-item__item">The whole course on cooking macarons "Shells and fillings".</li>
-              <li class="offer-item__item">The whole course "Instagram promotion for Bakers"</li>
-            </ol>
-          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              {{ transtale.details.title.en }}
+            </summary>
+            <ul class="details__list">
+
+              {% for item in transtale.detailsShells %}
+
+              <li class="details__item">{{ item.en }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </details>
 
         </li>
 
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/{{ transtale.photo.fillings.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.fillings.img }}.jpg" alt="{{ transtale.photo.fillings.altEn }}"
+              class="part__img">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              {{ transtale.offerTitles.fillings.en }}
+            </div>
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.en }}
+            </div>
+
+            <div class="costs__price">
+              $ {{ price.basePrice.part.usd }}
+            </div>
+
+            <button type="button" class="costs__btn fillingsBtn pixel-btn">
+              {{ transtale.offerTitles.buy.en }}
+            </button>
+
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              {{ transtale.details.title.en }}
+            </summary>
+            <ul class="details__list">
+
+              {% for item in transtale.detailsFillings %}
+
+              <li class="details__item">{{ item.en }}</li>
+
+              {% endfor %}
+
+              {% for item in transtale.fillingsTypes %}
+
+              <li class="details__item">{{ item.en }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/{{ transtale.photo.instagram.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.instagram.img }}.jpg" alt="{{ transtale.photo.instagram.altEn }}"
+              class="part__img">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              {{ transtale.offerTitles.instagram.en }}
+            </div>
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.en }}
+            </div>
+
+            <div class="costs__price">
+              $ {{ price.basePrice.inst.usd }}
+            </div>
 
 
+            <button type="button" class="costs__btn instagramBtn pixel-btn">
+              {{ transtale.offerTitles.buy.en }}
+            </button>
+
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              {{ transtale.details.title.en }}
+            </summary>
+            <ul class="details__list">
+
+              {% for item in transtale.detailsInst %}
+
+              <li class="details__item">{{ item.en }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/{{ transtale.photo.all.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.all.img }}.jpg" alt="{{ transtale.photo.all.altEn }}" class="part__img">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              {{ transtale.offerTitles.all.en | safe }}
+            </div>
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.en }}
+            </div>
+
+            <div class="costs__price">
+              $ {{ price.basePrice.eskimo.usd }}
+            </div>
 
 
+            <button type="button" class="costs__btn allBtn pixel-btn">
+              {{ transtale.offerTitles.buy.en }}
+            </button>
 
+          </div>
 
+          <details class="part__details details">
+            <summary class="details__question">
+              {{ transtale.details.title.en }}
+            </summary>
+            <ul class="details__list">
+
+              {% for item in transtale.detailsAll %}
+
+              <li class="details__item">{{ item.en | safe }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </details>
+
+        </li>
       </ul>
 
     </div>

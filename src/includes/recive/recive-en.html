@@ -1,0 +1,82 @@
+{% import "includes/recive/text-content-recive.html" as translate %}
+
+<section class="wrap wrap--recive">
+  <div class="container">
+
+    <div class="block">
+
+      <div class="block__title title">
+        <h2 class="title__text">
+          {{ translate.reciveTitle.title.en }}
+        </h2>
+      </div>
+
+      <div class="block__section recive-list">
+
+        <div class="recive-list__item">
+          {{ imagePng('recive-list__picture', 'lava', 'recive-list__img', 'Logo lava.top',
+          '65', '65') }}
+          <p class="recive-list__text">
+            {{ translate.reciveList.lava.en | safe }}
+          </p>
+        </div>
+
+        <div class="recive-list__item">
+          {{ imagePng('recive-list__picture', 'telegramm', 'recive-list__img', 'Logo telegram', '65', '65') }}
+          <p class="recive-list__text">
+            {{ translate.reciveList.telegram.ru | safe }}
+          </p>
+
+        </div>
+
+        <div class="recive-list__item">
+          <img src="img/youtube.svg" alt="Logo youtube" class="recive-list__img">
+          <p class="recive-list__text">
+            {{ translate.reciveList.youtube.en | safe }}
+          </p>
+
+        </div>
+
+        <div class="recive-list__item recive-list__item--svg">
+          <div class="recive-list__image">
+            {{ imageSvgColor('cook', 'recive-list__picture svgcolor', '65', '65', 'Pastry chef girl') }}
+          </div>
+          <p class="recive-list__text">
+            {{ translate.reciveList.base.en }}
+          </p>
+        </div>
+
+        <ul class="recive-list__item social">
+
+          <li class="social__item">
+
+            <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Ссылка на telegram.">
+              <div class="social__description">Telegram</div>
+              {{ imagePng('social__picture', 'telegramm', 'social__img', 'Link to telegram', '65', '65') }}
+            </a>
+
+          </li>
+          <li class="social__item">
+
+            <a href="https://wa.me/message/ZVYTBBN3N7SNI1" class="social__link" aria-label="Ссылка на whatsapp.">
+              <div class="social__description">Whatsapp</div>
+              {{ imagePng('social__picture', 'whatsapp', 'social__img', 'Link to whatsapp', '65', '65') }}
+            </a>
+
+          </li>
+          <li class="social__item">
+
+            <a href="https://www.instagram.com/macaron_by_elena" class="social__link" aria-label="Ссылка на instagram.">
+              <div class="social__description">Instagram</div>
+              {{ imagePng('social__picture', 'instagram', 'social__img', 'Link to instagram', '65', '65') }}
+            </a>
+
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>

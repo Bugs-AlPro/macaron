@@ -1,34 +1,37 @@
-<!-- Подключаем файл с переводом текста -->
-{% import "includes/about/text-content-about.html" as aboutText %}
+{% import "includes/about/text-content-about.html" as translate %}
 
 <section class="wrap wrap--about" id="about">
   <div class="container">
-    <div class="about">
+    <div class="block">
 
-      <div class="about__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--about">
-          {{ aboutText.aboutTitleTranslate.title.en }}
+      <div class="block__title title">
+        <h2 class="title__text">
+          {{ translate.aboutTitle.title.en | safe }}
         </h2>
-        <p class="title-section__text">
-          {{ aboutText.aboutTitleTranslate.subTitle.en }}
-        </p>
       </div>
 
-      <div class="about__body">
+      <ul class="block__section list-about">
+        <li class="list-about__item">{{ translate.aboutTitle.subTitle1.en | safe }}</li>
+        <li class="list-about__item">{{ translate.aboutTitle.subTitle2.en | safe }}</li>
+        <li class="list-about__item">{{ translate.aboutTitle.subTitle3.en | safe }}</li>
+      </ul>
+      <div class="block__section about">
 
-        {{ imageJpg('about__picture about__picture--top', 'logo4', 'about__img about__img--top', 'Elena offers to tell
-        about herself.', '300', '300') }}
 
-        {% for item in aboutText.aboutText %}
+        {{ imageJpg('about__picture about__picture--top', 'logo4', 'about__img about__img--top', 'In the photo, Elena
+        talks about herself.', '300', '300') }}
+
+        {% for item in translate.aboutText %}
         <p class="about__text about__text--{{ item.class }}">
           {{ item.en | safe }}
         </p>
         {% endfor %}
 
-        {{ imageJpg('about__picture about__picture--down', 'about1', 'about__img about__img--down', 'Elena with coffee
-        and delicious macaron.', '200', '200') }}
+        {{ imageJpg('about__picture about__picture--down', 'about1', 'about__img about__img--down', 'In the photo, Elena
+        with coffee and macarons', '200', '200') }}
 
       </div>
+
     </div>
   </div>
 </section>

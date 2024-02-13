@@ -1,4 +1,4 @@
-{% set errorsTitleTranslate = {
+{% set errorsTitle = {
 
 title: {
 ru: 'Распространённые трудности',
@@ -7,7 +7,7 @@ sp: 'type'
 },
 subTitle: {
 ru: 'которые мы решаем на курсе',
-en: 'Addressed in the course',
+en: 'addressed in the course',
 sp: 'type'
 }
 }
@@ -30,7 +30,7 @@ en: "Why do the shells 'explode'?"
 en: "Why don't feet grow?"
 },
 {ru: "Как выбрать правильную температуру для своей духовки?",
-en: " How to choose the right temperature for your oven?"
+en: "How to choose the right temperature for your oven?"
 },
 {ru: "Почему меренга не получается?",
 en: "Why is the meringue not going well?"
@@ -38,4 +38,15 @@ en: "Why is the meringue not going well?"
 {ru: "Почему нужна электрическая духовка?",
 en: "Why do I need an electric oven?"
 }
+]%}
+
+{% set errors = [
+{img: "bad1", alt: "Пример плохих макарон. Не ровные крышечки макаронс.", alt2: "An example of bad macaron. Not pretty
+shells."},
+{img: "bad2", alt: "Пример плохих макарон. Пустые внутри.", alt2: "An example of bad macaron. Empty inside."},
+{img: "bad3", alt: "Пример плохих макарон. Сгоревшие крышечки.", alt2: "An example of bad macaron. Burnt shels."},
+{img: "bad4", alt: "Пример плохих макарон. Не получившиеся пирожные.", alt2: "An example of bad macaron. Unfinished
+cakes."},
+{img: "bad5", alt: "Пример плохих макарон. Смещенный центр после выпекания.", alt2: "An example of bad macaron.
+Displaced center after baking."}
 ]%}

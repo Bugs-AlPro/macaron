@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="cake, macaron, macarons, macarons tutorial, how to cook macarons, macaroons,
-macaron_by_elena">
+  <meta name="keywords" content="macarons lesson, macarons, how to cook macarons, macaroons, macaron_by_elena">
   <meta name="description" content="I teach to cook a delicious dessert - Macaron. Even if you are not a pastry chef, be sure to try
 yourself in this role!">
   <title>Macaron</title>
@@ -15,6 +14,7 @@ yourself in this role!">
   <link rel="manifest" href="/site.webmanifest">
 
   <link rel="stylesheet" href="css/main.css">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6SCG1VL8"></script>
   <script>
@@ -27,6 +27,7 @@ yourself in this role!">
     gtag('config', 'G-GH6SCG1VL8');
     gtag('set', 'allow_google_signals', false);
   </script>
+
   <!-- Meta Pixel Code -->
   <script>
     !function (f, b, e, v, n, t, s) {
@@ -52,14 +53,30 @@ yourself in this role!">
 
 </head>
 
-<body class="body">
+<body>
   <!-- <div id="particles-js"></div> -->
   
 
+
+
+<dialog open class="cookie" id="cookieBox">
+    <div class="cookie__body">
+        <p class="cookie__text">
+            This site uses <b>cookies</b> to help analyze site statistics.
+        </p>
+        <button type="button" class="cookie__btn cookie__btn--yes" onclick="window.cookieBox.close()">
+            Allow
+        </button>
+        <button type="button" class="cookie__btn cookie__btn--no" onclick="window.cookieBox.close()">
+            Decline
+        </button>
+
+    </div>
+</dialog>
 <header class="wrap wrap--header" id="home">
 
-  <!-- Блок sale-wrap является распоркой для мобильных устройств -->
   <div class="sale-wrap">
+
     <!-- 
 <div class="sale">
         <div class="sale__cover">
@@ -129,26 +146,25 @@ yourself in this role!">
                 </div>
         </div>
 </div> -->
+
   </div>
 
+  <div class="header-fixed-wrap">
+    <div class="header-fixed">
 
-  <div class="container">
-    <div class="header">
-
-      <div class="header-fixed">
-
-        <div class="logo header-fixed__logo">
+      <div class="logo header-fixed__logo">
     <a href="https://www.instagram.com/macaron_by_elena" class="logo__link" aria-label="instagram">
         
 <picture class="logo__picture">
   <source srcset="img/logo5.webp" type="image/webp">
-  <img src="img/logo5.jpg" alt="logo" class="logo__img" width="150" height="150">
+  <img src="img/logo5.jpg" alt="logo" class="logo__img" width="50" height="50">
 </picture>
 
         <div class="logo__text">My Instagram</div>
     </a>
 </div>
-        <ul class="language header-fixed__language">
+
+      <ul class="language header-fixed__language">
     <li class="language__item">
         <div class="language__link language__link--current">en</div>
     </li>
@@ -156,225 +172,180 @@ yourself in this role!">
         <a href="index.html" class="language__link ">ru</a>
     </li>
 </ul>
-        <button class="nav-menu" type="button">
-    <span class="nav-menu__text">Menu</span>
-</button>
 
-<nav class="nav header-fixed__nav">
-    <ul class="nav__list">
-        <li class="nav__item">
-            <a class="nav__link" href="#home">
-                
-<svg class="svg" width="35" height="35">
-  <use xlink:href='img/svg/sprite-black.svg#start'></use>
-</svg>
+    </div>
+  </div>
 
-                <div class="nav__text">Home</div>
-            </a>
-        </li>
-        <li class="nav__item">
-            <a class="nav__link" href="#offer">
-                
-<svg class="svg" width="35" height="35">
-  <use xlink:href='img/svg/sprite-black.svg#buying'></use>
-</svg>
+  <div class="container">
 
-                <div class="nav__text">Prices</div>
-            </a>
-        </li>
-        <li class="nav__item">
-            <a class="nav__link" href="#about">
-                
-<svg class="svg" width="35" height="35">
-  <use xlink:href='img/svg/sprite-black.svg#about'></use>
-</svg>
+    <div class="block block--hidden">
 
-                <div class="nav__text">About me</div>
-            </a>
-        </li>
-        <li class="nav__item">
-            <a class="nav__link" href="#feedback">
-                
-<svg class="svg" width="35" height="35">
-  <use xlink:href='img/svg/sprite-black.svg#feedback'></use>
-</svg>
+      
 
-                <div class="nav__text">Reviews</div>
-            </a>
-        </li>
-    </ul>
-</nav>
-
+      <div class="block__title title">
+        <h1 class="title__header">
+          Online course on Macarons
+        </h1>
+        <p class="title__text">
+          learn how to make a delicious French dessert in 3 days
+        </p>
       </div>
 
-      <!-- Подключаем файл с переводом текста -->
+      <div class="block__section">
+        <ul class="slider slider--header mainSlider">
 
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img1.webp" type="image/webp">
+              <img src="img/img1.jpg" alt="Macarons: red and white with patterns." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img2.webp" type="image/webp">
+              <img src="img/img2.jpg" alt="Macarons: lilac color with currant flavor, on a background of lavender." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img3.webp" type="image/webp">
+              <img src="img/img3.jpg" alt="Macarons: white and lilac, against a background of blue flowers." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img4.webp" type="image/webp">
+              <img src="img/img4.jpg" alt="Multicolored macarons lids." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img8.webp" type="image/webp">
+              <img src="img/img8.jpg" alt="Macarons with drawings: different shapes for the winter theme." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img9.webp" type="image/webp">
+              <img src="img/img9.jpg" alt="Burgundy macarons." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img10.webp" type="image/webp">
+              <img src="img/img10.jpg" alt="Macarons: white and pale blue, decorated in the theme - Paris." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img12.webp" type="image/webp">
+              <img src="img/img12.jpg" alt="A set of macarons: different shapes, different colors, different fillings." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img5.webp" type="image/webp">
+              <img src="img/img5.jpg" alt="Painting on macarons. Caption: most, better, friend." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img16.webp" type="image/webp">
+              <img src="img/img16.jpg" alt="Pink and blue macarons with filling." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img19.webp" type="image/webp">
+              <img src="img/img19.jpg" alt="Different fillings for macarons: classic ganache with currants, coconut, mango." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img21.webp" type="image/webp">
+              <img src="img/img21.jpg" alt="Macarons, different flavors, on a beautiful multi-tiered stand." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img22.webp" type="image/webp">
+              <img src="img/img22.jpg" alt="Pink macarons, on a background of rose petals. Sectional view of the taste of mango and currant." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img11.webp" type="image/webp">
+              <img src="img/img11.jpg" alt="Macarons and cheesecakes with decorations." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img23.webp" type="image/webp">
+              <img src="img/img23.jpg" alt="White and lilac macarons." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img25.webp" type="image/webp">
+              <img src="img/img25.jpg" alt="Shell with chocolate filling." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img27.webp" type="image/webp">
+              <img src="img/img27.jpg" alt="Multi-colored cakes with different fillings." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img29.webp" type="image/webp">
+              <img src="img/img29.jpg" alt="Broken shell in half." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img31.webp" type="image/webp">
+              <img src="img/img31.jpg" alt="Shell with fruit filling." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img6.webp" type="image/webp">
+              <img src="img/img6.jpg" alt="Multi-colored macarons with beautiful filling." class="slider__img" height="250">
+            </picture>
+          </li>
+          
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/img7.webp" type="image/webp">
+              <img src="img/img7.jpg" alt="Macarons in the shape of a flower, chamomile." class="slider__img" height="250">
+            </picture>
+          </li>
+          
 
-<div class="title-section title-section--header">
-    <h1 class="title-section__head title-section__head--header">
-        Online course on Macarons
-    </h1>
-    <p class="title-section__text title-section__text--header">
-        learn how to make a delicious French dessert in 3 days
-    </p>
-</div>
+        </ul>
 
-      <div class="slider-offer">
-    <ul class="slider-offer__list sliderOfferBase">
-
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img1.webp" type="image/webp">
-                <img src="img/img1.jpg" alt="Macarons: red and white with patterns." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img2.webp" type="image/webp">
-                <img src="img/img2.jpg" alt="Macarons: lilac color with currant flavor, on a background of lavender." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img3.webp" type="image/webp">
-                <img src="img/img3.jpg" alt="Macarons: white and lilac, against a background of blue flowers." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img4.webp" type="image/webp">
-                <img src="img/img4.jpg" alt="Multicolored macarons lids." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img8.webp" type="image/webp">
-                <img src="img/img8.jpg" alt="Macarons with drawings: different shapes for the winter theme." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img9.webp" type="image/webp">
-                <img src="img/img9.jpg" alt="Burgundy macarons." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img10.webp" type="image/webp">
-                <img src="img/img10.jpg" alt="Macarons: white and pale blue, decorated in the theme - Paris." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img12.webp" type="image/webp">
-                <img src="img/img12.jpg" alt="A set of macarons: different shapes, different colors, different fillings." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img5.webp" type="image/webp">
-                <img src="img/img5.jpg" alt="Painting on macarons. Caption: most, better, friend." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img16.webp" type="image/webp">
-                <img src="img/img16.jpg" alt="Pink and blue macarons with filling." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img19.webp" type="image/webp">
-                <img src="img/img19.jpg" alt="Different fillings for macarons: classic ganache with currants, coconut, mango." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img21.webp" type="image/webp">
-                <img src="img/img21.jpg" alt="Macarons, different flavors, on a beautiful multi-tiered stand." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img22.webp" type="image/webp">
-                <img src="img/img22.jpg" alt="Pink macarons, on a background of rose petals. Sectional view of the taste of mango and currant." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img11.webp" type="image/webp">
-                <img src="img/img11.jpg" alt="Macarons and cheesecakes with decorations." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img23.webp" type="image/webp">
-                <img src="img/img23.jpg" alt="White and lilac macarons." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img25.webp" type="image/webp">
-                <img src="img/img25.jpg" alt="Shell with chocolate filling." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img27.webp" type="image/webp">
-                <img src="img/img27.jpg" alt="Multi-colored cakes with different fillings." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img29.webp" type="image/webp">
-                <img src="img/img29.jpg" alt="Broken shell in half." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img31.webp" type="image/webp">
-                <img src="img/img31.jpg" alt="Shell with fruit filling." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img6.webp" type="image/webp">
-                <img src="img/img6.jpg" alt="Multi-colored macarons with beautiful filling." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-        <li class="slider-offer__item">
-            <picture class="slider-offer__picture">
-                <source srcset="img/img7.webp" type="image/webp">
-                <img src="img/img7.jpg" alt="Macarons in the shape of a flower, chamomile." class="slider-offer__img" height="250">
-            </picture>
-        </li>
-        
-
-    </ul>
-    <!-- <button id="btn-offer-base" class="slider-offer__btn"></button> -->
-
-</div>
+      </div>
 
     </div>
   </div>
@@ -382,321 +353,151 @@ yourself in this role!">
 
 <main class="main">
 
-  <!-- Подключаем файл с переводом текста -->
+  
 
 
-<section class="wrap wrap--want">
+<section class="wrap wrap--interesting">
+
+    <div class="container">
+        <div class="block">
+
+            <div class="block__title title">
+                <h2 class="title__text">
+                    Who is this course for?
+                </h2>
+            </div>
+
+            <ul class="block__section interesting">
+
+                
+                <li class="interesting__item">
+                    <div class="interesting__count">1</div>
+                    <div class="interesting__body">
+                        <h3 class="interesting__subtitle">For macaron enthusiasts</h3>
+                        <p class="interesting__description">For those who <b>love</b> macarons and <b>want</b> to learn how to make them.</p>
+                    </div>
+                </li>
+                
+                <li class="interesting__item">
+                    <div class="interesting__count">2</div>
+                    <div class="interesting__body">
+                        <h3 class="interesting__subtitle">For those facing macaron challenges</h3>
+                        <p class="interesting__description">For individuals who have tried making macarons but have not consistently achieved <b>successful</b>
+results.</p>
+                    </div>
+                </li>
+                
+                <li class="interesting__item">
+                    <div class="interesting__count">3</div>
+                    <div class="interesting__body">
+                        <h3 class="interesting__subtitle">For pastry chefs looking to diversify</h3>
+                        <p class="interesting__description">For confectioners who wish to explore a new area and <b>expand</b> their skills.</p>
+                    </div>
+                </li>
+                
+
+            </ul>
+        </div>
+    </div>
+</section>
+  
+
+<section class="wrap wrap--youtube">
+
+    <div class="container">
+
+        <div class="block block--line">
+
+            <div class="block__title block__title--order-2 title">
+
+                <h2 class="title__text">
+                    Get details in 1 minute
+                </h2>
+
+            </div>
+
+            <div class=" block__section youtube">
+
+                <a href="https://youtu.be/K223kM2Nmtk?si=RAR9lYXhBu3zkNzo" class="youtube__link">
+                    <picture class="youtube__picture">
+                        <source srcset="img/video-cover-en.webp" type="image/webp">
+                        <img src="img/video-cover-en.jpg" alt="Preview. Macarons Online course."
+                            class="youtube__img">
+                    </picture>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+  
+
+<section class="wrap wrap--course">
 
   <div class="container">
 
-    <div class="want">
-      <div class="want__title title-section">
-        <h2 class="title-section__head title-section__head--red">
-          Who is this course for?
+    <div class="block block--line">
+
+      <div class="block__title title">
+
+        <h2 class="title__text title__text--contrast">
+
+          What is included in the course?
+
         </h2>
-        <p class="title-section__text title-section__text--want">
-          Get details in 1 minute
-        </p>
-      </div>
-
-      <div class="want__video youtube">
-
-        <a href="https://youtu.be/K223kM2Nmtk?si=RAR9lYXhBu3zkNzo" class="youtube__link">
-          <picture class="youtube__picture">
-            <source srcset="img/video-cover-en.webp" type="image/webp">
-            <img src="img/video-cover-en.jpg" alt="Preview. Macarons Online course."
-              class="youtube__img">
-          </picture>
-        </a>
 
       </div>
 
-      <ul class="want__list interesting">
+      <ul class="block__section course">
 
         
-        <li class="interesting__item">
-          <div class="interesting__count">1</div>
-          <div class="interesting__body">
-            <h3 class="interesting__title">For macaron enthusiasts</h3>
-            <p class="interesting__description">For those who <b>love</b> macarons and <b>want</b> to learn how to make them.</p>
+
+        <li class="course__item">
+          <div class="course__title">
+            Video lessons
           </div>
+          <div class="course__description">
+            You will receive a video of the entire preparation process. All videos are narrated in English and come
+with subtitles.
+          </div>
+          <a href="https://youtu.be/4F9FjBYJpyE?si=bfLQwfqP5U5xTxSI" class="course__link link-to">
+            View Example
+          </a>
         </li>
+
         
-        <li class="interesting__item">
-          <div class="interesting__count">2</div>
-          <div class="interesting__body">
-            <h3 class="interesting__title">For those facing macaron challenges</h3>
-            <p class="interesting__description">For individuals who have tried making macarons but have not consistently achieved <b>successful</b>
-results.</p>
+
+        <li class="course__item">
+          <div class="course__title">
+            PDF files
           </div>
+          <div class="course__description">
+            You will receive a file with detailed instructions outlining the entire process of preparing macarons.
+          </div>
+          <a href="files/confi-en.pdf" class="course__link link-to">
+            View Example
+          </a>
         </li>
+
         
-        <li class="interesting__item">
-          <div class="interesting__count">3</div>
-          <div class="interesting__body">
-            <h3 class="interesting__title">For pastry chefs looking to diversify</h3>
-            <p class="interesting__description">For confectioners who wish to explore a new area and <b>expand</b> their skills.</p>
+
+        <li class="course__item">
+          <div class="course__title">
+            Feedback
           </div>
+          <div class="course__description">
+            You can ask a question if you&#39;re having trouble.
+          </div>
+          <a href="https://wa.me/message/ZVYTBBN3N7SNI1" class="course__link link-to">
+            Link to WhatsApp
+          </a>
         </li>
+
         
 
       </ul>
 
-      <div class="want__preview preview">
-
-        <div class="preview__top">
-
-          <h3 class="preview__title">
-            Check out what`s in my course
-          </h3>
-
-        </div>
-
-        <ul class="preview__summary summary">
-
-          <li class="summary__item summary__item--img">
-            
-<svg class="svgcolor summary__img" width="70" height="100" aria-label="Girl confectioner.">
-  <use xlink:href='img/svg/sprite-color.svg#cook'></use>
-</svg>
-
-          </li>
-
-          <li class="summary__item">
-
-            <div class="summary__title">
-              Video lessons
-            </div>
-            <div class="summary__description">
-              More 16 videos
-            </div>
-            <button type="button" class="summary__btn summary__btn--green summary__btn-1"></button>
-            <ul class="popup popup--green">
-
-              
-              <li class="popup__item">Recipe with reduced sugar content</li>
-              
-              <li class="popup__item">Italian mirengue. Hand mixer.</li>
-              
-              <li class="popup__item"> Italian mirengue. Stand mixer.</li>
-              
-              <li class="popup__item">How to cook macronage</li>
-              
-              <li class="popup__item">Baking shells</li>
-              
-              <li class="popup__item">Assembling shells</li>
-              
-              <li class="popup__item">How to pipe curly shells</li>
-              
-              <li class="popup__item">Macarons cakes. Painting and drawings</li>
-              
-              <li class="popup__item">Mistakes of Italian meringue</li>
-              
-              <li class="popup__item">Egg white powder</li>
-              
-              <li class="popup__item">How to make ganache on white chocolate </li>
-              
-              <li class="popup__item">How to make ganache on milk chocolate</li>
-              
-              <li class="popup__item">How to make fruit and berry ganache</li>
-              
-              <li class="popup__item">How to make whipped ganache Gingerbread latte</li>
-              
-              <li class="popup__item">Flavored whipped ganache</li>
-              
-              <li class="popup__item">How to make fruit and berry confit</li>
-              
-
-            </ul>
-
-          </li>
-
-          <li class="summary__item">
-
-            <div class="summary__title">
-              Fillings
-            </div>
-            <div class="summary__description">
-              More 30 types
-            </div>
-            <button type="button" class="summary__btn summary__btn--blue summary__btn--open summary__btn-2"></button>
-            <ul class="popup popup--blue popup--open">
-
-              
-              <li class="popup__item">The principle of proportions for ganache.</li>
-              
-              <li class="popup__item">Preparation of different flavors of confit.</li>
-              
-              <li class="popup__item">Ganache on white chocolate.</li>
-              
-              <li class="popup__item">Milk chocolate ganache.</li>
-              
-              <li class="popup__item">Dark chocolate ganache.</li>
-              
-              <li class="popup__item">Milk chocolate ganache &quot;Oreo&quot;.</li>
-              
-              <li class="popup__item">Ganache on orange chocolate.</li>
-              
-              <li class="popup__item">&quot;Pistachio-raspberry&quot; on white chocolate.</li>
-              
-              <li class="popup__item">Hazelnut amaretto.</li>
-              
-              <li class="popup__item">Cappuccino Baileys.</li>
-              
-              <li class="popup__item">Poppy seed cheesecake with lemon.</li>
-              
-              <li class="popup__item">Fruit and berry ganache: strawberries, blueberries, currants, mangoes, etc.</li>
-              
-              <li class="popup__item">Pumpkin latte</li>
-              
-              <li class="popup__item">Whipped cream ganache</li>
-              
-              <li class="popup__item">Whipped milk ganache “Kinder”</li>
-              
-              <li class="popup__item">Peanut milk chocolate with banoffee.</li>
-              
-              <li class="popup__item">Whipped ganache &quot;Gingerbread Latte&quot; or &quot;Cappuccino&quot;.</li>
-              
-              <li class="popup__item">Caramel ganache.</li>
-              
-              <li class="popup__item">Whipped ganache &quot;Double coconut&quot; or &quot;Bounty&quot;.</li>
-              
-              <li class="popup__item">Filling &quot;Snickers with salted caramel&quot;.</li>
-              
-              <li class="popup__item">Brie Pear Ganache.</li>
-              
-              <li class="popup__item">Flavor options: mint, lavender, lemon, vanilla.</li>
-              
-
-            </ul>
-
-          </li>
-
-          <li class="summary__item">
-
-            <div class="summary__title">
-              Technical card
-            </div>
-            <div class="summary__description">
-              70 pages
-            </div>
-            <button type="button" class="summary__btn summary__btn--red summary__btn-3"></button>
-            <ul class="popup popup--red">
-
-
-              
-              <li class="popup__item">
-                <p>
-                  <b>Shells</b> - at the moment, a PDF document about shells contains about 30 pages of text.
-There I tell you in detail the cooking technology.<br>
-In the course, I provide a recipe with <b>reduced</b> sugar content.
-                </p>
-              </li>
-              
-              <li class="popup__item">
-                <p>
-                  <b>Fillings</b> - at the moment, the PDF document on fillings contains about 40 pages with recipes for more than
-30 fillings.
-                </p>
-              </li>
-              
-
-            </ul>
-
-          </li>
-
-          <li class="summary__item">
-
-            <div class="summary__title">
-              Access
-            </div>
-            <div class="summary__description">
-              Forever
-            </div>
-            <button type="button" class="summary__btn summary__btn--purple summary__btn-4"></button>
-            <ul class="popup popup--purple">
-
-              <li class="popup__item">
-                <p>To be honest, I <b>do not plan to delete</b> you have access to files, in a year. Use
-it as much as you want. But I also cannot guarantee that Internet services will work stably for many years.</p>
-              </li>
-
-            </ul>
-          </li>
-
-          <li class="summary__item">
-
-            <div class="summary__title">
-              Support
-            </div>
-            <div class="summary__description">
-              Online Chat
-            </div>
-            <button type="button" class="summary__btn summary__btn--yellow summary__btn-5"></button>
-            <ul class="popup popup--yellow">
-
-              <li class="popup__item">
-                <p>If you are buying my course, I will personally answer your questions and advise.</p>
-              </li>
-
-            </ul>
-          </li>
-
-        </ul>
-
-        <div class="preview__body preview-body">
-          <div class="preview-body__item preview-body__item--pdf">
-            <p class="preview-body__text">
-              <b>1. You will receive a PDF file.</b> Receive a PDF file detailing the entire cooking
-process.
-            </p>
-            <picture class="preview-body__picture">
-              <source srcset="img/pdf-eng.webp" type="image/webp">
-              <img src="img/pdf-eng.png" alt="Screenshot of one page from PDF." class="preview-body__img" width="100"
-                height="100">
-            </picture>
-          </div>
-
-          <div class="preview-body__item">
-
-            <p class="preview-body__text">
-              <b>2. You will receive a video of the entire cooking process.</b> Currently, the videos are
-in English, and they all include English subtitles.
-            </p>
-
-            <div class="youtube">
-              <a href="https://youtu.be/4F9FjBYJpyE?si=phBTmu_L48ejWby8" class="youtube__link youtube__link--preview">
-                <picture class="youtube__picture">
-                  <source srcset="img/confi-en.webp" type="image/webp">
-                  <img src="img/confi-en.jpg" alt="https://youtu.be/4F9FjBYJpyE?si=phBTmu_L48ejWby8"
-                    class="youtube__img">
-                </picture>
-              </a>
-            </div>
-
-          </div>
-
-          <div class="preview-body__item preview-body__item--link">
-
-            <p class="preview-body__text">
-              <b>3. Course on Telegram.</b> The course is currently hosted on my private Telegram channel. Upon
-purchase, you become a member of this channel. I consistently update and enhance the course, which
-includes adding new flavors of fillings. All subsequent updates will be accessible through this
-channel.<br>
-<b>4. Alternative for non-Telegram users.</b> If you are unable to use the Telegram app, I will provide
-access
-to my private YouTube channel, allowing you to watch the tutorials.
-            </p>
-
-            <div class="payment-button">
-              <a class="payment-button__btn" href="#offer">
-                View prices
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -705,20 +506,18 @@ to my private YouTube channel, allowing you to watch the tutorials.
 <section class="wrap wrap--errors">
 
   <div class="container">
-    <div class="errors">
-      <div class="errors__title title-section">
 
-        <h2 class="title-section__head title-section__head--errors title-section__head--reviews">
+    <div class="block">
+      <div class="block__title title">
+        <h2 class="title__text">
           Typical difficulties
         </h2>
-
-        <p class="title-section__text title-section__text--errors">
-          Addressed in the course
+        <p class="title__smal-text">
+          addressed in the course
         </p>
-
       </div>
 
-      <ul class="errors-img-sm errors-img-en">
+      <ul class="block__section errors-img-sm">
         
         <li class="errors-img-sm__item">
           <picture class="errors-img-sm__picture">
@@ -760,7 +559,7 @@ Displaced center after baking." class="errors-img-sm__img" height="250">
         
       </ul>
 
-      <ul class="errors__list">
+      <ul class="block__section errors">
 
         
         <li class="errors__item">Why are the shells inside empty?</li>
@@ -773,7 +572,7 @@ Displaced center after baking." class="errors-img-sm__img" height="250">
         
         <li class="errors__item">Why don&#39;t feet grow?</li>
         
-        <li class="errors__item"> How to choose the right temperature for your oven?</li>
+        <li class="errors__item">How to choose the right temperature for your oven?</li>
         
         <li class="errors__item">Why is the meringue not going well?</li>
         
@@ -787,35 +586,38 @@ Displaced center after baking." class="errors-img-sm__img" height="250">
             <li class="errors-img-xl__item">
               <picture class="errors-img-xl__picture">
                 <source srcset="img/bad1.webp" type="image/webp">
-                <img src="img/bad1.jpg" alt="Пример плохих макарон. Не ровные крышечки макаронс." class="errors-img-xl__img" height="250">
+                <img src="img/bad1.jpg" alt="An example of bad macaron. Not pretty
+shells." class="errors-img-xl__img" height="250">
               </picture>
             </li>
             
             <li class="errors-img-xl__item">
               <picture class="errors-img-xl__picture">
                 <source srcset="img/bad2.webp" type="image/webp">
-                <img src="img/bad2.jpg" alt="Пример плохих макарон. Пустые внутри." class="errors-img-xl__img" height="250">
+                <img src="img/bad2.jpg" alt="An example of bad macaron. Empty inside." class="errors-img-xl__img" height="250">
               </picture>
             </li>
             
             <li class="errors-img-xl__item">
               <picture class="errors-img-xl__picture">
                 <source srcset="img/bad3.webp" type="image/webp">
-                <img src="img/bad3.jpg" alt="Пример плохих макарон. Сгоревшие крышечки." class="errors-img-xl__img" height="250">
+                <img src="img/bad3.jpg" alt="An example of bad macaron. Burnt shels." class="errors-img-xl__img" height="250">
               </picture>
             </li>
             
             <li class="errors-img-xl__item">
               <picture class="errors-img-xl__picture">
                 <source srcset="img/bad4.webp" type="image/webp">
-                <img src="img/bad4.jpg" alt="Пример плохих макарон. Не получившиеся пирожные." class="errors-img-xl__img" height="250">
+                <img src="img/bad4.jpg" alt="An example of bad macaron. Unfinished
+cakes." class="errors-img-xl__img" height="250">
               </picture>
             </li>
             
             <li class="errors-img-xl__item">
               <picture class="errors-img-xl__picture">
                 <source srcset="img/bad5.webp" type="image/webp">
-                <img src="img/bad5.jpg" alt="Пример плохих макарон. Смещенный центр после выпекания." class="errors-img-xl__img" height="250">
+                <img src="img/bad5.jpg" alt="An example of bad macaron.
+Displaced center after baking." class="errors-img-xl__img" height="250">
               </picture>
             </li>
             
@@ -827,22 +629,22 @@ Displaced center after baking." class="errors-img-sm__img" height="250">
 
   </div>
 </section>
-  <!-- Подключаем файл с переводом текста -->
-
+  
 
 <section class="wrap wrap--skils">
 
   <div class="container">
 
-    <div class="skils">
-      <div class="skils__title title-section">
-        <h2 class="title-section__head title-section__head--reviews">
+    <div class="block">
+      <div class="block__title title">
+        <h2 class="title__text">
 
           After completing the course, you will learn
 
         </h2>
       </div>
-      <ul class="skils__list">
+
+      <ul class="block__section skils">
 
         
 
@@ -880,151 +682,212 @@ Displaced center after baking." class="errors-img-sm__img" height="250">
   </div>
 
 </section>
-  <!-- Подключаем файл с переводом текста -->
-
+  
 
 <section class="wrap wrap--feedback" id="feedback">
   <div class="container">
-    <div class="feedback">
-      <div class="feedback__title title-section">
-        <h2 class="title-section__head title-section__head--reviews">
-          
+
+    <div class="block block--hidden">
+      <div class="block__title title">
+        <h2 class="title__text title__text--contrast">
+
+          Feedback from my students
+
         </h2>
       </div>
-      <div class="feedback__slider feedback-slider">
-        <ul class="feedback-slider__list sliderFeedback">
+
+      <div class="block__section">
+
+        <div class="slider-navigation">
+          <button type="button" class="slider-navigation__btn slider-navigation__btn--left">Back</button>
+          <button type="button" class="slider-navigation__btn slider-navigation__btn--right">Next</button>
+        </div>
+
+
+        <ul class="slider slider--feedback feedbackSlider">
 
           
 
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en1.webp" type="image/webp">
-              <img src="img/feedback-en1.jpg" alt="Feedback on cakes: The lessons are amazing, everything is told in detail, there is a lot of
-information. Thanks a lot." class="feedback-slider__img">
-            </picture>
+          <li class="slider__item">
+            <div class="feedback">
+              <div class="feedback__title">
+                Estonia, Tartu
+              </div>
+              <div class="feedback__top">
+                <picture class="feedback__picture">
+                  <source srcset="img/estonia.webp" type="image/webp">
+                  <img class="feedback__img" src="img/estonia.jpg" alt="Фото профиля kristinescakes_elva"
+                    width="70px" height="70px">
+                </picture>
+                <div class="feedback__name">
+                  kristinescakes_elva
+                </div>
+              </div>
+              <div class="feedback__description">
+                +++++
+              </div>
+              <a href="https://www.instagram.com/kristinescakes_elva/" class="feedback__link link-to">
+                +++++
+              </a>
+            </div>
           </li>
+
           
 
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en2.webp" type="image/webp">
-              <img src="img/feedback-en2.jpg" alt="Cake review: Thank you so much for the detailed tips." class="feedback-slider__img">
-            </picture>
+          <li class="slider__item">
+            <div class="feedback">
+              <div class="feedback__title">
+                Turkey, Antalya
+              </div>
+              <div class="feedback__top">
+                <picture class="feedback__picture">
+                  <source srcset="img/turkiye.webp" type="image/webp">
+                  <img class="feedback__img" src="img/turkiye.jpg" alt="Фото профиля eclairebyjennie"
+                    width="70px" height="70px">
+                </picture>
+                <div class="feedback__name">
+                  eclairebyjennie
+                </div>
+              </div>
+              <div class="feedback__description">
+                +++++
+              </div>
+              <a href="https://www.instagram.com/eclairebyjennie/" class="feedback__link link-to">
+                +++++
+              </a>
+            </div>
           </li>
+
           
 
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en3.webp" type="image/webp">
-              <img src="img/feedback-en3.jpg" alt="Feedback on cakes: do not waste time and money, buy a master class from Lena and you will be
-happy." class="feedback-slider__img">
-            </picture>
+          <li class="slider__item">
+            <div class="feedback">
+              <div class="feedback__title">
+                USA, New York
+              </div>
+              <div class="feedback__top">
+                <picture class="feedback__picture">
+                  <source srcset="img/newyork.webp" type="image/webp">
+                  <img class="feedback__img" src="img/newyork.jpg" alt="Фото профиля tetabakeryny"
+                    width="70px" height="70px">
+                </picture>
+                <div class="feedback__name">
+                  tetabakeryny
+                </div>
+              </div>
+              <div class="feedback__description">
+                +++++
+              </div>
+              <a href="https://www.instagram.com/tetabakeryny/" class="feedback__link link-to">
+                +++++
+              </a>
+            </div>
           </li>
+
           
 
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en4.webp" type="image/webp">
-              <img src="img/feedback-en4.jpg" alt="Feedback on success: if you do everything according to your technology, then the first
-time." class="feedback-slider__img">
-            </picture>
+          <li class="slider__item">
+            <div class="feedback">
+              <div class="feedback__title">
+                Canada, Alberta
+              </div>
+              <div class="feedback__top">
+                <picture class="feedback__picture">
+                  <source srcset="img/canada.webp" type="image/webp">
+                  <img class="feedback__img" src="img/canada.jpg" alt="Фото профиля ama_sweetboutique"
+                    width="70px" height="70px">
+                </picture>
+                <div class="feedback__name">
+                  ama_sweetboutique
+                </div>
+              </div>
+              <div class="feedback__description">
+                +++++
+              </div>
+              <a href="https://www.instagram.com/ama_sweetboutique/" class="feedback__link link-to">
+                +++++
+              </a>
+            </div>
           </li>
+
           
 
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en5.webp" type="image/webp">
-              <img src="img/feedback-en5.jpg" alt="Feedback on the success of the student: I learned and now everything is stable. All are
-super
-pretty." class="feedback-slider__img">
-            </picture>
+          <li class="slider__item">
+            <div class="feedback">
+              <div class="feedback__title">
+                Liverpool
+              </div>
+              <div class="feedback__top">
+                <picture class="feedback__picture">
+                  <source srcset="img/britan.webp" type="image/webp">
+                  <img class="feedback__img" src="img/britan.jpg" alt="Фото профиля dreamy__macarons"
+                    width="70px" height="70px">
+                </picture>
+                <div class="feedback__name">
+                  dreamy__macarons
+                </div>
+              </div>
+              <div class="feedback__description">
+                +++++
+              </div>
+              <a href="https://www.instagram.com/dreamy__macarons/" class="feedback__link link-to">
+                +++++
+              </a>
+            </div>
           </li>
+
           
 
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en6.webp" type="image/webp">
-              <img src="img/feedback-en6.jpg" alt="Feedback on the success of the student: I&#39;m just delighted, not to mention my household.
-Thank
-you very much for your hard work." class="feedback-slider__img">
-            </picture>
+          <li class="slider__item">
+            <div class="feedback">
+              <div class="feedback__title">
+                Mexico, Mexico City
+              </div>
+              <div class="feedback__top">
+                <picture class="feedback__picture">
+                  <source srcset="img/mehiko.webp" type="image/webp">
+                  <img class="feedback__img" src="img/mehiko.jpg" alt="Фото профиля lareposteria_de_sweetcakes"
+                    width="70px" height="70px">
+                </picture>
+                <div class="feedback__name">
+                  lareposteria_de_sweetcakes
+                </div>
+              </div>
+              <div class="feedback__description">
+                +++++
+              </div>
+              <a href="https://www.instagram.com/lareposteria_de_sweetcakes/" class="feedback__link link-to">
+                +++++
+              </a>
+            </div>
           </li>
+
           
 
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en7.webp" type="image/webp">
-              <img src="img/feedback-en7.jpg" alt="Feedback on success: It&#39;s a pleasure to work with you." class="feedback-slider__img">
-            </picture>
+          <li class="slider__item">
+            <div class="feedback">
+              <div class="feedback__title">
+                USA, Brooklyn
+              </div>
+              <div class="feedback__top">
+                <picture class="feedback__picture">
+                  <source srcset="img/bruklin.webp" type="image/webp">
+                  <img class="feedback__img" src="img/bruklin.jpg" alt="Фото профиля monam.oour"
+                    width="70px" height="70px">
+                </picture>
+                <div class="feedback__name">
+                  monam.oour
+                </div>
+              </div>
+              <div class="feedback__description">
+                +++++
+              </div>
+              <a href="https://www.instagram.com/monam.oour/" class="feedback__link link-to">
+                +++++
+              </a>
+            </div>
           </li>
-          
 
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en8.webp" type="image/webp">
-              <img src="img/feedback-en8.jpg" alt="Feedback on the successes: they are simply amazing." class="feedback-slider__img">
-            </picture>
-          </li>
-          
-
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en9.webp" type="image/webp">
-              <img src="img/feedback-en9.jpg" alt="Feedback on the success of the student: thank you, you always answer my questions, it was
-very
-easy to communicate with you." class="feedback-slider__img">
-            </picture>
-          </li>
-          
-
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en10.webp" type="image/webp">
-              <img src="img/feedback-en10.jpg" alt="Course feedback: thanks to Elena for her amazing course." class="feedback-slider__img">
-            </picture>
-          </li>
-          
-
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en11.webp" type="image/webp">
-              <img src="img/feedback-en11.jpg" alt="Feedback on the course: before that, I made it according to a recipe from the Internet and
-always missed something. And then just a song, a fairy tale, and everything went very cool." class="feedback-slider__img">
-            </picture>
-          </li>
-          
-
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en12.webp" type="image/webp">
-              <img src="img/feedback-en12.jpg" alt="Review of the course: the most detailed instruction on the preparation of the sensational
-fashionable MACARONS dessert." class="feedback-slider__img">
-            </picture>
-          </li>
-          
-
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en13.webp" type="image/webp">
-              <img src="img/feedback-en13.jpg" alt="Feedback on success: thank you very much, everyone who tried it was satisfied." class="feedback-slider__img">
-            </picture>
-          </li>
-          
-
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback-en14.webp" type="image/webp">
-              <img src="img/feedback-en14.jpg" alt="Feedback on success: thank you very much, everyone who tried it was satisfied." class="feedback-slider__img">
-            </picture>
-          </li>
-          
-
-          <li class="feedback-slider__item">
-            <picture class="feedback-slider__picture">
-              <source srcset="img/feedback14.webp" type="image/webp">
-              <img src="img/feedback14.jpg" alt="Photo of Elena, in winter, with a box of cakes of different flavors and colors." class="feedback-slider__img">
-            </picture>
-          </li>
           
 
         </ul>
@@ -1033,103 +896,90 @@ fashionable MACARONS dessert." class="feedback-slider__img">
     </div>
   </div>
 </section>
-  <!-- Подключаем файл с переводом текста -->
-
+  
 
 <section class="wrap wrap--about" id="about">
   <div class="container">
-    <div class="about">
+    <div class="block">
 
-      <div class="about__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--about">
-          
+      <div class="block__title title">
+        <h2 class="title__text">
+          Becoming a macaron pastry chef is
         </h2>
-        <p class="title-section__text">
-          
-        </p>
       </div>
 
-      <div class="about__body">
+      <ul class="block__section list-about">
+        <li class="list-about__item">Breaking free from the everyday routine and discovering your creative potential.</li>
+        <li class="list-about__item">Deciding to change your life and engage in what brings joy.</li>
+        <li class="list-about__item">Starting to earn from it and receiving grateful compliments for such delicious treats.</li>
+      </ul>
+      <div class="block__section about">
+
 
         
 <picture class="about__picture about__picture--top">
   <source srcset="img/logo4.webp" type="image/webp">
-  <img src="img/logo4.jpg" alt="Elena offers to tell
-        about herself." class="about__img about__img--top" width="300" height="300">
+  <img src="img/logo4.jpg" alt="In the photo, Elena
+        talks about herself." class="about__img about__img--top" width="300" height="300">
 </picture>
 
 
         
         <p class="about__text about__text--1">
-          Once, at the opening of the French store <b>L’Occitane</b>, we were treated to macarons. Never before had I
-tasted such
-a deliciously delicate dessert. After that, I began searching for something similar, but unfortunately, it was
-challenging for me to find where one could buy such cakes. Delicious macarons can only be found in good, expensive
-coffee shops, and even then, only if they are fresh and properly stored, considering their shelf life is 3-4 days.
-That's why I decided to learn how to cook them myself!
-        </p>
-        
-        <p class="about__text about__text--4">
-          Once, at the opening of the French store <b>L’Occitane</b>, we were treated to macarons. Never before had I
-tasted such
-a deliciously delicate dessert. After that, I began searching for something similar, but unfortunately, it was
-challenging for me to find where one could buy such cakes. Delicious macarons can only be found in good, expensive
-coffee shops, and even then, only if they are fresh and properly stored, considering their shelf life is 3-4 days.
-That's why I decided to learn how to cook them myself!
-        </p>
-        
-        <p class="about__text about__text--5">
-          Once, at the opening of the French store <b>L’Occitane</b>, we were treated to macarons. Never before had I
-tasted such
-a deliciously delicate dessert. After that, I began searching for something similar, but unfortunately, it was
-challenging for me to find where one could buy such cakes. Delicious macarons can only be found in good, expensive
-coffee shops, and even then, only if they are fresh and properly stored, considering their shelf life is 3-4 days.
-That's why I decided to learn how to cook them myself!
-        </p>
-        
-        <p class="about__text about__text--6">
-          Once, at the opening of the French store <b>L’Occitane</b>, we were treated to macarons. Never before had I
-tasted such
-a deliciously delicate dessert. After that, I began searching for something similar, but unfortunately, it was
-challenging for me to find where one could buy such cakes. Delicious macarons can only be found in good, expensive
-coffee shops, and even then, only if they are fresh and properly stored, considering their shelf life is 3-4 days.
-That's why I decided to learn how to cook them myself!
+          I decided to change my life and quit my main job to focus on creating macarons. Now, I not only find joy in my
+creativity but have significantly increased my income. This allows me to travel and share my passion for making macarons
+with others.
         </p>
         
         <p class="about__text about__text--2">
-          After dedicating a <b>year</b> to it, transitioning from a gas to an <b>electric oven</b>, exploring many
-websites, and
-investing in a lot of ingredients, I found a stable recipe for cooking.
+          It all started five years ago when I only baked custom cakes and worked at my main job. I then decided to diversify
+my assortment by adding the increasingly popular dessert - macarons.
         </p>
         
         <p class="about__text about__text--3">
-           I have already helped over <b>500</b> of my students learn how to cook macaron cakes. With me, you will
-undoubtedly
-succeed because I will share a little secret in their preparation. With such assistance, everyone can master these
-capricious desserts, regardless of whether you are a pastry chef or just starting this journey!
+          While taking on my first orders, I faced challenges such as exploding shells and leaking fillings, but, ultimately,
+through hard work, I achieved excellent results and satisfied customers.
+        </p>
+        
+        <p class="about__text about__text--4">
+          Later, some of my clients and friends asked me to teach them how to make macarons. I already knew the entire
+preparation process well and understood that to teach, I must thoroughly understand the subject. My conscience would not
+allow me to instruct without knowing every detail of the process. After seeing my friends achieve wonderful results, I
+felt happy and decided to develop this project, creating a comprehensive course on making macarons.
+        </p>
+        
+        <p class="about__text about__text--5">
+          Additionally, over these two years, I have consistently updated the course program and videos to ensure they
+contain accurate and up-to-date instructions. These are full-fledged video tutorials where everything unnecessary is
+trimmed. The advantage is that you can rewatch these videos as many times as needed until you master the art!
+        </p>
+        
+        <p class="about__text about__text--6">
+          If you don't have time to test recipes from YouTube, here's your salvation! Learn to make one type of dessert
+perfectly, but you will know everything about it!
         </p>
         
 
         
 <picture class="about__picture about__picture--down">
   <source srcset="img/about1.webp" type="image/webp">
-  <img src="img/about1.jpg" alt="Elena with coffee
-        and delicious macaron." class="about__img about__img--down" width="200" height="200">
+  <img src="img/about1.jpg" alt="In the photo, Elena
+        with coffee and macarons" class="about__img about__img--down" width="200" height="200">
 </picture>
 
 
       </div>
+
     </div>
   </div>
 </section>
-  <!-- Подключаем файл с переводом текста -->
+  
 
 
 <section class="wrap wrap--offer" id="offer">
   <div class="container">
-    <div class="offer">
+    <div class="block">
 
-      <!-- Блок sale-wrap является распоркой для мобильных устройств -->
       <div class="sale-wrap">
         <!-- 
 <div class="sale">
@@ -1202,852 +1052,412 @@ capricious desserts, regardless of whether you are a pastry chef or just startin
 </div> -->
       </div>
 
-      <div class="offer__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">
-          
+      <div class="block__title title">
+        <h2 class="title__text">
+          My Courses
         </h2>
       </div>
 
-      <div class="offer__currency">
-        <!-- Блок переключения валюты - для всех товаров в разделе offer -->
-        <div class="currency">
-          <button type="button" class="currency__btn  currency__btn--current currency__btn--usd"> $</button>
-          <button type="button" class="currency__btn  currency__btn--rub"> ₽</button>
-          <button type="button" class="currency__btn  currency__btn--eur"> €</button>
-        </div>
+      <ul class="block__section part">
 
-      </div>
+        <li class="part__item">
 
-      <ul class="offer__list">
+          <picture class="part__picture">
+            <source srcset="img/img23.webp" type="image/webp">
+            <img src="img/img23.jpg" alt="Cover for the course Shells and fillings"
+              class="part__img">
+          </picture>
 
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head offer-i-head--top">
+          <div class="part__costs costs">
 
-            <h3 class="offer-i-head__text">
-              
-            </h3>
-
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  
-                </span>
-                <div class="costs__box costs__box--left">
-                  
-                  <span class="costs__item">95 $</span>
-                  <span class="costs__item">8730 ₽</span>
-                  <span class="costs__item">86 €</span>
-                  
-                </div>
-              </div>
+            <div class="costs__title">
+              Macarons. Shells and fillings
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn1">
-              
-            </button>
-          </div>
 
-          <button type="button" class="offer-item__btn offer-item__btn--1"
-            aria-label="Show (hide) a list of what it includes"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider lider-offer">
-                <ul class="slider-offer__list sliderAllEn">
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img13.webp" type="image/webp">
-                      <img src="img/img13.jpg" alt="A set of colored
-macaroons in different flavors." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img31.webp" type="image/webp">
-                      <img src="img/img31.jpg" alt="Shell with fruit filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img1.webp" type="image/webp">
-                      <img src="img/img1.jpg" alt="Macarons: red and white with
-patterns." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img4.webp" type="image/webp">
-                      <img src="img/img4.jpg" alt="Multicolored macarons lids." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img18.webp" type="image/webp">
-                      <img src="img/img18.jpg" alt="Burgundy shells with
-fruit filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img14.webp" type="image/webp">
-                      <img src="img/img14.jpg" alt="Macarons in the shape of Mickey Mouse." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img15.webp" type="image/webp">
-                      <img src="img/img15.jpg" alt="Filling for macarons:
-classic raspberry ganache, walnut Snickers." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img23.webp" type="image/webp">
-                      <img src="img/img23.jpg" alt="White and lilac macarons." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img28.webp" type="image/webp">
-                      <img src="img/img28.jpg" alt="Shell with mint filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img20.webp" type="image/webp">
-                      <img src="img/img20.jpg" alt="Burgundy shells with
-fruit filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                </ul>
-              </li>
-              <li class="offer-item__item">Technical card with a detailed description of the entire process of making
-                macarons. Italian meringue with reduced sugar content. PDF file on 30 pages.
-              </li>
-              <li class="offer-item__item">A guide to buying basic inventory and products on Amazon online store.</li>
-              <li class="offer-item__item">Templates for baking shells.</li>
-              <li class="offer-item__item">Technical card with a detailed description of the process of preparing
-                fillings of different flavors. PDF file on 40 pages.
-              </li>
-              <li class="offer-item__item">Video of the whole process of making macarons.</li>
-              <li class="offer-item__item">Video of the preparation of various basic fillings.</li>
-              <li class="offer-item__item">Video on how to make macarons painting and video how to make
-                curly macarons.</li>
-            </ol>
-          </div>
-        </li>
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
-              
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  
-                </span>
-                <div class="costs__box costs__box--left">
-                  
-                  <span class="costs__item">52 $</span>
-                  <span class="costs__item">4780 ₽</span>
-                  <span class="costs__item">47 €</span>
-                  
-                </div>
-              </div>
+            <div class="costs__text">
+              Price
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn2">
-              
-            </button>
-          </div>
-          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
 
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferShellsEn">
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img1.webp" type="image/webp">
-                      <img src="img/img1.jpg" alt="Macarons: red and white with
-patterns." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img10.webp" type="image/webp">
-                      <img src="img/img10.jpg" alt="Macarons: white and pale blue, decorated in the theme - Paris." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img2.webp" type="image/webp">
-                      <img src="img/img2.jpg" alt="Macarons: lilac
-color with currant flavor, on a background of lavender." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img3.webp" type="image/webp">
-                      <img src="img/img3.jpg" alt="Macarons: white and
-lilac, against a background of blue flowers." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img4.webp" type="image/webp">
-                      <img src="img/img4.jpg" alt="Multicolored macarons lids." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img5.webp" type="image/webp">
-                      <img src="img/img5.jpg" alt="Painting on macarons. Caption: most,
-better, friend." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img6.webp" type="image/webp">
-                      <img src="img/img6.jpg" alt="Multi-colored macarons with beautiful
-filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img7.webp" type="image/webp">
-                      <img src="img/img7.jpg" alt="Macarons in the shape of a flower,
-chamomile." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img8.webp" type="image/webp">
-                      <img src="img/img8.jpg" alt="Macarons with drawings:
-different shapes for the winter theme." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img9.webp" type="image/webp">
-                      <img src="img/img9.jpg" alt="Burgundy macarons." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                </ul>
-              </li>
-              <li class="offer-item__item">Technical card with a detailed description of the entire process of making
-                macarons. Italian meringue with reduced sugar content. PDF file on 30 pages.
-              </li>
-              <li class="offer-item__item">A guide to buying basic inventory and products on Amazon online store.</li>
-              <li class="offer-item__item">Templates for baking shells.</li>
-              <li class="offer-item__item">Video of the whole process of making shells.</li>
-            </ol>
-          </div>
-        </li>
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
-              
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  
-                </span>
-                <div class="costs__box costs__box--left">
-                  
-                  <span class="costs__item">52 $</span>
-                  <span class="costs__item">4780 ₽</span>
-                  <span class="costs__item">47 €</span>
-                  
-                </div>
-              </div>
+            <div class="costs__price">
+              $ 120
             </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn3">
-              
+
+            <button type="button" class="costs__btn generalCourseBtn pixel-btn">
+              Buy
             </button>
+
           </div>
-          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
-          <div class="offer-item__body">
 
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferCreamEn">
-
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img19.webp" type="image/webp">
-                      <img src="img/img19.jpg" alt="Different
-fillings for macarons: classic ganache with currants, coconut, mango." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img22.webp" type="image/webp">
-                      <img src="img/img22.jpg" alt="Pink
-macarons, on a background of rose petals. Sectional view of the taste of mango and currant." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img24.webp" type="image/webp">
-                      <img src="img/img24.jpg" alt="Shell with snickers filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img25.webp" type="image/webp">
-                      <img src="img/img25.jpg" alt="Shell with chocolate filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img26.webp" type="image/webp">
-                      <img src="img/img26.jpg" alt="Shell with vanilla filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img27.webp" type="image/webp">
-                      <img src="img/img27.jpg" alt="Multi-colored cakes with different fillings." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img28.webp" type="image/webp">
-                      <img src="img/img28.jpg" alt="Shell with mint filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img17.webp" type="image/webp">
-                      <img src="img/img17.jpg" alt="Filling for macarons:
-Sectional View, Vanilla Cherry Ganache." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img30.webp" type="image/webp">
-                      <img src="img/img30.jpg" alt="Shell with berry filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img31.webp" type="image/webp">
-                      <img src="img/img31.jpg" alt="Shell with fruit filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-
-                </ul>
-              </li>
-              <li class="offer-item__item">Technical card with a detailed description of the process of preparing
-                fillings of different flavors. PDF file on 40 pages.
-              </li>
+          <details class="part__details details">
+            <summary class="details__question">
+              Show what is included in the course
+            </summary>
+            <ul class="details__list">
 
               
 
-              <li class="offer-item__item">Video of the preparation of various basic fillings.</li>
+              <li class="details__item">Technical card with a detailed description of the entire process of making
+macarons. Italian meringue with reduced sugar content. PDF file on 30 pages.</li>
 
-            </ol>
-          </div>
-        </li>
-
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
               
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  
-                </span>
-                <div class="costs__box costs__box--left">
-                  
-                  <span class="costs__item">25 $</span>
-                  <span class="costs__item">2300 ₽</span>
-                  <span class="costs__item">23 €</span>
-                  
-                </div>
-              </div>
 
-            </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn4">
+              <li class="details__item">A guide to buying basic inventory and products on Amazon online store.</li>
+
               
-            </button>
-          </div>
-          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferInstEn">
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst11.webp" type="image/webp">
-                      <img src="img/inst11.jpg" alt="Book cover." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst12.webp" type="image/webp">
-                      <img src="img/inst12.jpg" alt="Cover of the first section - basics." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst13.webp" type="image/webp">
-                      <img src="img/inst13.jpg" alt="Table of Contents of the first section." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst14.webp" type="image/webp">
-                      <img src="img/inst14.jpg" alt="Cover of the second section - design." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst15.webp" type="image/webp">
-                      <img src="img/inst15.jpg" alt="Table of contents of the second section." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst16.webp" type="image/webp">
-                      <img src="img/inst16.jpg" alt="Cover of the third section - sales." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst17.webp" type="image/webp">
-                      <img src="img/inst17.jpg" alt="Table of Contents of the third section." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst18.webp" type="image/webp">
-                      <img src="img/inst18.jpg" alt="The cover of the fourth section is advertising." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst19.webp" type="image/webp">
-                      <img src="img/inst19.jpg" alt="Table of contents of the fourth section." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                </ul>
-              </li>
-              <li class="offer-item__item">A book or PDF file with a detailed description of all the steps for the
-                development of your Instagram account.</li>
-              <li class="offer-item__item">In the book, after each section, homework is waiting for you, which you can
-                send for verification.</li>
-              <li class="offer-item__item">Access to 14 video lessons that go in addition to the book.</li>
 
-            </ol>
-          </div>
-        </li>
+              <li class="details__item">Templates for baking shells.</li>
 
-        <li class="offer-item">
-          <div class="offer-item__title offer-i-head">
-            <h3 class="offer-i-head__text">
               
-            </h3>
-            <div class="offer-i-head__cost costs">
-              <div class="costs__label">
-                <span class="costs__text">
-                  
-                </span>
-                <div class="costs__box costs__box--left">
-                  
-                  <span class="costs__item">120 $</span>
-                  <span class="costs__item">11000 ₽</span>
-                  <span class="costs__item">109 €</span>
-                  
-                </div>
-              </div>
 
-            </div>
-            <button type="button" class="offer-i-head__btn offer-i-head__btn5">
+              <li class="details__item">Technical card with a detailed description of the process of preparing
+fillings of different flavors. PDF file on 40 pages.</li>
+
               
-            </button>
-          </div>
-          <button type="button" class="offer-item__btn" aria-label="Show (hide) a list of what it includes"></button>
-          <div class="offer-item__body">
-            <ol class="offer-item__list">
-              <li class="offer-item__item offer-item__item--slider slider-offer">
-                <ul class="slider-offer__list sliderOfferFullEn">
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img1.webp" type="image/webp">
-                      <img src="img/img1.jpg" alt="Macarons: red and white with patterns." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img2.webp" type="image/webp">
-                      <img src="img/img2.jpg" alt="Macarons: lilac color with currant flavor, on a background of lavender." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst11.webp" type="image/webp">
-                      <img src="img/inst11.jpg" alt="Book cover." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img25.webp" type="image/webp">
-                      <img src="img/img25.jpg" alt="Shell with chocolate filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst16.webp" type="image/webp">
-                      <img src="img/inst16.jpg" alt="Cover of the third section - sales." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img19.webp" type="image/webp">
-                      <img src="img/img19.jpg" alt="Different
-fillings for macarons: classic ganache with currants, coconut, mango." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/inst18.webp" type="image/webp">
-                      <img src="img/inst18.jpg" alt="The cover of the fourth section is advertising." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                  <li class="slider-offer__item">
-                    <picture class="slider-offer__picture">
-                      <source srcset="img/img31.webp" type="image/webp">
-                      <img src="img/img31.jpg" alt="Shell with fruit filling." class="slider-offer__img" height="200">
-                    </picture>
-                  </li>
-                  
-                </ul>
-              </li>
-              <li class="offer-item__item">The whole course on cooking macarons "Shells and fillings".</li>
-              <li class="offer-item__item">The whole course "Instagram promotion for Bakers"</li>
-            </ol>
-          </div>
+
+              <li class="details__item">Video of the whole process of making macarons.</li>
+
+              
+
+              <li class="details__item">Video of the preparation of various basic fillings.</li>
+
+              
+
+              <li class="details__item">The video how to adding Colors and Designs and the video how to pipe curly shells.</li>
+
+              
+
+              <li class="details__item">Consultation, answers to questions, error analysis, assistance in reaching sales levels.</li>
+
+              
+
+            </ul>
+          </details>
 
         </li>
 
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/img29.webp" type="image/webp">
+            <img src="img/img29.jpg" alt="Cover for the course Only shells"
+              class="part__img">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              Only Shells
+            </div>
+
+            <div class="costs__text">
+              Price
+            </div>
+
+            <div class="costs__price">
+              $ 60
+            </div>
+
+            <button type="button" class="costs__btn shellsBtn pixel-btn">
+              Buy
+            </button>
+
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              Show what is included in the course
+            </summary>
+            <ul class="details__list">
+
+              
+
+              <li class="details__item">Technical card with a detailed description of the entire process of making
+macarons. Italian meringue with reduced sugar content. PDF file on 30 pages.</li>
+
+              
+
+              <li class="details__item">A guide to buying basic inventory and products on Amazon online store.</li>
+
+              
+
+              <li class="details__item">Video of the whole process of making shells.</li>
+
+              
+
+              <li class="details__item">Templates for baking shells.</li>
+
+              
+
+              <li class="details__item">The video how to adding Colors and Designs and the video how to pipe curly shells.</li>
+
+              
+
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/img25.webp" type="image/webp">
+            <img src="img/img25.jpg" alt="Cover for the course Only fillings"
+              class="part__img">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              Only fillings
+            </div>
+
+            <div class="costs__text">
+              Price
+            </div>
+
+            <div class="costs__price">
+              $ 60
+            </div>
+
+            <button type="button" class="costs__btn fillingsBtn pixel-btn">
+              Buy
+            </button>
+
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              Show what is included in the course
+            </summary>
+            <ul class="details__list">
+
+              
+
+              <li class="details__item">Technical card with a detailed description of the process of preparing
+fillings of different flavors. PDF file on 40 pages.</li>
+
+              
+
+              <li class="details__item">Video of the preparation of various basic fillings.</li>
+
+              
+
+              
+
+              <li class="details__item">The principle of proportions for ganache.</li>
+
+              
+
+              <li class="details__item">Preparation of different flavors of confit.</li>
+
+              
+
+              <li class="details__item">Ganache on white chocolate.</li>
+
+              
+
+              <li class="details__item">Milk chocolate ganache.</li>
+
+              
+
+              <li class="details__item">Dark chocolate ganache.</li>
+
+              
+
+              <li class="details__item">Milk chocolate ganache &quot;Oreo&quot;.</li>
+
+              
+
+              <li class="details__item">Ganache on orange chocolate.</li>
+
+              
+
+              <li class="details__item">&quot;Pistachio-raspberry&quot; on white chocolate.</li>
+
+              
+
+              <li class="details__item">Hazelnut amaretto.</li>
+
+              
+
+              <li class="details__item">Cappuccino Baileys.</li>
+
+              
+
+              <li class="details__item">Poppy seed cheesecake with lemon.</li>
+
+              
+
+              <li class="details__item">Fruit and berry ganache: strawberries, blueberries, currants, mangoes, etc.</li>
+
+              
+
+              <li class="details__item">Pumpkin latte</li>
+
+              
+
+              <li class="details__item">Whipped cream ganache</li>
+
+              
+
+              <li class="details__item">Whipped milk ganache “Kinder”</li>
+
+              
+
+              <li class="details__item">Peanut milk chocolate with banoffee.</li>
+
+              
+
+              <li class="details__item">Whipped ganache &quot;Gingerbread Latte&quot; or &quot;Cappuccino&quot;.</li>
+
+              
+
+              <li class="details__item">Caramel ganache.</li>
+
+              
+
+              <li class="details__item">Whipped ganache &quot;Double coconut&quot; or &quot;Bounty&quot;.</li>
+
+              
+
+              <li class="details__item">Filling &quot;Snickers with salted caramel&quot;.</li>
+
+              
+
+              <li class="details__item">Brie Pear Ganache.</li>
+
+              
+
+              <li class="details__item">Flavor options: mint, lavender, lemon, vanilla.</li>
+
+              
+
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/inst1.webp" type="image/webp">
+            <img src="img/inst1.jpg" alt="Cover for the course Instagram promotion"
+              class="part__img">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              Instagram promotion
+            </div>
+
+            <div class="costs__text">
+              Price
+            </div>
+
+            <div class="costs__price">
+              $ 50
+            </div>
 
 
+            <button type="button" class="costs__btn instagramBtn pixel-btn">
+              Buy
+            </button>
+
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              Show what is included in the course
+            </summary>
+            <ul class="details__list">
+
+              
+
+              <li class="details__item">A book or PDF file with a detailed description of all the steps for the
+development of your Instagram account.</li>
+
+              
+
+              <li class="details__item">In the book, after each section, homework is waiting for you, which you can
+send for review.</li>
+
+              
+
+              <li class="details__item">Access to 14 video lessons that go in addition to the book.</li>
+
+              
+
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/img21.webp" type="image/webp">
+            <img src="img/img21.jpg" alt="Cover for the course All courses" class="part__img">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              All courses
+            </div>
+
+            <div class="costs__text">
+              Price
+            </div>
+
+            <div class="costs__price">
+              $ 130
+            </div>
 
 
+            <button type="button" class="costs__btn allBtn pixel-btn">
+              Buy
+            </button>
 
+          </div>
 
+          <details class="part__details details">
+            <summary class="details__question">
+              Show what is included in the course
+            </summary>
+            <ul class="details__list">
+
+              
+
+              <li class="details__item">The whole course on cooking macarons "Shells and fillings".</li>
+
+              
+
+              <li class="details__item">The whole course "Instagram promotion for Bakers"</li>
+
+              
+
+              <li class="details__item">Consultation, answers to questions, error analysis, assistance in reaching sales levels.</li>
+
+              
+
+            </ul>
+          </details>
+
+        </li>
       </ul>
 
     </div>
   </div>
 </section>
-  <!-- Подключаем файл с переводом текста -->
-
-
-<section class="wrap wrap--payment" id="payment-block">
-  <div class="container">
-    <div class="payment">
-
-      <div class="payment__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">
-          
-        </h2>
-      </div>
-
-      <ul class="recive">
-
-        <li class="recive__item recive__item--text">
-
-          <div class="recive-list">
-
-            <div class="recive-list__item">
-              
-<picture class="recive-list__picture">
-  <source srcset="img/lava.webp" type="image/webp">
-  <img src="img/lava.png" alt="logo Lava.top" class="recive-list__img" width="65" height="65">
-</picture>
-
-              <p class="recive-list__text">
-                
-              </p>
-            </div>
-
-            <div class="recive-list__item">
-              
-<picture class="recive-list__picture">
-  <source srcset="img/telegramm.webp" type="image/webp">
-  <img src="img/telegramm.png" alt="logo telegramm" class="recive-list__img" width="65" height="65">
-</picture>
-
-              <p class="recive-list__text">
-                
-              </p>
-
-            </div>
-            <!-- <div class="recive-list__item">
-              
-<svg class="recive-list__svg svgcolor" width="50" height="50" aria-label="logo transfer">
-  <use xlink:href='img/svg/sprite-color.svg#transfer'></use>
-</svg>
-
-            </div> -->
-            <div class="recive-list__item">
-              <img src="img/youtube.svg" alt="Logo youtube" class="recive-list__img">
-              <p class="recive-list__item">
-                
-              </p>
-            </div>
-
-          </div>
-
-        </li>
-
-        <li class="recive__item recive__item--end">
-          <p class="recive__text">
-            
-          </p>
-        </li>
-
-        <li class="recive__item">
-          <ul class="recive__social social">
-            <li class="social__item">
-              <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Link to Telegram.">
-                
-<picture class="social__picture">
-  <source srcset="img/telegramm.webp" type="image/webp">
-  <img src="img/telegramm.png" alt="Link to Telegram" class="social__img" width="65" height="65">
-</picture>
-
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://wa.me/message/ZVYTBBN3N7SNI1" class="social__link" aria-label="Link to whatsapp.">
-                
-<picture class="social__picture">
-  <source srcset="img/whatsapp.webp" type="image/webp">
-  <img src="img/whatsapp.png" alt="Link to whatsapp" class="social__img" width="65" height="65">
-</picture>
-
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="https://www.instagram.com/macaron_by_elena" class="social__link" aria-label="Link to instagram.">
-                
-<picture class="social__picture">
-  <source srcset="img/instagram.webp" type="image/webp">
-  <img src="img/instagram.png" alt="Link to Instagram" class="social__img" width="65" height="65">
-</picture>
-
-              </a>
-            </li>
-          </ul>
-        </li>
-
-      </ul>
-      <div class="payment__title title-section">
-        <h2 class="title-section__head title-section__head--blue title-section__head--left">
-          
-        </h2>
-      </div>
-      <div class="payment__list payment-list">
-
-        <div class="payment-list__item payment-list__item--btn">
-
-          <!-- <button class="payment-list__btn ">
-            
-          </button> -->
-
-          <ul class="payment-list__payment payment-type payment-list__payment--open">
-            <li class="payment-type__item">
-              <p class="payment-type__text">
-                
-              </p>
-            </li>
-            <li class="payment-type__item">
-              <div class="payment-type__title">
-                <div class="payment-type__logo">
-                  
-                </div>
-                <div class="payment-type__head">
-                  
-                </div>
-              </div>
-              <button type="button" class="payment-type__btn"
-                aria-label="Show (hide) a list of what it includes"></button>
-              <div class="payment-type__description p-description">
-
-                <div class="p-description__block">
-                  <div class="p-description__logo">
-
-                    
-<picture class="p-description__picture">
-  <source srcset="img/westernunion.webp" type="image/webp">
-  <img src="img/westernunion.png" alt="WesternUnion logo" class="p-description__image" width="315" height="100">
-</picture>
-
-
-                    
-<picture class="p-description__picture">
-  <source srcset="img/monegr.webp" type="image/webp">
-  <img src="img/monegr.png" alt="MoneyGram logo" class="p-description__image" width="315" height="100">
-</picture>
-
-
-                    
-<svg class="svgcolor p-description__image" width="250" height="100" aria-label="KoronaPay
-                    logo">
-  <use xlink:href='img/svg/sprite-color.svg#zolotayakorona'></use>
-</svg>
-
-                  </div>
-                  <p class="p-description__text">Information for money transfer: Western Union, MoneyGram,
-                    KoronaPay. <br>
-                    <span class="p-description__copy"> Turkey, Antalya, Elena Pronina</span>
-                    <span class="p-description__copy">+90 (551) 841-32-23</span>
-
-                  </p>
-
-                </div>
-              </div>
-            </li>
-            <li class="payment-type__item">
-              <div class="payment-type__title">
-                <div class="payment-type__logo">
-                  
-                </div>
-                <div class="payment-type__head">
-                  
-                </div>
-              </div>
-              <button type="button" class="payment-type__btn"
-                aria-label="Show (hide) a list of what it includes"></button>
-              <div class="payment-type__description p-description">
-                <div class="p-description__logo">
-
-                  <img src="img/PayPal.svg" alt="Paypal logo" class="p-description__image">
-
-                </div>
-                <p class="p-description__text">
-                  
-                  <br>
-                  <span class="p-description__copy"></span>
-                </p>
-
-              </div>
-            </li>
-            <li class="payment-type__item">
-              <div class="payment-type__title">
-                <div class="payment-type__logo">
-                  
-                </div>
-                <div class="payment-type__head">
-                  
-                </div>
-              </div>
-              <button type="button" class="payment-type__btn"
-                aria-label="Show (hide) a list of what it includes"></button>
-              <div class="payment-type__description">
-
-                <p class="payment-type__text">Select a lesson and transfer the relevant amount in rubles.</p>
-
-                <div class="buy">
-                  <a href="" class="buy__link" aria-label="Link to payment in Tinkoff.">Go
-                    to the payment page</a>
-                </div>
-
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-</section>
-
-  <!-- Подключаем независимые элементы -->
-  <!-- Подключаем файл с переводом текста -->
-
-
-<div class="cookie">
-    <div class="cookie__body">
-        <p class="cookie__text">
-            
-        </p>
-        <button type="button" class="cookie__btn cookie__btn--yes">
-            
-        </button>
-        <button type="button" class="cookie__btn cookie__btn--no">
-            
-        </button>
-
-    </div>
-</div>
-  <!-- Подключаем файл с переводом текста -->
-
+  
 
 <div class="payment-window-cover"></div>
 
 <div class="payment-window">
     <button type="button" class="payment-window__close"></button>
     <p class="payment-window__title">
-        
+        Payment for the courses will be on the
         <a class="payment-window__title-link" href="https://app.lava.top/macaron_by_elena">Lava.top</a>
     </p>
 
@@ -2073,44 +1483,256 @@ fillings for macarons: classic ganache with currants, coconut, mango." class="sl
 
     </div>
 
-    <!-- <p class="payment-window__subtitle">
-        
-    </p> -->
+    <div class="payment-window__links">
 
-    <div class="payment-window__types">
+        
+
+        <a href="https://app.lava.top/ru/products/d488dfe8-d414-401d-b370-159d0ceee8fe" class="payment-window__link payment-window__link-general">
+            Go to the link
+        </a>
+
+        
+
+        <a href="https://app.lava.top/ru/products/4085c45b-ebdc-4d17-a30b-8b33c1877d58" class="payment-window__link payment-window__link-shells">
+            Go to the link
+        </a>
+
+        
+
+        <a href="https://app.lava.top/ru/products/a2306e25-4bbc-4d4b-a018-676287c5cd04" class="payment-window__link payment-window__link-fillings">
+            Go to the link
+        </a>
+
+        
+
+        <a href="https://app.lava.top/ru/products/a518abf3-e9f8-43d4-9f2b-51177e5b7ae7" class="payment-window__link payment-window__link-instagram">
+            Go to the link
+        </a>
+
+        
+
+        <a href="https://app.lava.top/ru/products/ff90d34e-2a15-43e5-b1a5-2861f6e600fc" class="payment-window__link payment-window__link-all">
+            Go to the link
+        </a>
 
         
 
     </div>
 
-    <div class="payment-window__box">
-        <div class="payment-window__links payment-window__links-1">
+</div>
+  
 
-            <a href="https://app.lava.top/products/d488dfe8-d414-401d-b370-159d0ceee8fe" class="payment-window__link">
-                
-            </a>
-            <a href="https://app.lava.top/products/4085c45b-ebdc-4d17-a30b-8b33c1877d58" class="payment-window__link">
-                
-            </a>
-            <a href="https://app.lava.top/products/a2306e25-4bbc-4d4b-a018-676287c5cd04" class="payment-window__link">
-                
-            </a>
-            <a href="https://app.lava.top/ru/products/a518abf3-e9f8-43d4-9f2b-51177e5b7ae7"
-                class="payment-window__link">
-                
-            </a>
-            <a href="https://app.lava.top/ru/products/ff90d34e-2a15-43e5-b1a5-2861f6e600fc"
-                class="payment-window__link">
-                
-            </a>
+<section class="wrap wrap--recive">
+  <div class="container">
+
+    <div class="block">
+
+      <div class="block__title title">
+        <h2 class="title__text">
+          2. Recive the course
+        </h2>
+      </div>
+
+      <div class="block__section recive-list">
+
+        <div class="recive-list__item">
+          
+<picture class="recive-list__picture">
+  <source srcset="img/lava.webp" type="image/webp">
+  <img src="img/lava.png" alt="Logo lava.top" class="recive-list__img" width="65" height="65">
+</picture>
+
+          <p class="recive-list__text">
+            On the website <b>Lava.top</b> - after payment, you will receive an invitation link to a private Telegram
+channel.
+          </p>
+        </div>
+
+        <div class="recive-list__item">
+          
+<picture class="recive-list__picture">
+  <source srcset="img/telegramm.webp" type="image/webp">
+  <img src="img/telegramm.png" alt="Logo telegram" class="recive-list__img" width="65" height="65">
+</picture>
+
+          <p class="recive-list__text">
+            Я <b>одобряю</b> вам доступ в канал.
+          </p>
 
         </div>
+
+        <div class="recive-list__item">
+          <img src="img/youtube.svg" alt="Logo youtube" class="recive-list__img">
+          <p class="recive-list__text">
+            If using the Telegram channel is inconvenient for you, I can grant you access to my private YouTube channel.
+          </p>
+
+        </div>
+
+        <div class="recive-list__item recive-list__item--svg">
+          <div class="recive-list__image">
+            
+<svg class="recive-list__picture svgcolor" width="65" height="65" aria-label="Pastry chef girl">
+  <use xlink:href='img/svg/sprite-color.svg#cook'></use>
+</svg>
+
+          </div>
+          <p class="recive-list__text">
+            Feel free to write to me if you have any further questions.
+          </p>
+        </div>
+
+        <ul class="recive-list__item social">
+
+          <li class="social__item">
+
+            <a href="https://t.me/macaron_by_elena" class="social__link" aria-label="Ссылка на telegram.">
+              <div class="social__description">Telegram</div>
+              
+<picture class="social__picture">
+  <source srcset="img/telegramm.webp" type="image/webp">
+  <img src="img/telegramm.png" alt="Link to telegram" class="social__img" width="65" height="65">
+</picture>
+
+            </a>
+
+          </li>
+          <li class="social__item">
+
+            <a href="https://wa.me/message/ZVYTBBN3N7SNI1" class="social__link" aria-label="Ссылка на whatsapp.">
+              <div class="social__description">Whatsapp</div>
+              
+<picture class="social__picture">
+  <source srcset="img/whatsapp.webp" type="image/webp">
+  <img src="img/whatsapp.png" alt="Link to whatsapp" class="social__img" width="65" height="65">
+</picture>
+
+            </a>
+
+          </li>
+          <li class="social__item">
+
+            <a href="https://www.instagram.com/macaron_by_elena" class="social__link" aria-label="Ссылка на instagram.">
+              <div class="social__description">Instagram</div>
+              
+<picture class="social__picture">
+  <source srcset="img/instagram.webp" type="image/webp">
+  <img src="img/instagram.png" alt="Link to instagram" class="social__img" width="65" height="65">
+</picture>
+
+            </a>
+
+          </li>
+        </ul>
+
+      </div>
+
     </div>
-</div>
+  </div>
+
+</section>
+  
+
+<section class="wrap wrap--payment" id="payment-block">
+  <div class="container">
+    <div class="block">
+
+      <div class="block__title title">
+        <h2 class="title__text">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <ul class="block__section questions">
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              For how long will I have access to the course?
+            </summary>
+            <div class="questions__answer">
+              To be honest, I do not plan to delete you have access to files, in a year. Use
+it as much as you want. But I also cannot guarantee that Internet services will work stably for many years.
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              If I dont have Telegram, how can I access the course?
+            </summary>
+            <div class="questions__answer">
+              For those who dont have Telegram, I will provide access to my private YouTube channel. All videos will be
+available there. After payment, please inform me if you wish to gain access on YouTube.
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              How many videos are included in the &quot;Only Shells&quot; course?
+            </summary>
+            <div class="questions__answer">
+              At the moment, this course includes 10 videos with a total duration of approximately 1 hour and 30 minutes.
+Additionally, the course comes with a detailed technical map or PDF file (30 pages).
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              How many videos are included in the &quot;Only Fillings&quot; course?
+            </summary>
+            <div class="questions__answer">
+              At the moment, this course includes 12 videos with a total duration of approximately 1 hour and 30 minutes.
+Additionally, the course comes with a detailed technical map or PDF file containing recipes for over 30 different
+filling flavors (40 pages).
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              Can I pay for the course through PayPal?
+            </summary>
+            <div class="questions__answer">
+              "Yes, that can be done. After making the payment, please send me the information about your payment via any
+convenient method, and I will grant you access to the course. You need to transfer the payment for the course to the
+following address: <b>d.panchenko1974@gmail.com</b>"
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              Can I use another payment method?
+            </summary>
+            <div class="questions__answer">
+              Yes, you can transfer money using any method convenient for you: <b>Western Union, MoneyGram, KoronaPay</b>, and
+others. You can also make a bank transfer if you are located in Turkey, Georgia, or Russia. To find out more details
+about such transfers, please send me a private message with your question.
+            </div>
+          </details>
+        </li>
+        <li class="questions__item">
+          <details class="questions__body">
+            <summary class="questions__question">
+              What should I do if I entered my email address incorrectly during the purchase?
+            </summary>
+            <div class="questions__answer">
+              No problem. Please contact me and send the payment confirmation. If the payment went through, I will grant you
+access to the course.
+            </div>
+          </details>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</section>
 
 </main>
 
-<!-- Подключаем файл с переводом текста -->
 
 
 <footer class="wrap wrap--footer">
@@ -2189,7 +1811,8 @@ email address
             </div>
             <p class="privacy__text">
               We reserve the right to make changes to our privacy policy. Any changes will be posted on this page.<br>Thank you
-for using our services!!</p>
+for using our services!
+            </p>
           </details>
         </li>
       </ul>
@@ -2219,14 +1842,12 @@ for using our services!!</p>
 
 
 
-  <script src="js/main.js"></script>
   <script src="js/cookie.js"></script>
-  <script src="js/nav-menu.js"></script>
   <script src="js/buy-btn-en.js"></script>
   <script src="js/tiny.js"></script>
-  <script src="js/slider-en.js"></script>
-  <script src="js/particles.min.js"></script>
-  <script src="js/snow.js"></script>
+  <script src="js/slider-settings.js"></script>
+  <!-- <script src="js/particles.min.js"></script> -->
+  <!-- <script src="js/snow.js"></script> -->
 
 
   <!-- Ниже скрипт подключающий пиксель. Чтобы он работал нужно добавить класс pixel-btn к элементу на который будут нажимать. -->
@@ -2240,7 +1861,7 @@ for using our services!!</p>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
 </body>
 

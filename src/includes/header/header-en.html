@@ -1,25 +1,51 @@
 <header class="wrap wrap--header" id="home">
 
-  <!-- Блок sale-wrap является распоркой для мобильных устройств -->
   <div class="sale-wrap">
+
     {% include "includes/promo/sale.html" %}
+
   </div>
 
+  <div class="header-fixed-wrap">
+    <div class="header-fixed">
+
+      {% include "includes/header/logo.html" %}
+
+      {% include "includes/header/language-en.html" %}
+
+    </div>
+  </div>
 
   <div class="container">
-    <div class="header">
 
-      <div class="header-fixed">
+    <div class="block block--hidden">
 
-        {% include "includes/header/logo.html" %}
-        {% include "includes/header/language-en.html" %}
-        {% include "includes/header/nav-en.html" %}
+      {% import "includes/header/text-content-header.html" as translate %}
 
+      <div class="block__title title">
+        <h1 class="title__header">
+          {{ translate.heaederTitleTranslate.title.en }}
+        </h1>
+        <p class="title__text">
+          {{ translate.heaederTitleTranslate.subTitle.en | safe}}
+        </p>
       </div>
 
-      {% include "includes/header/title-en.html" %}
+      <div class="block__section">
+        <ul class="slider slider--header mainSlider">
 
-      {% include "includes/header/slider-header-en.html" %}
+          {% for item in translate.sliderOfferBaseEn %}
+          <li class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/{{ item.img }}.webp" type="image/webp">
+              <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider__img" height="250">
+            </picture>
+          </li>
+          {% endfor %}
+
+        </ul>
+
+      </div>
 
     </div>
   </div>

@@ -1,16 +1,11 @@
 {% set title = 'Macaron' %}
 {% set lang = 'en' %}
-{% set keywords = 'cake, macaron, macarons, macarons tutorial, how to cook macarons, macaroons,
-macaron_by_elena' %}
+{% set keywords = 'macarons lesson, macarons, how to cook macarons, macaroons, macaron_by_elena' %}
 {% set description = 'I teach to cook a delicious dessert - Macaron. Even if you are not a pastry chef, be sure to try
 yourself in this role!' %}
-{% set js = 'js/slider-en.js' %}
 {% set buyBtn = 'js/buy-btn-en.js' %}
 
 {% extends "templates/default.html" %}
-{% import "includes/macros-data.html" as macrosData %}
-
-
 
 {% macro imageSvg(name, class, width, height) %}
 <svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
@@ -37,21 +32,22 @@ yourself in this role!' %}
 
 {% block content %}
 
+{% include "includes/cookie/cookie-en.html" %}
 {% include "includes/header/header-en.html" %}
 
 <main class="main">
 
-  {% include "includes/want/want-en.html" %}
+  {% include "includes/interesting/interesting-en.html" %}
+  {% include "includes/youtube/youtube-en.html" %}
+  {% include "includes/want/course-en.html" %}
   {% include "includes/errors/errors-en.html" %}
   {% include "includes/skils/skils-en.html" %}
   {% include "includes/feedback/feedback-en.html" %}
   {% include "includes/about/about-en.html" %}
   {% include "includes/offer/offer-en.html" %}
-  {% include "includes/payment/payment-en.html" %}
-
-  <!-- Подключаем независимые элементы -->
-  {% include "includes/cookie/cookie-en.html" %}
   {% include "includes/lava/lava-en.html" %}
+  {% include "includes/recive/recive-en.html" %}
+  {% include "includes/payment/questions-en.html" %}
 
 </main>
 

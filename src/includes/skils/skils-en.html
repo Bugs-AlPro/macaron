@@ -1,19 +1,19 @@
-<!-- Подключаем файл с переводом текста -->
 {% import "includes/skils/text-content-skils.html" as skilsText %}
 
 <section class="wrap wrap--skils">
 
   <div class="container">
 
-    <div class="skils">
-      <div class="skils__title title-section">
-        <h2 class="title-section__head title-section__head--reviews">
+    <div class="block">
+      <div class="block__title title">
+        <h2 class="title__text">
 
           {{ skilsText.skilsTitleTranslate.title.en }}
 
         </h2>
       </div>
-      <ul class="skils__list">
+
+      <ul class="block__section skils">
 
         {% for item in skilsText.skilsTypes %}
 

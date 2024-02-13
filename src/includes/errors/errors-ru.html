@@ -1,4 +1,4 @@
-{% import "includes/errors/text-content-errors.html" as errortsText %}
+{% import "includes/errors/text-content-errors.html" as translate %}
 
 <section class="wrap wrap--errors">
 
@@ -7,15 +7,15 @@
     <div class="block">
       <div class="block__title title">
         <h2 class="title__text">
-          {{ errortsText.errorsTitleTranslate.title.ru }}
+          {{ translate.errorsTitle.title.ru }}
         </h2>
         <p class="title__smal-text">
-          {{ errortsText.errorsTitleTranslate.subTitle.ru }}
+          {{ translate.errorsTitle.subTitle.ru }}
         </p>
       </div>
 
       <ul class="block__section errors-img-sm">
-        {% for item in macrosData.errors %}
+        {% for item in translate.errors %}
         <li class="errors-img-sm__item">
           <picture class="errors-img-sm__picture">
             <source srcset="img/{{ item.img }}.webp" type="image/webp">
@@ -27,14 +27,14 @@
 
       <ul class="block__section errors">
 
-        {% for item in errortsText.errorsTypes %}
+        {% for item in translate.errorsTypes %}
         <li class="errors__item">{{ item.ru }}</li>
         {% endfor %}
 
         <li class="errors__item--img errors__item--img-xl">
           <ul class="errors-img-xl">
 
-            {% for item in macrosData.errors %}
+            {% for item in translate.errors %}
             <li class="errors-img-xl__item">
               <picture class="errors-img-xl__picture">
                 <source srcset="img/{{ item.img }}.webp" type="image/webp">

@@ -1,0 +1,30 @@
+{% import "includes/interesting/text-content-interesting.html" as translate %}
+
+
+<section class="wrap wrap--interesting">
+
+    <div class="container">
+        <div class="block">
+
+            <div class="block__title title">
+                <h2 class="title__text">
+                    {{ translate.interestingTitle.title.en }}
+                </h2>
+            </div>
+
+            <ul class="block__section interesting">
+
+                {% for item in translate.interestingList %}
+                <li class="interesting__item">
+                    <div class="interesting__count">{{ item.count }}</div>
+                    <div class="interesting__body">
+                        <h3 class="interesting__subtitle">{{ item.titleEn }}</h3>
+                        <p class="interesting__description">{{ item.descriptionEn | safe }}</p>
+                    </div>
+                </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+    </div>
+</section>

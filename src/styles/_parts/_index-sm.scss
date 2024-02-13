@@ -126,7 +126,7 @@
     color: var(--color-text);
 
     &__header {
-      font-size: 3em;
+      font-size: 2.7em;
       text-transform: uppercase;
       font-weight: 400;
       margin: 0;
@@ -164,6 +164,7 @@
       // margin-left: 5px;
       display: flex;
       justify-content: center;
+      padding-left: 10px;
       // align-self: center;
       // align-items: center;
       // max-width: 400px;
@@ -171,7 +172,12 @@
 
     }
 
+    // &__picture {
+    //   padding-left: 10px;
+    // }
+
     &__img {
+      display: block;
       height: auto;
       border-radius: 10px;
       width: 100%;

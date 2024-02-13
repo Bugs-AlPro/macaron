@@ -1,17 +1,16 @@
-<!-- Подключаем файл с переводом текста -->
-{% import "includes/cookie/text-content-cookie.html" as cookieText %}
+{% import "includes/cookie/text-content-cookie.html" as transtale %}
 
-<div class="cookie">
+<dialog open class="cookie" id="cookieBox">
     <div class="cookie__body">
         <p class="cookie__text">
-            {{ cookieText.cookieTranslate.text.en | safe }}
+            {{ transtale.cookie.text.en | safe }}
         </p>
-        <button type="button" class="cookie__btn cookie__btn--yes">
-            {{ cookieText.cookieTranslate.allow.en }}
+        <button type="button" class="cookie__btn cookie__btn--yes" onclick="window.cookieBox.close()">
+            {{ transtale.cookie.allow.en }}
         </button>
-        <button type="button" class="cookie__btn cookie__btn--no">
-            {{ cookieText.cookieTranslate.decline.en }}
+        <button type="button" class="cookie__btn cookie__btn--no" onclick="window.cookieBox.close()">
+            {{ transtale.cookie.decline.en }}
         </button>
 
     </div>
-</div>
+</dialog>

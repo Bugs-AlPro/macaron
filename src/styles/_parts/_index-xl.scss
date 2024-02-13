@@ -240,9 +240,15 @@
       // margin-left: 15px;
       display: flex;
       justify-content: center;
+      padding-left: 10px;
     }
 
+    // &__picture {
+    //   display: block;
+    // }
+
     &__img {
+      display: block;
       height: auto;
       border-radius: 10px;
       width: 100%;
