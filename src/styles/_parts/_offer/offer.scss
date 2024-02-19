@@ -148,8 +148,7 @@
         &__img {
             display: block;
             width: 100%;
-            height: 225px;
-            object-fit: cover;
+            height: auto;
             box-shadow: var(--shadow-elevation-medium);
         }
 
