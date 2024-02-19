@@ -14,7 +14,6 @@
   }
 
   .wrap {
-    // padding: 120px 0 0px 0;
     overflow: hidden;
 
 
@@ -32,69 +31,6 @@
       border-top: 4px solid var(--color-muted);
     }
 
-    // &--header {
-    //   padding: 0;
-    // }
-
-    // &--want {
-    //   background-color: white;
-    //   background-image:
-    //     linear-gradient(90deg, var(--back-lightblue) 50%, transparent 50%),
-    //     linear-gradient(var(--back-lightblue) 50%, transparent 50%);
-    //   background-size: 50px 50px;
-    //   padding: 50px 0 50px 0;
-    //   overflow: hidden;
-    //   position: relative;
-    // }
-
-    // &--errors {
-    //   background-color: hsla(355, 57%, 95%, 0.2);
-    //   padding-top: 70px;
-    // }
-
-    // &--skils {
-    //   position: relative;
-    //   padding-top: 70px;
-    //   padding-bottom: 50px;
-    // }
-
-    // &--skils::before {
-    //   position: absolute;
-    //   content: "";
-    //   width: 100%;
-    //   height: 100%;
-    //   background-image: url(../img/want.webp);
-    //   background-image: image-set(url('../img/want.webp') type('image/webp'),
-    //       url('../img/want.jpg'));
-    //   background-size: cover;
-    //   bottom: 0;
-    //   left: 0;
-    //   opacity: 0.3;
-    //   z-index: 1;
-    // }
-
-    // &--offer {
-    //   background-color: var(--back-lightred);
-    //   position: relative;
-    //   padding-top: 0;
-    // }
-
-    // &--payment {
-    //   background-color: var(--back-lightred);
-    //   padding-top: 70px;
-    // }
-
-    // &--feedback {
-    //   padding-bottom: 50px;
-    //   background-color: var(--back-lightblue);
-    //   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%237d96a5' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-
-    // }
-
-    // &--footer {
-    //   background-color: var(--title-red);
-    //   padding: 0;
-    // }
   }
 
   .container {
@@ -111,9 +47,6 @@
     &--hidden {
       overflow: hidden;
     }
-
-
-
 
     &__title {
       margin-bottom: var(--gap-midle);
@@ -156,25 +89,11 @@
     display: flex;
     position: relative;
 
-    // &--feedback {
-    //   gap: var(--gap-midle);
-    // }
-
     &__item {
-      // margin-left: 5px;
       display: flex;
       justify-content: center;
       padding-left: 10px;
-      // align-self: center;
-      // align-items: center;
-      // max-width: 400px;
-      // margin: 0 auto;
-
     }
-
-    // &__picture {
-    //   padding-left: 10px;
-    // }
 
     &__img {
       display: block;

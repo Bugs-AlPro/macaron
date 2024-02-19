@@ -23,6 +23,7 @@
         &__img {
             box-shadow: var(--shadow-elevation-high);
             height: 100%;
+            width: auto;
             border-radius: var(--border-radius-standart);
         }
 
@@ -62,6 +63,7 @@
             box-shadow: var(--shadow-elevation-high);
             // height: 100%;
             width: 100%;
+            height: auto;
             max-width: 500px;
             border-radius: var(--border-radius-standart);
         }

@@ -306,7 +306,7 @@ p {
     color: var(--color-text);
   }
   .title__header {
-    font-size: 4em;
+    font-size: 3.8em;
     text-transform: uppercase;
     margin-top: 0;
     font-weight: 400;
@@ -600,7 +600,7 @@ p {
     margin-top: var(--gap-smal);
   }
   .interesting__body {
-    padding: var(--gap-smal);
+    padding: var(--gap-midle);
     padding-top: 0;
   }
   .interesting__subtitle {
@@ -634,6 +634,7 @@ p {
   .youtube__img {
     box-shadow: var(--shadow-elevation-high);
     height: 100%;
+    width: auto;
     border-radius: var(--border-radius-standart);
   }
   .youtube__link:hover::before, .youtube__link:focus::before {
@@ -665,6 +666,7 @@ p {
   .youtube__img {
     box-shadow: var(--shadow-elevation-high);
     width: 100%;
+    height: auto;
     max-width: 500px;
     border-radius: var(--border-radius-standart);
   }
@@ -713,7 +715,7 @@ p {
     flex-direction: column;
     justify-content: center;
     gap: var(--gap-smal);
-    padding: var(--gap-midle) var(--gap-smal);
+    padding: var(--gap-midle);
     border-radius: var(--border-radius-standart);
     background-color: var(--color-background);
     box-shadow: var(--shadow-elevation-medium-muted);
@@ -1037,6 +1039,7 @@ p {
   }
   .about__img--top {
     height: 300px;
+    width: auto;
     position: absolute;
     top: -100px;
     left: -100px;
@@ -1067,9 +1070,10 @@ p {
   .list-about {
     display: flex;
     flex-direction: column;
-    align-items: end;
     gap: var(--gap-smal);
-    margin-bottom: var(--gap-midle);
+    margin-bottom: var(--gap-large);
+    max-width: 450px;
+    margin-left: auto;
   }
   .list-about__item {
     text-align: end;
@@ -1108,10 +1112,10 @@ p {
   }
   .about__img--top {
     position: absolute;
-    top: -30px;
-    left: -15px;
-    width: 120px;
-    height: 120px;
+    top: -40px;
+    left: -25px;
+    width: 130px;
+    height: 130px;
   }
   .about__img--down {
     position: relative;
@@ -1164,6 +1168,7 @@ p {
   .part__img {
     display: block;
     width: 100%;
+    height: auto;
     box-shadow: var(--shadow-elevation-medium);
   }
   .part__details {
@@ -1273,6 +1278,8 @@ p {
   .part__img {
     display: block;
     width: 100%;
+    height: 225px;
+    object-fit: cover;
     box-shadow: var(--shadow-elevation-medium);
   }
 
@@ -1391,6 +1398,10 @@ p {
     width: 50px;
     height: 50px;
     filter: sepia(0.8);
+  }
+  .recive-list__image {
+    width: 60px;
+    transform: translateX(-3px);
   }
   .recive-list__picture {
     width: 50px;

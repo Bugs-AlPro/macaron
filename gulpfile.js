@@ -10,7 +10,8 @@ import clone from 'gulp-clone';
 const sink = clone.sink();
 import changed from 'gulp-changed';
 import webp from 'gulp-webp';
-import imagemin from 'gulp-imagemin';
+// import imagemin from 'gulp-imagemin';
+import imagemin, { gifsicle, mozjpeg, optipng, svgo } from 'gulp-imagemin';
 import svgSprite from 'gulp-svg-sprite';
 import cheerio from 'gulp-cheerio';
 
@@ -22,7 +23,6 @@ var path = {
     images: 'src/img/*.{jpg,jpeg,png,webp,svg}',
     js: 'src/js/*.js',
     font: 'src/fonts/*.{woff,woff2,ttf}',
-    video: 'src/video/*.{mp4,ogv,webm}',
     files: 'src/files/*.pdf',
     iconPng: 'src/*.png',
     icon: 'src/*.ico',
@@ -36,7 +36,6 @@ var path = {
     images: 'build/img/',
     js: 'build/js/',
     font: 'build/fonts/',
-    video: 'build/video/',
     iconPng: 'build/',
     icon: 'build/',
     manifest: 'build/',
@@ -48,7 +47,6 @@ var path = {
     html: 'src/**/*.html',
     styles: 'src/styles/**/*.scss',
     js: 'src/js/*.js',
-    video: 'src/video/*.{mp4,ogv,webm}',
     files: 'src/files/*.pdf',
     images: 'src/img/**/*.{jpg,jpeg,png,webp,svg}',
     svgcolor: 'src/img/svgcolor/*.svg',
@@ -102,13 +100,6 @@ export const font = () => {
     .pipe(reload({ stream: true }));
 };
 
-export const video = () => {
-  return gulp
-    .src(path.src.video)
-    .pipe(gulp.dest(path.build.video))
-    .pipe(reload({ stream: true }));
-};
-
 export const files = () => {
   return gulp
     .src(path.src.files)
@@ -139,7 +130,24 @@ export const images = () => {
     .pipe(sink)
     .pipe(webp())
     .pipe(sink.tap())
-    .pipe(imagemin())
+    // .pipe(imagemin())
+    .pipe(imagemin([
+      gifsicle({ interlaced: true }),
+      mozjpeg({ quality: 75, progressive: true }),
+      optipng({ optimizationLevel: 5 }),
+      svgo({
+        plugins: [
+          {
+            name: 'removeViewBox',
+            active: true
+          },
+          {
+            name: 'cleanupIDs',
+            active: false
+          }
+        ]
+      })
+    ]))
     .pipe(gulp.dest(path.build.images))
     .pipe(reload({ stream: true }));
 };
@@ -187,11 +195,10 @@ export const watchFiles = () => {
   gulp.watch([path.watch.styles], styles);
   gulp.watch([path.watch.images], images);
   gulp.watch([path.watch.js], js);
-  gulp.watch([path.watch.video], video);
   gulp.watch([path.watch.files], files);
   gulp.watch([path.watch.svgcolor], svgcolor);
   gulp.watch([path.watch.svg], svg)
 };
 
-export const build = gulp.series(clean, gulp.parallel(html, styles, images, js, font, video, files, iconPng, icon, manifest, svgcolor, svg));
+export const build = gulp.series(clean, gulp.parallel(html, styles, images, js, font, files, iconPng, icon, manifest, svgcolor, svg));
 export const watch = gulp.parallel(watchFiles, browserSync);

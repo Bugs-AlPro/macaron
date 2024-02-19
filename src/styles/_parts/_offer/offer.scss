@@ -17,6 +17,7 @@
         &__img {
             display: block;
             width: 100%;
+            height: auto;
             box-shadow: var(--shadow-elevation-medium);
         }
 
@@ -147,6 +148,8 @@
         &__img {
             display: block;
             width: 100%;
+            height: 225px;
+            object-fit: cover;
             box-shadow: var(--shadow-elevation-medium);
         }
 

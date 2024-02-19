@@ -20,7 +20,7 @@
         <picture class="about__picture about__picture--top">
           <source srcset="img/{{ data.pictures.about1.href }}.webp" type="image/webp">
           <img src="img/{{ data.pictures.about1.href }}.jpg" alt="{{ data.pictures.about1.ru }}"
-            class="about__img about__img--top" width="300" height="300">
+            class="about__img about__img--top" width="200" height="200">
         </picture>
 
         {% for item in translate.aboutText %}
@@ -28,8 +28,6 @@
           {{ item.ru | safe }}
         </p>
         {% endfor %}
-
-        {{ data.pictures.about1.href }}
 
         <picture class="about__picture about__picture--down">
           <source srcset="img/{{ data.pictures.about2.href }}.webp" type="image/webp">

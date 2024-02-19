@@ -2,7 +2,7 @@ var mainSlider = tns({
   container: '.mainSlider',
   mode: 'carousel',
   swipeAngle: false,
-  loop: true,
+  loop: false,
   gutter: 15,
   mouseDrag: true,
   controls: false,

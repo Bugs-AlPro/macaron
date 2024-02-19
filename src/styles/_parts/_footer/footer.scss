@@ -1,18 +1,10 @@
 @include media-up(lg) {
     .footer {
-        // height: 100px;
         padding: 30px 0;
         display: grid;
-        // grid-template-columns: auto auto;
-        // grid-template-rows: auto auto;
-        // justify-content: space-between;
         align-items: center;
         gap: 20px;
-        // font-weight: 600;
-        // font-size: 2.2em;
         color: var(--color-text);
-
-
 
         &__title {
             font-weight: 600;
@@ -153,9 +145,6 @@
         }
 
         &__svg text {
-            // transform: translateX(-5px);
-            // font-family: 'Glory', sans-serif;
-            // letter-spacing: 8px;
             stroke: var(--color-background);
             font-size: 30px;
             line-height: 40px;

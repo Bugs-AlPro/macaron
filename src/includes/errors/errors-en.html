@@ -19,7 +19,7 @@
         <li class="errors-img-sm__item">
           <picture class="errors-img-sm__picture">
             <source srcset="img/{{ item.img }}.webp" type="image/webp">
-            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="errors-img-sm__img" height="250">
+            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="errors-img-sm__img" width="200" height="150">
           </picture>
         </li>
         {% endfor %}
@@ -38,7 +38,8 @@
             <li class="errors-img-xl__item">
               <picture class="errors-img-xl__picture">
                 <source srcset="img/{{ item.img }}.webp" type="image/webp">
-                <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="errors-img-xl__img" height="250">
+                <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="errors-img-xl__img" width="200"
+                  height="150">
               </picture>
             </li>
             {% endfor %}
