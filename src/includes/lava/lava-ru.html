@@ -10,13 +10,19 @@
     </p>
 
     <div class="payment-window__web">
-        {{ imageJpg('payment-window__picture', 'logo', 'payment-window__img',
-        'logo macaron_by_elena', '150', '150') }}
+        <picture class="payment-window__picture">
+            <source srcset="img/logo.webp" type="image/webp">
+            <img src="img/logo.jpg" alt="logo macaron_by_elena" class="payment-window__img" width="50" height="50"
+                loading="lazy">
+        </picture>
 
-        {{ imageSvgColor('transfer', 'payment-window__svg svgcolor', '150', '150', 'logo transfer') }}
+        {{ imageSvgColor('transfer', 'payment-window__svg svgcolor', '50', '50', 'logo transfer') }}
 
-        {{ imagePng('payment-window__picture', 'lava', 'payment-window__img', 'logo Lava.top',
-        '150', '150') }}
+        <picture class="payment-window__picture">
+            <source srcset="img/lava.webp" type="image/webp">
+            <img src="img/lava.png" alt="logo Lava.top" class="payment-window__img" width="50" height="50"
+                loading="lazy">
+        </picture>
     </div>
 
     <div class="payment-window__links">

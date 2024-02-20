@@ -7,7 +7,15 @@ var mainSlider = tns({
   mouseDrag: true,
   controls: false,
   nav: false,
-  fixedWidth: 270,
+  responsive: {
+    "300": {
+      fixedWidth: 200,
+    },
+    "500": {
+      fixedWidth: 270,
+    }
+  },
+
 });
 
 var feedbackSlider = tns({
@@ -21,7 +29,6 @@ var feedbackSlider = tns({
   mouseDrag: false,
   controls: true,
   nav: false,
-  // fixedWidth: 300,
   prevButton: '.slider-navigation__btn--left',
   nextButton: '.slider-navigation__btn--right',
 });
@@ -30,7 +37,7 @@ var errors = tns({
   container: '.errors-img-sm',
   mode: 'carousel',
   swipeAngle: false,
-  loop: true,
+  loop: false,
   gutter: 10,
   mouseDrag: true,
   controls: false,

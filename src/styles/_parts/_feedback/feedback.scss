@@ -90,6 +90,7 @@
 
         &__top {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             gap: 1em;
         }
@@ -97,6 +98,8 @@
         &__name {
             font-size: 0.9em;
             font-weight: 600;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         &__img {

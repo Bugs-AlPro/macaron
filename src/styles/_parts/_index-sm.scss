@@ -59,17 +59,17 @@
     color: var(--color-text);
 
     &__header {
-      font-size: 2.7em;
+      font-size: 2.5em;
       text-transform: uppercase;
-      font-weight: 600;
       margin: 0;
+      margin-bottom: var(--gap-smal);
+      line-height: 1.4em;
     }
 
     &__text {
       margin: 0;
-
-      font-weight: 600;
       font-size: 1.8em;
+      line-height: 1.4em;
 
       &--contrast {
         color: var(--color-background);
@@ -80,6 +80,7 @@
       margin-top: var(--gap-midle);
       font-size: 1.6em;
       font-weight: 600;
+      line-height: 1.4em;
     }
   }
 
@@ -100,6 +101,7 @@
       height: auto;
       border-radius: 10px;
       width: 100%;
+      max-width: 260px;
       box-shadow: var(--shadow-elevation-medium);
       position: relative;
       z-index: 2;

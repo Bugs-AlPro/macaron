@@ -37,7 +37,7 @@
                 <picture class="feedback__picture">
                   <source srcset="img/{{ item.img }}.webp" type="image/webp">
                   <img class="feedback__img" src="img/{{ item.img }}.jpg" alt="Image from {{ item.name }}" width="70"
-                    height="70">
+                    height="70" loading="lazy">
                 </picture>
                 <div class="feedback__name">
                   {{ item.name }}

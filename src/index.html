@@ -18,16 +18,18 @@
   <use xlink:href='img/svg/sprite-color.svg#{{ name }}'></use>
 </svg>
 {% endmacro %}
-{% macro imageJpg(classPicture, name, classImg, alt, width, height) %}
+{% macro imageJpg(classPicture, name, classImg, alt, width, height, atribut) %}
 <picture class="{{ classPicture }}">
   <source srcset="img/{{ name }}.webp" type="image/webp">
-  <img src="img/{{ name }}.jpg" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}">
+  <img src="img/{{ name }}.jpg" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}" {{
+    atribut }}>
 </picture>
 {% endmacro %}
 {% macro imagePng(classPicture, name, classImg, alt, width, height) %}
 <picture class="{{ classPicture }}">
   <source srcset="img/{{ name }}.webp" type="image/webp">
-  <img src="img/{{ name }}.png" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}">
+  <img src="img/{{ name }}.png" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}" {{
+    atribut }}>
 </picture>
 {% endmacro %}
 
