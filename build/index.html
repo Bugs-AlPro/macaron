@@ -15,9 +15,35 @@
 
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- // Define dataLayer and the gtag function. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    // Default ad_storage to 'denied' as a placeholder
+    // Determine actual values based on your own requirements
+    gtag("consent", "default", {
+      ad_storage: "denied",
+      analytics_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      wait_for_update: 500
+    });
+
+  </script>
+
   <!-- Google tag (gtag.js) -->
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6SCG1VL8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GH6SCG1VL8', {
+      'cookieFlags': 'SameSite=None; Secure'
+    });
+  </script>
 
   <!-- Facebook Pixel Code -->
   <script>
@@ -33,7 +59,11 @@
     }
       (window, document, 'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1138973390049442');
+    fbq('init', '1138973390049442', {
+      autoConfig: true,
+      domain: 'macaron-by-elena.com'
+    });
+
     fbq('consent', 'revoke');
     fbq('track', 'PageView');
   </script>
@@ -74,75 +104,74 @@
 
   <div class="sale-wrap">
 
-    <!-- 
-<div class="sale">
+    <div class="sale">
         <div class="sale__cover">
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
                 <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
+                        <span class="sale__text-part-big">20%</span>
+                        <span class="sale__text-part-smal">SPRING SALE Up to</span>
                 </div>
         </div>
-</div> -->
+</div>
 
   </div>
 
@@ -788,7 +817,7 @@
 у вас. Это был самый лучший онлайн курс. Мои макарон с первой попытки получились идеальными. Вы потрясающий кулинар и
 наставник.
               </div>
-              <a href="https://www.instagram.com/ama_sweetboutique/" class="feedback__link link-to">
+              <a href="https://www.instagram.com/amarielledesserts?igsh=MW96MXZvdWJ1YjBy" class="feedback__link link-to">
                 Посетить страницу
               </a>
             </div>
@@ -961,81 +990,10 @@
   
 
 
+
 <section class="wrap wrap--offer" id="offer">
   <div class="container">
     <div class="block">
-
-      <div class="sale-wrap">
-        <!-- 
-<div class="sale">
-        <div class="sale__cover">
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-                <div class="sale__text">
-                        <span class="sale__text-part-big">50%</span>
-                        <span class="sale__text-part-smal">WINTER SALE Up to</span>
-                </div>
-        </div>
-</div> -->
-      </div>
 
       <div class="block__title title">
         <h2 class="title__text">
@@ -1064,7 +1022,9 @@
             </div>
 
             <div class="costs__price">
-              $ 120
+              <div class="costs__price-sale">$ 96</div>
+              <div class="costs__price-base">$ 120</div>
+
             </div>
 
             <button type="button" class="costs__btn generalCourseBtn pixel-btn">
@@ -1142,7 +1102,9 @@
             </div>
 
             <div class="costs__price">
-              $ 65
+              <div class="costs__price-sale">$ 52</div>
+              <div class="costs__price-base">$ 65</div>
+
             </div>
 
             <button type="button" class="costs__btn shellsBtn pixel-btn">
@@ -1206,7 +1168,9 @@
             </div>
 
             <div class="costs__price">
-              $ 65
+              <div class="costs__price-sale">$ 52</div>
+              <div class="costs__price-base">$ 65</div>
+
             </div>
 
             <button type="button" class="costs__btn fillingsBtn pixel-btn">
@@ -1330,8 +1294,8 @@
         <li class="part__item">
 
           <picture class="part__picture">
-            <source srcset="img/inst.webp" type="image/webp">
-            <img src="img/inst.jpg" alt="Обложка для курса Инстаграмм"
+            <source srcset="img/inst-en.webp" type="image/webp">
+            <img src="img/inst-en.jpg" alt="Обложка для курса Инстаграмм"
               class="part__img" width="530" height="400" loading="lazy">
           </picture>
 
@@ -1346,7 +1310,9 @@
             </div>
 
             <div class="costs__price">
-              $ 50
+              <div class="costs__price-sale">$ 40</div>
+              <div class="costs__price-base">$ 50</div>
+
             </div>
 
 
@@ -1402,7 +1368,9 @@
             </div>
 
             <div class="costs__price">
-              $ 150
+              <div class="costs__price-sale">$ 120</div>
+              <div class="costs__price-base">$ 150</div>
+
             </div>
 
 

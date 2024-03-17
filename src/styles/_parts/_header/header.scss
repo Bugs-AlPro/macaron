@@ -20,12 +20,14 @@
     .header-fixed-wrap {
         background-color: var(--color-background);
         box-shadow: var(--shadow-elevation-low);
+        margin-top: 90px;
     }
 }
 
 @include media-down(lg) {
     .header {
         position: relative;
+
     }
 
     .header-fixed {
@@ -43,6 +45,10 @@
             flex-grow: 1;
             text-align: start;
         }
+    }
+
+    .header-fixed-wrap {
+        margin-top: 70px;
     }
 
 }

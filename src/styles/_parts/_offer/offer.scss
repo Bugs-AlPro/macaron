@@ -55,11 +55,29 @@
 
         &__price {
             display: flex;
-            justify-content: space-between;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: center;
+            gap: var(--gap-smal);
             border-top: 4px solid var(--color-text);
-            padding: 10px 0 0 0;
+            // padding: 10px 0 0 0;
             position: relative;
             font-size: 2em;
+        }
+
+        &__price-base {
+            padding: 5px;
+        }
+
+        &__price-sale {
+            background-color: var(--color-sale);
+            color: var(--color-background);
+            padding: 5px;
+        }
+
+        &__price-sale~.costs__price-base {
+            opacity: 0.5;
+            font-size: 0.8em;
         }
 
         &__btn {
@@ -182,12 +200,35 @@
 
         &__price {
             display: flex;
-            justify-content: space-between;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: center;
+            gap: var(--gap-smal);
             border-top: 2px solid var(--color-text);
-            padding: 10px 0 0 0;
+            // padding: 10px 0 0 0;
             position: relative;
             font-size: 1.8em;
         }
+
+        &__price-base {
+            padding: 5px;
+        }
+
+        &__price-sale {
+            background-color: var(--color-sale);
+            color: var(--color-background);
+            padding: 5px;
+        }
+
+        &__price-sale~.costs__price-base {
+            opacity: 0.5;
+            font-size: 0.8em;
+        }
+
+
+
+
+
 
         &__btn {
             box-shadow: var(--shadow-elevation-medium);

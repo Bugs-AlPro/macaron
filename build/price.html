@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="себестоимость макарон">
+  <meta name="description" content="Калькулятор по расчету себестоимости пирожных макарон">
+  <title>Price</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- // Define dataLayer and the gtag function. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    // Default ad_storage to 'denied' as a placeholder
+    // Determine actual values based on your own requirements
+    gtag("consent", "default", {
+      ad_storage: "denied",
+      analytics_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      wait_for_update: 500
+    });
+
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6SCG1VL8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GH6SCG1VL8', {
+      'cookieFlags': 'SameSite=None; Secure'
+    });
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }
+      (window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1138973390049442', {
+      autoConfig: true,
+      domain: 'macaron-by-elena.com'
+    });
+
+    fbq('consent', 'revoke');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1138973390049442&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+  <!-- <div id="particles-js"></div> -->
+  
+
+  
+
+
+
+<dialog open class="cookie" id="cookieBox">
+    <div class="cookie__body">
+        <p class="cookie__text">
+            На этом сайте используются файлы <b>cookie</b>, которые помогают анализировать
+статистические
+данные о сайте.
+        </p>
+        <button type="button" class="cookie__btn cookie__btn--yes" onclick="window.cookieBox.close()">
+            Принять
+        </button>
+        <button type="button" class="cookie__btn cookie__btn--no" onclick="window.cookieBox.close()">
+            Отклонить
+        </button>
+
+    </div>
+</dialog>
+
+<header class="wrap" id="home">
+
+  <div class="header-fixed-wrap">
+    <div class="header-fixed">
+
+      <div class="logo header-fixed__logo">
+    <a href="https://www.instagram.com/macaron_by_elena" class="logo__link" aria-label="instagram">
+        
+<picture class="logo__picture">
+  <source srcset="img/logo.webp" type="image/webp">
+  <img src="img/logo.jpg" alt="logo" class="logo__img" width="50" height="50" >
+</picture>
+
+        <div class="logo__text">My Instagram</div>
+    </a>
+</div>
+
+      <ul class="language header-fixed__language">
+    <li class="language__item">
+        <div class="language__link language__link--current">Cost price</div>
+    </li>
+    <li class="language__item">
+        <a href="en.html" class="language__link">en</a>
+    </li>
+    <li class="language__item">
+        <a href="index.html" class="language__link">ru</a>
+    </li>
+
+</ul>
+
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="block block--hidden">
+
+      
+
+      <div class="block__title title">
+
+        <h1 class="title__text">
+          Расчет себестоимости макарон
+        </h1>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+  
+
+<section class="wrap wrap--price">
+
+  <div class="container">
+
+    <div class="block">
+
+      <div class="">
+        <div class="">Шаг первый</div>
+        <form class="block__section">
+          <fieldset>
+            <legend>
+              Укажите стоимоить продуктов
+            </legend>
+            <div class="">
+              <label>
+                Миндальная мука. Цена
+                <input type="number" name="answer">
+
+              </label>
+              <label>
+                <input type="number" name="answer" value="1000">
+                грамм в упаковке
+              </label>
+            </div>
+
+
+            <div class="">
+              <label>
+                Сахар. Цена
+                <input type="number" name="answer">
+
+              </label>
+              <label>
+                <input type="number" name="answer" value="1000">
+                грамм в упаковке
+              </label>
+            </div>
+
+
+            <div class="">
+              <label>
+                Сахарная пудра. Цена
+                <input type="number" name="answer">
+
+              </label>
+              <label>
+                <input type="number" name="answer" value="1000">
+                грамм в упаковке
+              </label>
+            </div>
+
+
+            <div class="">
+              <label>
+                Яйцо. Цена
+                <input type="number" name="answer">
+
+              </label>
+              <label>
+                <input type="number" name="answer" value="1000">
+                грамм в упаковке
+              </label>
+            </div>
+
+
+            <div class="">
+              <label>
+                Шоколад. Цена
+                <input type="number" name="answer">
+
+              </label>
+              <label>
+                <input type="number" name="answer" value="1000">
+                грамм в упаковке
+              </label>
+            </div>
+
+
+            <div class="">
+              <label>
+                Сливки. Цена
+                <input type="number" name="answer">
+
+              </label>
+              <label>
+                <input type="number" name="answer" value="1000">
+                грамм в упаковке
+              </label>
+            </div>
+
+
+            <div class="">
+              <label>
+                Фруктовое. Цена
+                <input type="number" name="answer">
+
+              </label>
+              <label>
+                <input type="number" name="answer" value="1000">
+                грамм в упаковке
+              </label>
+            </div>
+
+
+          </fieldset>
+        </form>
+        <input type="button" value="Готово">
+      </div>
+
+
+      <div class="">
+        <div class="">Шаг второй</div>
+        <form class="block__section">
+          <fieldset>
+            <legend>
+              Проверьте колличество грамм по вашему рецепту
+            </legend>
+            <label>
+              <input type="number" name="answer" value="165">
+              Миндальная мука
+            </label>
+
+            <label>
+              <input type="number" name="answer" value="40">
+              Сахар
+            </label>
+
+            <label>
+              <input type="number" name="answer" value="135">
+              Сахарная пудра
+            </label>
+
+            <label>
+              <input type="number" name="answer" value="105">
+              Яйцо
+            </label>
+
+            <label>
+              <input type="number" name="answer" value="200">
+              Шоколад
+            </label>
+
+            <label>
+              <input type="number" name="answer" value="135">
+              Сливки
+            </label>
+
+
+            <label>
+              <input type="number" name="answer" value="10">
+              Пюре
+            </label>
+
+
+          </fieldset>
+        </form>
+        <input type="button" value="Готово">
+      </div>
+
+      <div class="">
+        <div class="">Итог</div>
+        <div class="">Исходя из данных которые вы предоставили выше, цена за каждый макарон будет 2 рубля</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+
+
+<footer class="wrap wrap--footer">
+  <div class="container">
+    <div class="footer">
+      <div class="footer__title">
+        Ссылки
+      </div>
+
+      <ul class="footer__list footer-links">
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="https://t.me/macaron_by_elena">
+            
+<svg class="svg" width="40" height="40">
+  <use xlink:href='img/svg/sprite-black.svg#telegram'></use>
+</svg>
+
+          </a>
+          <a class="footer-links__link" href="https://wa.me/message/ZVYTBBN3N7SNI1">
+            
+<svg class="svg" width="40" height="40">
+  <use xlink:href='img/svg/sprite-black.svg#whatsap'></use>
+</svg>
+
+          </a>
+          <a class="footer-links__link" href="mailto:aleksprowork@gmail.com">
+            
+<svg class="svg" width="40" height="40">
+  <use xlink:href='img/svg/sprite-black.svg#email'></use>
+</svg>
+
+          </a>
+        </li>
+        <li class="footer-links__item">
+          <details class="privacy">
+            <summary class="privacy__summary">
+              Политика конфиденциальности
+            </summary>
+            <div class="privacy__title">
+              Дата вступления в силу: 1 сентября 2023
+            </div>
+            <p class="privacy__text">
+              Посетив наш сайт и используя наши услуги, вы соглашаетесь с условиями нашей
+политики конфиденциальности.
+            </p>
+            <div class="privacy__title">
+              1. Сбор и использование информации
+            </div>
+            <p class="privacy__text">
+              Мы не собираем и не храним личные данные посетителей нашего сайта, за исключением
+случаев, когда они предоставляют их добровольно (например, при оформлении заказа).
+            </p>
+            <div class="privacy__title">
+              2. Статистические данные и аналитика
+            </div>
+            <p class="privacy__text">
+              Мы используем инструменты, такие как Google Analytics и Facebook Pixel, для сбора статистических данных и анализа
+того, как посетители используют наш сайт. Эти инструменты могут использовать файлы cookie для отслеживания вашей
+активности. Вы можете отказаться от сбора статистических данных, выбрав соответствующие настройки в браузере.
+            </p>
+            <div class="privacy__title">
+              3. Передача данных третьим сторонам
+            </div>
+            <p class="privacy__text">
+              Мы не предоставляем полученные аналитические и статистические данные третьим сторонам.
+            </p>
+            <div class="privacy__title">
+              4. Вопросы и контакты
+            </div>
+            <p class="privacy__text">
+              Если у вас есть вопросы относительно нашей политики конфиденциальности, свяжитесь с автором курса Еленой Прониной
+по адресу электронной почты 
+              <a class="privacy__link" href="mailto:aleksprowork@gmail.com">aleksprowork@gmail.com</a>
+            </p>
+            <div class="privacy__title">
+              5. Изменения в политике конфиденциальности
+            </div>
+            <p class="privacy__text">
+              Мы оставляем за собой право вносить изменения в нашу политику конфиденциальности.
+Любые изменения будут опубликованы на этой странице.<br>Благодарим за использование наших услуг!
+            </p>
+          </details>
+        </li>
+      </ul>
+
+      <div class="footer__logo">
+
+        <p class="footer__text">
+          2021-2024
+        </p>
+        <svg class="footer__svg">
+          <defs>
+            <pattern id="polka-dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+            </pattern>
+            <style></style>
+          </defs>
+          <text x="50%" y="60%" text-anchor="middle">
+            macaron_by_elena
+          </text>
+        </svg>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+
+  <script src="js/cookie.js"></script>
+
+  <script src="js/tiny.js"></script>
+  <script src="js/slider-settings.js" async></script>
+
+  <script src="js/buy-btn-ru.js" defer></script>
+
+  <!-- <script src="js/swiper.js"></script> -->
+  <!-- <script src="js/swiper-settings.js"></script> -->
+
+  <!-- <script src="js/particles.min.js"></script> -->
+  <!-- <script src="js/snow.js"></script> -->
+
+
+  <!-- Ниже скрипт подключающий пиксель. Чтобы он работал нужно добавить класс pixel-btn к элементу на который будут нажимать. -->
+  <!-- <script type="text/javascript">
+    const pixelBtn = document.querySelector('.pixel-btn');
+    pixelBtn.addEventListener('click', () => {
+      fbq('track', 'AddToWishlist');
+    })
+  </script> -->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap" rel="stylesheet" async>
+
+</body>
+
+</html>

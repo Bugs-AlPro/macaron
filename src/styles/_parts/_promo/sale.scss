@@ -5,10 +5,14 @@
 }
 
 .sale {
-    background-color: black;
+    background-color: var(--color-sale);
     padding: 10px 0;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     overflow: hidden;
+    z-index: 5;
 
     @include media-up(lg) {
         height: 90px;
@@ -16,7 +20,6 @@
 
     @include media-down(lg) {
         height: 70px;
-        margin-top: 90px;
     }
 
     &__cover {
@@ -43,9 +46,9 @@
         align-items: center;
         gap: 10px;
         text-transform: uppercase;
-        color: white;
+        color: var(--color-background);
         font-weight: 600;
-        animation: textAnimates 30s infinite;
+        animation: textAnimates 59s infinite;
         animation-timing-function: linear;
     }
 
@@ -71,5 +74,16 @@
             font-size: 15px;
         }
 
+    }
+}
+
+@keyframes textAnimates {
+    0% {
+        transform: translateX(0);
+
+    }
+
+    100% {
+        transform: translateX(300px);
     }
 }

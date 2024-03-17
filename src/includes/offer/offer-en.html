@@ -1,13 +1,10 @@
 {% import "includes/offer/text-content-offer.html" as transtale %}
 {% import "includes/offer/price-content.html" as price %}
+{% import "includes/offer/price-sale.html" as sale %}
 
 <section class="wrap wrap--offer" id="offer">
   <div class="container">
     <div class="block">
-
-      <div class="sale-wrap">
-        {% include "includes/promo/sale.html" %}
-      </div>
 
       <div class="block__title title">
         <h2 class="title__text">
@@ -36,7 +33,8 @@
             </div>
 
             <div class="costs__price">
-              $ {{ price.basePrice.all.usd }}
+              {{ sale.salePrice.all.usd | safe }}
+              {{ price.basePrice.all.usd | safe }}
             </div>
 
             <button type="button" class="costs__btn generalCourseBtn pixel-btn">
@@ -81,7 +79,9 @@
             </div>
 
             <div class="costs__price">
-              $ {{ price.basePrice.part.usd }}
+              {{ sale.salePrice.part.usd | safe }}
+              {{ price.basePrice.part.usd | safe }}
+
             </div>
 
             <button type="button" class="costs__btn shellsBtn pixel-btn">
@@ -126,7 +126,9 @@
             </div>
 
             <div class="costs__price">
-              $ {{ price.basePrice.part.usd }}
+              {{ sale.salePrice.part.usd | safe }}
+              {{ price.basePrice.part.usd | safe }}
+
             </div>
 
             <button type="button" class="costs__btn fillingsBtn pixel-btn">
@@ -177,7 +179,9 @@
             </div>
 
             <div class="costs__price">
-              $ {{ price.basePrice.inst.usd }}
+              {{ sale.salePrice.inst.usd | safe }}
+              {{ price.basePrice.inst.usd | safe }}
+
             </div>
 
 
@@ -223,7 +227,9 @@
             </div>
 
             <div class="costs__price">
-              $ {{ price.basePrice.eskimo.usd }}
+              {{ sale.salePrice.eskimo.usd | safe }}
+              {{ price.basePrice.eskimo.usd | safe }}
+
             </div>
 
 

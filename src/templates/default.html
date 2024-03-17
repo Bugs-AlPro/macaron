@@ -14,9 +14,35 @@
 
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- // Define dataLayer and the gtag function. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    // Default ad_storage to 'denied' as a placeholder
+    // Determine actual values based on your own requirements
+    gtag("consent", "default", {
+      ad_storage: "denied",
+      analytics_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      wait_for_update: 500
+    });
+
+  </script>
+
   <!-- Google tag (gtag.js) -->
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6SCG1VL8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GH6SCG1VL8', {
+      'cookieFlags': 'SameSite=None; Secure'
+    });
+  </script>
 
   <!-- Facebook Pixel Code -->
   <script>
@@ -32,7 +58,11 @@
     }
       (window, document, 'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1138973390049442');
+    fbq('init', '1138973390049442', {
+      autoConfig: true,
+      domain: 'macaron-by-elena.com'
+    });
+
     fbq('consent', 'revoke');
     fbq('track', 'PageView');
   </script>
