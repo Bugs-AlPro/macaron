@@ -1231,6 +1231,7 @@ li p {
   .costs__price-sale ~ .costs__price-base {
     opacity: 0.5;
     font-size: 0.8em;
+    background: linear-gradient(160deg, var(--color-background) 46%, var(--color-text) 48% 52%, var(--color-background) 54%);
   }
   .costs__btn {
     box-shadow: var(--shadow-elevation-medium);
@@ -1346,6 +1347,7 @@ li p {
   .costs__price-sale ~ .costs__price-base {
     opacity: 0.5;
     font-size: 0.8em;
+    background: linear-gradient(160deg, var(--color-background) 46%, var(--color-text) 48% 52%, var(--color-background) 54%);
   }
   .costs__btn {
     box-shadow: var(--shadow-elevation-medium);
