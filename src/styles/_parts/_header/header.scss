@@ -21,6 +21,10 @@
         background-color: var(--color-background);
         box-shadow: var(--shadow-elevation-low);
         margin-top: 90px;
+
+        &--price {
+            margin-top: 0;
+        }
     }
 }
 
@@ -35,6 +39,7 @@
         width: 100%;
         background-color: var(--color-background);
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
@@ -48,7 +53,12 @@
     }
 
     .header-fixed-wrap {
+
         margin-top: 70px;
+
+        &--price {
+            margin-top: 0;
+        }
     }
 
 }

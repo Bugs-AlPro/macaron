@@ -2,7 +2,7 @@
 {% set lang = 'ru' %}
 {% set keywords = 'себестоимость макарон' %}
 {% set description = 'Калькулятор по расчету себестоимости пирожных макарон' %}
-{% set buyBtn = 'js/buy-btn-ru.js' %}
+{% set price = 'js/price.js' %}
 
 {% extends "templates/default.html" %}
 
@@ -40,6 +40,7 @@
 
 <main class="main">
 
+  {% include "includes/price/price-settings.html" %}
   {% include "includes/price/price-ru.html" %}
 
 </main>
