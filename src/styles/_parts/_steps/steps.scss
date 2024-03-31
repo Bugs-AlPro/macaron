@@ -172,8 +172,8 @@
     &__img {
       width: 200px;
       height: auto;
-      stroke: var(--color-accent);
-      stroke-width: 15px;
+      // stroke: var(--color-accent);
+      // stroke-width: 15px;
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
@@ -501,6 +501,7 @@
     &__info {
       display: flex;
       gap: var(--gap-smal);
+      align-items: center;
     }
   }
 
