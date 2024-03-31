@@ -43,63 +43,108 @@
                 <label class="line__label" for="flour">
                   Миндальная мука
                 </label>
-                <input type="number" value="1" id="flour" class="line__input line__input--price"
-                  placeholder="Цена муки">
-                <input type="number" value="1000" class="line__input" id="amount-of-flour"
-                  placeholder="Количество грамм">
+
+                <div class="line__info">
+                  <input type="number" value="1" id="flour" class="line__input line__input--price"
+                    placeholder="Цена муки">
+                  <div class="line__smal-label">цена</div>
+                </div>
+                <div class="line__info">
+                  <input type="number" value="1000" class="line__input" id="amount-of-flour"
+                    placeholder="Количество грамм">
+                  <div class="line__smal-label">грамм</div>
+
+                </div>
               </div>
               <div class="form__line line">
                 <label class="line__label" for="sugar">
                   Сахар
                 </label>
-                <input type="number" value="1" id="sugar" class="line__input line__input--price"
-                  placeholder="Цена сахара">
-                <input type="number" value="1000" class="line__input" id="amount-of-sugar"
-                  placeholder="Количество грамм">
+                <div class="line__info">
+                  <input type="number" value="1" id="sugar" class="line__input line__input--price"
+                    placeholder="Цена сахара">
+                  <div class="line__smal-label">цена</div>
+                </div>
+
+                <div class="line__info">
+                  <input type="number" value="1000" class="line__input" id="amount-of-sugar"
+                    placeholder="Количество грамм">
+                  <div class="line__smal-label">грамм</div>
+                </div>
+
               </div>
               <div class="form__line line">
                 <label class="line__label" for="powdered-sugar">
                   Сахарная пудра
                 </label>
-                <input type="number" value="1" id="powdered-sugar" class="line__input line__input--price"
-                  placeholder="Цена сахарной пудры">
-                <input type="number" value="250" class="line__input" id="amount-of-powdered-sugar"
-                  placeholder="Количество грамм">
+                <div class="line__info">
+                  <input type="number" value="1" id="powdered-sugar" class="line__input line__input--price"
+                    placeholder="Цена сахарной пудры">
+                  <div class="line__smal-label">цена</div>
+                </div>
+
+                <div class="line__info">
+                  <input type="number" value="250" class="line__input" id="amount-of-powdered-sugar"
+                    placeholder="Количество грамм">
+                  <div class="line__smal-label">грамм</div>
+                </div>
+
               </div>
               <div class="form__line line">
                 <label class="line__label" for="egg">
                   Яйцо
                 </label>
-                <input type="number" value="1" id="egg" class="line__input line__input--price" placeholder="Цена яйца">
-                <label>
+                <div class="line__info">
+                  <input type="number" value="1" id="egg" class="line__input line__input--price"
+                    placeholder="Цена яйца">
+                  <div class="line__smal-label">цена</div>
+                </div>
+
+                <div class="line__info">
                   <input type="number" value="10" class="line__input" id="amount-of-egg" placeholder="Количество грамм">
-                  штук
-                </label>
+                  <div class="line__smal-label">штук</div>
+                </div>
 
               </div>
               <div class="form__line line">
                 <label class="line__label" for="chocolate">
                   Шоколад
                 </label>
-                <input type="number" value="1" id="chocolate" class="line__input line__input--price"
-                  placeholder="Цена шоколада">
-                <input type="number" value="500" class="line__input" id="amount-of-chocolate"
-                  placeholder="Количество грамм">
+                <div class="line__info">
+                  <input type="number" value="1" id="chocolate" class="line__input line__input--price"
+                    placeholder="Цена шоколада">
+                  <div class="line__smal-label">цена</div>
+                </div>
+
+                <div class="line__info">
+                  <input type="number" value="500" class="line__input" id="amount-of-chocolate"
+                    placeholder="Количество грамм">
+                  <div class="line__smal-label">грамм</div>
+                </div>
+
               </div>
               <div class="form__line line">
                 <label class="line__label" for="cream">
                   Сливки
                 </label>
-                <input type="number" value="1" id="cream" class="line__input line__input--price"
-                  placeholder="Цена сливок">
-                <input type="number" value="500" class="line__input" id="amount-of-cream"
-                  placeholder="Количество грамм">
+                <div class="line__info">
+                  <input type="number" value="1" id="cream" class="line__input line__input--price"
+                    placeholder="Цена сливок">
+                  <div class="line__smal-label">цена</div>
+                </div>
+
+                <div class="line__info">
+                  <input type="number" value="500" class="line__input" id="amount-of-cream"
+                    placeholder="Количество грамм">
+                  <div class="line__smal-label">грамм</div>
+                </div>
+
               </div>
             </fieldset>
 
           </form>
         </div>
-        <input type="button" value="Далее" class="steps__btn steps__btn--done steps__btn1">
+        <input type="button" value="Далее" class="steps__btn steps__btn--done steps__btn1" disabled>
       </div>
 
 
@@ -116,25 +161,42 @@
                 <label class="line__label" for="flour-recipe">
                   Миндальная мука
                 </label>
-                <input type="number" value="165" id="flour-recipe" class="line__input">
+                <div class="line__info">
+                  <input type="number" value="165" id="flour-recipe" class="line__input">
+                  <div class="line__smal-label">грамм</div>
+                </div>
+
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="sugar-recipe">
                   Сахар
                 </label>
-                <input type="number" value="150" id="sugar-recipe" class="line__input">
+                <div class="line__info">
+                  <input type="number" value="150" id="sugar-recipe" class="line__input">
+                  <div class="line__smal-label">грамм</div>
+                </div>
+
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="powdered-sugar-recipe">
                   Сахарная пудра
                 </label>
-                <input type="number" value="135" id="powdered-sugar-recipe" class="line__input">
+                <div class="line__info">
+                  <input type="number" value="135" id="powdered-sugar-recipe" class="line__input">
+                  <div class="line__smal-label">грамм</div>
+                </div>
+
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="egg-recipe">
                   Яичный белок (в среднем 4 яйца = 110 грамм)
                 </label>
-                <input type="number" value="4" id="egg-recipe" class="line__input" disabled>
+                <div class="line__info">
+                  <input type="number" value="4" id="egg-recipe" class="line__input" disabled>
+                  <div class="line__smal-label">штук</div>
+                </div>
+
+
               </div>
               <div class="form__line line line--price line--title">
                 <div class="line__title">Ингредиенты для начинки</div>
@@ -144,13 +206,21 @@
                 <label class="line__label" for="chocolate-recipe">
                   Шоколад
                 </label>
-                <input type="number" value="100" id="chocolate-recipe" class="line__input">
+                <div class="line__info">
+                  <input type="number" value="100" id="chocolate-recipe" class="line__input">
+                  <div class="line__smal-label">грамм</div>
+                </div>
+
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="cream-recipe">
                   Сливки
                 </label>
-                <input type="number" value="50" id="cream-recipe" class="line__input">
+                <div class="line__info">
+                  <input type="number" value="50" id="cream-recipe" class="line__input">
+                  <div class="line__smal-label">грамм</div>
+                </div>
+
               </div>
               <div class="form__line line line--price line--title">
                 <div class="line__title">Результаты</div>
@@ -160,13 +230,21 @@
                 <label class="line__label" for="shells">
                   Сколько готовых крышечек у вас получается в среднем после приготовления этого рецепта
                 </label>
-                <input type="number" value="50" id="shells" class="line__input">
+                <div class="line__info">
+                  <input type="number" value="50" id="shells" class="line__input">
+                  <div class="line__smal-label">штук</div>
+                </div>
+
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="fillings">
                   Сколько грамм начинки в среднем вы отсаживаете на каждую крышечку
                 </label>
-                <input type="number" value="10" id="fillings" class="line__input">
+                <div class="line__info">
+                  <input type="number" value="10" id="fillings" class="line__input">
+                  <div class="line__smal-label">грамм</div>
+                </div>
+
               </div>
             </fieldset>
           </form>

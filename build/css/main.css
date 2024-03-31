@@ -2185,6 +2185,7 @@ li p {
     z-index: 2;
     justify-self: flex-end;
     text-align: center;
+    color: var(--color-text);
   }
   .steps__btn--activ {
     border: 2px solid var(--color-muted);
@@ -2252,6 +2253,11 @@ li p {
     font-size: 1.3em;
     font-weight: 600;
     padding-left: var(--gap-smal);
+  }
+  .line__info {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-smal);
   }
 
   .line-result {
@@ -2383,23 +2389,24 @@ li p {
     box-shadow: var(--shadow-elevation-low);
   }
   .price-settings__btn:hover {
-    color: var(--color-accent);
-    border: 2px solid var(--color-accent);
+    border: 2px solid var(--color-muted);
   }
   .price-settings__btn:focus {
-    color: var(--color-accent);
-    border: 2px solid var(--color-accent);
+    color: var(--color-background);
+    border: 2px solid var(--color-muted);
+    background-color: var(--color-accent);
   }
   .price-settings__btn--activ {
-    color: var(--color-muted);
-    border: 2px solid var(--color-muted);
+    color: var(--color-background);
+    border: 2px solid var(--color-accent);
+    background-color: var(--color-accent);
   }
 }
 @media (max-width: 991.98px) {
   .steps {
     background-color: var(--color-muted);
     margin-bottom: var(--gap-midle);
-    box-shadow: var(--shadow-elevation-medium);
+    box-shadow: var(--shadow-elevation-low);
     display: flex;
     flex-direction: column;
     gap: var(--gap-smal);
@@ -2409,6 +2416,10 @@ li p {
   }
   .steps--activ {
     background-color: var(--color-background);
+  }
+  .steps--done .steps__body {
+    display: block;
+    position: relative;
   }
   .steps__title {
     font-size: 1.6em;
@@ -2426,6 +2437,7 @@ li p {
     position: relative;
     z-index: 2;
     text-align: center;
+    color: var(--color-text);
   }
   .steps__btn--activ {
     border: 2px solid var(--color-muted);
@@ -2444,6 +2456,7 @@ li p {
   }
   .steps__body {
     display: none;
+    position: relative;
   }
   .steps__body--activ {
     display: block;
@@ -2460,8 +2473,7 @@ li p {
   }
 
   .line {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: var(--gap-smal);
     padding-left: var(--gap-smal);
     padding-bottom: var(--gap-smal);
@@ -2492,6 +2504,13 @@ li p {
   .line__label {
     font-size: 1.3em;
     font-weight: 600;
+  }
+  .line__smal-label {
+    justify-self: flex-start;
+  }
+  .line__info {
+    display: flex;
+    gap: var(--gap-smal);
   }
 
   .line-result {
@@ -2626,21 +2645,22 @@ li p {
     color: var(--color-text);
     border-radius: 5px;
     border: none;
-    border: 2px solid var(--color-background);
+    border: 2px solid var(--color-accent);
     cursor: pointer;
-    background-color: var(--color-background);
+    background-color: inherit;
     box-shadow: var(--shadow-elevation-low);
   }
   .price-settings__btn:hover {
-    color: var(--color-accent);
-    border: 2px solid var(--color-accent);
+    border: 2px solid var(--color-muted);
   }
   .price-settings__btn:focus {
-    color: var(--color-accent);
-    border: 2px solid var(--color-accent);
+    color: var(--color-background);
+    border: 2px solid var(--color-muted);
+    background-color: var(--color-accent);
   }
   .price-settings__btn--activ {
-    color: var(--color-muted);
-    border: 2px solid var(--color-muted);
+    color: var(--color-background);
+    border: 2px solid var(--color-accent);
+    background-color: var(--color-accent);
   }
 }

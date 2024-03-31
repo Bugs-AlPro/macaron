@@ -44,7 +44,7 @@
 
       justify-self: flex-end;
       text-align: center;
-
+      color: var(--color-text);
     }
 
     &__btn--activ {
@@ -94,6 +94,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     // align-items: center;
+    // align-items: center;
     // gap: var(--gap-smal);
 
     &--price {
@@ -128,6 +129,12 @@
       font-size: 1.3em;
       font-weight: 600;
       padding-left: var(--gap-smal);
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-smal);
     }
   }
 
@@ -295,19 +302,23 @@
     }
 
     &__btn:hover {
-      color: var(--color-accent);
-      border: 2px solid var(--color-accent);
+      border: 2px solid var(--color-muted);
     }
 
     &__btn:focus {
-      color: var(--color-accent);
-      border: 2px solid var(--color-accent);
+      color: var(--color-background);
+      border: 2px solid var(--color-muted);
+      background-color: var(--color-accent);
     }
 
     &__btn--activ {
-      color: var(--color-muted);
-      border: 2px solid var(--color-muted);
+      color: var(--color-background);
+      border: 2px solid var(--color-accent);
+      background-color: var(--color-accent);
     }
+
+
+
   }
 }
 
@@ -315,12 +326,24 @@
   .steps {
     &--activ {
       background-color: var(--color-background);
+      // border-right: 2px solid var(--color-accent);
+    }
+
+    &--done .steps__body {
+
+      display: block;
+      // height: auto;
+      position: relative;
+
     }
 
     background-color: var(--color-muted);
+    // margin: 0;
+    // padding: 0;
     margin-bottom: var(--gap-midle);
-    box-shadow: var(--shadow-elevation-medium);
+    box-shadow: var(--shadow-elevation-low);
 
+    // border-radius: 5px;
 
     display: flex;
     flex-direction: column;
@@ -362,7 +385,7 @@
 
       // justify-self: flex-end;
       text-align: center;
-
+      color: var(--color-text);
     }
 
     &__btn--activ {
@@ -388,6 +411,7 @@
       // grid-column-start: 1;
       // grid-column-end: 3;
       display: none;
+      position: relative;
     }
 
     &__body--activ {
@@ -395,6 +419,8 @@
       // height: auto;
       position: relative;
     }
+
+
   }
 
   .form {
@@ -409,10 +435,10 @@
 
   .line {
     // margin-bottom: var(--gap-smal);
-    display: flex;
-    flex-direction: column;
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr 1fr;
+    display: grid;
+    // flex-direction: column;
+    // grid-template-columns: auto 1fr;
+    // grid-template-rows: auto auto;
     // align-items: center;
     gap: var(--gap-smal);
     padding-left: var(--gap-smal);
@@ -427,6 +453,8 @@
     // }
 
     &--title {
+      // grid-template-columns: auto;
+      // grid-template-rows: auto auto auto;
       gap: 0;
       padding-left: 0;
       padding-bottom: 0;
@@ -438,6 +466,7 @@
       padding: 10px;
       color: var(--color-background);
       // vertical-align: baseline;
+
     }
 
     &__input {
@@ -458,10 +487,20 @@
       font-size: 1.3em;
       font-weight: 600;
       // padding-left: var(--gap-smal);
+
       // grid-row-start: 1;
       // grid-row-end: 2;
       // grid-column-start: 1;
       // grid-column-end: 3;
+    }
+
+    &__smal-label {
+      justify-self: flex-start;
+    }
+
+    &__info {
+      display: flex;
+      gap: var(--gap-smal);
     }
   }
 
@@ -636,25 +675,26 @@
       color: var(--color-text);
       border-radius: 5px;
       border: none;
-      border: 2px solid var(--color-background);
+      border: 2px solid var(--color-accent);
       cursor: pointer;
-      background-color: var(--color-background);
+      background-color: inherit;
       box-shadow: var(--shadow-elevation-low);
     }
 
     &__btn:hover {
-      color: var(--color-accent);
-      border: 2px solid var(--color-accent);
+      border: 2px solid var(--color-muted);
     }
 
     &__btn:focus {
-      color: var(--color-accent);
-      border: 2px solid var(--color-accent);
+      color: var(--color-background);
+      border: 2px solid var(--color-muted);
+      background-color: var(--color-accent);
     }
 
     &__btn--activ {
-      color: var(--color-muted);
-      border: 2px solid var(--color-muted);
+      color: var(--color-background);
+      border: 2px solid var(--color-accent);
+      background-color: var(--color-accent);
     }
   }
 }

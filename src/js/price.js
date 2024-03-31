@@ -254,7 +254,7 @@ reloadButton.addEventListener('click', handleReload);
 // Функция для обработки нажатия кнопки "Старт"
 function startNextStep() {
   enableForm(costForm);
-
+  disableButtons(currencySigns);
   deactivateSection(startStepSection);
   activateSection(firstStepSection);
 
@@ -341,6 +341,7 @@ function enableForm(form) {
 
 function deactivateSection(section) {
   section.classList.remove('steps--activ');
+  section.classList.add('steps--done');
 }
 
 function activateSection(section) {
@@ -369,6 +370,12 @@ function activateButton(button) {
 
 function disableButton(button) {
   button.setAttribute("disabled", "disabled");
+}
+
+function disableButtons(buttons) {
+  for (let item of buttons) {
+    item.setAttribute("disabled", "disabled");
+  }
 }
 
 function togglePreviousSiblingClass(element, className) {
