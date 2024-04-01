@@ -2532,7 +2532,6 @@ li p {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    height: 100%;
     font-size: 1.2em;
     color: var(--color-text);
   }
