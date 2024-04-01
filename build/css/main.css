@@ -499,7 +499,6 @@ li p {
   .header-fixed-wrap {
     background-color: var(--color-background);
     box-shadow: var(--shadow-elevation-low);
-    margin-top: 90px;
   }
   .header-fixed-wrap--price {
     margin-top: 0;
@@ -527,9 +526,6 @@ li p {
     text-align: start;
   }
 
-  .header-fixed-wrap {
-    margin-top: 70px;
-  }
   .header-fixed-wrap--price {
     margin-top: 0;
   }
@@ -1773,14 +1769,13 @@ li p {
     height: 80px;
   }
   .payment-window__link {
-    width: 100%;
     font-size: 1.3em;
     display: none;
-    height: 100%;
+    justify-content: center;
     color: var(--color-background);
     text-decoration: none;
     border-radius: 10px;
-    padding: 20px 40px;
+    padding: var(--gap-smal) var(--gap-big);
     border: 2px solid var(--color-muted);
     background-color: var(--color-muted);
   }
@@ -1853,7 +1848,6 @@ li p {
     display: none;
     gap: var(--gap-midle);
     flex-direction: column;
-    align-items: center;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1892,10 +1886,9 @@ li p {
     height: 50px;
   }
   .payment-window__link {
-    width: 100%;
     font-size: 1.2em;
     display: none;
-    height: 100%;
+    justify-content: center;
     color: var(--color-background);
     text-decoration: none;
     border-radius: 10px;
@@ -2164,6 +2157,10 @@ li p {
   .steps--activ {
     background-color: var(--color-background);
   }
+  .steps--done .steps__body {
+    display: block;
+    position: relative;
+  }
   .steps__title {
     font-size: 2em;
     padding: 20px;
@@ -2381,10 +2378,10 @@ li p {
     color: var(--color-text);
     border-radius: 5px;
     border: none;
-    border: 2px solid var(--color-background);
     cursor: pointer;
-    background-color: var(--color-background);
+    background-color: inherit;
     box-shadow: var(--shadow-elevation-low);
+    border: 2px solid var(--color-accent);
   }
   .price-settings__btn:hover {
     border: 2px solid var(--color-muted);

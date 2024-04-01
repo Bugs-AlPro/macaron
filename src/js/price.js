@@ -257,7 +257,7 @@ function startNextStep() {
   disableButtons(currencySigns);
   deactivateSection(startStepSection);
   activateSection(firstStepSection);
-
+  goToNextSection(firstStepSection);
   markButtonAsDone(startStepButton);
   disableButton(startStepButton);
   activateButton(nextStepButton);
@@ -276,7 +276,7 @@ function handleNextStep() {
 
   deactivateSection(firstStepSection);
   activateSection(secondStepSection);
-
+  goToNextSection(secondStepSection);
   markButtonAsDone(nextStepButton);
   disableButton(nextStepButton);
   activateButton(previousStepButton);
@@ -293,7 +293,7 @@ function handlePreviousStep() {
 
   deactivateSection(secondStepSection);
   activateSection(thirdStepSection);
-
+  goToNextSection(thirdStepSection);
   markButtonAsDone(previousStepButton);
   disableButton(previousStepButton);
   activateButton(reloadButton);
@@ -376,6 +376,10 @@ function disableButtons(buttons) {
   for (let item of buttons) {
     item.setAttribute("disabled", "disabled");
   }
+}
+
+function goToNextSection(nextSection) {
+  nextSection.scrollIntoView({ behavior: 'smooth' });
 }
 
 function togglePreviousSiblingClass(element, className) {

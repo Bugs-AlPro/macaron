@@ -4,6 +4,14 @@
       background-color: var(--color-background);
     }
 
+    &--done .steps__body {
+
+      display: block;
+      // height: auto;
+      position: relative;
+
+    }
+
     background-color: var(--color-muted);
     margin-bottom: 50px;
     box-shadow: var(--shadow-elevation-medium);
@@ -45,6 +53,7 @@
       justify-self: flex-end;
       text-align: center;
       color: var(--color-text);
+
     }
 
     &__btn--activ {
@@ -295,10 +304,11 @@
       color: var(--color-text);
       border-radius: 5px;
       border: none;
-      border: 2px solid var(--color-background);
+      // border: 2px solid var(--color-background);
       cursor: pointer;
-      background-color: var(--color-background);
+      background-color: inherit;
       box-shadow: var(--shadow-elevation-low);
+      border: 2px solid var(--color-accent);
     }
 
     &__btn:hover {
