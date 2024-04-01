@@ -394,9 +394,16 @@
           <div class="form">
             <div class="form__line line-result">
               <div class="line-result__preview">
-                <svg class="line-result__img" width="105" height="67">
-                  <use xlink:href='img/svg/sprite-color.svg#macaron-for-cost'></use>
-                </svg>
+                <!-- <svg class="line-result__img" width="105" height="67">
+                  <use href='img/svg/sprite-color.svg#macaron-for-cost'></use>
+                </svg> -->
+                <picture class="line-result__picture">
+                  <source srcset="img/macaron-for-cost.webp" type="image/webp">
+                  <img src="img/macaron-for-cost.png"
+                    alt="Схематическое изображение пирожного макарон: две крышечки и начинка" class="line-result__img"
+                    width="105" height="67">
+                </picture>
+
                 <div class="line-result__numbers">
                   <div class="line-result__number">
                     <span id="total-price-one-shells">0</span> <span class="selected-currency">$</span>

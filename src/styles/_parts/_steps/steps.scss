@@ -178,16 +178,17 @@
       color: var(--color-text);
     }
 
-    &__img {
-      width: 200px;
-      height: auto;
-      // stroke: var(--color-accent);
-      // stroke-width: 15px;
+    &__picture {
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 2;
-      // box-shadow: var(--shadow-elevation-medium);
+    }
+
+    &__img {
+      width: 200px;
+      height: auto;
+
     }
 
     &__result {
@@ -548,15 +549,16 @@
       color: var(--color-text);
     }
 
-    &__img {
-      width: 200px;
-      height: auto;
-      stroke: var(--color-accent);
-      stroke-width: 15px;
+    &__picture {
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 2;
+    }
+
+    &__img {
+      width: 200px;
+      height: auto;
       // box-shadow: var(--shadow-elevation-medium);
     }
 
