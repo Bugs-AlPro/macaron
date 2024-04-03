@@ -7,13 +7,13 @@
     <div class="block">
       <div class="block__title title">
         <h1 class="title__text">
-          {{ translate.priceGeneral.title.ru }}
+          {{ translate.priceGeneral.title.en }}
         </h1>
       </div>
 
       <div class="block__section steps steps--activ steps--start">
         <div class="steps__title">
-          {{ translate.priceGeneral.startStep.ru }}
+          {{ translate.priceGeneral.startStep.en }}
         </div>
         <div class="steps__body steps__body--activ">
           <div class="price-settings">
@@ -26,43 +26,43 @@
             </div>
           </div>
         </div>
-        <input type="button" value="{{ translate.priceGeneral.startStepBtn.ru }}"
+        <input type="button" value="{{ translate.priceGeneral.startStepBtn.en }}"
           class="steps__btn steps__btn--activ steps__btn0">
       </div>
       <div class="block__section steps steps--first">
         <div class="steps__title">
-          {{ translate.priceGeneral.oneStep.ru }}
+          {{ translate.priceGeneral.oneStep.en }}
         </div>
         <div class="steps__body">
           <form class=" form">
             <fieldset class="form__fieldset fieldset-cost">
               <div class="form__line line line--title">
                 <div class="line__title">
-                  {{ translate.priceGeneral.oneStepSubTitle1.ru }}
+                  {{ translate.priceGeneral.oneStepSubTitle1.en }}
                 </div>
                 <div class="line__title">
-                  {{ translate.priceGeneral.oneStepSubTitle2.ru }}<span class="selected-currency">$</span></div>
+                  {{ translate.priceGeneral.oneStepSubTitle2.en }}<span class="selected-currency">$</span></div>
                 <div class="line__title">
-                  {{ translate.priceGeneral.oneStepSubTitle3.ru }}
+                  {{ translate.priceGeneral.oneStepSubTitle3.en }}
                 </div>
               </div>
               {% for item in translate.shells %}
               <div class="form__line line">
                 <label class="line__label" for="{{ item.id }}">
-                  {{ item.ingredientRu }}
+                  {{ item.ingredientEn }}
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="{{ item.id }}" class="line__input line__input--price"
-                    placeholder="{{ item.inputCoastPlaceholderRu }}">
+                    placeholder="{{ item.inputCoastPlaceholderEn }}">
                   <label class="line__smal-label" for="{{ item.id }}">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="{{ item.inputAmountValue }}" class="line__input"
-                    id="amount-of-{{ item.id }}" placeholder="{{ item.inputAmountPlaceholderRu }}">
+                    id="amount-of-{{ item.id }}" placeholder="{{ item.inputAmountPlaceholderEn }}">
                   <label class="line__smal-label" for="amount-of-{{ item.id }}">
-                    {{ item.inputAmountLabelRu }}
+                    {{ item.inputAmountLabelEn }}
                   </label>
                 </div>
               </div>
@@ -71,20 +71,20 @@
               {% for item in translate.fillings %}
               <div class="form__line line">
                 <label class="line__label" for="{{ item.id }}">
-                  {{ item.ingredientRu }}
+                  {{ item.ingredientEn }}
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="{{ item.id }}" class="line__input line__input--price"
-                    placeholder="{{ item.inputCoastPlaceholderRu }}">
+                    placeholder="{{ item.inputCoastPlaceholderEn }}">
                   <label class="line__smal-label" for="{{ item.id }}">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="{{ item.inputAmountValue }}" class="line__input"
-                    id="amount-of-{{ item.id }}" placeholder="{{ item.inputAmountPlaceholderRu }}">
+                    id="amount-of-{{ item.id }}" placeholder="{{ item.inputAmountPlaceholderEn }}">
                   <label class="line__smal-label" for="amount-of-{{ item.id }}">
-                    {{ item.inputAmountLabelRu }}
+                    {{ item.inputAmountLabelEn }}
                   </label>
                 </div>
               </div>
@@ -92,89 +92,89 @@
             </fieldset>
           </form>
         </div>
-        <input type="button" value="{{ translate.priceGeneral.stepsBtn.ru }}"
+        <input type="button" value="{{ translate.priceGeneral.stepsBtn.en }}"
           class="steps__btn steps__btn--done steps__btn1" disabled>
       </div>
       <div class="block__section steps steps--second">
         <div class="steps__title">
-          {{ translate.priceGeneral.twoStep.ru }}
+          {{ translate.priceGeneral.twoStep.en }}
         </div>
         <div class="steps__body">
           <form class=" form">
             <fieldset class="form__fieldset fieldset-price" disabled>
               <div class="form__line line line--price line--title">
                 <div class="line__title">
-                  {{ translate.priceGeneral.twoStepShellsSubTitle1.ru }}
+                  {{ translate.priceGeneral.twoStepShellsSubTitle1.en }}
                 </div>
                 <div class="line__title">
-                  {{ translate.priceGeneral.twoStepShellsSubTitle2.ru }}
+                  {{ translate.priceGeneral.twoStepShellsSubTitle2.en }}
                 </div>
               </div>
               {% for item in translate.shells %}
               <div class="form__line line line--price">
                 <label class="line__label" for="{{ item.id }}-recipe">
-                  {{ item.ingredientRu }}
-                  {{ item.ingredientAltNameRu }}
+                  {{ item.ingredientEn }}
+                  {{ item.ingredientAltNameEn }}
                 </label>
                 <div class="line__info">
                   <input type="number" value="{{ item.inputAmountRecipeValue }}" id="{{ item.id }}-recipe"
                     class="line__input" {{ item.inputAtributDisabled }}>
                   <label class="line__smal-label" for="{{ item.id }}-recipe">
-                    {{ item.inputAmountLabelRu }}
+                    {{ item.inputAmountLabelEn }}
                   </label>
                 </div>
               </div>
               {% endfor %}
               <div class="form__line line line--price line--title">
                 <div class="line__title">
-                  {{ translate.priceGeneral.twoStepFillingsSubTitle1.ru }}
+                  {{ translate.priceGeneral.twoStepFillingsSubTitle1.en }}
                 </div>
                 <div class="line__title">
-                  {{ translate.priceGeneral.twoStepFillingsSubTitle2.ru }}
+                  {{ translate.priceGeneral.twoStepFillingsSubTitle2.en }}
                 </div>
               </div>
               {% for item in translate.fillings %}
               <div class="form__line line line--price">
                 <label class="line__label" for="{{ item.id }}-recipe">
-                  {{ item.ingredientRu }}
-                  {{ item.ingredientAltNameRu }}
+                  {{ item.ingredientEn }}
+                  {{ item.ingredientAltNameEn }}
                 </label>
                 <div class="line__info">
                   <input type="number" value="{{ item.inputAmountRecipeValue }}" id="{{ item.id }}-recipe"
                     class="line__input" {{ item.inputAtributDisabled }}>
                   <label class="line__smal-label" for="{{ item.id }}-recipe">
-                    {{ item.inputAmountLabelRu }}
+                    {{ item.inputAmountLabelEn }}
                   </label>
                 </div>
               </div>
               {% endfor %}
               <div class="form__line line line--price line--title">
                 <div class="line__title">
-                  {{ translate.priceGeneral.twoStepResultSubTitle1.ru }}
+                  {{ translate.priceGeneral.twoStepResultSubTitle1.en }}
                 </div>
                 <div class="line__title">
-                  {{ translate.priceGeneral.twoStepResultSubTitle2.ru }}
+                  {{ translate.priceGeneral.twoStepResultSubTitle2.en }}
                 </div>
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="shells">
-                  {{ translate.priceGeneral.twoStepResultShells.ru }}
+                  {{ translate.priceGeneral.twoStepResultShells.en }}
                 </label>
                 <div class="line__info">
                   <input type="number" value="50" id="shells" class="line__input">
                   <label class="line__smal-label" for="shells">
-                    {{ translate.priceGeneral.twoStepResultPieces.ru }}
+                    {{ translate.priceGeneral.twoStepResultPieces.en }}
                   </label>
                 </div>
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="fillings">
-                  {{ translate.priceGeneral.twoStepResultFillings.ru }}
+                  {{ translate.priceGeneral.twoStepResultFillings.en }}
                 </label>
                 <div class="line__info">
                   <input type="number" value="10" id="fillings" class="line__input">
                   <label class="line__smal-label" for="fillings">
-                    {{ translate.priceGeneral.twoStepResultGram.ru }}
+                    {{ translate.priceGeneral.twoStepResultGram.en }}
                   </label>
                 </div>
 
@@ -182,12 +182,12 @@
             </fieldset>
           </form>
         </div>
-        <input type="button" value="{{ translate.priceGeneral.stepsBtn.ru }}"
+        <input type="button" value="{{ translate.priceGeneral.stepsBtn.en }}"
           class="steps__btn steps__btn--done steps__btn2" disabled>
       </div>
       <div class="block__section steps steps--third">
         <div class="steps__title">
-          {{ translate.priceGeneral.endStep.ru }}
+          {{ translate.priceGeneral.endStep.en }}
         </div>
         <div class="steps__body">
           <div class="form">
@@ -195,7 +195,7 @@
               <div class="line-result__preview">
                 <picture class="line-result__picture">
                   <source srcset="img/macaron-for-cost.webp" type="image/webp">
-                  <img src="img/macaron-for-cost.png" alt="{{ translate.priceGeneral.imgAlt.ru }}"
+                  <img src="img/macaron-for-cost.png" alt="{{ translate.priceGeneral.imgAlt.en }}"
                     class="line-result__img" width="105" height="67">
                 </picture>
                 <div class="line-result__numbers">
@@ -216,11 +216,11 @@
                 </div>
               </div>
               <div class="line-result__note">
-                {{ translate.priceGeneral.endNote.ru }}
+                {{ translate.priceGeneral.endNote.en }}
               </div>
               <details class="line-result__details details-price">
                 <summary class="details-price__title">
-                  {{ translate.priceGeneral.endSubTitle.ru }}
+                  {{ translate.priceGeneral.endSubTitle.en }}
                 </summary>
                 <div class="details-price__table table-price">
                   <div class="table-price__title">
@@ -230,37 +230,37 @@
                       <span id="sum-price-shells-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleAmountExpenses.ru }}
+                      {{ translate.priceGeneral.endSubTitleAmountExpenses.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span>÷</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleDivide.ru }}
+                      {{ translate.priceGeneral.endSubTitleDivide.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span id="shells-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleQuantityShells.ru }}
+                      {{ translate.priceGeneral.endSubTitleQuantityShells.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span>=</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleInResult.ru }}
+                      {{ translate.priceGeneral.endSubTitleInResult.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span id="total-price-one-shells-3">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleOneShells.ru }}
+                      {{ translate.priceGeneral.endSubTitleOneShells.en }}
                     </div>
                   </div>
                   {% for item in translate.shells %}
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      {{ item.ingredientRu }}
+                      {{ item.ingredientEn }}
                     </div>
                     <div class="table-price__weight"><span id="{{ item.id }}-recipe-2"></span>
                       {{ item.inputAmountRecipeWeight }} gr</div>
@@ -270,75 +270,75 @@
                   {% endfor %}
                   <div class="table-price__line table-price__line--sum">
                     <div class="table-price__name">
-                      {{ translate.priceGeneral.endSubTitleSum.ru }}
+                      {{ translate.priceGeneral.endSubTitleSum.en }}
                     </div>
                     <div class="table-price__weight"><span id="sum-weight-shells">0</span> gr</div>
                     <div class="table-price__price"><span id="sum-price-shells">0</span> <span
                         class="selected-currency">$</span></div>
                   </div>
                   <div class="table-price__title">
-                    {{ translate.priceGeneral.endSubTitleFillings.ru }}
+                    {{ translate.priceGeneral.endSubTitleFillings.en }}
                   </div>
                   <div class="table-price__result">
                     <div class="table-price__result-left">
                       <span id="sum-price-fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleAmountExpenses.ru }}
+                      {{ translate.priceGeneral.endSubTitleAmountExpenses.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span>÷</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleDivide.ru }}
+                      {{ translate.priceGeneral.endSubTitleDivide.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span id="sum-weight-fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleQuantityGrams.ru }}
+                      {{ translate.priceGeneral.endSubTitleQuantityGrams.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span>=</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleInResult.ru }}
+                      {{ translate.priceGeneral.endSubTitleInResult.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span id="sum-price-one-gram-fillings">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleOneGram.ru }}
+                      {{ translate.priceGeneral.endSubTitleOneGram.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span>×</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleMultiply.ru }}
+                      {{ translate.priceGeneral.endSubTitleMultiply.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span id="fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleOneFillings.ru }}
+                      {{ translate.priceGeneral.endSubTitleOneFillings.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span>=</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleInResult.ru }}
+                      {{ translate.priceGeneral.endSubTitleInResult.en }}
                     </div>
                     <div class="table-price__result-left">
                       <span id="total-price-one-fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      {{ translate.priceGeneral.endSubTitleOneMacaron.ru }}
+                      {{ translate.priceGeneral.endSubTitleOneMacaron.en }}
                     </div>
                   </div>
                   {% for item in translate.fillings %}
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      {{ item.ingredientRu }}
+                      {{ item.ingredientEn }}
                     </div>
                     <div class="table-price__weight"><span id="{{ item.id }}-recipe-2"></span>{{
                       item.inputAmountRecipeWeight }} gr</div>
@@ -348,7 +348,7 @@
                   {% endfor %}
                   <div class="table-price__line table-price__line--sum">
                     <div class="table-price__name">
-                      {{ translate.priceGeneral.endSubTitleSum.ru }}
+                      {{ translate.priceGeneral.endSubTitleSum.en }}
                     </div>
                     <div class="table-price__weight"><span id="sum-weight-fillings">0</span> gr</div>
                     <div class="table-price__price"><span id="sum-price-fillings">0</span> <span
@@ -359,7 +359,7 @@
             </div>
           </div>
         </div>
-        <input type="button" value="{{ translate.priceGeneral.endBtn.ru }}"
+        <input type="button" value="{{ translate.priceGeneral.endBtn.en }}"
           class="steps__btn steps__btn--done steps__btn3" disabled>
       </div>
 

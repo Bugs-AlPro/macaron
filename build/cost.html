@@ -1,12 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="себестоимость макарон">
-  <meta name="description" content="Калькулятор по расчету себестоимости пирожных макарон">
+  <meta name="keywords" content="cost, price">
+  <meta name="description" content="Calculator for calculating the cost of macarons">
   <title>Price</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -43,13 +43,13 @@
 
       <ul class="language header-fixed__language">
     <li class="language__item">
-        <a href="index.html" class="language__link">Главная</a>
+        <a href="en.html" class="language__link">Home</a>
     </li>
     <li class="language__item">
-        <a href="cost.html" class="language__link">en</a>
+        <div class="language__link language__link--current">en</div>
     </li>
     <li class="language__item">
-        <div class="language__link language__link--current">ru</div>
+        <a href="price.html" class="language__link">ru</a>
     </li>
 </ul>
 
@@ -69,13 +69,13 @@
     <div class="block">
       <div class="block__title title">
         <h1 class="title__text">
-          Расчет себестоимости макарон
+          Calculating the cost of macarons
         </h1>
       </div>
 
       <div class="block__section steps steps--activ steps--start">
         <div class="steps__title">
-          Выберите валюту
+          Select currency
         </div>
         <div class="steps__body steps__body--activ">
           <div class="price-settings">
@@ -88,103 +88,103 @@
             </div>
           </div>
         </div>
-        <input type="button" value="Начать"
+        <input type="button" value="Start"
           class="steps__btn steps__btn--activ steps__btn0">
       </div>
       <div class="block__section steps steps--first">
         <div class="steps__title">
-          Шаг первый (укажите стоимость продуктов)
+          Step one (specify the cost of ingredients)
         </div>
         <div class="steps__body">
           <form class=" form">
             <fieldset class="form__fieldset fieldset-cost">
               <div class="form__line line line--title">
                 <div class="line__title">
-                  Название
+                  Name
                 </div>
                 <div class="line__title">
-                  Цена за упаковку <span class="selected-currency">$</span></div>
+                  Price per package <span class="selected-currency">$</span></div>
                 <div class="line__title">
-                  Количество грамм в упаковке
+                  The amount of grams in the package
                 </div>
               </div>
               
               <div class="form__line line">
                 <label class="line__label" for="flour">
-                  Миндальная мука
+                  Almond flour
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="flour" class="line__input line__input--price"
-                    placeholder="Цена муки">
+                    placeholder="The price of flour">
                   <label class="line__smal-label" for="flour">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="1000" class="line__input"
-                    id="amount-of-flour" placeholder="Количество грамм">
+                    id="amount-of-flour" placeholder="The amount of grams">
                   <label class="line__smal-label" for="amount-of-flour">
-                    грамм
+                    grams
                   </label>
                 </div>
               </div>
               
               <div class="form__line line">
                 <label class="line__label" for="sugar">
-                  Сахар
+                  Sugar
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="sugar" class="line__input line__input--price"
-                    placeholder="Цена сахара">
+                    placeholder="The price of sugar">
                   <label class="line__smal-label" for="sugar">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="1000" class="line__input"
-                    id="amount-of-sugar" placeholder="Количество грамм">
+                    id="amount-of-sugar" placeholder="The amount of grams">
                   <label class="line__smal-label" for="amount-of-sugar">
-                    грамм
+                    grams
                   </label>
                 </div>
               </div>
               
               <div class="form__line line">
                 <label class="line__label" for="powdered-sugar">
-                  Сахарная пудра
+                  Powdered sugar
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="powdered-sugar" class="line__input line__input--price"
-                    placeholder="Цена сахарной пудры">
+                    placeholder="The price of powdered sugar">
                   <label class="line__smal-label" for="powdered-sugar">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="500" class="line__input"
-                    id="amount-of-powdered-sugar" placeholder="Количество грамм">
+                    id="amount-of-powdered-sugar" placeholder="The amount of grams">
                   <label class="line__smal-label" for="amount-of-powdered-sugar">
-                    грамм
+                    grams
                   </label>
                 </div>
               </div>
               
               <div class="form__line line">
                 <label class="line__label" for="egg">
-                  Яичный белок
+                  Egg white
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="egg" class="line__input line__input--price"
-                    placeholder="Цена яйца">
+                    placeholder="The price of eggs">
                   <label class="line__smal-label" for="egg">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="10" class="line__input"
-                    id="amount-of-egg" placeholder="Количество грамм">
+                    id="amount-of-egg" placeholder="The amount of grams">
                   <label class="line__smal-label" for="amount-of-egg">
-                    штук
+                    pieces
                   </label>
                 </div>
               </div>
@@ -193,40 +193,40 @@
               
               <div class="form__line line">
                 <label class="line__label" for="chocolate">
-                  Шоколад
+                  Chocolate
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="chocolate" class="line__input line__input--price"
-                    placeholder="Цена шоколада">
+                    placeholder="The price of chocolate">
                   <label class="line__smal-label" for="chocolate">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="1000" class="line__input"
-                    id="amount-of-chocolate" placeholder="Количество грамм">
+                    id="amount-of-chocolate" placeholder="The amount of grams">
                   <label class="line__smal-label" for="amount-of-chocolate">
-                    грамм
+                    grams
                   </label>
                 </div>
               </div>
               
               <div class="form__line line">
                 <label class="line__label" for="cream">
-                  Сливки
+                  Cream
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="cream" class="line__input line__input--price"
-                    placeholder="Цена сливок">
+                    placeholder="The price of cream">
                   <label class="line__smal-label" for="cream">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="1000" class="line__input"
-                    id="amount-of-cream" placeholder="Количество грамм">
+                    id="amount-of-cream" placeholder="The amount of grams">
                   <label class="line__smal-label" for="amount-of-cream">
-                    грамм
+                    grams
                   </label>
                 </div>
               </div>
@@ -234,145 +234,145 @@
             </fieldset>
           </form>
         </div>
-        <input type="button" value="Далее"
+        <input type="button" value="Next"
           class="steps__btn steps__btn--done steps__btn1" disabled>
       </div>
       <div class="block__section steps steps--second">
         <div class="steps__title">
-          Шаг второй (проверьте рецепт)
+          Step two (check the recipe)
         </div>
         <div class="steps__body">
           <form class=" form">
             <fieldset class="form__fieldset fieldset-price" disabled>
               <div class="form__line line line--price line--title">
                 <div class="line__title">
-                  Ингредиенты для крышечек
+                  Ingredients for shells
                 </div>
                 <div class="line__title">
-                  Количество грамм в рецепте
+                  The amount of grams in the recipe
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="flour-recipe">
-                  Миндальная мука
+                  Almond flour
                   
                 </label>
                 <div class="line__info">
                   <input type="number" value="165" id="flour-recipe"
                     class="line__input" >
                   <label class="line__smal-label" for="flour-recipe">
-                    грамм
+                    grams
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="sugar-recipe">
-                  Сахар
+                  Sugar
                   
                 </label>
                 <div class="line__info">
                   <input type="number" value="150" id="sugar-recipe"
                     class="line__input" >
                   <label class="line__smal-label" for="sugar-recipe">
-                    грамм
+                    grams
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="powdered-sugar-recipe">
-                  Сахарная пудра
+                  Powdered sugar
                   
                 </label>
                 <div class="line__info">
                   <input type="number" value="135" id="powdered-sugar-recipe"
                     class="line__input" >
                   <label class="line__smal-label" for="powdered-sugar-recipe">
-                    грамм
+                    grams
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="egg-recipe">
-                  Яичный белок
-                  (в среднем 4 яйца = 110 грамм)
+                  Egg white
+                  (average of 4 eggs = 110 grams)
                 </label>
                 <div class="line__info">
                   <input type="number" value="4" id="egg-recipe"
                     class="line__input" disabled>
                   <label class="line__smal-label" for="egg-recipe">
-                    штук
+                    pieces
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price line--title">
                 <div class="line__title">
-                  Ингредиенты для начинки
+                  Ingredients for fillings
                 </div>
                 <div class="line__title">
-                  Количестко грамм в рецепте
+                  The amount of grams in the recipe
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="chocolate-recipe">
-                  Шоколад
+                  Chocolate
                   
                 </label>
                 <div class="line__info">
                   <input type="number" value="100" id="chocolate-recipe"
                     class="line__input" >
                   <label class="line__smal-label" for="chocolate-recipe">
-                    грамм
+                    grams
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="cream-recipe">
-                  Сливки
+                  Cream
                   
                 </label>
                 <div class="line__info">
                   <input type="number" value="50" id="cream-recipe"
                     class="line__input" >
                   <label class="line__smal-label" for="cream-recipe">
-                    грамм
+                    grams
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price line--title">
                 <div class="line__title">
-                  Результаты
+                  Results
                 </div>
                 <div class="line__title">
-                  Количество
+                  Quantity
                 </div>
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="shells">
-                  Сколько готовых крышечек у вас получается в среднем после приготовления этого рецепта?
+                  How many finished shells do you usually get on average after making this recipe?
                 </label>
                 <div class="line__info">
                   <input type="number" value="50" id="shells" class="line__input">
                   <label class="line__smal-label" for="shells">
-                    штук
+                    pieces
                   </label>
                 </div>
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="fillings">
-                  Сколько грамм начинки в среднем вы отсаживаете на каждую крышечку?
+                  How many grams of filling do you typically pipe onto each shell on average?
                 </label>
                 <div class="line__info">
                   <input type="number" value="10" id="fillings" class="line__input">
                   <label class="line__smal-label" for="fillings">
-                    грамм
+                    grams
                   </label>
                 </div>
 
@@ -380,12 +380,12 @@
             </fieldset>
           </form>
         </div>
-        <input type="button" value="Далее"
+        <input type="button" value="Next"
           class="steps__btn steps__btn--done steps__btn2" disabled>
       </div>
       <div class="block__section steps steps--third">
         <div class="steps__title">
-          Шаг третий (посмотрите результат)
+          Step three (review the result)
         </div>
         <div class="steps__body">
           <div class="form">
@@ -393,7 +393,7 @@
               <div class="line-result__preview">
                 <picture class="line-result__picture">
                   <source srcset="img/macaron-for-cost.webp" type="image/webp">
-                  <img src="img/macaron-for-cost.png" alt="Схематическое изображение пирожного макарон: две крышечки и начинка"
+                  <img src="img/macaron-for-cost.png" alt="Here is a schematic representation of a macaron: two shells and filling."
                     class="line-result__img" width="105" height="67">
                 </picture>
                 <div class="line-result__numbers">
@@ -414,13 +414,12 @@
                 </div>
               </div>
               <div class="line-result__note">
-                Обратите внимание, что эта сумма состоит исключительно из расходов на продукты. Мы не учитываем в этой
-таблице стоимость затрат на электроэнергию, износ оборудования, расходные материалы и
-другое.
+                Note that this amount consists solely of expenses for ingredients. We do not include in this table the cost of
+electricity, equipment depreciation, consumables, and other expenses.
               </div>
               <details class="line-result__details details-price">
                 <summary class="details-price__title">
-                  Посмотреть подробности расчётов
+                  View the details of the calculations
                 </summary>
                 <div class="details-price__table table-price">
                   <div class="table-price__title">
@@ -430,37 +429,37 @@
                       <span id="sum-price-shells-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - общую сумму расходов
+                      - the total amount of expenses
                     </div>
                     <div class="table-price__result-left">
                       <span>÷</span>
                     </div>
                     <div class="table-price__result-text">
-                      - делим на
+                      - divided by
                     </div>
                     <div class="table-price__result-left">
                       <span id="shells-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - количество крышечек
+                      - quantity of shells
                     </div>
                     <div class="table-price__result-left">
                       <span>=</span>
                     </div>
                     <div class="table-price__result-text">
-                      - в результате получается
+                      - as a result, it turns out to be
                     </div>
                     <div class="table-price__result-left">
                       <span id="total-price-one-shells-3">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - стоимость одной крышечки
+                      - the cost of one shell
                     </div>
                   </div>
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Миндальная мука
+                      Almond flour
                     </div>
                     <div class="table-price__weight"><span id="flour-recipe-2"></span>
                        gr</div>
@@ -470,7 +469,7 @@
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Сахар
+                      Sugar
                     </div>
                     <div class="table-price__weight"><span id="sugar-recipe-2"></span>
                        gr</div>
@@ -480,7 +479,7 @@
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Сахарная пудра
+                      Powdered sugar
                     </div>
                     <div class="table-price__weight"><span id="powdered-sugar-recipe-2"></span>
                        gr</div>
@@ -490,7 +489,7 @@
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Яичный белок
+                      Egg white
                     </div>
                     <div class="table-price__weight"><span id="egg-recipe-2"></span>
                       110 gr</div>
@@ -500,75 +499,75 @@
                   
                   <div class="table-price__line table-price__line--sum">
                     <div class="table-price__name">
-                      Сумма
+                      Total
                     </div>
                     <div class="table-price__weight"><span id="sum-weight-shells">0</span> gr</div>
                     <div class="table-price__price"><span id="sum-price-shells">0</span> <span
                         class="selected-currency">$</span></div>
                   </div>
                   <div class="table-price__title">
-                    Начинки
+                    Shells
                   </div>
                   <div class="table-price__result">
                     <div class="table-price__result-left">
                       <span id="sum-price-fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - общую сумму расходов
+                      - the total amount of expenses
                     </div>
                     <div class="table-price__result-left">
                       <span>÷</span>
                     </div>
                     <div class="table-price__result-text">
-                      - делим на
+                      - divided by
                     </div>
                     <div class="table-price__result-left">
                       <span id="sum-weight-fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - количество грамм
+                      - quantity of grams
                     </div>
                     <div class="table-price__result-left">
                       <span>=</span>
                     </div>
                     <div class="table-price__result-text">
-                      - в результате получается
+                      - as a result, it turns out to be
                     </div>
                     <div class="table-price__result-left">
                       <span id="sum-price-one-gram-fillings">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - стоимость одного грамма
+                      - the cost of one gram
                     </div>
                     <div class="table-price__result-left">
                       <span>×</span>
                     </div>
                     <div class="table-price__result-text">
-                      - умножаем на
+                      - multiplied by
                     </div>
                     <div class="table-price__result-left">
                       <span id="fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - количество грамм в одном пирожном
+                      - the amount of grams in one macaron
                     </div>
                     <div class="table-price__result-left">
                       <span>=</span>
                     </div>
                     <div class="table-price__result-text">
-                      - в результате получается
+                      - as a result, it turns out to be
                     </div>
                     <div class="table-price__result-left">
                       <span id="total-price-one-fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - стоимость для одного пирожного
+                      - the cost per macaron
                     </div>
                   </div>
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Шоколад
+                      Chocolate
                     </div>
                     <div class="table-price__weight"><span id="chocolate-recipe-2"></span> gr</div>
                     <div class="table-price__price"><span id="chocolate-recipe-cost">0</span> <span
@@ -577,7 +576,7 @@
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Сливки
+                      Cream
                     </div>
                     <div class="table-price__weight"><span id="cream-recipe-2"></span> gr</div>
                     <div class="table-price__price"><span id="cream-recipe-cost">0</span> <span
@@ -586,7 +585,7 @@
                   
                   <div class="table-price__line table-price__line--sum">
                     <div class="table-price__name">
-                      Сумма
+                      Total
                     </div>
                     <div class="table-price__weight"><span id="sum-weight-fillings">0</span> gr</div>
                     <div class="table-price__price"><span id="sum-price-fillings">0</span> <span
@@ -597,7 +596,7 @@
             </div>
           </div>
         </div>
-        <input type="button" value="Сброс"
+        <input type="button" value="Reset"
           class="steps__btn steps__btn--done steps__btn3" disabled>
       </div>
 
@@ -614,7 +613,7 @@
   <div class="container">
     <div class="footer">
       <div class="footer__title">
-        Ссылки
+        Links
       </div>
 
       <ul class="footer__list footer-links">
@@ -644,50 +643,49 @@
         <li class="footer-links__item">
           <details class="privacy">
             <summary class="privacy__summary">
-              Политика конфиденциальности
+              Privacy Policy
             </summary>
             <div class="privacy__title">
-              Дата вступления в силу: 1 сентября 2023
+              Effective Date: 23 septiembre 2023
             </div>
             <p class="privacy__text">
-              Посетив наш сайт и используя наши услуги, вы соглашаетесь с условиями нашей
-политики конфиденциальности.
+              By visiting our website and using our services, you agree to the terms of our privacy policy.
             </p>
             <div class="privacy__title">
-              1. Сбор и использование информации
+              1. Collection and Use of Information
             </div>
             <p class="privacy__text">
-              Мы не собираем и не храним личные данные посетителей нашего сайта, за исключением
-случаев, когда они предоставляют их добровольно (например, при оформлении заказа).
+              We do not collect or store personal data from visitors to our website unless provided voluntarily (e.g., when
+placing an order).
             </p>
             <div class="privacy__title">
-              2. Статистические данные и аналитика
+              2. Statistical Data and Analytics
             </div>
             <p class="privacy__text">
-              Мы используем инструменты, такие как Google Analytics и Facebook Pixel, для сбора статистических данных и анализа
-того, как посетители используют наш сайт. Эти инструменты могут использовать файлы cookie для отслеживания вашей
-активности. Вы можете отказаться от сбора статистических данных, выбрав соответствующие настройки в браузере.
+              We use tools such as Google Analytics and Facebook Pixel to collect statistical data and analyze how visitors use
+our website. These tools may use cookies to track your activity. You can opt out of data collection by adjusting the
+settings in your browser.
             </p>
             <div class="privacy__title">
-              3. Передача данных третьим сторонам
+              3. Sharing Data with Third Parties
             </div>
             <p class="privacy__text">
-              Мы не предоставляем полученные аналитические и статистические данные третьим сторонам.
+              We do not provide the analytical and statistical data we collect to third parties.
             </p>
             <div class="privacy__title">
-              4. Вопросы и контакты
+              4. Questions and Contacts
             </div>
             <p class="privacy__text">
-              Если у вас есть вопросы относительно нашей политики конфиденциальности, свяжитесь с автором курса Еленой Прониной
-по адресу электронной почты 
+              If you have any questions regarding our privacy policy, please contact the course author, Elena Pronina, at the
+email address 
               <a class="privacy__link" href="mailto:aleksprowork@gmail.com">aleksprowork@gmail.com</a>
             </p>
             <div class="privacy__title">
-              5. Изменения в политике конфиденциальности
+              5. Changes to the Privacy Policy
             </div>
             <p class="privacy__text">
-              Мы оставляем за собой право вносить изменения в нашу политику конфиденциальности.
-Любые изменения будут опубликованы на этой странице.<br>Благодарим за использование наших услуг!
+              We reserve the right to make changes to our privacy policy. Any changes will be posted on this page.<br>Thank you
+for using our services!
             </p>
           </details>
         </li>

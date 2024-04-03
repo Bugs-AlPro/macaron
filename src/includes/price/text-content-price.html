@@ -1,52 +1,296 @@
-{% set priceTitle = {
+{% set priceGeneral = {
 
 title: {
-ru: 'Укажите стоимоить продуктов',
-en: 'type',
+ru: 'Расчет себестоимости макарон',
+en: 'Calculating the cost of macarons',
 sp: 'type'
 },
-subTitle: {
-ru: 'Проверьте колличество грамм по вашему рецепту',
-en: 'type',
+startStep: {
+ru: 'Выберите валюту',
+en: 'Select currency',
+sp: 'type'
+},
+startStepBtn: {
+ru: 'Начать',
+en: 'Start',
+sp: 'type'
+},
+stepsBtn: {
+ru: 'Далее',
+en: 'Next',
+sp: 'type'
+},
+endBtn: {
+ru: 'Сброс',
+en: 'Reset',
+sp: 'type'
+},
+oneStep: {
+ru: 'Шаг первый (укажите стоимость продуктов)',
+en: 'Step one (specify the cost of ingredients)',
+sp: 'type'
+},
+oneStepSubTitle1: {
+ru: 'Название',
+en: 'Name',
+sp: 'type'
+},
+oneStepSubTitle2: {
+ru: 'Цена за упаковку ',
+en: 'Price per package ',
+sp: 'type'
+},
+oneStepSubTitle3: {
+ru: 'Количество грамм в упаковке',
+en: 'The amount of grams in the package',
+sp: 'type'
+},
+twoStep: {
+ru: 'Шаг второй (проверьте рецепт)',
+en: 'Step two (check the recipe)',
+sp: 'type'
+},
+twoStepShellsSubTitle1: {
+ru: 'Ингредиенты для крышечек',
+en: 'Ingredients for shells',
+sp: 'type'
+},
+twoStepShellsSubTitle2: {
+ru: 'Количество грамм в рецепте',
+en: 'The amount of grams in the recipe',
+sp: 'type'
+},
+twoStepFillingsSubTitle1: {
+ru: 'Ингредиенты для начинки',
+en: 'Ingredients for fillings',
+sp: 'type'
+},
+twoStepFillingsSubTitle2: {
+ru: 'Количестко грамм в рецепте',
+en: 'The amount of grams in the recipe',
+sp: 'type'
+},
+twoStepResultSubTitle1: {
+ru: 'Результаты',
+en: 'Results',
+sp: 'type'
+},
+twoStepResultSubTitle2: {
+ru: 'Количество',
+en: 'Quantity',
+sp: 'type'
+},
+twoStepResultShells: {
+ru: 'Сколько готовых крышечек у вас получается в среднем после приготовления этого рецепта?',
+en: 'How many finished shells do you usually get on average after making this recipe?',
+sp: 'type'
+},
+twoStepResultPieces: {
+ru: 'штук',
+en: 'pieces',
+sp: 'type'
+},
+twoStepResultFillings: {
+ru: 'Сколько грамм начинки в среднем вы отсаживаете на каждую крышечку?',
+en: 'How many grams of filling do you typically pipe onto each shell on average?',
+sp: 'type'
+},
+twoStepResultGram: {
+ru: 'грамм',
+en: 'grams',
+sp: 'type'
+},
+endStep: {
+ru: 'Шаг третий (посмотрите результат)',
+en: 'Step three (review the result)',
+sp: 'type'
+},
+endNote: {
+ru: 'Обратите внимание, что эта сумма состоит исключительно из расходов на продукты. Мы не учитываем в этой
+таблице стоимость затрат на электроэнергию, износ оборудования, расходные материалы и
+другое.',
+en: 'Note that this amount consists solely of expenses for ingredients. We do not include in this table the cost of
+electricity, equipment depreciation, consumables, and other expenses.',
+sp: 'type'
+},
+endSubTitle: {
+ru: 'Посмотреть подробности расчётов',
+en: 'View the details of the calculations',
+sp: 'type'
+},
+endSubTitleShells: {
+ru: 'Крышечки',
+en: 'Shells',
+sp: 'type'
+},
+endSubTitleFillings: {
+ru: 'Начинки',
+en: 'Shells',
+sp: 'type'
+},
+endSubTitleSum: {
+ru: 'Сумма',
+en: 'Total',
+sp: 'type'
+},
+endSubTitleAmountExpenses: {
+ru: '- общую сумму расходов',
+en: '- the total amount of expenses',
+sp: 'type'
+},
+endSubTitleDivide: {
+ru: '- делим на',
+en: '- divided by',
+sp: 'type'
+},
+endSubTitleMultiply: {
+ru: '- умножаем на',
+en: '- multiplied by',
+sp: 'type'
+},
+endSubTitleInResult: {
+ru: '- в результате получается',
+en: '- as a result, it turns out to be',
+sp: 'type'
+},
+endSubTitleQuantityShells: {
+ru: '- количество крышечек',
+en: '- quantity of shells',
+sp: 'type'
+},
+endSubTitleQuantityGrams: {
+ru: '- количество грамм',
+en: '- quantity of grams',
+sp: 'type'
+},
+endSubTitleOneShells: {
+ru: '- стоимость одной крышечки',
+en: '- the cost of one shell',
+sp: 'type'
+},
+endSubTitleOneFillings: {
+ru: '- количество грамм в одном пирожном',
+en: '- the amount of grams in one macaron',
+sp: 'type'
+},
+endSubTitleOneMacaron: {
+ru: '- стоимость для одного пирожного',
+en: '- the cost per macaron',
+sp: 'type'
+},
+endSubTitleOneGram: {
+ru: '- стоимость одного грамма',
+en: '- the cost of one gram',
+sp: 'type'
+},
+imgAlt: {
+ru: 'Схематическое изображение пирожного макарон: две крышечки и начинка',
+en: 'Here is a schematic representation of a macaron: two shells and filling.',
 sp: 'type'
 }
 }
 %}
 
-{% set errorsTypes = [
-{ru: "Почему макарон пустые внутри?",
-en: "Why are the shells inside empty?"
+{% set shells = [
+
+{
+id: "flour",
+ingredientRu: "Миндальная мука",
+ingredientEn: "Almond flour",
+inputCoastPlaceholderRu: "Цена муки",
+inputCoastPlaceholderEn: "The price of flour",
+inputCoastLabelRu: "цена",
+inputCoastLabelEn: "price",
+inputAmountPlaceholderRu: "Количество грамм",
+inputAmountPlaceholderEn: "The amount of grams",
+inputAmountLabelRu: "грамм",
+inputAmountLabelEn: "grams",
+inputAmountRecipeValue: "165",
+inputAmountValue: "1000"
 },
-{ru: "Почему крышечки не ровные?",
-en: "Why are the shells uneven?"
+{
+id: "sugar",
+ingredientRu: "Сахар",
+ingredientEn: "Sugar",
+inputCoastPlaceholderRu: "Цена сахара",
+inputCoastPlaceholderEn: "The price of sugar",
+inputCoastLabelRu: "цена",
+inputCoastLabelEn: "price",
+inputAmountPlaceholderRu: "Количество грамм",
+inputAmountPlaceholderEn: "The amount of grams",
+inputAmountLabelRu: "грамм",
+inputAmountLabelEn: "grams",
+inputAmountRecipeValue: "150",
+inputAmountValue: "1000"
 },
-{ru: "Почему макарон после начинки отсырели?",
-en: "Why did the macarons get wet after filling?"
+{
+id: "powdered-sugar",
+ingredientRu: "Сахарная пудра",
+ingredientEn: "Powdered sugar",
+inputCoastPlaceholderRu: "Цена сахарной пудры",
+inputCoastPlaceholderEn: "The price of powdered sugar",
+inputCoastLabelRu: "цена",
+inputCoastLabelEn: "price",
+inputAmountPlaceholderRu: "Количество грамм",
+inputAmountPlaceholderEn: "The amount of grams",
+inputAmountLabelRu: "грамм",
+inputAmountLabelEn: "grams",
+inputAmountRecipeValue: "135",
+inputAmountValue: "500"
 },
-{ru: "Почему крышечки взрываются?",
-en: "Why do the shells 'explode'?"
-},
-{ru: "Почему юбочки не растут?",
-en: "Why don't feet grow?"
-},
-{ru: "Как выбрать правильную температуру для своей духовки?",
-en: "How to choose the right temperature for your oven?"
-},
-{ru: "Почему меренга не получается?",
-en: "Why is the meringue not going well?"
-},
-{ru: "Почему нужна электрическая духовка?",
-en: "Why do I need an electric oven?"
+{
+id: "egg",
+ingredientRu: "Яичный белок",
+ingredientEn: "Egg white",
+ingredientAltNameRu: "(в среднем 4 яйца = 110 грамм)",
+ingredientAltNameEn: "(average of 4 eggs = 110 grams)",
+inputCoastPlaceholderRu: "Цена яйца",
+inputCoastPlaceholderEn: "The price of eggs",
+inputCoastLabelRu: "цена",
+inputCoastLabelEn: "price",
+inputAmountPlaceholderRu: "Количество грамм",
+inputAmountPlaceholderEn: "The amount of grams",
+inputAmountLabelRu: "штук",
+inputAmountLabelEn: "pieces",
+inputAmountRecipeValue: "4",
+inputAmountRecipeWeight: "110",
+inputAtributDisabled: "disabled",
+inputAmountValue: "10"
 }
+
 ]%}
 
-{% set errors = [
-{img: "bad1", alt: "Пример плохих макарон. Не ровные крышечки макаронс.", alt2: "An example of bad macaron. Not pretty
-shells."},
-{img: "bad2", alt: "Пример плохих макарон. Пустые внутри.", alt2: "An example of bad macaron. Empty inside."},
-{img: "bad3", alt: "Пример плохих макарон. Сгоревшие крышечки.", alt2: "An example of bad macaron. Burnt shels."},
-{img: "bad4", alt: "Пример плохих макарон. Не получившиеся пирожные.", alt2: "An example of bad macaron. Unfinished
-cakes."},
-{img: "bad5", alt: "Пример плохих макарон. Смещенный центр после выпекания.", alt2: "An example of bad macaron.
-Displaced center after baking."}
+{% set fillings = [
+
+{
+id: "chocolate",
+ingredientRu: "Шоколад",
+ingredientEn: "Chocolate",
+inputCoastPlaceholderRu: "Цена шоколада",
+inputCoastPlaceholderEn: "The price of chocolate",
+inputCoastLabelRu: "цена",
+inputCoastLabelEn: "price",
+inputAmountPlaceholderRu: "Количество грамм",
+inputAmountPlaceholderEn: "The amount of grams",
+inputAmountLabelRu: "грамм",
+inputAmountLabelEn: "grams",
+inputAmountRecipeValue: "100",
+inputAmountValue: "1000"
+},
+{
+id: "cream",
+ingredientRu: "Сливки",
+ingredientEn: "Cream",
+inputCoastPlaceholderRu: "Цена сливок",
+inputCoastPlaceholderEn: "The price of cream",
+inputCoastLabelRu: "цена",
+inputCoastLabelEn: "price",
+inputAmountPlaceholderRu: "Количество грамм",
+inputAmountPlaceholderEn: "The amount of grams",
+inputAmountLabelRu: "грамм",
+inputAmountLabelEn: "grams",
+inputAmountRecipeValue: "50",
+inputAmountValue: "1000"
+}
+
 ]%}

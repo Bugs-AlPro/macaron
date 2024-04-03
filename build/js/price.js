@@ -350,7 +350,11 @@ function activateSection(section) {
 
 function markButtonAsDone(button) {
   button.classList.replace('steps__btn--activ', 'steps__btn--done');
-  button.setAttribute("value", "Готово");
+  if (button.value.includes("Далее")) {
+    button.setAttribute("value", "Готово");
+  } else if (button.value.includes("Next")) {
+    button.setAttribute("value", "Done");
+  }
 }
 function markResetButtonAsDone(button) {
   button.classList.replace('steps__btn--activ', 'steps__btn--done');

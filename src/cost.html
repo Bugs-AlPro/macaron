@@ -1,7 +1,7 @@
 {% set title = 'Price' %}
-{% set lang = 'ru' %}
-{% set keywords = 'себестоимость макарон' %}
-{% set description = 'Калькулятор по расчету себестоимости пирожных макарон' %}
+{% set lang = 'en' %}
+{% set keywords = 'cost, price' %}
+{% set description = 'Calculator for calculating the cost of macarons' %}
 
 {% extends "templates/default.html" %}
 
@@ -38,15 +38,15 @@
 <body>
 
 
-  {% include "includes/header/header-price-ru.html" %}
+  {% include "includes/header/header-price-en.html" %}
 
   <main class="main">
 
-    {% include "includes/price/price-ru.html" %}
+    {% include "includes/price/price-en.html" %}
 
   </main>
 
-  {% include "includes/footer/footer-ru.html" %}
+  {% include "includes/footer/footer-en.html" %}
 
   {% include "includes/js/js-price.html" %}
 
