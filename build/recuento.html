@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="cost, price">
-  <meta name="description" content="Calculator for calculating the cost of macarons">
-  <title>Price</title>
+  <meta name="keywords" content="costo, precio">
+  <meta name="description" content="Calculadora para calcular el costo de los macarrones">
+  <title>Recuento</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -43,13 +43,13 @@
 
       <ul class="language header-fixed__language">
     <li class="language__item">
-        <a href="en.html" class="language__link">Home</a>
+        <a href="es.html" class="language__link">Inicio</a>
     </li>
     <li class="language__item">
-        <a href="recuento.html" class="language__link ">es</a>
+        <div class="language__link language__link--current">es</div>
     </li>
     <li class="language__item">
-        <div class="language__link language__link--current">en</div>
+        <a href="cost.html" class="language__link">en</a>
     </li>
     <li class="language__item">
         <a href="price.html" class="language__link">ru</a>
@@ -72,13 +72,13 @@
     <div class="block">
       <div class="block__title title">
         <h1 class="title__text">
-          Calculating the cost of macarons
+          El cálculo del costo de producción de macarons
         </h1>
       </div>
 
       <div class="block__section steps steps--activ steps--start">
         <div class="steps__title">
-          Select currency
+          Seleccione moneda
         </div>
         <div class="steps__body steps__body--activ">
           <div class="price-settings">
@@ -91,103 +91,103 @@
             </div>
           </div>
         </div>
-        <input type="button" value="Start"
+        <input type="button" value="Comenzar"
           class="steps__btn steps__btn--activ steps__btn0">
       </div>
       <div class="block__section steps steps--first">
         <div class="steps__title">
-          Step one (specify the cost of ingredients)
+          Paso uno (especificar el costo de los ingredientes)
         </div>
         <div class="steps__body">
           <form class=" form">
             <fieldset class="form__fieldset fieldset-cost">
               <div class="form__line line line--title">
                 <div class="line__title">
-                  Name
+                  Nombre
                 </div>
                 <div class="line__title">
-                  Price per package <span class="selected-currency">$</span></div>
+                  Precio por paquete <span class="selected-currency">$</span></div>
                 <div class="line__title">
-                  The amount of grams in the package
+                  Cantidad de gramos por paquete
                 </div>
               </div>
               
               <div class="form__line line">
                 <label class="line__label" for="flour">
-                  Almond flour
+                  Harina de almendras
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="flour" class="line__input line__input--price"
-                    placeholder="The price of flour">
+                    placeholder="El precio de la harina">
                   <label class="line__smal-label" for="flour">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="1000" class="line__input"
-                    id="amount-of-flour" placeholder="The amount of grams">
+                    id="amount-of-flour" placeholder="La cantidad de gramos">
                   <label class="line__smal-label" for="amount-of-flour">
-                    grams
+                    gramos
                   </label>
                 </div>
               </div>
               
               <div class="form__line line">
                 <label class="line__label" for="sugar">
-                  Sugar
+                  Azúcar
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="sugar" class="line__input line__input--price"
-                    placeholder="The price of sugar">
+                    placeholder="El precio del azúcar">
                   <label class="line__smal-label" for="sugar">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="1000" class="line__input"
-                    id="amount-of-sugar" placeholder="The amount of grams">
+                    id="amount-of-sugar" placeholder="La cantidad de gramos">
                   <label class="line__smal-label" for="amount-of-sugar">
-                    grams
+                    gramos
                   </label>
                 </div>
               </div>
               
               <div class="form__line line">
                 <label class="line__label" for="powdered-sugar">
-                  Powdered sugar
+                  Azúcar en polvo
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="powdered-sugar" class="line__input line__input--price"
-                    placeholder="The price of powdered sugar">
+                    placeholder="El precio del azúcar glas">
                   <label class="line__smal-label" for="powdered-sugar">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="500" class="line__input"
-                    id="amount-of-powdered-sugar" placeholder="The amount of grams">
+                    id="amount-of-powdered-sugar" placeholder="La cantidad de gramos">
                   <label class="line__smal-label" for="amount-of-powdered-sugar">
-                    grams
+                    gramos
                   </label>
                 </div>
               </div>
               
               <div class="form__line line">
                 <label class="line__label" for="egg">
-                  Egg white
+                  Clara de huevo
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="egg" class="line__input line__input--price"
-                    placeholder="The price of eggs">
+                    placeholder="Precio del huevo">
                   <label class="line__smal-label" for="egg">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="10" class="line__input"
-                    id="amount-of-egg" placeholder="The amount of grams">
+                    id="amount-of-egg" placeholder="La cantidad de gramos">
                   <label class="line__smal-label" for="amount-of-egg">
-                    pieces
+                    piezas
                   </label>
                 </div>
               </div>
@@ -200,36 +200,36 @@
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="chocolate" class="line__input line__input--price"
-                    placeholder="The price of chocolate">
+                    placeholder="El precio del chocolate">
                   <label class="line__smal-label" for="chocolate">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="1000" class="line__input"
-                    id="amount-of-chocolate" placeholder="The amount of grams">
+                    id="amount-of-chocolate" placeholder="La cantidad de gramos">
                   <label class="line__smal-label" for="amount-of-chocolate">
-                    grams
+                    gramos
                   </label>
                 </div>
               </div>
               
               <div class="form__line line">
                 <label class="line__label" for="cream">
-                  Cream
+                  Crema
                 </label>
                 <div class="line__info">
                   <input type="number" value="1" id="cream" class="line__input line__input--price"
-                    placeholder="The price of cream">
+                    placeholder="El precio de la crema">
                   <label class="line__smal-label" for="cream">
                     <span class="selected-currency">$</span>
                   </label>
                 </div>
                 <div class="line__info">
                   <input type="number" value="1000" class="line__input"
-                    id="amount-of-cream" placeholder="The amount of grams">
+                    id="amount-of-cream" placeholder="La cantidad de gramos">
                   <label class="line__smal-label" for="amount-of-cream">
-                    grams
+                    gramos
                   </label>
                 </div>
               </div>
@@ -237,87 +237,87 @@
             </fieldset>
           </form>
         </div>
-        <input type="button" value="Next"
+        <input type="button" value="Siguiente"
           class="steps__btn steps__btn--done steps__btn1" disabled>
       </div>
       <div class="block__section steps steps--second">
         <div class="steps__title">
-          Step two (check the recipe)
+          Paso dos (verificar la receta)
         </div>
         <div class="steps__body">
           <form class=" form">
             <fieldset class="form__fieldset fieldset-price" disabled>
               <div class="form__line line line--price line--title">
                 <div class="line__title">
-                  Ingredients for shells
+                  Ingredientes para los caparazones
                 </div>
                 <div class="line__title">
-                  The amount of grams in the recipe
+                  Número de gramos en la receta
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="flour-recipe">
-                  Almond flour
+                  Harina de almendras
                   
                 </label>
                 <div class="line__info">
                   <input type="number" value="165" id="flour-recipe"
                     class="line__input" >
                   <label class="line__smal-label" for="flour-recipe">
-                    grams
+                    gramos
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="sugar-recipe">
-                  Sugar
+                  Azúcar
                   
                 </label>
                 <div class="line__info">
                   <input type="number" value="150" id="sugar-recipe"
                     class="line__input" >
                   <label class="line__smal-label" for="sugar-recipe">
-                    grams
+                    gramos
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="powdered-sugar-recipe">
-                  Powdered sugar
+                  Azúcar en polvo
                   
                 </label>
                 <div class="line__info">
                   <input type="number" value="135" id="powdered-sugar-recipe"
                     class="line__input" >
                   <label class="line__smal-label" for="powdered-sugar-recipe">
-                    grams
+                    gramos
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="egg-recipe">
-                  Egg white
-                  (average of 4 eggs = 110 grams)
+                  Clara de huevo
+                  (promedio de 4 huevos = 110 gramos)
                 </label>
                 <div class="line__info">
                   <input type="number" value="4" id="egg-recipe"
                     class="line__input" disabled>
                   <label class="line__smal-label" for="egg-recipe">
-                    pieces
+                    piezas
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price line--title">
                 <div class="line__title">
-                  Ingredients for fillings
+                  Ingredientes para el relleno
                 </div>
                 <div class="line__title">
-                  The amount of grams in the recipe
+                  Número de gramos en la receta
                 </div>
               </div>
               
@@ -330,52 +330,52 @@
                   <input type="number" value="100" id="chocolate-recipe"
                     class="line__input" >
                   <label class="line__smal-label" for="chocolate-recipe">
-                    grams
+                    gramos
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price">
                 <label class="line__label" for="cream-recipe">
-                  Cream
+                  Crema
                   
                 </label>
                 <div class="line__info">
                   <input type="number" value="50" id="cream-recipe"
                     class="line__input" >
                   <label class="line__smal-label" for="cream-recipe">
-                    grams
+                    gramos
                   </label>
                 </div>
               </div>
               
               <div class="form__line line line--price line--title">
                 <div class="line__title">
-                  Results
+                  Resultados
                 </div>
                 <div class="line__title">
-                  Quantity
+                  Cantidad
                 </div>
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="shells">
-                  How many finished shells do you usually get on average after making this recipe?
+                  ¿Cuántas caparazones listas obtienes en promedio después de preparar esta receta?
                 </label>
                 <div class="line__info">
                   <input type="number" value="50" id="shells" class="line__input">
                   <label class="line__smal-label" for="shells">
-                    pieces
+                    piezas
                   </label>
                 </div>
               </div>
               <div class="form__line line line--price">
                 <label class="line__label" for="fillings">
-                  How many grams of filling do you typically pipe onto each shell on average?
+                  ¿Cuántos gramos de relleno sueles poner en promedio en cada macaron?
                 </label>
                 <div class="line__info">
                   <input type="number" value="10" id="fillings" class="line__input">
                   <label class="line__smal-label" for="fillings">
-                    grams
+                    gramos
                   </label>
                 </div>
 
@@ -383,12 +383,12 @@
             </fieldset>
           </form>
         </div>
-        <input type="button" value="Next"
+        <input type="button" value="Siguiente"
           class="steps__btn steps__btn--done steps__btn2" disabled>
       </div>
       <div class="block__section steps steps--third">
         <div class="steps__title">
-          Step three (review the result)
+          Paso tres (observa el resultado)
         </div>
         <div class="steps__body">
           <div class="form">
@@ -396,7 +396,7 @@
               <div class="line-result__preview">
                 <picture class="line-result__picture">
                   <source srcset="img/macaron-for-cost.webp" type="image/webp">
-                  <img src="img/macaron-for-cost.png" alt="Here is a schematic representation of a macaron: two shells and filling."
+                  <img src="img/macaron-for-cost.png" alt="Aquí tienes una representación esquemática de un macaron: dos caparazones y relleno."
                     class="line-result__img" width="105" height="67">
                 </picture>
                 <div class="line-result__numbers">
@@ -417,12 +417,12 @@
                 </div>
               </div>
               <div class="line-result__note">
-                Note that this amount consists solely of expenses for ingredients. We do not include in this table the cost of
-electricity, equipment depreciation, consumables, and other expenses.
+                Ten en cuenta que esta cantidad consiste únicamente en gastos por ingredientes. No incluimos en esta tabla el costo
+de electricidad, depreciación de equipos, consumibles y otros gastos.
               </div>
               <details class="line-result__details details-price">
                 <summary class="details-price__title">
-                  View the details of the calculations
+                  Ver detalles de los cálculos
                 </summary>
                 <div class="details-price__table table-price">
                   <div class="table-price__title">
@@ -432,37 +432,37 @@ electricity, equipment depreciation, consumables, and other expenses.
                       <span id="sum-price-shells-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - the total amount of expenses
+                      - total de gastos
                     </div>
                     <div class="table-price__result-left">
                       <span>÷</span>
                     </div>
                     <div class="table-price__result-text">
-                      - divided by
+                      - dividimos por
                     </div>
                     <div class="table-price__result-left">
                       <span id="shells-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - quantity of shells
+                      - la cantidad de caparazones
                     </div>
                     <div class="table-price__result-left">
                       <span>=</span>
                     </div>
                     <div class="table-price__result-text">
-                      - as a result, it turns out to be
+                      - el resultado es
                     </div>
                     <div class="table-price__result-left">
                       <span id="total-price-one-shells-3">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - the cost of one shell
+                      - el costo de un caparazón
                     </div>
                   </div>
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Almond flour
+                      Harina de almendras
                     </div>
                     <div class="table-price__weight"><span id="flour-recipe-2"></span>
                        gr</div>
@@ -472,7 +472,7 @@ electricity, equipment depreciation, consumables, and other expenses.
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Sugar
+                      Azúcar
                     </div>
                     <div class="table-price__weight"><span id="sugar-recipe-2"></span>
                        gr</div>
@@ -482,7 +482,7 @@ electricity, equipment depreciation, consumables, and other expenses.
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Powdered sugar
+                      Azúcar en polvo
                     </div>
                     <div class="table-price__weight"><span id="powdered-sugar-recipe-2"></span>
                        gr</div>
@@ -492,7 +492,7 @@ electricity, equipment depreciation, consumables, and other expenses.
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Egg white
+                      Clara de huevo
                     </div>
                     <div class="table-price__weight"><span id="egg-recipe-2"></span>
                       110 gr</div>
@@ -509,62 +509,62 @@ electricity, equipment depreciation, consumables, and other expenses.
                         class="selected-currency">$</span></div>
                   </div>
                   <div class="table-price__title">
-                    Fillings
+                    Rellenos
                   </div>
                   <div class="table-price__result">
                     <div class="table-price__result-left">
                       <span id="sum-price-fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - the total amount of expenses
+                      - total de gastos
                     </div>
                     <div class="table-price__result-left">
                       <span>÷</span>
                     </div>
                     <div class="table-price__result-text">
-                      - divided by
+                      - dividimos por
                     </div>
                     <div class="table-price__result-left">
                       <span id="sum-weight-fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - quantity of grams
+                      - número de gramos
                     </div>
                     <div class="table-price__result-left">
                       <span>=</span>
                     </div>
                     <div class="table-price__result-text">
-                      - as a result, it turns out to be
+                      - el resultado es
                     </div>
                     <div class="table-price__result-left">
                       <span id="sum-price-one-gram-fillings">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - the cost of one gram
+                      - costo por gramo
                     </div>
                     <div class="table-price__result-left">
                       <span>×</span>
                     </div>
                     <div class="table-price__result-text">
-                      - multiplied by
+                      - multiplicamos por
                     </div>
                     <div class="table-price__result-left">
                       <span id="fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - the amount of grams in one macaron
+                      - la cantidad de gramos en un macaron
                     </div>
                     <div class="table-price__result-left">
                       <span>=</span>
                     </div>
                     <div class="table-price__result-text">
-                      - as a result, it turns out to be
+                      - el resultado es
                     </div>
                     <div class="table-price__result-left">
                       <span id="total-price-one-fillings-2">0</span>
                     </div>
                     <div class="table-price__result-text">
-                      - the cost per macaron
+                      - costo por macaron
                     </div>
                   </div>
                   
@@ -579,7 +579,7 @@ electricity, equipment depreciation, consumables, and other expenses.
                   
                   <div class="table-price__line">
                     <div class="table-price__name">
-                      Cream
+                      Crema
                     </div>
                     <div class="table-price__weight"><span id="cream-recipe-2"></span> gr</div>
                     <div class="table-price__price"><span id="cream-recipe-cost">0</span> <span
@@ -599,7 +599,7 @@ electricity, equipment depreciation, consumables, and other expenses.
             </div>
           </div>
         </div>
-        <input type="button" value="Reset"
+        <input type="button" value="Reiniciar"
           class="steps__btn steps__btn--done steps__btn3" disabled>
       </div>
 
@@ -616,7 +616,7 @@ electricity, equipment depreciation, consumables, and other expenses.
   <div class="container">
     <div class="footer">
       <div class="footer__title">
-        Links
+        Enlaces
       </div>
 
       <ul class="footer__list footer-links">
@@ -646,49 +646,51 @@ electricity, equipment depreciation, consumables, and other expenses.
         <li class="footer-links__item">
           <details class="privacy">
             <summary class="privacy__summary">
-              Privacy Policy
+              Política de Privacidad
             </summary>
             <div class="privacy__title">
-              Effective Date: 23 septiembre 2023
+              Fecha de entrada en vigencia: 23 septiembre 2023
             </div>
             <p class="privacy__text">
-              By visiting our website and using our services, you agree to the terms of our privacy policy.
+              Al visitar nuestro sitio web y utilizar nuestros servicios, usted acepta los términos de nuestra política de
+privacidad.
             </p>
             <div class="privacy__title">
-              1. Collection and Use of Information
+              1. Recopilación y Uso de Información
             </div>
             <p class="privacy__text">
-              We do not collect or store personal data from visitors to our website unless provided voluntarily (e.g., when
-placing an order).
+              No recopilamos ni almacenamos datos personales de los visitantes de nuestro sitio web a menos que se proporcionen
+de manera voluntaria (por ejemplo, al realizar un pedido).
             </p>
             <div class="privacy__title">
-              2. Statistical Data and Analytics
+              2. Datos Estadísticos y Analíticos
             </div>
             <p class="privacy__text">
-              We use tools such as Google Analytics and Facebook Pixel to collect statistical data and analyze how visitors use
-our website. These tools may use cookies to track your activity. You can opt out of data collection by adjusting the
-settings in your browser.
+              Utilizamos herramientas como Google Analytics y Facebook Pixel para recopilar datos estadísticos y analizar cómo
+los visitantes utilizan nuestro sitio web. Estas herramientas pueden utilizar cookies para rastrear su actividad. Puede
+optar por no participar en la recopilación de datos ajustando la configuración de su navegador.
             </p>
             <div class="privacy__title">
-              3. Sharing Data with Third Parties
+              3. Compartir Datos con Terceros
             </div>
             <p class="privacy__text">
-              We do not provide the analytical and statistical data we collect to third parties.
+              No proporcionamos los datos analíticos y estadísticos que recopilamos a terceros.
             </p>
             <div class="privacy__title">
-              4. Questions and Contacts
+              4. Preguntas y Contactos
             </div>
             <p class="privacy__text">
-              If you have any questions regarding our privacy policy, please contact the course author, Elena Pronina, at the
-email address 
+              Si tiene alguna pregunta sobre nuestra política de privacidad, comuníquese con la autora del curso, Elena Pronina,
+a la dirección de correo electrónico 
               <a class="privacy__link" href="mailto:aleksprowork@gmail.com">aleksprowork@gmail.com</a>
             </p>
             <div class="privacy__title">
-              5. Changes to the Privacy Policy
+              5. Cambios en la Política de Privacidad
             </div>
             <p class="privacy__text">
-              We reserve the right to make changes to our privacy policy. Any changes will be posted on this page.<br>Thank you
-for using our services!
+              Nos reservamos el derecho de realizar cambios en nuestra política de privacidad. Cualquier cambio se publicará en
+esta página.<br>¡Gracias por utilizar nuestros servicios!
+
             </p>
           </details>
         </li>

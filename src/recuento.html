@@ -1,0 +1,53 @@
+{% set title = 'Recuento' %}
+{% set lang = 'es' %}
+{% set keywords = 'costo, precio' %}
+{% set description = 'Calculadora para calcular el costo de los macarrones' %}
+
+{% extends "templates/default.html" %}
+
+
+{% macro imageSvg(name, class, width, height) %}
+<svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
+  <use xlink:href='img/svg/sprite-black.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}
+{% macro imageSvgColor(name, class, width, height, alt) %}
+<svg class="{{ class }}" width="{{ width }}" height="{{ height }}" aria-label="{{ alt }}">
+  <use xlink:href='img/svg/sprite-color.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}
+{% macro imageJpg(classPicture, name, classImg, alt, width, height, atribut) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp" type="image/webp">
+  <img src="img/{{ name }}.jpg" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}" {{
+    atribut }}>
+</picture>
+{% endmacro %}
+{% macro imagePng(classPicture, name, classImg, alt, width, height) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp" type="image/webp">
+  <img src="img/{{ name }}.png" alt="{{ alt }}" class="{{ classImg }}" width="{{ width }}" height="{{ height }}" {{
+    atribut }}>
+</picture>
+{% endmacro %}
+
+{% block content %}
+
+</head>
+
+<body>
+
+
+  {% include "includes/header/header-price-es.html" %}
+
+  <main class="main">
+
+    {% include "includes/price/price-es.html" %}
+
+  </main>
+
+  {% include "includes/footer/footer-es.html" %}
+
+  {% include "includes/js/js-price.html" %}
+
+  {% endblock %}

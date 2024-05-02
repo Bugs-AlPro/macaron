@@ -354,6 +354,8 @@ function markButtonAsDone(button) {
     button.setAttribute("value", "Готово");
   } else if (button.value.includes("Next")) {
     button.setAttribute("value", "Done");
+  } else if (button.value.includes("Siguiente")) {
+    button.setAttribute("value", "Hecho");
   }
 }
 function markResetButtonAsDone(button) {

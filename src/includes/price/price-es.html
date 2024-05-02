@@ -1,0 +1,369 @@
+{% import "includes/price/text-content-price.html" as translate %}
+
+<section class="wrap wrap--price">
+
+  <div class="container">
+
+    <div class="block">
+      <div class="block__title title">
+        <h1 class="title__text">
+          {{ translate.priceGeneral.title.es }}
+        </h1>
+      </div>
+
+      <div class="block__section steps steps--activ steps--start">
+        <div class="steps__title">
+          {{ translate.priceGeneral.startStep.es }}
+        </div>
+        <div class="steps__body steps__body--activ">
+          <div class="price-settings">
+            <div class="price-settings__btns">
+              <button type="button" class="price-settings__btn price-settings__btn--activ" id="dollar">$</button>
+              <button type="button" class="price-settings__btn" id="euro">€</button>
+              <button type="button" class="price-settings__btn" id="ruble">₽</button>
+              <button type="button" class="price-settings__btn" id="lari">₾</button>
+              <button type="button" class="price-settings__btn" id="lira">₺</button>
+            </div>
+          </div>
+        </div>
+        <input type="button" value="{{ translate.priceGeneral.startStepBtn.es }}"
+          class="steps__btn steps__btn--activ steps__btn0">
+      </div>
+      <div class="block__section steps steps--first">
+        <div class="steps__title">
+          {{ translate.priceGeneral.oneStep.es }}
+        </div>
+        <div class="steps__body">
+          <form class=" form">
+            <fieldset class="form__fieldset fieldset-cost">
+              <div class="form__line line line--title">
+                <div class="line__title">
+                  {{ translate.priceGeneral.oneStepSubTitle1.es }}
+                </div>
+                <div class="line__title">
+                  {{ translate.priceGeneral.oneStepSubTitle2.es }}<span class="selected-currency">$</span></div>
+                <div class="line__title">
+                  {{ translate.priceGeneral.oneStepSubTitle3.es }}
+                </div>
+              </div>
+              {% for item in translate.shells %}
+              <div class="form__line line">
+                <label class="line__label" for="{{ item.id }}">
+                  {{ item.ingredientEs }}
+                </label>
+                <div class="line__info">
+                  <input type="number" value="1" id="{{ item.id }}" class="line__input line__input--price"
+                    placeholder="{{ item.inputCoastPlaceholderEs }}">
+                  <label class="line__smal-label" for="{{ item.id }}">
+                    <span class="selected-currency">$</span>
+                  </label>
+                </div>
+                <div class="line__info">
+                  <input type="number" value="{{ item.inputAmountValue }}" class="line__input"
+                    id="amount-of-{{ item.id }}" placeholder="{{ item.inputAmountPlaceholderEs }}">
+                  <label class="line__smal-label" for="amount-of-{{ item.id }}">
+                    {{ item.inputAmountLabelEs }}
+                  </label>
+                </div>
+              </div>
+              {% endfor %}
+
+              {% for item in translate.fillings %}
+              <div class="form__line line">
+                <label class="line__label" for="{{ item.id }}">
+                  {{ item.ingredientEs }}
+                </label>
+                <div class="line__info">
+                  <input type="number" value="1" id="{{ item.id }}" class="line__input line__input--price"
+                    placeholder="{{ item.inputCoastPlaceholderEs }}">
+                  <label class="line__smal-label" for="{{ item.id }}">
+                    <span class="selected-currency">$</span>
+                  </label>
+                </div>
+                <div class="line__info">
+                  <input type="number" value="{{ item.inputAmountValue }}" class="line__input"
+                    id="amount-of-{{ item.id }}" placeholder="{{ item.inputAmountPlaceholderEs }}">
+                  <label class="line__smal-label" for="amount-of-{{ item.id }}">
+                    {{ item.inputAmountLabelEs }}
+                  </label>
+                </div>
+              </div>
+              {% endfor %}
+            </fieldset>
+          </form>
+        </div>
+        <input type="button" value="{{ translate.priceGeneral.stepsBtn.es }}"
+          class="steps__btn steps__btn--done steps__btn1" disabled>
+      </div>
+      <div class="block__section steps steps--second">
+        <div class="steps__title">
+          {{ translate.priceGeneral.twoStep.es }}
+        </div>
+        <div class="steps__body">
+          <form class=" form">
+            <fieldset class="form__fieldset fieldset-price" disabled>
+              <div class="form__line line line--price line--title">
+                <div class="line__title">
+                  {{ translate.priceGeneral.twoStepShellsSubTitle1.es }}
+                </div>
+                <div class="line__title">
+                  {{ translate.priceGeneral.twoStepShellsSubTitle2.es }}
+                </div>
+              </div>
+              {% for item in translate.shells %}
+              <div class="form__line line line--price">
+                <label class="line__label" for="{{ item.id }}-recipe">
+                  {{ item.ingredientEs }}
+                  {{ item.ingredientAltNameEs }}
+                </label>
+                <div class="line__info">
+                  <input type="number" value="{{ item.inputAmountRecipeValue }}" id="{{ item.id }}-recipe"
+                    class="line__input" {{ item.inputAtributDisabled }}>
+                  <label class="line__smal-label" for="{{ item.id }}-recipe">
+                    {{ item.inputAmountLabelEs }}
+                  </label>
+                </div>
+              </div>
+              {% endfor %}
+              <div class="form__line line line--price line--title">
+                <div class="line__title">
+                  {{ translate.priceGeneral.twoStepFillingsSubTitle1.es }}
+                </div>
+                <div class="line__title">
+                  {{ translate.priceGeneral.twoStepFillingsSubTitle2.es }}
+                </div>
+              </div>
+              {% for item in translate.fillings %}
+              <div class="form__line line line--price">
+                <label class="line__label" for="{{ item.id }}-recipe">
+                  {{ item.ingredientEs }}
+                  {{ item.ingredientAltNameEs }}
+                </label>
+                <div class="line__info">
+                  <input type="number" value="{{ item.inputAmountRecipeValue }}" id="{{ item.id }}-recipe"
+                    class="line__input" {{ item.inputAtributDisabled }}>
+                  <label class="line__smal-label" for="{{ item.id }}-recipe">
+                    {{ item.inputAmountLabelEs }}
+                  </label>
+                </div>
+              </div>
+              {% endfor %}
+              <div class="form__line line line--price line--title">
+                <div class="line__title">
+                  {{ translate.priceGeneral.twoStepResultSubTitle1.es }}
+                </div>
+                <div class="line__title">
+                  {{ translate.priceGeneral.twoStepResultSubTitle2.es }}
+                </div>
+              </div>
+              <div class="form__line line line--price">
+                <label class="line__label" for="shells">
+                  {{ translate.priceGeneral.twoStepResultShells.es }}
+                </label>
+                <div class="line__info">
+                  <input type="number" value="50" id="shells" class="line__input">
+                  <label class="line__smal-label" for="shells">
+                    {{ translate.priceGeneral.twoStepResultPieces.es }}
+                  </label>
+                </div>
+              </div>
+              <div class="form__line line line--price">
+                <label class="line__label" for="fillings">
+                  {{ translate.priceGeneral.twoStepResultFillings.es }}
+                </label>
+                <div class="line__info">
+                  <input type="number" value="10" id="fillings" class="line__input">
+                  <label class="line__smal-label" for="fillings">
+                    {{ translate.priceGeneral.twoStepResultGram.es }}
+                  </label>
+                </div>
+
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <input type="button" value="{{ translate.priceGeneral.stepsBtn.es }}"
+          class="steps__btn steps__btn--done steps__btn2" disabled>
+      </div>
+      <div class="block__section steps steps--third">
+        <div class="steps__title">
+          {{ translate.priceGeneral.endStep.es }}
+        </div>
+        <div class="steps__body">
+          <div class="form">
+            <div class="form__line line-result">
+              <div class="line-result__preview">
+                <picture class="line-result__picture">
+                  <source srcset="img/macaron-for-cost.webp" type="image/webp">
+                  <img src="img/macaron-for-cost.png" alt="{{ translate.priceGeneral.imgAlt.es }}"
+                    class="line-result__img" width="105" height="67">
+                </picture>
+                <div class="line-result__numbers">
+                  <div class="line-result__number">
+                    <span id="total-price-one-shells">0</span> <span class="selected-currency">$</span>
+                  </div>
+                  <div class="line-result__number">
+                    <span id="total-price-one-fillings">0</span> <span class="selected-currency">$</span>
+                  </div>
+                  <div class="line-result__number">
+                    <span id="total-price-one-shells-2">0</span> <span class="selected-currency">$</span>
+                  </div>
+                </div>
+                <div class="line-result__result">
+                  <div class="line-result__number">
+                    <span id="calculate-total-cost">0</span><span class="selected-currency"> $</span>
+                  </div>
+                </div>
+              </div>
+              <div class="line-result__note">
+                {{ translate.priceGeneral.endNote.es }}
+              </div>
+              <details class="line-result__details details-price">
+                <summary class="details-price__title">
+                  {{ translate.priceGeneral.endSubTitle.es }}
+                </summary>
+                <div class="details-price__table table-price">
+                  <div class="table-price__title">
+                  </div>
+                  <div class="table-price__result">
+                    <div class="table-price__result-left">
+                      <span id="sum-price-shells-2">0</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleAmountExpenses.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span>÷</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleDivide.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span id="shells-2">0</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleQuantityShells.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span>=</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleInResult.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span id="total-price-one-shells-3">0</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleOneShells.es }}
+                    </div>
+                  </div>
+                  {% for item in translate.shells %}
+                  <div class="table-price__line">
+                    <div class="table-price__name">
+                      {{ item.ingredientEs }}
+                    </div>
+                    <div class="table-price__weight"><span id="{{ item.id }}-recipe-2"></span>
+                      {{ item.inputAmountRecipeWeight }} gr</div>
+                    <div class="table-price__price"><span id="{{ item.id }}-recipe-cost">0</span> <span
+                        class="selected-currency">$</span></div>
+                  </div>
+                  {% endfor %}
+                  <div class="table-price__line table-price__line--sum">
+                    <div class="table-price__name">
+                      {{ translate.priceGeneral.endSubTitleSum.es }}
+                    </div>
+                    <div class="table-price__weight"><span id="sum-weight-shells">0</span> gr</div>
+                    <div class="table-price__price"><span id="sum-price-shells">0</span> <span
+                        class="selected-currency">$</span></div>
+                  </div>
+                  <div class="table-price__title">
+                    {{ translate.priceGeneral.endSubTitleFillings.es }}
+                  </div>
+                  <div class="table-price__result">
+                    <div class="table-price__result-left">
+                      <span id="sum-price-fillings-2">0</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleAmountExpenses.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span>÷</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleDivide.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span id="sum-weight-fillings-2">0</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleQuantityGrams.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span>=</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleInResult.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span id="sum-price-one-gram-fillings">0</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleOneGram.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span>×</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleMultiply.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span id="fillings-2">0</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleOneFillings.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span>=</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleInResult.es }}
+                    </div>
+                    <div class="table-price__result-left">
+                      <span id="total-price-one-fillings-2">0</span>
+                    </div>
+                    <div class="table-price__result-text">
+                      {{ translate.priceGeneral.endSubTitleOneMacaron.es }}
+                    </div>
+                  </div>
+                  {% for item in translate.fillings %}
+                  <div class="table-price__line">
+                    <div class="table-price__name">
+                      {{ item.ingredientEs }}
+                    </div>
+                    <div class="table-price__weight"><span id="{{ item.id }}-recipe-2"></span>{{
+                      item.inputAmountRecipeWeight }} gr</div>
+                    <div class="table-price__price"><span id="{{ item.id }}-recipe-cost">0</span> <span
+                        class="selected-currency">$</span></div>
+                  </div>
+                  {% endfor %}
+                  <div class="table-price__line table-price__line--sum">
+                    <div class="table-price__name">
+                      {{ translate.priceGeneral.endSubTitleSum.es }}
+                    </div>
+                    <div class="table-price__weight"><span id="sum-weight-fillings">0</span> gr</div>
+                    <div class="table-price__price"><span id="sum-price-fillings">0</span> <span
+                        class="selected-currency">$</span></div>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+        <input type="button" value="{{ translate.priceGeneral.endBtn.es }}"
+          class="steps__btn steps__btn--done steps__btn3" disabled>
+      </div>
+
+    </div>
+
+  </div>
+</section>
