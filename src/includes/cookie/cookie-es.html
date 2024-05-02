@@ -1,0 +1,16 @@
+{% import "includes/cookie/text-content-cookie.html" as transtale %}
+
+<dialog open class="cookie" id="cookieBox">
+    <div class="cookie__body">
+        <p class="cookie__text">
+            {{ transtale.cookie.text.es | safe }}
+        </p>
+        <button type="button" class="cookie__btn cookie__btn--yes" onclick="window.cookieBox.close()">
+            {{ transtale.cookie.allow.es }}
+        </button>
+        <button type="button" class="cookie__btn cookie__btn--no" onclick="window.cookieBox.close()">
+            {{ transtale.cookie.decline.es }}
+        </button>
+
+    </div>
+</dialog>

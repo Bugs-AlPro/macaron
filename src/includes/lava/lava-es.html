@@ -1,0 +1,37 @@
+{% import "includes/lava/text-content-lava.html" as translate %}
+
+<div class="payment-window-cover"></div>
+
+<div class="payment-window">
+    <button type="button" class="payment-window__close"></button>
+    <p class="payment-window__title">
+        {{ translate.lavaTitle.title.es }}
+        <a class="payment-window__title-link" href="https://app.lava.top/macaron_by_elena">Lava.top</a>
+    </p>
+
+    <div class="payment-window__web">
+        <picture class="payment-window__picture">
+            <source srcset="img/logo.webp" type="image/webp">
+            <img src="img/logo.jpg" alt="logo macaron_by_elena" class="payment-window__img" width="50" height="50">
+        </picture>
+
+        {{ imageSvgColor('transfer', 'payment-window__svg svgcolor', '50', '50', 'logo transfer') }}
+
+        <picture class="payment-window__picture">
+            <source srcset="img/lava.webp" type="image/webp">
+            <img src="img/lava.png" alt="logo Lava.top" class="payment-window__img" width="50" height="50">
+        </picture>
+    </div>
+
+    <div class="payment-window__links">
+
+        {% for item in translate.lavaButtons %}
+
+        <a href="{{ item.linkEs }}" class="payment-window__link {{ item.class }}">
+            {{ translate.lavaTitle.linkText.es }}
+        </a>
+
+        {% endfor %}
+
+    </div>
+</div>

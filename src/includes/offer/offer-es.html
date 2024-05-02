@@ -1,0 +1,262 @@
+{% import "includes/offer/text-content-offer.html" as transtale %}
+{% import "includes/offer/price-content.html" as price %}
+<!-- import "includes/offer/price-sale.html" as sale  -->
+
+<section class="wrap wrap--offer" id="offer">
+  <div class="container">
+    <div class="block">
+
+      <div class="block__title title">
+        <h2 class="title__text">
+          {{ transtale.offerTitles.title.es }}
+        </h2>
+      </div>
+
+      <ul class="block__section part">
+
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/{{ transtale.photo.generalCourse.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.generalCourse.img }}.jpg" alt="{{ transtale.photo.generalCourse.altEs }}"
+              class="part__img" width="530" height="400" loading="lazy">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              {{ transtale.offerTitles.generalCourse.es }}
+            </div>
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.es }}
+            </div>
+
+            <div class="costs__price">
+              {{ sale.salePrice.all.usd | safe }}
+              {{ price.basePrice.all.usd | safe }}
+            </div>
+
+            <button type="button" class="costs__btn generalCourseBtn pixel-btn">
+              {{ transtale.offerTitles.buy.es }}
+            </button>
+
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              {{ transtale.details.title.es }}
+            </summary>
+            <ul class="details__list">
+
+              {% for item in transtale.detailsGeneralCourse %}
+
+              <li class="details__item">{{ item.es }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/{{ transtale.photo.shells.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.shells.img }}.jpg" alt="{{ transtale.photo.shells.altEs }}"
+              class="part__img" width="530" height="400" loading="lazy">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              {{ transtale.offerTitles.shells.es }}
+            </div>
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.es }}
+            </div>
+
+            <div class="costs__price">
+              {{ sale.salePrice.part.usd | safe }}
+              {{ price.basePrice.part.usd | safe }}
+
+            </div>
+
+            <button type="button" class="costs__btn shellsBtn pixel-btn">
+              {{ transtale.offerTitles.buy.es }}
+            </button>
+
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              {{ transtale.details.title.es }}
+            </summary>
+            <ul class="details__list">
+
+              {% for item in transtale.detailsShells %}
+
+              <li class="details__item">{{ item.es }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/{{ transtale.photo.fillings.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.fillings.img }}.jpg" alt="{{ transtale.photo.fillings.altEs }}"
+              class="part__img" width="530" height="400" loading="lazy">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              {{ transtale.offerTitles.fillings.es }}
+            </div>
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.es }}
+            </div>
+
+            <div class="costs__price">
+              {{ sale.salePrice.part.usd | safe }}
+              {{ price.basePrice.part.usd | safe }}
+
+            </div>
+
+            <button type="button" class="costs__btn fillingsBtn pixel-btn">
+              {{ transtale.offerTitles.buy.es }}
+            </button>
+
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              {{ transtale.details.title.es }}
+            </summary>
+            <ul class="details__list">
+
+              {% for item in transtale.detailsFillings %}
+
+              <li class="details__item">{{ item.es }}</li>
+
+              {% endfor %}
+
+              {% for item in transtale.fillingsTypes %}
+
+              <li class="details__item">{{ item.es }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/{{ transtale.photo.instagram.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.instagram.img }}.jpg" alt="{{ transtale.photo.instagram.altEs }}"
+              class="part__img" width="530" height="400" loading="lazy">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              {{ transtale.offerTitles.instagram.es }}
+            </div>
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.es }}
+            </div>
+
+            <div class="costs__price">
+              {{ sale.salePrice.inst.usd | safe }}
+              {{ price.basePrice.inst.usd | safe }}
+
+            </div>
+
+
+            <button type="button" class="costs__btn instagramBtn pixel-btn">
+              {{ transtale.offerTitles.buy.es }}
+            </button>
+
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              {{ transtale.details.title.es }}
+            </summary>
+            <ul class="details__list">
+
+              {% for item in transtale.detailsInst %}
+
+              <li class="details__item">{{ item.es }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </details>
+
+        </li>
+
+        <li class="part__item">
+
+          <picture class="part__picture">
+            <source srcset="img/{{ transtale.photo.all.img }}.webp" type="image/webp">
+            <img src="img/{{ transtale.photo.all.img }}.jpg" alt="{{ transtale.photo.all.altEs }}" class="part__img"
+              width="530" height="400" loading="lazy">
+          </picture>
+
+          <div class="part__costs costs">
+
+            <div class="costs__title">
+              {{ transtale.offerTitles.all.es | safe }}
+            </div>
+
+            <div class="costs__text">
+              {{ transtale.offerTitles.price.es }}
+            </div>
+
+            <div class="costs__price">
+              {{ sale.salePrice.eskimo.usd | safe }}
+              {{ price.basePrice.eskimo.usd | safe }}
+
+            </div>
+
+
+            <button type="button" class="costs__btn allBtn pixel-btn">
+              {{ transtale.offerTitles.buy.es }}
+            </button>
+
+          </div>
+
+          <details class="part__details details">
+            <summary class="details__question">
+              {{ transtale.details.title.es }}
+            </summary>
+            <ul class="details__list">
+
+              {% for item in transtale.detailsAll %}
+
+              <li class="details__item">{{ item.es | safe }}</li>
+
+              {% endfor %}
+
+            </ul>
+          </details>
+
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>

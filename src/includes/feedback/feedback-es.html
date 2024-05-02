@@ -1,0 +1,62 @@
+{% import "includes/feedback/text-content-feedback.html" as translate %}
+
+<section class="wrap wrap--feedback" id="feedback">
+  <div class="container">
+
+    <div class="block block--hidden">
+      <div class="block__title title">
+        <h2 class="title__text title__text--contrast">
+
+          {{ translate.feedbackTitle.title.es }}
+
+        </h2>
+      </div>
+
+      <div class="block__section">
+
+        <div class="slider-navigation">
+          <button type="button" class="slider-navigation__btn slider-navigation__btn--left">
+            {{ translate.feedbackTitle.backBtn.es }}
+          </button>
+          <button type="button" class="slider-navigation__btn slider-navigation__btn--right">
+            {{ translate.feedbackTitle.nextBtn.es }}
+          </button>
+        </div>
+
+
+        <ul class="slider slider--feedback feedbackSlider">
+
+          {% for item in translate.feedbacks %}
+
+          <li class="slider__item">
+            <div class="feedback">
+              <div class="feedback__title">
+                {{ item.titleEs }}
+              </div>
+              <div class="feedback__top">
+                <picture class="feedback__picture">
+                  <source srcset="img/{{ item.img }}.webp" type="image/webp">
+                  <img class="feedback__img" src="img/{{ item.img }}.jpg" alt="Foto de perfil de {{ item.name }}"
+                    width="70" height="70">
+                </picture>
+                <div class="feedback__name">
+                  {{ item.name }}
+                </div>
+              </div>
+              <div class="feedback__description">
+                {{ item.descriptionEs }}
+              </div>
+              <a href="{{ item.link }}" class="feedback__link link-to">
+                {{ translate.feedbackTitle.link.es }}
+              </a>
+            </div>
+          </li>
+
+          {% endfor %}
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -40,6 +40,7 @@
         background-color: var(--color-background);
         display: flex;
         flex-wrap: wrap;
+        gap: var(--gap-smal);
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;

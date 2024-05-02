@@ -1,0 +1,51 @@
+<header class="wrap wrap--header" id="home">
+
+  <div class="sale-wrap">
+
+    {% include "includes/promo/sale.html" %}
+
+  </div>
+
+  <div class="header-fixed-wrap">
+    <div class="header-fixed">
+
+      {% include "includes/header/logo.html" %}
+
+      {% include "includes/header/language-es.html" %}
+
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="block block--hidden">
+
+      {% import "includes/header/text-content-header.html" as translate %}
+
+      <div class="block__title title">
+        <h1 class="title__header">
+          {{ translate.heaederTitleTranslate.title.es }}
+        </h1>
+        <p class="title__text">
+          {{ translate.heaederTitleTranslate.subTitle.es | safe}}
+        </p>
+      </div>
+
+      <div class="block__section">
+        <div class="slider slider--header mainSlider">
+          {% for item in translate.sliderOfferBaseRu %}
+          <div class="slider__item">
+            <picture class="slider__picture">
+              <source srcset="img/{{ item.img }}.webp" type="image/webp">
+              <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider__img" height="195" width="260">
+            </picture>
+          </div>
+          {% endfor %}
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</header>

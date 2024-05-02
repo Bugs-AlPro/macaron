@@ -1,0 +1,42 @@
+{% import "includes/about/text-content-about.html" as translate %}
+
+<section class="wrap wrap--about" id="about">
+  <div class="container">
+    <div class="block">
+
+      <div class="block__title title">
+        <h2 class="title__text">
+          {{ translate.aboutTitle.title.es | safe }}
+        </h2>
+      </div>
+
+      <ul class="block__section list-about">
+        <li class="list-about__item">{{ translate.aboutTitle.subTitle1.es | safe }}</li>
+        <li class="list-about__item">{{ translate.aboutTitle.subTitle2.es | safe }}</li>
+        <li class="list-about__item">{{ translate.aboutTitle.subTitle3.es | safe }}</li>
+      </ul>
+      <div class="block__section about">
+
+        <picture class="about__picture about__picture--top">
+          <source srcset="img/{{ data.pictures.about1.href }}.webp" type="image/webp">
+          <img src="img/{{ data.pictures.about1.href }}.jpg" alt="{{ data.pictures.about1.es }}"
+            class="about__img about__img--top" width="200" height="200" loading="lazy">
+        </picture>
+
+        {% for item in translate.aboutText %}
+        <p class="about__text about__text--{{ item.class }}">
+          {{ item.es | safe }}
+        </p>
+        {% endfor %}
+
+        <picture class="about__picture about__picture--down">
+          <source srcset="img/{{ data.pictures.about2.href }}.webp" type="image/webp">
+          <img src="img/{{ data.pictures.about2.href }}.jpg" alt="{{ data.pictures.about2.es }}"
+            class="about__img about__img--down" width="200" height="200" loading="lazy">
+        </picture>
+
+      </div>
+
+    </div>
+  </div>
+</section>

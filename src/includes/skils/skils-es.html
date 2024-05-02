@@ -1,0 +1,29 @@
+{% import "includes/skils/text-content-skils.html" as skilsText %}
+
+<section class="wrap wrap--skils">
+
+  <div class="container">
+
+    <div class="block">
+      <div class="block__title title">
+        <h2 class="title__text">
+
+          {{ skilsText.skilsTitleTranslate.title.es }}
+
+        </h2>
+      </div>
+
+      <ul class="block__section skils">
+
+        {% for item in skilsText.skilsTypes %}
+
+        <li class="skils__item">{{ item.es }}</li>
+
+        {% endfor %}
+
+      </ul>
+    </div>
+
+  </div>
+
+</section>
