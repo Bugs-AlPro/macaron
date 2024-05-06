@@ -1,7 +1,8 @@
-{% set title = 'Price' %}
+{% set title = 'Macaron' %}
 {% set lang = 'ru' %}
-{% set keywords = 'себестоимость макарон' %}
-{% set description = 'Калькулятор по расчету себестоимости пирожных макарон' %}
+{% set keywords = 'обучение макаронс, пирожные макарон, как приготовить макаронс, macaron_by_elena' %}
+{% set description = 'Обучаю приготовлению вкуснейшего десерта - Макарон. Даже если вы не кондитер - обязательно
+попробуйте себя в этой роли!' %}
 
 {% extends "templates/default.html" %}
 
@@ -33,21 +34,34 @@
 
 {% block content %}
 
+{% include "includes/js/header-js.html" %}
+
 </head>
 
 <body>
 
+  {% include "includes/cookie/cookie-ru.html" %}
 
-  {% include "includes/header/header-price-ru.html" %}
+  {% include "includes/header/header-ru.html" %}
 
   <main class="main">
 
-    {% include "includes/price/price-ru.html" %}
+    {% include "includes/interesting/interesting-ru.html" %}
+    {% include "includes/youtube/youtube-ru.html" %}
+    {% include "includes/want/course-ru.html" %}
+    {% include "includes/errors/errors-ru.html" %}
+    {% include "includes/skils/skils-ru.html" %}
+    {% include "includes/feedback/feedback-ru.html" %}
+    {% include "includes/about/about-ru.html" %}
+    {% include "includes/offer/offer-ru.html" %}
+    {% include "includes/lava/lava-ru.html" %}
+    {% include "includes/recive/recive-ru.html" %}
+    {% include "includes/payment/questions-ru.html" %}
 
   </main>
 
   {% include "includes/footer/footer-ru.html" %}
 
-  <script src="js/price.js"></script>
+  {% include "includes/js/footer-js.html" %}
 
   {% endblock %}
