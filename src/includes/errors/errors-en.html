@@ -13,18 +13,20 @@
           {{ translate.errorsTitle.subTitle.en }}
         </p>
       </div>
+      <div class="errors-img-sm swip">
+        <ul class="block__section errors-img-sm swiper-wrapper">
+          {% for item in translate.errors %}
+          <li class="errors-img-sm__item swiper-slide">
+            <picture class="errors-img-sm__picture">
+              <source srcset="img/{{ item.img }}.webp" type="image/webp">
+              <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="errors-img-sm__img" width="200"
+                height="150" loading="lazy">
+            </picture>
+          </li>
+          {% endfor %}
+        </ul>
 
-      <ul class="block__section errors-img-sm">
-        {% for item in translate.errors %}
-        <li class="errors-img-sm__item">
-          <picture class="errors-img-sm__picture">
-            <source srcset="img/{{ item.img }}.webp" type="image/webp">
-            <img src="img/{{ item.img }}.jpg" alt="{{ item.alt2 }}" class="errors-img-sm__img" width="200" height="150"
-              loading="lazy">
-          </picture>
-        </li>
-        {% endfor %}
-      </ul>
+      </div>
 
       <ul class="block__section errors">
 

@@ -149,22 +149,24 @@
   }
 
   .slider {
-    z-index: 2;
+    // z-index: 2;
     padding: 20px 0;
-    display: flex;
-    position: relative;
+    // display: flex;
+    // position: relative;
 
-    &__item {
-      display: flex;
-      justify-content: center;
-      padding-left: 10px;
-    }
+    // &__item {
+    //   display: flex;
+    //   justify-content: center;
+    //   padding-left: 10px;
+    // }
 
     &__img {
       display: block;
       height: auto;
+      // max-height: 300px;
       border-radius: 10px;
       width: 100%;
+      max-width: 300px;
       box-shadow: var(--shadow-elevation-medium);
       position: relative;
       z-index: 2;

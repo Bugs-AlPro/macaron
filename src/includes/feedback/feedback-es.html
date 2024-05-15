@@ -12,7 +12,8 @@
         </h2>
       </div>
 
-      <div class="block__section">
+
+      <div class="block__section swipe">
 
         <div class="slider-navigation">
           <button type="button" class="slider-navigation__btn slider-navigation__btn--left">
@@ -22,13 +23,13 @@
             {{ translate.feedbackTitle.nextBtn.es }}
           </button>
         </div>
+        <div class="swiper-scrollbar"></div>
 
-
-        <ul class="slider slider--feedback feedbackSlider">
+        <ul class="slider slider--feedback feedbackSlider swiper-wrapper">
 
           {% for item in translate.feedbacks %}
 
-          <li class="slider__item">
+          <li class="slider__item swiper-slide">
             <div class="feedback">
               <div class="feedback__title">
                 {{ item.titleEs }}
@@ -53,10 +54,11 @@
           </li>
 
           {% endfor %}
-
         </ul>
 
       </div>
+
+
     </div>
   </div>
 </section>

@@ -1,6 +1,6 @@
 {% import "includes/cookie/text-content-cookie.html" as transtale %}
 
-<dialog open class="cookie" id="cookieBox">
+<dialog open class="cookie" id="cookieBox" aria-label="{{ transtale.cookie.label.ru }}">
     <div class="cookie__body">
         <p class="cookie__text">
             {{ transtale.cookie.text.ru | safe }}

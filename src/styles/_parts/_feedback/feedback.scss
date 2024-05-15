@@ -1,5 +1,6 @@
 @include media-up(lg) {
     .feedback {
+        margin: auto;
         padding: var(--gap-smal);
         display: flex;
         flex-direction: column;
@@ -82,6 +83,7 @@
         border-radius: var(--border-radius-standart);
         gap: var(--gap-smal);
         background-color: var(--color-background);
+        margin: auto;
 
         &__title {
             text-align: center;

@@ -31,10 +31,11 @@
         </p>
       </div>
 
-      <div class="block__section">
-        <div class="slider slider--header mainSlider">
+      <div class="block__section swiper">
+
+        <div class="slider slider--header swiper-wrapper">
           {% for item in translate.sliderOfferBaseRu %}
-          <div class="slider__item">
+          <div class="slider__item swiper-slide">
             <picture class="slider__picture">
               <source srcset="img/{{ item.img }}.webp" type="image/webp">
               <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider__img" height="195" width="260">
@@ -43,9 +44,10 @@
           {% endfor %}
 
         </div>
-
       </div>
 
     </div>
+
   </div>
+
 </header>

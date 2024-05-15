@@ -10,7 +10,6 @@ function consentGranted() {
         ad_personalization: "granted",
         wait_for_update: 500
     });
-
 }
 
 cookieBtnYes.addEventListener('click', () => {
