@@ -1,10 +1,10 @@
-{% import "includes/footer/text-content-footer.html" as footerText %}
+{% import "includes/footer/text-content-footer.html" as translate %}
 
 <footer class="wrap wrap--footer">
   <div class="container">
     <div class="footer">
       <div class="footer__title">
-        {{ footerText.footerTranslate.title.ru }}
+        {{ translate.text.title.ru }}
       </div>
 
       <ul class="footer__list footer-links">
@@ -21,46 +21,42 @@
         </li>
         <li class="footer-links__item">
           <details class="privacy">
+
             <summary class="privacy__summary">
-              {{ footerText.privacy.title.ru }}
+              {{ translate.text.privacy.ru }}
             </summary>
+
+            {% for item in translate.policy %}
+
             <div class="privacy__title">
-              {{ footerText.privacy.date.ru }}
+              {{ item.titleRu }}
             </div>
             <p class="privacy__text">
-              {{ footerText.privacy.subtitle.ru }}
+              {{ item.descriptionRu | safe }}
             </p>
+
+            {% endfor %}
+
+          </details>
+        </li>
+        <li class="footer-links__item">
+          <details class="privacy">
+
+            <summary class="privacy__summary">
+              {{ translate.text.data.ru }}
+            </summary>
+
+            {% for item in translate.data %}
+
             <div class="privacy__title">
-              {{ footerText.privacy.information.ru }}
+              {{ item.titleRu }}
             </div>
             <p class="privacy__text">
-              {{ footerText.privacy.description1.ru }}
+              {{ item.descriptionRu | safe }}
             </p>
-            <div class="privacy__title">
-              {{ footerText.privacy.analytics.ru }}
-            </div>
-            <p class="privacy__text">
-              {{ footerText.privacy.description2.ru }}
-            </p>
-            <div class="privacy__title">
-              {{ footerText.privacy.other.ru }}
-            </div>
-            <p class="privacy__text">
-              {{ footerText.privacy.description3.ru }}
-            </p>
-            <div class="privacy__title">
-              {{ footerText.privacy.questions.ru }}
-            </div>
-            <p class="privacy__text">
-              {{ footerText.privacy.description4.ru }}
-              <a class="privacy__link" href="mailto:aleksprowork@gmail.com">aleksprowork@gmail.com</a>
-            </p>
-            <div class="privacy__title">
-              {{ footerText.privacy.changes.ru }}
-            </div>
-            <p class="privacy__text">
-              {{ footerText.privacy.description5.ru | safe }}
-            </p>
+
+            {% endfor %}
+
           </details>
         </li>
       </ul>
@@ -68,7 +64,7 @@
       <div class="footer__logo">
 
         <p class="footer__text">
-          {{ footerText.years }}
+          {{ translate.years }}
         </p>
         <svg class="footer__svg">
           <defs>

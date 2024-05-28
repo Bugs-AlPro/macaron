@@ -1,112 +1,275 @@
-{% set years = "2021-2024" %}
+{% set years = "2024" %}
 
-{% set footerTranslate = {
+{% set text = {
 
 title: {
 ru: 'Ссылки',
 en: 'Links',
 es: 'Enlaces'
-}
+},
 
-}
-%}
-
-{% set privacy = {
-
-title: {
+privacy: {
 ru: 'Политика конфиденциальности',
 en: 'Privacy Policy',
 es: 'Política de Privacidad'
 },
 
-date: {
-ru: 'Дата вступления в силу: 1 сентября 2023',
-en: 'Effective Date: 23 septiembre 2023',
-es: 'Fecha de entrada en vigencia: 23 septiembre 2023'
-},
-
-subtitle: {
-ru: 'Посетив наш сайт и используя наши услуги, вы соглашаетесь с условиями нашей
-политики конфиденциальности.',
-en: 'By visiting our website and using our services, you agree to the terms of our privacy policy.',
-es: 'Al visitar nuestro sitio web y utilizar nuestros servicios, usted acepta los términos de nuestra política de
-privacidad.'
-},
-
-information: {
-ru: '1. Сбор и использование информации',
-en: '1. Collection and Use of Information',
-es: '1. Recopilación y Uso de Información'
-},
-
-description1: {
-ru: 'Мы не собираем и не храним личные данные посетителей нашего сайта, за исключением
-случаев, когда они предоставляют их добровольно (например, при оформлении заказа).',
-en: 'We do not collect or store personal data from visitors to our website unless provided voluntarily (e.g., when
-placing an order).',
-es: 'No recopilamos ni almacenamos datos personales de los visitantes de nuestro sitio web a menos que se proporcionen
-de manera voluntaria (por ejemplo, al realizar un pedido).'
-},
-
-analytics: {
-ru: '2. Статистические данные и аналитика',
-en: '2. Statistical Data and Analytics',
-es: '2. Datos Estadísticos y Analíticos'
-},
-description2: {
-ru: 'Мы используем инструменты, такие как Google Analytics и Facebook Pixel, для сбора статистических данных и анализа
-того, как посетители используют наш сайт. Эти инструменты могут использовать файлы cookie для отслеживания вашей
-активности. Вы можете отказаться от сбора статистических данных, выбрав соответствующие настройки в браузере.',
-en: 'We use tools such as Google Analytics and Facebook Pixel to collect statistical data and analyze how visitors use
-our website. These tools may use cookies to track your activity. You can opt out of data collection by adjusting the
-settings in your browser.',
-es: 'Utilizamos herramientas como Google Analytics y Facebook Pixel para recopilar datos estadísticos y analizar cómo
-los visitantes utilizan nuestro sitio web. Estas herramientas pueden utilizar cookies para rastrear su actividad. Puede
-optar por no participar en la recopilación de datos ajustando la configuración de su navegador.'
-},
-
-other: {
-ru: '3. Передача данных третьим сторонам',
-en: '3. Sharing Data with Third Parties',
-es: '3. Compartir Datos con Terceros'
-},
-
-description3: {
-ru: 'Мы не предоставляем полученные аналитические и статистические данные третьим сторонам.',
-en: 'We do not provide the analytical and statistical data we collect to third parties.',
-es: 'No proporcionamos los datos analíticos y estadísticos que recopilamos a terceros.'
-},
-
-questions: {
-ru: '4. Вопросы и контакты',
-en: '4. Questions and Contacts',
-es: '4. Preguntas y Contactos'
-},
-
-description4: {
-ru: 'Если у вас есть вопросы относительно нашей политики конфиденциальности, свяжитесь с автором курса Еленой Прониной
-по адресу электронной почты ',
-en: 'If you have any questions regarding our privacy policy, please contact the course author, Elena Pronina, at the
-email address ',
-es: 'Si tiene alguna pregunta sobre nuestra política de privacidad, comuníquese con la autora del curso, Elena Pronina,
-a la dirección de correo electrónico '
-},
-
-changes: {
-ru: '5. Изменения в политике конфиденциальности',
-en: '5. Changes to the Privacy Policy',
-es: '5. Cambios en la Política de Privacidad'
-},
-
-description5: {
-ru: 'Мы оставляем за собой право вносить изменения в нашу политику конфиденциальности.
-Любые изменения будут опубликованы на этой странице.<br>Благодарим за использование наших услуг!',
-en: 'We reserve the right to make changes to our privacy policy. Any changes will be posted on this page.<br>Thank you
-for using our services!',
-es: 'Nos reservamos el derecho de realizar cambios en nuestra política de privacidad. Cualquier cambio se publicará en
-esta página.<br>¡Gracias por utilizar nuestros servicios!
-'
+data: {
+ru: 'Политика обработки данных',
+es: 'Data Processing Policy (only English)',
+en: 'Data Processing Policy'
 }
 
 }
 %}
+
+{% set policy = [
+
+{
+titleRu: "Дата вступления в силу: 01 июня 2024",
+titleEn: "Effective Date: June 1, 2024",
+titleEs: "Fecha de entrada en vigor: 1 de junio de 2024",
+descriptionRu: "Посетив наш сайт и используя наши услуги, вы соглашаетесь с условиями нашей
+политики конфиденциальности.",
+descriptionEn: "By visiting our website and using our services, you agree to the terms of our privacy policy.",
+descriptionEs: "Al visitar nuestro sitio web y utilizar nuestros servicios, usted acepta los términos de nuestra
+política de
+privacidad."
+},
+
+{
+titleRu: "1. Сбор и использование информации",
+titleEn: "1. Collection and Use of Information",
+titleEs: "1. Recopilación y Uso de Información",
+descriptionRu: "Мы собираем и храним личные данные посетителей нашего сайта только в тех случаях, когда они
+предоставляют их
+добровольно (например, при оформлении заказа или регистрации на курс). Личные данные, которые мы можем собирать,
+включают ваше имя и электронный адрес.",
+descriptionEn: "We collect and store personal data of our website visitors only when they voluntarily provide it (e.g.,
+when
+placing an order or registering for a course). The personal data we may collect includes your name and email address.",
+descriptionEs: "Recopilamos y almacenamos los datos personales de los visitantes de nuestro sitio web solo cuando ellos
+los
+proporcionan voluntariamente (por ejemplo, al realizar un pedido o registrarse para un curso). Los datos personales que
+podemos recopilar incluyen su nombre y dirección de correo electrónico."
+},
+
+{
+titleRu: "2. Статистические данные и аналитика",
+titleEn: "2. Statistical Data and Analytics",
+titleEs: "2. Datos Estadísticos y Análisis",
+descriptionRu: "Мы используем инструменты, такие как Google Analytics и Facebook Pixel, для сбора статистических данных
+и анализа
+того, как посетители используют наш сайт. Эти инструменты могут использовать файлы cookie для отслеживания вашей
+активности. Вы можете отказаться от сбора статистических данных, выбрав соответствующие настройки в браузере или на
+сайте.",
+descriptionEn: "We use tools such as Google Analytics and Facebook Pixel to collect statistical data and analyze how
+visitors use
+our website. These tools may use cookies to track your activity. You can opt-out of data collection by selecting the
+appropriate settings in your browser or on this site.",
+descriptionEs: "Utilizamos herramientas como Google Analytics y Facebook Pixel para recopilar datos estadísticos y
+analizar cómo
+los visitantes usan nuestro sitio web. Estas herramientas pueden usar cookies para rastrear su actividad. Puede optar
+por no participar en la recopilación de datos seleccionando la configuración apropiada en su navegador o en este sitio."
+},
+
+{
+titleRu: "3. Обработка контактных данных",
+titleEn: "3. Processing of Contact Data",
+titleEs: "3. Procesamiento de Datos de Contacto",
+descriptionRu: "Для выполнения условий договора оферты, размещенного на нашем сайте, мы обрабатываем контактные данные
+клиентов,
+такие как электронный адрес, для подтверждения факта оказания услуг и оформления соответствующих документов (например,
+квитанции/счета-фактуры).",
+descriptionEn: "To fulfill the terms of the public offer agreement posted on our website, we process customer contact
+data, such as
+email addresses, to confirm the provision of services and issue relevant documents (e.g., receipts/invoices).",
+descriptionEs: "Para cumplir con los términos del acuerdo de oferta pública publicado en nuestro sitio web, procesamos
+los datos de
+contacto de los clientes, como direcciones de correo electrónico, para confirmar la prestación de servicios y emitir
+documentos relevantes (por ejemplo, recibos/facturas)."
+},
+
+{
+titleRu: "4. Передача данных третьим сторонам",
+titleEn: "4. Transfer of Data to Third Parties",
+titleEs: "4. Transferencia de Datos a Terceros",
+descriptionRu: "Мы не передаем полученные аналитические и статистические данные третьим сторонам, за исключением
+случаев, предусмотренных законодательством. Обработка контактных данных клиентов осуществляется исключительно в рамках
+выполнения
+условий договора оферты и не передается третьим лицам без вашего согласия.",
+descriptionEn: "We do not transfer the collected analytical and statistical data to third parties, except as required by
+law. The
+processing of customer contact data is conducted solely to fulfill the terms of the public offer agreement and is not
+transferred to third parties without your consent.",
+descriptionEs: "No transferimos los datos analíticos y estadísticos recopilados a terceros, excepto cuando lo exija la
+ley. El procesamiento de los datos de contacto de los clientes se realiza únicamente para cumplir con los términos del
+acuerdo
+de oferta pública y no se transfiere a terceros sin su consentimiento."
+},
+
+{
+titleRu: "5. Вопросы и контакты",
+titleEn: "5. Questions and Contacts",
+titleEs: "5. Preguntas y Contactos",
+
+descriptionRu: 'Если у вас есть вопросы относительно нашей политики конфиденциальности, свяжитесь с автором курса Еленой
+Прониной
+по адресу электронной почты <a class="privacy__link"
+  href="mailto:macaron.by.elena@gmail.com">macaron.by.elena@gmail.com</a>',
+
+descriptionEs: 'Si tiene alguna pregunta con respecto a nuestra política de privacidad, comuníquese con la autora del
+curso Elena
+Pronina en <a class="privacy__link" href="mailto:macaron.by.elena@gmail.com">macaron.by.elena@gmail.com</a>',
+
+descriptionEn: 'If you have any questions regarding our privacy policy, please contact the course author Elena Pronina
+at <a class="privacy__link" href="mailto:macaron.by.elena@gmail.com">macaron.by.elena@gmail.com</a>'
+},
+
+{
+titleRu: "6. Изменения в политике конфиденциальности",
+titleEn: "6. Changes to the Privacy Policy",
+titleEs: "6. Cambios en la Política de Privacidad",
+descriptionRu: "Мы оставляем за собой право вносить изменения в нашу политику конфиденциальности.
+Любые изменения будут опубликованы на этой странице.<br>Благодарим за использование наших услуг!",
+descriptionEs: "Nos reservamos el derecho de hacer cambios a nuestra política de privacidad. Cualquier cambio se
+publicará en esta
+página.<br>¡Gracias por utilizar nuestros servicios!",
+descriptionEn: "We reserve the right to make changes to our privacy policy. Any changes will be posted on this
+page.<br>Thank you
+for using our services!"
+}
+
+]%}
+
+{% set data = [
+
+{
+titleRu: "1. Введение",
+titleEn: "1. Introduction",
+descriptionRu: 'Настоящая Политика обработки данных (далее — «Политика») определяет порядок обработки персональных
+данных, соблюдаемый Индивидуальным предпринимателем Еленой Прониной (далее — «Компания»), в соответствии с Законом
+Грузии о защите персональных данных.',
+descriptionEn: 'This Data Processing Policy (hereinafter referred to as the "Policy") defines the procedure for
+processing personal data adhered to by Individual Entrepreneur Elena Pronina
+(hereinafter referred to as the "Company") in accordance with the Law of Georgia on Personal Data Protection.'
+},
+
+{
+titleRu: "2. Определения",
+titleEn: "2. Definitions",
+descriptionRu: 'Персональные данные — любая информация, относящаяся к прямо или косвенно определенному или определяемому
+физическому лицу (субъекту данных).<br>
+Обработка данных — любое действие или совокупность действий, совершаемых с персональными данными, включая сбор, запись,
+систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу
+(распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+<br>Субъект данных — физическое лицо, к которому относятся персональные данные.
+<br>Оператор — лицо, организующее и/или осуществляющее обработку персональных данных.
+',
+descriptionEn: "Personal Data — any information relating directly or indirectly to an identified or identifiable natural
+person (data subject).<br>
+Data Processing — any action or set of actions performed on personal data, including collection, recording,
+systematization, accumulation, storage, clarification (updating, changing), extraction, use, transfer (distribution,
+provision, access), anonymization, blocking, deletion, destruction of personal data.<br>
+Data Subject — an individual to whom the personal data relates.<br>
+Operator — a person organizing and/or carrying out the processing of personal data."
+},
+
+{
+titleRu: "3. Цели обработки персональных данных",
+titleEn: "3. Purposes of Personal Data Processing",
+descriptionRu: 'Компания обрабатывает персональные данные для следующих целей:<br>
+Заключение и исполнение договоров.<br>
+Оказание услуг.<br>
+Ведение бухгалтерского учета.<br>
+Выполнение требований законодательства.<br>
+Маркетинговые исследования и рассылки (с согласия субъекта данных).
+',
+descriptionEn: "The Company processes personal data for the following purposes:<br>
+Conclusion and execution of contracts.<br>
+Provision of services.<br>
+Accounting.<br>
+Compliance with legal requirements.<br>
+Marketing research and mailings (with the consent of the data subject)."
+},
+{
+titleRu: "4. Принципы обработки персональных данных",
+titleEn: "4. Principles of Personal Data Processing",
+descriptionRu: 'Компания соблюдает следующие принципы при обработке персональных данных:<br>
+Законность и справедливость.<br>
+Ограничение обработки достижением конкретных, заранее определенных и законных целей.<br>
+Минимизация сбора и объема обрабатываемых данных.<br>
+Точность, достаточность и актуальность данных.<br>
+Сохранение данных не дольше, чем это необходимо для целей обработки.
+',
+descriptionEn: "The Company adheres to the following principles when processing personal data:<br>
+Legality and fairness.<br>
+Limitation of processing to the achievement of specific, pre-defined, and legitimate purposes.<br>
+Minimization of the collection and volume of processed data.<br>
+Accuracy, sufficiency, and relevance of data.<br>
+Data retention no longer than necessary for the purposes of processing."
+},
+{
+titleRu: "5. Права субъектов данных",
+titleEn: "5. Rights of Data Subjects",
+descriptionRu: 'Субъекты данных имеют право на:<br>
+Доступ к своим персональным данным.<br>
+Исправление, обновление или удаление своих данных.',
+descriptionEn: "Data subjects have the right to:<br>
+Access their personal data.<br>
+Rectify, update, or delete their data.
+"
+},
+{
+titleRu: "6. Меры по защите персональных данных",
+titleEn: "6. Personal Data Protection Measures",
+descriptionRu: 'Компания принимает необходимые организационные и технические меры для защиты персональных данных от
+несанкционированного или случайного доступа, уничтожения, изменения, блокирования, копирования, предоставления,
+распространения, а также от иных неправомерных действий.',
+descriptionEn: "The Company takes necessary organizational and technical measures to protect personal data from
+unauthorized or accidental access, destruction, alteration, blocking, copying, provision, dissemination, as well as from
+other unlawful actions."
+},
+{
+titleRu: "7. Передача персональных данных третьим лицам",
+titleEn: "7. Transfer of Personal Data to Third Parties",
+descriptionRu: 'Передача персональных данных третьим лицам осуществляется только с согласия субъекта данных, за
+исключением случаев, предусмотренных законодательством.',
+descriptionEn: "Transfer of personal data to third parties is carried out only with the consent of the data subject,
+except in cases provided for by law."
+},
+{
+titleRu: "8. Обязанности компании",
+titleEn: "8. Company Obligations",
+descriptionRu: 'Компания обязуется:<br>
+Обрабатывать персональные данные в соответствии с законодательством.<br>
+Информировать субъектов данных об их правах.<br>
+Уведомлять субъектов данных о фактах утечки или неправомерного доступа к их персональным данным.',
+descriptionEn: "The Company undertakes to:<br>
+Process personal data in accordance with the law.<br>
+Inform data subjects of their rights.<br>
+Notify data subjects of incidents of data leakage or unauthorized access to their personal data."
+},
+{
+titleRu: "9. Контактная информация",
+titleEn: "9. Contact Information",
+descriptionRu: 'По всем вопросам, связанным с обработкой персональных данных, субъекты данных могут обращаться:<br>
+<b>Юридический адрес</b>: Грузия, г. Батуми, 1-ый переулок Теймураза Беридзе 4, этаж 2<br>
+<b>Email</b>: <a class="privacy__link" href="mailto:macaron.by.elena@gmail.com">macaron.by.elena@gmail.com</a>',
+descriptionEn: 'For any questions related to the processing of personal data, data subjects may contact:<br>
+<b>Legal address</b>: Georgia, Batumi city, Teimuraz Beridze 1 alley, № 4, floor 2<br>
+<b>Email</b>: <a class="privacy__link" href="mailto:macaron.by.elena@gmail.com">macaron.by.elena@gmail.com</a>'
+},
+
+
+{
+titleRu: "10. Изменения и дополнения",
+titleEn: "10. Changes and Amendments",
+descriptionRu: "Компания оставляет за собой право вносить изменения в настоящую Политику. Новая редакция Политики
+вступает в силу с момента ее опубликования на сайте Компании, если иное не предусмотрено новой редакцией Политики.",
+descriptionEn: "The Company reserves the right to make changes to this Policy. The new version of the Policy comes into
+force from the moment it is published on the Company’s website, unless otherwise provided by the new version of the
+Policy."
+}
+
+]%}
