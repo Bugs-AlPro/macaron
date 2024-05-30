@@ -1732,6 +1732,7 @@ li p {
     left: calc(50% - 300px);
     min-width: 600px;
     z-index: 4;
+    gap: var(--gap-midle);
     background-color: var(--color-background);
     padding: 20px 20px 50px 20px;
     border-radius: 20px;
@@ -1740,14 +1741,20 @@ li p {
   .payment-window__title {
     text-align: center;
     padding: 20px 0 0 0;
+    margin: 0;
     font-size: 1.5em;
     color: var(--color-text);
   }
   .payment-window__title-link {
     text-decoration: none;
   }
+  .payment-window__accept {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--color-text);
+    max-width: 550px;
+  }
   .payment-window__web {
-    margin: 40px 0;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -1858,11 +1865,17 @@ li p {
   }
   .payment-window__title {
     text-align: center;
+    margin: 0;
     font-size: 1.3em;
     color: var(--color-text);
   }
   .payment-window__title-link {
     text-decoration: none;
+  }
+  .payment-window__accept {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--color-text);
   }
   .payment-window__web {
     display: flex;

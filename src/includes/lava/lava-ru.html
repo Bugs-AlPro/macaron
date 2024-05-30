@@ -23,11 +23,17 @@
         </picture>
     </div>
 
+    <div class="payment-window__accept">
+        <!-- <input type="checkbox" id="accept-contract" class="payment-window__input"> -->
+        <div for="accept-contract">Покупая курс на сайте <b>Lava.top</b> я соглашаюсь с условиями договора
+            оферты.</div>
+    </div>
+
     <div class="payment-window__links">
 
         {% for item in translate.lavaButtons %}
 
-        <a href="{{ item.linkRu }}" class="payment-window__link {{ item.class }}">
+        <a href="{{ item.linkRu }}" class="payment-window__link {{ item.class }}" onclick="return checkAgreement();">
             {{ translate.lavaTitle.linkText.ru }}
         </a>
 

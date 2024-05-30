@@ -97,3 +97,14 @@ allBtn.addEventListener('click', () => {
 //     }
 //     )
 // }
+// function checkAgreement() {
+//     const checkbox = document.getElementById('accept-contract');
+//     if (!checkbox.checked) {
+//         // alert('Пожалуйста, согласитесь с условиями договора оферты.');
+//         checkbox.focus();
+//         return false;
+
+//     }
+//     return true;
+// }
+

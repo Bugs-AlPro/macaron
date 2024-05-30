@@ -20,3 +20,4 @@ cookieBtnYes.addEventListener('click', () => {
     // Set a cross-site cookie for third-party contexts
     document.cookie = 'cookie2=value2; SameSite=None; Secure';
 })
+

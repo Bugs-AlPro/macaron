@@ -57,6 +57,25 @@
 
           </details>
         </li>
+        <li class="footer-links__item">
+          <details class="privacy">
+            <summary class="privacy__summary">
+              {{ translate.text.contract.es }}
+            </summary>
+
+            {% for item in translate.contract %}
+
+            <div class="privacy__title">
+              {{ item.titleEn }}
+            </div>
+            <p class="privacy__text">
+              {{ item.descriptionEn | safe }}
+            </p>
+
+            {% endfor %}
+
+          </details>
+        </li>
       </ul>
 
       <div class="footer__logo">
