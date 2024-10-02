@@ -20,7 +20,7 @@
     .header-fixed-wrap {
         background-color: var(--color-background);
         box-shadow: var(--shadow-elevation-low);
-        // margin-top: 90px;
+        // margin-top: 90px; // отступ для скидки
 
         &--price {
             margin-top: 0;
@@ -55,7 +55,7 @@
 
     .header-fixed-wrap {
 
-        // margin-top: 70px;
+        // margin-top: 70px; // отступ для скидки
 
         &--price {
             margin-top: 0;

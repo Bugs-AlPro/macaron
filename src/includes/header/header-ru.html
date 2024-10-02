@@ -34,6 +34,7 @@
       <div class="block__section swiper">
 
         <div class="slider slider--header swiper-wrapper">
+
           {% for item in translate.sliderOfferBaseRu %}
           <div class="slider__item swiper-slide">
             <picture class="slider__picture">
@@ -41,6 +42,7 @@
               <img src="img/{{ item.img }}.jpg" alt="{{ item.alt }}" class="slider__img" height="195" width="260">
             </picture>
           </div>
+
           {% endfor %}
 
         </div>

@@ -20,7 +20,7 @@ var path = {
   src: {
     html: 'src/*.html',
     styles: 'src/styles/*.scss',
-    images: 'src/img/*.{jpg,jpeg,png,webp,svg}',
+    images: 'src/img/*.{jpg,JPG,jpeg,png,webp,svg}',
     js: 'src/js/*.js',
     font: 'src/fonts/*.{woff,woff2,ttf}',
     files: 'src/files/*.pdf',
