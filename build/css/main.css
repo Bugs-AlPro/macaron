@@ -4,7 +4,7 @@
   --color-accent: hsl(279, 32%, 52%);
   --color-muted: hsl(303, 27%, 31%);
   --color-text: hsl(344, 14%, 15%);
-  --color-sale: hsl(19, 62%, 46%);
+  --color-sale: hsl(0, 0%, 0%);
   --shadow-color: 0deg 0% 63%;
   --shadow-elevation-low:
     0px 0.2px 0.3px hsl(var(--shadow-color) / 0),
@@ -492,6 +492,7 @@ li p {
   .header-fixed-wrap {
     background-color: var(--color-background);
     box-shadow: var(--shadow-elevation-low);
+    margin-top: 90px;
   }
   .header-fixed-wrap--price {
     margin-top: 0;
@@ -520,6 +521,9 @@ li p {
     text-align: start;
   }
 
+  .header-fixed-wrap {
+    margin-top: 70px;
+  }
   .header-fixed-wrap--price {
     margin-top: 0;
   }
