@@ -492,7 +492,6 @@ li p {
   .header-fixed-wrap {
     background-color: var(--color-background);
     box-shadow: var(--shadow-elevation-low);
-    margin-top: 90px;
   }
   .header-fixed-wrap--price {
     margin-top: 0;
@@ -521,9 +520,6 @@ li p {
     text-align: start;
   }
 
-  .header-fixed-wrap {
-    margin-top: 70px;
-  }
   .header-fixed-wrap--price {
     margin-top: 0;
   }
