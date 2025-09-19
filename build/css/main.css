@@ -4,7 +4,7 @@
   --color-accent: hsl(279, 32%, 52%);
   --color-muted: hsl(303, 27%, 31%);
   --color-text: hsl(344, 14%, 15%);
-  --color-sale: hsl(0, 0%, 0%);
+  --color-sale: hsl(318, 67%, 46%);
   --shadow-color: 0deg 0% 63%;
   --shadow-elevation-low:
     0px 0.2px 0.3px hsl(var(--shadow-color) / 0),
